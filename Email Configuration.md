@@ -107,5 +107,5 @@ Changelog:
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Naveen Kumar Narasimhan Almeti (naveenkn) | 08 Jan 2021 |
-| 1.1 | Formating changes | Mike Turnbow | 08 Jan 2021 |
+| 2.0 | Formating changes | Mike Turnbow | 08 Jan 2021 |
 
