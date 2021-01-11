@@ -1,6 +1,6 @@
 # pod20 WxCC Lab Topology Guide 
 
-![description](/images/webexcclab.jpg)
+![description](/webexcclab.jpg)
 
 
 
