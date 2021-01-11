@@ -17,11 +17,11 @@ Check this section for any updates that may require communication throughout the
 
 ## Lab Document Links
 
-Lab 1: Control Hub and Admin Portal - Link
-Lab 2: IVR & Contact Routing
+Lab 1: Control Hub and Admin Portal
+[Lab 2: IVR & Contact Routing](labs/IVR_Contact_Routing)
 Lab 3: Agent and Supervisor Desktop
 Lab 4: CRM Integration
-Lab 5: Email & Chat Configuration
+[Lab 5: Email & Chat Configuration](labs/Email_Configuration)
 Lab 6: Google CCAI Integration
 Lab 7: Omnichannel Routing
 Lab 8: Reporting & Data
