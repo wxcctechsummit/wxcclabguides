@@ -2,9 +2,10 @@ title: Cisco Webex Contact Center Technical Enablement
 description: Lab guide repository for the 2021 Cisco Webex Contact Center Technical Partner Summit
 theme: minima
 
-#show_excerpts: false
 minima:
-  skin: dark
+  skin: solarized
+  social_links:
+    twitter: Webex
 
 header_pages:
   - LabLibrary.md

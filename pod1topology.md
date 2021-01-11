@@ -1,8 +1,8 @@
-# Pod1 WxCC Lab Topology Guide 
+---
+title: "Pod1 WxCC Lab Topology Guide"
+---
 
 ![description](/images/webexcclab.jpg)
-
-
 
 # Introduction
 
