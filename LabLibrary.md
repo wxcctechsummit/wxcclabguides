@@ -1,10 +1,12 @@
-# Lab Guide Library 
+---
+title: "Lab Guide Library"
+---
 
 Welcome to the Lab Guide Library for the 2021 Cisco Webex Contact Center Technical Partner Summit.  As labs become available they will appear below.  Labs can be started once the lab document link is updated.  Please be sure to refresh your browser to see when labs have been added.
 
 Labs will be added prior to the last presentation each day.  The schedule is below.
 
-# Lab Schedule
+## Lab Schedule
 
 ## Important Updates
 Check this section for any updates that may require communication throughout the event.  
