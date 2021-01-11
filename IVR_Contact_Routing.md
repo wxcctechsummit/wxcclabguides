@@ -85,7 +85,7 @@ Before you begin this lab
 
 **Download instructions**
 
-https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App
+**[https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App](https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App)**
 
 **Links**
 
@@ -98,11 +98,11 @@ https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App
 
 ### Part 1 - Setup a Simple Flow and make a test call
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Nig7j-7y4yk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/52YiWRZJVcM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
-> Control hub: https://admin.webex.com
+> Control hub: **[https://admin.webex.com](https://admin.webex.com)**
 
 > Portal: https://portal.wxcc-us1.cisco.com/portal
 
