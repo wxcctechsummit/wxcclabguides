@@ -1,8 +1,15 @@
-title: 2021 Cisco Webex Contact Center Technical Partner Summit
-theme: minima
+title: Cisco Webex Contact Center Technical Enablement
+author:
+  name: CCBU
+  email: techsummit@email.carehybrid.com
+description: Lab guide repository for the 2021 Cisco Webex Contact Center Technical Partner Summit
+logo: images/wxcclogo.png
+
 minima:
   skin: dark
-  social_links:
-    twitter: Webex
+
 header_pages:
   - LabLibrary.md
+
+
+theme: minima
