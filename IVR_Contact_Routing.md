@@ -2,7 +2,7 @@
 
 **Overview of the lab**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=cyPxPKncOhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cyPxPKncOhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 
@@ -56,7 +56,7 @@
 Before you begin this lab
 >The following video outlines the pre-requisites before beginning the lab.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=hO-yCjjLA5o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hO-yCjjLA5o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 1. Setup Webex Contact Center Button is Clicked and Greyed Out.
 2. Users are provisioned on Control hub.
@@ -98,7 +98,7 @@ https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App
 
 ### Part 1 - Setup a Simple Flow and make a test call
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Nig7j-7y4yk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nig7j-7y4yk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -147,7 +147,7 @@ https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App
 ## Part 2: Adding Menu and Queue treatment to the call
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=TJxZznk-g_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TJxZznk-g_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -186,7 +186,7 @@ https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App
 
 ## Part 3: Configuring Outdial
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=UMUM3zJUK7c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UMUM3zJUK7c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -220,7 +220,7 @@ https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App
 
 ## Part 4: Advanced Scripting Steps
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=9_c_smmWGZA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9_c_smmWGZA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
