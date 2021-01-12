@@ -1,7 +1,7 @@
 ---
 title: "Pod10 WxCC Lab Topology Guide"
 ---
-![description](/images/webexcclab.jpg)
+![description](images/webexcclab.jpg)
 
 
 
