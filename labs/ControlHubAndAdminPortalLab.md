@@ -63,7 +63,7 @@ In this Lab, we will go through the tasks that are required to complete the onbo
 
 >The following video outlines the steps involved in the completion of tenant OnBoarding by the Customer Administrator. The objective of this lab is to make the customer admin trigger the background activities, that will complete the tenant setup. Skipping this step can cause social channels not to work.
 
-<iframe width="560" height="315" src="https://youtu.be/jU2RzlVFukg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jU2RzlVFukg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -83,7 +83,7 @@ In this Lab, we will go through the tasks that are required to complete the onbo
 
 >The following video outlines the Webex calling configuration steps that enable the administrator to use the configured default location and assign a number for those locations.
 
-<iframe width="560" height="315" src="https://youtu.be/stN4BoLDEBU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/stN4BoLDEBU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -125,7 +125,7 @@ In this Lab, we will go through the tasks that are required to complete the onbo
 
 >The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add admins, agents, and supervisors and also set each of their extension. While adding the user, we will see how to select user roles. Also, we will see how to change the user to an administrator for the customer tenant.
 
-<iframe width="560" height="315" src="https://youtu.be/-_wP9lwZbCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-_wP9lwZbCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -184,7 +184,7 @@ In this Lab, we will go through the tasks that are required to complete the onbo
 
 >The following video outlines how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to each different Contact Center Users. We will also see how to navigate to Admin Portal from Control Hub UI
 
-<iframe width="560" height="315" src="https://youtu.be/c8po-wBO7Iw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c8po-wBO7Iw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -223,7 +223,7 @@ In this Lab, we will go through the tasks that are required to complete the onbo
 
 >The following video outlines how to configure the users in Admin Portal that were added first in Control Hub. This is a very critical task from the Contact Center perspective. We also would take a look at how to associate customer-created Site, Team, and Multi-Media Profile with those users. Post this we should be able to successfully login as an agent using any of the users and their associated extension.
 
-<iframe width="560" height="315" src="https://youtu.be/MIpJofmfWKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MIpJofmfWKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -267,7 +267,7 @@ In this Lab, we will go through the tasks that are required to complete the onbo
 
 >The following video does a quick demo on how a partner creates a tenant using the partner portal. This particular section is not part of the lab but is included as bonus content so that you get familiarized with this process. This also highlights the various configuration options that should be selected before the last step is executed which  is to click the Setup Webex Contact Center button.
 
-<iframe width="560" height="315" src="https://youtu.be/HkIDvYS3Lw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HkIDvYS3Lw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Changelog:
 
