@@ -149,7 +149,7 @@ Before you begin this lab
 ## Part 2: Adding Menu and Queue treatment to the call
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TJxZznk-g_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6KrtAJuX_J0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -290,5 +290,4 @@ Changelog:
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Arunabh Bhattacharjee (arubhatt) | 10 Jan 2021 |
-| 2.0 | Formating changes | Mike Turnbow | 10 Jan 2021 |
 
