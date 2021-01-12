@@ -8,40 +8,26 @@ In this Lab, we will go through the tasks that are required to complete the onbo
 
 # Table of Contents
 
-## Part 1: Control Hub OnBoarding Admin Task
-
-1. Set Up Contact Center
-
-## Part 2: Control Hub Calling Admin Task
-
-1. Set Calling default Service Setting as Cloud Connected PSTN
-2. Assign Numbers
-3. Update Location and CCP
-
-## Part 3: Control Hub User Management Admin Task
-
-1. Add Admin2 user and configure the user as Administrator with calling
-2. Add Agent1 user and configure the user as an Agent with calling
-3. Add Super1 user and configure the user as a Supervisor with calling.
-4. Add Admin3, Agent2 and Super2
-
-## Part 4: Admin Portal Multimedia Profile, Site and Team Configuration
-
-1. Create a new MultiMedia Profile
-2. Create a new Site
-3. Create a new Team
-
-## Part 5: Admin Portal User Configuration
-
-1. Synchronize Webex Contact Center Users
-2. Manage settings for existing user
-3. Login to the Agent Desktop
-
-> ## Bonus Section
-
-## Part 6: Tenant Creation Walkthrough
-
-1. Video demo on Tenant Provisioning
+- [Part 1: Control Hub OnBoarding Admin Tasks](#part-1-control-hub-onboarding-admin-tasks)
+  * [1. Set Up Contact Center](#1-set-up-contact-center)
+- [Part 2: Control Hub Calling Admin Task](#part-2-control-hub-calling-admin-task)
+  * [1. Set Calling default Service Setting as Cloud Connected PSTN](#1-set-calling-default-service-setting-as-cloud-connected-pstn)
+  * [2. Assign Numbers](#2-assign-numbers)
+  * [3. Update Location and CCP](#3-update-location-and-ccp)
+- [Part 3: Control Hub User Management Admin Task](#part-3-control-hub-user-management-admin-task)
+  * [1. Add an admin user and configure the calling extension](#1-add-an-admin-user-and-configure-the-calling-extension)
+  * [2. Add an agent user and configure the calling extension](#2-add-an-agent-user-and-configure-the-calling-extension)
+  * [3. Add a supervisor user and configure the calling extension](#3-add-a-supervisor-user-and-configure-the-calling-extension)
+  * [4. Add rest of the users](#4-add-rest-of-the-users)
+- [Part 4: Admin Portal Multimedia Profile, Site and Team Configuration](#part-4-admin-portal-multimedia-profile--site-and-team-configuration)
+  * [1. Create a new MultiMedia Profile](#1-create-a-new-multimedia-profile)
+  * [2. Create a new Site](#2-create-a-new-site)
+  * [3. Create a new Team](#3-create-a-new-team)
+- [Part 5: Admin Portal User Configuration](#part-5-admin-portal-user-configuration)
+  * [1. Synchronize Webex Contact Center Users](#1-synchronize-webex-contact-center-users)
+  * [2. Manage settings for existing user](#2-manage-settings-for-existing-user)
+  * [3. Login to the Agent Desktop](#3-login-to-the-agent-desktop)
+- [Part 6: Tenant Creation Walkthrough](#part-6-tenant-creation-walkthrough)
 
 # Introduction
 
