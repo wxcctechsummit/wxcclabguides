@@ -1,5 +1,6 @@
-# pod20 WxCC Lab Topology Guide 
-
+---
+title: "Pod20 WxCC Lab Topology Guide"
+---
 ![description](/images/webexcclab.jpg)
 
 
@@ -54,4 +55,5 @@ Desktop: https://desktop.wxcc-us1.cisco.com/
 
 ### Please direct questions to lab admins in the Webex Teams room
 
-
+# What next?
+Click [here](LabLibrary) to access the Lab guide Library

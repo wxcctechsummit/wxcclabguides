@@ -1,4 +1,6 @@
-﻿# Email Configuration
+﻿---
+title: "Email Configuration"
+---
 
 Video example
 
