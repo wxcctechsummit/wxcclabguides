@@ -19,7 +19,7 @@ In this Lab, we will go through the tasks that are required to complete the onbo
   * [2. Add an agent user and configure the calling extension](#2-add-an-agent-user-and-configure-the-calling-extension)
   * [3. Add a supervisor user and configure the calling extension](#3-add-a-supervisor-user-and-configure-the-calling-extension)
   * [4. Add rest of the users](#4-add-rest-of-the-users)
-- [Part 4: Admin Portal Multimedia Profile, Site and Team Configuration](#part-4-admin-portal-multimedia-profile--site-and-team-configuration)
+- [Part 4: Admin Portal Multimedia Profile, Site and Team Configuration](#part-4-admin-portal-multimedia-profile-site-and-team-configuration)
   * [1. Create a new MultiMedia Profile](#1-create-a-new-multimedia-profile)
   * [2. Create a new Site](#2-create-a-new-site)
   * [3. Create a new Team](#3-create-a-new-team)
