@@ -266,6 +266,59 @@ The Parse settings would be :
 
 `customerPhone` with `$.[0].phone`
 
+**Tech-Tip:** Here are some practice exercises you can try by going to jsonpath.com
+
+- Go to [https://5f97898842706e0016957443.mockapi.io/crm/api/customers](https://5f97898842706e0016957443.mockapi.io/crm/api/customers)
+- Copy out the JSON into [https://jsonpath.com](https://jsonpath.com) on the left pane.
+- Try out all of these to learn how JSON path works! 
+
+> I want: All Customers 
+
+`$.*`
+
+> I want: First Customer
+
+`$.[0]`
+
+> I want: Last Customer
+
+`$.[-1:]`
+
+> I want: First two customers
+
+`$.[0:2]`
+
+> I want: Last two customers
+
+`$.[-2:]`
+
+> I want: Second from last 
+
+`$.[-2:-1]`
+
+> I want: The the first customer
+
+`$.[0]`
+
+> I want: All the names
+
+`$..name`
+
+> I want: All the pins
+
+`$..pin`
+
+> I want: All the customers who’s pin value is more than 70000 or 80000
+
+`$..[?(@.pin > 70000)]`
+
+> I want: All details of customer with account number 
+
+`$..[?(@.account == "87305901”)].*`
+
+> I want: The the name of customer with account number 
+
+`$.[?(@.account == "70579265")].name`
 ### 4. Configure the Conditional for Error Check
 - Use the `httpBlock.StatusCode` variable to check the value retured.
 - Note that the test API does not give a `404` but an empty list `[]` with a `200` when no match is found. However, this step is just to understand error handling and checking.
