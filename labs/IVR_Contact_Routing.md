@@ -87,11 +87,11 @@ Before you begin this lab
 
 **Links**
 
-> Control hub: https://admin.webex.com
+> Control hub: **[https://admin.webex.com](https://admin.webex.com)**
 
-> Portal: https://portal.wxcc-us1.cisco.com/portal
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal)**
 
-> Desktop: https://desktop.wxcc-us1.cisco.com/
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com)**
 
 
 ## Part 1: Setup a Simple Flow and make a test call
@@ -102,9 +102,9 @@ Before you begin this lab
 
 > Control hub: **[https://admin.webex.com](https://admin.webex.com)**
 
-> Portal: https://portal.wxcc-us1.cisco.com/portal
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal)**
 
-> Agent Desktop: https://desktop.wxcc-us1.cisco.com/
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com)**
 
 
 ### 1. Verify that your users are ready to login
@@ -149,11 +149,11 @@ Before you begin this lab
 
 **Quick Links**
 
-> Control hub: https://admin.webex.com
+> Control hub: **[https://admin.webex.com](https://admin.webex.com)**
 
-> Portal: https://portal.wxcc-us1.cisco.com/portal
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal)**
 
-> Desktop: https://desktop.wxcc-us1.cisco.com/
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com)**
 
 ### 1. Copy out the flow and configure the advanced flow
 - Open the Portal > Routing Strategy > Flow page.
@@ -188,11 +188,11 @@ Before you begin this lab
 
 **Quick Links**
 
-> Control hub: https://admin.webex.com
+> Control hub: **[https://admin.webex.com](https://admin.webex.com)**
 
-> Portal: https://portal.wxcc-us1.cisco.com/portal
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal)**
 
-> Desktop: https://desktop.wxcc-us1.cisco.com/
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com)**
 
 
 ### 1. Verify/create the Outdial Entry Point and Queue
@@ -222,11 +222,11 @@ Before you begin this lab
 
 **Quick Links**
 
-> Control hub: https://admin.webex.com
+> Control hub: **[https://admin.webex.com](https://admin.webex.com)**
 
-> Portal: https://portal.wxcc-us1.cisco.com/portal
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal)**
 
-> Desktop: https://desktop.wxcc-us1.cisco.com/
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com)**
 
 ### 1. Copy out the flow and configure the advanced flow 2
 - Open the Portal > Routing Strategy > Flow page.
