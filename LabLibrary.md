@@ -17,7 +17,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 | 2021-01-07 | Ordering/A2Q/Onboarding/Provisioning | 90 | N/A |
 | 2021-01-12 | Control Hub. Admin Portal | 90 | [Lab 1: Control Hub and Admin Portal](labs/ControlHubAndAdminPortalLab) |
 | 2021-01-13 | Voice Integration | 90 | N/A |
-| 2021-01-14 | Security & Compliance | 60 | N/A |
+| 2021-01-14 | Business Outcomes | 60 | N/A |
 | 2021-01-15 | IVR & Contact Routing | 120 | Lab 2: IVR & Contact Routing |
 | 2021-01-19 | Agent & Supervisors Desktop | 90 | Lab 3: Agent and Supervisor Desktop |
 | 2021-01-20 | CRM Integration | 60 | Lab 4: CRM Integration |
@@ -29,7 +29,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 | 2021-01-29 | Workforce Optimization | 120 | Lab 10: Workforce Optimization |
 | 2021-02-02 | Serviceability | 60 | N/A |
 | 2021-02-03 | APIs | 60 | Lab 11: APIs |
-| 2021-02-04 | Business Outcomes | 60 | N/A |
+| 2021-02-04 | Security & Compliance | 60 | N/A |
 | 2021-02-05 | Design Challenge & Build your Awesome Demo | 120 | N/A |
 
 ## Important Updates
