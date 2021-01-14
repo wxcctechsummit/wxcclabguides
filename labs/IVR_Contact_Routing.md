@@ -1,5 +1,5 @@
 ---
-title: "IVR and Contact Routing"
+title: "IVR and Contact Routing Lab"
 ---
 
 **Overview of the lab**
@@ -7,39 +7,35 @@ title: "IVR and Contact Routing"
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cyPxPKncOhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
+- [Part 1: Setup a Simple Flow and make a test call](#part-1-setup-a-simple-flow-and-make-a-test-call)
+  * [1. Verify that your users are ready to login](#1-verify-that-your-users-are-ready-to-login)
+  * [2. Verify your inbound numbers are correctly setup on Calling](#2-verify-your-inbound-numbers-are-correctly-setup-on-calling)
+  * [3. Create an inbound Voice Entry Point and Voice Queue](#3-create-an-inbound-voice-entry-point-and-voice-queue)
+  * [4. Verify the Audio Prompts, Create the Entry Point flow.](#4-verify-the-audio-prompts-create-the-entry-point-flow)
+  * [5. Configure and Publish the flow](#5-configure-and-publish-the-flow)
+  * [6. Configure the Entry Point Routing Strategy](#6-configure-the-entry-point-routing-strategy)
+  * [7. Configure the Queue Routing Strategy](#7-configure-the-queue-routing-strategy)
+  * [8. Make a test call](#8-make-a-test-call)
+- [Part 2: Adding Menu and Queue treatment to the call](#part-2-adding-menu-and-queue-treatment-to-the-call)
+  * [1. Copy out the flow and configure the advanced flow](#1-copy-out-the-flow-and-configure-the-advanced-flow)
+  * [2. Configure the Queue Treatment loop and Opt Out and Callback steps](#2-configure-the-queue-treatment-loop-and-opt-out-and-callback-steps)
+  * [3. Point to the New flow in the Routing Strategy](#3-point-to-the-new-flow-in-the-routing-strategy)
+  * [4. Test the end to end flow](#4-test-the-end-to-end-flow)
+  * [5. Execute the Callback](#5-execute-the-callback)
+- [Part 3: Configuring Outdial](#part-3-configuring-outdial)
+  * [1. Verify/create the Outdial Entry Point and Queue](#1-verifycreate-the-outdial-entry-point-and-queue)
+  * [2. Create the Outdial Entry Point Routing Strategy](#2-create-the-outdial-entry-point-routing-strategy)
+  * [3. Create the Outdial Queue Routing Strategy](#3-create-the-outdial-queue-routing-strategy)
+  * [4. Test Outdial](#4-test-outdial)
+- [Part 4: Advanced Scripting Steps](#part-4-advanced-scripting-steps)
+  * [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advanced-flow-2)
+  * [2. Enhance the existing flow with an authentication piece](#2-enhance-the-existing-flow-with-an-authentication-piece)
+  * [3. Configure the Collect Digits block](#3-configure-the-collect-digits-block)
+  * [3. Configure the custom variables and the HTTP Request Block](#3-configure-the-custom-variables-and-the-http-request-block)
+  * [4. Configure the Conditional for Error Check](#4-configure-the-conditional-for-error-check)
+  * [5. Point to the New flow in the Routing Strategy](#5-point-to-the-new-flow-in-the-routing-strategy)
+  * [6. Verify the flow end to end](#6-verify-the-flow-end-to-end)
 
-## Part 1: Creating a flow and making a test call
-1. Pre-requisite configuration check: Users, Prompts
-2. Create Voice EP/Q
-3. Create a simple flow
-3. Create Voice EP/Q Routing Strategies
-4. Associate the Queue to the Team
-5. Demo - Test call and Accepting the contact
-
-## Part 2: Adding Menu and Queue treatment to the call
-1. Adding a Menu step
-2. Configuring the second Queue Block
-3. Configuring a loop counter check
-4. Adding a High Volume and Menu to the flow
-5. Adding the Opt out Menu
-6. Setting up Voicemail and Callback
-7. Testing the new flow
-
-## Part 3: Configuring Outdial (Dialing out) Capability
-1. Verifying/Creating the Outdial Entry Point.
-2. Verifying/Creating the Outdial Queue.
-3. Configuring the Entry Point Routing Strategy.
-4. Configuring the Queue Routing Strategy.
-5. Setting the Outdial ANI (Calling Number)
-6. Adding Outdial to the Agent Profile
-7. Demo - Testing outdial
-
-## Part 4: Advanced Scripting Steps
-1. Fetching Caller PIN
-2. Create CAD Variables for the Agent Desktop
-3. Adding and configuring an HTTP Lookup Block to the flow
-4. Adding error handling and ensuring customer confirmation.
-5. Testing the new contact flow and verfying CAD variables.
 
 # Introduction
 
@@ -98,7 +94,7 @@ Before you begin this lab
 > Desktop: https://desktop.wxcc-us1.cisco.com/
 
 
-### Part 1 - Setup a Simple Flow and make a test call
+## Part 1: Setup a Simple Flow and make a test call
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/52YiWRZJVcM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
