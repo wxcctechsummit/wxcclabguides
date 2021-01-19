@@ -29,12 +29,12 @@ The object of this lab excercise is to customize the logo and title of the agent
 3. Agent is able to login to agent desktop​.
 4. Agent should be part of a team​.
 5. Basic knowledge of JSON format​
-6. Use any online JSON validator( https://jsonlint.com/ ) to validate the file​
+6. Use any online [JSON validator](https://jsonlint.com) to validate the file​
 
 
 ### 1. Download default desktop Layout
 
-  * Login to portal (https://portal.cjp.cisco.com) with administrator credentials​
+  * Login to [WxCC portal](https://portal.cjp.cisco.com/portal/home.html) with admin credentials​
   * Navigate to Provisioning --> Desktop Layout​
   * Click on ellipses (...) of Global Layout to edit ​
   * Now click on edit
@@ -47,32 +47,32 @@ The object of this lab excercise is to customize the logo and title of the agent
 
  * Open the Default Layout JSON in any text editor e.g. Notepad or Sublime text.​
  * Modify the value of appTitle key to change Agent Desktop title (Refer Pic-1).​
- * Modify the value of logo key as your company logo URL or use this dummy url https://widget-kad.s3.amazonaws.com/Logos/boscologo5.png
+ * Modify the value of logo key as your company logo URL or use this dummy url: https://widget-kad.s3.amazonaws.com/Logos/boscologo5.png
  * “Save As” the JSON file with a distinguishable name.
 
 
 ### 3. Upload the custom desktop layout an verify
 
-* Login to portal : https://portal.cjp.cisco.com/portal/home.html with administrator credentials​
+* Login to [WxCC portal](https://portal.cjp.cisco.com/portal/home.html) with admin credentials​
 * Navigate to Provisioning --> Desktop Layout​
 * Click on New Layout
 * Provide any preferable name and description ​
 * Click on Team textbox to add the team ​
 * Click Upload button to upload the modified JSON file​
 * Click Save button to apply the layout.
-* Login/Reload agent desktop to verify the layout (https://desktop.wxcc-us1.cisco.com/)​
+* Login/Reload [WxCC agent desktop](https://desktop.wxcc-us1.cisco.com) to verify the layout 
 
 
 ### 4. Assign header widget and nav bar widget
 * Open the layout JSON file in any text editor e.g. 
-* Notepad or Sublime text.(be careful copying from PowerPoint  might add unwanted spaces/characters... causing the JSON to * * fail on load) use an online JSON formatter like https://jsonformatter.org/ to clean up if need be.​
+* Notepad or Sublime text.(be careful copying from PowerPoint  might add unwanted spaces/characters... causing the JSON to * * fail on load) use an online [JSON formatter](https://jsonformatter.org/) to clean up if need be.​
 * Modify the header section as mentioned in video
 * Modify the navigation section as mentioned below​
 * “Save As” the JSON file with a unique preferable nam
 
 ### 5. Upload the modified layout
 
-* Login to portal : https://portal.cjp.cisco.com/portal/home.html with admin credentials​
+* Login to [WxCC portal](https://portal.cjp.cisco.com/portal/home.html) with admin credentials​
 * Navigate to Provisioning --> Desktop Layout​
 * Search for your layout ​
 * Click on ... to edit the existing layout​
@@ -82,7 +82,7 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 ### 6. Verify the layout 
 
-* Login/Reload agent desktop to verify the layout (https://desktop.wxcc-us1.cisco.com/)
+* Login/Reload [WxCC agent desktop](https://desktop.wxcc-us1.cisco.com) to verify the layout 
 
 
 
