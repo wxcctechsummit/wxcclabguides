@@ -1,5 +1,5 @@
 ---
-title: "Control Hub And Admin Portal Lab"
+title: "Lab 1: Control Hub And Admin Portal Lab"
 ---
 
 ### Overview of the lab:

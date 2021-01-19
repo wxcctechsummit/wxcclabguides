@@ -1,5 +1,5 @@
 ---
-title: "IVR and Contact Routing Lab"
+title: "Lab 2: IVR and Contact Routing Lab"
 ---
 
 **Overview of the lab**
