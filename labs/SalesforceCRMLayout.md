@@ -1,3 +1,7 @@
+---
+title: "Lab 4: CRM Integration"
+---
+
 # WebexCC Salesforce Agent Desktop Installation And Configuration
 
 Video example
@@ -6,15 +10,15 @@ Video example
 
 # Table of Contents
 
-1. Connector Installation From Salesforce AppExchange
-2. Connector Installation Verification
-3. Salesforce Call Center Application Configuration
-4. Adding Call Center Users To Salesforce Call Center Application 
-5. Create Salesforce Softphone Layout Configuration
-6. Salesforce Softphone Layout Assignment
-7. Salesforce Task Layout Configuration
-8. WebexCC Salesforce Desktop Report View
-9. WebexCC Salesforce Desktop Layout Configuration
+- [1. Connector Installation From Salesforce AppExchange](#1-connector-installation-from-salesforce-appexchange)
+- [2. Connector Installation Verification](#2-connector-installation-verification)
+- [3. Salesforce Call Center Configuration](#3-salesforce-call-center-configuration)
+- [4. Adding Call Center Users To Salesforce Call Center Application](#4-adding-call-center-users-to-salesforce-call-center-application)
+- [5. Create Salesforce Softphone Layout Configuration](#5-create-salesforce-softphone-layout-configuration)
+- [6. Salesforce Softphone Layout Assignment](#6-salesforce-softphone-layout-assignment)
+- [7. Salesforce Task Layout Configuration](#7-salesforce-task-layout-configuration)
+- [8. WebexCC Salesforce Desktop Report View](#8-webexcc-salesforce-desktop-report-view)
+- [9. WebexCC Salesforce Desktop Layout Configuration](#9-webexcc-salesforce-desktop-layout-configuration)
 
 # Introduction
 
@@ -30,7 +34,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 5. Agent should be part of a team​.
 6. Basic knowledge of JSON format​.
 7. Salesforce Custom Desktop Layout.
-8. Use any online JSON validator( https://jsonlint.com/ ) to validate the file​
+8. Use any online [JSON validator](https://jsonlint.com/) to validate the file​
 
 
 ### 1. Connector Installation From Salesforce AppExchange
@@ -56,7 +60,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 * In the search box, type “Call Centers”.
 * Click the Edit link corresponding to the Webex Contact Center.
 * Update the Display Name field if you want to change the Display name of the call center.
-* Configure the CTI Adapter URL:- AppStaging : https://agentx.appstaging.ciscoccservice.com/   US : https://desktop.wxcc-us1.cisco.com/
+* Configure the CTI Adapter URL: https://desktop.wxcc-us1.cisco.com/
 * Configure Softphone Layout:- Softphone Height: 600   Softphone Width: 550
 
 
@@ -107,7 +111,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 * To see all the existing reports, click All Reports. Note:There is a default call activity report that installs with Cisco Webex Contact Center for Salesforce client.
 * In the search box, type “Object Manager” and click on “Object Manager” link button. 
 
-### 8. WebexCC Salesforce Desktop Layout Configuration 
+### 9. WebexCC Salesforce Desktop Layout Configuration 
 
 * Login to WebexCC Admin Portal
 * Go to Provisioning >  Desktop Layout > New Layout

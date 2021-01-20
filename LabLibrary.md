@@ -20,7 +20,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 | 2021-01-14 | Business Outcomes | N/A |
 | 2021-01-15 | IVR & Contact Routing | [Lab 2: IVR & Contact Routing](labs/IVR_Contact_Routing) |
 | 2021-01-19 | Agent Desktop | [Lab 3: Agent Desktop](labs/CustomDesktopLayout) |
-| 2021-01-20 | CRM Integration | Lab 4: CRM Integration |
+| 2021-01-20 | CRM Integration | [Lab 4: CRM Integration](labs/SalesforceCRMLayout) |
 | 2021-01-21 | Email & Chat | Lab 5: Email & Chat Configuration |
 | 2021-01-22 | Google CCAI Integration | Lab 6: Google CCAI Integration |
 | 2021-01-26 | Omni-channel Routing | Lab 7: Omnichannel Routing |
@@ -45,7 +45,7 @@ Check this section for any updates that may require communication throughout the
 * [Lab 1: Control Hub and Admin Portal](labs/ControlHubAndAdminPortalLab)
 * [Lab 2: IVR & Contact Routing](labs/IVR_Contact_Routing)
 * [Lab 3: Agent Desktop](labs/CustomDesktopLayout)
-* Lab 4: CRM Integration
+* [Lab 4: CRM Integration](labs/SalesforceCRMLayout)
 * Lab 5: Email & Chat Configuration
 * Lab 6: Google CCAI Integration
 * Lab 7: Omnichannel Routing
