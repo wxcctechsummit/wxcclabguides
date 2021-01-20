@@ -36,6 +36,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 Check this section for any updates that may require communication throughout the event.
 
+* 2021-01-20 - Lab 4 CRM Integration is **Innagurated**
 * 2021-01-19 - Lab 3 Agent Desktop is **available**, go for it!
 * 2021-01-15 - Lab 2 for IVR & Contact Routing is **ready**
 * 2021-01-12 - Lab 1 for Control Hub and Admin Portal has been published and is ready for you to **practice**!
