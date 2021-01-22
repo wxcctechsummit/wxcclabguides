@@ -22,7 +22,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 | 2021-01-19 | Agent Desktop | [Lab 3: Agent Desktop](labs/CustomDesktopLayout) |
 | 2021-01-20 | CRM Integration | [Lab 4: CRM Integration](labs/SalesforceCRMLayout) |
 | 2021-01-21 | Email & Chat | [Lab 5: Email & Chat Configuration](labs/EmailChatConfiguration) |
-| 2021-01-22 | Google CCAI Integration | Lab 6: Google CCAI Integration |
+| 2021-01-22 | Google CCAI Integration | [Lab 6: Google CCAI Integration](labs/GoogleCCAIIntegration) |
 | 2021-01-26 | Omni-channel Routing | Lab 7: Omnichannel Routing |
 | 2021-01-27 | Reporting & Data | Lab 8: Reporting & Data |
 | 2021-01-28 | Webex Experience Management | Lab 9: Webex Experience Management |
@@ -36,7 +36,8 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 Check this section for any updates that may require communication throughout the event.
 
-* 2021-01-20 - Lab 5 Email & Chat configuration is **live**
+* 2021-01-22 - Lab 6 Google CCAI integration lab is now **published**
+* 2021-01-21 - Lab 5 Email & Chat configuration is **live**
 * 2021-01-20 - Lab 4 CRM Integration is **inaugurated**
 * 2021-01-19 - Lab 3 Agent Desktop is **available**, go for it!
 * 2021-01-15 - Lab 2 for IVR & Contact Routing is **ready**
@@ -49,7 +50,7 @@ Check this section for any updates that may require communication throughout the
 * [Lab 3: Agent Desktop](labs/CustomDesktopLayout)
 * [Lab 4: CRM Integration](labs/SalesforceCRMLayout)
 * [Lab 5: Email & Chat Configuration](labs/EmailChatConfiguration)
-* Lab 6: Google CCAI Integration
+* [Lab 6: Google CCAI Integration](labs/GoogleCCAIIntegration)
 * Lab 7: Omnichannel Routing
 * Lab 8: Reporting & Data
 * Lab 9: Webex Experience Management
