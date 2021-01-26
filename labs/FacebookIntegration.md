@@ -5,7 +5,7 @@ title: "Lab 7: Omnichannel Routing"
 # Facebook Messenger Integration
 
 ## Table of Contents
-- [1. Organization admin – set up facebook account](#1-organization-admin-\--set-up-facebook-account)
+- [1. Organization admin: set up facebook account](#1-organization-admin-set-up-facebook-account)
 - [2. Configure Facebook Connector in WxCC Control Hub](#2-configure-facebook-connector-in-wxcc-control-hub)
 - [3. Configure Facebook Entrypoint](#3-configure-facebook-entrypoint)
 - [4. Configure Facebook Queue](#4-configure-facebook-queue)
@@ -32,7 +32,7 @@ End customer can initiate queries from provided facebook page to contact center 
 4. Agent account to login to agent desktop.
 
 
-## 1. Organization admin – set up facebook account
+## 1. Organization admin: set up facebook account
 
 * Customer/Partner should have an facebook account that can be used for creating new page.
 
