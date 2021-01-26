@@ -26,10 +26,10 @@ End customer can initiate queries from provided facebook page to contact center 
 
 ## Pre-requisite
 
-1.WxCC Portal url.
-2.Admin login credentials to login to WxCC portal.
-3.Facebook account along with login credentials.
-4.Agent account to login to agent desktop.
+1. WxCC Portal url.
+2. Admin login credentials to login to WxCC portal.
+3. Facebook account along with login credentials.
+4. Agent account to login to agent desktop.
 
 
 ### 1. Organization admin – set up facebook account
@@ -148,3 +148,4 @@ Changelog:
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Avinash Satrasala (avsatras) | 25 Jan 2021 |
+| 2.0 | Final Release | Mike Turnbow (miturnbo) | 256 Jan 2021 |
