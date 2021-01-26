@@ -148,4 +148,4 @@ Changelog:
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Avinash Satrasala (avsatras) | 25 Jan 2021 |
-| 2.0 | Final Release | Mike Turnbow (miturnbo) | 256 Jan 2021 |
+| 2.0 | Final Release | Mike Turnbow (miturnbo) | 26 Jan 2021 |
