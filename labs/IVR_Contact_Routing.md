@@ -120,8 +120,10 @@ Before you begin this lab
 - Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to `EP_voice_wxcclab`
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
-- Go to Resources > Audio Files and ensure that the audio files are uploaded.
-- Go to Flow > New and create the new flow.
+- The audio prompts required for the script build out are wav files. The whole bundle of wav files can be found here.
+- To create a flow and have these wav files ready for use, ensure that they are already uploaded to the org.
+- To upload the audio files, Go to  Routing Strategy (from Portal) > Resources > Audio Files and ensure that the audio files are uploaded. (Browse > New > Upload the files)
+- Then, you can go to flow to create the flow. Routing Strategy (from Portal) > Flow > New and create the new flow as described in the video above.
 
 ### 5. Configure and Publish the flow
 - Configure the flow `flow_wxcclab` with a Play prompt - welcome message and queue block and play music block.
