@@ -120,7 +120,7 @@ Before you begin this lab
 - Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to `EP_voice_wxcclab`
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
-- The audio prompts required for the script build out are wav files. The whole bundle of wav files [can be found here](/labs/prompts). Right click > Save link as OR click and then hit download.
+- The audio prompts required for the script build out are wav files. The whole bundle of wav files [can be found here](https://cisco.box.com/s/njmhdrho38mbohoqlc7iznkj74bgk7tv).
 - You may listen to the files to get an idea of the kind of flows being constructed in the later labs.
 - To create a flow and have these wav files ready for use, ensure that these prompt files are already uploaded to the org.
 - To upload the audio files, Go to  Routing Strategy (from Portal) > Resources > Audio Files and ensure that the audio files are uploaded. (Browse > New > Upload the files)
