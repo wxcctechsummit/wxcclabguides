@@ -1,25 +1,24 @@
-﻿# Webex Contact Center Reporting - Analyzer
+﻿---
+title: "Lab 8: Reporting & Data"
+---
 
-Video example
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/453BlLMFetU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+# Webex Contact Center Reporting - Analyzer
 
 # Table of Contents
 
-1. Login into Analyzer and review user interface
-2. Execute Stock Reports and use them to create custom reports
-3. Create an Agent Historical Call Visualization 
-4. Create a Contact Realtime Report
-5. Create Dashboard
-
-
+- [1. Login into Analyzer and review user interface](#1-login-into-analyzer-and-review-user-interface)
+- [2. Execute Stock Report and use it to create custom reports](#2-execute-stock-report-and-use-it-to-create-custom-reports)
+- [3. Create an Agent Historical Call Visualization](#3-create-an-agent-historical-call-visualization)
+- [4. Create a Call Realtime Report](#4-create-a-call-realtime-report)
+- [5. Create Dashboard](#5-create-dashboard)
 
 **Quick Links**
 
-> Portal: https://portal.wxcc-us1.cisco.com/portal
-> Analyzer: https://analyzer.wxcc-us1.cisco.com/analyzer/home
+* [Portal](https://portal.wxcc-us1.cisco.com/portal)
+* [Analyzer](https://analyzer.wxcc-us1.cisco.com/analyzer/home)
 
 # Introduction
+<iframe width="560" height="315" src="https://www.youtube.com/embed/453BlLMFetU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 ## Lab Objective
 
@@ -34,7 +33,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 3. Make sure to make few test calls and answered by the agent the day you attempting this lab (to ensure we have some data to analyze)
 
 
-### 1. Login into Analyzer and review user interface
+# 1. Login into Analyzer and review user interface
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E4Ch2gUSRi4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
@@ -60,7 +59,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
 
 
-### 2. Execute Stock Report and use it to create custom reports
+# 2. Execute Stock Report and use it to create custom reports
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/29K4JbR8Tps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
@@ -84,7 +83,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 12. Click on `Dashboard -> Stock Reports -> Historical Reports -> Contact Center Overview`
 13. Double click `Contact Center Overview - Historical` . This will should your Contact Center Historical Summary
 
-### 3. Create an Agent Historical Call Visualization 
+# 3. Create an Agent Historical Call Visualization 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xKoAPtAtXzo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
@@ -125,7 +124,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
  
 
-### 4. Create a Call Realtime Report
+# 4. Create a Call Realtime Report
 
 **Section Information**
 - Creating a Realtime Report 
@@ -159,7 +158,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
 
 
-### 5. Create Dashboard
+# 5. Create Dashboard
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JV5zVsI-3vo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 

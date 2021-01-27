@@ -24,7 +24,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 | 2021-01-21 | Email & Chat | [Lab 5: Email & Chat Configuration](labs/EmailChatConfiguration) |
 | 2021-01-22 | Google CCAI Integration | [Lab 6: Google CCAI Integration](labs/GoogleCCAIIntegration) |
 | 2021-01-26 | Omni-channel Routing | [Lab 7: Omnichannel Routing](labs/FacebookIntegration) |
-| 2021-01-27 | Reporting & Data | Lab 8: Reporting & Data |
+| 2021-01-27 | Reporting & Data | [Lab 8: Reporting & Data](labs/Analyzerlab) |
 | 2021-01-28 | Webex Experience Management | Lab 9: Webex Experience Management |
 | 2021-01-29 | Workforce Optimization | Lab 10: Workforce Optimization |
 | 2021-02-02 | Serviceability | N/A |
@@ -36,6 +36,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 Check this section for any updates that may require communication throughout the event.
 
+* 2021-01-27 - Lab 8 which covers reporting with WxCC Analyzer has been **enabled**
 * 2021-01-26 - **Enjoy** Lab 7, where you will learn about Facebook integration with WxCC
 * 2021-01-22 - Lab 6 Google CCAI integration lab is now **published**
 * 2021-01-21 - Lab 5 Email & Chat configuration is **live**
@@ -53,7 +54,7 @@ Check this section for any updates that may require communication throughout the
 * [Lab 5: Email & Chat Configuration](labs/EmailChatConfiguration)
 * [Lab 6: Google CCAI Integration](labs/GoogleCCAIIntegration)
 * [Lab 7: Omnichannel Routing](labs/FacebookIntegration)
-* Lab 8: Reporting & Data
+* [Lab 8: Reporting & Data](labs/Analyzerlab)
 * Lab 9: Webex Experience Management
 * Lab 10: Workforce Optimization
 * Lab 11: APIs
