@@ -54,7 +54,7 @@ Check this section for any updates that may require communication throughout the
 * [Lab 5: Email & Chat Configuration](labs/EmailChatConfiguration)
 * [Lab 6: Google CCAI Integration](labs/GoogleCCAIIntegration)
 * [Lab 7: Omnichannel Routing](labs/FacebookIntegration)
-* [Lab 8: Reporting & Data](labs/Analyzerlab)
+* [Lab 8: Reporting & Data](labs/AnalyzerLab)
 * Lab 9: Webex Experience Management
 * Lab 10: Workforce Optimization
 * Lab 11: APIs
