@@ -61,7 +61,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
 # 2. Execute Stock Report and use it to create custom reports
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/29K4JbR8Tps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zR2ryZ7x9kA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Section Information**
 - Create a folder
@@ -180,4 +180,4 @@ Changelog:
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Krishna Tyagi (ktyagi) | 25 Jan 2021 |
 | 1.1 | Final Release | Mike Turnbow (miturnbo) | 27 Jan 2021 |
-
+| 1.2 | Final Release Video Fix | Mike Turnbow (miturnbo) | 27 Jan 2021 |
