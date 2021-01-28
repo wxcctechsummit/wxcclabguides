@@ -104,8 +104,8 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 
 **Quick Links**
 
-[Control hub](https://admin.webex.com)
-[WxM console](https://cx.cloudcherry.com)
+* [Control hub](https://admin.webex.com)
+* [WxM console](https://cx.cloudcherry.com)
 
 ## **IMPORTANT : Before You Begin**
 
@@ -238,7 +238,7 @@ The following video does a quick demo on how the FeedBack node should be impleme
 
 * [Control hub](https://admin.webex.com)
 * [WxM console](https://cx.cloudcherry.com)
-* [Portal](https://portal.wxcc-us1.cisco.com/portal)
+* [WxCC Portal](https://portal.wxcc-us1.cisco.com/portal)
 
 ## a) Configure Feedback Node
 
