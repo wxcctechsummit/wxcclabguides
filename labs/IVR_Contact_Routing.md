@@ -326,7 +326,7 @@ The Parse settings would be :
 ### 4. Configure the Conditional for Error Check
 - Use the `httpBlock.StatusCode` variable to check the value retured.
 - Note that the test API does not give a `404` but an empty list `[]` with a `200` when no match is found. However, this step is just to understand error handling and checking.
-- Use the `{{ httpBlock.StatusCode == 200 }}` expression check on the condition and play success and failure prompts accordingly.
+- Use the `\{{ httpBlock.StatusCode == 200 \}}` expression check on the condition and play success and failure prompts accordingly.
 - Ensure all the settings are properly setup. 
 - Validate and Publish the new script, correcting any errors that show up.
 
