@@ -25,7 +25,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 | 2021-01-22 | Google CCAI Integration | [Lab 6: Google CCAI Integration](labs/GoogleCCAIIntegration) |
 | 2021-01-26 | Omni-channel Routing | [Lab 7: Omnichannel Routing](labs/FacebookIntegration) |
 | 2021-01-27 | Reporting & Data | [Lab 8: Reporting & Data](labs/AnalyzerLab) |
-| 2021-01-28 | Webex Experience Management | Lab 9: Webex Experience Management |
+| 2021-01-28 | Webex Experience Management | [Lab 9: Webex Experience Management](labs\wxmlab) |
 | 2021-01-29 | Workforce Optimization | Lab 10: Workforce Optimization |
 | 2021-02-02 | Serviceability | N/A |
 | 2021-02-03 | APIs | Lab 11: APIs |
@@ -55,6 +55,6 @@ Check this section for any updates that may require communication throughout the
 * [Lab 6: Google CCAI Integration](labs/GoogleCCAIIntegration)
 * [Lab 7: Omnichannel Routing](labs/FacebookIntegration)
 * [Lab 8: Reporting & Data](labs/AnalyzerLab)
-* Lab 9: Webex Experience Management
+* [Lab 9: Webex Experience Management](labs\wxmlab)
 * Lab 10: Workforce Optimization
 * Lab 11: APIs
