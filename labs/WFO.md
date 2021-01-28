@@ -3,7 +3,7 @@
 
 **Video Provisioning, Login, ACD Config and Data Server Configuration**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iPmbPcjYO8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3PMElHzkpfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 # Introduction
@@ -94,3 +94,4 @@ Changelog:
 | **Version** | **Comments**      | **Author(s)**                    | **Date**    |
 | ----------- | ----------------- | -------------------------------- | ----------- |
 | 1.0         | Initial Release   | Mike Turnbow (miturnbo) | 28 Jan 2021 |
+| 2.0         | Final Release   | Mike Turnbow (miturnbo) | 28 Jan 2021 |
