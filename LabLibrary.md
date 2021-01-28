@@ -36,6 +36,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 Check this section for any updates that may require communication throughout the event.
 
+* 2021-01-28 - Lab 9 covering Webex Experience Management has been **enabled** by executive order
 * 2021-01-27 - Lab 8 which covers reporting with WxCC Analyzer has been **enabled**
 * 2021-01-26 - **Enjoy** Lab 7, where you will learn about Facebook integration with WxCC
 * 2021-01-22 - Lab 6 Google CCAI integration lab is now **published**
