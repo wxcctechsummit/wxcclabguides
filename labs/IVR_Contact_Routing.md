@@ -322,6 +322,7 @@ The Parse settings would be :
 > I want: The the name of customer with account number 
 
 `$.[?(@.account == "70579265")].name`
+
 ### 4. Configure the Conditional for Error Check
 - Use the `httpBlock.StatusCode` variable to check the value retured.
 - Note that the test API does not give a `404` but an empty list `[]` with a `200` when no match is found. However, this step is just to understand error handling and checking.
@@ -342,4 +343,3 @@ Changelog:
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Arunabh Bhattacharjee (arubhatt) | 10 Jan 2021 |
-
