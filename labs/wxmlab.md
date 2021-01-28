@@ -38,32 +38,6 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * Your pod has the required configuration for an email to route to an agent
 * You have configured all the requisites for the agent to log in and handle a customer call.
 
-## WxM login credentials
-
-| Pod        | Wxm Admin Username    | Password        |  
-| -----------| -----------           | -----------     |
-| Pod1       | wxmdemopod1           | Tra1ning!       |
-| Pod2       | wxmdemopod2           | Tra1ning!       |
-| Pod3       | wxmdemopod3           | Tra1ning!       |
-| Pod4       | wxmdemopod04          | Tra1ning!       |
-| Pod5       | wxmdemopod5           | Tra1ning!       |
-| Pod6       | wxmdemopod6           | Tra1ning!       |
-| Pod7       | wxmdemopod7           | Tra1ning!       |
-| Pod8       | wxmdemopod8           | Tra1ning!       |
-| Pod9       | wxmdemopod9           | Tra1ning!       |
-| Pod10      | wxmdemopod10          | Tra1ning!       |
-| Pod11      | wxmdemopod11          | Tra1ning!       |
-| Pod12      | wxmdemopod12          | Tra1ning!       |
-| Pod13      | wxmdemopod13          | Tra1ning!       |
-| Pod14      | wxmdemopod14          | Tra1ning!       |
-| Pod15      | wxmdemopod15          | Tra1ning!       |
-| Pod16      | wxmdemopod16          | Tra1ning!       |
-| Pod17      | wxmdemopod17          | Tra1ning!       |
-| Pod18      | wxmdemopod18          | Tra1ning!       |
-| Pod19      | wxmdemopod19          | Tra1ning!       |
-| Pod20      | wxmdemopod20          | Tra1ning!       |
-
-
 # Part 1: WxM Connector setup
 
 The following video outlines the steps required to create the WxM connector. WxCC uses this connector to read the dispatches that are configured in WxM. This connector is also used to load the widgets into the agent desktop and FeedBack is triggered via the same.
