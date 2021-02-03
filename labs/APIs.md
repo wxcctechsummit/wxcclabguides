@@ -18,10 +18,10 @@
 
 ## Part 3: New Contact Center APIs on Developer Portal - Tasks and Recordings
 
-1. Introduction to the developer portal.
-2. Exploring the endpoints available.
-3. Retrieving the list of tasks (Contact Sessions).
-4. Retrieving the call recording for a specific set of task(s).
+1. Introduction to the developer portal and exploring the endpoints available.
+2. Retrieving the list of tasks (Contact Sessions).
+3. Retrieving the list of call recordings for a specific set of task(s).
+4. Download the recordings
 
 # Introduction
 
