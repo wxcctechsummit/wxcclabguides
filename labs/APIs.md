@@ -12,16 +12,16 @@ title: "Lab 11: # Webex Contact Center APIs"
   * [6. Copy only the content after `query` and before the ending braces. I.e this content as an example**](#6-copy-only-the-content-after-query-and-before-the-ending-braces-ie-this-content-as-an-example--)
   * [7. Encode this in a URL encoded format. i.e Copy this string and paste it in an encoder](#7-encode-this-in-a-url-encoded-format-ie-copy-this-string-and-paste-it-in-an-encoder)
   * [8. Plug this into the query parameters. Execute the Query](#8-plug-this-into-the-query-parameters-execute-the-query)
-  * [9. Add an Accept Header of text/csv](#9-add-an-accept-header-of-text-csv)
+  * [9. Add an Accept Header of text/csv](#9-add-an-accept-header-of-textcsv)
 - [Part 2: Legacy 1.0 APIs: CARs and activity chains](#part-2-legacy-10-apis-cars-and-activity-chains)
   * [1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format](#1-understand-contact-start-and-contact-end-timestamps-are-in-unix-epoch-format)
   * [2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.](#2-copy-the-same-csr-request-get-csr-request-and-tweak-it-to-a-car-request)
   * [3. Complete Building out the above requests.](#3-complete-building-out-the-above-requests)
-- [Part 3: New Webex Contact Center APIs - Retrieving Tasks and Call Recordings](#part-3-new-webex-contact-center-apis---retrieving-tasks-and-call-recordings)
-  * [1. Login to developer.webex.com > Documentation > API Reference > Contact Center](#1-login-to-developerwebexcom---documentation---api-reference---contact-center)
+- [Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings](#part-3-new-webex-contact-center-apis-retrieving-tasks-and-call-recordings)
+  * [1. Login to developer.webex.com > Documentation > API Reference > Contact Center](#1-login-to-developerwebexcom--documentation--api-reference--contact-center)
   * [2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in](#2-fetch-the-tasks-from-yesterday-or-the-last-week---depending-on-the-number-of-contacts-that-came-in)
-  * [3. Use the following Body for a POST Captures query. Ensure you have includeSegments set to true.](#3-use-the-following-body-for-a-post-captures-query-ensure-you-have-includesegments-set-to-true)
-  * [4. Use the links from the response to download the recordings.](#4-use-the-links-from-the-response-to-download-the-recordings)
+  * [3. Use the following Body for a POST Captures query. Ensure you have includeSegments set to true](#3-use-the-following-body-for-a-post-captures-query-ensure-you-have-includesegments-set-to-true)
+  * [4. Use the links from the response to download the recordings](#4-use-the-links-from-the-response-to-download-the-recordings)
 
 
 # Introduction
@@ -282,7 +282,7 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 - For Each CSR, you can pull the details of every CAR that is an activity within the session.
 - Every CAR has a reference to the CSR.
 
-# Part 3: New Webex Contact Center APIs - Retrieving Tasks and Call Recordings
+# Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jThcPefuzTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -303,7 +303,7 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 ## 1. Login to developer.webex.com > Documentation > API Reference > Contact Center
 - Go to the Get Tasks section.
 - Fetch all the tasks using the "From Date/time" in Epoch milliseconds.
-- To get the Epoch time use : https://www.epochconverter.com/ 
+- To get the Epoch time use [epochconverter](https://www.epochconverter.com)
 
 ## 2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in
 - Follow the steps to fetch all the contact information.
@@ -319,7 +319,7 @@ Example of a GET Task:
 
 > `Authorization:` `Bearer your-bearer-token-from-dev-portal`
 
-## 3. Use the following Body for a POST Captures query. Ensure you have includeSegments set to true.
+## 3. Use the following Body for a POST Captures query. Ensure you have includeSegments set to true
 
 POST https://webexapis.com/v1/contactCenter/captures/query
 
@@ -333,7 +333,7 @@ POST https://webexapis.com/v1/contactCenter/captures/query
 
 ```
 
-## 4. Use the links from the response to download the recordings. 
+## 4. Use the links from the response to download the recordings
 
 - If you are doing this programmatically, iterate over all the call recording objects and send a GET request to the call recording target.
 
