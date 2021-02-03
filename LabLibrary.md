@@ -28,7 +28,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 | 2021-01-28 | Webex Experience Management | [Lab 9: Webex Experience Management](labs/wxmlab) |
 | 2021-01-29 | Workforce Optimization | [Lab 10: Workforce Optimization](labs/WFO)|
 | 2021-02-02 | Serviceability | N/A |
-| 2021-02-03 | APIs | Lab 11: APIs |
+| 2021-02-03 | APIs | Lab 11: APIs |[Lab 11: APIs](labs/APIs)|
 | 2021-02-04 | Security & Compliance | N/A |
 | 2021-02-05 | Design Challenge & Build your Awesome Demo | N/A |
 
@@ -36,6 +36,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 Check this section for any updates that may require communication throughout the event.
 
+* 2021-02-03 - Lab 11 APIs has been **enabled** Enjoy!
 * 2021-01-29 - Lab 10 Workforce Optimization Lab has been **enabled** (demo only - WFO not enabled on lab pods)
 * 2021-01-28 - Lab 9 covering Webex Experience Management has been **enabled** by executive order
 * 2021-01-27 - Lab 8 which covers reporting with WxCC Analyzer has been **enabled**
@@ -59,4 +60,4 @@ Check this section for any updates that may require communication throughout the
 * [Lab 8: Reporting & Data](labs/AnalyzerLab)
 * [Lab 9: Webex Experience Management](labs/wxmlab)
 * [Lab 10: Workforce Optimization](labs/WFO)
-* Lab 11: APIs
+* [Lab 11: APIs](labs/APIs)
