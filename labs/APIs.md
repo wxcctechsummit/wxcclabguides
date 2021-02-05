@@ -355,7 +355,9 @@ POST https://webexapis.com/v1/contactCenter/captures/query
 - If you are doing this programmatically, iterate over all the call recording objects and send a GET request to the call recording target.
 
 
-### Addendum
+------ 
+
+## Addendum
 
 - To develop applications with the new APIs, you must build an integration with Webex.
 
