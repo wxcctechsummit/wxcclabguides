@@ -36,7 +36,8 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 Check this section for any updates that may require communication throughout the event.
 
-* 2021-02-03 = Lab 11 to explore the WxCC API lab is **all yours**
+* 2021-02-05 - **Update** to lab 6.  How to validate DialogFlow video.  (ask and you shall receive)
+* 2021-02-03 - Lab 11 to explore the WxCC API lab is **all yours**
 * 2021-01-29 - Lab 10 Workforce Optimization Lab has been **enabled** (demo only - WFO not enabled on lab pods)
 * 2021-01-28 - Lab 9 covering Webex Experience Management has been **enabled** by executive order
 * 2021-01-27 - Lab 8 which covers reporting with WxCC Analyzer has been **enabled**
