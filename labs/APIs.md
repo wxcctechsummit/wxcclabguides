@@ -34,6 +34,11 @@ title: "Lab 11: # Webex Contact Center APIs"
 
 - We will explore both the flavors - authenticating using an API Key using the legacy API and using a Bearer token with the new Webex Contact Center APIs on the developer portal.
 
+- **Note: If you would like to try out the new API endpoints you can go straight to Part 3** 
+> New Webex Contact Center API endpoints are accessed via - `https://webexapis.com/v1/contactCenter/{endpoint}`
+
+> The Developer docs are at: **developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`
+
 ## Pre-requisite
 
 Before you begin this lab:
@@ -52,11 +57,13 @@ Before you begin this lab:
 
 > [WxCC Analyzer](https://analyzer.wxcc-us1.cisco.com/analyzer/home)
 
-> [Legacy V1.0 endpoint - Resource](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id})
+> Legacy V1.0 endpoint - Resource - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}`
 
-> [Legacy V1.0 endpoint - Query](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query})
+> Legacy V1.0 endpoint - Query - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}`
 
-> [New Webex Contact Center API endpoint](https://webexapis.com/v1/contactCenter/{endpoint})
+Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
+
+This lab will deal with `csrs`
 
 # Part 1: Legacy 1.0 APIs: CSR, CSR Query
 
@@ -115,9 +122,9 @@ Headers after HMAC encoding: 
 - On the Analyzer Report for CSRs Today - Inspect the report - Right Click > Inspect.
 - Go to the network tab > Refresh > Search for a request in the format: `dataQuery?GET_DATA=`
 - Look at the response.
-- Copy this response out into a text editor.
-- Name the file analyzer.json
-- Copy the content after the `query: { ... }` tags
+- Copy this response out into a t`ext editor.
+- Name the file `analyzer.json` to enable automatic formatting as shown below, for ease of analysis.
+- Copy the content after the `query: { ... }` tags. That is your Query that you will URL encode to fetch the required reporting metadata.
 
 Example:
 
@@ -211,10 +218,11 @@ Example:
 
 ## 7. Encode this in a URL encoded format. i.e Copy this string and paste it in an encoder
 
-Example: 
+Example Site (3rd Party): 
 https://meyerweb.com/eric/tools/dencoder/ 
 
-- Click Encode 
+- Paste the content.
+- Click Encode.
 
 It will give you this text.
 
@@ -234,7 +242,7 @@ i.e
 
 
 ## 9. Add an Accept Header of text/csv
-- Add another header of `Accept` `text/csv` to get the raw CSR data from Analyzer.
+- Add another header of `Accept` of type `text/csv` to accept the raw CSV data from Analyzer for those CSR records.
 
     `Accept:` `text/csv`
 
@@ -250,11 +258,12 @@ i.e
 
 > [WxCC Analyzer](https://analyzer.wxcc-us1.cisco.com/analyzer/home)
 
-> [Legacy V1.0 endpoint - Resource](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id})
+> Legacy V1.0 endpoint - Resource - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}`
 
-> [Legacy V1.0 endpoint - Query](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query})
+> Legacy V1.0 endpoint - Query - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}`
 
-> [New Webex Contact Center API endpoint](https://webexapis.com/v1/contactCenter/{endpoint})
+Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
+This lab will deal with `cars`
 
 ## 1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format
 - Epoch time for fields `cstts` and `cetts` can be understood my looking at the Epoch converter https://www.epochconverter.com/ 
@@ -286,6 +295,15 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jThcPefuzTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+The New Webex Contact Center API endpoints are described in the Webex Contact Center Developer Portal Early Preview.
+**[Developer Portal Early Access - Detailed Documentation](https://apim-dev-portal.appstaging.ciscoccservice.com/)**
+
+> New Webex Contact Center API endpoints are accessed via - `https://webexapis.com/v1/contactCenter/{endpoint}`
+
+> The Official Developer docs are at: **developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`. 
+For any user to view these docs - since they are pre-release - please contact your Cisco PSAM for access.
+
+
 **Important Links**
 
 > [Control hub - For your Org Id](https://admin.webex.com)
@@ -294,21 +312,20 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 > [WxCC Analyzer](https://analyzer.wxcc-us1.cisco.com/analyzer/home)
 
-> [Legacy V1.0 endpoint - Resource](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id})
+> New Webex Contact Center API endpoints - `https://webexapis.com/v1/contactCenter/{endpoint}`
 
-> [Legacy V1.0 endpoint - Query](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query})
-
-> [New Webex Contact Center API endpoint](https://webexapis.com/v1/contactCenter/{endpoint})
+> The Official Developer docs are at: **developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`. 
 
 ## 1. Login to developer.webex.com > Documentation > API Reference > Contact Center
 - Go to the Get Tasks section.
 - Fetch all the tasks using the "From Date/time" in Epoch milliseconds.
 - To get the Epoch time use [epochconverter](https://www.epochconverter.com)
 
-## 2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in
-- Follow the steps to fetch all the contact information.
+## 2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in. 
 
-The same request can be drafted on Postman using your Bearer Token.
+- Follow the steps outlined in the video to fetch all the contact information of tasks from yesterday.
+
+The same request can be drafted on Postman using your personal Bearer Token.
 
 Example of a GET Task: 
 
@@ -336,6 +353,59 @@ POST https://webexapis.com/v1/contactCenter/captures/query
 ## 4. Use the links from the response to download the recordings
 
 - If you are doing this programmatically, iterate over all the call recording objects and send a GET request to the call recording target.
+
+
+### Addendum
+
+- To develop applications with the new APIs, you must build an integration with Webex.
+
+
+- See **[Contact Center Dev Portal Docs - Early Access](https://apim-dev-portal.appstaging.ciscoccservice.com/)** for all the details. 
+
+Here is a summary: 
+
+- Got to: developer.webex.com > My Webex Apps > Integration > New 
+
+- Check the scopes : `cjp:config_read` (for WxCC) and `cjp:analyzer_read` (For hybrid)
+
+Example: Getting Access – Bearer Token
+
+> Your App Completes the OAuth2 authorization to retrieve the Bearer Token
+
+1. GET `https://webexapis.com/v1/authorize?client_id=______&response_type=code&redirect_uri=_https://your-app/auth___&scope=cjp:config_read&state=set_state_here`
+
+application/x-www-form-urlencoded
+
+> Redirect sent to your App.
+
+2. GET https://your-app/auth?code=___unique_code_sent
+
+-  Redirect back to Your App with the code parameter (GET)
+-  Authorize (GET)
+
+> Request Access Token AND subsequent Refresh Tokens with the Code (POST)
+
+`POST https://webexapis.com/v1/access_token`
+
+```javascript
+{"access_token":"ZDI3MGEyYzQtNmFlNS00NDNhLWFlNzAtZGVjNjE0MGU1OGZmZWNmZDEwN2ItYTU3",
+"expires_in":1209600,
+"refresh_token":"MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5MDEyMzQ1Njc4OTEyMzQ1Njc4",
+"refresh_token_expires_in":7776000 }
+```
+
+> Expiry in seconds and required x-www-form-urlencoded values include
+
+> grant_type
+
+> client_id
+
+> client_secret
+
+> code
+
+> redirect_uri
+
 
 Changelog:
 
