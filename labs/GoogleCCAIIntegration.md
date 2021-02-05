@@ -71,7 +71,8 @@ We will be able to see "Dialogflow CX and Dialogflow ES". CX will be used or sui
 * Provide the name for this "Google Virtual Assistant". Remember, this will be the name reflecting to end customers on chat interactions.
 * Click Finish to save the configuration.
 
-
+## DialogFlow Validation Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SnxBo_gySIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Changelog:
 
@@ -79,5 +80,5 @@ Changelog:
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Avinash Satrasala (avsatras) | 05 Jan 2021 |
 | 2.0 | Formatting changes | Mike Turnbow (miturnbo) | 20 Jan 2021 |
-
+| 3.0 | Additional Video | Mike Turnbow (miturnbo) | 5 Feb 2021 |
 
