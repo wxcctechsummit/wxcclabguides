@@ -266,12 +266,12 @@ Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
 This lab will deal with `cars`
 
 ## 1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format
-- Epoch time for fields `cstts` and `cetts` can be understood my looking at the Epoch converter https://www.epochconverter.com/ 
+- Epoch time for fields `cstts` (Contact Start Time Stamp) and `cetts` (Contact end Time Stamp) can be understood by looking at the Epoch converter https://www.epochconverter.com/ 
 
 ## 2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.
-- A CAR is in the format : https://rest.wxcc-us1.cisco.com/aws/api/cars/{session}-{timestamp}-{event}
+- A CAR (Contact Activity Record) is in the format : https://rest.wxcc-us1.cisco.com/aws/api/cars/{contactsession}-{timestamp}-{event}
 
-- Session : CSR
+- Contact Session Record : CSR
 - Timestamp : The `cstts` Contact start time stamp of the event
 - Event: the event name: `new`, `ivr-connected`, `parked`, `ended` etc.
 
@@ -286,10 +286,11 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 > Substitute your values by Chaining the activity event types like `new` > `ivr-connected` > `parked` and retrieve the `cetts` for those events to plug in the epoch time stamps.
 
 ## 3. Complete Building out the above requests.
+
 - Understand that you can start the Analyzer request chain by pulling a CSR report.
-- From there, you can fetch the list of CSRs.
-- For Each CSR, you can pull the details of every CAR that is an activity within the session.
-- Every CAR has a reference to the CSR.
+- From there, you can fetch the list of CSRs iteratively, if doing this programmatically.
+- For Each CSR, you can retrieve the details of every CAR that is an activity within the session. Each CAR has an associated state.
+- Every CAR has a reference to the CSR, which is in the `session` attribute within the object.
 
 # Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings
 
