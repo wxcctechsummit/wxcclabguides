@@ -28,16 +28,16 @@ title: "Lab 11: # Webex Contact Center APIs"
 
 ## Lab Objective
 
-- This lab is designed to ensure you are able to use retrieve reporting data using the Legacy APIs which are carried over from version 1.0 and into the New Webex Contact Center platform.
+- This lab is designed to ensure you are able to retrieve reporting data using the Legacy APIs from version 1.0 - carried forward into the New Webex Contact Center platform.
 
 - The New Webex Contact Center APIs are currently in an Early release and have 4 endpoints available - GET Tasks, GET Agent Statistics, GET Queue Statistics and POST Capture Query (Call recording retrieval).
 
-- We will explore both the flavors - authenticating using an API Key using the legacy API and using a Bearer token with the new Webex Contact Center APIs on the developer portal.
+- We will explore both the flavors of accessing reporting and call recording data - authenticating using an API Key using the legacy API and using a Bearer token with the new Webex Contact Center APIs on the developer portal.
 
 - **Note: If you would like to try out the new API endpoints you can go straight to Part 3** 
 > New Webex Contact Center API endpoints are accessed via - `https://webexapis.com/v1/contactCenter/{endpoint}`
 
-> The Developer docs are at: **developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`
+> The Developer docs are at: **https://developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`
 
 ## Pre-requisite
 
