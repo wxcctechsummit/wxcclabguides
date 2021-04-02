@@ -30,8 +30,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
 1. All previous labs completed
 2. Admin or supervisor credential with Analytics access in user profile
-3. <a href="https://www.youtube.com/embed/E4Ch2gUSRi4?start=63" target="_blank">Entry Point Site Level Dashboard </a>
-4. Make sure to make few test calls and answered by the agent the day you attempting this lab (to ensure we have some data to analyze)
+3. Make sure to make few test calls and answered by the agent the day you attempting this lab (to ensure we have some data to analyze)
 
 
 # 1. Login into Analyzer and review user interface
