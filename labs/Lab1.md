@@ -8,10 +8,10 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 # Table of Contents
 - [Part 1: Control Hub OnBoarding Admin Tasks](#part-1-control-hub-onboarding-admin-tasks)
-  * [1. Set Up Contact Center](#1-set-up-contact-center)
+  * [Set Up Contact Center](#set-up-contact-center)
 - [Part 2: Control Hub Calling and Telephony Settings](#part-2-control-hub-calling-and-telephony-settings)
 - [Part 3: Control Hub User Management Admin Task](#part-3-control-hub-user-management-admin-task) 
-  * [1. Add a new admin user](#1-add-a-new-admin-user)
+  * [Add a new admin user](#add-a-new-admin-user)
 - [Part 4: Admin Portal Multimedia Profile, Site and Team Configuration](#part-4-admin-portal-multimedia-profile-site-and-team-configuration)
   * [1. Create new MultiMedia Profile](#1-create-new-multimedia-profile)
   * [2. Create new Site](#2-create-new-site)
@@ -48,7 +48,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jU2RzlVFukg?rel=0" title="WxCC Lab #1 Part 1: Control Hub OnBoarding Admin Tasks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 1. Set Up Contact Center
+### Set Up Contact Center
 
 - Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
 
