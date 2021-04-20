@@ -12,25 +12,9 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 | Date | Session | Corresponding Lab |
 | ---- | ------- | ----------------- |
-//| 2021-01-05 | CC Vision & WxCC Direction |  N/A |
-//| 2021-01-06 | WxCC Technical Overview | N/A |
-//| 2021-01-07 | Ordering/A2Q/Onboarding/Provisioning | N/A |
-| 2021-04-22 | Control Hub. Admin Portal | [Lab 1: Control Hub and Admin Portal](labs/Lab1) |
-| 2021-01-13 | Voice Integration | N/A |
-| 2021-01-14 | Business Outcomes | N/A |
-| 2021-01-15 | IVR & Contact Routing | [Lab 2: IVR & Contact Routing](labs/IVR_Contact_Routing) |
-| 2021-01-19 | Agent Desktop | [Lab 3: Agent Desktop](labs/CustomDesktopLayout) |
-| 2021-01-20 | CRM Integration | [Lab 4: CRM Integration](labs/SalesforceCRMLayout) |
-| 2021-01-21 | Email & Chat | [Lab 5: Email & Chat Configuration](labs/EmailChatConfiguration) |
-| 2021-01-22 | Google CCAI Integration | [Lab 6: Google CCAI Integration](labs/GoogleCCAIIntegration) |
-| 2021-01-26 | Omni-channel Routing | [Lab 7: Omnichannel Routing](labs/FacebookIntegration) |
-| 2021-01-27 | Reporting & Data | [Lab 8: Reporting & Data](labs/AnalyzerLab) |
-| 2021-01-28 | Webex Experience Management | [Lab 9: Webex Experience Management](labs/wxmlab) |
-| 2021-01-29 | Workforce Optimization | [Lab 10: Workforce Optimization](labs/WFO)|
-| 2021-02-02 | Serviceability | N/A |
-| 2021-02-03 | APIs | [Lab 11: APIs](labs/APIs)|
-| 2021-02-04 | Security & Compliance | N/A |
-| 2021-02-05 | Design Challenge & Build your Awesome Demo | N/A |
+| 2021-04-22 | Lab 1 - Control Hub & Admin Portal | [Lab 1: Control Hub and Admin Portal](labs/Lab1) |
+| 2021-04-29 | Lab 2 - IVR Contact Routing | N/A |
+
 
 ## Important Updates
 
