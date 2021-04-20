@@ -12,10 +12,10 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 | Date | Session | Corresponding Lab |
 | ---- | ------- | ----------------- |
-| 2021-01-05 | CC Vision & WxCC Direction |  N/A |
-| 2021-01-06 | WxCC Technical Overview | N/A |
-| 2021-01-07 | Ordering/A2Q/Onboarding/Provisioning | N/A |
-| 2021-01-12 | Control Hub. Admin Portal | [Lab 1: Control Hub and Admin Portal](labs/ControlHubAndAdminPortalLab) |
+//| 2021-01-05 | CC Vision & WxCC Direction |  N/A |
+//| 2021-01-06 | WxCC Technical Overview | N/A |
+//| 2021-01-07 | Ordering/A2Q/Onboarding/Provisioning | N/A |
+| 2021-04-22 | Control Hub. Admin Portal | [Lab 1: Control Hub and Admin Portal](labs/Lab1) |
 | 2021-01-13 | Voice Integration | N/A |
 | 2021-01-14 | Business Outcomes | N/A |
 | 2021-01-15 | IVR & Contact Routing | [Lab 2: IVR & Contact Routing](labs/IVR_Contact_Routing) |
