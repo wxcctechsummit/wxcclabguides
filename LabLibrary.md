@@ -12,7 +12,7 @@ Labs will be added prior to the last presentation each day. The schedule is belo
 
 | Date | Session | Corresponding Lab |
 | ---- | ------- | ----------------- |
-| 2021-04-22 | Lab 1 - Control Hub & Admin Portal | [Lab 1: Control Hub and Admin Portal](labs/Lab1) |
+| 2021-04-22 | Lab 1 - Control Hub & Admin Portal | [Lab 1: Control Hub and Admin Portal](labs/Lab1.md) |
 | 2021-04-29 | Lab 2 - IVR Contact Routing | N/A |
 
 
