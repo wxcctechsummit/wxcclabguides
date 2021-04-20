@@ -210,12 +210,11 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 [To top of this lab](#table-of-contents)
 
-### Congratulations, you are now ready to start the next section!
+### Congratulations, you have compleated Lab1 sections!
 
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LabLibrary";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/labs/lab1.html";}
 </script>
 
 <div id="button-row">
