@@ -29,36 +29,26 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Pre-requisites
 
-- You have an assigned **POD ID** and your **attendee ID**.
-- You have recived the **admin login** credentials.
-- You have the **calling DNIS**.
-- You have the agent/supervisor **extension** numbers.
+- You have a full admin access to your New WxCC tenant.
+- The voice chennel is configured and you have a PSTN number.
 
 ### Quick Links
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
-> Mailinator: **[https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"}**
 
 
 # Lab Section
 
 ## Part 3: Control Hub User Management Admin Task
 
-> The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users and set the extension. While adding the user, we will see how to select user roles. 
+> The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users, and in case of Webex Calling set the extension. While adding the user, we will see how to select user roles. 
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/b_o-0XoJVMw?rel=0" title="WxCC Lab #1 Part 1: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-| **User Role** | **User email**      | **User Extension**                   |
-| ----------- | ----------------- | -------------------------------- |
-| Agent        | agent1_\<ID\>@mailinator.com   | 1000 |
-| Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2000 |
+### 1. Add a new admin user
 
-> **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
-
-### 1. Add an agent and a supervisor users and configure the calling extension
-
-- Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the admin account.
+- Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
 
 - Navigate to **_Users_**.
 
@@ -68,38 +58,27 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Select **_Next_** in **_Manage Users_** pane.
 
-- Input the **Email addresses** of the agent and supervisor users and click **_Next_**. 
+- Input the **Email addresses** of the new user and click **_Next_**. 
 
 - Verify that the **Email addresses** are same as in the table above and click **_Next_**.
 
-- Check **_Webex Teams_** , **_Webex Calling (Enterprise)_** & **_Contact Center_**.
+- Check **_Webex Teams_** , **_Webex Calling (Enterprise)_** (only if your tenant has a Webex Calling connection) & **_Contact Center_**.
 
 - Ensure that the License Type is **_Premium Agent_** and Role is **_Agent_** and click **_Next_**. 
 
-- On the next page, make sure that the **_Location_** is selected under **_Assign Numbers_**. The correct value should be already selected by default. 
-
-- The **_Phone Number_** left as **None**.
-
-- On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
+- If Webex Calling is selected, make sure that the **_Location_** is selected under **_Assign Numbers_**. The correct value should be already selected by default. Make sure, that the **_Phone Number_** left as **None**. On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
+> **Note:** You will not get the step above if your tenant has a vPOP bridge conneciton.
 
 - Click **_Finish_**.
 
-- On the next page, you should get confirmation **"2 Total records processed"**. Confirm the same by pressing **_Finish_**.
+- On the next page, you should get confirmation **"1 Total records processed"**. Confirm the same by pressing **_Finish_**.
 
-- Select the supervisor user and modify his role to **_Supervisor_** by clicking the top **_Edit_** button in front of **_Services_**. Click **_Save_** to confirm the changes.
+- Select the new user and modify his role to **_Organization Administrator_** by clicking the **_Administrator Roles_** in **_Roles and Security_** section. Click **_Save_** to confirm the changes.
 
-- Validate the users by going to [https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"} and putting agent/supervisor email in to **_Enter Public Mailinator Inbox_** 
+- Validate the users by going to the user's mail box. Check the email inboxes and follow the **Cisco Webex** email instructions to activate the user accounts. For the user activation, you have to set the password twice for both users.
 
-> **Note:** You do not need a password to open the inbox on mailinator. You can read any emails without mailbox credentials. Just insert agent name in the top right form and click **GO**.
-> ![Mailinator](../images/mailinator.png)
+- Refresh the **_Users_** page in the Control Hub, make sure that new user is in **Active** status.
 
-- Check the email inboxes and follow the **Cisco Webex** email instructions to activate the user accounts. For the user activation, you have to set the password twice for both users.
-
-- Refresh the **_Users_** page in the Control Hub, make sure that all users are in **Active** status.
-
-### 2. Optionally, add the rest of the users
-
-- Follow the same steps as above to add any extra users that you want to add to the Contact Center.
 
 [To top of this lab](#table-of-contents)
 
