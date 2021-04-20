@@ -7,10 +7,11 @@ title: "Lab 1: Control Hub And Admin Portal"
 In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by a customer administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to log in to an agent interface with the configured user extension.
 
 # Table of Contents
-
+- [Part 1: Control Hub OnBoarding Admin Tasks](#part-1-control-hub-onboarding-admin-tasks)
+  * [1. Set Up Contact Center](#1-set-up-contact-center)
+- [Part 2: Control Hub Calling and Telephony Settings](#part-2-control-hub-calling-and-telephony-settings)
 - [Part 3: Control Hub User Management Admin Task](#part-1-control-hub-user-management-admin-task) 
-  * [1. Add an agent and a supervisor users and configure the calling extension](#1-add-an-agent-and-a-supervisor-users-and-configure-the-calling-extension)
-  * [2. Optionally, add the rest of the users](#2-optionally-add-the-rest-of-the-users)
+  * [1. Add a new admin user](#1-add-a-new-admin-user)
 - [Part 4: Admin Portal Multimedia Profile, Site and Team Configuration](#part-2-admin-portal-multimedia-profile-site-and-team-configuration)
   * [1. Create new MultiMedia Profile](#1-create-new-multimedia-profile)
   * [2. Create new Site](#2-create-new-site)
@@ -19,6 +20,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - [Part 5: Admin Portal User Configuration](#part-3-admin-portal-user-configuration)
   * [1. Synchronize Webex Contact Center Users](#1-synchronize-webex-contact-center-users)
   * [2. Manage settings for existing user](#2-manage-settings-for-existing-user)
+- [Part 6: Tenant Creation Walkthrough](#part-6-tenant-creation-walkthrough)
 
 # Introduction
 
@@ -39,14 +41,88 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 # Lab Section
 
+## Part 1: Control Hub OnBoarding Admin Tasks
+
+>The following video outlines the steps involved in the completion of tenant OnBoarding by the Customer Administrator. The objective of this lab is to make the customer admin trigger the background activities, that will complete the tenant setup. Skipping this step can cause social channels not to work.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jU2RzlVFukg?rel=0" title="WxCC Lab #1 Part 1: Control Hub OnBoarding Admin Tasks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 1. Set Up Contact Center
+
+- Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
+
+- Navigate to **_Contact Center_** Card.
+
+- Click on **_Settings_**.
+
+- If the button is not greyed out click on **_Set up Webex Contact Center_**.
+>**Note:** The step above can be done only once per tenant.
+
+## Part 2: Control Hub Calling and Telephony Settings
+
+>The following video show two options of telephony configuration. First part outlines the Webex calling and configuration steps that enable the administrator to use the configured default location and assign a number for those locations. The second part shows the Telephony Settings in case of vPOP connection or PSTN Bundle.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/stN4BoLDEBU?rel=0" title="WxCC Lab #1 Part 2: Control Hub Calling or Telephony Settings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 1. Set Calling default Service Setting as Cloud Connected PSTN
+>**Note:** The steps below are needed only for Webex Calling Connection. You can skip this section if it is already configured on your tenant.
+
+- Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
+
+- Navigate to **_Calling Card_**.
+
+- Click on **_Service Settings_**.
+
+- Scroll down to **_PSTN Connection_** section.
+
+- Select **_Cloud Connected PSTN_**.
+
+- From the drop down, select the correct provider and hit **_Save_**.
+
+- Navigate to **_Locations_**.
+
+- Create a new location.
+
+- Click on **_Unassigned_** to set the PSTN Connection.
+
+- Click **_Edit_** under **_Local Gateway_**.
+
+- Hit **_Continue_** to **_Edit PSTN Connection for Richardson_**.
+
+- Select **_Cloud Connected PSTN_**.
+
+- From the drop down, select the PSTN Provider.
+
+- Check the 2 boxes for accepting **_Phone Number Porting Confirmation_**.
+
+- Click **_Save_** to finish the setup and then exit out of Location config pane.
+
+- Navigate to **_Numbers_**
+
+- Click on **_Add Numbers_**
+
+- Under **_Location_** drop down , you should find **_Richardson_**. Select it
+
+- Add the first DN and click on **_Validate_**
+
+- Add the Second DN and click on **_Validate_**
+
+- Click **_Save_**
+
+### 2. Setup the Telephony Settings
+>**Note:** The steps below are needed only for vPOP connection or PSTN Bundle. You can skip this section if it is already configured on your tenant.
+
+
 ## Part 3: Control Hub User Management Admin Task
 
 > The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users, and in case of Webex Calling set the extension. While adding the user, we will see how to select user roles. 
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/b_o-0XoJVMw?rel=0" title="WxCC Lab #1 Part 1: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/b_o-0XoJVMw?rel=0" title="WxCC Lab #1 Part 3: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 1. Add a new admin user
+### Add a new admin user
 
 - Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
 
@@ -66,8 +142,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Ensure that the License Type is **_Premium Agent_** and Role is **_Agent_** and click **_Next_**. 
 
-- If Webex Calling is selected, make sure that the **_Location_** is selected under **_Assign Numbers_**. The correct value should be already selected by default. Make sure, that the **_Phone Number_** left as **None**. On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
-> **Note:** You will not get the step above if your tenant has a vPOP bridge conneciton.
+- If Webex Calling is selected, make sure that the **_Location_** is selected under **_Assign Numbers_**. Make sure, that the **_Phone Number_** left as **None**. On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
+> **Note:** The step above is not applicable if your tenant has a vPOP bridge connection and does not have a WxC license.
 
 - Click **_Finish_**.
 
@@ -84,19 +160,18 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Part 4: Admin Portal Multimedia Profile, Site and Team Configuration
 
-> The following video outlines how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to each different Contact Center Users. We will also see how to navigate to the Webex Contact Center Management Portal from Control Hub UI.
+> The following video outlines how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. We will also see how to navigate to the Webex Contact Center Management Portal from Control Hub UI.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/G9yWf_dk2D0?rel=0" title="WxCC Lab #1 Part 2: Admin Portal Multimedia Profile, Site and Team Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/G9yWf_dk2D0?rel=0" title="WxCC Lab #1 Part 4: Admin Portal Multimedia Profile, Site and Team Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 | **Entity** | **Name**      | 
 | ----------- | ----------------- | 
-| Multimedia Profiles        | MM_Profile_wxcclab_\<ID\>   | 
-| Site         | Site_wxcclab_\<ID\>  | 
-| Team1         | Team1\_wxcclab_\<ID\> | 
-| Team2         | Team2\_wxcclab_\<ID\>  | 
+| Multimedia Profiles        | MMP\_TS   | 
+| Site         | Site\_TS  | 
+| Team1         | Team1\_TS | 
+| Team2         | Team2\_TS  | 
 
-> **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
 
 ### 1. Create new MultiMedia Profile
 
@@ -118,15 +193,15 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on `+ New Multimedia Profile` to open Multimedia Profile configuration page.
 
-- Input Name as `MM_Profile_wxcclab_<ID>` and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, `3` for **_Social Channel_** and click **_Save_**.
+- Input Name as `MMP_TS` and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, `3` for **_Social Channel_** and click **_Save_**.
 
 ### 2. Create new Site
 
 - Navigate to **_Provisioning_** and select **_Site_**.
 
-- Click on `+ New Site` button and provide the Name as `Site_wxcclab_<ID>`.
+- Click on `+ New Site` button and provide the Name as `Site_TS`.
 
-- Select `MM_Profile_wxcclab_<ID>` in the **_Multimedia Profile_** drop down and hit **_Save_**.
+- Select `MMP_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
 
 ### 3. Create new Team 1 
 
@@ -134,27 +209,27 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on `+ New Team`.
 
-- Select `Site_wxcclab_<ID>` from the **_Site_** drop-down.
+- Select `Site_TS` from the **_Site_** drop-down.
 
-- Input **_Name_** as `Team1_wxcclab_<ID>`.
+- Input **_Name_** as `Team1_TS`.
 
 - Use the default **_Type_** `Agent Based`.
 
-- Select `MM_Profile_wxcclab_<ID>` in the **_Multimedia Profile_** drop-down.
+- Select `MMP_TS` in the **_Multimedia Profile_** drop-down.
 
 - Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
 
 ### 4. Create new Team 2
 
-- Please follow the same steps as above to add an extra Team as `Team2_wxcclab_<ID>`. Later we will use this team to assign a custom Desktop Layout.
+- Please follow the same steps as above to add an extra Team as `Team2_TS`. Later we will use this team to assign a custom Desktop Layout.
 
 [To top of this lab](#table-of-contents)
 
 ## Part 5: Admin Portal User Configuration
 
->The following video outlines how to configure the users in Admin Portal that were added first in Control Hub. This is a very critical task from the Contact Center perspective. We also would take a look at how to associate customer-created Site, Team, and Multi-Media Profile with those users. After this, we should be able to login as an agent using any of the users and their associated extension.
+>The following video outlines how to configure the users in Admin Portal that were added first in Control Hub. This is a very critical task from the Contact Center perspective. We also would take a look at how to associate customer-created Site, Team, and Multi-Media Profile with those users. After this, we should be able to login as an agent.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/Y5bmhAw_gBg?rel=0" title="WxCC Lab #1 Part 3: Admin Portal User Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/Y5bmhAw_gBg?rel=0" title="WxCC Lab #1 Part 5: Admin Portal User Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### 1. Synchronize Webex Contact Center Users
@@ -163,13 +238,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Enter the admin email id and the password.
 
-- Navigate to **_Contact Center_** card/
+- Navigate to **_Contact Center_** card.
 
 - Click on **_Settings_** and then `Synchronize Users`.
 
 ### 2. Manage settings for existing user
 
-- Go back to the **_Webex Contact Center Management Portal__**.
+- Go back to the **_Webex Contact Center Management Portal_**.
 
 - Click on **_Provisioning_** and select **_Users_**.
 
@@ -177,19 +252,26 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on **_Contact Center Enabled_** toggle to move it to **_On_**.
 
-- In the **_Agent Settings_** section, select `Site_wxcclab_<ID>` in the **_Site_** drop-down.
+- In the **_Agent Settings_** section, select `Site_TS` in the **_Site_** drop-down.
 
-- Click the **_Teams_** area and select `Team1_wxcclab_<ID>` and `Team2_wxcclab_<ID>`.
+- Click the **_Teams_** area and select `Team1_TS` and `Team2_TS`.
 
-- Select `MM_Profile_wxcclab_<ID>` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
+- Select `MMP_TS` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
 
-- Repeat the same for all other users by selecting the appropriate profile in the **_User Profile_** drop down.
+- Make sure that the user are now shown with the **_Contact Center Enabled_** flag as `Yes` and **_Status_** as `Active`.
 
-- Make sure that both users are now shown with the **_Contact Center Enabled_** flag as `Yes` and **_Status_** as `Active`.
 
 [To top of this lab](#table-of-contents)
 
-### Congratulations, you have compleated Lab1 sections!
+## Part 6: Tenant Creation Walkthrough
+
+>The following video does a quick demo on how a partner creates a tenant using the partner portal. This particular section is not part of the lab but is included as bonus content so that you get familiarized with this process. This also highlights the various configuration options that should be selected before the last step is executed which  is to click the Setup Webex Contact Center button.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/HkIDvYS3Lw8?rel=0" title="WxCC Lab #1 Part 6: Tenant Creation Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### Congratulations, you have compleated Lab1 tasks!
+
 
 
 <script>
