@@ -123,6 +123,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 
 ### Add a new admin user
+>**Note:** You can skip those steps if already have a user who is not assigned to any sites and teams.
 
 - Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
 
@@ -142,7 +143,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Ensure that the License Type is **_Premium Agent_** and Role is **_Agent_** and click **_Next_**. 
 
-- If Webex Calling is selected, make sure that the **_Location_** is selected under **_Assign Numbers_**. Make sure, that the **_Phone Number_** left as **None**. On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
+- If Webex Calling is selected, make sure that the **_Location_** is selected under **_Assign Numbers_**. Make sure, that the **_Phone Number_** left as `None`. On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
 > **Note:** The step above is not applicable if your tenant has a vPOP bridge connection and does not have a WxC license.
 
 - Click **_Finish_**.
@@ -193,7 +194,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on `+ New Multimedia Profile` to open Multimedia Profile configuration page.
 
-- Input Name as `MMP_TS` and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, `3` for **_Social Channel_** and click **_Save_**.
+- Input Name as `MMP_TS`.
+
+- In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, `3` for **_Social Channel_** and click **_Save_**.
 
 ### 2. Create new Site
 
