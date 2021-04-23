@@ -119,7 +119,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 > The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users, and in case of Webex Calling set the extension. While adding the user, we will see how to select user roles. 
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/b_o-0XoJVMw?rel=0" title="WxCC Lab #1 Part 3: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/zpUPQCroTPA?rel=0" title="WxCC Lab #1 Part 3: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Add a new admin user
@@ -163,7 +163,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 > The following video outlines how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. We will also see how to navigate to the Webex Contact Center Management Portal from Control Hub UI.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/G9yWf_dk2D0?rel=0" title="WxCC Lab #1 Part 4: Admin Portal Multimedia Profile, Site and Team Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/nQX5ZYfZub4?rel=0" title="WxCC Lab #1 Part 4: Admin Portal Multimedia Profile, Site and Team Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 | **Entity** | **Name**      | 
