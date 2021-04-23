@@ -47,8 +47,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jU2RzlVFukg?rel=0" title="WxCC Lab #1 Part 1: Control Hub OnBoarding Admin Tasks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
+ 
 ### Set Up Contact Center
+> ** Note. ** The task below can only be completed once for each tenant. If you've already done this, you can skip it and go to the next section.
 
 - Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
 
@@ -57,7 +58,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Click on **_Settings_**.
 
 - If the button is not greyed out click on **_Set up Webex Contact Center_**.
->**Note:** The step above can be done only once per tenant.
+
 
 ## Part 2: Control Hub Calling and Telephony Settings
 
