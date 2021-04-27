@@ -53,7 +53,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 >The following video outlines the steps involved in the completion of tenant OnBoarding by the Customer Administrator. The objective of this lab is to make the customer admin trigger the background activities, that will complete the tenant setup. Skipping this step can cause social channels not to work.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jU2RzlVFukg?rel=0" title="WxCC Lab #1 Part 2: Control Hub OnBoarding Admin Tasks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/qYvXd-ZGUWc?rel=0" title="WxCC Lab #1 Part 2: Control Hub OnBoarding Admin Tasks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  
 ### Set Up Contact Center
