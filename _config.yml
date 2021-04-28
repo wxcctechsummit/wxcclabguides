@@ -6,7 +6,7 @@ author:
 remote_theme: jekyll/minima
 
 minima:
-  skin: dark
+  skin: light
   social_links:
     twitter: Webex
 
