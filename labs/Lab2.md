@@ -92,12 +92,12 @@ These tasks are to be completed by the customer administrator. By following thes
 
 ### 4. Launch Portal to ensure the admin user admin1pod__@__ is Contact center configured for testing.
 
-- A Site has already been created for the Admin: `Site-1`, `Team_wxcclab`
+- A Site has already been created for the Admin: `Site_TS_`, `Team_TS`
 - Ensure the Admin is Contact Center Enabled.
 - Associate the User to the Site, Team, default Multimedia Profile - `Default_Telephony_Profile`.
 - Verify by Launching the Agent Desktop and logging in.
 
-> **Note:** Please Check the `Site` that the user admin1pod__@email.carehybrid.com is assigned to. And create the `Team_wxcclab` under the right Site.
+> **Note:** Please Check the `Site_TS` that the user admin1pod__@email.carehybrid.com is assigned to. And create the `Team_TS` under the right Site.
 
 - If you would like to Create a Team, create the Team under that Site - and assign the Team to the Agent.
 - `Agent` > `Site` relationship cannot be changed. So all teams will need to be created under the same site.
@@ -177,29 +177,29 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 - Login to Portal and create an inbound voice entry point and voice queue. (Provisioning > Entry Point / Queue).
 
-- Create the Entry Point named `EP_wxcclab` where `<ID>` is your attendee ID provided.
+- Create the Entry Point named `EP_TS` where `<ID>` is your attendee ID provided.
 
-- Create the Queue named `Q_wxcclab_LAA` where `<ID>` is your attendee ID provided.
+- Create the Queue named `Q_TS` where `<ID>` is your attendee ID provided.
 
 **Here are the Queue Settings**
 
 |Configuration |field Value|
 |-------------|----------|
-|Name |Queue_LAA_`<ID>`|
+|Name |Q_TS|
 |Channel Type |Telephony|
 |*----  Contact Routing Settings ---*|
 |Queue Routing Type |Longest Available Agent|
 |Call Distribution |`<Add team>`|
 |*----  Advanced Settings ---*|
-|Service Level Threshold |20|
-|Maximum Time in Queue |7200|
+|Service Level Threshold |60|
+|Maximum Time in Queue |600|
 |Time Zone |Default|
 
 * `<ID>` is your attendee ID provided.
 
 ---
 
-- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to EP_voice_wxcclab
+- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to EP_voice_TS
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
 
