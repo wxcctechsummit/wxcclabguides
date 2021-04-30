@@ -45,14 +45,20 @@ title: "Lab 2: IVR and Contact Routing"
 
 - The lab will also contain multiple exercises on flow designer to make you comfortable with the Webex Contact Center Flow Designer and the overall Contact Routing configuration.
 
-**IVR Prompts:** We will be configuring static prompts for you and pre-uploading them in part 1. You may also keep a copy of the zip file if you want to manually upload them. In the bonus lab, we also share how you can convert these prompts to dynamic TTS prompts using the Text to speech connector configuration available within flow control.  
+**IVR Prompts:** We will expect you to configure static prompts which will be shared for use. You can upload these "CiscoDemo" prompts and use them for the labs. You may also keep a copy of the zip file if you want to manually upload them. In the bonus lab sections, we also share how you can convert these prompts to dynamic TTS prompts using the Text to speech connector configuration available within flow control.  
 
 **Lookups, Advanced Scripting, Screen-pops:** We have chosen specific areas of focus for advanced scripting topics. We have more content shared in the bonus sections on how to get other use cases configured.
 
-## Pre-requisite
+**Estimated Wait Time, Position in Queue, Skills Based Routing:** We will cover the newer features on Webex Contact Center, including the estimated wait time/position in queue block, and skills based routing.
+
+## Pre-requisites
 
 Before you begin this lab
->The following video outlines the pre-requisites before beginning the lab.
+
+> The following video outlines the pre-requisites before beginning the lab.
+> We assume that you have your Gold Tenant setup, along with the telephony option of your choice.
+> In the video, we take the example of a Webex Calling org - but the number mapping process is similar.
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hO-yCjjLA5o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -62,9 +68,10 @@ Before you begin this lab
 4. Admins have proper Webex Contact Center license.
 5. Synchronize users is clicked.
 6. All users visible on Portal > Users and Contact Center Enabled.
-7. All Users that need to login to agent desktop are assigned `Site_wxcclab` and `Team_wxcclab` - e.g agent1,super1,agent2,super2,etc. Also All agents are properly assigned Agent Profiles and Multimedia profiles.
+7. All Users that need to login to agent desktop are assigned a `Site` and a `Team` - e.g agent1,super1,agent2,super2,etc. 
+8. All agents are properly assigned Agent Profiles and Multimedia profiles. `Multimedia Profiles are mandatory to login.`
 8. Control Hub, Portal and Agent Desktop URLs handy.
-9. Admin credentials handy for configuration.
+9. Admin credentials handy for Configuration.
 10. Agent Credentials handy to Handle contacts.
 11. External Number to Route Transfer outs, voice mail within flow : **Cisco Support Helpline -- `+18005536387`**  -- P.S: *This will actually connect you to the live toll free number!*
 
@@ -74,18 +81,22 @@ Before you begin this lab
 - Ensure that they have activated the Email and are "Active" on Control Hub. Synchronize users to get any newly activated users.
 
 > Launch Portal to ensure all the users (admins, agents, supervisors) are contact center configured for testing.
-- Create a Site : `Site_wxcclab`, `Team_wxcclab`
-- Activate the agents to be Contact Center Enabled.
-- Associate the Agents to the Site, Team, default Multimedia Profile - `Default_Telephony_Profile`.
-- Verify by Launching the Agent Desktop and logging in.
+- Create a Site and Team: For example `Site_wxcclab` and `Team_wxcclab`
+- Activate the agents to be `Contact Center Enabled`.
+- Associate the Agents to the `Site`, `Team`, and Default Multimedia Profile - `Default_Telephony_Profile`.
+- Verify by [Launching the Agent Desktop](https://desktop.wxcc-us1.cisco.com) and logging in.
 
 > Participants can choose to download and install the WebEx Calling App for Agents, Admins or Supervisors and make on-net calls.
+
+**DOWNLOAD LOCATION**
+
+****
 
 **Download instructions**
 
 **[https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App](https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App)**
 
-**Links**
+**Quick Links**
 
 > Control hub: **[https://admin.webex.com](https://admin.webex.com)**
 
@@ -343,3 +354,4 @@ Changelog:
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Arunabh Bhattacharjee (arubhatt) | 10 Jan 2021 |
+| 1.1 | Updated with SBR | Arunabh Bhattacharjee (arubhatt) | 25 April 2021 |
