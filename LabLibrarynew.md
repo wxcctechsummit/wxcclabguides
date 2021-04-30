@@ -22,7 +22,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 
 Check this section for any updates that may require communication throughout the event.
 
-* 2021-04-28 - Control Hub and Admin Portal lab is on schedule to be completed by this Friday
+* 2021-04-30 - Labs are delayed and expected to be released on Monday
 
 <!---
 ## Lab Document Links
