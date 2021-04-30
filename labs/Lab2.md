@@ -272,7 +272,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 ### 1. Copy out the flow and configure the advanced flow
 
 - Open the Portal > Routing Strategy > Flow page.
-- Copy the existing flow flow_Lab1_Task2 and edit the copied flow - name it `Flow_Lab2_<ID>`
+- Copy the existing flow flow_Lab1_Task2 and edit the copied flow - name it `Flow2`
 - Edit the flow to go into flow designer.
 - Ensure that you configure the Menu steps with a 3 option - 2 queue, 1 Blind Transfer step.
 - Ensure you configure all the fields in the menu step including the prompts and the entry timeout (requires you to explore all options on the step).
@@ -285,23 +285,6 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 > `Make all Menu Steps Interruptible by default` - This gives callers an option to bypass the prompt. It is a small checkbox on the Menu Step.
 
 > `In the Menu Block > Advanced Settings > Entry Timeout = Make it 10 Seconds` - This gives callers enough time to complete the DTMF (digit) entry.
-
-
-### 2. Configure Dummy Queue to Exercise Opt-Out Options
-
-- Open the Portal > Provisioning > Queue.
-
-
-|Configuration field|Value|
-|------|------|
-|Name	|Queue_Dummy_`<ID> `|
-|Channel Type|Telephony|
-| *----Contact Routing Settings---*	 | |
-|Queue Routing Type|	Longest Available Agent|
-|Call Distribution|	`<Add team>`|
-|Service Level Threshold |	20|
-|Maximum Time in Queue	|7200|
-|Time Zone	|Default|
 
 ---
 
@@ -406,7 +389,7 @@ Validate the flow and publish it.
 ### 1. Copy out the flow and configure the advanced flow 2
 
 - Open the Portal > Routing Strategy > Flow page.
-- Copy the existing flow `Flow_Lab2_<ID>` and edit the copied flow - name it `Flow_Lab3_<ID>`
+- Copy the existing flow `Flow2` and edit the copied flow - name it `Flow3`
 - Edit the flow to go into flow designer.
 
 ### 2. Enhance the existing flow with an authentication piece
@@ -493,7 +476,8 @@ customerPhone = $.[0].phone
 ### 7. Verify the flow end to end
 
 - Verify the new flow end to end by first, logging into the Agent Desktop and going into a ready state.
-- Execute the bewlo Test:
+
+Execute the Test:
 - Call the Dial number > Enter the 5 digit PIN number > On Main Menu press 2 > call gets connected to agent, 
 
 `Agent should see all CAD variables (Customer Name, Email, Account Number)`
