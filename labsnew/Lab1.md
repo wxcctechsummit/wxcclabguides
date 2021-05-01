@@ -8,8 +8,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 # Table of Contents
 - [Part 1: Tenant Creation Walkthrough](#part-1-tenant-creation-walkthrough)
-- [Part 2: Control Hub OnBoarding Admin Tasks](#part-2-control-hub-onboarding-admin-tasks)
-  * [Set Up Contact Center](#set-up-contact-center)
+- [Part 2: Bonus Video Only Trial Tenant Setup](#part-2-bonus-Trial-Tenant-Setup-Video)
 - [Part 3: Control Hub Calling and Telephony Settings](#part-3-control-hub-calling-and-telephony-settings)
 - [Part 4: Control Hub User Management Admin Task](#part-4-control-hub-user-management-admin-task) 
   * [Add a new admin user](#add-a-new-admin-user)
@@ -75,17 +74,17 @@ In this Lab, we will go through the tasks that are required to complete the gene
 17. The last step in this process is clicking on the `Provision Webex Contact Center` button which takes a few seconds and then grays out.
 18. This is the end of this lab module
 
-### BONUS Trial Tenant Setup Video
+## Part 2 **BONUS** Trial Tenant Setup Video
 >This is not a lab video.  It is a bonus video showing how to setup a Trial Tenant.  The steps are similar but since this is a trial tenant it is not necessary to go through the ordering process.  Trial tenants are a great option for customers who are willing to try Webex Contact Center prior to a purchase.
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/m9QamZh4LwI?rel=0" title="Trial Tenant Setup - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  
-## Part 2: Control Hub Calling and Telephony Settings
+## Part 3: Control Hub Calling and Telephony Settings
 
 >The following video show two options of telephony configuration. First part outlines the Webex calling and configuration steps that enable the administrator to use the configured default location and assign a number for those locations. The second part shows the Telephony Settings in case of vPOP connection or PSTN Bundle.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/stN4BoLDEBU?rel=0" title="WxCC Lab #1 Part 3: Control Hub Calling or Telephony Settings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/cr_QUKvu4yc?rel=0" title="WxCC Lab #1 Part 3: Control Hub Calling or Telephony Settings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Set Calling default Service Setting as Cloud Connected PSTN
@@ -133,8 +132,6 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click **_Save_**
 
-### Setup the Telephony Settings
->**Note:** The steps below are needed only for vPOP connection or PSTN Bundle. You can skip this section if it is already configured on your tenant.
 
 
 ## Part 4: Control Hub User Management Admin Task
