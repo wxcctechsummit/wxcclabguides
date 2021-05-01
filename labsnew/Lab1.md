@@ -8,7 +8,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 # Table of Contents
 - [Part 1: Tenant Creation Walkthrough](#part-1-tenant-creation-walkthrough)
-- [Part 2: Bonus Video Only Trial Tenant Setup](#part-2-bonus-Trial-Tenant-Setup-Video)
+- [Part 2: Bonus Video Only Trial Tenant Setup](#part-2-bonus-trial-tenant-setup-video)
 - [Part 3: Control Hub Calling and Telephony Settings](#part-3-control-hub-calling-and-telephony-settings)
 - [Part 4: Control Hub User Management Admin Task](#part-4-control-hub-user-management-admin-task) 
   * [Add a new admin user](#add-a-new-admin-user)
