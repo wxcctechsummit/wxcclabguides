@@ -88,8 +88,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/stN4BoLDEBU?rel=0" title="WxCC Lab #1 Part 3: Control Hub Calling or Telephony Settings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 1. Set Calling default Service Setting as Cloud Connected PSTN
->**Note:** The steps below are needed only for Webex Calling Connection. You can skip this section if it is already configured on your tenant.
+### Set Calling default Service Setting as Cloud Connected PSTN
+>**Note:** The steps below are needed **only for Webex Calling Connection**. You can skip this section if it is already configured on your tenant.
 
 - Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
 
@@ -133,7 +133,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click **_Save_**
 
-### 2. Setup the Telephony Settings
+### Setup the Telephony Settings
 >**Note:** The steps below are needed only for vPOP connection or PSTN Bundle. You can skip this section if it is already configured on your tenant.
 
 
