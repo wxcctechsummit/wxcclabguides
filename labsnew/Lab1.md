@@ -78,7 +78,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### BONUS Trial Tenant Setup Video
 >This is not a lab video.  It is a bonus video showing how to setup a Trial Tenant.  The steps are similar but since this is a trial tenant it is not necessary to go through the ordering process.  Trial tenants are a great option for customers who are willing to try Webex Contact Center prior to a purchase.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/zxdl28izCJw?rel=0" title="Trial Tenant Setup - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/m9QamZh4LwI?rel=0" title="Trial Tenant Setup - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Part 2: Control Hub OnBoarding Admin Tasks
 
