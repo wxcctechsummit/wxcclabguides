@@ -80,14 +80,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/m9QamZh4LwI?rel=0" title="Trial Tenant Setup - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Part 2: Control Hub OnBoarding Admin Tasks
-
->The following video outlines the steps involved in the completion of tenant OnBoarding by the Customer Administrator. The objective of this lab is to make the customer admin trigger the background activities, that will complete the tenant setup. Skipping this step can cause social channels not to work.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/qYvXd-ZGUWc?rel=0" title="WxCC Lab #1 Part 2: Control Hub OnBoarding Admin Tasks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
  
-## Part 3: Control Hub Calling and Telephony Settings
+## Part 2: Control Hub Calling and Telephony Settings
 
 >The following video show two options of telephony configuration. First part outlines the Webex calling and configuration steps that enable the administrator to use the configured default location and assign a number for those locations. The second part shows the Telephony Settings in case of vPOP connection or PSTN Bundle.
 
