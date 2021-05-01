@@ -52,7 +52,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Provisioning Tasks
 1. Initially, an example is given if you choose to delegate the provisioning task to someone else
 2. Once your Control Hub provisioning email has been received, click the link to begin the provisioning process
-	- If you do not need to setup Control Hub in your organization, you can skip to the video section [here](https://youtu.be/zxdl28izCJw) for WxCC 2.0 provisioning
+	- If you do not need to setup Control Hub in your organization, you can skip to the video section using the link below for WxCC 2.0 provisioning
+> * <a href="https://www.youtube.com/embed/zxdl28izCJw?start=317" target="_blank">Provisioning Webex Contact Center </a>
+
 3. The provisioning wizard will guide you through the process and initially there are validation tasks.  `Pay close attention to the validation information as any errors here may cause many problems later that cannot easily be resolved`
 4. For the 'Identify Customer Admin' section, if this were a `customer` build, you would enter the actual customer email who will be a local administrator.  However, since this is intended to be a GOLD tenant, enter your own email or that of someone else in your org.
 5. Validate all the information for your Control Hub in the following setup screens ensuring that `United States of America` is the chosen location.  Choosing a different country does have implications later on setup of Webex Contact Center.
