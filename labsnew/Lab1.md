@@ -87,18 +87,6 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/qYvXd-ZGUWc?rel=0" title="WxCC Lab #1 Part 2: Control Hub OnBoarding Admin Tasks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  
-### Set Up Contact Center
-> ** Note. ** The task below can only be completed once for each tenant. If you've already done this, you can skip it and go to the next section.
-
-- Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the existing admin account.
-
-- Navigate to **_Contact Center_** Card.
-
-- Click on **_Settings_**.
-
-- If the button is not greyed out click on **_Set up Webex Contact Center_**.
-
-
 ## Part 3: Control Hub Calling and Telephony Settings
 
 >The following video show two options of telephony configuration. First part outlines the Webex calling and configuration steps that enable the administrator to use the configured default location and assign a number for those locations. The second part shows the Telephony Settings in case of vPOP connection or PSTN Bundle.
