@@ -76,7 +76,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Once you get to the section to `Select the Platform` be sure to select **Default Platform**.  The Default Platform is Webex Contact Center 2.0.
 
 - If you chose a different country or your contract order did not include Webex Calling then your only option for Webex Contact Center Telephony will be VPOP Bridge.
+	
 	- If you are using VPOP Bridge you **must** ensure that CUBE is setup correctly and the provisioning process for your CUBE information has been completed
+	
 	- Failure to complete that step for VPOP Bridge will mean no voice is possible to your tenant until this is complete
 
 - Choose Webex Calling if you ordered this option and continue in the setup process.
