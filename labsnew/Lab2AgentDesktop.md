@@ -42,7 +42,7 @@ The object of this lab excercise is to customize the logo and title of the agent
   * Login to [WxCC portal](https://portal.cjp.cisco.com/portal/home.html) with admin credentials​
 	- Note that you should have at least one agent configured for testing at this point
   * Navigate to Provisioning --> Desktop Layout​
-  * Click on ellipses (...) of Global Layout to edit  [Video Direct Link](https://www.youtube.com/embed/ZYFwqEjZLWM?start=150)
+  * Click on ellipses `...` of Global Layout to edit  [Video Direct Link](https://www.youtube.com/embed/ZYFwqEjZLWM?start=150)
   * Now click on edit
   * Click on download button ​
   * Download the Default Desktop Layout.json file​
