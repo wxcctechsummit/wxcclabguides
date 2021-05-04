@@ -1,5 +1,5 @@
 ---
-title: "New Lab Guide Library"
+title: 'New Lab Guide Library'
 ---
 
 ![Banner](images/wxccbanner.jpg)
@@ -10,19 +10,18 @@ The Lab schedule has changed while all labs are being updated to align with the 
 
 ## Lab Schedule
 
-| Date | Session | Corresponding Lab |
-| ---- | ------- | ----------------- |
-| 2021-04-28 | Prerequisites | [WxCC Partner Enablement](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement)
-| 2021-04-30 | Lab 1 - Control Hub & Admin Portal | [Lab 1 - Videos and Guides](labsnew/Lab1.md) |
-| 2021-05-07 | Lab 2 - Agent Desktop | N/A |
-| 2021-05-07 | Lab 3 - IVR Contact Routing | N/A |
-
+| Date       | Session                                        | Corresponding Lab                                                                   |
+| ---------- | ---------------------------------------------- | ----------------------------------------------------------------------------------- |
+| 2021-04-28 | Prerequisites                                  | [WxCC Partner Enablement](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement) |
+| 2021-04-30 | Lab 1 - Control Hub & Admin Portal             | [Lab 1 - Videos and Guides](labsnew/Lab1.md)                                        |
+| 2021-05-07 | Lab 2 - Agent Desktop                          | N/A                                                                                 |
+| 2021-05-07 | [Lab 3 - IVR Contact Routing](labsnew/Lab1.md) | N/A                                                                                 |
 
 ## Important Updates
 
 Check this section for any updates that may require communication throughout the event.
 
-* 2021-04-30 - Labs are delayed and expected to be released on Monday
+- 2021-04-30 - Labs are delayed and expected to be released on Monday
 
 <!---
 ## Lab Document Links
