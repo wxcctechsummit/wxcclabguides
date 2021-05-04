@@ -1,5 +1,5 @@
 ---
-title: "Lab 2: IVR and Contact Routing"
+title: 'Lab 2: IVR and Contact Routing'
 ---
 
 **Overview of the lab**
@@ -7,35 +7,35 @@ title: "Lab 2: IVR and Contact Routing"
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cyPxPKncOhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
-- [Part 1: Setup a Simple Flow and make a test call](#part-1-setup-a-simple-flow-and-make-a-test-call)
-  * [1. Verify that your users are ready to login](#1-verify-that-your-users-are-ready-to-login)
-  * [2. Verify your inbound numbers are correctly setup on Calling](#2-verify-your-inbound-numbers-are-correctly-setup-on-calling)
-  * [3. Create an inbound Voice Entry Point and Voice Queue](#3-create-an-inbound-voice-entry-point-and-voice-queue)
-  * [4. Verify the Audio Prompts, Create the Entry Point flow.](#4-verify-the-audio-prompts-create-the-entry-point-flow)
-  * [5. Configure and Publish the flow](#5-configure-and-publish-the-flow)
-  * [6. Configure the Entry Point Routing Strategy](#6-configure-the-entry-point-routing-strategy)
-  * [7. Configure the Queue Routing Strategy](#7-configure-the-queue-routing-strategy)
-  * [8. Make a test call](#8-make-a-test-call)
-- [Part 2: Adding Menu and Queue treatment to the call](#part-2-adding-menu-and-queue-treatment-to-the-call)
-  * [1. Copy out the flow and configure the advanced flow](#1-copy-out-the-flow-and-configure-the-advanced-flow)
-  * [2. Configure the Queue Treatment loop and Opt Out and Callback steps](#2-configure-the-queue-treatment-loop-and-opt-out-and-callback-steps)
-  * [3. Point to the New flow in the Routing Strategy](#3-point-to-the-new-flow-in-the-routing-strategy)
-  * [4. Test the end to end flow](#4-test-the-end-to-end-flow)
-  * [5. Execute the Callback](#5-execute-the-callback)
-- [Part 3: Configuring Outdial](#part-3-configuring-outdial)
-  * [1. Verify/create the Outdial Entry Point and Queue](#1-verifycreate-the-outdial-entry-point-and-queue)
-  * [2. Create the Outdial Entry Point Routing Strategy](#2-create-the-outdial-entry-point-routing-strategy)
-  * [3. Create the Outdial Queue Routing Strategy](#3-create-the-outdial-queue-routing-strategy)
-  * [4. Test Outdial](#4-test-outdial)
-- [Part 4: Advanced Scripting Steps](#part-4-advanced-scripting-steps)
-  * [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advanced-flow-2)
-  * [2. Enhance the existing flow with an authentication piece](#2-enhance-the-existing-flow-with-an-authentication-piece)
-  * [3. Configure the Collect Digits block](#3-configure-the-collect-digits-block)
-  * [3. Configure the custom variables and the HTTP Request Block](#3-configure-the-custom-variables-and-the-http-request-block)
-  * [4. Configure the Conditional for Error Check](#4-configure-the-conditional-for-error-check)
-  * [5. Point to the New flow in the Routing Strategy](#5-point-to-the-new-flow-in-the-routing-strategy)
-  * [6. Verify the flow end to end](#6-verify-the-flow-end-to-end)
 
+- [Part 1: Setup a Simple Flow and make a test call](#part-1-setup-a-simple-flow-and-make-a-test-call)
+  - [1. Verify that your users are ready to login](#1-verify-that-your-users-are-ready-to-login)
+  - [2. Verify your inbound numbers are correctly setup on Calling](#2-verify-your-inbound-numbers-are-correctly-setup-on-calling)
+  - [3. Create an inbound Voice Entry Point and Voice Queue](#3-create-an-inbound-voice-entry-point-and-voice-queue)
+  - [4. Verify the Audio Prompts, Create the Entry Point flow.](#4-verify-the-audio-prompts-create-the-entry-point-flow)
+  - [5. Configure and Publish the flow](#5-configure-and-publish-the-flow)
+  - [6. Configure the Entry Point Routing Strategy](#6-configure-the-entry-point-routing-strategy)
+  - [7. Configure the Queue Routing Strategy](#7-configure-the-queue-routing-strategy)
+  - [8. Make a test call](#8-make-a-test-call)
+- [Part 2: Adding Menu and Queue treatment to the call](#part-2-adding-menu-and-queue-treatment-to-the-call)
+  - [1. Copy out the flow and configure the advanced flow](#1-copy-out-the-flow-and-configure-the-advanced-flow)
+  - [2. Configure the Queue Treatment loop and Opt Out and Callback steps](#2-configure-the-queue-treatment-loop-and-opt-out-and-callback-steps)
+  - [3. Point to the New flow in the Routing Strategy](#3-point-to-the-new-flow-in-the-routing-strategy)
+  - [4. Test the end to end flow](#4-test-the-end-to-end-flow)
+  - [5. Execute the Callback](#5-execute-the-callback)
+- [Part 3: Configuring Outdial](#part-3-configuring-outdial)
+  - [1. Verify/create the Outdial Entry Point and Queue](#1-verifycreate-the-outdial-entry-point-and-queue)
+  - [2. Create the Outdial Entry Point Routing Strategy](#2-create-the-outdial-entry-point-routing-strategy)
+  - [3. Create the Outdial Queue Routing Strategy](#3-create-the-outdial-queue-routing-strategy)
+  - [4. Test Outdial](#4-test-outdial)
+- [Part 4: Advanced Scripting Steps](#part-4-advanced-scripting-steps)
+  - [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advanced-flow-2)
+  - [2. Enhance the existing flow with an authentication piece](#2-enhance-the-existing-flow-with-an-authentication-piece)
+  - [3. Configure the Collect Digits block](#3-configure-the-collect-digits-block)
+  - [3. Configure the custom variables and the HTTP Request Block](#3-configure-the-custom-variables-and-the-http-request-block)
+  - [4. Configure the Conditional for Error Check](#4-configure-the-conditional-for-error-check)
+  - [5. Point to the New flow in the Routing Strategy](#5-point-to-the-new-flow-in-the-routing-strategy)
+  - [6. Verify the flow end to end](#6-verify-the-flow-end-to-end)
 
 # Introduction
 
@@ -44,15 +44,14 @@ title: "Lab 2: IVR and Contact Routing"
 - This lab is designed to ensure you are able to configure a voice contact end to end and receive it on the agent desktop.
 
 - The lab will also contain multiple exercises on flow designer to make you comfortable with the Webex Contact Center Flow Designer and the overall Contact Routing configuration.
-- **IVR Prompts:** We will expect you to configure static prompts which will be shared for use. You may also choose to use dynamic TTS prompts, it will not change the lab or its content. You can upload these "CiscoDemo" prompts and use them for the labs. You may also keep a copy of the zip file if you want to manually upload them. In the bonus lab sections, we also share how you can convert these prompts to dynamic TTS prompts using the Text to speech connector configuration available within flow control.  
+- **IVR Prompts:** We will expect you to configure static prompts which will be shared for use. You may also choose to use dynamic TTS prompts, it will not change the lab or its content. You can upload these "CiscoDemo" prompts and use them for the labs. You may also keep a copy of the zip file if you want to manually upload them. In the bonus lab sections, we also share how you can convert these prompts to dynamic TTS prompts using the Text to speech connector configuration available within flow control.
 
-> ### [Download IVR Prompts  - Static Prompts HERE](https://cisco.box.com/s/e6dgudpc3zru5urm31gcnqfcbebx79b9)
+> ### [Download IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/e6dgudpc3zru5urm31gcnqfcbebx79b9)
 
 - **Lookups, Advanced Scripting, Screen-pops:** We have chosen specific areas of focus for advanced scripting topics. We have more content shared in the bonus sections on how to get other use cases configured.
 - **Estimated Wait Time, Position in Queue, Skills Based Routing:** We will cover the newer features on Webex Contact Center, including the estimated wait time/position in queue block, and skills based routing.
 
 # Lab Pre-requisites
-
 
 > The following video outlines the pre-requisites before beginning the lab.
 > We assume that you have your Gold Tenant setup, along with the telephony option of your choice.
@@ -60,40 +59,37 @@ title: "Lab 2: IVR and Contact Routing"
 
 These tasks are to be completed by the customer administrator. By following these steps, you would have prepped the tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to login an agent with the configured user extension.
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hO-yCjjLA5o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 **Quick Links**
 
-> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
 
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
 
-> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 **Check Licenses**
 
-
 ### 1. Login to Control Hub > Users.
--	Ensure the agents have the contact center license selected and are properly configured as Contact center enabled on Webex Contact center.
-- Ensure that they have activated the Email and are “Active” on Control Hub. 
+
+- Ensure the agents have the contact center license selected and are properly configured as Contact center enabled on Webex Contact center.
+- Ensure that they have activated the Email and are “Active” on Control Hub.
 
 **Check Webex Calling Settings**
 
-
 ### 2. Verify Webex Calling Settings
+
 - Check that a "Main" number is assigned to Webex Calling.
 - Check that the Calling Location is correctly set to "Intelepeer"
-
 
 **Synchronize Users**
 
 ### 3. Synchronize users to get any newly activated users.
+
 - Got to Contact Center > Settings > Synchronize Users
 
 **Check Admin settings, Agent Settings, Site, Team Configuration**
 
-### 4. Launch Portal to ensure the admin user admin1pod__@__ is Contact center configured for testing.
+### 4. Launch Portal to ensure the admin user admin1pod**@** is Contact center configured for testing.
 
 - A Site has already been created for the Admin: `Site_TS_`, `Team_TS`
 - Ensure the Admin is Contact Center Enabled.
@@ -114,21 +110,21 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > **Participants can download and install the WebEx Calling App for Agents, Admins or Supervisors and make on-net calls.**
 
-**[Webex Calling PC APP - Download HERE !](https://cisco.app.box.com/s/fcbh0abcsruf5qxp99tj31ksx1bf2mh5){:target="_blank"}**
+**[Webex Calling PC APP - Download HERE !](https://cisco.app.box.com/s/fcbh0abcsruf5qxp99tj31ksx1bf2mh5){:target="\_blank"}**
 
 **Download instructions**
 
-**[https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App](https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App){:target="_blank"}**\
+**[https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App](https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App){:target="\_blank"}**\
 
 > You will use the extension configured on Webex Calling : 3001 - to login to the Agent Desktop
 
-| **User Role** | **Contents**      | **Extension-DN Allotted**                   |
-| ----------- | ----------------- | -------------------------------- |
-| Admin        | admin1_\<POD-ID\>@email.carehybrid.com   | 3001 |
+| **User Role** | **Contents**                            | **Extension-DN Allotted** |
+| ------------- | --------------------------------------- | ------------------------- |
+| Admin         | admin1\_\<POD-ID\>@email.carehybrid.com | 3001                      |
 
 ### OPTIONAL : Creating More Users - Agents - Supervisors - For Test Calling INBOUND
 
-- **Creating additional Agents OR Supervisors:** You may create additional aliases using Mailinator (3rd party email alias generator) **[https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"}**\
+- **Creating additional Agents OR Supervisors:** You may create additional aliases using Mailinator (3rd party email alias generator) **[https://www.mailinator.com/](https://www.mailinator.com/){:target="\_blank"}**\
 
 - `These CAN be used for inbound call testing into the Contact Center : As Contact Center Customers!`
 
@@ -139,25 +135,24 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 > Remember to `Click Synchronize Users` on Control Hub when adding new users!
 
 ## You are now ready to Begin the Lab!
+
 ---
 
 # Part 1: Setup a Simple Flow and make a test call
 
-> This lab is designed to help you to make an end to end test call into the contact center. 
+> This lab is designed to help you to make an end to end test call into the contact center.
 
 > The lab contains material to send a test call from the caller (customer) to the agent desktop using a Simple Flow.
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n_PiLTFcgZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
-> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
 
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
 
-> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ### 1. Verify that your users are ready to login
 
@@ -165,8 +160,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 - If you would like to Create a Team, create the `Team` under that `Site` - and assign the `Team` to the Agent.
 - `Agent` > `Site` relationship cannot be changed. So all teams will need to be created under the same site.
-- With the steps outlined in the previous lab and recap above, you should now be able to login to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-
+- With the steps outlined in the previous lab and recap above, you should now be able to login to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 > Only teams that are in the same site of the Agent will be visible to assign to the agent.
 
@@ -186,19 +180,19 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 **Here are the Queue Settings**
 
-|Configuration |field Value|
-|-------------|----------|
-|Name |Q_TS|
-|Channel Type |Telephony|
-|*----  Contact Routing Settings ---*|
-|Queue Routing Type |Longest Available Agent|
-|Call Distribution |`<Add team>`|
-|*----  Advanced Settings ---*|
-|Service Level Threshold |60|
-|Maximum Time in Queue |600|
-|Time Zone |Default|
+| Configuration                       | field Value             |
+| ----------------------------------- | ----------------------- |
+| Name                                | Q_TS                    |
+| Channel Type                        | Telephony               |
+| _---- Contact Routing Settings ---_ |
+| Queue Routing Type                  | Longest Available Agent |
+| Call Distribution                   | `<Add team>`            |
+| _---- Advanced Settings ---_        |
+| Service Level Threshold             | 60                      |
+| Maximum Time in Queue               | 600                     |
+| Time Zone                           | Default                 |
 
-* `<ID>` is your attendee ID provided.
+- `<ID>` is your attendee ID provided.
 
 ---
 
@@ -206,9 +200,9 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
 
-- The audio prompts required for the script build out are wav files. The whole bundle of [wav files can be found here](https://cisco.box.com/s/oakd708czpfe0cpcgc3fd08o7ulxd9hw){:target="_blank"} **But these are already uploaded for you**.
+- The audio prompts required for the script build out are wav files. The whole bundle of [wav files can be found here](https://cisco.box.com/s/oakd708czpfe0cpcgc3fd08o7ulxd9hw){:target="\_blank"} **But these are already uploaded for you**.
 
-> **Note:** Uploaded audio files are already under > Routing Strategy (from Portal) > Resources > Audio Files. 
+> **Note:** Uploaded audio files are already under > Routing Strategy (from Portal) > Resources > Audio Files.
 
 ### 5. Configure and Publish the flow
 
@@ -225,7 +219,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 - Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EntryPoint_CL_Lab_<ID>`.
 - Map the flow flow_wxcclab you just created in there.
 
-### 7. OPTIONAL Download and Login in the Webex Calling app for mobile 
+### 7. OPTIONAL Download and Login in the Webex Calling app for mobile
 
 > **Note:** If you are outside the US, you need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. In this lab, we will use the Webex Calling app for mobile for **supervisor** account.
 
@@ -248,28 +242,30 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 - Login to the agent desktop into `Team_wxcclab` and go to a ready state.
 
 - Task 1 > Call the Dial number > Hear the welcome prompt and call should get disconnected.
-- Task 2 > Call the Dial number > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played. 
+- Task 2 > Call the Dial number > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
 
 ---
-## Congratulations! You're done with Part 1! 
-## You are ready to start Part 2!
 
+## Congratulations! You're done with Part 1!
+
+## You are ready to start Part 2!
 
 # Part 2: Adding Menu and Queue treatment to the call
 
 > This lab is designed to help you configure a Menu step in the call flow along with Queue Treatment. We will also configure counters and Opt-outs within the queue, along with Callbacks.
 
->  At the end of this lab, you should be able to hear the Menu prompt, and Opt-out of queue settings in the flow, and send a courtesy callback call to the customer by picking a ready agent.
+> At the end of this lab, you should be able to hear the Menu prompt, and Opt-out of queue settings in the flow, and send a courtesy callback call to the customer by picking a ready agent.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BKid4Q--dp0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
-> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
 
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
 
-> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
+
 ## Steps
 
 ### 1. Copy out the flow and configure the advanced flow
@@ -280,8 +276,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 - Ensure that you configure the Menu steps with a 3 option - 2 queue, 1 Blind Transfer step.
 - Ensure you configure all the fields in the menu step including the prompts and the entry timeout (requires you to explore all options on the step).
 - Ensure you configure all the blind transfer location to Cisco Toll Free : `+18005536387`
-**Note: This will actually connect you to the live toll free number!**
-
+  **Note: This will actually connect you to the live toll free number!**
 
 > **Important TIP on the MENU Block**
 
@@ -297,7 +292,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 - In Flow Designer - Configure the Queue treatment for the first queue. Use the queueCounter variable and configure the Opt out steps including the high volume message and the callback step.
 - Configure the voicemail destination to the same external number above.
-Validate the flow and publish it.
+  Validate the flow and publish it.
 
 ### 4. Plug In New Flow into Routing Strategy
 
@@ -318,7 +313,8 @@ Validate the flow and publish it.
 
 ---
 
-## Congratulations! You're done with Part 2! 
+## Congratulations! You're done with Part 2!
+
 ## You are ready to start Part 3!
 
 # Part 3: Configuring Outdial
@@ -327,23 +323,21 @@ Validate the flow and publish it.
 
 > At the end of the lab, your agent will be able to make an outbound call from the Agent Desktop.
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NMu9goAQJQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
-> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
 
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
 
-> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ## Steps
 
 ### 1. Verify/create the Outdial Entry Point and Queue
 
-- Login to Portal > Provisioning > Outdial Entry Point > Configure an Outdial Entry Point. 
+- Login to Portal > Provisioning > Outdial Entry Point > Configure an Outdial Entry Point.
 - Verify you already have an outdial Queue configured on Portal > Provisioning > Outdial Queue.
 - Ensure that the system created outdial entry points and queues are present and configure their settings.
 - Alternatively, you can setup a new Outdial Entry Point as shown in the video.
@@ -371,21 +365,21 @@ Validate the flow and publish it.
 
 ---
 
-## Congratulations! You're All done with the Part 3! Now onto Part 4! 
----
+## Congratulations! You're All done with the Part 3! Now onto Part 4!
 
+---
 
 # Part 4: Advanced Scripting Steps - HTTP Request
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9_c_smmWGZA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gXhVTkGazmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
-> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
 
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
 
-> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ## Steps
 
@@ -400,13 +394,11 @@ Validate the flow and publish it.
 - Drag a play message block, Collect Digits, HTTP Request, Condition Block, 2 more Play message blocks and put them in front of the menu step.
 - Ensure the prompts are plugged in to the play message prompts. `welcome`, `enter_pin`, and after the HTTP and Condition, a corresponding success and failure prompt.
 
-
 > **Important TIP on the MENU Block**
 
 > `Make all Menu Steps Interruptible by default` - This gives callers an option to bypass the prompt. It is a small checkbox on the Menu Step.
 
 > `In the Menu Block > Advanced Settings > Entry Timeout = Make it 10 Seconds` - This gives callers enough time to complete the DTMF (digit) entry.
-
 
 ### 3. Configure the Collect Digits block
 
@@ -414,11 +406,11 @@ Validate the flow and publish it.
 
 ### 4. Configure the custom variables and the HTTP Request Block
 
-- Create 3 Custom variables - mark them CAD variables - with names `customer_Name`,`customer_Email` ,`customer_Account` with labels `Name`, `Email`, `Account` and values of `Unavailable` OR `null` - *(depends on what you prefer as the default for the agents to see if no info is available in the data dip)*
+- Create 3 Custom variables - mark them CAD variables - with names `customer_Name`,`customer_Email` ,`customer_Account` with labels `Name`, `Email`, `Account` and values of `Unavailable` OR `null` - _(depends on what you prefer as the default for the agents to see if no info is available in the data dip)_
 
-> The request we will construct is : 
+> The request we will construct is :
 
- **HTTPS GET -> https://5f97898842706e0016957443.mockapi.io/crm/api/customers?pin=18716**
+**HTTPS GET -> https://5f97898842706e0016957443.mockapi.io/crm/api/customers?pin=18716**
 
 - Use the variable from the CollectDigits1.EnteredPIN variable to inject it in the pin lookup.
 - We will construct it as follows
@@ -427,41 +419,40 @@ Validate the flow and publish it.
 HTTP Request
 GET https://5f97898842706e0016957443.mockapi.io/crm/api/customers
 
-Query Parameters: 
-pin with {{CollectDigits.DigitsEntered}} 
+Query Parameters:
+pin with {{CollectDigits.DigitsEntered}}
 
-with value of the block (recheck your block variable name!) 
+with value of the block (recheck your block variable name!)
 
-The type would be application/json 
+The type would be application/json
 
-The Parse settings would be : 
-customerName = $.[0].name 
-customerEmail = $.[0].email 
+The Parse settings would be :
+customerName = $.[0].name
+customerEmail = $.[0].email
 customerPhone = $.[0].phone
 ```
 
-**Tech-Tip:** Here are some practice exercises you can try by going to jsonpath.com 
+**Tech-Tip:** Here are some practice exercises you can try by going to jsonpath.com
 
-> - Go to https://5f97898842706e0016957443.mockapi.io/crm/api/customers 
+> - Go to https://5f97898842706e0016957443.mockapi.io/crm/api/customers
 
-> - Copy out the JSON into https://jsonpath.com on the left pane. 
+> - Copy out the JSON into https://jsonpath.com on the left pane.
 
 > - Try out all of these to learn how JSON path works!
 
-
-|Query For 	|Parse statement|
-|---|---|
-|All Customers|`$.*`|
-|First Customer|	`$.[0]`	|
-|Last Customer|	`$.[-1:]`	|
-|First two customers|	`$.[0:2]`	|
-|Last two customers	|`$.[-2:]`	|
-|Second from last|	`$.[-2:-1]`	|
-|All the names|	`$..name`	|
-|All the pins|	`$..pin`	|
-|All the customers who’s pin value is more than 70000 or 80000|	`$..[?(@.pin > 70000)]`	|
-|All details of customer with account number	|`$..[?(@.account == "87305901”)].*`|
-|Name of customer with account number	|`$.[?(@.account == "70579265")].name`|
+| Query For                                                     | Parse statement                       |
+| ------------------------------------------------------------- | ------------------------------------- |
+| All Customers                                                 | `$.*`                                 |
+| First Customer                                                | `$.[0]`                               |
+| Last Customer                                                 | `$.[-1:]`                             |
+| First two customers                                           | `$.[0:2]`                             |
+| Last two customers                                            | `$.[-2:]`                             |
+| Second from last                                              | `$.[-2:-1]`                           |
+| All the names                                                 | `$..name`                             |
+| All the pins                                                  | `$..pin`                              |
+| All the customers who’s pin value is more than 70000 or 80000 | `$..[?(@.pin > 70000)]`               |
+| All details of customer with account number                   | `$..[?(@.account == "87305901”)].*`   |
+| Name of customer with account number                          | `$.[?(@.account == "70579265")].name` |
 
 ### 5. Configure the Conditional for Error Check
 
@@ -481,75 +472,77 @@ customerPhone = $.[0].phone
 - Verify the new flow end to end by first, logging into the Agent Desktop and going into a ready state.
 
 Execute the Test:
-- Call the Dial number > Enter the 5 digit PIN number > On Main Menu press 2 > call gets connected to agent, 
+
+- Call the Dial number > Enter the 5 digit PIN number > On Main Menu press 2 > call gets connected to agent,
 
 `Agent should see all CAD variables (Customer Name, Email, Account Number)`
 
 ---
-## Congratulations! You're done with Part 4! 
+
+## Congratulations! You're done with Part 4!
+
 ## You are ready to start Part 5!
+
 ---
 
 # Part 5: Skills Based Routing - PIQ
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9_c_smmWGZA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b-KyHUia-Bk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
-> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
 
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
 
-> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ## Steps
 
-
 ### 1.Create Skill Definition
 
-- Open portal > Provisioning > Skill  > Skill Definition
-- Click (New Skill Creation)  > Give Name(Agent_Profiency)and Description(Agent_Profiency) Type > `Proficiency`
-- Click (New Skill Creation)  > Give Name(Premium_Agent)and Description(Premium_Agent) Type > `Text`
+- Open portal > Provisioning > Skill > Skill Definition
+- Click (New Skill Creation) > Give Name(Agent_Profiency)and Description(Agent_Profiency) Type > `Proficiency`
+- Click (New Skill Creation) > Give Name(Premium_Agent)and Description(Premium_Agent) Type > `Text`
 
 > **Note:** We are using "TEXT Skills" in this SBR lab so that you can directly target agents with a specific variable from flow. This gives powerful capabilities as you will see later.
 
 ### 2.Crete Skill Profile
 
 - Open portal > Provisioning > Skill > skill Profile
-- Click (New Skill Profile)  > Give Name  - `Cisco_Live_SP1` and Description - `Cisco_Live_SP1` Select only `Agent_Proficiency` enter Skill Value to `5`
-- Click (New Skill Profile)  > Give Name - `Cisco_Live_SP2` and Description - `Cisco_Live_SP2` Select `Agent_Proficiency` enter Skill Value to `5` and `Premium_Agent` and enter `Skill Value` to `Yes`
+- Click (New Skill Profile) > Give Name - `Cisco_Live_SP1` and Description - `Cisco_Live_SP1` Select only `Agent_Proficiency` enter Skill Value to `5`
+- Click (New Skill Profile) > Give Name - `Cisco_Live_SP2` and Description - `Cisco_Live_SP2` Select `Agent_Proficiency` enter Skill Value to `5` and `Premium_Agent` and enter `Skill Value` to `Yes`
 
 ### 3. Add skill profile to User/ Agent
 
 - Open portal > Users
-- Edit user  > under Skill Profile select the skill profile created in step 2 - `Cisco_Live_SP2`
+- Edit user > under Skill Profile select the skill profile created in step 2 - `Cisco_Live_SP2`
 
 ### 4.Create new Queue with Skill based routing and Add team
 
-- Open portal > Provisioning > Entry point/Queue  > Queue
-- Create new Queue  >  Give Name and Description
-- Channel Type  > Telephony
-- Queue Routing Type  > Skill Based  > Best Available Agent
-Add Team  > Team[Team_wxcclab]
+- Open portal > Provisioning > Entry point/Queue > Queue
+- Create new Queue > Give Name and Description
+- Channel Type > Telephony
+- Queue Routing Type > Skill Based > Best Available Agent
+  Add Team > Team[Team_wxcclab]
 
-|Configuration field|	Value|
-|----|---|
-|Name	|Queue_SBR|
-|Channel Type	|Telephony|
-|*Contact Routing Settings*| 
-|Queue Routing Type	|Skills Based|
-|Agent Selection	|Best Available Agent|
-|Call Distribution|	`<Add team>`|
-|Service Level Threshold|	20|
-|Maximum Time in Queue|	7200|
-|Time Zone|	Default|
-
+| Configuration field        | Value                |
+| -------------------------- | -------------------- |
+| Name                       | Queue_SBR            |
+| Channel Type               | Telephony            |
+| _Contact Routing Settings_ |
+| Queue Routing Type         | Skills Based         |
+| Agent Selection            | Best Available Agent |
+| Call Distribution          | `<Add team>`         |
+| Service Level Threshold    | 20                   |
+| Maximum Time in Queue      | 7200                 |
+| Time Zone                  | Default              |
 
 ### 5. Change the previous flow with Skill based routing queue
 
 - Open the Flow created before and click on Queue Contact node (Team1) and change the queue from Queue_Dummy to Queue_SBR
-- Skill Requirement Details  > Select Skill and condition
-Under value – Skill Requirements 
+- Skill Requirement Details > Select Skill and condition
+  Under value – Skill Requirements
 
 **Set the following settings**
 
@@ -568,7 +561,7 @@ Under value – Skill Requirements
 - Create Custom String variable, `Cust_Premium_check` and `Cust_Premium_set`.
 - Drag and Drop Set Variable, Condition node and another Set Variable as explained in Video
 
-- In the First set variable parse for email, use 
+- In the First set variable parse for email, use
 
 {% raw %}
 \'\'\'{{ Customer_Email \| split(\"@\") \| last }}\'\'\'
@@ -578,14 +571,13 @@ to parse the domain name of email
 
 > **Note:** We used "" within the String hence we will need a new String wrapper of `'''String with "substring" to differentiate'''`
 
-> The filter functions on Pebble templates has a lot of info. 
+> The filter functions on Pebble templates has a lot of info.
 
-> [See Pebble Split Function](https://pebbletemplates.io/wiki/filter/split/){:target="_blank"}
+> [See Pebble Split Function](https://pebbletemplates.io/wiki/filter/split/){:target="\_blank"}
 
-> [See Pebble Last Filter](https://pebbletemplates.io/wiki/filter/last/){:target="_blank"}
+> [See Pebble Last Filter](https://pebbletemplates.io/wiki/filter/last/){:target="\_blank"}
 
->  In the Condition node, use this condition 
-
+> In the Condition node, use this condition
 
 {% raw %}
 {{Cust_premium_check =="gmail.com"}}
@@ -596,23 +588,23 @@ to parse the domain name of email
 
 ### 7. PIQ and EWT - Position in Queue and Estimated Wait Time for the caller
 
-- Drag and drop Queueinfo node after “Team2 Queue Contact node”  play EWT and PIQ from the success link.
+- Drag and drop Queueinfo node after “Team2 Queue Contact node” play EWT and PIQ from the success link.
 - Play PIQ alone from the “Insufficient Information ” link .
 - Connect the Failure link to the Play Music node.
 
 ### 8. Make a call and Test the end to end flow
 
 - Verify the new flow end to end by first, logging into the Agent Desktop and going into a ready state.
-- Call the Dial number > Enter 5 digit pin non premium agent ( `36238` ) >  On - Main Menu press 1 >  Call queued for 15 seconds and gets connected to agent
-- Call the Dial number > Enter 5 digit pin premium agent ( `93752` ) >  On Main Menu press 1 >  Call gets connected to agent immediately
+- Call the Dial number > Enter 5 digit pin non premium agent ( `36238` ) > On - Main Menu press 1 > Call queued for 15 seconds and gets connected to agent
+- Call the Dial number > Enter 5 digit pin premium agent ( `93752` ) > On Main Menu press 1 > Call gets connected to agent immediately
 
 ---
-## Congratulations! You're done! 
 
+## Congratulations! You're done!
 
 Changelog:
 
-| **Version** | **Comments** | **Author(s)**\ | **Date** |
-| --- | --- | --- | --- |
-| 1.0 | Initial Release | Arunabh Bhattacharjee (arubhatt) | 10 Jan 2021 |
-| 1.1 | Updated with SBR | Arunabh Bhattacharjee (arubhatt) | 25 April 2021 |
+| **Version** | **Comments**     | **Author(s)**\                   | **Date**      |
+| ----------- | ---------------- | -------------------------------- | ------------- |
+| 1.0         | Initial Release  | Arunabh Bhattacharjee (arubhatt) | 10 Jan 2021   |
+| 1.1         | Updated with SBR | Arunabh Bhattacharjee (arubhatt) | 25 April 2021 |
