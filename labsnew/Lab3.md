@@ -399,9 +399,9 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 ### 4. Configure the custom variables and the HTTP Request Block
 
-- Create 3 Custom variables - mark them CAD variables - with names `customer_Name`,`customer_Email` ,`customer_Account` with labels `Name`, `Email`, `Account` and values of `Unavailable` OR `null` - _(depends on what you prefer as the default for the agents to see if no info is available in the data dip)_
+- Create 4 Custom variables - mark them CAD variables - with names `name`,`email`,`phone`, `account` with labels `Name`, `Email`, `Phone`, `Account` and values of `None` OR `null` - _(depends on what you prefer as the default for the agents to see if no info is available in the data dip)_
 
-> The request we will construct is :
+> The actual request we will construct is :
 
 **HTTPS GET -> https://5f97898842706e0016957443.mockapi.io/crm/api/customers?pin=18716**
 
@@ -412,8 +412,8 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 HTTP Request
 GET https://5f97898842706e0016957443.mockapi.io/crm/api/customers
 
-Query Parameters:
-pin with {{CollectDigits.DigitsEntered}}
+Query    <->     Parameters
+pin      <->     {{CollectDigits.DigitsEntered}}
 
 with value of the block (recheck your block variable name!)
 
@@ -466,7 +466,7 @@ customerPhone = $.[0].phone
 
 Execute the Test:
 
-- Call the Dial number > Enter the 5 digit PIN number > On Main Menu press 2 > call gets connected to agent,
+- Call the Dial number > Enter the 5 digit PIN number as `18716` > On Main Menu press 2 > call gets connected to agent,
 
 `Agent should see all CAD variables (Customer Name, Email, Account Number)`
 
