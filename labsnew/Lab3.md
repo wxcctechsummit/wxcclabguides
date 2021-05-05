@@ -49,7 +49,7 @@ title: 'Lab 3: IVR and Contact Routing'
 
 # Lab Pre-requisites
 
-> ## This is a recap of Lab 1. Please [Complete Lab 1 here](Lab1.md){:target="\_blank"}
+> ## The Steps below summarize/recap Lab 1. Ensure you have Completed [Lab 1: Part 5 & 6 here](Lab1.md){:target="\_blank"}
 
 > These tasks are to be completed by the customer administrator. By following these steps, you would have prepped the tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to login an agent with the configured user extension.
 
