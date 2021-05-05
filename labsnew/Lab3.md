@@ -608,3 +608,26 @@ Changelog:
 | ----------- | ---------------- | -------------------------------- | ------------- |
 | 1.0         | Initial Release  | Arunabh Bhattacharjee (arubhatt) | 10 Jan 2021   |
 | 1.1         | Updated with SBR | Arunabh Bhattacharjee (arubhatt) | 25 April 2021 |
+
+---
+
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew";}
+</script>
+
+<div id="button-row">
+	<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go back to Main Page</button>
+
+<!--
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Next Lab 3: IVR and Contact Routing</button>
+-->
+</div>
