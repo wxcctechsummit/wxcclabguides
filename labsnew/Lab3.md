@@ -2,10 +2,6 @@
 title: 'Lab 2: IVR and Contact Routing'
 ---
 
-**Overview of the lab**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cyPxPKncOhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 # Table of Contents
 
 - [Part 1: Setup a Simple Flow and make a test call](#part-1-setup-a-simple-flow-and-make-a-test-call)
@@ -29,6 +25,14 @@ title: 'Lab 2: IVR and Contact Routing'
   - [3. Create the Outdial Queue Routing Strategy](#3-create-the-outdial-queue-routing-strategy)
   - [4. Test Outdial](#4-test-outdial)
 - [Part 4: Advanced Scripting Steps](#part-4-advanced-scripting-steps)
+  - [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advanced-flow-2)
+  - [2. Enhance the existing flow with an authentication piece](#2-enhance-the-existing-flow-with-an-authentication-piece)
+  - [3. Configure the Collect Digits block](#3-configure-the-collect-digits-block)
+  - [3. Configure the custom variables and the HTTP Request Block](#3-configure-the-custom-variables-and-the-http-request-block)
+  - [4. Configure the Conditional for Error Check](#4-configure-the-conditional-for-error-check)
+  - [5. Point to the New flow in the Routing Strategy](#5-point-to-the-new-flow-in-the-routing-strategy)
+  - [6. Verify the flow end to end](#6-verify-the-flow-end-to-end)
+- [Part 5: Skills Based Routing](#part-4-advanced-scripting-steps)
   - [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advanced-flow-2)
   - [2. Enhance the existing flow with an authentication piece](#2-enhance-the-existing-flow-with-an-authentication-piece)
   - [3. Configure the Collect Digits block](#3-configure-the-collect-digits-block)
