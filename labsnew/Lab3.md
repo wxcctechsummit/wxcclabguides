@@ -213,7 +213,14 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 - Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_TS`.
 - Map the flow flow_wxcclab you just created in there.
 
-### 7. OPTIONAL Download and Login in the Webex Calling app for mobile
+### 7. Make a test call
+
+- Login to the agent desktop into `Team_wxcclab` and go to a ready state.
+
+- Task 1 > Call the Dial number > Hear the welcome prompt and call should get disconnected.
+- Task 2 > Call the Dial number > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
+
+### 8. OPTIONAL : Download and Login in the Webex Calling app for mobile calling / calling from your cell
 
 > **Note:** If you are outside the US, you need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. In this lab, we will use the Webex Calling app for mobile for **supervisor** account.
 
@@ -230,13 +237,6 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 > **Note:** Make sure that you give access to the phone's microphone for the calling app.
 
 ![WxCallingAndroid](https://wxcctechsummit.github.io/holcct2100/images/wxcallingandroid.png)
-
-### 8. Make a test call
-
-- Login to the agent desktop into `Team_wxcclab` and go to a ready state.
-
-- Task 1 > Call the Dial number > Hear the welcome prompt and call should get disconnected.
-- Task 2 > Call the Dial number > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
 
 ---
 
