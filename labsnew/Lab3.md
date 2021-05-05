@@ -38,12 +38,14 @@ title: 'Lab 3: IVR and Contact Routing'
 - This lab is designed to ensure you are able to configure a voice contact end to end and receive it on the agent desktop.
 
 - The lab will also contain multiple exercises on flow designer to make you comfortable with the Webex Contact Center Flow Designer and the overall Contact Routing configuration.
-- **IVR Prompts:** We will expect you to configure static prompts which will be shared for use. You may also choose to use dynamic TTS prompts, it will not change the lab or its content. You can upload these "CiscoDemo" prompts and use them for the labs. You may also keep a copy of the zip file if you want to manually upload them. In the bonus lab sections, we also share how you can convert these prompts to dynamic TTS prompts using the Text to speech connector configuration available within flow control.
 
-> ### [Download IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/e6dgudpc3zru5urm31gcnqfcbebx79b9)
+- **IVR Prompts:** We will expect you to configure and upload static prompts shared for use below. You may also choose to use dynamic TTS prompts, it will not change the lab or its content. You can upload these "CiscoDemo" prompts and use them for the labs. You may also keep a copy of the zip file if you want to manually upload them. In the bonus lab sections, we also share how you can convert these prompts to dynamic TTS prompts using the Text to speech connector configuration available within flow designer.
+
+> ### [Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/e6dgudpc3zru5urm31gcnqfcbebx79b9)
 
 - **Lookups, Advanced Scripting, Screen-pops:** We have chosen specific areas of focus for advanced scripting topics. We have more content shared in the bonus sections on how to get other use cases configured.
-- **Estimated Wait Time, Position in Queue, Skills Based Routing:** We will cover the newer features on Webex Contact Center, including the estimated wait time/position in queue block, and skills based routing.
+
+- **GoTo, ScreenPops, Skills Based Routing:** We will cover the newer features on Webex Contact Center, including the GoTo step, Screen Pop, and skills based routing.
 
 # Lab Pre-requisites
 
