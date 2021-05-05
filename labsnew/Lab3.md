@@ -478,7 +478,7 @@ Execute the Test:
 
 ---
 
-# Part 5: Skills Based Routing - PIQ
+# Part 5: Skills Based Routing
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/b-KyHUia-Bk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -492,44 +492,45 @@ Execute the Test:
 
 ## Steps
 
-### 1.Create Skill Definition
-
-- Open portal > Provisioning > Skill > Skill Definition
-- Click (New Skill Creation) > Give Name(Agent_Profiency)and Description(Agent_Profiency) Type > `Proficiency`
-- Click (New Skill Creation) > Give Name(Premium_Agent)and Description(Premium_Agent) Type > `Text`
-
-> **Note:** We are using "TEXT Skills" in this SBR lab so that you can directly target agents with a specific variable from flow. This gives powerful capabilities as you will see later.
-
-### 2.Crete Skill Profile
-
-- Open portal > Provisioning > Skill > skill Profile
-- Click (New Skill Profile) > Give Name - `Cisco_Live_SP1` and Description - `Cisco_Live_SP1` Select only `Agent_Proficiency` enter Skill Value to `5`
-- Click (New Skill Profile) > Give Name - `Cisco_Live_SP2` and Description - `Cisco_Live_SP2` Select `Agent_Proficiency` enter Skill Value to `5` and `Premium_Agent` and enter `Skill Value` to `Yes`
-
-### 3. Add skill profile to User/ Agent
-
-- Open portal > Users
-- Edit user > under Skill Profile select the skill profile created in step 2 - `Cisco_Live_SP2`
-
-### 4.Create new Queue with Skill based routing and Add team
+### 1.Create new Queue with Skill based routing and Add team
 
 - Open portal > Provisioning > Entry point/Queue > Queue
-- Create new Queue > Give Name and Description
-- Channel Type > Telephony
+- Create new Skills Based Queue > Give Name and Description
+- Channel Type > `Telephony`
 - Queue Routing Type > Skill Based > Best Available Agent
-  Add Team > Team[Team_wxcclab]
+  Add Team > `Team_TS`
 
 | Configuration field        | Value                |
 | -------------------------- | -------------------- |
-| Name                       | Queue_SBR            |
+| Name                       | Q_TS_SBR             |
 | Channel Type               | Telephony            |
 | _Contact Routing Settings_ |
 | Queue Routing Type         | Skills Based         |
 | Agent Selection            | Best Available Agent |
 | Call Distribution          | `<Add team>`         |
-| Service Level Threshold    | 20                   |
-| Maximum Time in Queue      | 7200                 |
+| Service Level Threshold    | 60                   |
+| Maximum Time in Queue      | 600                  |
 | Time Zone                  | Default              |
+
+### 2.Create Skill Definitions
+
+- Open portal > Provisioning > Skill > Skill Definition
+- Click (New Skill Creation) > Give Name(`SkillSet`)and Description(`Skillset`) Type > `Proficiency`
+- Click (New Skill Creation) > Give Name(`VIP Customer`)and Description(`VIP Customer`) Type > `Text`
+
+> **Note:** We are using "TEXT Skills" in this SBR lab so that you can directly target agents with a specific variable from flow. This gives powerful capabilities as you will see later.
+
+### 3.Crete Skill Profile
+
+- Open portal > Provisioning > Skill > skill Profile
+- Click (New Skill Profile) > Give Name - `TechSummitSkill` and Description -`TechSummitSkill`
+- Select `SkillSet` and enter the Skill Value as `8`
+- Select `TechSummit` and enter the Skill `SkillSet` and enter `Skill Value` to `Techsummit`
+
+### 4. Add skill profile to User/ Agent
+
+- Open Portal > Users
+- Edit User > Under Skill Profile select the skill profile created in step 2 - `TechSummitSkill`
 
 ### 5. Change the previous flow with Skill based routing queue
 
