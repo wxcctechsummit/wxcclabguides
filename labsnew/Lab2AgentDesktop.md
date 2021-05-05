@@ -1,8 +1,8 @@
 ---
-title: 'Lab 2: Customizing Agent Desktop'
+title: 'Lab 2: Customizing the Agent Desktop'
 ---
 
-# Custom Desktop Layout
+# Working With Custom Desktop Layouts
 
 Video example
 

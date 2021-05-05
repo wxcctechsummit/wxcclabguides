@@ -142,7 +142,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > This lab is designed to help you to make an end to end test call into the contact center.
 
-> The lab contains material to send a test call from the caller (customer) to the agent desktop using a Simple Flow.
+> The lab concludes with sending a test call from the caller (customer) to the agent desktop using a Simple Flow.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/n_PiLTFcgZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
