@@ -49,11 +49,9 @@ title: 'Lab 3: IVR and Contact Routing'
 
 # Lab Pre-requisites
 
-> The following video outlines the pre-requisites before beginning the lab.
-> We assume that you have your Gold Tenant setup, along with the telephony option of your choice.
-> In the video, we take the example of a Webex Calling org - but the number mapping process is similar.
+> ## This is a recap of Lab 1. Please [Complete Lab 1 here](Lab1.md)
 
-These tasks are to be completed by the customer administrator. By following these steps, you would have prepped the tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to login an agent with the configured user extension.
+> These tasks are to be completed by the customer administrator. By following these steps, you would have prepped the tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to login an agent with the configured user extension.
 
 **Quick Links**
 
