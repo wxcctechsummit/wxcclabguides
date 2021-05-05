@@ -248,7 +248,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > This lab is designed to help you configure a Menu step in the call flow along with Queue Treatment. We will also configure counters and Opt-outs within the queue, along with Callbacks.
 
-> At the end of this lab, you should be able to hear the Menu prompt, and Opt-out of queue settings in the flow, and send a courtesy callback call to the customer by picking a ready agent.
+> At the end of this lab, you should be able to hear a Menu prompt, Opt-out of queue, and send a courtesy callback call to the customer by picking a ready agent.
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/BKid4Q--dp0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -265,12 +265,13 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 ### 1. Copy out the flow and configure the advanced flow
 
 - Open the Portal > Routing Strategy > Flow page.
-- Copy the existing flow flow_Lab1_Task2 and edit the copied flow - name it `Flow2`
+- Copy the existing flow `Flow1` and edit the copied flow - name it `Flow2`
 - Edit the flow to go into flow designer.
-- Ensure that you configure the Menu steps with a 3 option - 2 queue, 1 Blind Transfer step.
+- Ensure that you configure the Menu steps with a 3 options - 2 queue, 1 Blind Transfer.
 - Ensure you configure all the fields in the menu step including the prompts and the entry timeout (requires you to explore all options on the step).
 - Ensure you configure all the blind transfer location to Cisco Toll Free : `+18005536387`
-  **Note: This will actually connect you to the live toll free number!**
+
+  > **Note: This will actually connect you to the live toll free number!**
 
 > **Important TIP on the MENU Block**
 
@@ -280,18 +281,16 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 ---
 
-> You can Skip to 08:00 in the Video to Start Building the Flow Out by following the video
-
 ### 3. Configure the Queue Treatment loop and Opt Out and Callback steps
 
 - In Flow Designer - Configure the Queue treatment for the first queue. Use the queueCounter variable and configure the Opt out steps including the high volume message and the callback step.
 - Configure the voicemail destination to the same external number above.
-  Validate the flow and publish it.
+- Validate the flow and publish it.
 
 ### 4. Plug In New Flow into Routing Strategy
 
-- Go to the routing Strategy page > Routing Strategy > `EntryPoint_wxcclab_<ID>`
-- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow_Lab2_<ID>`
+- Go to the routing Strategy page > Routing Strategy > `EP_TS`
+- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow2`
 
 ### 5. Test the end to end flow
 
@@ -458,8 +457,8 @@ customerPhone = $.[0].phone
 
 ### 6. Point to the New flow in the Routing Strategy
 
-- Go to the routing Strategy page > Routing Strategy > `EP_wxcclab_<ID>`
-- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow_Lab3_<ID>`.
+- Go to the routing Strategy page > Routing Strategy > `EP_TS`
+- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow3`.
 
 ### 7. Verify the flow end to end
 
