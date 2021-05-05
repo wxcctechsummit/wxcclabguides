@@ -150,13 +150,15 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 ### 1. Verify that your users are ready to login
 
-> **Note:** Go to `Provisioning -> Users` to check the `Site` that the user is assigned to. And create the `Team` under the right `Site`.
+- Go to `Provisioning -> Users` to check the `Site` that the user is assigned to. And create the `Team` under the right `Site`.
 
 - If you would like to Create a Team, create the `Team` under that `Site` - and assign the `Team` to the Agent.
-- `Agent` > `Site` relationship cannot be changed. So all teams will need to be created under the same site.
+
+> **WARNING** `Agent` > `Site` relationship cannot be changed. So all teams will need to be created under the same site.
+
 - With the steps outlined in the previous lab and recap above, you should now be able to login to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
-> Only teams that are in the same site of the Agent will be visible to assign to the agent.
+> **NOTE:** Only teams that are in the same site of the Agent will be visible to assign to the agent.
 
 ### 2. Verify your inbound numbers are correctly setup on Calling
 
@@ -186,17 +188,17 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 | Maximum Time in Queue               | 600                     |
 | Time Zone                           | Default                 |
 
-- .
-
 ---
 
-- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to EP_voice_TS
+- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to EP_TS
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
 
-- The audio prompts required for the script build out are wav files. The whole bundle of [wav files can be found here](https://cisco.box.com/s/oakd708czpfe0cpcgc3fd08o7ulxd9hw){:target="\_blank"} **But these are already uploaded for you**.
+- The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
 
-> **Note:** Uploaded audio files are already under > Routing Strategy (from Portal) > Resources > Audio Files.
+[Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/e6dgudpc3zru5urm31gcnqfcbebx79b9){:target="\_blank"}
+
+> **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
 
 ### 5. Configure and Publish the flow
 
