@@ -478,7 +478,7 @@ Execute the Test:
 
 ---
 
-# Part 5: Skills Based Routing
+# Part 5: Skills Based Routing - Contact Priority - Skill Relaxation
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/b-KyHUia-Bk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -532,65 +532,27 @@ Execute the Test:
 - Open Portal > Users
 - Edit User > Under Skill Profile select the skill profile created in step 2 - `TechSummitSkill`
 
-### 5. Change the previous flow with Skill based routing queue
+### 5. Modify the Previous Flow into a new Flow 4
 
-- Open the Flow created before and click on Queue Contact node (Team1) and change the queue from Queue_Dummy to Queue_SBR
-- Skill Requirement Details > Select Skill and condition
-  Under value – Skill Requirements
+- Open Flow > Copy Existing Flow 2 - Rename it as Flow 4.
+- In Option 1 > Select the Queue Block > Make it SBR based by selecting the Skills Based Queue.
+- Setup skill requirements as below
 
 **Set the following settings**
 
-> `Agent_Proficiency >= 4`
+> `Skillset >= 5`
 
-> `Premium_Agent` IS {% raw %}{{premium_cust_set}}{% endraw %}
+> `Make {{skill}} as a String Variable`
+
+> `VIPCustomer` IS {% raw %}{{skill}}{% endraw %}
 
 > Enable Skill Relaxation After waiting in queue for: `15 seconds`
 
-**Set skill requirements to:**
+**Set skill relaxation to (after 60 seconds):**
 
-> `Agent_Proficiency >= 4`
+> `Skillset >= 3`
 
-### 6. Additional String Manipulation ! - CUSTOMER EMAIL CHECK
-
-- Create Custom String variable, `Cust_Premium_check` and `Cust_Premium_set`.
-- Drag and Drop Set Variable, Condition node and another Set Variable as explained in Video
-
-- In the First set variable parse for email, use
-
-{% raw %}
-\'\'\'{{ Customer_Email \| split(\"@\") \| last }}\'\'\'
-{% endraw %}
-
-to parse the domain name of email
-
-> **Note:** We used "" within the String hence we will need a new String wrapper of `'''String with "substring" to differentiate'''`
-
-> The filter functions on Pebble templates has a lot of info.
-
-> [See Pebble Split Function](https://pebbletemplates.io/wiki/filter/split/){:target="\_blank"}
-
-> [See Pebble Last Filter](https://pebbletemplates.io/wiki/filter/last/){:target="\_blank"}
-
-> In the Condition node, use this condition
-
-{% raw %}
-{{Cust_premium_check =="gmail.com"}}
-{% endraw %}
-
-- If `True`, Set `Cust_premium_check` to `Yes` and connect it to main menu
-- If `False`, connect it to main menu
-
-### 7. PIQ and EWT - Position in Queue and Estimated Wait Time for the caller
-
-- Drag and drop Queueinfo node after “Team2 Queue Contact node” play EWT and PIQ from the success link.
-- Play PIQ alone from the “Insufficient Information ” link .
-- Connect the Failure link to the Play Music node.
-
-### 8. Make a call and Test the end to end flow
-
-- Verify the new flow end to end by first, logging into the Agent Desktop and going into a ready state.
-- Call the Dial number > Enter 5 digit pin non premium agent ( `36238` ) > On - Main Menu press 1 > Call queued for 15 seconds and gets connected to agent
-- Call the Dial number > Enter 5 digit pin premium agent ( `93752` ) > On Main Menu press 1 > Call gets connected to agent immediately
+> Remove the requirement of the VIP Customer skill.
 
 ---
 
