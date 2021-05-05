@@ -51,7 +51,7 @@ title: 'Lab 3: IVR and Contact Routing'
 
 > ## The Steps below summarize/recap Lab 1. Ensure you have Completed [Lab 1: Part 5 & 6 here](Lab1.md){:target="\_blank"}
 
-> These tasks are to be completed by the customer administrator. By following these steps, you would have prepped the tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to login an agent with the configured user extension.
+> These tasks are to be completed by the customer administrator. At the end of the lab pre-requisites, you should be able to login an agent in the agent desktop application with the configured user extension.
 
 **Quick Links**
 
@@ -63,7 +63,7 @@ title: 'Lab 3: IVR and Contact Routing'
 
 **Check Licenses**
 
-### 1. Login to Control Hub > Users.
+### 1. Login to Control Hub > Users
 
 - Ensure the agents have the contact center license selected and are properly configured as Contact center enabled on Webex Contact center.
 - Ensure that they have activated the Email and are “Active” on Control Hub.
@@ -110,11 +110,11 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 **[https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App](https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App){:target="\_blank"}**\
 
-> You will use the extension configured on Webex Calling : 3001 - to login to the Agent Desktop
+> In the videos below, I use the extension configured on Webex Calling : 3001 - to login to the Agent Desktop
 
-| **User Role** | **Contents**                            | **Extension-DN Allotted** |
-| ------------- | --------------------------------------- | ------------------------- |
-| Admin         | admin1\_\<POD-ID\>@email.carehybrid.com | 3001                      |
+| **User Role** | **Contents**        | **Extension-DN Allotted** |
+| ------------- | ------------------- | ------------------------- |
+| Admin         | admin1@your-org.com | 3001                      |
 
 ### OPTIONAL : Creating More Users - Agents - Supervisors - For Test Calling INBOUND
 
