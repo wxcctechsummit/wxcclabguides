@@ -41,7 +41,7 @@ title: 'Lab 3: IVR and Contact Routing'
 
 - **IVR Prompts:** We will expect you to configure and upload static prompts shared for use below. You may also choose to use dynamic TTS prompts, it will not change the lab or its content. You can upload these "CiscoDemo" prompts and use them for the labs. You may also keep a copy of the zip file if you want to manually upload them. In the bonus lab sections, we also share how you can convert these prompts to dynamic TTS prompts using the Text to speech connector configuration available within flow designer.
 
-> ### [Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/e6dgudpc3zru5urm31gcnqfcbebx79b9)
+> ### [Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/e6dgudpc3zru5urm31gcnqfcbebx79b9){:target="\_blank"}
 
 - **Lookups, Advanced Scripting, Screen-pops:** We have chosen specific areas of focus for advanced scripting topics. We have more content shared in the bonus sections on how to get other use cases configured.
 
@@ -49,7 +49,7 @@ title: 'Lab 3: IVR and Contact Routing'
 
 # Lab Pre-requisites
 
-> ## This is a recap of Lab 1. Please [Complete Lab 1 here](Lab1.md)
+> ## This is a recap of Lab 1. Please [Complete Lab 1 here](Lab1.md){:target="\_blank"}
 
 > These tasks are to be completed by the customer administrator. By following these steps, you would have prepped the tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to login an agent with the configured user extension.
 
