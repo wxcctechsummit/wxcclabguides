@@ -148,7 +148,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > The lab concludes with sending a test call from the caller (customer) to the agent desktop using a Simple Flow.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n_PiLTFcgZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/n_PiLTFcgZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -260,7 +260,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > At the end of this lab, you should be able to hear the Menu prompt, and Opt-out of queue settings in the flow, and send a courtesy callback call to the customer by picking a ready agent.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BKid4Q--dp0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/BKid4Q--dp0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -327,7 +327,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > At the end of the lab, your agent will be able to make an outbound call from the Agent Desktop.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NMu9goAQJQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/NMu9goAQJQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -375,7 +375,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 # Part 4: Advanced Scripting Steps - HTTP Request
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gXhVTkGazmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/gXhVTkGazmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -491,7 +491,7 @@ Execute the Test:
 
 # Part 5: Skills Based Routing - PIQ
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b-KyHUia-Bk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/b-KyHUia-Bk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
