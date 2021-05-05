@@ -91,7 +91,7 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew";}
-function nextlab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Lab3";}
+function nextlab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/labsnew/Lab3.html";}
 </script>
 
 <div id="button-row">

@@ -1,5 +1,5 @@
 ---
-title: 'Lab 2: IVR and Contact Routing'
+title: 'Lab 3: IVR and Contact Routing'
 ---
 
 # Table of Contents
