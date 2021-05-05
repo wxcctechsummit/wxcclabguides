@@ -604,7 +604,7 @@ to parse the domain name of email
 
 Changelog:
 
-| **Version** | **Comments**     | **Author(s)**\                   | **Date**      |
+| **Version** | **Comments**     | **Author**\                      | **Date**      |
 | ----------- | ---------------- | -------------------------------- | ------------- |
 | 1.0         | Initial Release  | Arunabh Bhattacharjee (arubhatt) | 10 Jan 2021   |
 | 1.1         | Updated with SBR | Arunabh Bhattacharjee (arubhatt) | 25 April 2021 |
