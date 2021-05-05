@@ -13,7 +13,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | Date       | Session                                | Corresponding Lab                                                                                      |
 | ---------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | 2021-04-28 | Prerequisites                          | [WxCC Partner Enablement](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="\_blank"} |
-| 2021-04-30 | Lab 1 - Control Hub & Admin Portal Lab | [Lab 1 - Control Hub & Admin Portal ](labsnew/Lab1.md){:target="\_blank"}                              |
+| 2021-04-30 | Lab 1 - Control Hub & Admin Portal Lab | [Lab 1 - Control Hub & Admin Portal](labsnew/Lab1.md){:target="\_blank"}                               |
 | 2021-05-07 | Lab 2 - Agent Desktop Lab              | [Lab 2 - Customizing Agent Desktop](labsnew/Lab2AgentDesktop.md){:target="\_blank"}                    |
 | 2021-05-07 | Lab 3 - IVR Contact Routing Lab        | [Lab 3 - IVR Contact Routing](labsnew/Lab3.md){:target="\_blank"}                                      |
 
