@@ -85,10 +85,12 @@ title: 'Lab 3: IVR and Contact Routing'
 
 ### 4. Launch Portal to ensure the admin user admin1pod**@** is Contact center configured for testing.
 
-- A Site has already been created for the Admin: `Site_TS_`, `Team_TS`
-- Ensure the Admin is Contact Center Enabled.
-- Associate the User to the Site, Team, default Multimedia Profile - `Default_Telephony_Profile`.
+- Ensure that a Site and a Team has been created: `Site_TS`, `Team_TS`
+- Ensure the user is Contact Center Enabled.
+- Associate the User to the Site, Team, ( `Site_TS`, `Team_TS`) and default Multimedia Profile - `Default_Telephony_Profile`.
 - Verify by Launching the Agent Desktop and logging in.
+
+Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > **Note:** Please Check the `Site_TS` that the user admin1pod__@email.carehybrid.com is assigned to. And create the `Team_TS` under the right Site.
 
@@ -98,11 +100,9 @@ title: 'Lab 3: IVR and Contact Routing'
 
 > Only teams that are in the same site of the Agent will be visible to assign to the agent.
 
-Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
+### 5. OPTIONAL: Verify Webex Calling PC App Installation
 
-### 5. Verify Webex Calling PC App Installation
-
-> **Participants can download and install the WebEx Calling App for Agents, Admins or Supervisors and make on-net calls.**
+> **Lab Participants can download and install the WebEx Calling App for Agents, Admins or Supervisors and make on-net calls in the US.**
 
 **[Webex Calling PC APP - Download HERE !](https://cisco.app.box.com/s/fcbh0abcsruf5qxp99tj31ksx1bf2mh5){:target="\_blank"}**
 
@@ -168,9 +168,9 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 - Login to Portal and create an inbound voice entry point and voice queue. (Provisioning > Entry Point / Queue).
 
-- Create the Entry Point named `EP_TS` where `<ID>` is your attendee ID provided.
+- Create the Entry Point named `EP_TS`.
 
-- Create the Queue named `Q_TS` where `<ID>` is your attendee ID provided.
+- Create the Queue named `Q_TS`.
 
 **Here are the Queue Settings**
 
@@ -186,7 +186,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 | Maximum Time in Queue               | 600                     |
 | Time Zone                           | Default                 |
 
-- `<ID>` is your attendee ID provided.
+- .
 
 ---
 
@@ -205,8 +205,6 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 - Configure the Queue Block to `Queue_LAA_<ID>`. Map the queue inside of the q ueue block.
 - Configure the play music to loop, and start 0, end 10 to play 10 seconds of music.
 - Verify and publish the flow.
-
-* Note: `<ID>` is your attendee ID provided.
 
 ### 6. Configure the Entry Point Routing Strategy
 
