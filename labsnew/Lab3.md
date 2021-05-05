@@ -615,10 +615,6 @@ Changelog:
 
 ---
 
-<script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew";}
-</script>
-
 <div id="button-row">
 	<button onclick="mainPage()" style="
   border-radius: 5px;
@@ -635,3 +631,9 @@ function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wx
   padding: 10px;">Next Lab 3: IVR and Contact Routing</button>
 -->
 </div>
+
+<script>
+function mainPage() {
+  window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew";
+  }
+</script>

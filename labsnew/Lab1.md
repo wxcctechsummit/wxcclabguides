@@ -305,7 +305,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew";}
-function nextlab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/labsnew/Lab2AgentDesktop";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/labsnew/Lab2AgentDesktop";}
 </script>
 
 <div id="button-row">

@@ -91,20 +91,12 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew";}
-function nextlab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/labsnew/Lab3.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/labsnew/Lab3.html";}
 </script>
 
-<div id="button-row">
-	<button onclick="mainPage()" style="
-  border-radius: 5px;
-  background-color: rgb(116,191,75);
-  padding: 10px;">Go back to Main Page</button>
+<div id="button-row">	
+<button onclick="mainPage()" style="border-radius: 5px;background-color: rgb(116,191,75);padding: 10px">Go back to Main Page</button>
 
-<button onclick="nextLab()" style="
-  position: absolute;
-  right: 200px;
-  border-radius: 5px;
-  background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 3: IVR and Contact Routing</button>
+<button onclick="nextLab()" style="position: absolute;right: 200px;border-radius: 5px;background-color: rgb(116,191,75);padding: 10px;">Next Lab 3: IVR and Contact Routing</button>
 
 </div>
