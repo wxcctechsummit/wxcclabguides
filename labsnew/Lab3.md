@@ -202,15 +202,15 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 ### 5. Configure and Publish the flow
 
-- Configure the flow `flow_Lab1_Task1<ID>` with a Play prompt - welcome message and Disconnect
-- Configure the flow `flow_Lab1_Task2<ID>` with a Play prompt - welcome message and queue block and play music block.
-- Configure the Queue Block to `Queue_LAA_<ID>`. Map the queue inside of the q ueue block.
+- Configure the flow `Flow1` with a Play prompt - welcome message and Disconnect
+- Configure the flow `Flow1` with a Play prompt - welcome message and queue block and play music block.
+- Configure the Queue Block to `Q_TS`. Map the queue inside of the q ueue block.
 - Configure the play music to loop, and start 0, end 10 to play 10 seconds of music.
 - Verify and publish the flow.
 
 ### 6. Configure the Entry Point Routing Strategy
 
-- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EntryPoint_CL_Lab_<ID>`.
+- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_TS`.
 - Map the flow flow_wxcclab you just created in there.
 
 ### 7. OPTIONAL Download and Login in the Webex Calling app for mobile
