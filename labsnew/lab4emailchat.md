@@ -84,7 +84,7 @@ Follow the instructions below to set the necesary settings on the GMAIL account:
 
 - Click `New Entry Point` and enter the respective values and click save.
 
-Suggested Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Name | `EP_email_<ID>`
 Channel Type | `Email`
@@ -97,7 +97,7 @@ Time Zone | `Default`
 
 - Click `New Queue` and enter the respective values.
 
-Suggested Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Name | `Q_email_<ID>`
 Channel Type | `Email`
@@ -119,7 +119,7 @@ Time Zone | `Default`
 
 - Configure the assigned GMAIL email account settings as below and **_Save_**.
 
-Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Email Address | GMAIL example 
 Incoming Protocol | `IMAP`
@@ -138,7 +138,7 @@ Maximum Messages/Cycle | `10`
 
 - Click on `Add Routing Rule` and enter your routing rules and **_Save_**. The content in the subject line helps in subject line-based routing. A combination of ‘And’ and ‘Or’ rules can be applied. However, both ‘And’ and ‘Or’ can’t be added to the same rule.
 
-Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Routing Rule Name | `Sales Email Routing`
 IF Email Subject Contains | `Sales`
@@ -206,7 +206,7 @@ Chat configuration is divided between to configuration interfaces:
 
 - Click `New Entry Point` and enter the respective values and click **_Save_**.
 
-Suggested Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Name | `EP_chat_<ID>`
 Channel Type | `Chat`
@@ -220,7 +220,7 @@ Time Zone | `Default`
 
 - Click `New Queue` and enter the respective values.
 
-Suggested Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Name | `Q_chat_<ID>`
 Channel Type | `Chat`
@@ -238,7 +238,7 @@ Time Zone | `Default`
 
 - Click `New` -> `Chat Template` and enter the respective values.
 
-Suggested Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Provide a unique name for your chat template | `ChatTemplate_<ID>`
 Choose a preconfigured entry point | `EP_chat_<ID>`
@@ -249,7 +249,7 @@ Feedback | `Enabled`
 
 - Click `Next` to configure the Off-Hours for this Chat template, what message will be shown to customers during off-hours and what are the Business Hours associated to this Chat Entry Point and Template. Feel free to adjust the settings according to your liking.
 
-Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Message| `We are currently offline. Please try again during our business hours.`
 Business Hours| `Monday-Friday 24 hours, Timezone America/New_York`
@@ -257,7 +257,7 @@ Timezone | `United States: America/New York`
 
 - Click `Next` and configure the look and feel of the chat template entry form. This will be what customers have to fill in to start a chat. Explore the different Attributes by clicking on them. **Name**, **Email**, **'How may I assist you?'** and **'Additional details'**. The only one you must edit in this Lab exercise is `How may I assist you?`, click on it and fill in the following field:
 
-Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Add category Options | `Sales` (Press Enter key)
 
@@ -293,7 +293,7 @@ Add category Options | `Sales` (Press Enter key)
 
 - Click on the `New` button and enter the respective values and click **_Save_**.
 
-Suggested Configuration field | Value
+Configuration field | Suggested Value
 --- | ---
 Response Name | `PredefinedResponse_<ID>`
 Status | `On`
