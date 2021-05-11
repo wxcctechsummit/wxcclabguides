@@ -16,6 +16,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | 2021-04-30 | Lab 1 - Control Hub & Admin Portal Lab | [Lab 1 - Control Hub & Admin Portal](labsnew/Lab1.md){:target="\_blank"}                               |
 | 2021-05-07 | Lab 2 - Agent Desktop Lab              | [Lab 2 - Customizing Agent Desktop](labsnew/Lab2AgentDesktop.md){:target="\_blank"}                    |
 | 2021-05-07 | Lab 3 - IVR Contact Routing Lab        | [Lab 3 - IVR Contact Routing](labsnew/Lab3.md){:target="\_blank"}                                      |
+| 2021-05-11 | Lab 4 - Email and Chat Routing        | [TBD](labsnew/Lab.md){:target="\_blank"}                                      |
 
 ## Important Updates
 
@@ -23,3 +24,5 @@ Check this section for any updates that may require communication throughout the
 
 - 2021-04-30 - Labs are delayed and expected to be released on Monday
 - 2021-05-04 - Labs 1, 2 and 3 have been released.
+- 2021-05-11 - Lab 4 is complete and should be released later today
+- 
