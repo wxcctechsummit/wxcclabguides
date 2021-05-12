@@ -109,4 +109,4 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 ## Next Lab is Lab 2: Stock Reports
 > * [Analyzer Lab 2 Link](https://wxcctechsummit.github.io/holcct2108/livelabs/Lab2Analyzer.html)
 
-[Back to top](#cisco-live-holcct-2108-webex-contact-center-reporting---analyzer-deep-dive)
+[Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
