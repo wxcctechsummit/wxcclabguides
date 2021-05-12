@@ -86,4 +86,4 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 ## Next Lab is Lab 4: Advanced Insights
 > * [Analyzer Lab 4 Link](https://wxcctechsummit.github.io/holcct2108/livelabs/Lab4Analyzer.html)
 
-[Back to top](#quick-links)
+[Back to top](#webex-cc-partner-summit-lab5---analyzer-lab)
