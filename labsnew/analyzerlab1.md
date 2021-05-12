@@ -1,5 +1,5 @@
 ---
-title: "Lab 3: Agent Desktop"
+title: "Lab 5: Analyzer Labs 1 to 3"
 ---
 
 # Webex CC Partner Summit Lab5: Analyzer Lab
@@ -50,26 +50,26 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 1. Admin or supervisor credential with Analytics access in user profile
 2. Labs will be more successful once agent data has been created using voice, email and chat.
 
-
 # Exercise 1.1 Login to Analyzer and Review Dashboard Reports
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/Q4kf8dHN8x8?rel=0" title="Exercise 1.1 Login to Analyzer and Review Dashboard Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Instructions
 1. First `Login to the WxCC portal` using the Portal link above.
-2. The initial dashboard includes several `Realtime & Historical` reports showing current contact information in the system.
-3. Navigate (shown in the video) through the various dashboard reports and the dropdown allowing you to see current information to familiarize yourself with these stock reports.
+2. Login using your provided student email and password.  Emails for this lab are always **cladmXuser@mailinator.com** where **X** is your student number.
+3. The initial dashboard includes several `Realtime & Historical` reports showing current contact information in the system.
+4. Navigate (shown in the video) through the various dashboard reports and the dropdown allowing you to see current information to familiarize yourself with these stock reports.
 - Video Checkpoints
 > * <a href="https://www.youtube.com/embed/Q4kf8dHN8x8?start=56" target="_blank">Drop-down Dashboard Views </a>
 
-4. `Navigate back to the Entry Point Site Level Dashboard` and complete some navigation exercises shown in the video
-5. `Cross-Launch` from dashboard to a specific dashboard **Entry Point Historical Dashboard**
-6. From the Cross-Launched dashboard - `Cross-Launch into Analyzer` to the specific table **Incomming, Short Contacts Entry Point** anf follow the instructions to set filters as desired.
+5. `Navigate back to the Entry Point Site Level Dashboard` and complete some navigation exercises shown in the video
+6. `Cross-Launch` from dashboard to a specific dashboard **Entry Point Historical Dashboard**
+7. From the Cross-Launched dashboard - `Cross-Launch into Analyzer` to the specific table **Incomming, Short Contacts Entry Point** anf follow the instructions to set filters as desired.
 > * <a href="https://www.youtube.com/embed/Q4kf8dHN8x8?start=192" target="_blank">Analyzer Incomming, Short Contacts Entry Point </a> <br>
-7. This exercise completed
+8. This exercise completed
 
 
-# Exercise 1.2 Analyzer User Interface Overview
+# Exercise 1.2 Analyzer User Interface
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/4pGNHkd87Zs?rel=0" title="Exercise 1.2 Analyzer User Interface" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Instructions
@@ -92,10 +92,10 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
 1. Ensure you are logged into the Admin portal
 2. `Open` Analyzer in a new tab to enable you to switch between tasks in Portal and Analyzer
-3. Create a folder for yourself with the name `Team_X` where X is a unique number or character for yourself or your team
+3. Create a folder for yourself with the name `Team_X` where X is your student number
 > * <a href="https://www.youtube.com/embed/MdKzqrZ-EGA?start=64" target="_blank">Create a Folder</a> 
 4. In Admin Portal, navitate to `Provisioning - Users`
-5. Use the `Search` to find your profile.  You can search for your unique number `mentioned above` to make it easy. 
+5. Use the `Search` to find your profile.  You can search for your student number to make it easy. 
 6. Check which User Profile is being used by your user. 
 > * <a href="https://www.youtube.com/embed/MdKzqrZ-EGA?start=103" target="_blank">Find User Profile</a>
 > * NOTE: You will be editing your Supervisor Team Profile.  Search for `Supervisor Team X` where X is your student number.
@@ -112,12 +112,3 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 > * [Analyzer Lab 2 Link](https://wxcctechsummit.github.io/holcct2108/livelabs/Lab2Analyzer.html)
 
 [Back to top](#cisco-live-holcct-2108-webex-contact-center-reporting---analyzer-deep-dive)
-
-
-
-Changelog:
-
-| **Version** | **Comments** | **Author(s)** | **Date** |
-| --- | --- | --- | --- |
-| 1.0 | Initial Release | Sameer Yadav (sameyada) | 08 Jan 2021 |
-
