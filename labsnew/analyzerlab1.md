@@ -1,5 +1,5 @@
 ---
-title: "Lab 5: Analyzer Labs 1 to 3"
+title: "Lab 5: Analyzer Lab 1 Modules 1 to 3"
 ---
 
 # Webex CC Partner Summit Lab5: Analyzer Lab
