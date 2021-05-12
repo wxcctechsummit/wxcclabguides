@@ -29,7 +29,6 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 
 
 # Exercise 3.1 - Create Realtime Contact Report  
-![Banner](https://user-images.githubusercontent.com/81705459/113798602-18253400-9719-11eb-8b77-58eee8415c18.jpg)
 
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/n4qAwwhuTmg?rel=0" title="Exercise 2.1 Execute Stock Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -49,8 +48,6 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 
 # Exercise 3.2 - Create Realtime Agent Report
 
-![Banner](https://user-images.githubusercontent.com/81705459/113798620-22dfc900-9719-11eb-8a40-73362bab4c36.jpg)
-
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/IiA0RYmgoIE?rel=0" title="Exercise 2.1 Execute Stock Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -69,7 +66,6 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 
 # Exercise 3.3 - Create Chat Reports with Interval
 
-![Banner](https://user-images.githubusercontent.com/81705459/113798635-2d01c780-9719-11eb-8504-d8e86667a364.jpg)
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/t_Ub0xGfG0s?rel=0" title="Exercise 2.1 Execute Stock Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
