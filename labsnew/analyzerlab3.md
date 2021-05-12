@@ -1,7 +1,7 @@
 ---
 title: "Lab 5: Analyzer Exercises 3.1 to 3.3"
 ---
-top
+
 # Webex CC Partner Summit Lab5: Analyzer Lab
 
 ## Exercises 3.1, 3.2 and 3.3
@@ -82,4 +82,4 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 ## Next Lab is Lab 4: Advanced Insights
 > * [Analyzer Lab 4 Link](https://wxcctechsummit.github.io/holcct2108/livelabs/Lab4Analyzer.html)
 
-[Back to top](#webex-cc-partner-summit-lab5---analyzer-lab)
+[Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
