@@ -31,7 +31,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 # Exercise 4.1 Using Formulas and Filters
 
 
-<iframe width="1024" height="576" src="https://youtube.com/embed/mIaUgAEjRHs?rel=0" title="Exercise 4.1 Using Formulas and Filters" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/U2I5rw7sELU?rel=0" title="Exercise 4.1 Using Formulas and Filters" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Section Information
 - Create a Queue Performance Report
@@ -53,11 +53,11 @@ This lab is designed to build upon previous labs where custom reports were creat
 12. In the filter under the `Fields` section, set the Queue names that should appear in the report
 13. Be sure to save the LongestDuration as a global variable
 14. `Next` we will be opening a newly created report from Lab 3 - 3.2_AAR_AgentState 
-> * <a href="https://youtube.com/embed/mIaUgAEjRHs?start=476" target="_blank">Start at timestamp</a>
+> * <a href="https://youtube.com/embed/U2I5rw7sELU?start=476" target="_blank">Start at timestamp</a>
 16. Use the global filter created in the previous report to filter your team in this report
 17. `Save` this new report as `4.1.2_AAR_AgentState`
 18. `Next` Edit the newly created report in Lab 3 named `3.1_CSR_Contacts` 
-> * <a href="https://youtube.com/embed/mIaUgAEjRHs?start=545" target="_blank">Start at timestamp</a>
+> * <a href="https://youtube.com/embed/U2I5rw7sELU?start=545" target="_blank">Start at timestamp</a>
 20. `Add a Filter` using Final Queue Name and set a Regular Expression
   - Use the expression `QV_+` as the wildcard.  
   - Refer <a href="https://regex101.com/" target="_blank">REGEX</a> to learn and test your regular expressions 
@@ -67,7 +67,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 
 # Exercise 4.2 Enhanced Field Compound Visualization and Drill-down
 
-<iframe width="1024" height="576" src="https://youtube.com/embed/Poc7WdDdbEM?rel=0" title="Exercise 4.2 Enhanced Field Compound Visualization and Drill-down" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/47j7YKu7f7I?rel=0" title="Exercise 4.2 Enhanced Field Compound Visualization and Drill-down" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Section Information
 ** Getting simple, actionable data insights from your reports using:
@@ -81,7 +81,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 - 4.2.2_CSR_ContactVolume
 
 1. Begin by running a previously created report named `4.1.1_CSR_QueueStatus` to review the report information
-> * <a href="https://youtube.com/embed/Poc7WdDdbEM?start=84" target="_blank">Start at timestamp</a>
+> * <a href="https://youtube.com/embed/47j7YKu7f7I?start=84" target="_blank">Start at timestamp</a>
 2. Edit the report to add reporting functionality 
 3. On the `Final Queue Name` block, right click and create a new enhancement to create a new `Channel Group` as listed in the video and `Save` the enhancement
 
@@ -95,7 +95,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 9. Click on the `ChannelGroup` created and save it to create a new Global Filter
 10. `Rename and Save` this report to `4.2.1_CSR_QueueStatus`
 11. Run the recently created report named `4.1.3_CSR_Contacts` to view what changes may be needed
-> * <a href="https://youtube.com/embed/Poc7WdDdbEM?start=487" target="_blank">Start at timestamp</a>
+> * <a href="https://youtube.com/embed/47j7YKu7f7I?start=487" target="_blank">Start at timestamp</a>
 12. Use the `Drill-down` functionality on a `Contact Session ID` block in the report
 13. Choose a call that was transferred by looking for a `consult`
 > * If this doesn't exist, you may decide to create some consult transfer calls
@@ -103,7 +103,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 16. Click on the Field called Second Agent Name to see who this call was consult transferred to
 17. Experiment with Drill-down and export or open in a new tab
 18. `Next` Time to jump to the next and last part of this exercise
-> * <a href="https://youtube.com/embed/Poc7WdDdbEM?start=637" target="_blank">Start at timestamp</a>
+> * <a href="https://youtube.com/embed/47j7YKu7f7I?start=637" target="_blank">Start at timestamp</a>
 19. This part of the exercise will show `Enhanced Field Compound Visualization Drill-down`
 20. `Edit` the report `3.3_CSR_ContactVolume` and follow the video to make the needed changes
   * Output Type - Table
