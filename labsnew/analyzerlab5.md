@@ -1,7 +1,7 @@
 ---
 title: "Lab 5: Analyzer Exercises 5.1 to 5.2"
 ---
-top
+
 # Webex CC Partner Summit Lab5: Analyzer Lab
 
 ## Exercises 5.1 and 5.2
