@@ -30,7 +30,7 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 # Exercise 5.1 Stock Dashboards
 
-<iframe width="1024" height="576" src="https://youtube.com/embed/quuS5xrsmgI?rel=0" title="Exercise 5.1 Stock Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/vfMlNmVZcQM?rel=0" title="Exercise 5.1 Stock Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Section Information
 - Navigate some stock dashboards
@@ -45,7 +45,7 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 4. Under this dashboard there are several different types of data reports.  Take some time to familiarize yourself with them.
 5. Expand the `Customer Journey` dashboard and familiarize yourself with how this report makes use of mouse overs to track the different abandoned contacts
 6. Navigate back to the main dashboard directory and open a dashboard named `Contact Volume Historical Dashboard` under the Multimedia directory.
-> * <a href="https://youtube.com/embed/quuS5xrsmgI?start=201" target="_blank">Start at timestamp</a>
+> * <a href="https://youtube.com/embed/vfMlNmVZcQM?start=201" target="_blank">Start at timestamp</a>
 7. Create a copy of this dashboard and edit to make some changes
 8. Remove the `Contact Volume` dashboard component
 9. Find the report created in Lab 4.2 called `4.2.1_CSR_QueueStatus` and drag that into the dashboard
@@ -54,11 +54,11 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 # Exercise 5.2 Custom Dashboards
 
-<iframe width="1024" height="576" src="https://youtube.com/embed/MokwdERAlgc?rel=0" title="Exercise 5.2 Custom Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/wCgzv58mKTs?rel=0" title="Exercise 5.2 Custom Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Section Information
 - Create a custom dashboard called 5.2.1_NewReportDashboard
-- Create a custom dashboard using previous lab reports and call it 5.2.2_CL21HOLCCT2108Dashboard
+- Create a custom dashboard using previous lab reports named in video 5.2.2_CL21HOLCCT2108Dashboard
 
 1. Navigate to the Dashboards section of Analyzer and `Create New` Dashboard
 2. Drag dashboards according to the video instruction to the work canvas and position to your liking
@@ -70,7 +70,7 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 5. Run the report and notice that you can make changes to widget sizes but this will not save to the template
 6. Edit the new dashboard and make any sizing changes and save to see those changes every time
 7. Create a `new dashboard` for the next exercise
-> * <a href="https://youtube.com/embed/MokwdERAlgc?start=179" target="_blank">Start at timestamp</a>
+> * <a href="https://youtube.com/embed/wCgzv58mKTs?start=179" target="_blank">Start at timestamp</a>
 8. In this new dashboard you will be using several of the reports created earlier in this lab
   - 4.2.1_CSR_QueueStatus
   - 3.2_AAR_AgentState
@@ -79,16 +79,14 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 ![5-2customdashboard](https://user-images.githubusercontent.com/75790934/113779194-f3b66100-96f2-11eb-8a22-21c1bf94b1a5.png)
 
-9. Save this report as `5.2.2_CL21HOLCCT2108Dashboard`
+9. Video saves this report as `5.2.2_CL21HOLCCT2108Dashboard` but you can save it as you wish.  It will not impact any other exercises.
 10. Explore some options to edit and personalize this new dashboard like changing background colors
-11. This lab is complete, however, if you have time feel free to move to the Bonus Lab.
+11. Congradulations!  **All Analyzer labs are now complete!**
 
-## Next Lab is Lab 6: Bonus Lab
-> * [Analyzer Lab 6 Link](https://wxcctechsummit.github.io/holcct2108/livelabs/Lab6Analyzer.html)
 
-[Back to top](#cisco-live-holcct-2108-webex-contact-center-reporting---analyzer-deep-dive)
+[Back to top](#webex-cc-partner-summit-lab5---analyser-lab)
 
-## No Time for Bonus Lab?
-> * [Primary Labs Complete Back to Main](https://wxcctechsummit.github.io/holcct2108/finishedholcct2108.html)
+## Return to Lab Guide Page
+> * [Back to Main](https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew.html)
 
 
