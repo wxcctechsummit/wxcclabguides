@@ -129,8 +129,8 @@ Inbound Port Number | `993`
 SMTP Server | `smtp.gmail.com`
 Outbound Encryption | `SSL`
 Outbound Port Number | `465`
-Username | GMAIL email address specified in your Lab POD details
-Password | GMAIL password specified in your Lab POD details
+Username | GMAIL email address 
+Password | GMAIL password 
 Maximum Attachment size | `25 MB`
 Attachment Limit | `3`
 Mail Delay | `60 Seconds`
