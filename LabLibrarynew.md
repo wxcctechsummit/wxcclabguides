@@ -30,4 +30,4 @@ Check this section for any updates that may require communication throughout the
 - 2021-04-30 - Labs are delayed and expected to be released on Monday
 - 2021-05-04 - Labs 1, 2 and 3 have been released.
 - 2021-05-11 - Lab 4 is complete and should be released later today
-- 2021-05-12 - Lab 5 is complete with 4 exercises.  Final will post tomorrow.
+- 2021-05-12 - Lab 5 is complete with 5 exercises.
