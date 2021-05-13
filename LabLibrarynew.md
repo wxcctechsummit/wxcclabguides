@@ -19,9 +19,9 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | 2021-05-11 | Lab 4 - Email and Chat Routing        | [Lab 4 - Email and Chat Configuration](labsnew/lab4emailchat.md){:target="\_blank"}                      |
 | 2021-05-12 | Lab 5 - Analyzer Deep Dive Lab        | [Lab 5 - Analyzer Lab Exercise 1](labsnew/analyzerlab1.md){:target="\_blank"}                  |
 |   |   |[Lab 5 - Analyzer Lab Exercise 2](labsnew/analyzerlab2.md){:target="\_blank"} |
-[Lab 5 - Analyzer Lab Exercise 3](labsnew/analyzerlab3.md){:target="\_blank"} 
-[Lab 5 - Analyzer Lab Exercise 4](labsnew/analyzerlab4.md){:target="\_blank"} 
-[Lab 5 - Analyzer Lab Exercise 5](labsnew/analyzerlab5.md){:target="\_blank"} |
+|   |   |[Lab 5 - Analyzer Lab Exercise 3](labsnew/analyzerlab3.md){:target="\_blank"} |
+|   |   |[Lab 5 - Analyzer Lab Exercise 4](labsnew/analyzerlab4.md){:target="\_blank"} |
+|   |   |[Lab 5 - Analyzer Lab Exercise 5](labsnew/analyzerlab5.md){:target="\_blank"} |
 
 ## Important Updates
 
