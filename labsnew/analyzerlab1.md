@@ -19,7 +19,7 @@ title: "Lab 5: Analyzer Exercises 1.1 to 1.3"
 
 ## Important Lab Note
 
-This lab was created with existing Supervisor Profiles as well as Team designations.  The content may make reference to this or direct the user to use these designations to make changes as part of the learning process and lab goals.  
+This lab was created with existing Supervisor Profiles as well as Team designations.  The content may make reference to this or direct the user to use these designations to make changes as part of the learning process and lab goals.  Additionally, there may be previous lab dependencies as some labs will build on the completion of other labs so it is recommended to complete these labs in order.
 
 **Example:** 
 - Lab may state to change the Supervisor Profile for your student number.  Supervisor Team 3 for example.  This profile will not exist on your Gold Tenant unless you create the profile.
