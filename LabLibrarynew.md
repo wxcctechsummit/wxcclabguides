@@ -17,7 +17,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | 2021-05-07 | Lab 2 - Agent Desktop Lab              | [Lab 2 - Customizing Agent Desktop](labsnew/Lab2AgentDesktop.md){:target="\_blank"}                    |
 | 2021-05-07 | Lab 3 - IVR Contact Routing Lab        | [Lab 3 - IVR Contact Routing](labsnew/Lab3.md){:target="\_blank"}                                      |
 | 2021-05-11 | Lab 4 - Email and Chat Routing        | [Lab 4 - Email and Chat Configuration](labsnew/lab4emailchat.md){:target="\_blank"}                      |
-| 2021-05-12 | Lab 5 - Analyzer Deep Dive Lab        | [Lab 5 - Analyzer Lab Exercise 1](labsnew/analyzerlab1.md){:target="\_blank"}                  |
+| 2021-05-12 | Lab 5 - Analyzer Deep Dive Lab        | [Lab 5 - Analyzer Labs](labsnew/analyzerlab1.md){:target="\_blank"}                  |
 
 
 ## Important Updates
