@@ -84,7 +84,7 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 11. Congradulations!  **All Analyzer labs are now complete!**
 
 
-[Back to top](#webex-cc-partner-summit-lab5---analyser-lab)
+[Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
 
 ## Return to Lab Guide Page
 > * [Back to Main](https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew.html)
