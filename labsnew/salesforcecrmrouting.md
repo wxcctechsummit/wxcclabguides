@@ -6,7 +6,8 @@ title: "Lab 7: CRM Integration"
 
 Video example
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VQuxq5yGo2M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1024" height="576" src="https://youtube.com/embed/VQuxq5yGo2M?rel=0" title="CRM Integration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 
