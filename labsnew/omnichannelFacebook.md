@@ -16,7 +16,7 @@ title: "Lab 7: Omnichannel Routing"
 - [8. Agent Desktop: Contact offering to an Agent, Acceptance, and closure](#8-agent-desktop-contact-offering-to-an-agent-acceptance-and-closure)
 
 ## Introduction
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dibFEv-xv3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/dibFEv-xv3g?rel=0" title="Omnichannel Routing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Lab Objective
 
@@ -126,7 +126,7 @@ End customer can initiate queries from provided facebook page to contact center 
 * Now click save to complete Queue routing strategy settings. 
 
 ### Testing Facebook Chat to Agent Desktop
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6Y-VNupYLns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/6Y-VNupYLns?rel=0" title="Testing Omnichannel Routing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 8. Agent Desktop: Contact offering to an Agent, Acceptance, and closure
 
