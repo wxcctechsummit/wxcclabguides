@@ -11,7 +11,7 @@ title: "Lab 6: Google CCAI Integration"
 - [5. Validate Google Connector in WxCC Control Hub](#5-validate-google-connector-in-wxcc-control-hub)
 
 # Introduction
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yto3w8pDrKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/yto3w8pDrKs?rel=0" title="Google CCAI Integration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Lab Objective
 
@@ -72,4 +72,4 @@ We will be able to see "Dialogflow CX and Dialogflow ES". CX will be used or sui
 * Click Finish to save the configuration.
 
 ## DialogFlow Validation Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SnxBo_gySIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/SnxBo_gySIE?rel=0" title="DialogFlow Validation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
