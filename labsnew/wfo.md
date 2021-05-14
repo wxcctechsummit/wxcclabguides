@@ -19,7 +19,7 @@ title: "Lab 10: Workforce Optimization"
 
 # Part 1: Video Provisioning, Login, ACD Config and Data Server Configuration
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3PMElHzkpfE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/3PMElHzkpfE?rel=0" title="WFO Integration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Lab Objective
 
@@ -53,7 +53,7 @@ This lab is designed to educate partners on provisiniong requests, ACD and Data 
 
 ## Part 2: Video User Management
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ar-pjwt1hho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/ar-pjwt1hho?rel=0" title="User Management" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 1. User adminitration
 
@@ -81,7 +81,7 @@ This lab is designed to educate partners on provisiniong requests, ACD and Data 
 
 # Part 3: Video Roles, Views, and Smart Desktop
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-BvtpdgFyq8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/-BvtpdgFyq8?rel=0" title="Roles, Views, and Smart Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 1. Roles
 * Create new role and define license types and permissions.
