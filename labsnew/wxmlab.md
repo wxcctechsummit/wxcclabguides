@@ -42,7 +42,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 The following video outlines the steps required to create the WxM connector. WxCC uses this connector to read the dispatches that are configured in WxM. This connector is also used to load the widgets into the agent desktop and FeedBack is triggered via the same.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GI4nzVLLFCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/GI4nzVLLFCk?rel=0" title="WxM Lab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -74,7 +74,7 @@ The following video outlines the steps required to create the WxM connector. WxC
 
 The following video demos how a Control Hub user is onboarded to WxM. We have to ensure that each of the agents in Control Hub is linked to one of the valid users in WxM. Based on the access of the WxM user, appropriate widgets will be loaded into Agent Desktop. Since the access control is based on the WxM user, this step is very critical.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SmRBu4QFCos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/SmRBu4QFCos?rel=0" title="Onboarding WxM Lab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quick Links**
 
@@ -150,7 +150,7 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 
 The following video demos how the Agent Desktop Layout JSON has to modify with the appropriate values of the WxM dashboard so that they are loaded into the widgets. The Space ID and the Metrics ID extracted from WxM decide which widget will be loaded for the agent. This lab section assumes that you are familiar with how the agent desktop layout can be modified and applied to a team.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Njie8PrB6Kk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/Njie8PrB6Kk?rel=0" title="Enabling WxM Widgets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Pre-requisites
 
@@ -200,7 +200,7 @@ The following video demos how the Agent Desktop Layout JSON has to modify with t
 
 The following video does a quick demo on how the FeedBack node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. Since Email and Chat are not integrated with Flow, Feedback cannot be used for those interactions. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qGW6lRI7AA0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/qGW6lRI7AA0?rel=0" title="Configure Feedback Node" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Pre-requisites
 
