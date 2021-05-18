@@ -37,7 +37,7 @@ title: "Lab 11: # Webex Contact Center APIs"
 - **Note: If you would like to try out the new API endpoints you can go straight to Part 3** 
 > New Webex Contact Center API endpoints are accessed via - `https://webexapis.com/v1/contactCenter/{endpoint}`
 
-> The Developer docs are at: **https://developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`
+> The Developer docs are at: **https://devportal.produs1.ciscoccservice.com/** > `Documentation`
 
 ## Pre-requisite
 
