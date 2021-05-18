@@ -18,6 +18,8 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | 2021-05-07 | Lab 3 - IVR Contact Routing Lab        | [Lab 3 - IVR Contact Routing](labsnew/Lab3.md){:target="\_blank"}                                      |
 | 2021-05-11 | Lab 4 - Email and Chat Routing        | [Lab 4 - Email and Chat Configuration](labsnew/lab4emailchat.md){:target="\_blank"}                      |
 | 2021-05-12 | Lab 5 - Analyzer Deep Dive Lab        | [Lab 5 - Analyzer Labs](labsnew/analyzerlab1.md){:target="\_blank"}                  |
+| 2021-05-18 | Lab 6 - API Lab                        | Lab 6 is coming soon!           |
+| 2021-05-18 | Lab 7 - CRM Integration Lab               | [Lab 7 - CRM Integration](labsnew/salesforcecrmrouting.html){:target="\_blank"}  |
 
 
 ## Important Updates
