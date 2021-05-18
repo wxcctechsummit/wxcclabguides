@@ -363,7 +363,7 @@ POST https://webexapis.com/v1/contactCenter/captures/query
 - To develop applications with the new APIs, you must build an integration with Webex.
 
 
-- See **[Contact Center Dev Portal Docs - Early Access](https://apim-dev-portal.appstaging.ciscoccservice.com/)** for all the details. 
+- See **[Contact Center Dev Portal Docs - Early Access](https://devportal.produs1.ciscoccservice.com/)** for all the details. 
 
 Here is a summary: 
 
