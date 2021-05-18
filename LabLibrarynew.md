@@ -21,6 +21,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | 2021-05-18 | Lab 6 - API Lab                        | Lab 6 is coming soon!           |
 | 2021-05-18 | Lab 7 - CRM Integration Lab               | [Lab 7 - CRM Integration](labsnew/salesforcecrmrouting.html){:target="\_blank"}  |
 | 2021-05-18 | Lab 8 - Google CCAI Integration Lab               | [Lab 8 - Google CCAI Integration](labs/GoogleCCAIIntegration.html){:target="\_blank"}  |
+| 2021-05-18 | Lab 9 - WxM Integration Lab               | [Lab 9 - WxM Integration](labsnew/wxmlab.html){:target="\_blank"}  |
 
 
 ## Important Updates
