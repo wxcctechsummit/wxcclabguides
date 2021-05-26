@@ -21,22 +21,29 @@ Video example
 
 ## Lab Objective
 
-The object of this lab excercise is to customize the logo and title of the agent desktop and also add widget in the header section and nav bar section.
+The objective of this lab is to get an idea about the Agents and Supervisors user journey, to familiarize with the platforms they use and to explore some of the most useful new features they offer.
+In the first part of the lab we will focus on the Agent Desktop, we will customize the logo and title of the platform and also add a widget in the nav bar section.
+Later, in the second part, we will see the different reporting dashboards that Supervisors can see through the Management Portal and perform some action on the Agents
 
 ## Pre-requisite
 
-1. Administrator/ Supervisor with portal access​.
-2. New user (Agent) is already created​.
-3. Agent is able to login to agent desktop​.
-4. Agent should be part of a team​.
-5. Basic knowledge of JSON format​
-6. Use any online [JSON validator](https://jsonlint.com) to validate the file​
+1. You need 2 devices where you can install webex calling (example: PC or Mac and Mobile).
+2. For doing this lab, you must first complete the Lab 1: Control Hub and Admin Portal:
+* You have the administrator's access to the Tenant Management Portal.
+* Agent and Supervisor users created and configured
+* You have agent's access to the Agent Desktop
+* You have the supervisor's access to the Tenant Management Portal.
+* Agent is part of 2 Teams.
+* Webex Calling extensions are assigned to a WxCC users (agent and supervisor).
+
+
 
 ## Quick Links
 
-- <a href="https://portal.wxcc-us1.cisco.com/portal" target="_blank">Portal</a>
-- <a href="https://analyzer.wxcc-us1.cisco.com/analyzer/home" target="_blank">Analyzer</a>
+- <a href="https://portal.wxcc-us1.cisco.com/portal" target="_blank">Tenant Management Portal</a>
 - <a href="https://desktop.wxcc-us1.cisco.com" target="_blank">Agent Desktop</a>
+
+
 
 ### 1. Download default desktop Layout
 
@@ -95,7 +102,7 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 ## 1.1: Create a Custom Desktop Layout
 
-> Watch the following video to learn the dekstop layout customization process. After the video, you will be able to customize the Agent Desktop with your company logo and you will see a more advanced and cool layout example.
+> Watch the following video to learn the dekstop layout customization process. After the video, you will be able to customize the Agent Desktop with your company logo.
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/CRoZlFAS49I?rel=0" title="WxCC Lab #2 Part 4: Custom Desktop Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -122,7 +129,7 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 ### 3. Upload the custom desktop layout and associate it to a team
 
-- Go as admin to **_Desktop Layout_** module in the **[Tenant Portal](https://portal.wxcc-us1.cisco.com){:target="_blank"}**.
+- Go as admin to **_Desktop Layout_** module in the **[Tenant Management Portal](https://portal.wxcc-us1.cisco.com){:target="_blank"}**.
 
 - Click on **_New Layout_**.
 
@@ -153,9 +160,9 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 ### 1. More advance example
 
-- Download the **[custom JSON file](https://cisco.box.com/s/4hmozg4h9gwaa1x9zhq1w6mehw8guvuy){:target="_blank"}**.
+- Download the **[custom JSON file](https://raw.githubusercontent.com/wxcctechsummit/wxcclabguides/master/TechSummitRoW_2021/FlyHigh%20Desktop%20Layout%201.0(1).json){:target="_blank"}**.
 
-- Go again to **_Desktop Layout_** module in the **[Tenant Portal](https://portal.wxcc-us1.cisco.com){:target="_blank"}**.
+- Go again to **_Desktop Layout_** module in the **[Tenant Management Portal](https://portal.wxcc-us1.cisco.com){:target="_blank"}**.
 
 - Click on **_New Layout_**.
 
@@ -172,13 +179,13 @@ The object of this lab excercise is to customize the logo and title of the agent
 - **See** the new desktop layout.
 
 
->The following video outlines the existing dashboards available to the supervisor in the management portal. Follow the instructions to find out which dashboards are available and what they are for.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/E5IQn55aFmM?rel=0" title="WxCC Lab #5 Part 1: Portal Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## 2: Supervisor
 
 ## 2.1: Portal's Dashboards
+
+>The following video outlines the existing dashboards available to the supervisor in the management portal. Follow the instructions to find out which dashboards are available and what they are for.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/E5IQn55aFmM?rel=0" title="WxCC Lab #5 Part 1: Portal Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
 ### 1. Management Portal with Supervisor account
 
