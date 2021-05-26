@@ -10,10 +10,10 @@ Video example
 
 # Table of Contents
 
-- [1. Agent Desktop](#1-download-default-desktop-layout)
-  - [1.1. Create Customized Desktop Layoute](#2-customize-default-desktop-layout-with-logo-and-title)
-  - [1.2. More Advance Customized Desktop Layout](#3-upload-the-custom-desktop-layout-an-verify)
-- [2. Supervisor](#4-assign-header-widget-and-nav-bar-widget)
+- [1. Agent Desktop](#1-agent-desktop)
+  - [1.1. Create Customized Desktop Layoute](#1-1-create-a-custom-desktop-layout)
+  - [1.2. More Advance Example](#3-upload-the-custom-desktop-layout-an-verify)
+- [2. Supervisor](#2-supervisor)
   - [2.1. Portal's Dashboards](#5-upload-the-modified-layout)
   - [2.2. Permissions and Remote Agent Logout](#6-verify-the-layout)
 
@@ -22,13 +22,15 @@ Video example
 ## Lab Objective
 
 The objective of this lab is to get an idea about the Agents and Supervisors user journey, to familiarize with the platforms they use and to explore some of the most useful new features they offer.
+
 In the first part of the lab we will focus on the Agent Desktop, we will customize the logo and title of the platform and also add a widget in the nav bar section.
+
 Later, in the second part, we will see the different reporting dashboards that Supervisors can see through the Management Portal and perform some action on the Agents
 
 ## Pre-requisite
 
-1. You need 2 devices where you can install webex calling (example: PC or Mac and Mobile).
-2. For doing this lab, you must first complete the Lab 1: Control Hub and Admin Portal:
+1. You need **2 devices** where you can install **Webex Calling** (example: PC or Mac and Mobile).
+2. For doing this lab, you must first complete the **Lab 1: Control Hub and Admin Portal:**
 * You have the administrator's access to the Tenant Management Portal.
 * Agent and Supervisor users created and configured
 * You have agent's access to the Agent Desktop
@@ -45,62 +47,9 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 
 
-### 1. Download default desktop Layout
-
-- Login to [WxCC portal](https://portal.cjp.cisco.com/portal/home.html) with admin credentials​
-  - Note that you should have at least one agent configured for testing at this point
-- Navigate to Provisioning --> Desktop Layout​
-- Click on ellipses `...` of Global Layout to edit [Video Direct Link](https://www.youtube.com/embed/ZYFwqEjZLWM?start=150)
-- Now click on edit
-- Click on download button ​
-- Download the Default Desktop Layout.json file​
-- Now cancel out, as you only need to get the JSON file
-
-### 2. Customize default desktop layout with logo and title
-
-- Open the Default Layout JSON in any text editor e.g. Notepad or Sublime text.​
-- Modify the value of appTitle key to change Agent Desktop title ​
-- Modify the value of logo key as your company logo URL or use this dummy url: https://widget-kad.s3.amazonaws.com/Logos/boscologo5.png
-- “Save As” the JSON file with a distinguishable name.
-
-### 3. Upload the custom desktop layout an verify
-
-- Login to [WxCC portal](https://portal.cjp.cisco.com/portal/home.html) with admin credentials​
-- Navigate to Provisioning --> Desktop Layout​
-- Click on New Layout
-- Provide any preferable name and description ​
-- Click on Team textbox to add the team ​
-- Click Upload button to upload the modified JSON file​
-- Click Save button to apply the layout.
-- Login/Reload [WxCC agent desktop](https://desktop.wxcc-us1.cisco.com) to verify the layout
-
-### 4. Assign header widget and nav bar widget
-
-- Open the layout JSON file in any text editor e.g.
-- Notepad or Sublime text.(be careful copying from PowerPoint might add unwanted spaces/characters... causing the JSON to \* \* fail on load) use an online [JSON formatter](https://jsonformatter.org/) to clean up if required.​
-- Modify the header section as mentioned in video
-- Modify the navigation section by creating a new navigation widgit with a direct link​ [Video Direct Link](https://www.youtube.com/embed/ZYFwqEjZLWM?start=330)
-- “Save As” the JSON file with a unique preferable name
-
-### 5. Upload the modified layout
-
-- Login to [WxCC portal](https://portal.cjp.cisco.com/portal/home.html) with admin credentials​
-- Navigate to Provisioning --> Desktop Layout​
-- Search for your layout ​
-- Click on ... to edit the existing layout​
-- Now click on edit
-- Click Upload button to upload the modified JSON file​
-- Finally click Save button to apply the layout.
-
-### 6. Verify the layout
-
-- Login/Reload [WxCC agent desktop](https://desktop.wxcc-us1.cisco.com) to verify the layout
-
-
-
 ## 1. Agent Desktop
 
-## 1.1: Create a Custom Desktop Layout
+## 1.1 Create a Custom Desktop Layout
 
 > Watch the following video to learn the dekstop layout customization process. After the video, you will be able to customize the Agent Desktop with your company logo.
 
@@ -156,9 +105,9 @@ Later, in the second part, we will see the different reporting dashboards that S
 - Wait some seconds to see the results. Now you should get a new log icon in the left upper corner.
 
 
-## 1.2: More advance example
+## 1.2 More advance example
 
-### 1. More advance example
+### 1. Upload the custom desktop layout and associate it to a team
 
 - Download the **[custom JSON file](https://raw.githubusercontent.com/wxcctechsummit/wxcclabguides/master/TechSummitRoW_2021/FlyHigh%20Desktop%20Layout%201.0(1).json){:target="_blank"}**.
 
@@ -174,14 +123,16 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 - Click **_Save_** button to apply the layout.
 
+### 2. Verify the new custom desktop layout
+
 - Go back to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** and change the team to `Team1_wxcclab_<ID>`.
 
 - **See** the new desktop layout.
 
 
-## 2: Supervisor
+## 2. Supervisor
 
-## 2.1: Portal's Dashboards
+## 2.1 Portal's Dashboards
 
 >The following video outlines the existing dashboards available to the supervisor in the management portal. Follow the instructions to find out which dashboards are available and what they are for.
 
@@ -199,7 +150,7 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 - Enter the **Password** for the appropriate Username.
 
-### 2. Portal's dashboards information
+### 2. Contact Center Overview - Realtime
 
 - Ensure that browser pop up blockers are not blocking the **_Admin Portal_** pop up. The `Entry Point - Site level` dashboard has to be shown on the landing page.
 
@@ -217,18 +168,14 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 - Check the new data on the Realtime dashboard. Now, this call will be presented in the table **Contact Details in the Queue**. In addition, the value will increase in the **Longest Contact Currently in Queue** chart.
 
+### 3. Contact Center Overview - Historical
+
 -  Select the third dashboard `Contact Center Overview - Historical`. You will be able to see the same information but from the historical perspective. By default the informaiton is shown for the last 7 days. Change the **Duration** filter to **This Year** in the upper right corner. 
 
 - Open the help guide by clicking on the supervisor account in the upper right corner and selecting the **Help** option.
 
-## 2.2: Supervisor permissions and remote agent logout
 
->Here we go through the newly added dashboard. We will learn how to change supervisor permissions and how to manually log out agents by using a supervisor account.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/nseNRPTL7Ag?rel=0" title="WxCC Lab #5 Part 2: Supervisor permissions and remote agent logout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-### 1. Agent State Data – Realtime dashboard 
+### 4. Agent State Data – Realtime dashboard 
 
 - Make sure that the agent is logged in.
 
@@ -238,7 +185,14 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 - Manually refresh dashboard data by clicking on **Stop Refresh** button. As the result, the **time since last refresh** will be restarted.
 
-### 2. Remote Agent Logout 
+## 2.2 Supervisor permissions and remote agent logout
+
+>Here we go through the newly added dashboard. We will learn how to change supervisor permissions and how to manually log out agents by using a supervisor account.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/nseNRPTL7Ag?rel=0" title="WxCC Lab #5 Part 2: Supervisor permissions and remote agent logout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 1. Remote Agent Logout 
 
 - To log out an agent, click **Sign Out** button in the **Action** column. 
 
@@ -255,7 +209,7 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 > **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
 
-### 3. Supervisor’s User Profile
+### 2. Supervisor’s User Profile
 
 - Make sure the agent is logged back into the agent interface. During the agent login select the `Team2_wxcclab_<ID>`.
 
