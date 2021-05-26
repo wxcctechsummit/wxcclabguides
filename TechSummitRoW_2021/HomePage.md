@@ -12,7 +12,6 @@ The Lab schedule has changed while all labs are being updated to align with the 
 
 | Date       | Session                                | Corresponding Lab                                                                                      |
 | ---------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Week 1 | Prerequisites                          | [WxCC Partner Enablement](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="\_blank"} |
 | Week 1 | Lab 1 - Control Hub & Admin Portal Lab | [Lab 1 - Control Hub & Admin Portal](Lab1.md){:target="\_blank"}                               |
 | Week 2 | Lab 2 - Agent and Supervisor Desktops              | [Lab 2 - Agent and Supervisor Desktops](Lab2.md){:target="\_blank"}                    |
 | Week 2 | Lab 3 - IVR Contact Routing Lab        | [Lab 3 - IVR Contact Routing](Lab3.md){:target="\_blank"}                                      |
