@@ -31,18 +31,251 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Pre-requisites
 
-- Your GOLD tenant order has been processed and you have received the initial provisioning email.
-- You have a full admin access to your New WxCC tenant.
-- The voice chennel is configured and you have a PSTN number.
+- You have recived the **admin login** credentials with a full admin access.
+- You have 2 **calling numbers** assigned to your POD.
 
 ### Quick Links
 
-> Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
+> Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Mailinator: **[https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"}**
 
 # Lab Section
 
-## Part 1: Tenant Creation Walkthrough
+## Part 1: Control Hub Calling Configuration
+
+> The following video outlines the Webex calling configuration steps that enable the administrator to use the configured default location and assign a number for those locations. This is a supportive video that does not require any actions since that part is already preconfigured on your tenant. 
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/cr_QUKvu4yc?rel=0" title="WxCC Lab #1 Part 3: Control Hub Calling or Telephony Settings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Part 2: Control Hub User Management Admin Task
+
+> The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users and set the Calling extension. While adding the user, we will see how to select user roles. 
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/-pgYPCFh6YI?rel=0" title="WxCC Lab #1 Part 4: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+| **User Role** | **User email**      | **User Extension**                   |
+| ----------- | ----------------- | -------------------------------- |
+| Agent        | agent1_\<ID\>@mailinator.com   | 1000 |
+| Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2000 |
+
+> **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
+
+### 1. Add an agent and a supervisor users and configure the calling extension
+
+- Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the admin account.
+
+- Navigate to **_Users_**.
+
+- Click on **_Manage Users_** button.
+
+- Click on **_Manually Add or Modify User_**.
+
+- Select **_Next_** in **_Manage Users_** pane.
+
+- Input the **Email addresses** of the agent and supervisor users and click **_Next_**. 
+
+- Verify that the **Email addresses** are same as in the table above and click **_Next_**.
+
+- Check **_Webex Teams_** , **_Webex Calling (Enterprise)_** & **_Contact Center_**.
+
+- Ensure that the License Type is **_Premium Agent_** and Role is **_Agent_** and click **_Next_**. 
+
+- On the next page, make sure that the **_Location_** is selected under **_Assign Numbers_**. The correct value should be already selected by default. 
+
+- The **_Phone Number_** left as **None**.
+
+- On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
+
+- Click **_Finish_**.
+
+- On the next page, you should get confirmation **"2 Total records processed"**. Confirm the same by pressing **_Finish_**.
+
+- Select the supervisor user and modify his role to **_Supervisor_** by clicking the top **_Edit_** button in front of **_Services_**. Click **_Save_** to confirm the changes.
+
+- Validate the users by going to [https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"} and putting agent/supervisor email in to **_Enter Public Mailinator Inbox_** 
+
+> **Note:** You do not need a password to open the inbox on mailinator. You can read any emails without mailbox credentials. Just insert agent name in the top right form and click **GO**.
+> ![Mailinator](../images/mailinator.png)
+
+- Check the email inboxes and follow the **Cisco Webex** email instructions to activate the user accounts. For the user activation, you have to set the password twice for both users.
+
+- Refresh the **_Users_** page in the Control Hub, make sure that all users are in **Active** status.
+
+### 2. Optionally, add the rest of the users
+
+- Follow the same steps as above to add any extra users that you want to add to the Contact Center.
+
+[To top of this lab](#table-of-contents)
+
+
+## Part 3: Admin Portal Multimedia Profile, Site and Team Configuration
+
+> The following video outlines how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. We will also see how to navigate to the Webex Contact Center Management Portal from Control Hub UI.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/hd56VM7Gdbs?rel=0" title="WxCC Lab #1 Part 5: Admin Portal Multimedia Profile, Site and Team Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+| **Entity**          | **Name** |
+| ------------------- | -------- |
+| Multimedia Profiles | MMP_\<ID\>_TS   |
+| Site                | Site_\<ID\>_TS  |
+| Team1               | Team1_\<ID\>_TS |
+| Team2               | Team2_\<ID\>_TS |
+
+### 1. Create new MultiMedia Profile
+
+- Login to Control Hub by accessing [https://admin.webex.com](https://admin.webex.com){:target="\_blank"}.
+
+- Enter the admin email id and the password.
+
+- Navigate to **_Contact Center_** Card.
+
+- Click **_Settings_** in the upper right corner.
+
+- Scroll down to the **_Advanced Configuration_** section.
+
+- Click on **_Go to Webex Contact Center Management Portal_**.
+
+- Ensure that browser pop up blockers are not blocking the **_Admin Portal_** pop up.
+
+- Click on **_Provisioning_** and select **_Multimedia Profiles_**.
+
+- Click on `+ New Multimedia Profile` to open Multimedia Profile configuration page.
+
+- Input Name as `MMP_ID_TS`.
+
+- In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, `3` for **_Social Channel_** and click **_Save_**.
+
+### 2. Create new Site
+
+- Navigate to **_Provisioning_** and select **_Site_**.
+
+- Click on `+ New Site` button and provide the Name as `Site_ID_TS`.
+
+- Select `MMP_ID_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
+
+### 3. Create new Team 1
+
+- Navigate to **_Provisioning_** and select **_Team_**.
+
+- Click on `+ New Team`.
+
+- Select `Site_ID_TS` from the **_Site_** drop-down.
+
+- Input **_Name_** as `Team1_ID_TS`.
+
+- Use the default **_Type_** `Agent Based`.
+
+- Select `MMP_ID_TS` in the **_Multimedia Profile_** drop-down.
+
+- Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
+
+### 4. Create new Team 2
+
+- Please follow the same steps as above to add an extra Team as `Team2_ID_TS`. Later we will use this team to assign a custom Desktop Layout.
+
+[To top of this lab](#table-of-contents)
+
+## Part 4: Admin Portal User Configuration
+
+> The following video outlines how to configure the users in Admin Portal that were added first in Control Hub. This is a very critical task from the Contact Center perspective. We also would take a look at how to associate customer-created Site, Team, and Multi-Media Profile with those users. After this, we should be able to login as an agent.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/BXVdOrdh_Hw?rel=0" title="WxCC Lab #1 Part 6: Admin Portal User Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 1. Synchronize Webex Contact Center Users
+
+- Login to Control Hub by accessing [https://admin.webex.com](https://admin.webex.com){:target="\_blank"}.
+
+- Enter the admin email id and the password.
+
+- Navigate to **_Contact Center_** card.
+
+- Click on **_Settings_** and then `Synchronize Users`.
+
+### 2. Manage settings for existing user
+
+- Go back to the **_Webex Contact Center Management Portal_**.
+
+- Click on **_Provisioning_** and select **_Users_**.
+
+- Click on `...` for the first user, to launch the **_Edit_** view for a particular User configuration.
+
+- Click on **_Contact Center Enabled_** toggle to move it to **_On_**.
+
+- In the **_Agent Settings_** section, select `Site_ID_TS` in the **_Site_** drop-down.
+
+- Click the **_Teams_** area and select `Team1_ID_TS` and `Team2_ID_TS`.
+
+- Select `MMP_ID_TS` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
+
+- Make sure that the user are now shown with the **_Contact Center Enabled_** flag as `Yes` and **_Status_** as `Active`.
+
+[To top of this lab](#table-of-contents)
+
+## Part 4: Webex Calling App Installation
+>The following video explains the process to access the Agent Desktop. Following the steps, you will log in with your credentials and indicate the number where you want to receive the calls. 
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/HmovpwYlcLs?rel=0" title="WxCC Lab #2 Part 1: Access to the Agent Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 1. Activate Webex Calling
+
+- Login the **[Control Hub](https://admin.webex.com/){:target="_blank"}** with your admin credentials.
+
+- Navigate to **_Users_**.
+
+- Select the **Agent** user `agent1_<ID>@mailinator.com` created in the previus lab.
+
+- In the User settings, make sure that the following **_Services_** are listed:
+   -  **_Messaging_** as **Cisco Webex Teams**.
+   -  **_Calling_** as **Webex Calling Enterprise**.
+   -  **_Contact Center_**.
+
+- Scroll down to **_Calling Behaviour_** and select **_Webex Calling app_**. Click **_Save_**.
+
+- Repeat the same steps for **Supervisor** user `supervisor1_<ID>@mailinator.com`. Make sure that **_Webex Calling app_** has been activated.
+
+### 2. Download and Login in the Webex Calling app for PC or Mac
+
+> **Note:** You need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. Alternatively, if you have a US number, you can use it as an agent's extension. This tenant does not allow numbers outside of the United States. In this lab, we will use the Webex Calling app for PC or Mac for **agent** account.
+
+- Login to **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}** by using account `agent1_<ID>@mailinator.com`.
+
+- Click on **_Webex Calling_** this will cross launch CUP in a new browser tab.
+
+- Go to **_My Apps_**.
+
+- Click `Download` the Webex Calling Client **Desktop Software**.
+
+- Install the application on your PC/Mac.
+
+- Open Webex Calling and сlick **Sign In**. Specify the agent credentials for `agent1_<ID>@mailinator.com`.
+
+- Navigate to **_File > Edit Server Address_** and make sure you have selected **North America** region
+
+### 3. Download and Login in the Webex Calling app for mobile 
+
+> **Note:** You need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. In this lab, we will use the Webex Calling app for mobile for **supervisor** account.
+
+- Open the Application Manager (**Play Store** or **App Store**) on your mobile phone.
+
+- Search for **_webex calling_**.
+
+- **Download** and **Open** the app. Click `Get Started`.
+
+- Login in the app by selecting **_Region_** as **North America**.
+
+- Set **_Email address_** and **_Password_** as the supervisor account `supervisor1_<ID>@mailinator.com`.
+
+> **Note:** Make sure that you give access to the phone's microphone for the calling app.
+
+![WxCallingAndroid](../images/wxcallingandroid.png)
+
+
+
+
+## Part 5: **BONUS** Tenant Creation Walkthrough
 
 > The initial walkthrough assumes that a new partner is creating both Webex Control Hub and Webex Contact Center Gold Tenant. This process is shown for setting up your GOLD tenant using Webex Calling. If you are using the VPOP bridge option then the prerequisite would be that your CUBE has already been configured and `tested`. VPOP option requires additional configuration that is done internally through a manual process. If you are using VPOP please be sure you are in communication with your PSAM to have the additional steps done for the VPOP Bridge.
 
@@ -96,210 +329,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - This is the end of this lab module.
 
-## Part 2 **BONUS** Trial Tenant Setup Video
+## Part 6 **BONUS** Trial Tenant Setup Video
 
 > This is not a lab video. It is a bonus video showing how to setup a Trial Tenant. The steps are similar but since this is a trial tenant it is not necessary to go through the ordering process. Trial tenants are a great option for customers who are willing to try Webex Contact Center prior to a purchase.
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/m9QamZh4LwI?rel=0" title="Trial Tenant Setup - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Part 3: Control Hub Calling and Telephony Settings
 
-> The following video show two options of telephony configuration. First part outlines the Webex calling and configuration steps that enable the administrator to use the configured default location and assign a number for those locations. The second part shows the Telephony Settings in case of vPOP connection or PSTN Bundle.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/cr_QUKvu4yc?rel=0" title="WxCC Lab #1 Part 3: Control Hub Calling or Telephony Settings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Set Calling default Service Setting as Cloud Connected PSTN
-
-> **Note:** The steps below are needed **only for Webex Calling Connection**. You can skip this section if it is already configured on your tenant.
-
-- Login to the [Control Hub](https://admin.webex.com){:target="\_blank"} with the existing admin account.
-
-- Navigate to **_Calling Card_**.
-
-- Click on **_Service Settings_**.
-
-- Scroll down to **_PSTN Connection_** section.
-
-- Select **_Cloud Connected PSTN_**.
-
-- From the drop down, select the correct provider and hit **_Save_**.
-
-- Navigate to **_Locations_**.
-
-- Create a new location.
-
-- Click on **_Unassigned_** to set the PSTN Connection.
-
-- Click **_Edit_** under **_Local Gateway_**.
-
-- Hit **_Continue_** to **_Edit PSTN Connection for Richardson_**.
-
-- Select **_Cloud Connected PSTN_**.
-
-- From the drop down, select the PSTN Provider.
-
-- Check the 2 boxes for accepting **_Phone Number Porting Confirmation_**.
-
-- Click **_Save_** to finish the setup and then exit out of Location config pane.
-
-- Navigate to **_Numbers_**
-
-- Click on **_Add Numbers_**
-
-- Under **_Location_** drop down , you should find **_Richardson_**. Select it
-
-- Add the first DN and click on **_Validate_**
-
-- Add the Second DN and click on **_Validate_**
-
-- Click **_Save_**
-
-## Part 4: Control Hub User Management Admin Task
-
-> The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users, and in case of Webex Calling set the extension. While adding the user, we will see how to select user roles.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/-pgYPCFh6YI?rel=0" title="WxCC Lab #1 Part 4: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Add a new admin user
-
-> **Note:** You can skip those steps if already have a user who is not assigned to any sites and teams.
-
-- Login to the [Control Hub](https://admin.webex.com){:target="\_blank"} with the existing admin account.
-
-- Navigate to **_Users_**.
-
-- Click on **_Manage Users_** button.
-
-- Click on **_Manually Add or Modify User_**.
-
-- Select **_Next_** in **_Manage Users_** pane.
-
-- Input the **Email addresses** of the new user and click **_Next_**.
-
-- Verify that the **Email addresses** are same as in the table above and click **_Next_**.
-
-- Check **_Webex Teams_** , **_Webex Calling (Enterprise)_** (only if your tenant has a Webex Calling connection) & **_Contact Center_**.
-
-- Ensure that the License Type is **_Premium Agent_** and Role is **_Agent_** and click **_Next_**.
-
-- If Webex Calling is selected, make sure that the **_Location_** is selected under **_Assign Numbers_**. Make sure, that the **_Phone Number_** left as `None`. On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
-
-  > **Note:** The step above is not applicable if your tenant has a vPOP bridge connection and does not have a WxC license.
-
-- Click **_Finish_**.
-
-- On the next page, you should get confirmation **"1 Total records processed"**. Confirm the same by pressing **_Finish_**.
-
-- Select the new user and modify his role to **_Organization Administrator_** by clicking the **_Administrator Roles_** in **_Roles and Security_** section. Click **_Save_** to confirm the changes.
-
-- Validate the users by going to the user's mail box. Check the email inboxes and follow the **Cisco Webex** email instructions to activate the user accounts. For the user activation, you have to set the password twice for both users.
-
-- Refresh the **_Users_** page in the Control Hub, make sure that new user is in **Active** status.
-
-[To top of this lab](#table-of-contents)
-
-## Part 5: Admin Portal Multimedia Profile, Site and Team Configuration
-
-> The following video outlines how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. We will also see how to navigate to the Webex Contact Center Management Portal from Control Hub UI.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/hd56VM7Gdbs?rel=0" title="WxCC Lab #1 Part 5: Admin Portal Multimedia Profile, Site and Team Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-| **Entity**          | **Name** |
-| ------------------- | -------- |
-| Multimedia Profiles | MMP_TS   |
-| Site                | Site_TS  |
-| Team1               | Team1_TS |
-| Team2               | Team2_TS |
-
-### 1. Create new MultiMedia Profile
-
-- Login to Control Hub by accessing [https://admin.webex.com](https://admin.webex.com){:target="\_blank"}.
-
-- Enter the admin email id and the password.
-
-- Navigate to **_Contact Center_** Card.
-
-- Click **_Settings_** in the upper right corner.
-
-- Scroll down to the **_Advanced Configuration_** section.
-
-- Click on **_Go to Webex Contact Center Management Portal_**.
-
-- Ensure that browser pop up blockers are not blocking the **_Admin Portal_** pop up.
-
-- Click on **_Provisioning_** and select **_Multimedia Profiles_**.
-
-- Click on `+ New Multimedia Profile` to open Multimedia Profile configuration page.
-
-- Input Name as `MMP_TS`.
-
-- In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, `3` for **_Social Channel_** and click **_Save_**.
-
-### 2. Create new Site
-
-- Navigate to **_Provisioning_** and select **_Site_**.
-
-- Click on `+ New Site` button and provide the Name as `Site_TS`.
-
-- Select `MMP_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
-
-### 3. Create new Team 1
-
-- Navigate to **_Provisioning_** and select **_Team_**.
-
-- Click on `+ New Team`.
-
-- Select `Site_TS` from the **_Site_** drop-down.
-
-- Input **_Name_** as `Team1_TS`.
-
-- Use the default **_Type_** `Agent Based`.
-
-- Select `MMP_TS` in the **_Multimedia Profile_** drop-down.
-
-- Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
-
-### 4. Create new Team 2
-
-- Please follow the same steps as above to add an extra Team as `Team2_TS`. Later we will use this team to assign a custom Desktop Layout.
-
-[To top of this lab](#table-of-contents)
-
-## Part 6: Admin Portal User Configuration
-
-> The following video outlines how to configure the users in Admin Portal that were added first in Control Hub. This is a very critical task from the Contact Center perspective. We also would take a look at how to associate customer-created Site, Team, and Multi-Media Profile with those users. After this, we should be able to login as an agent.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/BXVdOrdh_Hw?rel=0" title="WxCC Lab #1 Part 6: Admin Portal User Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### 1. Synchronize Webex Contact Center Users
-
-- Login to Control Hub by accessing [https://admin.webex.com](https://admin.webex.com){:target="\_blank"}.
-
-- Enter the admin email id and the password.
-
-- Navigate to **_Contact Center_** card.
-
-- Click on **_Settings_** and then `Synchronize Users`.
-
-### 2. Manage settings for existing user
-
-- Go back to the **_Webex Contact Center Management Portal_**.
-
-- Click on **_Provisioning_** and select **_Users_**.
-
-- Click on `...` for the first user, to launch the **_Edit_** view for a particular User configuration.
-
-- Click on **_Contact Center Enabled_** toggle to move it to **_On_**.
-
-- In the **_Agent Settings_** section, select `Site_TS` in the **_Site_** drop-down.
-
-- Click the **_Teams_** area and select `Team1_TS` and `Team2_TS`.
-
-- Select `MMP_TS` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
-
-- Make sure that the user are now shown with the **_Contact Center Enabled_** flag as `Yes` and **_Status_** as `Active`.
-
-[To top of this lab](#table-of-contents)
 
 ### Congratulations, you have compleated Lab1 tasks!
 
