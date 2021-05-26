@@ -1,5 +1,5 @@
 ---
-title: 'Lab 2: Customizing the Agent Desktop'
+title: 'Lab 2: Agent and Supervisor Desktop'
 ---
 
 # Working With Custom Desktop Layouts
@@ -10,12 +10,12 @@ Video example
 
 # Table of Contents
 
-- [1. Download default desktop Layout](#1-download-default-desktop-layout)
-- [2. Customize default desktop layout with logo and title](#2-customize-default-desktop-layout-with-logo-and-title)
-- [3. Upload the custom desktop layout an verify](#3-upload-the-custom-desktop-layout-an-verify)
-- [4. Assign header widget and nav bar widget](#4-assign-header-widget-and-nav-bar-widget)
-- [5. Upload the modified layout](#5-upload-the-modified-layout)
-- [6. Verify the layout](#6-verify-the-layout)
+- [1. Agent Desktop](#1-download-default-desktop-layout)
+  - [1.1. Create Customized Desktop Layoute](#2-customize-default-desktop-layout-with-logo-and-title)
+  - [1.2. More Advance Customized Desktop Layout](#3-upload-the-custom-desktop-layout-an-verify)
+- [2. Supervisor](#4-assign-header-widget-and-nav-bar-widget)
+  - [2.1. Portal's Dashboards](#5-upload-the-modified-layout)
+  - [2.2. Permissions and Remote Agent Logout](#6-verify-the-layout)
 
 # Introduction
 
@@ -91,9 +91,9 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 
 
+## 1. Agent Desktop
 
-
-## Part 1: Create a Custom Desktop Layout
+## 1.1: Create a Custom Desktop Layout
 
 > Watch the following video to learn the dekstop layout customization process. After the video, you will be able to customize the Agent Desktop with your company logo and you will see a more advanced and cool layout example.
 
@@ -149,7 +149,7 @@ The object of this lab excercise is to customize the logo and title of the agent
 - Wait some seconds to see the results. Now you should get a new log icon in the left upper corner.
 
 
-## Part 2: More advance example
+## 1.2: More advance example
 
 ### 1. More advance example
 
@@ -176,8 +176,9 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/E5IQn55aFmM?rel=0" title="WxCC Lab #5 Part 1: Portal Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## 2: Supervisor
 
-## Part 3: Portal's Dashboards
+## 2.1: Portal's Dashboards
  
 ### 1. Management Portal with Supervisor account
 
@@ -213,7 +214,7 @@ The object of this lab excercise is to customize the logo and title of the agent
 
 - Open the help guide by clicking on the supervisor account in the upper right corner and selecting the **Help** option.
 
-## Part 4: Supervisor permissions and remote agent logout
+## 2.2: Supervisor permissions and remote agent logout
 
 >Here we go through the newly added dashboard. We will learn how to change supervisor permissions and how to manually log out agents by using a supervisor account.
 
