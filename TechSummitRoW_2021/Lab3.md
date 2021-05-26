@@ -31,6 +31,58 @@ title: 'Lab 3: IVR and Contact Routing'
   - [3. Configure the Agent with the Skill](#3-configure-the-collect-digits-block)
   - [4. Configure the Queue Block with SBR](#3-configure-the-custom-variables-and-the-http-request-block)
 
+### Overview of the lab:
+In this Lab, we will explore the different sections and some useful options of the **New Agent Desktop**. You will watch a demo video about Agent Desktop overview and you will configure some options by following the described steps. At the end of the lab, you should be able to know where to find the different features and customize your own desktop layout.
+
+
+# Table of Contents
+
+- [1. Access to the Agent Desktop](#part-1-access-to-the-agent-desktop)
+  * [1. Activate Webex Calling](#1-activate-webex-calling)
+  * [2. Download and Login in the Webex Calling app for PC or Mac](#2-download-and-login-in-the-webex-calling-app-for-pc-or-mac)
+  * [3. Download and Login in the Webex Calling app for mobile](#3-download-and-login-in-the-webex-calling-app-for-mobile)
+  * [4. Agent Desktop Login](#4-agent-desktop-login)
+- [2. Agent Desktop Overview](#part-2-agent-desktop-overview)
+  * [1. Introducing the Agent Desktop Interface](#1-introducing-the-agent-desktop-interface)
+  * [2. Verification of understanding](#2-verification-of-understanding)
+- [3. Configure the User Profile](#part-3-configure-the-user-profile)
+  * [1. Change Notifications setting and volume](#1-change-notifications-setting-and-volume)
+  * [2. Switch to Dark Mode](#2-switch-to-dark-mode)
+  * [3. See the list of the keyboard shortcuts](#3-see-the-list-of-the-keyboard-shortcuts)
+  * [4. Download Error Report](#4-download-error-report)
+- [4. Custom Desktop Layout](#part-4-custom-desktop-layout)
+  * [1. Download default desktop Layout](#1-download-default-desktop-layout)
+  * [2. Customize default desktop layout with logo and title](#2-customize-default-desktop-layout-with-logo-and-title)
+  * [3. Upload the custom desktop layout and associate it to a team](#3-upload-the-custom-desktop-layout-and-associate-it-to-a-team)
+  * [4. Verify the new custom desktop layout](#4-verify-the-new-custom-desktop-layout)
+  * [5. More advance example](#5-more-advance-example)
+
+
+# Introduction
+
+### Lab Objective
+
+The objective of this lab is to **explore the New Agent Desktop**, in order to be familiar with the new structure, learn about recently released features, and be able to configure basic functionalities.
+
+### Pre-requisites
+
+- You need 2 devices where you can install webex calling (example: PC or Mac and Mobile).
+- For doing this lab, you must first complete the **[Lab 1: Control Hub and Admin Portal](lab1.md)**:
+   - You have the administrator's access to the Tenant Portal.
+   - Agent created and configured.
+   - Agent is part of 2 Teams.
+   - Webex Calling extensions are assigned to a WxCC users (agent and supervisor).
+
+### Quick Links
+
+> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> Webex Calling app **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}**
+
+
+
+
 # Introduction
 
 ## Lab Objective
@@ -557,6 +609,85 @@ Execute the Test:
 ---
 
 ## Congratulations! You're done!
+
+
+## Part 4: Custom Desktop Layout
+
+> Watch the following video to learn the dekstop layout customization process. After the video, you will be able to customize the Agent Desktop with your company logo and you will see a more advanced and cool layout example.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/CRoZlFAS49I?rel=0" title="WxCC Lab #2 Part 4: Custom Desktop Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 1. Download default desktop Layout
+
+- Login to **[https://portal.wxcc-us1.cisco.com](https://portal.wxcc-us1.cisco.com){:target="_blank"}** with admin credentials.
+
+- Navigate to **_Provisioning_** –> **_Desktop Layout_**.
+
+- Click on ellipses `...` of Global Layout and select **_Edit_**.
+
+- Click on **_Download_** button to download the **Default Desktop Layout.json** file.
+
+### 2. Customize default desktop layout with logo and title
+
+- Open the **Default Desktop Layout.json** file with any text editor (e.g. Notepad or Sublime text).
+
+- Modify the **_appTitle_** key value with your company name in order to change Agent Desktop title.
+
+- Modify the **_logo_** key value with your company logo URL or use this **https://raw.githubusercontent.com/wxcctechsummit/holcct2100/main/labslive/CiscoLiveLogo.jpg**.
+
+- **_Save As_** the JSON file with a distinguishable name.
+
+### 3. Upload the custom desktop layout and associate it to a team
+
+- Go as admin to **_Desktop Layout_** module in the **[Tenant Portal](https://portal.wxcc-us1.cisco.com){:target="_blank"}**.
+
+- Click on **_New Layout_**.
+
+- Provide the preferable **name** `Custom Desktop Layout <ID>`. Your \<ID\> is provided in the email in the **"Attendee ID"** line.
+
+- Select `Team2_wxcclab_<ID>` as Team.
+
+- Click **_Upload_** button to upload the modified JSON file.	
+
+- Click **_Save_** button to apply the layout.
+
+### 4. Verify the new custom desktop layout
+
+- Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}**.
+
+- Open the **_User Profile_** and click on the arrow `>` under **_Team_**.
+
+- Change the team of the agent to `Team2_wxcclab_<ID>`.
+
+- Click on **_Save Team Selection_**.
+
+- Confirm the changes by clicking on **_Change Team_**.
+
+- Wait some seconds to see the results. Now you should get a new log icon in the left upper corner.
+
+### 5. More advance example
+
+- Download the **[custom JSON file](https://cisco.box.com/s/4hmozg4h9gwaa1x9zhq1w6mehw8guvuy){:target="_blank"}**.
+
+- Go again to **_Desktop Layout_** module in the **[Tenant Portal](https://portal.wxcc-us1.cisco.com){:target="_blank"}**.
+
+- Click on **_New Layout_**.
+
+- Provide any preferable **name and description**.
+
+- Select `Team1_wxcclab_<ID>` again as Team.
+
+- Click **_Upload_** button to upload the modified JSON file.
+
+- Click **_Save_** button to apply the layout.
+
+- Go back to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** and change the team to `Team1_wxcclab_<ID>`.
+
+- **See** the new desktop layout.
+
+[To top of this lab](#table-of-contents)
+
 
 Changelog:
 
