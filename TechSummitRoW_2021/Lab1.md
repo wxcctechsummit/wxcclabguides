@@ -38,6 +38,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - You have recived the **admin login** credentials with a full admin access.
 - You have 2 **calling numbers** assigned to your POD.
+- You need 2 devices where you can install webex calling (example: PC or Mac and Mobile).
+
 
 ### Quick Links
 
