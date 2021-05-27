@@ -86,9 +86,9 @@ title: 'Lab 3: IVR and Contact Routing'
 
 ### 4. Launch Portal to ensure the admin user admin1pod**@** is Contact center configured for testing.
 
-- Ensure that a Site and a Team has been created: `Site_TS`, `Team_TS`
+- Ensure that a Site and a Team has been created: `Site_<ID>_TS`, `Site_<ID>_TS`
 - Ensure the user is Contact Center Enabled.
-- Associate the User to the Site, Team, ( `Site_TS`, `Team_TS`) and default Multimedia Profile - `Default_Telephony_Profile`.
+- Associate the User to the Site, Team, ( `Site_<ID>_TS`, `Site_<ID>_TS`) and default Multimedia Profile - `Default_Telephony_Profile`.
 - Verify by Launching the Agent Desktop and logging in.
 
 Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
