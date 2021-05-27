@@ -19,8 +19,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - [Part 3: Admin Portal User Configuration](#part-3-admin-portal-user-configuration)
   * [1. Synchronize Webex Contact Center Users](#1-synchronize-webex-contact-center-users)
   * [2. Manage settings for existing user](#2-manage-settings-for-existing-user)
-- [Part 4: BONUS Tenant Creation Walkthrough](#part-4-bonus-tenant-creation-walkthrough)
-- [Part 5: Bonus Video Only Trial Tenant Setup](#part-5-bonus-trial-tenant-setup-video)
+- [Part 4: Access to the Agent Desktop](#part-4-access-to-the-agent-desktop)
+  * [1. Activate Webex Calling](#1-activate-webex-calling)
+  * [2. Download and Login in the Webex Calling app for PC or Mac](#2-download-and-login-in-the-webex-calling-app-for-pc-or-mac)
+  * [3. Download and Login in the Webex Calling app for mobile](#3-download-and-login-in-the-webex-calling-app-for-mobile)
+  * [4. Agent Desktop Login](#4-agent-desktop-login)
+- [Part 5: BONUS Tenant Creation Walkthrough](#part-5-bonus-tenant-creation-walkthrough)
+- [Part 6: Bonus Video Only Trial Tenant Setup](#part-6-bonus-trial-tenant-setup-video)
 
 # Introduction
 
@@ -38,7 +43,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
-> Mailinator: **[https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"}**
+> Mailinator: **[https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
 > Webex Calling app **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}**
 
@@ -291,7 +296,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ## Part 5: **BONUS** Tenant Creation Walkthrough
 This is a supportive video that does not require any actions since your tenant is already provisioned. The video demonstrates the initial provisioning task for WxCC 2.0. The initial walkthrough assumes that a new partner is creating both Webex Control Hub and Webex Contact Center Gold Tenant. This process you will use in the feature for setting up your GOLD tenant using Webex Calling. 
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/zxdl28izCJw?rel=0" title="WxCC Lab #1 Part 1: GOLD Tenant Initial Provisioning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/zxdl28izCJw?rel=0" title="WxCC Lab #1 Part 5: Tenant Creation Walkthrough - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Part 6 **BONUS** Trial Tenant Setup Video
