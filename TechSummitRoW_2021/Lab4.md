@@ -185,7 +185,7 @@ ${AgentName}
 
 - Click `Accept` to handle the email.
 
-- Click `Reply` or `Reply All` to reply to the email and enter the body of the email and hit send button.
+- Click `Reply` or `Reply All` to reply to the email and enter the body of the email and hit send button. This will also show the predefined email template prefilled in the message body.
 
 - Add wrap up code and close the task.
 
@@ -345,9 +345,9 @@ The content of the body element is displayed in your browser.
 
 - Once the agent goes Available, the Chat will be offered to the agent.
 
-- Click `Accept` to handle the email.
+- Click `Accept` to handle the Chat.
 
-- Test the Predefined Chat Response functionality and sending messages and attachments. `Complete` the chat when done.
+- Test the Predefined Chat Response functionality (click on the little chat bubble right above the response area in the Agent Desktop) and sending messages and attachments. `Complete` the chat when done.
 
 ### Congratulations, you are now ready to start [Lab 5](lab5.md)
 
