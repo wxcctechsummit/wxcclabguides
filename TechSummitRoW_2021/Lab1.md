@@ -8,19 +8,19 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 # Table of Contents
 
-- [Part 1: Tenant Creation Walkthrough](#part-1-tenant-creation-walkthrough)
-- [Part 2: Bonus Video Only Trial Tenant Setup](#part-2-bonus-trial-tenant-setup-video)
-- [Part 3: Control Hub Calling and Telephony Settings](#part-3-control-hub-calling-and-telephony-settings)
-- [Part 4: Control Hub User Management Admin Task](#part-4-control-hub-user-management-admin-task)
-  - [Add a new admin user](#add-a-new-admin-user)
-- [Part 5: Admin Portal Multimedia Profile, Site and Team Configuration](#part-5-admin-portal-multimedia-profile-site-and-team-configuration)
-  - [1. Create new MultiMedia Profile](#1-create-new-multimedia-profile)
-  - [2. Create new Site](#2-create-new-site)
-  - [3. Create new Team 1](#3-create-new-team-1)
-  - [4. Create new Team 2](#4-create-new-team-2)
-- [Part 6: Admin Portal User Configuration](#part-6-admin-portal-user-configuration)
-  - [1. Synchronize Webex Contact Center Users](#1-synchronize-webex-contact-center-users)
-  - [2. Manage settings for existing user](#2-manage-settings-for-existing-user)
+- [Part 1: Control Hub User Management Admin Task](#part-1-control-hub-user-management-admin-task) 
+  * [1. Add an agent and a supervisor users and configure the calling extension](#1-add-an-agent-and-a-supervisor-users-and-configure-the-calling-extension)
+  * [2. Optionally, add the rest of the users](#2-optionally-add-the-rest-of-the-users)
+- [Part 2: Admin Portal Multimedia Profile, Site and Team Configuration](#part-2-admin-portal-multimedia-profile-site-and-team-configuration)
+  * [1. Create new MultiMedia Profile](#1-create-new-multimedia-profile)
+  * [2. Create new Site](#2-create-new-site)
+  * [3. Create new Team 1](#3-create-new-team-1)
+  * [4. Create new Team 2](#4-create-new-team-2)
+- [Part 3: Admin Portal User Configuration](#part-3-admin-portal-user-configuration)
+  * [1. Synchronize Webex Contact Center Users](#1-synchronize-webex-contact-center-users)
+  * [2. Manage settings for existing user](#2-manage-settings-for-existing-user)
+- [Part 4: BONUS Tenant Creation Walkthrough](#part-4-bonus-tenant-creation-walkthrough)
+- [Part 5: Bonus Video Only Trial Tenant Setup](#part-5-bonus-trial-tenant-setup-video)
 
 # Introduction
 
