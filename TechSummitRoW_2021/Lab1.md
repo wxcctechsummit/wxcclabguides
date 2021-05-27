@@ -39,17 +39,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Mailinator: **[https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"}**
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> Webex Calling app **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}**
+
 
 # Lab Section
 
-## Part 1: Control Hub Calling Configuration
-
-> The following video outlines the Webex calling configuration steps that enable the administrator to use the configured default location and assign a number for those locations. This is a supportive video that does not require any actions since that part is already preconfigured on your tenant. 
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/cr_QUKvu4yc?rel=0" title="WxCC Lab #1 Part 3: Control Hub Calling or Telephony Settings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-## Part 2: Control Hub User Management Admin Task
+## Part 1: Control Hub User Management Admin Task
 
 > The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users and set the Calling extension. While adding the user, we will see how to select user roles. 
 
@@ -110,7 +106,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 [To top of this lab](#table-of-contents)
 
 
-## Part 3: Admin Portal Multimedia Profile, Site and Team Configuration
+## Part 2: Admin Portal Multimedia Profile, Site and Team Configuration
 
 > The following video outlines how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. We will also see how to navigate to the Webex Contact Center Management Portal from Control Hub UI.
 
@@ -143,7 +139,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on `+ New Multimedia Profile` to open Multimedia Profile configuration page.
 
-- Input Name as `MMP_ID_TS`.
+- Input Name as `MMP_<ID>_TS`.
 
 - In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, `3` for **_Social Channel_** and click **_Save_**.
 
@@ -151,9 +147,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Navigate to **_Provisioning_** and select **_Site_**.
 
-- Click on `+ New Site` button and provide the Name as `Site_ID_TS`.
+- Click on `+ New Site` button and provide the Name as `Site_<ID>_TS`.
 
-- Select `MMP_ID_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
+- Select `MMP_<ID>_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
 
 ### 3. Create new Team 1
 
@@ -161,23 +157,23 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on `+ New Team`.
 
-- Select `Site_ID_TS` from the **_Site_** drop-down.
+- Select `Site_<ID>_TS` from the **_Site_** drop-down.
 
-- Input **_Name_** as `Team1_ID_TS`.
+- Input **_Name_** as `Team1_<ID>_TS`.
 
 - Use the default **_Type_** `Agent Based`.
 
-- Select `MMP_ID_TS` in the **_Multimedia Profile_** drop-down.
+- Select `MMP_<ID>_TS` in the **_Multimedia Profile_** drop-down.
 
 - Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
 
 ### 4. Create new Team 2
 
-- Please follow the same steps as above to add an extra Team as `Team2_ID_TS`. Later we will use this team to assign a custom Desktop Layout.
+- Please follow the same steps as above to add an extra Team as `Team2_<ID>_TS`. Later we will use this team to assign a custom Desktop Layout.
 
 [To top of this lab](#table-of-contents)
 
-## Part 4: Admin Portal User Configuration
+## Part 3: Admin Portal User Configuration
 
 > The following video outlines how to configure the users in Admin Portal that were added first in Control Hub. This is a very critical task from the Contact Center perspective. We also would take a look at how to associate customer-created Site, Team, and Multi-Media Profile with those users. After this, we should be able to login as an agent.
 
@@ -203,11 +199,11 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on **_Contact Center Enabled_** toggle to move it to **_On_**.
 
-- In the **_Agent Settings_** section, select `Site_ID_TS` in the **_Site_** drop-down.
+- In the **_Agent Settings_** section, select `Site_<ID>_TS` in the **_Site_** drop-down.
 
-- Click the **_Teams_** area and select `Team1_ID_TS` and `Team2_ID_TS`.
+- Click the **_Teams_** area and select `Team1_<ID>_TS` and `Team2_<ID>_TS`.
 
-- Select `MMP_ID_TS` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
+- Select `MMP_<ID>_TS` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
 
 - Make sure that the user are now shown with the **_Contact Center Enabled_** flag as `Yes` and **_Status_** as `Active`.
 
@@ -272,62 +268,31 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ![WxCallingAndroid](../images/wxcallingandroid.png)
 
+### 4. Agent Desktop Login
+> **Note**: To log in to the agent desktop, use either a separate web browser or a new incognito web page. This will prevent any browser caching issues with admin and agent credentials.
 
+- Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
+
+- Enter the agent’s **Username** `agent1_<ID>@mailinator.com` which you created in the previous lab.
+
+- Enter the **Password** for the appropriate Username.
+
+- In the **_Station Login_** pane, select **"Extension"** and input the configured number for that user. 
+
+> **Note:** Please use Webex Callin Extension for this lab. Optionally, if you have a US number, you can use it from the agent's desktop. This tenant does not allow numbers outside of the United States.
+
+- Select the `Team1_<ID>_TS`, with default desktop layout.
+
+- Click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the next section.
+
+[To top of this lab](#table-of-contents)
 
 
 ## Part 5: **BONUS** Tenant Creation Walkthrough
-
-> The initial walkthrough assumes that a new partner is creating both Webex Control Hub and Webex Contact Center Gold Tenant. This process is shown for setting up your GOLD tenant using Webex Calling. If you are using the VPOP bridge option then the prerequisite would be that your CUBE has already been configured and `tested`. VPOP option requires additional configuration that is done internally through a manual process. If you are using VPOP please be sure you are in communication with your PSAM to have the additional steps done for the VPOP Bridge.
+This is a supportive video that does not require any actions since your tenant is already provisioned. The video demonstrates the initial provisioning task for WxCC 2.0. The initial walkthrough assumes that a new partner is creating both Webex Control Hub and Webex Contact Center Gold Tenant. This process you will use in the feature for setting up your GOLD tenant using Webex Calling. 
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/zxdl28izCJw?rel=0" title="WxCC Lab #1 Part 1: GOLD Tenant Initial Provisioning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Provisioning Tasks
-
-- Initially, an example is given if you choose to delegate the provisioning task to someone else.
-
-- Once your Control Hub provisioning email has been received, click the link to begin the provisioning process.
-
-  > **Note:** If you do not need to setup Control Hub in your organization, you can skip to the video section using the link below for WxCC 2.0 provisioning
-  >
-  > - <a href="https://www.youtube.com/embed/zxdl28izCJw?start=317" target="_blank">Provisioning Webex Contact Center </a>
-
-- The provisioning wizard will guide you through the process and initially there are validation tasks. `Pay close attention to the validation information as any errors here may cause many problems later that cannot easily be resolved`.
-
-- For the 'Identify Customer Admin' section, if this were a `customer` build, you would enter the actual customer email who will be a local administrator. However, since this is intended to be a GOLD tenant, enter your own email or that of someone else in your org.
-
-- Validate all the information for your Control Hub in the following setup screens ensuring that `United States of America` is the chosen location. Choosing a different country does have implications later on setup of Webex Contact Center.
-
-- Once the Control Hub is complete, use the email you were sent for provisioning the Webex Contact Center GOLD Tenant.
-
-- Click the link or copy into your browser and begin the process. `The process is very similar to the above process for Control Hub`.
-
-- Validate the information and ensure all associations are correct. Failing to complete this step accurately will result in a failed provisioning process.
-
-- Ensure that the `Identify Customer Admin` section has the appropriate Local Admin email address and continue.
-
-- When asked to validate your country of origin, it is important that `United States of America` is chosen to complete your GOLD Tenant configuration.
-
-- Continue with the setup process in the Wizard which will allow you to enter your information as well as assign the location and tenant time zone.
-
-- Once you get to the section to `Select the Platform` be sure to select **Default Platform**. The Default Platform is Webex Contact Center 2.0.
-
-- If you chose a different country or your contract order did not include Webex Calling then your only option for Webex Contact Center Telephony will be VPOP Bridge.
-
-  - If you are using VPOP Bridge you **must** ensure that CUBE is setup correctly and the provisioning process for your CUBE information has been completed
-
-  - Failure to complete that step for VPOP Bridge will mean no voice is possible to your tenant until this is complete
-
-- Choose Webex Calling if you ordered this option and continue in the setup process.
-
-- Validate through the next settings and click `Finish`.
-
-- Once in Control Hub, give the provisioning process about 60 seconds to complete and then click `Refresh` on your browser to see the option Contact Center.
-
-  > **Note:** If Contact Center does not appear, give it more time and refresh again. If after some time this still does not appear, contact us using your Partner Teams room and the created Partner Enablement Bot to let us know so we can look at the configuration information.
-
-- The last step in this process is clicking on the `Provision Webex Contact Center` button which takes a few seconds and then grays out.
-
-- This is the end of this lab module.
 
 ## Part 6 **BONUS** Trial Tenant Setup Video
 
@@ -340,8 +305,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Congratulations, you have compleated Lab1 tasks!
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/labsnew/Lab2AgentDesktop";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab2.html";}
 </script>
 
 <div id="button-row">
