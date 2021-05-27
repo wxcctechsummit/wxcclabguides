@@ -29,7 +29,7 @@ title: "Lab 4: Email and Chat Configuration"
 
 # Introduction
 
-## Lab Objective
+## Lab Objectives
 
 In this lab we will complete all configuration required to route emails and chats into WxCC.
 You will be able to send an email to the Contact Centre and be able to accept/respond to the email by logging in as an agent.  
