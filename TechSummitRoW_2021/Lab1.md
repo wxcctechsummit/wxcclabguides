@@ -56,14 +56,14 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 > The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users and set the Calling extension. While adding the user, we will see how to select user roles. 
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/-pgYPCFh6YI?rel=0" title="WxCC Lab #1 Part 1: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/0p37TL5wtCY" title="WxCC Lab #1 Part 1: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 | **User Role** | **User email**      | **User Extension**                   |
 | ----------- | ----------------- | -------------------------------- |
 | Agent        | agent1_\<ID\>@mailinator.com   | 1000 |
 | Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2000 |
 
-> **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
+> **NOTE:** Several \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
 
 ### 1. Add an agent and a supervisor users and configure the calling extension
 
@@ -125,6 +125,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 | Site                | Site_\<ID\>_TS  |
 | Team1               | Team1_\<ID\>_TS |
 | Team2               | Team2_\<ID\>_TS |
+
+> **NOTE:** Several \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
 
 ### 1. Create new MultiMedia Profile
 
