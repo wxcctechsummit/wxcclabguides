@@ -117,6 +117,6 @@ This lab is designed to build upon previous labs where custom reports were creat
 
 
 ## Next Lab is Lab 5: Dashboards
-> * [Analyzer Lab 5 Link](https://wxcctechsummit.github.io/wxcclabguides/labsnew/analyzerlab5.html)
+> * [Analyzer Lab 5 Link](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/analyzerlab5.html)
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
