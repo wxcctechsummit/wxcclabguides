@@ -232,13 +232,13 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 - Select a created profile `Supervisor Profile <ID>` in the **_User Profile_** drop down list and hit **_Save_**.
 
-- Log out and log back in to apply the new supervisor profile settings.
+- **Log-out and log-in again** in to apply the new supervisor profile settings.
 
-- Verify that there are no agents in the `Agent State Data – Realtime` dashboard with a new profile.
+- Verify that there are **no agents in the `Agent State Data – Realtime` dashboard** with a new profile.
 
-- Go to the agent desktop and change the team settings. Switch the agent to the team1 `Team1_<ID>_TS`.
+- Go to the agent desktop and change the team settings. **Switch the agent to `Team1_<ID>_TS`**.
 
-- In the agent dashboard click the **_Stop Refresh_** button and make sure the agent appears.
+- In the agent dashboard click the **Auto Refresh** button and make sure the agent appears.
 
 [To top of this lab](#table-of-contents)
 
@@ -253,6 +253,6 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
 <div id="button-row">	
 <button onclick="mainPage()" style="border-radius: 5px;background-color: rgb(116,191,75);padding: 10px">Go back to Main Page</button>
 
-<button onclick="nextLab()" style="position: absolute;right: 200px;border-radius: 5px;background-color: rgb(116,191,75);padding: 10px;">Next Lab 3: IVR and Contact Routing</button>
+<button onclick="nextLab()" style="position: absolute;right: 200px;border-radius: 5px;background-color: rgb(116,191,75);padding: 10px;">Next Lab 4: Email and Chat Configuration</button>
 
 </div>
