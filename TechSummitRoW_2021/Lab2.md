@@ -2,12 +2,6 @@
 title: 'Lab 2: Agent and Supervisor Desktop'
 ---
 
-# Working With Custom Desktop Layouts
-
-Video example
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/ZYFwqEjZLWM?rel=0" title="WxCC Customizing Agent Desktop Lab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 # Table of Contents
 
 - [1. Agent Desktop](#1-agent-desktop)
@@ -48,6 +42,14 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 
 ## 1. Agent Desktop
+
+
+| **Entity** | **Name**      | 
+| ----------- | ----------------- | 
+| User Profiles        | Agent Profile \<ID\>   | 
+| Agent         | agent1_\<ID\>@mailinator.com | 
+
+> **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
 
 ## 1.1 Create a Custom Desktop Layout
 
@@ -136,6 +138,13 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 ## 2. Supervisor
 
+| **Entity** | **Name**      | 
+| ----------- | ----------------- | 
+| User Profiles        | Supervisor Profile \<ID\>   | 
+| Supervisor         | supervisor1_\<ID\>@mailinator.com | 
+
+> **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
+
 ## 2.1 Portal's Dashboards
 
 >The following video outlines the existing dashboards available to the supervisor in the management portal. Follow the instructions to find out which dashboards are available and what they are for.
@@ -148,15 +157,11 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 - Make the agent **Available** by selecting the appropriate state in the upper left corner.
 
-- Navigate to **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** in a new browser tab
+- Navigate to **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** in a **new browser tab (Private mode)**
 
-- Enter the suprvisor’s **Username** which you created in the first lab.
+- Enter the **Username and Password** of the **Supervisor** created in the first lab.
 
-- Enter the **Password** for the appropriate Username.
-
-### 2. Contact Center Overview - Realtime
-
-- Ensure that browser pop up blockers are not blocking the **_Admin Portal_** pop up. The `Entry Point - Site level` dashboard has to be shown on the landing page.
+- Ensure that browser pop up blockers are not blocking the **_Admin Portal_** pop up. The **`Entry Point - Site level`** dashboard has to be shown on the landing page.
 
 - Make sure there are more than 0 agents listed in the **AVAILABLE AGENTS** field.
 
@@ -166,24 +171,24 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 - Navigate to the agent desktop, end your call and move your agent back to the **Idle** status. Nobody should be in **Available** status.
 
-- Go back to the portal's dashboard and select the second dashboard `Contact Center Overview - Realtime` in the upper left corner.
+### 2. Contact Center Overview - Realtime
 
-- Make a new call to your EP and wait until the call reach a queue.
+- Go back to the portal's dashboard and select the second dashboard **`Contact Center Overview - Realtime`** in the upper left corner.
+
+- Make a **new call** to your EP and wait until the call reach a queue.
 
 - Check the new data on the Realtime dashboard. Now, this call will be presented in the table **Contact Details in the Queue**. In addition, the value will increase in the **Longest Contact Currently in Queue** chart.
 
 ### 3. Contact Center Overview - Historical
 
--  Select the third dashboard `Contact Center Overview - Historical`. You will be able to see the same information but from the historical perspective. By default the informaiton is shown for the last 7 days. Change the **Duration** filter to **This Year** in the upper right corner. 
+-  Select the third dashboard **`Contact Center Overview - Historical`**. You will be able to see the same information but from the historical perspective. By default the informaiton is shown for the last 7 days. Change the **Duration** filter to **This Year** in the upper right corner. 
 
-- Open the help guide by clicking on the supervisor account in the upper right corner and selecting the **Help** option.
+- Open the help guide by clicking on the supervisor account in the upper right corner and select the **Help** option.
 
 
 ### 4. Agent State Data – Realtime dashboard 
 
-- Make sure that the agent is logged in.
-
-- Go to the portal's dashboard as a supervisor and select the 4th dashboard `Agent State Data – Realtime` in the upper left corner.
+- Select the 4th dashboard **`Agent State Data – Realtime`** in the upper left corner.
 
 - Now the agent has to be presented in the **Agent State Data** dashboard.
 
@@ -198,26 +203,20 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 ### 1. Remote Agent Logout 
 
-- To log out an agent, click **Sign Out** button in the **Action** column. 
+- To log out an agent, in the **`Agent State Data – Realtime`** dashboard, click **Sign Out** button in the **Action** column. 
 
-- Make sure that you receive a notification that the agent has been successfully logged out.
+- Make sure that you **receive a notification** that the agent has been successfully logged out.
 
 > **Note:** You can log out agents who are in the Available, Idle, or Not Responding. If the agent is in a **Connected** state the Sign Out button will not be available.
 
-- Go to the Agent desktop and verify the agent status. He should receive the notification that the supervisor has signed him out.
+- Go to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}**_ and verify the agent status. He should **receive the notification** that the supervisor has signed him out.
 
-| **Entity** | **Name**      | 
-| ----------- | ----------------- | 
-| User Profiles        | Supervisor Profile \<ID\>   | 
-| Supervisor         | supervisor1_\<ID\>@mailinator.com | 
-
-> **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
 
 ### 2. Supervisor’s User Profile
 
 - Make sure the agent is logged back into the agent interface. During the agent login select the `Team2_<ID>_TS`.
 
-- Navigate to **_Provisioning_** and select **_User Profiles_**.
+- In the **[Management Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**_, navigate to **_Provisioning_** and select **_User Profiles_**.
 
 - Click on dots `...` infront of **_Supervisor Profile_** and select **Copy** option.
 
@@ -229,9 +228,7 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 - Navigate to **_Provisioning_**, select **_Users_** and modify your supervisor account.
 
-- Click on **_Provisioning_** and select **_Users_**.
-
-- Infront of the current supervisor `supervisor1_<ID>@mailinator.com` click on `...` , to launch the **_Edit_** view for a particular User configuration.
+- In front of the current supervisor `supervisor1_<ID>@mailinator.com` click on `...` , to launch the **_Edit_** view for a particular User configuration.
 
 - Select a created profile `Supervisor Profile <ID>` in the **_User Profile_** drop down list and hit **_Save_**.
 
