@@ -105,7 +105,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > **Lab Participants can download and install the WebEx Calling App for Agents, Admins or Supervisors and make on-net calls in the US.**
 
-**[Webex Calling PC APP - Download HERE !](https://cisco.box.com/s/fvr4k0nay93lyjnxaqxwevbcts5glbsu){:target="\_blank"}**
+**[Webex Calling PC APP - Download HERE !](https://cisco.box.com/s/u37jex63g3zbyz4uyygp2xxzs5sbo1n0){:target="\_blank"}**
 
 **Download instructions**
 
