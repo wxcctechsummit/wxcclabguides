@@ -63,7 +63,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 | Agent        | agent1_\<ID\>@mailinator.com   | 1000 |
 | Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2000 |
 
-> **NOTE:** Several \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
+> **NOTE:** Multiple \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
 
 ### 1. Add an agent and a supervisor users and configure the calling extension
 
@@ -126,7 +126,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 | Team1               | Team1_\<ID\>_TS |
 | Team2               | Team2_\<ID\>_TS |
 
-> **NOTE:** Several \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
+> **NOTE:** Multiple \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
 
 ### 1. Create new MultiMedia Profile
 
@@ -218,7 +218,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 [To top of this lab](#table-of-contents)
 
-## Part 4: Webex Calling App Installation
+## Part 4: Access to the Agent Desktop
 >The following video explains the process to access the Agent Desktop. Following the steps, you will log in with your credentials and indicate the number where you want to receive the calls. 
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/HmovpwYlcLs?rel=0" title="WxCC Lab #2 Part 4: Access to the Agent Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
