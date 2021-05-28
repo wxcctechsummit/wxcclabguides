@@ -171,15 +171,15 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 - Login to Portal and create an inbound voice entry point and voice queue. (Provisioning > Entry Point / Queue).
 
-- Create the Entry Point named `EP_TS`.
+- Create the Entry Point named `EP_<ID>_TS`.
 
-- Create the Queue named `Q_TS`.
+- Create the Queue named `Q_<ID>_TS`.
 
 **Here are the Queue Settings**
 
 | Configuration                       | field Value             |
 | ----------------------------------- | ----------------------- |
-| Name                                | Q_TS                    |
+| Name                                | Q_<ID>_TS                    |
 | Channel Type                        | Telephony               |
 | _---- Contact Routing Settings ---_ |
 | Queue Routing Type                  | Longest Available Agent |
@@ -191,7 +191,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 ---
 
-- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to EP_TS
+- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to EP_<ID>_TS
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
 
@@ -205,13 +205,13 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 - Configure the flow `Flow1` with a Play prompt - welcome message and Disconnect
 - Configure the flow `Flow1` with a Play prompt - welcome message and queue block and play music block.
-- Configure the Queue Block to `Q_TS`. Map the queue inside of the q ueue block.
+- Configure the Queue Block to `Q_<ID>_TS`. Map the queue inside of the q ueue block.
 - Configure the play music to loop, and start 0, end 10 to play 10 seconds of music.
 - Verify and publish the flow.
 
 ### 6. Configure the Entry Point Routing Strategy
 
-- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_TS`.
+- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_<ID>_TS`.
 - Map the flow flow_wxcclab you just created in there.
 
 ### 7. Make a test call
@@ -290,7 +290,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 ### 4. Plug In New Flow into Routing Strategy
 
-- Go to the routing Strategy page > Routing Strategy > `EP_TS`
+- Go to the routing Strategy page > Routing Strategy > `EP_<ID>_TS`
 - Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow2`
 
 ### 5. Test the end to end flow
@@ -458,7 +458,7 @@ customerPhone = $.[0].phone
 
 ### 6. Point to the New flow in the Routing Strategy
 
-- Go to the routing Strategy page > Routing Strategy > `EP_TS`
+- Go to the routing Strategy page > Routing Strategy > `EP_<ID>_TS`
 - Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow3`.
 
 ### 7. Verify the flow end to end
@@ -499,11 +499,11 @@ Execute the Test:
 - Create new Skills Based Queue > Give Name and Description
 - Channel Type > `Telephony`
 - Queue Routing Type > Skill Based > Best Available Agent
-  Add Team > `Team_TS`
+  Add Team > `Team_<Id>_TS`
 
 | Configuration field        | Value                |
 | -------------------------- | -------------------- |
-| Name                       | Q_TS_SBR             |
+| Name                       | Q_<ID>_TS_SBR             |
 | Channel Type               | Telephony            |
 | _Contact Routing Settings_ |
 | Queue Routing Type         | Skills Based         |
