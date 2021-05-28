@@ -87,6 +87,6 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
 
 ## Return to Lab Guide Page
-> * [Back to Main](https://wxcctechsummit.github.io/wxcclabguides/LabLibrarynew.html)
+> * [Back to Main](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html)
 
 
