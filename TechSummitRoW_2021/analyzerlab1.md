@@ -4,7 +4,7 @@ title: "Lab 5: Analyzer Exercises 1.1 to 1.3"
 
 # Webex CC Partner Summit Lab5: Analyzer Lab
 
-## Exercises 1.1 to 1.3
+## Exercises 1.01 to 1.03
 
 # Table of Contents
 1. [Exercise 1.1: Dashboard reports](#exercise-11-login-to-analyzer-and-review-dashboard-reports)
