@@ -93,7 +93,7 @@ title: 'Lab 3: IVR and Contact Routing'
 
 Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
-> **Note:** Please Check the `Site_TS` that the user admin1pod__@email.carehybrid.com is assigned to. And create the `Team_TS` under the right Site.
+> **Note:** Please Check the `Site_<ID>_TS` that the user admin1pod__@email.carehybrid.com is assigned to. And create the `Team_<ID>_TS` under the right Site.
 
 - If you would like to Create a Team, create the Team under that Site - and assign the Team to the Agent.
 - `Agent` > `Site` relationship cannot be changed. So all teams will need to be created under the same site.
@@ -105,7 +105,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 > **Lab Participants can download and install the WebEx Calling App for Agents, Admins or Supervisors and make on-net calls in the US.**
 
-**[Webex Calling PC APP - Download HERE !](https://cisco.app.box.com/s/fcbh0abcsruf5qxp99tj31ksx1bf2mh5){:target="\_blank"}**
+**[Webex Calling PC APP - Download HERE !](https://cisco.box.com/s/fvr4k0nay93lyjnxaqxwevbcts5glbsu){:target="\_blank"}**
 
 **Download instructions**
 
