@@ -1,4 +1,4 @@
-title: Cisco Webex Contact Center Technical Enablement
+title: WxCC Technical Partner Summit
 description: Lab guide repository for the 2021 Cisco Webex Contact Center Technical Partner Summit
 author:
   name: Lab support email
@@ -11,4 +11,4 @@ minima:
     twitter: Webex
 
 header_pages:
-  - LabLibrarynew.md
+  - HomePage.md
