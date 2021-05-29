@@ -17,8 +17,8 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | Week 2 | Lab 3 - Agent and Supervisor Desktops              | [Lab 3 - Agent and Supervisor Desktops](Lab3.md){:target="\_blank"}                    
 | Week 2 | Lab 4 - Email and Chat Routing        | [Lab 4 - Email and Chat Configuration](Lab4.md){:target="\_blank"}                      
 | Week 2 | Lab 5 - Analyzer Deep Dive Lab        | [Lab 5 - Analyzer Labs](Lab5.md){:target="\_blank"}                  
-| Week 3 | Lab 6 - CRM Integration Lab               | [Lab 7 - CRM Integration](Lab7.md){:target="\_blank"}  
-| Week 3 | Lab 7 - Google CCAI Integration Lab               | [Lab 8 - Google CCAI Integration](Lab8.md){:target="\_blank"}  
-| Week 3 | Lab 8 - WxM Integration Lab               | [Lab 9 - WxM Integration](Lab9.md){:target="\_blank"}  
-| Week 3 | Lab 9 - API Lab                        | [Lab 6 Coming soon!] (Lab6.md){:target="\_blank"} 
+| Week 3 | Lab 6 - CRM Integration Lab               | [Lab 6 - CRM Integration](Lab6.md){:target="\_blank"}  
+| Week 3 | Lab 7 - Google CCAI Integration Lab               | [Lab 7 - Google CCAI Integration](Lab7.md){:target="\_blank"}  
+| Week 3 | Lab 8 - WxM Integration Lab               | [Lab 8 - WxM Integration](Lab8.md){:target="\_blank"}  
+| Week 3 | Lab 9 - API Lab                        | [Lab 9 Coming soon!] (Lab9.md){:target="\_blank"} 
 
