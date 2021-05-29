@@ -493,14 +493,12 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   background-color: rgb(116,191,75);
   padding: 10px;">Go back to Main Page</button>
 
-<!--
-
 <button onclick="nextLab()" style="
   position: absolute;
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 10px;">Next Lab 3: IVR and Contact Routing</button>
--->
+
 
 </div>
