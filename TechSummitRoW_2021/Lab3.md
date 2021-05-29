@@ -50,84 +50,23 @@ title: 'Lab 3: IVR and Contact Routing'
 
 # Lab Pre-requisites
 
-> ## The Steps below summarize/recap Lab 1. Ensure you have Completed [Lab 1: Part 5 & 6 here](Lab1.md){:target="\_blank"}
+1. **Webex Calling App** is installed on your **PC or MAC, and Mobile.**
+ 	- PC or MAC Webex calling App for Agent to accept calls.
+ 	- Mobile Webex Calling App for Supervisor to accept calls and to place test calls to EP.
+2. All the tasks from **Lab1 (Control Hub and Admin Portal)** are completed.
+	- You have the administrator's access to the Tenant Management Portal.
+	- Agent and Supervisor users created and configured
+	- You have agent's access to the Agent Desktop
+	- You have the supervisor's access to the Tenant Management Portal.
+	- Agent is part of 2 Teams.
+	- Webex Calling extensions are assigned to a WxCC users (agent and supervisor).
 
-> These tasks are to be completed by the customer administrator. At the end of the lab pre-requisites, you should be able to login an agent in the agent desktop application with the configured user extension.
 
 **Quick Links**
 
 > Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
-
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
-
-> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
-
-**Check Licenses**
-
-### 1. Login to Control Hub > Users
-
-- Ensure the agents have the contact center license selected and are properly configured as Contact center enabled on Webex Contact center.
-- Ensure that they have activated the Email and are “Active” on Control Hub.
-
-**Check Webex Calling Settings**
-
-### 2. Verify Webex Calling Settings
-
-- Check that a "Main" number is assigned to Webex Calling.
-- Check that the Calling Location is correctly set to "Intelepeer"
-
-**Synchronize Users**
-
-### 3. Synchronize users to get any newly activated users.
-
-- Got to Contact Center > Settings > Synchronize Users
-
-**Check Admin settings, Agent Settings, Site, Team Configuration**
-
-### 4. Launch Portal to ensure the admin user admin1pod**@** is Contact center configured for testing.
-
-- Ensure that a Site and a Team has been created: `Site_<ID>_TS`, `Site_<ID>_TS`
-- Ensure the user is Contact Center Enabled.
-- Associate the User to the Site, Team, ( `Site_<ID>_TS`, `Site_<ID>_TS`) and default Multimedia Profile - `Default_Telephony_Profile`.
-- Verify by Launching the Agent Desktop and logging in.
-
-Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
-
-> **Note:** Please Check the `Site_<ID>_TS` that the user admin1pod__@email.carehybrid.com is assigned to. And create the `Team_<ID>_TS` under the right Site.
-
-- If you would like to Create a Team, create the Team under that Site - and assign the Team to the Agent.
-- `Agent` > `Site` relationship cannot be changed. So all teams will need to be created under the same site.
-- With the steps outlined in the previous lab and recap above, you should now be able to login to the agent desktop.
-
-> Only teams that are in the same site of the Agent will be visible to assign to the agent.
-
-### 5. OPTIONAL: Verify Webex Calling PC App Installation
-
-> **Lab Participants can download and install the WebEx Calling App for Agents, Admins or Supervisors and make on-net calls in the US.**
-
-**[Webex Calling PC APP - Download HERE !](https://cisco.box.com/s/u37jex63g3zbyz4uyygp2xxzs5sbo1n0){:target="\_blank"}**
-
-**Download instructions**
-
-**[https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App](https://help.webex.com/en-us/n730ah9/Install-the-Webex-Calling-App){:target="\_blank"}**\
-
-> In the videos below, I use the extension configured on Webex Calling : 3001 - to login to the Agent Desktop
-
-| **User Role** | **Contents**        | **Extension-DN Allotted** |
-| ------------- | ------------------- | ------------------------- |
-| Admin         | admin1@your-org.com | 3001                      |
-
-### OPTIONAL : Creating More Users - Agents - Supervisors - For Test Calling INBOUND
-
-- **Creating additional Agents OR Supervisors:** You may create additional aliases using Mailinator (3rd party email alias generator) **[https://www.mailinator.com/](https://www.mailinator.com/){:target="\_blank"}**\
-
-- `These CAN be used for inbound call testing into the Contact Center : As Contact Center Customers!`
-
-> Login to mailinator, create an inbox : `username@mailinator.com` will then be able to receive emails.
-
-> Add the user to Control Hub Via > Control Hub > Users > Manage Users > Add via email : add the user_ID@mailinator.com
-
-> Remember to `Click Synchronize Users` on Control Hub when adding new users!
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ## You are now ready to Begin the Lab!
 
@@ -179,7 +118,7 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 | Configuration                       | field Value             |
 | ----------------------------------- | ----------------------- |
-| Name                                | Q_<ID>_TS                    |
+| Name                                | Q_<ID>_TS               |
 | Channel Type                        | Telephony               |
 | _---- Contact Routing Settings ---_ |
 | Queue Routing Type                  | Longest Available Agent |
@@ -220,24 +159,6 @@ Desktop URL: **https://desktop.wxcc-us1.cisco.com/**
 
 - Task 1 > Call the Dial number > Hear the welcome prompt and call should get disconnected.
 - Task 2 > Call the Dial number > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
-
-### 8. OPTIONAL : Download and Login in the Webex Calling app for mobile calling / calling from your cell
-
-> **Note:** If you are outside the US, you need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. In this lab, we will use the Webex Calling app for mobile for **supervisor** account.
-
-- Open the Application Manager (**Play Store** or **App Store**) on your mobile phone.
-
-- Search for **_webex calling_**.
-
-- **Download** and **Open** the app. Click `Get Started`.
-
-- Login in the app by selecting **_Region_** as **North America**.
-
-- Login using **_Email address_** `supervisor_<ID>@mailinator.com` and same **_Password_** as the admin account.
-
-> **Note:** Make sure that you give access to the phone's microphone for the calling app.
-
-![WxCallingAndroid](https://wxcctechsummit.github.io/holcct2100/images/wxcallingandroid.png)
 
 ---
 
@@ -499,11 +420,11 @@ Execute the Test:
 - Create new Skills Based Queue > Give Name and Description
 - Channel Type > `Telephony`
 - Queue Routing Type > Skill Based > Best Available Agent
-  Add Team > `Team_<Id>_TS`
+  Add Team > `Team_<ID>_TS`
 
 | Configuration field        | Value                |
 | -------------------------- | -------------------- |
-| Name                       | Q_<ID>_TS_SBR             |
+| Name                       | Q_<ID>_TS_SBR        |
 | Channel Type               | Telephony            |
 | _Contact Routing Settings_ |
 | Queue Routing Type         | Skills Based         |
