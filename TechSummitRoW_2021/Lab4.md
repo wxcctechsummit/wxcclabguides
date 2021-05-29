@@ -359,15 +359,13 @@ The content of the body element is displayed in your browser.
   background-color: rgb(116,191,75);
   padding: 10px;">Go back to Main Page</button>
 
-<!--
-
 <button onclick="nextLab()" style="
   position: absolute;
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 3: IVR and Contact Routing</button>
--->
+  padding: 10px;">Next Lab 5: Analyzer</button>
+
 </div>
 
 <script>
