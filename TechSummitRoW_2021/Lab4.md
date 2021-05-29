@@ -349,7 +349,7 @@ The content of the body element is displayed in your browser.
 
 - Test the Predefined Chat Response functionality (click on the little chat bubble right above the response area in the Agent Desktop) and sending messages and attachments. `Complete` the chat when done.
 
-### Congratulations, you are now ready to start Lab 5!
+### Congratulations, you are now ready to start Lab5!
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
@@ -367,6 +367,6 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 5: Analyzer</button>
+  padding: 10px;">Next Lab5: Analyzer</button>
 
 </div>
