@@ -1,5 +1,5 @@
 ---
-title: "Lab 7: CRM Integration"
+title: "Lab 6: CRM Integration"
 ---
 
 # WebexCC Salesforce Agent Desktop Installation And Configuration
