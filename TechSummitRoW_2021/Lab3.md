@@ -83,9 +83,7 @@ title: 'Lab 3: IVR and Contact Routing'
 **Quick Links**
 
 > Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
-
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
-
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ### 1. Verify that your users are ready to login
@@ -118,7 +116,7 @@ title: 'Lab 3: IVR and Contact Routing'
 
 | Configuration                       | field Value             |
 | ----------------------------------- | ----------------------- |
-| Name                                | Q_<ID>_TS               |
+| Name                                | Q_(ID)_TS               |
 | Channel Type                        | Telephony               |
 | _---- Contact Routing Settings ---_ |
 | Queue Routing Type                  | Longest Available Agent |
@@ -136,7 +134,7 @@ title: 'Lab 3: IVR and Contact Routing'
 
 - The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
 
-[Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/e6dgudpc3zru5urm31gcnqfcbebx79b9){:target="\_blank"}
+[Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/fvr4k0nay93lyjnxaqxwevbcts5glbsu){:target="\_blank"}
 
 > **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
 
@@ -177,9 +175,7 @@ title: 'Lab 3: IVR and Contact Routing'
 **Quick Links**
 
 > Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
-
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
-
 > Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ## Steps
@@ -243,10 +239,8 @@ title: 'Lab 3: IVR and Contact Routing'
 **Quick Links**
 
 > Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
-
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
-
-> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ## Steps
 
@@ -291,10 +285,8 @@ title: 'Lab 3: IVR and Contact Routing'
 **Quick Links**
 
 > Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
-
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
-
-> Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ## Steps
 
@@ -407,9 +399,7 @@ Execute the Test:
 **Quick Links**
 
 > Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="\_blank"}**\
-
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}**\
-
 > Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 ## Steps
@@ -424,7 +414,7 @@ Execute the Test:
 
 | Configuration field        | Value                |
 | -------------------------- | -------------------- |
-| Name                       | Q_<ID>_TS_SBR        |
+| Name                       | Q_(ID)_TS_SBR        |
 | Channel Type               | Telephony            |
 | _Contact Routing Settings_ |
 | Queue Routing Type         | Skills Based         |
