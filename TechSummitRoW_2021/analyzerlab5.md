@@ -81,12 +81,30 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 9. Video saves this report as `5.2.2_CL21HOLCCT2108Dashboard` but you can save it as you wish.  It will not impact any other exercises.
 10. Explore some options to edit and personalize this new dashboard like changing background colors
-11. Congradulations!  **All Analyzer labs are now complete!**
 
+**Congradulations!  **All Analyzer labs are now complete!**
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
 
-## Return to Lab Guide Page
-> * [Back to Main menu](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html)
+---
 
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab6.html";}
+</script>
+
+<div id="button-row">
+	<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go back to Main Page</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Next Lab 6: CRM Integration</button>
+
+</div>
 
