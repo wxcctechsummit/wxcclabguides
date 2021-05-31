@@ -4,12 +4,13 @@ title: 'Lab 3: Agent and Supervisor Desktop'
 
 # Table of Contents
 
-- [1. Agent Desktop](#1-agent-desktop)
-  - [1.1. Create Customized Desktop Layoute](#1.1-create-a-custom-desktop-layout)
-  - [1.2. More Advance Example](#3-upload-the-custom-desktop-layout-an-verify)
-- [2. Supervisor](#2-supervisor)
-  - [2.1. Portal's Dashboards](#2-5-portal's-dashboard)
-  - [2.2. Permissions and Remote Agent Logout](#2.2-permissions-and-remote-agent-logout)
+- [Part 1: Agent Desktop](#1-agent-desktop)
+  - [1. Create Customized Desktop Layoute](#1.1-create-a-custom-desktop-layout)
+  - [2. Create Customized Desktop Layoute](#1.1-create-a-custom-desktop-layout)
+  - [3. More Advance Example](#3-upload-the-custom-desktop-layout-an-verify)
+- [Part 2: Supervisor](#2-supervisor)
+  - [1. Portal's Dashboards](#2-5-portal's-dashboard)
+  - [2. Permissions and Remote Agent Logout](#2.2-permissions-and-remote-agent-logout)
 
 # Introduction
 
@@ -31,6 +32,8 @@ Later, in the second part, we will see the different reporting dashboards that S
 * You have the supervisor's access to the Tenant Management Portal.
 * Agent is part of 2 Teams.
 * Webex Calling extensions are assigned to a WxCC users (agent and supervisor).
+3. You also must complete the **Lab 2: IVR Contact Routing:**
+* Simple flow configured and making a call tested
 
 
 
@@ -51,7 +54,28 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 > **NOTE:** Your \<ID\> is provided in the email in the **"Attendee ID"** line.
 
-## 1.1 Create a Custom Desktop Layout
+
+
+
+## 1.1 Introducing the Agent Desktop Interface
+
+> Watch the following video, where each of the sections and their main options are explained. You will get a better idea of how the Agent Desktop look like and how to use it.
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/IwZhFw7NT5g?rel=0" title="WxCC Lab #2 Part 2: Agent Desktop Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> **Note:** In this section you don't need to do anny tasks. This section was created to familiarize you with the agent interface.
+
+![Image1](AgentDesktopOverview.png)
+
+The Agent Desktop is divided in 6 sections. In the image above you can see a general view of the Agent Desktop and where each section is located. We explain them all shortly:
+1. **Task List**: When a request is routed to your queue and you are _Available_, a new request appears in your Task List pane. You must accept the requests to start communication with the customer.
+2. **Horizontal Header**: Basic functionalities such as: Title and logo, Agent availability state, Notification Center, Outbound Call and User Profile. We will explain more in detail some User Profile options in the next section of the lab.
+3. **Interaction Control**: When you accept a voice call (inbound or outbound), by default, the Interaction Control pane is expanded. This pane includes: customer information (CAD variables), timers (for example: connected and call on hold time) and call control buttons (Record, Hold, Transfer...).
+4. **Auxiliary Information**: This section only appears when you accept an email, chat or social messaging conversation request, not for Voice requests. The center pane displays details based on your selection of the contact card in the Task List panel.
+5. **Agent Interaction History**: You can view your previous communications with a customer across all the channels (voice, email, chat, and social) in this pane. The pane displays details for the last 24 hours.
+6. **Navigation bar**: By default you can find the following icons here: Home, Agent Performance Statistics and Help. However, you can customize it and add some additional icons and widgets.
+
+## 1.2 Create a Custom Desktop Layout
 
 > Watch the following video to learn the dekstop layout customization process. After the video, you will be able to customize the Agent Desktop with your company logo.
 
@@ -107,7 +131,7 @@ Later, in the second part, we will see the different reporting dashboards that S
 - Wait some seconds to see the results. Now you should get a new log icon in the left upper corner.
 
 
-## 1.2 More advance example
+## 1.3 More advance example
 
 ### 1. Upload the custom desktop layout and associate it to a team
 
