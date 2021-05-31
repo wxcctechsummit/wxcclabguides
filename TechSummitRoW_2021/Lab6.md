@@ -71,10 +71,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 
 ### 4. Adding Call Center Users To Salesforce Call Center Application
-- In Salesforce navigate to Setup.
-- In the search box, type “Call Centers”.
-- Click the link corresponding to the Webex Contact Center.
-- Click on `Manage Call Center Users` to pen the Manage Users page.
+- Click on `Manage Call Center Users` to open the Manage Users page.
 - Click on `Add More Users` button to add users to Call Center application.
 - `Search for New Users` page opens where you can apply filters to find Call Center users. Click on `Find` to list all the available users.
 - Select your user from the list and click on the `Add to Call Center` button.
