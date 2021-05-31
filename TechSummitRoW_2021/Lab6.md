@@ -126,3 +126,29 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 - Upload the custom desktop layout for WebexCC Salesforce Desktop.
 - Click `Save`. This will create a custom Desktop Layout named Salesforce in WebexCC.
 
+**Congratulations!  **CRM Integration lab is now complete!**
+
+[Back to top](#table-of-contents)
+
+---
+
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab7.html";}
+</script>
+
+<div id="button-row">
+	<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go back to Main Page</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Next Lab 7: Google CCAI Integration</button>
+
+</div>
+
