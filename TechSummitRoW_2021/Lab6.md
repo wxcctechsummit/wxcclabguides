@@ -1,5 +1,5 @@
 ---
-title: "Lab 7: CRM Integration"
+title: "Lab 6: CRM Integration"
 ---
 
 # WebexCC Salesforce Agent Desktop Installation And Configuration
@@ -66,14 +66,14 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 - Click the `Edit` link corresponding to the `Webex Contact Center Agent Desktop`.
 - Click on `Edit` to set up the CTI settings.
 - Update the `Display Name` field if you want to change the Display name of the call center.
-- Configure the following CTI Adapter URL: https://desktop.wxcc-us1.cisco.com/
+- Configure the following CTI Adapter URL: https://desktop.wxcc-us1.cisco.com/ .
 - Configure **Softphone Height: 600** and **Softphone Width: 550**. 
 
 
 ### 4. Adding Call Center Users To Salesforce Call Center Application
 - In Salesforce navigate to Setup.
 - In the search box, type “Call Centers”.
-- Click the link corresponding to the Webex Contact Center
+- Click the link corresponding to the Webex Contact Center.
 - Click on `Manage Call Center Users` to pen the Manage Users page.
 - Click on `Add More Users` button to add users to Call Center application.
 - `Search for New Users` page opens where you can apply filters to find Call Center users. Click on `Find` to list all the available users.
