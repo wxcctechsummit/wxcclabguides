@@ -60,8 +60,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 | **User Role** | **User email**      | **User Extension**                   |
 | ----------- | ----------------- | -------------------------------- |
-| Agent        | agent1_\<ID\>@mailinator.com   | 1000 |
-| Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2000 |
+| Agent        | agent1_\<ID\>@mailinator.com   | 1XXX |
+| Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2XXX |
 
 > **NOTE:** Multiple \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
 
@@ -221,7 +221,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ## Part 4: Access to the Agent Desktop
 >The following video explains the process to access the Agent Desktop. Following the steps, you will log in with your credentials and indicate the number where you want to receive the calls. 
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/HmovpwYlcLs?rel=0" title="WxCC Lab #2 Part 4: Access to the Agent Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/2bmoiAfxpTU?rel=0" title="WxCC Lab #2 Part 4: Access to the Agent Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### 1. Activate Webex Calling
@@ -259,7 +259,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Navigate to **_File > Edit Server Address_** and make sure you have selected **North America** region
 
-### 3. Download and Login in the Webex Calling app for mobile 
+### 3. Download and Login in the Webex Calling app for mobile
 
 > **Note:** You need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. In this lab, we will use the Webex Calling app for mobile for **supervisor** account.
 
