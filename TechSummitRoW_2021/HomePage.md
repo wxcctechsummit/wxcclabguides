@@ -1,5 +1,5 @@
 ---
-title: 'New Lab Guide Library'
+title: 'New WxCC Technical Virtual Summit'
 ---
 
 ![Banner](../images/wxccbanner.jpg)
@@ -12,13 +12,13 @@ The Lab schedule has changed while all labs are being updated to align with the 
 
 | Date       | Session                                | Corresponding Lab                                                                                      
 | ---------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------ 
-| Week 1 | Lab 1 - Control Hub & Admin Portal Lab | [Lab 1 - Control Hub & Admin Portal](Lab1.md){:target="\_blank"}                               
-| Week 2 | Lab 2 - IVR Contact Routing Lab        | [Lab 2 - IVR Contact Routing](Lab2.md){:target="\_blank"}                                      
-| Week 2 | Lab 3 - Agent and Supervisor Desktops              | [Lab 3 - Agent and Supervisor Desktops](Lab3.md){:target="\_blank"}                    
-| Week 2 | Lab 4 - Email and Chat Routing        | [Lab 4 - Email and Chat Configuration](Lab4.md){:target="\_blank"}                      
-| Week 2 | Lab 5 - Analyzer Deep Dive Lab        | [Lab 5 - Analyzer Labs](Lab5.md){:target="\_blank"}                  
-| Week 3 | Lab 6 - CRM Integration Lab               | [Lab 6 - CRM Integration](Lab6.md){:target="\_blank"}  
-| Week 3 | Lab 7 - Google CCAI Integration Lab               | [Lab 7 - Google CCAI Integration](Lab7.md){:target="\_blank"}  
-| Week 3 | Lab 8 - WxM Integration Lab               | [Lab 8 - WxM Integration](Lab8.md){:target="\_blank"}  
-| Week 3 | Lab 9 - API Lab                        | [Lab 9 - Coming soon!](Lab9.md){:target="\_blank"} 
+| Week 1 - June 7th | Lab 1 - Control Hub & Admin Portal Lab | [Lab 1 - Control Hub & Admin Portal](Lab1.md){:target="\_blank"}                               
+| Week 2 - June 14th | Lab 2 - IVR Contact Routing Lab        | [Lab 2 - IVR Contact Routing](Lab2.md){:target="\_blank"}                                      
+| Week 2 - June 14th | Lab 3 - Agent and Supervisor Desktops              | [Lab 3 - Agent and Supervisor Desktops](Lab3.md){:target="\_blank"}  
+| Week 2 - June 14th | Lab 4 - CRM Integration Lab               | [Lab 4 - CRM Integration](Lab4.md){:target="\_blank"}  
+| Week 2 - June 14th | Lab 5 - Email and Chat Routing        | [Lab 5 - Email and Chat Configuration](Lab5.md){:target="\_blank"}
+| Week 2 - June 14th | Lab 6 - Google CCAI Integration Lab               | [Lab 6 - Google CCAI Integration](Lab6.md){:target="\_blank"} 
+| Week 3 - June 21st | Lab 7 - Analyzer Deep Dive Lab        | [Lab 7 - Analyzer Labs](Lab7.md){:target="\_blank"}                  
+| Week 3 - June 21st | Lab 8 - WxM Integration Lab               | [Lab 8 - WxM Integration](Lab8.md){:target="\_blank"}  
+| Week 3 - June 21st | Lab 9 - API Lab                        | [Lab 9 - Coming soon!](Lab9.md){:target="\_blank"} 
 
