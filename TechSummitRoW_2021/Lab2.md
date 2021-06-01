@@ -88,13 +88,13 @@ title: 'Lab 2: IVR and Contact Routing'
 
 ### 1. Verify that your users are ready to login
 
-- Go to `Provisioning -> Users` to check the `Site` that the user is assigned to. And create the `Team` under the right `Site`.
+- Go to `Provisioning -> Users` to check the `Site` that the user is assigned to. Ensure that the `Team` is created under the right `Site`.
 
 - If you would like to Create a Team, create the `Team` under that `Site` - and assign the `Team` to the Agent.
 
 > **WARNING** `Agent` > `Site` relationship cannot be changed. So all teams will need to be created under the same site.
 
-- With the steps outlined in the previous lab and recap above, you should now be able to login to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
+- With the steps outlined in the previous lab, you should now be able to login to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="\_blank"}**\
 
 > **NOTE:** Only teams that are in the same site of the Agent will be visible to assign to the agent.
 
@@ -116,7 +116,7 @@ title: 'Lab 2: IVR and Contact Routing'
 
 | Configuration                       | field Value             |
 | ----------------------------------- | ----------------------- |
-| Name                                | Q_(ID)_TS               |
+| Name                                | `Q_<ID>_TS`             |
 | Channel Type                        | Telephony               |
 | _---- Contact Routing Settings ---_ |
 | Queue Routing Type                  | Longest Available Agent |
@@ -128,7 +128,8 @@ title: 'Lab 2: IVR and Contact Routing'
 
 ---
 
-- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to EP_<ID>_TS
+- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to `EP_<ID>_TS`.
+> **NOTE:**  If you are sharing the tenant with other members on your team, each one can create your own call flow but use the IVR under the DN EP to help make the decision on what flow you want the call to take. e.g. Map DN to `EP_Main_TS' > Flow_Main, then branch out to your  `EP_<ID>_TS` from Flow_Main.
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
 
@@ -414,7 +415,7 @@ Execute the Test:
 
 | Configuration field        | Value                |
 | -------------------------- | -------------------- |
-| Name                       | Q_(ID)_TS_SBR        |
+| Name                       | `Q_<ID>_TS_SBR`      |
 | Channel Type               | Telephony            |
 | _Contact Routing Settings_ |
 | Queue Routing Type         | Skills Based         |
