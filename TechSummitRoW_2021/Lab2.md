@@ -129,7 +129,7 @@ title: 'Lab 2: IVR and Contact Routing'
 ---
 
 - Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to `EP_<ID>_TS`.
-> **NOTE:**  If you are sharing the tenant with other members on your team, each one can create your own call flow but use the IVR under the DN EP to help make the decision on what flow you want the call to take. e.g. Map DN to `EP_Main_TS' > Flow_Main, then branch out to your  `EP_<ID>_TS` from Flow_Main.
+> **NOTE:**  If you are sharing the tenant with other members on your team, each one can create their own call flow but use the IVR under the DN EP to help make the decision on what flow you want the call to take. e.g. Map DN to `EP_Main_TS' > Flow_Main, then branch out to your  `EP_<ID>_TS` from Flow_Main.
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
 
