@@ -472,16 +472,7 @@ Execute the Test:
 ## Congratulations! You're done!
 
 
-
-
-Changelog:
-
-| **Version** | **Comments**     | **Author**\                      | **Date**      |
-| ----------- | ---------------- | -------------------------------- | ------------- |
-| 1.0         | Initial Release  | Arunabh Bhattacharjee (arubhatt) | 10 Jan 2021   |
-| 1.1         | Updated with SBR | Arunabh Bhattacharjee (arubhatt) | 25 April 2021 |
-
----
+----
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
