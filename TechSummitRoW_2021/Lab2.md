@@ -438,7 +438,7 @@ Execute the Test:
 - Open portal > Provisioning > Skill > skill Profile
 - Click (New Skill Profile) > Give Name - `TechSummitSkill` and Description -`TechSummitSkill`
 - Select `SkillSet` and enter the Skill Value as `8`
-- Select `TechSummit` and enter the Skill `SkillSet` and enter `Skill Value` to `Techsummit`
+- Select `VIP Customer` and enter the `Skill Value` to `Techsummit`
 
 ### 4. Add skill profile to User/ Agent
 
