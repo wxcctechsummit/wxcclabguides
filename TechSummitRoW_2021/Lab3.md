@@ -2,25 +2,31 @@
 title: 'Lab 3: Agent and Supervisor Desktop'
 ---
 
+### Overview of the lab:
+
+In this Lab, we will go through the portals that Agents and Supervisors use in their daily basis. We will review how to complete the main tasks of both roles and some advance features will be introduced.
+By following each of the steps, you will have better understanding of the new Agent Desktop and learn the available reporting features for Supervisors.
+
+
 # Table of Contents
 
-- [Part 1: Agent Desktop](#1-agent-desktop)
-  - [1. Create Customized Desktop Layoute](#1.1-create-a-custom-desktop-layout)
-  - [2. Create Customized Desktop Layoute](#1.1-create-a-custom-desktop-layout)
-  - [3. More Advance Example](#3-upload-the-custom-desktop-layout-an-verify)
-- [Part 2: Supervisor](#2-supervisor)
-  - [1. Portal's Dashboards](#2-5-portal's-dashboard)
-  - [2. Permissions and Remote Agent Logout](#2.2-permissions-and-remote-agent-logout)
+- [Part 1: Agent Desktop](#part-1-agent-desktop)
+  - [1. Introducing the Agent Desktop Interface](#1-introducing-the-agent-desktop-interface)
+  - [2. Create Customized Desktop Layoute](#2-create-customized-desktop-layout)
+  - [3. More Advance Example](#3-more-advance-example)
+- [Part 2: Supervisor](#part-2-supervisor)
+  - [1. Portal's Dashboards](#2-portal's-dashboard)
+  - [2. Permissions and Remote Agent Logout](#2-permissions-and-remote-agent-logout)
 
 # Introduction
 
 ## Lab Objective
 
-The objective of this lab is to get an idea about the Agents and Supervisors user journey, to familiarize with the platforms they use and to explore some of the most useful new features they offer.
+- The objective of this lab is to get an idea about the Agents and Supervisors user journey, to familiarize with the platforms they use and to explore some of the most useful new features they offer.
 
-In the first part of the lab we will focus on the Agent Desktop, we will customize the logo and title of the platform and also add a widget in the nav bar section.
+- In the first part of the lab we will focus on the Agent Desktop, we will customize the logo and title of the platform and also add a widget in the nav bar section.
 
-Later, in the second part, we will see the different reporting dashboards that Supervisors can see through the Management Portal and perform some action on the Agents
+- Later, in the second part, we will see the different reporting dashboards that Supervisors can see through the Management Portal and perform some action on the Agents
 
 ## Pre-requisite
 
@@ -39,12 +45,14 @@ Later, in the second part, we will see the different reporting dashboards that S
 
 ## Quick Links
 
-- <a href="https://portal.wxcc-us1.cisco.com/portal" target="_blank">Tenant Management Portal</a>
-- <a href="https://desktop.wxcc-us1.cisco.com" target="_blank">Agent Desktop</a>
+> Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
 
 
+# Lab Section
 
-## 1. Agent Desktop
+## Part 1: Agent Desktop
 
 
 | **Entity** | **Name**      | 
@@ -160,7 +168,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 - This is just an example of what you can achieve with custom desktop layouts, **you can design really advance features**.
 
 
-## 2. Supervisor
+## Part 2: Supervisor
 
 | **Entity** | **Name**      | 
 | ----------- | ----------------- | 
