@@ -150,11 +150,11 @@ title: 'Lab 2: IVR and Contact Routing'
 ### 6. Configure the Entry Point Routing Strategy
 
 - Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_<ID>_TS`.
-- Map the flow flow_wxcclab you just created in there.
+- Map the flow flow1_<ID> you just created in there.
 
 ### 7. Make a test call
 
-- Login to the agent desktop into `Team_wxcclab` and go to a ready state.
+- Login to the agent desktop into `Team_<ID>_wxcclab` and go to a ready state.
 
 - Task 1 > Call the Dial number > Hear the welcome prompt and call should get disconnected.
 - Task 2 > Call the Dial number > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
@@ -184,7 +184,7 @@ title: 'Lab 2: IVR and Contact Routing'
 ### 1. Copy out the flow and configure the advanced flow
 
 - Open the Portal > Routing Strategy > Flow page.
-- Copy the existing flow `Flow1` and edit the copied flow - name it `Flow2`
+- Copy the existing flow `Flow1_<ID>` and edit the copied flow - name it `Flow2_<ID>`
 - Edit the flow to go into flow designer.
 - Ensure that you configure the Menu steps with a 3 options - 2 queue, 1 Blind Transfer.
 - Ensure you configure all the fields in the menu step including the prompts and the entry timeout (requires you to explore all options on the step).
@@ -209,7 +209,7 @@ title: 'Lab 2: IVR and Contact Routing'
 ### 4. Plug In New Flow into Routing Strategy
 
 - Go to the routing Strategy page > Routing Strategy > `EP_<ID>_TS`
-- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow2`
+- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow2_<ID>`
 
 ### 5. Test the end to end flow
 
@@ -294,7 +294,7 @@ title: 'Lab 2: IVR and Contact Routing'
 ### 1. Copy out the flow and configure the advanced flow 2
 
 - Open the Portal > Routing Strategy > Flow page.
-- Copy the existing flow `Flow2` and edit the copied flow - name it `Flow3`
+- Copy the existing flow `Flow2_<ID>` and edit the copied flow - name it `Flow3_<ID>`
 - Edit the flow to go into flow designer.
 
 ### 2. Enhance the existing flow with an authentication piece
@@ -373,7 +373,7 @@ customerPhone = $.[0].phone
 ### 6. Point to the New flow in the Routing Strategy
 
 - Go to the routing Strategy page > Routing Strategy > `EP_<ID>_TS`
-- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow3`.
+- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow3_<ID>`.
 
 ### 7. Verify the flow end to end
 
