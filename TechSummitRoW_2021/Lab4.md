@@ -3,7 +3,6 @@ title: "Lab 4: CRM Integration"
 ---
 
 
-<iframe width="1024" height="576" src="https://youtube.com/embed/VQuxq5yGo2M?rel=0" title="CRM Integration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 
@@ -213,10 +212,13 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 - Add the **Teams** to Desktop layout. Agents associated with that team will get the Salesforce Desktop Layout.
 
 - Upload the custom desktop layout for WebexCC Salesforce Desktop.
+[SampleSalesforceLayout.json.zip](https://github.com/wxcctechsummit/wxcclabguides/files/6583533/SampleSalesforceLayout.json.zip)
 
 - Click **Save**. This will create a custom Desktop Layout named Salesforce in WebexCC.
 
-**Congratulations!  **CRM Integration lab is now complete!**
+
+
+**Congratulations! CRM Integration lab is now complete!**
 
 [Back to top](#table-of-contents)
 
