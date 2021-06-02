@@ -11,12 +11,12 @@ By following each of the steps, you will have better understanding of the new Ag
 # Table of Contents
 
 - [Part 1: Agent Desktop](#part-1-agent-desktop)
-  - [1. Introducing the Agent Desktop Interface](#1-introducing-the-agent-desktop-interface)
-  - [2. Create Customized Desktop Layoute](#2-create-customized-desktop-layout)
-  - [3. More Advance Example](#3-more-advance-example)
+  - [1. Introducing the Agent Desktop Interface](#1-1-introducing-the-agent-desktop-interface)
+  - [2. Create Customized Desktop Layoute](#1-2-create-customized-desktop-layout)
+  - [3. More Advance Example](#1-3-more-advance-example)
 - [Part 2: Supervisor](#part-2-supervisor)
-  - [1. Portal's Dashboards](#2-portal's-dashboard)
-  - [2. Permissions and Remote Agent Logout](#2-permissions-and-remote-agent-logout)
+  - [1. Portal's Dashboards](#2-1-portal's-dashboard)
+  - [2. Permissions and Remote Agent Logout](#2-2-permissions-and-remote-agent-logout)
 
 # Introduction
 
