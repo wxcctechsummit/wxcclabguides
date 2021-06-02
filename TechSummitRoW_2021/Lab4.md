@@ -47,7 +47,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 - Navigate to [Salesforce Developer](https://developer.salesforce.com) and click on **Sign Up**.
 
-- Complete the form with your personal details and click on **Sign me up **to create your account.
+- Complete the form with your personal details and click on **Sign me up** to create your account.
 
 > **Note:** Username needs to be in the form of an e-mail address. This address does not need to be a real e-mail address.
 
