@@ -5,9 +5,10 @@ title: 'Lab 2: IVR and Contact Routing'
 # Table of Contents
 
 - [Part 1: Setup a Simple Flow and make a test call](#part-1-setup-a-simple-flow-and-make-a-test-call)
-  - [1. Create the Voice Entry Point and Voice Queue](#3-create-an-inbound-voice-entry-point-and-voice-queue)
-  - [2. Verify/Upload the Audio Prompts, Create the Entry Point Flow.](#4-verify-the-audio-prompts-create-the-entry-point-flow)
-  - [3. Configure and Publish the Flow](#5-configure-and-publish-the-flow)
+  - [1. Verify that your users are ready to login](#1-verify-that-your-users-are-ready-to-login)
+  - [2. Create the Voice Entry Point and Voice Queue](#2-create-an-inbound-voice-entry-point-and-voice-queue)
+  - [3. Verify/Upload the Audio Prompts, Create the Entry Point Flow.](#4-verify-the-audio-prompts-create-the-entry-point-flow)
+  - [5. Configure and Publish the Flow](#5-configure-and-publish-the-flow)
   - [4. Configure the Entry Point Routing Strategy](#6-configure-the-entry-point-routing-strategy)
 - [Part 2: Adding Menu and Queue treatment to the call](#part-2-adding-menu-and-queue-treatment-to-the-call)
   - [1. Configure the Queue Treatment loop and Opt Out and Callback steps](#2-configure-the-queue-treatment-loop-and-opt-out-and-callback-steps)
