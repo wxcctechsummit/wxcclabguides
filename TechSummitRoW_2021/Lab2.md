@@ -60,6 +60,7 @@ title: 'Lab 2: IVR and Contact Routing'
 	- You have the supervisor's access to the Tenant Management Portal.
 	- Agent is part of 2 Teams.
 	- Webex Calling extensions are assigned to a WxCC users (agent and supervisor).
+3. This lab assumes that you are comfortable with your current Webex Contact Center in your Gold Tenant.
 
 
 **Quick Links**
