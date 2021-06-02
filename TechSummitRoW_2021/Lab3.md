@@ -16,7 +16,7 @@ By following each of the steps, you will have better understanding of the new Ag
   - [3. More Advance Example](#13-more-advance-example)
 - [Part 2: Supervisor](#part-2-supervisor)
   - [1. Portal's Dashboards](#21-portals-dashboards)
-  - [2. Permissions and Remote Agent Logout](22-permissions-and-remote-agent-logout)
+  - [2. Permissions and Remote Agent Logout](#22-permissions-and-remote-agent-logout)
 
 # Introduction
 
