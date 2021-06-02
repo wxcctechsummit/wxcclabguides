@@ -123,9 +123,12 @@ title: 'Lab 2: IVR and Contact Routing'
 
 ---
 
-- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to `EP_<ID>_TS`. Please see below note if your POD is shared with other members.
+- Please see below note if your POD is shared with other members. 
 
 > **NOTE:**  If you are sharing the tenant with other members on your team, each one can create their own call flow but use the IVR under the DN EP to help make the decision on what flow you want the call to take. e.g. Map DN to `EP_Main_TS' > Flow_Main, then branch out to your  `EP_<ID>_TS` from Flow_Main.
+
+- Mapping the DN to the Entry Point:
+In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mappings), map the listed DN to `EP_<ID>_TS`. 
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
 
@@ -139,7 +142,7 @@ title: 'Lab 2: IVR and Contact Routing'
 
 - Configure the flow `Flow1<ID>` with a Play prompt - welcome message and Disconnect
 - Configure the flow `Flow1<ID>` with a Play prompt - welcome message and queue block and play music block.
-- Configure the Queue Block to `Q_<ID>_TS`. Map the queue inside of the q ueue block.
+- Configure the Queue Block to `Q_<ID>_TS`. Map the queue inside of the queue block.
 - Configure the play music to loop, and start 0, end 10 to play 10 seconds of music.
 - Verify and publish the flow.
 
@@ -182,7 +185,7 @@ title: 'Lab 2: IVR and Contact Routing'
 - Open the Portal > Routing Strategy > Flow page.
 - Copy the existing flow `Flow1_<ID>` and edit the copied flow - name it `Flow2_<ID>`
 - Edit the flow to go into flow designer.
-- Ensure that you configure the Menu steps with a 3 options - 2 queue, 1 Blind Transfer.
+- Ensure that you configure the Menu steps with a 3 options - for example 1 & 2 to go to a queue and 3 Blind Transfer to external number.
 - Ensure you configure all the fields in the menu step including the prompts and the entry timeout (requires you to explore all options on the step).
 - Ensure you configure all the blind transfer location to Cisco Toll Free : `+18005536387`
 
@@ -199,7 +202,7 @@ title: 'Lab 2: IVR and Contact Routing'
 ### 3. Configure the Queue Treatment loop and Opt Out and Callback steps
 
 - In Flow Designer - Configure the Queue treatment for the first queue. Use the queueCounter variable and configure the Opt out steps including the high volume message and the callback step.
-- Configure the voicemail destination to the same external number above.
+- Configure the voicemail destination to the same Cisco Toll Free number above.
 - Validate the flow and publish it.
 
 ### 4. Plug In New Flow into Routing Strategy
@@ -250,7 +253,7 @@ title: 'Lab 2: IVR and Contact Routing'
 
 ### 2. Create the Outdial Entry Point Routing Strategy
 
-- Go Routing Strategy > Outdial Entry Point-1 OR the One you just setup
+- Go Routing Strategy > Choose the One you just setup OR the default Outdial Entry Point-1
 - Configure the outdial entry point routing strategy to the script Outdial_EP.js which is the system default.
 - Ensure the strategy time of day setting is correctly open 24x7 and marked default.
 
@@ -266,8 +269,8 @@ title: 'Lab 2: IVR and Contact Routing'
 
 - Logout/login the Agent on the agent desktop for the new agent profile settings to take effect.
 - You should see the Outdial button and the agent is now able to make an outdial call.
-- Test it by calling your cell or the provided Cisco Public Tollfree - `+18005536387` –Note: This will actually connect you to a live toll free number for Cisco Support!
-- You should have all the connected call features pop on the agent desktop once the call is complete.
+- Test it by calling the Cisco Tollfree Number - `+18005536387` –Note: This will actually connect you to a live toll free number for Cisco Support!
+- You should have all the connected call features pop on the agent desktop once the call is established and the call should land on your Calling endpoint.
 
 ---
 
@@ -465,7 +468,7 @@ Execute the Test:
 
 ---
 
-## Congratulations! You're done!
+## Congratulations! You're done! Test your skill based routing now.
 
 
 ----
