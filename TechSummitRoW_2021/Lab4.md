@@ -42,7 +42,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 ## Optional: Create Salesforce Account
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/_4ZgHUSsp4U" title="CRM Integration Lab: Salesforce Account Creation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtu.be/_4ZgHUSsp4U" title="CRM Integration Lab: Salesforce Account Creation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 - Navigate to [Salesforce Developer](https://developer.salesforce.com) website and click on **Sign Up**.
