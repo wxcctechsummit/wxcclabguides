@@ -132,7 +132,7 @@ title: 'Lab 2: IVR and Contact Routing'
 - Mapping the DN to the Entry Point:
 In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mappings), map the listed DN to `EP_<ID>_TS`. 
 
-### 4. Verify the Audio Prompts, Create the Entry Point flow.
+### 3. Verify the Audio Prompts, Create the Entry Point flow.
 
 - The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
 
@@ -140,7 +140,7 @@ In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mapp
 
 > **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
 
-### 5. Configure and Publish the flow
+### 4. Configure and Publish the flow
 
 - Configure the flow `Flow1<ID>` with a Play prompt - welcome message and Disconnect
 - Configure the flow `Flow1<ID>` with a Play prompt - welcome message and queue block and play music block.
@@ -148,12 +148,12 @@ In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mapp
 - Configure the play music to loop, and start 0, end 10 to play 10 seconds of music.
 - Verify and publish the flow.
 
-### 6. Configure the Entry Point Routing Strategy
+### 5. Configure the Entry Point Routing Strategy
 
 - Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_<ID>_TS`.
 - Map the flow flow1_<ID> you just created in there.
 
-### 7. Make a test call
+### 6. Make a test call
 
 - Login to the agent desktop into `Team_<ID>_TS` and go to a ready state.
 
@@ -201,25 +201,25 @@ In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mapp
 
 ---
 
-### 3. Configure the Queue Treatment loop and Opt Out and Callback steps
+### 2. Configure the Queue Treatment loop and Opt Out and Callback steps
 
 - In Flow Designer - Configure the Queue treatment for the first queue. Use the queueCounter variable and configure the Opt out steps including the high volume message and the callback step.
 - Configure the voicemail destination to the same Cisco Toll Free number above.
 - Validate the flow and publish it.
 
-### 4. Plug In New Flow into Routing Strategy
+### 3. Plug In New Flow into Routing Strategy
 
 - Go to the routing Strategy page > Routing Strategy > `EP_<ID>_TS`
 - Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow2_<ID>`
 
-### 5. Test the end to end flow
+### 4. Test the end to end flow
 
 - Login to the agent desktop and go Idle (Not Ready)
 - Test Queue treatment by going not ready on the agent desktop.
 - Call the main number on the entry point and go into the queue. You should hear the queue twice and then have an option to leave a callback.
 - leave the callback and the call should end.
 
-### 6. Execute the Callback
+### 5. Execute the Callback
 
 - Have the agent go ready after you left a callback.
 - They should receive the callback call.
