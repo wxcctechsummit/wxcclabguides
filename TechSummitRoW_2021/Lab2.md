@@ -98,13 +98,8 @@ title: 'Lab 2: IVR and Contact Routing'
 
 > **NOTE:** Only teams that are in the same site of the Agent will be visible to assign to the agent.
 
-### 2. Verify your inbound numbers are correctly setup on Calling
 
-- The inbound Numbers need to be added on Control Hub.
-- The telephony option on the location needs to be set to Intelepeer.
-- Settings page needs to have Intelepeer configured for subsequent locations created.
-
-### 3. Create an inbound Voice Entry Point and Voice Queue
+### 2. Create an inbound Voice Entry Point and Voice Queue
 
 - Login to Portal and create an inbound voice entry point and voice queue. (Provisioning > Entry Point / Queue).
 
@@ -128,7 +123,8 @@ title: 'Lab 2: IVR and Contact Routing'
 
 ---
 
-- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to `EP_<ID>_TS`.
+- Map the DN from Control Hub - that is assigned to Wx Calling - on the Entry Point Mappings page. (Proivisioning > Entry Point Mappings). Map the DN to `EP_<ID>_TS`. Please see below note if your POD is shared with other members.
+
 > **NOTE:**  If you are sharing the tenant with other members on your team, each one can create their own call flow but use the IVR under the DN EP to help make the decision on what flow you want the call to take. e.g. Map DN to `EP_Main_TS' > Flow_Main, then branch out to your  `EP_<ID>_TS` from Flow_Main.
 
 ### 4. Verify the Audio Prompts, Create the Entry Point flow.
@@ -141,8 +137,8 @@ title: 'Lab 2: IVR and Contact Routing'
 
 ### 5. Configure and Publish the flow
 
-- Configure the flow `Flow1` with a Play prompt - welcome message and Disconnect
-- Configure the flow `Flow1` with a Play prompt - welcome message and queue block and play music block.
+- Configure the flow `Flow1<ID>` with a Play prompt - welcome message and Disconnect
+- Configure the flow `Flow1<ID>` with a Play prompt - welcome message and queue block and play music block.
 - Configure the Queue Block to `Q_<ID>_TS`. Map the queue inside of the q ueue block.
 - Configure the play music to loop, and start 0, end 10 to play 10 seconds of music.
 - Verify and publish the flow.
@@ -154,7 +150,7 @@ title: 'Lab 2: IVR and Contact Routing'
 
 ### 7. Make a test call
 
-- Login to the agent desktop into `Team_<ID>_wxcclab` and go to a ready state.
+- Login to the agent desktop into `Team_<ID>_TS` and go to a ready state.
 
 - Task 1 > Call the Dial number > Hear the welcome prompt and call should get disconnected.
 - Task 2 > Call the Dial number > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
