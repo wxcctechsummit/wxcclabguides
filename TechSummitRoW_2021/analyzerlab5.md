@@ -90,7 +90,7 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab6.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab8.html";}
 </script>
 
 <div id="button-row">
@@ -104,7 +104,7 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 6: CRM Integration</button>
+  padding: 10px;">Next Lab 8 - WxM Integration</button>
 
 </div>
 
