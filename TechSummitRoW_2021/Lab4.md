@@ -218,7 +218,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 
 
-**Congratulations! CRM Integration lab is now complete!**
+### **Congratulations! CRM Integration lab is now complete!**
 
 [Back to top](#table-of-contents)
 
