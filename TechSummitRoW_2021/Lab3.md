@@ -12,11 +12,11 @@ By following each of the steps, you will have better understanding of the new Ag
 
 - [Part 1: Agent Desktop](#part-1-agent-desktop)
   - [1. Introducing the Agent Desktop Interface](#11-introducing-the-agent-desktop-interface)
-  - [2. Create Customized Desktop Layoute](#12-create-customized-desktop-layout)
+  - [2. Create a Custom Desktop Layout](#12-create-a-custom-desktop-layout)
   - [3. More Advance Example](#13-more-advance-example)
 - [Part 2: Supervisor](#part-2-supervisor)
-  - [1. Portal's Dashboards](#21-portal's-dashboard)
-  - [2. Permissions and Remote Agent Logout](#22-permissions-and-remote-agent-logout)
+  - [1. Portal's Dashboards](#21-portals-dashboards)
+  - [2. Permissions and Remote Agent Logout](22-permissions-and-remote-agent-logout)
 
 # Introduction
 
@@ -226,7 +226,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 - Manually refresh dashboard data by clicking on **Stop Refresh** button. As the result, the **time since last refresh** will be restarted.
 
-## 2.2 Supervisor permissions and remote agent logout
+## 2.2 Permissions and remote agent logout
 
 >Here we go through the newly added dashboard. We will learn how to change supervisor permissions and how to manually log out agents by using a supervisor account.
 
