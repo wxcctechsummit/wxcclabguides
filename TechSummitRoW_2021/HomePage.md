@@ -2,6 +2,9 @@
 title: 'New WxCC Technical Virtual Summit'
 ---
 
+<img align="middle" src="../images/12_51_47.jpg"/>
+
+
 ![Banner](../images/12_51_47.jpg)
 
 Welcome to the Lab Guide Library for the 2021 Cisco Webex Contact Center Technical Partner Summit. As labs become available they will appear below. Labs can be started once the lab document link is updated. Please be sure to refresh your browser to see when labs have been added.
