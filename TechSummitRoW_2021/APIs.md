@@ -45,7 +45,7 @@ Before you begin this lab:
 1. You already have test calls made (Lab1 and Lab2).
 2. You understand how to create Analyzer reports. Review the analyzer lab if you need more information.
 3. Call Recordings are visible under recording management.
-4. You already have an API key generated for `admin1podX` where X is your pod number. View the video below to verify this. Reach out to the lab proctors if you require any information around this.
+4. You already have an API key generated for `admin1podX` where X is your pod number. View the video below to verify this from the Portal. Reach out to the lab proctors if you require any information around this.
 5. You have the Postman client downloaded and installed to make queries to the Webex Contact Center APIs. Download it here: [Download and Install Postman](https://www.postman.com)
 
 ### Quick Links
