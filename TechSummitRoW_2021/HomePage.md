@@ -2,7 +2,7 @@
 title: 'New WxCC Technical Virtual Summit'
 ---
 
-<img align="middle" src="../images/12_51_47.jpg"/>
+<img align="middle" src="../images/12_51_47.jpg" width="500" />
 
 
 ![Banner](../images/12_51_47.jpg)
