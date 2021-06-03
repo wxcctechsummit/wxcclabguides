@@ -2,6 +2,10 @@
 title: "Lab 9: Webex Experience Management"
 ---
 
+## Overview of the lab:
+In this Lab, we will go through the tasks that are required to build a Webex Experience Management connecter and use that to send a survey to customers so that they can provide feedback on their interaction with the contact center. Also, we will look at how the agent can get this feedback on their agent desktop to provide appropriate level of service to end customers. This will enhance their customer satisfaction level which will positively impact their business.
+
+
 # Table of Contents
 
 - [Part 1: WxM Connector setup](#part-1-wxm-connector-setup)
@@ -26,6 +30,7 @@ title: "Lab 9: Webex Experience Management"
 
 # Introduction
 
+## Lab Objective
 In this Lab, we will go through the tasks that are required to build a Webex Experience Management connecter and use that to send a survey to customers so that they can provide feedback on their interaction with the contact center. Also, we will look at how the agent can get this feedback on their agent desktop to provide appropriate level of service to end customers. This will enhance their customer satisfaction level which will positively impact their business.
 
 ## Pre-requisites
@@ -38,18 +43,36 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * Your pod has the required configuration for an email to route to an agent
 * You have configured all the requisites for the agent to log in and handle a customer call.
 
-# Part 1: WxM Connector setup
+
+
+
+* You are familiar with editing and updating desktop layout JSON
+* You have the customer admin login credentials.
+
+
+
+* You are familiar with creating and modifying flows
+* You have a number from which you can make calls to the contact center.
+* You have access to an inbox where the surveys can be posted.
+
+
+## Quick Links
+* [Control hub](https://admin.webex.com)
+* [WxM console](https://cx.cloudcherry.com)
+* [WxCC Portal](https://portal.wxcc-us1.cisco.com/portal)
+
+
+# Lab Section
+
+
+## Part 1: WxM Connector setup
 
 The following video outlines the steps required to create the WxM connector. WxCC uses this connector to read the dispatches that are configured in WxM. This connector is also used to load the widgets into the agent desktop and FeedBack is triggered via the same.
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/GI4nzVLLFCk?rel=0" title="WxM Lab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Quick Links**
 
-* [Control hub](https://admin.webex.com)
-* [WxM console](https://cx.cloudcherry.com)
-
-## a) Identify the API key from WxM
+### 1. Identify the API key from WxM
 
 * Login to the [WxM console](https://cx.cloudcherry.com)
 * Enter the admin credentials.
@@ -58,7 +81,7 @@ The following video outlines the steps required to create the WxM connector. WxC
 * Copy the API Key from the API Key section.
 * If the API key is not present, click on Create and then copy the key.
 
-## b) Configure WxM connector in Control hub
+### 2. Configure WxM connector in Control hub
 
 * Login to [Control Hub](https://admin.webex.com)
 * Enter the Customer admin email id and the password.
@@ -70,25 +93,22 @@ The following video outlines the steps required to create the WxM connector. WxC
 * Paste the API Key (copied above)
 * Click on Save and then Close.
 
-# Part 2: Onboarding CH Agent as WxM User
+
+## Part 2: Onboarding CH Agent as WxM User
 
 The following video demos how a Control Hub user is onboarded to WxM. We have to ensure that each of the agents in Control Hub is linked to one of the valid users in WxM. Based on the access of the WxM user, appropriate widgets will be loaded into Agent Desktop. Since the access control is based on the WxM user, this step is very critical.
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/SmRBu4QFCos?rel=0" title="Onboarding WxM Lab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Quick Links**
 
-* [Control hub](https://admin.webex.com)
-* [WxM console](https://cx.cloudcherry.com)
-
-## **IMPORTANT : Before You Begin**
+### **IMPORTANT : Before You Begin**
 
 * Please create a new agent in Control Hub with an email inbox to which you have access.
 * The below steps will need you to activate a user and hence the request for an inbox to which you have access to click the user activation link.
 * We will use this agent to login to Agent Desktop and handle voice calls, Email interaction, and Chat interaction.
 * Hence ensure that the configured agent profile has required channels and is part of the voice, email & chat queue, and the respective Team
 
-## a) Create WxM User and Generate API key
+### 1. Create WxM User and Generate API key
 
 * Login to the [WxM console](https://cx.cloudcherry.com)
 * Enter the admin credentials.
@@ -104,7 +124,7 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 * Set a password and confirm that you can login to WxM with these credentials.
 * Note the username & password of the WxM agent which will be used to link the CH user with this WxM user.
 
-## b) Identify Org ID, CH User ID and email of Agent
+### 2. Identify Org ID, CH User ID and email of Agent
 
 * Login to [Control Hub](https://admin.webex.com)
 * Enter the Customer admin email id and the password.
@@ -121,7 +141,7 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 * Close the browser dev tools.
 * Now navigate to Account in Control Hub UI and copy the Organization ID and note it down.
 
-## c) Run WxM OnBoard API
+### 3. Run WxM OnBoard API
 
 * Open any of the available REST clients. if you don't have a REST client installed on your laptop, please install the latest version of the postman.
 * Open a new API request tab and select the HTTP method as POST.
@@ -146,29 +166,20 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 * Ensure that the API request Accept and Content-Type Headers are set to "application/JSON"
 * Click the button to trigger the API request.
 
-# Part 3: Enable WxM widgets in Desktop Layout
+## Part 3: Enable WxM widgets in Desktop Layout
 
 The following video demos how the Agent Desktop Layout JSON has to modify with the appropriate values of the WxM dashboard so that they are loaded into the widgets. The Space ID and the Metrics ID extracted from WxM decide which widget will be loaded for the agent. This lab section assumes that you are familiar with how the agent desktop layout can be modified and applied to a team.
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/Njie8PrB6Kk?rel=0" title="Enabling WxM Widgets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Pre-requisites
 
-* You are familiar with editing and updating desktop layout JSON
-* You have the customer admin login credentials.
-
-**Quick Links**
-
-* [Control hub](https://admin.webex.com)
-* [WxM console](https://cx.cloudcherry.com)
-
-## a) Enable wxmConfigured flag
+### 1. Enable wxmConfigured flag
 
 * Download the current layout of the team used by the newly created Agent.
 * Edit the JSON file in an editor and search for the key wxmConfigured.
 * If not changed already, change the value to true
 
-## b) Enable Customer Experience Journey Widget
+### 2. Enable Customer Experience Journey Widget
 
 * Login to the [WxM console](https://cx.cloudcherry.com)
 * Enter the admin credentials.
@@ -178,7 +189,7 @@ The following video demos how the Agent Desktop Layout JSON has to modify with t
 * From the information pane, copy the Space Id and update this in the Customer Experience Journey section of the layout JSON.
 * Since Customer Experience Journey, does not have metricsId you can use the space Id copied here as the metrics Id. Else you can the metrics Id of Customer Experience Analytics and paste it here (which you will get in the below steps)
 
-## c) Enable Customer Experience Analytics Widget
+### 3. Enable Customer Experience Analytics Widget
 
 * Login to the [WxM console](https://cx.cloudcherry.com)
 * Enter the admin credentials.
@@ -190,31 +201,21 @@ The following video demos how the Agent Desktop Layout JSON has to modify with t
 * Save this JSON file and upload it in the appropriate layout used by the Test Agents Team.
 * Now if you login as an agent and test Voice interactions, you will be able to access both the Customer Experience Analytics widget and Customer Experience Journey widget.
 
-## d) Test Voice, Email and Chat Interaction
+### 4. Test Voice, Email and Chat Interaction
 
 * Login to the recently created agent who has been OnBoarded in WxM.
 * Trigger Voice, Email, and Chat interaction and confirm that both the WxM widgets are loaded on Agent Desktop and are visible.
 * This confirms that our OnBoarding and the Json layout update is successful.
 
-# Part 4: Configure Feedback node in Flow
+
+## Part 4: Configure Feedback node in Flow
 
 The following video does a quick demo on how the FeedBack node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. Since Email and Chat are not integrated with Flow, Feedback cannot be used for those interactions. 
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/qGW6lRI7AA0?rel=0" title="Configure Feedback Node" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Pre-requisites
 
-* You are familiar with creating and modifying flows
-* You have a number from which you can make calls to the contact center.
-* You have access to an inbox where the surveys can be posted.
-
-**Quick Links**
-
-* [Control hub](https://admin.webex.com)
-* [WxM console](https://cx.cloudcherry.com)
-* [WxCC Portal](https://portal.wxcc-us1.cisco.com/portal)
-
-## a) Configure Feedback Node
+### 1. Configure Feedback Node
 
 * Login to portal with admin credential and navigate to `Routing Strategy`
 * Click on `Flows` and edit the flow used in the call flow.
@@ -225,14 +226,14 @@ The following video does a quick demo on how the FeedBack node should be impleme
 * For `Phone Number`, select the built-in flow variable `NewPhoneContact.ANI`
 * Ensure that the `Feedback` nodes are connected properly with end nodes and `Validation` passes. Publish the change by clicking the `Publish Flow` button.
 
-## b) Test Voice interaction and confirm that the survey is received by the caller's email
+### 2. Test Voice interaction and confirm that the survey is received by the caller's email
 
 * Login to the recently created agent who has been OnBoarded in WXM.
 * Trigger a voice call and ensure that the call connects to the agent and then terminate it.
 * The survey link should be sent to the email specified in the flow custom variable.
 * Click the link and fill the survey.
 
-## c) Validate that the survey filled by the caller is recorded properly in WxM
+### 3. Validate that the survey filled by the caller is recorded properly in WxM
 
 * Login to the [WxM console](https://cx.cloudcherry.com)
 * Enter the admin credentials.
