@@ -408,3 +408,22 @@ application/x-www-form-urlencoded
 > code
 
 > redirect_uri
+
+
+### Congratulations, you have completed **ALL section**. Well done!!!
+
+<script>
+function celeButton() {document.body.style.backgroundImage="url('https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/giphy.gif')";}
+</script>
+
+<div id="button-row">
+	<button onclick="celeButton()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Click To Finish</button>
+</div>
+
+<br />
+<br />
+&nbsp;
+&nbsp;
