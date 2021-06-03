@@ -49,7 +49,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - The lab will also contain multiple exercises on flow designer to make you comfortable with the Webex Contact Center Flow Designer and the overall Contact Routing configuration.
 
-- **IVR Prompts:** We will expect you to configure and upload static prompts shared for use below. You may also choose to use dynamic TTS prompts, it will not change the lab or its content. You can upload these "CiscoDemo" prompts and use them for the labs. You may also keep a copy of the zip file if you want to manually upload them. In the bonus lab sections, we also share how you can convert these prompts to dynamic TTS prompts using the Text to speech connector configuration available within flow designer.
+- **IVR Prompts:** We will expect you to configure and upload static prompts shared for use below.
 
 > [Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/fvr4k0nay93lyjnxaqxwevbcts5glbsu){:target="\_blank"}
 
@@ -439,27 +439,41 @@ Execute the Test:
 
 ### 5. Modify the Previous Flow into a new Flow 4
 
-- Open Flow > Copy Existing Flow 2 - Rename it as Flow 4.
+- Open Flow > Copy Existing Flow2<`ID`> - Rename it as Flow4<`ID'>.
 	
-- In Option 1 > Select the Queue Block > Make it SBR based by selecting the Skills Based Queue.
+- Create a new variable `skill`. 
+	
+	> Click on Canvas > Global Flow properties > Add Flow Variable
+	
+	> name > `skill`
+	
+	> Variable Type > `string`
+	
+	> Variable Value > `Techsummit`
+	
+	> Turn on `MArk as CAD Variable`
+	
+	> Save
+	
+- In Menu Option 1 > Select the Queue Block > Make it SBR based by selecting the Skills Based Queue.
 	
 - Setup skill requirements as below
 
 **Set the following settings**
 
-> `Skillset >= 5`
+	> `Skillset >= 5`
 
-> `Make {{skill}} as a String Variable`
+	> `Make {{skill}} as a String Variable`
 
-> `VIPCustomer` IS {% raw %}{{skill}}{% endraw %}
+	> `VIPCustomer` IS {% raw %}{{skill}}{% endraw %}
 
-> Enable Skill Relaxation After waiting in queue for: `15 seconds`
+	> Enable Skill Relaxation After waiting in queue for: `15 seconds`
 
 **Set skill relaxation to (after 60 seconds):**
 
-> `Skillset >= 3`
+	> `Skillset >= 3`
 
-> Remove the requirement of the VIP Customer skill.
+	> Remove the requirement of the VIP Customer skill.
 
 ---
 
