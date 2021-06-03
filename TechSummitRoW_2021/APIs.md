@@ -34,9 +34,8 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 - We will explore both the flavors of accessing reporting and call recording data - authenticating using an API Key using the legacy API and using a Bearer token with the new Webex Contact Center APIs on the developer portal.
 
-- **Note: If you would like to try out the new API endpoints you can go straight to Part 3** 
+> **Note: If you would like to try out the new API endpoints you can go straight to Part 3** 
 > New Webex Contact Center API endpoints are accessed via - `https://webexapis.com/v1/contactCenter/{endpoint}`
-
 > The Developer docs are at: **https://devportal.produs1.ciscoccservice.com/** > `Documentation`
 
 ## Pre-requisite
