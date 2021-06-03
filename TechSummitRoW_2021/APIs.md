@@ -42,24 +42,19 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 Before you begin this lab:
 
-1. You already have test calls made.
+1. You already have test calls made (Lab1 and Lab2).
 2. You understand how to create Analyzer reports. Review the analyzer lab if you need more information.
 3. Call Recordings are visible under recording management.
 4. You already have an API key generated for `admin1podX` where X is your pod number. View the video below to verify this. Reach out to the lab proctors if you require any information around this.
 5. You have the Postman client downloaded and installed to make queries to the Webex Contact Center APIs. Download it here: [Download and Install Postman](https://www.postman.com)
 
-**Important Links**
+### Quick Links
 
-> [Control hub - For your Org Id](https://admin.webex.com)
-
-> [WxCC Portal](https://portal.wxcc-us1.cisco.com/portal)
-
-> [WxCC Analyzer](https://analyzer.wxcc-us1.cisco.com/analyzer/home)
-
+> Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> WxCC Analyzer: **[https://analyzer.wxcc-us1.cisco.com/analyzer/home](https://analyzer.wxcc-us1.cisco.com/analyzer/home){:target="_blank"}**\
 > Legacy V1.0 endpoint - Resource - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}`
-
 > Legacy V1.0 endpoint - Query - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}`
-
 Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
 
 This lab will deal with `csrs`
