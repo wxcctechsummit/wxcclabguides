@@ -63,7 +63,7 @@ This lab will deal with `csrs`
 
 > The following video outlines the pre-requisites as well as Part 1
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S0OO6rxciqo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/S0OO6rxciqo?rel=0" title="WxCC Lab #8 Part 1: Legacy 1.0 APIs: CSR, CSR Query" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## 1. Verify that you have a Analyzer Report created and a Call recording exists
