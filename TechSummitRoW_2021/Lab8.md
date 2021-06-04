@@ -191,8 +191,12 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 * Click the button to trigger the API request.
 
 ## Part 2: Create new agent in CH
-
-
+* Login in the [Control Hub](https://admin.webex.com) with credentials of Pod29
+* Create and activate 2 new users, 1 Agent and 1 Supervisor, following the same naming convention of Lab1
+* Navigate to the [Tenant Portal](https://portal.wxcc-us1.cisco.com/portal) and create Team1_<ID>_TS for your Agent
+* Create a Queue and put the Team created before as distributed group
+* Go to Routing Strategies and create a Flow
+* Assign that Flow to 
 
 ## Part 3: Enable WxM widgets in Desktop Layout
 
