@@ -53,12 +53,12 @@ Before you begin this lab:
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > WxCC Analyzer: **[https://analyzer.wxcc-us1.cisco.com/analyzer/home](https://analyzer.wxcc-us1.cisco.com/analyzer/home){:target="_blank"}**\
-> HMAC Generator: **https://www.liavaag.org/English/SHA-Generator/HMAC/(https://www.liavaag.org/English/SHA-Generator/HMAC/){:target="_blank"}**\
-> Legacy V1.0 endpoint - Resource - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}`
-> Legacy V1.0 endpoint - Query - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}`
+> HMAC Generator: **[https://www.liavaag.org/English/SHA-Generator/HMAC/](https://www.liavaag.org/English/SHA-Generator/HMAC/){:target="_blank"}**\
+> Legacy V1.0 endpoint - Resource: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}){:target="_blank"}**\
+> Legacy V1.0 endpoint - Query: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}){:target="_blank"}**\
 Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
-
-This lab will deal with `csrs`
+> New Webex Contact Center API endpoints - **[https://webexapis.com/v1/contactCenter/{endpoint}](){:target="_blank"}**\
+> The Official Developer docs are at: **https://developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`. 
 
 # Part 1: Legacy 1.0 APIs: CSR, CSR Query
 
@@ -250,23 +250,8 @@ i.e
     `Accept:` `text/csv`
 
 # Part 2: Legacy 1.0 APIs: CARs and activity chains
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/PSTexkK2cxs?rel=0" title="WxCC Lab #8 Part 1: Legacy 1.0 APIs: CSR, CSR Query" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/PSTexkK2cxs?rel=0" title="WxCC Lab #8 Part 2: Legacy 1.0 APIs: CARs and activity chains" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-**Important Links**
-
-> [Control hub - For your Org Id](https://admin.webex.com)
-
-> [WxCC Portal](https://portal.wxcc-us1.cisco.com/portal)
-
-> [WxCC Analyzer](https://analyzer.wxcc-us1.cisco.com/analyzer/home)
-
-> Legacy V1.0 endpoint - Resource - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}`
-
-> Legacy V1.0 endpoint - Query - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}`
-
-Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
-This lab will deal with `cars`
 
 ## 1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format
 - Epoch time for fields `cstts` (Contact Start Time Stamp) and `cetts` (Contact end Time Stamp) can be understood by looking at the Epoch converter https://www.epochconverter.com/ 
@@ -275,7 +260,9 @@ This lab will deal with `cars`
 - A CAR (Contact Activity Record) is in the format : https://rest.wxcc-us1.cisco.com/aws/api/cars/{contactsession}-{timestamp}-{event}
 
 - Contact Session Record : CSR
+
 - Timestamp : The `cstts` Contact start time stamp of the event
+
 - Event: the event name: `new`, `ivr-connected`, `parked`, `ended` etc.
 
 Few examples: 
@@ -291,13 +278,16 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 ## 3. Complete Building out the above requests.
 
 - Understand that you can start the Analyzer request chain by pulling a CSR report.
+
 - From there, you can fetch the list of CSRs iteratively, if doing this programmatically.
+
 - For Each CSR, you can retrieve the details of every CAR that is an activity within the session. Each CAR has an associated state.
+
 - Every CAR has a reference to the CSR, which is in the `session` attribute within the object.
 
 # Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jThcPefuzTA?rel=0" title="WxCC Lab #8 Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jThcPefuzTA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The New Webex Contact Center API endpoints are described in the Webex Contact Center Developer Portal Early Preview.
 **[Developer Portal Early Access - Detailed Documentation](https://apim-dev-portal.appstaging.ciscoccservice.com/)**
@@ -306,19 +296,6 @@ The New Webex Contact Center API endpoints are described in the Webex Contact Ce
 
 > The Official Developer docs are at: **developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`. 
 For any user to view these docs - since they are pre-release - please contact your Cisco PSAM for access.
-
-
-**Important Links**
-
-> [Control hub - For your Org Id](https://admin.webex.com)
-
-> [WxCC Portal](https://portal.wxcc-us1.cisco.com/portal)
-
-> [WxCC Analyzer](https://analyzer.wxcc-us1.cisco.com/analyzer/home)
-
-> New Webex Contact Center API endpoints - `https://webexapis.com/v1/contactCenter/{endpoint}`
-
-> The Official Developer docs are at: **developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`. 
 
 ## 1. Login to developer.webex.com > Documentation > API Reference > Contact Center
 - Go to the Get Tasks section.
