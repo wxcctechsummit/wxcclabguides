@@ -31,28 +31,42 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 # Introduction
 
 ## Lab Objective
-In this Lab, we will go through the tasks that are required to build a Webex Experience Management connecter and use that to send a survey to customers so that they can provide feedback on their interaction with the contact center. Also, we will look at how the agent can get this feedback on their agent desktop to provide appropriate level of service to end customers. This will enhance their customer satisfaction level which will positively impact their business.
+- Explore the WxM console and its features
+
+- Edit the Desktop Layout for configuring the WxM widget
+
+- Learn how to configure a flow for geting feedback
+ 
 
 ## Pre-requisites
 
-* You have an assigned POD
-* You have the customer admin login credentials.
-* You are familiar with how to create a new user in Control Hub
-* You have finished earlier labs and are familiar with the application
-* Your pod has the required configuration for a chat to route to an agent
-* Your pod has the required configuration for an email to route to an agent
+* You have completed Lab 1 - Control Hub & Admin Portal:
+ - You are familiar with how to create a new user in Control Hub
+
+
+
+* You have completed Lab 3 - Agent and Supervisor Desktops:
+ - You are familiar with editing and updating desktop layout JSON
+
+* You have the WxM admin login credentials
+> admin1pod29@email.carehybrid.com
+> ReadyNext2021!
+
+
 * You have configured all the requisites for the agent to log in and handle a customer call.
 
 
 
 
-* You are familiar with editing and updating desktop layout JSON
-* You have the customer admin login credentials.
 
 
 
-* You are familiar with creating and modifying flows
+
+* You have completed Lab 2 - IVR Contact Routing:
+*  You are familiar with creating and modifying flows
+
 * You have a number from which you can make calls to the contact center.
+
 * You have access to an inbox where the surveys can be posted.
 
 
@@ -60,11 +74,19 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * [Control hub](https://admin.webex.com)
 * [WxM console](https://cx.cloudcherry.com)
 * [WxCC Portal](https://portal.wxcc-us1.cisco.com/portal)
+* [Agent Desktop](https://desktop.wxcc-us1.cisco.com)
 
 
 # Lab Section
 
 
+## NOT NEED TO COMPLETE THIS PART, ALREADY CONFIGURED
+> Due to limitation with the number of WxM tenants, all the participants will use the same tenant for this lab. 
+Tenant credentials: admin1pod29@email.carehybrid.com
+ReadyNext2021!
+
+WxM user: 
+ 
 ## Part 1: WxM Connector setup
 
 The following video outlines the steps required to create the WxM connector. WxCC uses this connector to read the dispatches that are configured in WxM. This connector is also used to load the widgets into the agent desktop and FeedBack is triggered via the same.
@@ -93,6 +115,8 @@ The following video outlines the steps required to create the WxM connector. WxC
 * Paste the API Key (copied above)
 * Click on Save and then Close.
 
+
+## NOT NEEDED
 
 ## Part 2: Onboarding CH Agent as WxM User
 
@@ -165,6 +189,10 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 * Input the UserID, OrgID, and EmailID values which you have noted down from the above steps.
 * Ensure that the API request Accept and Content-Type Headers are set to "application/JSON"
 * Click the button to trigger the API request.
+
+## Part 2: Create new agent in CH
+
+
 
 ## Part 3: Enable WxM widgets in Desktop Layout
 
