@@ -57,8 +57,10 @@ Before you begin this lab:
 > Legacy V1.0 endpoint - Resource: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}){:target="_blank"}**\
 > Legacy V1.0 endpoint - Query: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}){:target="_blank"}**\
 Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
-> New Webex Contact Center API endpoints - **[https://webexapis.com/v1/contactCenter/{endpoint}](){:target="_blank"}**\
-> The Official Developer docs are at: **https://developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`. 
+> Developer Portal Early Access - Detailed Documentation: **[https://apim-dev-portal.appstaging.ciscoccservice.com/](https://apim-dev-portal.appstaging.ciscoccservice.com/){:target="_blank"}**\
+> The Official Developer docs are at: **[https://developer.webex.com](https://developer.webex.com){:target="_blank"}** > `Documentation` > `API Reference` > `Contact Center`.\
+> Note: The documentaion will be avalable after Jun 7.
+
 
 # Part 1: Legacy 1.0 APIs: CSR, CSR Query
 
@@ -249,12 +251,16 @@ i.e
 
     `Accept:` `text/csv`
 
+
+
+
+
 # Part 2: Legacy 1.0 APIs: CARs and activity chains
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/PSTexkK2cxs?rel=0" title="WxCC Lab #8 Part 2: Legacy 1.0 APIs: CARs and activity chains" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## 1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format
-- Epoch time for fields `cstts` (Contact Start Time Stamp) and `cetts` (Contact end Time Stamp) can be understood by looking at the Epoch converter https://www.epochconverter.com/ 
+- Epoch time for fields `cstts` (Contact Start Time Stamp) and `cetts` (Contact end Time Stamp) can be understood by looking at the Epoch converter [https://www.epochconverter.com/](https://www.epochconverter.com/){:target="_blank"}
 
 ## 2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.
 - A CAR (Contact Activity Record) is in the format : https://rest.wxcc-us1.cisco.com/aws/api/cars/{contactsession}-{timestamp}-{event}
@@ -285,17 +291,13 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 - Every CAR has a reference to the CSR, which is in the `session` attribute within the object.
 
+
+
+
+
 # Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jThcPefuzTA?rel=0" title="WxCC Lab #8 Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-The New Webex Contact Center API endpoints are described in the Webex Contact Center Developer Portal Early Preview.
-**[Developer Portal Early Access - Detailed Documentation](https://apim-dev-portal.appstaging.ciscoccservice.com/)**
-
-> New Webex Contact Center API endpoints are accessed via - `https://webexapis.com/v1/contactCenter/{endpoint}`
-
-> The Official Developer docs are at: **developer.webex.com** > `Documentation` > `API Reference` > `Contact Center`. 
-For any user to view these docs - since they are pre-release - please contact your Cisco PSAM for access.
 
 ## 1. Login to developer.webex.com > Documentation > API Reference > Contact Center
 - Go to the Get Tasks section.
