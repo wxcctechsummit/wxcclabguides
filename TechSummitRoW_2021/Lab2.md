@@ -210,7 +210,7 @@ In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mapp
 	
 - Test Queue treatment by going not ready on the agent desktop.
 	
-- Call the main number on the entry point and go into the queue. You should hear the queue twice and then have an option to leave a callback.
+- Using your **supervisor extension**, Call the main number associated to entry point and go into the queue. You should hear the queue twice and then have an option to leave a callback.
 	
 - Leave the callback and the call should end.
 
@@ -219,7 +219,6 @@ In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mapp
 - Have the agent go ready after you left a callback.
 	
 - They should receive the callback call.
-
 
 
 ## Part 3: Configuring Outdial
