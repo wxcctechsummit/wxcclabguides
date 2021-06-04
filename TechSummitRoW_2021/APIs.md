@@ -42,8 +42,8 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 Before you begin this lab:
 
-1. You already have test calls made (Lab1 and Lab2).
-2. You understand how to create Analyzer reports. Review the analyzer lab if you need more information.
+1. You already have test calls made (Lab 1 and Lab 2).
+2. You understand how to create Analyzer reports. Review the analyzer lab if you need more information (Lab 6).
 3. Call Recordings are visible under recording management.
 4. You already have an API key generated for `admin1podX` where X is your pod number. View the video below to verify this from the Portal. Reach out to the lab proctors if you require any information around this.
 5. You have the Postman client downloaded and installed to make queries to the Webex Contact Center APIs. Download it here: [Download and Install Postman](https://www.postman.com)
@@ -53,6 +53,7 @@ Before you begin this lab:
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > WxCC Analyzer: **[https://analyzer.wxcc-us1.cisco.com/analyzer/home](https://analyzer.wxcc-us1.cisco.com/analyzer/home){:target="_blank"}**\
+> HMAC Generator: **https://www.liavaag.org/English/SHA-Generator/HMAC/(https://www.liavaag.org/English/SHA-Generator/HMAC/){:target="_blank"}**\
 > Legacy V1.0 endpoint - Resource - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}`
 > Legacy V1.0 endpoint - Query - `https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}`
 Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
@@ -66,21 +67,23 @@ This lab will deal with `csrs`
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/S0OO6rxciqo?rel=0" title="WxCC Lab #8 Part 1: Legacy 1.0 APIs: CSR, CSR Query" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## 1. Verify that you have a Analyzer Report created and a Call recording exists
-- Follow the steps outlined above to create an analyzer report by logging into Analyzer and creating a CSR report. It is assumed you already have completed the Analyzer Lab in the previous sections.
+## 1. Verify that you have an Analyzer Report created and a Call recording exists
+- Follow the steps outlined in the Analizer Lab to create an analyzer report by logging into Analyzer and creating a CSR report. It is assumed you already have completed the Analyzer Lab in the previous sections.
 
 ## 2. Verify you have Postman Installed
 - Install Postman from the link.
+
 - Create a Folder to store your requests.
+
 - Create variables to hold critical information in all the requests. From Header and the Authorization Header.
 
 ## 3. Create a GET CSR Request
 - Review the CSRs in your setup using Analyzer.
+
 - Draft the GET CSR request using the format
 
 **Authorization API Key**:
-To generate the HMAC (used in the Header of the API call), 
-you will need to encode your user ID with the API key, using the HMAC SHA1 algorithm. 
+To generate the HMAC (used in the Header of the API call), you will need to encode your user ID with the API key, using the HMAC SHA1 algorithm. 
 
 You can use any HMAC generator online to convert the API Key into an HMAC Authorization Token that can be used in the header of the HTTPS request - for any operations against the API.
    (E.g: https://www.liavaag.org/English/SHA-Generator/HMAC/)
@@ -114,10 +117,15 @@ Headers after HMAC encoding: 
 
 ## 5. Inspect the Browser to create a CSR Query
 - On the Analyzer Report for CSRs Today - Inspect the report - Right Click > Inspect.
+
 - Go to the network tab > Refresh > Search for a request in the format: `dataQuery?GET_DATA=`
+
 - Look at the response.
+
 - Copy this response out into a t`ext editor.
+
 - Name the file `analyzer.json` to enable automatic formatting as shown below, for ease of analysis.
+
 - Copy the content after the `query: { ... }` tags. That is your Query that you will URL encode to fetch the required reporting metadata.
 
 Example:
@@ -216,6 +224,7 @@ Example Site (3rd Party):
 https://meyerweb.com/eric/tools/dencoder/ 
 
 - Paste the content.
+
 - Click Encode.
 
 It will give you this text.
@@ -241,8 +250,8 @@ i.e
     `Accept:` `text/csv`
 
 # Part 2: Legacy 1.0 APIs: CARs and activity chains
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/PSTexkK2cxs?rel=0" title="WxCC Lab #8 Part 1: Legacy 1.0 APIs: CSR, CSR Query" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PSTexkK2cxs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Important Links**
 
