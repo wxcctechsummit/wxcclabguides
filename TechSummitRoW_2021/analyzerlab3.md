@@ -1,8 +1,8 @@
 ---
-title: "Lab 3: Analyzer Exercises 3.1 to 3.3"
+title: "Lab 6: Analyzer Exercises 3.1 to 3.3"
 ---
 
-# Webex CC Partner Summit Lab 3: Analyzer Lab
+# Webex CC Partner Summit Lab 6: Analyzer Lab
 
 ## Exercises 3.1, 3.2 and 3.3
 
