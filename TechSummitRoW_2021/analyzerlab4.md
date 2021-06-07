@@ -1,8 +1,8 @@
 ---
-title: "Lab 5: Analyzer Exercises 4.1 to 4.2"
+title: "Lab 4: Analyzer Exercises 4.1 to 4.2"
 ---
 
-# Webex CC Partner Summit Lab5: Analyzer Lab
+# Webex CC Partner Summit Lab 4: Analyzer Lab
 ## Exercises 4.1 and 4.2
 
 
@@ -19,7 +19,7 @@ title: "Lab 5: Analyzer Exercises 4.1 to 4.2"
 
 ## Lab Objective
 
-This lab is designed to build upon previous labs where custom reports were created and saved.  Those reports will be used in this lab to further get simple, useful and actionalble data insights.  In this lab we will explore `Enhanced Fields`, `Heat Map view`, `Compound Visualizations`, and `Drill-down`
+This lab is designed to build upon previous labs where custom reports were created and saved.  Those reports will be used in this lab to further get simple, useful and actionable data insights.  In this lab we will explore `Enhanced Fields`, `Heat Map view`, `Compound Visualizations`, and `Drill-down`
 
 ### Pre-requisite
 
@@ -33,7 +33,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/U2I5rw7sELU?rel=0" title="Exercise 4.1 Using Formulas and Filters" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Section Information
+## Instructions
 - Create a Queue Performance Report
 - Add report values like number of connected calls for a queue, number of calls waiting in queue and longest duration for calls in queue
 
@@ -69,14 +69,14 @@ This lab is designed to build upon previous labs where custom reports were creat
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/47j7YKu7f7I?rel=0" title="Exercise 4.2 Enhanced Field Compound Visualization and Drill-down" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Section Information
-** Getting simple, actionable data insights from your reports using:
+## Instructions
+Getting simple, actionable data insights from your reports using:
 - Enhanced Fields
 - Heat Map View
 - Compound Visualizations
 - Customized Drill-downs
 
-** Outcome reports in this lab will be
+Outcome reports in this lab will be
 - 4.2.1_CSR_QueueStatus
 - 4.2.2_CSR_ContactVolume
 
@@ -116,7 +116,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 25. This completes all the requirements of this exercise
 
 
-## Next Lab is Lab 5: Dashboards
-> * [Analyzer Lab 5 Link](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/analyzerlab5.html)
+## Next Lab is Lab 6: Analyzer Exercises 5
+> * [Lab 6: Analyzer Exercises 5](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/analyzerlab5.html)
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
