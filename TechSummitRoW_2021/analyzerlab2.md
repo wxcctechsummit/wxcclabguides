@@ -1,8 +1,8 @@
 ---
-title: "Lab 5: Analyzer Exercises 2.1 to 2.2"
+title: "Lab 6: Analyzer Exercises 2.1 to 2.2"
 ---
 
-# Webex CC Partner Summit Lab5: Analyzer Lab
+# Webex CC Partner Summit Lab 6: Analyzer Lab
 ## Exercises 2.1 and 2.2
 
 # Table of Contents
@@ -33,7 +33,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/r58kwjR3xRY?rel=0" title="Exercise 2.1 Execute Stock Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Section Information**
+**Instructions**
 - Run various stock reports
 - Copy stock reports and edit to suit your reporting needs
 - Exporting reports
@@ -47,20 +47,20 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 7. Click on the `Settings` button and test the various options outlined in the video like hiding columns or copying data elements.  Direct link to this part of the video below.
 > * [Test Stock Report Options](https://www.youtube.com/embed/r58kwjR3xRY?start=139)
 8. Run the report in the `Tenant Time Zone`
-9. Review the Analyzer URL for the report which shows the `tid` which is the Tenant ID and `rid` which is the report ID.  The tenant ID is unique to every tenant and very useful for troubleshooting or back end change requests.
+9. Review the Analyzer URL for the report which shows the Tenant ID (tid) and Report ID (rid). The tenant ID is unique to every tenant and very useful for troubleshooting or back end change requests.
 10. This concludes the first lab in Exercise Section 2
 
 # Exercise 2.2 - Create Custom Report using Stock Reports 
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/pG4lcs5vVJs?rel=0" title="Exercise 2.2 Create Custom Report using Stock Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Section Information**
+**Instructions**
 - Copy a stock report to create a new custom report
 - Create a new report to show the team performance for yesterday
 
 1. Using the search option, search for the word `team` and review the listed reports to find the best report to build from
 2. Find the `Team Details` Report and run it
-3. Review the information captured in the stock report using the elipsis menu to view details about the report.  This will help you determine if this report will work to suit your needs
+3. Review the information captured in the stock report using the ellipsis menu to view details about the report.  This will help you determine if this report will work to suit your needs
 4. Create a copy of this report and save it into your `Team Folder`
 5. Following the video instructions, make the recommended changes to the new report.
 > * [Make Changes to Team Details Direct Link](https://www.youtube.com/embed/pG4lcs5vVJs?start=153)
