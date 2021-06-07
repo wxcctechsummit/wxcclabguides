@@ -88,7 +88,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 1. Identify the API key from WxM
 
-* Login to the [WxM console](https://cx.cloudcherry.com)
+* Login to the [WxM console](https://cx.cloudcherry.com){:target="_blank"}
 * Enter the admin credentials.
 * Dismiss informative alerts if any.
 * Click on the User Profile (Top) icon and then Edit Profile
@@ -97,7 +97,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 2. Configure WxM connector in Control hub
 
-* Login to [Control Hub](https://admin.webex.com)
+* Login to [Control Hub](https://admin.webex.com){:target="_blank"}
 * Enter the Customer admin email id and the password.
 * Navigate to **_Contact Center_** Card
 * Click on **_Connectors_**
@@ -111,12 +111,12 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 ## Part 2: Onboarding CH Agent as WxM User
 
 ### 1. Create new Agent in CH
-* Login in the **[Control Hub](https://admin.webex.com)** with credentials of **Pod29**
+* Login in the **[Control Hub](https://admin.webex.com){:target="_blank"}** with credentials of **Pod29**
 * Create and activate a new agent with the following naming convention: **`WxM_Agent_<ID>_TS`**
 * Make sure you **activate Webex Calling and give an extension number**, like you did in Lab 1 - Control Hub & Admin Portal 
 
 ### 2. Complete the Agent configuration
-* Navigate to the **[Tenant Portal](https://portal.wxcc-us1.cisco.com/portal)** 
+* Navigate to the **[Tenant Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** 
 * **Create a new Team** for your Agent, name it **``Team1_<ID>_TS``**
 * Edit your User and mark **Contact Center Enabled ON**
 * Assign the **`MMP_29_TS` Multimedia Profile** to your user
@@ -137,7 +137,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 2. Enable Customer Experience Journey Widget
 
-* Login to the **[WxM console](https://cx.cloudcherry.com)** with the WxM admin credentials
+* Login to the **[WxM console](https://cx.cloudcherry.com){:target="_blank"}** with the WxM admin credentials
 * Enter the **WxM admin credentials**.
 * Dismiss informative alerts if any.
 * Navigate to the **Overall Experience** response page.
@@ -198,7 +198,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 3. Validate that the survey filled by the caller is recorded properly in WxM
 
-* Login to the **[WxM console](https://cx.cloudcherry.com)**
+* Login to the **[WxM console](https://cx.cloudcherry.com){:target="_blank"}**
 * Enter the **WxM admin credentials.**
 * Navigate to the **`Overall Experience`** dashboard and ensure that the feedback you provided is recorded
 
