@@ -2,7 +2,7 @@
 title: "Lab 6: Analyzer Exercises 1.1 to 1.3"
 ---
 
-# Webex CC Partner Summit Lab6: Analyzer Lab
+# Webex CC Partner Summit Lab 6: Analyzer Lab
 
 ## Exercises 1.1 to 1.3
 
