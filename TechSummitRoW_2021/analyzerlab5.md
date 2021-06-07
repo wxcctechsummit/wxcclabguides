@@ -30,9 +30,9 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 # Exercise 5.1 Stock Dashboards
 
-<iframe width="1024" height="576" src="https://youtube.com/embed/vfMlNmVZcQM?rel=0" title="Exercise 5.1 Stock Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/vfMlNmVZcQM?rel=0" title="Exercise 6.1 Stock Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Section Information
+## Instructions
 - Navigate some stock dashboards
 - Create a dashboard from a stock dashboard
 
