@@ -92,12 +92,12 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 2. `Open` Analyzer in a new tab to enable you to switch between tasks in Portal and Analyzer
 3. Create a folder for yourself with the name `Team_X` where X is your student number
 > * <a href="https://www.youtube.com/embed/vrNSpaltkIo?start=64" target="_blank">Create a Folder</a> 
-4. In Admin Portal, navitate to `Provisioning - Users`
+4. In Admin Portal, navigate to `Provisioning - Users`
 5. Use the `Search` to find your profile.  You can search for your student number to make it easy. 
 6. Check which User Profile is being used by your user. 
 > * <a href="https://www.youtube.com/embed/vrNSpaltkIo?start=103" target="_blank">Find User Profile</a>
 > * NOTE: You will be editing your Supervisor Team Profile.  Search for `Supervisor Team X` where X is your student number.
-8. Edit your user profile by navigating to `User Profiles` and select the elipsis menu next to that profile, then click Edit
+8. Edit your user profile by navigating to `User Profiles` and select the ellipsis menu next to that profile, then click Edit
 9. In your user profile, navigate to `Access Rights`
 10. Set the appropriate access rights to the folders as outlined in the video
 11. Set the appropriate Entry Point access for this user profile as well
