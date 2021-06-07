@@ -75,9 +75,9 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ## Part 1: WxM Connector setup -- Not need to complete it, already configured
 
-We have configured the WxM Connector for you. You just need to login in Control Hub with Pod29 credentials, navigate to _Services -> Contact Center -> Connectors_ and **check that the WxM Connector is already created**.
-
-However, we recommend you to **have a look to the video and configuration steps below**, to get an idea of how WxM Connector is configured
+* **We have configured the WxM Connector for you**. 
+* You just need to login in Control Hub with Pod29 credentials, navigate to _Services -> Contact Center -> Connectors_ and **check that the WxM Connector is already created**.
+* However, we recommend you to **have a look to the video and configuration steps below**, to get an idea of how WxM Connector is configured
 
 
 
@@ -177,9 +177,9 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 
 ## Part 4: Configure Feedback node in Flow
 
-We have created the Flow and configured the Feedback node for you.
-Login in the Tenant Portal, navigate to Routing Strategies and open the Flow to see how the Flow Diagram is buit.
-You can also see the video and the **Configure Feedback Node** section to see the configuration steps needed.
+* We have created the Flow and configured the Feedback node for you.
+* Login in the Tenant Portal, navigate to Routing Strategies and open the Flow to see how the Flow Diagram is buit.
+* You can also see the video and the **Configure Feedback Node** section to see the configuration steps needed.
 
 
 
