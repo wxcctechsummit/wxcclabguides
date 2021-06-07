@@ -30,7 +30,7 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 # Exercise 5.1 Stock Dashboards
 
-<iframe width="1024" height="576" src="https://youtube.com/embed/vfMlNmVZcQM?rel=0" title="Exercise 6.1 Stock Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/vfMlNmVZcQM?rel=0" title="Webex CC Partner Summit Lab 6: Analyzer Lab 5.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Instructions
 - Navigate some stock dashboards
@@ -54,7 +54,7 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 # Exercise 5.2 Custom Dashboards
 
-<iframe width="1024" height="576" src="https://youtube.com/embed/wCgzv58mKTs?rel=0" title="Exercise 5.2 Custom Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://youtube.com/embed/wCgzv58mKTs?rel=0" title="Webex CC Partner Summit Lab 6: Analyzer Lab 5.2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Instructions
 - Create a custom dashboard called 5.2.1_NewReportDashboard
