@@ -9,24 +9,20 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 # Table of Contents
 
 - [Part 1: WxM Connector setup](#part-1-wxm-connector-setup)
-  * [a) Identify the API key from WxM](#a-identify-the-api-key-from-wxm)
-  * [b) Configure WxM connector in Control hub](#b-configure-wxm-connector-in-control-hub)
+  * [1. Identify the API key from WxM](#1-identify-the-api-key-from-wxm)
+  * [2. Configure WxM connector in Control hub](#2-configure-wxm-connector-in-control-hub)
 - [Part 2: Onboarding CH Agent as WxM User](#part-2-onboarding-ch-agent-as-wxm-user)
-  * [**IMPORTANT : Before You Begin**](#important--before-you-begin)
-  * [a) Create WxM User and Generate API key](#a-create-wxm-user-and-generate-api-key)
-  * [b) Identify Org ID, CH User ID and email of Agent](#b-identify-org-id-ch-user-id-and-email-of-agent)
-  * [c) Run WxM OnBoard API](#c-run-wxm-onboard-api)
+  * [1. Create new Agent in CH](#1-create-new-agent-in-ch)
+  * [2. Complete the Agent configuration](#2-complete-the-agent-configuration)
 - [Part 3: Enable WxM widgets in Desktop Layout](#part-3-enable-wxm-widgets-in-desktop-layout)
-  * [Pre-requisites](#pre-requisites)
-  * [a) Enable wxmConfigured flag](#a-enable-wxmconfigured-flag)
-  * [b) Enable Customer Experience Journey Widget](#b-enable-customer-experience-journey-widget)
-  * [c) Enable Customer Experience Analytics Widget](#c-enable-customer-experience-analytics-widget)
-  * [d) Test Voice, Email and Chat Interaction](#d-test-voice--email-and-chat-interaction)
+  * [1. Enable wxmConfigured flag](#1-enable-wxmconfigured-flag)
+  * [2. Enable Customer Experience Journey Widget](#2-enable-customer-experience-journey-widget)
+  * [3. Enable Customer Experience Analytics Widget](#3-enable-customer-experience-analytics-widget)
+  * [4. Check Widgets in Agent Desktop](#4-check-widgets-in-agent-desktop)
 - [Part 4: Configure Feedback node in Flow](#part-4-configure-feedback-node-in-flow)
-  * [Pre-requisites](#pre-requisites-1)
-  * [a) Configure Feedback Node](#a-configure-feedback-node)
-  * [b) Test Voice interaction and confirm that the survey is received by the caller's email](#b-test-voice-interaction-and-confirm-that-the-survey-is-received-by-the-callers-email)
-  * [c) Validate that the survey filled by the caller is recorded properly in WxM](#c-validate-that-the-survey-filled-by-the-caller-is-recorded-properly-in-wxm)
+  * [1. Configure Feedback Node](#1-configure-feedback-node)
+  * [2. Test Voice interaction and confirm that voice survey is forwarded to the ANI](#2-test-voice-interaction-and-confirm-that-voice-survey-is-forwarded-to-the-ani)
+  * [3.  Validate that the survey filled by the caller is recorded properly in WxM](#3-validate-that-the-survey-filled-by-the-caller-is-recorded-properly-in-wxm)
 
 # Introduction
 
@@ -76,7 +72,11 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 ## Part 1: WxM Connector setup -- Not need to complete it, already configured
 
 * **We have configured the WxM Connector for you**. 
+
+
 * You just need to login in Control Hub with Pod29 credentials, navigate to _Services -> Contact Center -> Connectors_ and **check that the WxM Connector is already created**.
+
+
 * However, we recommend you to **have a look to the video and configuration steps below**, to get an idea of how WxM Connector is configured
 
 
@@ -108,33 +108,19 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * Click on Save and then Close.
 
 
-## NOT NEEDED
-
 ## Part 2: Onboarding CH Agent as WxM User
 
-The following video demos how a Control Hub user is onboarded to WxM. We have to ensure that each of the agents in Control Hub is linked to one of the valid users in WxM. Based on the access of the WxM user, appropriate widgets will be loaded into Agent Desktop. Since the access control is based on the WxM user, this step is very critical.
-
-<iframe width="1024" height="576" src="https://youtube.com/embed/SmRBu4QFCos?rel=0" title="Onboarding WxM Lab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-### **IMPORTANT : Before You Begin**
-
-* Please create a new agent in Control Hub with an email inbox to which you have access.
-* The below steps will need you to activate a user and hence the request for an inbox to which you have access to click the user activation link.
-* We will use this agent to login to Agent Desktop and handle voice calls, Email interaction, and Chat interaction.
-* Hence ensure that the configured agent profile has required channels and is part of the voice, email & chat queue, and the respective Team
-
-
-* Input the UserID, OrgID, and EmailID values which you have noted down from the above steps.
-* Ensure that the API request Accept and Content-Type Headers are set to "application/JSON"
-* Click the button to trigger the API request.
-
-## Part 2: Create new agent in CH
+### 1. Create new Agent in CH
 * Login in the **[Control Hub](https://admin.webex.com)** with credentials of **Pod29**
 * Create and activate a new agent with the following naming convention: **`WxM_Agent_<ID>_TS`**
 * Make sure you **activate Webex Calling and give an extension number**, like you did in Lab 1 - Control Hub & Admin Portal 
-* Navigate to the **[Tenant Portal](https://portal.wxcc-us1.cisco.com/portal)** and create **``Team1_<ID>_TS``** for your Agent
-* Add your team to the Queue Distribution Group
+
+### 2. Complete the Agent configuration
+* Navigate to the **[Tenant Portal](https://portal.wxcc-us1.cisco.com/portal)** 
+* **Create a new Team** for your Agent, name it **``Team1_<ID>_TS``**
+* Edit your User and mark **Contact Center Enabled ON**
+* Assign the **`MMP_29_TS` Multimedia Profile** to your user
+* Add your team to the **`Q_Voice_Test_TS`** Queue distribution group
  
 ## Part 3: Enable WxM widgets in Desktop Layout
 
@@ -172,14 +158,18 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 ### 4. Check Widgets in Agent Desktop
 
 * Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\ with the recently created agent credentials
-* Confirm that the WxM widgets are loaded on Agent Desktop and are visible.
+* Confirm that the **WxM widgets are visible on Agent Desktop.**
 
 
 ## Part 4: Configure Feedback node in Flow
 
-* We have created the Flow and configured the Feedback node for you.
-* Login in the Tenant Portal, navigate to Routing Strategies and open the Flow to see how the Flow Diagram is buit.
-* You can also see the video and the **Configure Feedback Node** section to see the configuration steps needed.
+* **We have created the Flow and configured the Feedback node for you.**
+
+
+* Login in the Tenant Portal, navigate to Routing Strategies and open the **`WxM_Feedback_Flow`** to see how the Flow Diagram is buit.
+
+
+* You can also **see the video and the Configure Feedback Node section** to know the configuration steps needed.
 
 
 
@@ -199,11 +189,11 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 * For `Phone Number`, select the built-in flow variable `NewPhoneContact.ANI`
 * Ensure that the `Feedback` nodes are connected properly with end nodes and `Validation` passes. Publish the change by clicking the `Publish Flow` button.
 
-### 2. Test Voice interaction and confirm that the survey is received by the caller's email
+### 2. Test Voice interaction and confirm that voice survey is forwarded to the ANI
 
-* Login to the recently created agent who has been OnBoarded in WXM.
-* Trigger a voice call and ensure that the call connects to the agent
-* End the call from the Agent
+* Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\ with the recently created agent credentials
+* **Trigger a voice call** from the Webex Calling app to the Dial Number mapped to the Entry Point: **`+14402308308`**
+* End the call **from the Agent**
 * They should call you for getting voice survey
 
 ### 3. Validate that the survey filled by the caller is recorded properly in WxM
