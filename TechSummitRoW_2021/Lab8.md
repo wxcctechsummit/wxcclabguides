@@ -69,7 +69,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 | Pod29 admin         | admin1pod29@email.carehybrid.com  | ReadyNext2021! |
 
 
-## Part 1: WxM Connector setup -- Not need to complete it, already configured
+## Part 1: WxM Connector setup -- Not need to complete it, already configured!
 
 * **We have configured the WxM Connector for you**. 
 
@@ -89,7 +89,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 ### 1. Identify the API key from WxM
 
 * Login to the [WxM console](https://cx.cloudcherry.com){:target="_blank"}
-* Enter the admin credentials.
+* Enter the WxM admin credentials.
 * Dismiss informative alerts if any.
 * Click on the User Profile (Top) icon and then Edit Profile
 * Copy the API Key from the API Key section.
@@ -112,8 +112,8 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 1. Create new Agent in CH
 * Login in the **[Control Hub](https://admin.webex.com){:target="_blank"}** with credentials of **Pod29**
-* Create and activate a new agent with the following naming convention: **`WxM_Agent_<ID>_TS`**
-* Make sure you **activate Webex Calling and give an extension number**, like you did in Lab 1 - Control Hub & Admin Portal 
+* Create and activate a new agent with the following naming convention: **`WxM_Agent_<ID>_TS@mailinator.com`**
+* Make sure you **activate Webex Calling and give an extension number**, like you did in [Lab 1 - Control Hub & Admin Portal](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab1.html){:target="_blank"}
 
 ### 2. Complete the Agent configuration
 * Navigate to the **[Tenant Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** 
@@ -161,12 +161,13 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * Confirm that the **WxM widgets are visible on Agent Desktop.**
 
 
-## Part 4: Configure Feedback node in Flow
+## Part 4: Configure Feedback node in Flow -- Don't change the logic of the flow!
 
 * **We have created the Flow and configured the Feedback node for you.**
 
 
 * Login in the Tenant Portal, navigate to Routing Strategies and open the **`WxM_Feedback_Flow`** to see how the Flow Diagram is buit.
+> Do not change the logic of the flow, since the pod is shared with all partners
 
 
 * You can also **see the video and the Configure Feedback Node section** to know the configuration steps needed.
@@ -191,10 +192,11 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 2. Test Voice interaction and confirm that voice survey is forwarded to the ANI
 
-* Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\ with the recently created agent credentials
+* Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}** with the recently created agent credentials
 * **Trigger a voice call** from the Webex Calling app to the Dial Number mapped to the Entry Point: **`+14402308308`**
 * End the call **from the Agent**
 * They should call you for getting voice survey
+* After testing the call interaction move the Agent from Available status, so the rest of attendees can also complete this task
 
 ### 3. Validate that the survey filled by the caller is recorded properly in WxM
 
