@@ -25,11 +25,11 @@ This lab was created with existing Supervisor Profiles as well as Team designati
 - Lab may state to change the Supervisor Profile for your student number.  Supervisor Team 3 for example.  This profile will not exist on your Gold Tenant unless you create the profile.
 
 `Resolution` of these designations can be accomplished with some of these suggestions which should be done prior to going through these labs.
-- Previous videos specified creating `Team1_TS` and if those were done then suppliment the training video with using a team you created earlier.
+- Previous videos specified creating `Team1_TS` and if those were done then supplement the training video with using a team you created earlier.
 - If no Supervisor Profile was previously created and no users were designated as a Supervisor, follow the guideline below
 	- In Control Hub under Users, ensure that at least one of your users is designated as a Supervisor
 	- In WebexCC ensure that a Supervisor Profile is assigned to that user.  You may create your own supervisor profile or use the stock profile in the system.
-	- Alternatively if following the video is desired but no supervisors exist, you may be able to change adminstrator profiles but best case is using a supervisor profile.
+	- Alternatively if following the video is desired but no supervisors exist, you may be able to change administrator profiles but best case is using a supervisor profile.
 
 ### OR
 - Ignore or overlook the specific lab instructions as you see fit.  If this option is chosen, it may mean limited success with some labs that may build on the existence of the team and supervisor profiles
@@ -40,7 +40,7 @@ This lab was created with existing Supervisor Profiles as well as Team designati
 
 This lab is designed to give you basic understanding of Analyzer, user interface features , how execute stock reports and use them to create custom reports per your need. In these videos the `lab goal` is familiarization of the product and terminology. 
 
-We will also be creating two new reports (one for Call and one for agent) to capture relevent information and then will use these reports in a dashboard, while doing this we will learn about capabilities and features you can use to capture the required insights.
+We will also be creating two new reports (one for Call and one for agent) to capture relevant information and then will use these reports in a dashboard, while doing this we will learn about capabilities and features you can use to capture the required insights.
 
 
 ## Pre-requisite
@@ -54,7 +54,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
 ### Instructions
 1. First `Login to the WxCC portal` using the Portal link above.
-2. Login using your provided student email and password.  Emails for this lab are always **cladmXuser@mailinator.com** where **X** is your student number.
+2. Login using your provided student email and password.  Emails for this lab are always **admin1podX@email.carehybrid.com** where **X** is your student/pod number.
 3. The initial dashboard includes several `Realtime & Historical` reports showing current contact information in the system.
 4. Navigate (shown in the video) through the various dashboard reports and the dropdown allowing you to see current information to familiarize yourself with these stock reports.
 - Video Checkpoints
@@ -62,7 +62,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 
 5. `Navigate back to the Entry Point Site Level Dashboard` and complete some navigation exercises shown in the video
 6. `Cross-Launch` from dashboard to a specific dashboard **Entry Point Historical Dashboard**
-7. From the Cross-Launched dashboard - `Cross-Launch into Analyzer` to the specific table **Incomming, Short Contacts Entry Point** anf follow the instructions to set filters as desired.
+7. From the Cross-Launched dashboard - `Cross-Launch into Analyzer` to the specific table **Incoming, Short Contacts Entry Point** and follow the instructions to set filters as desired.
 > * <a href="https://www.youtube.com/embed/jNi2C12xbbI?start=192" target="_blank">Analyzer Incomming, Short Contacts Entry Point </a> <br>
 8. This exercise completed
 
