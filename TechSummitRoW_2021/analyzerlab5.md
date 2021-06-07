@@ -82,7 +82,7 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 9. Video saves this report as `5.2.2_CL21HOLCCT2108Dashboard` but you can save it as you wish.  It will not impact any other exercises.
 10. Explore some options to edit and personalize this new dashboard like changing background colors
 
-**Congradulations!  **All Analyzer labs are now complete!**
+**Congratulations!  **All Analyzer labs are now complete!**
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
 
