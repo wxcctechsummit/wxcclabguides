@@ -40,54 +40,44 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ## Pre-requisites
 
+* You have the WxM and Pod29 admin login credentials:
+
+| **User** | **Username**      | **Password**                   |
+| ----------- | ----------------- | -------------------------------- |
+| WxM admin       | wxmdemoadmin   | Login@123 |
+| Pod29 admin         | admin1pod29@email.carehybrid.com  | ReadyNext2021! |
+
+
 * You have completed Lab 1 - Control Hub & Admin Portal:
  - You are familiar with how to create a new user in Control Hub
 
-
+* You have completed Lab 2 - IVR Contact Routing:
+ - You are familiar with creating and modifying flows
 
 * You have completed Lab 3 - Agent and Supervisor Desktops:
  - You are familiar with editing and updating desktop layout JSON
 
-* You have the WxM admin login credentials
-> admin1pod29@email.carehybrid.com
-> ReadyNext2021!
+* You have Webex Calling installed in your mobile phone and supervisor created in Lab 1 from which you can make calls to the contact center
 
-
-* You have configured all the requisites for the agent to log in and handle a customer call.
-
-
-
-
-
-
-
-
-* You have completed Lab 2 - IVR Contact Routing:
-*  You are familiar with creating and modifying flows
-
-* You have a number from which you can make calls to the contact center.
-
-* You have access to an inbox where the surveys can be posted.
 
 
 ## Quick Links
-* [Control hub](https://admin.webex.com)
-* [WxM console](https://cx.cloudcherry.com)
-* [WxCC Portal](https://portal.wxcc-us1.cisco.com/portal)
-* [Agent Desktop](https://desktop.wxcc-us1.cisco.com)
+> Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> WxM Console **[https://cx.cloudcherry.com](https://cx.cloudcherry.com){:target="_blank"}**
 
 
 # Lab Section
 
+> Due to limitation with the number of WxM tenants, all the participants will use the same tenant (Pod29) for this lab.
+
+## Part 1: WxM Connector setup
 
 ## NOT NEED TO COMPLETE THIS PART, ALREADY CONFIGURED
-> Due to limitation with the number of WxM tenants, all the participants will use the same tenant for this lab. 
-Tenant credentials: admin1pod29@email.carehybrid.com
-ReadyNext2021!
+> We have configured the WxM Connector for you. You just need to login in Control Hub with Pod29 credentials, navigate to Services -> Contact Center -> Connectors and check that the WxM Connector is already created.
 
-WxM user: 
- 
-## Part 1: WxM Connector setup
+> Have a look to the video and configuration steps below if you want to have an idea of how WxM Connector can be configured
 
 The following video outlines the steps required to create the WxM connector. WxCC uses this connector to read the dispatches that are configured in WxM. This connector is also used to load the widgets into the agent desktop and FeedBack is triggered via the same.
 
@@ -192,11 +182,10 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 
 ## Part 2: Create new agent in CH
 * Login in the [Control Hub](https://admin.webex.com) with credentials of Pod29
-* Create and activate 2 new users, 1 Agent and 1 Supervisor, following the same naming convention of Lab1
+* Create and activate a new agent with the following naming convention: WxM_Agent_<ID>_TS
+* Make sure you activate Webex Calling and give an extension number like you did in Lab 1 - Control Hub & Admin Portal 
 * Navigate to the [Tenant Portal](https://portal.wxcc-us1.cisco.com/portal) and create Team1_<ID>_TS for your Agent
-* Create a Queue and put the Team created before as distributed group
-* Go to Routing Strategies and create a Flow
-* Assign that Flow to 
+* Add your team to the Queue Distribution Group
 
 ## Part 3: Enable WxM widgets in Desktop Layout
 
