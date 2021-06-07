@@ -43,11 +43,14 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 1. You have **completed Lab 1 - Control Hub & Admin Portal:**
  - You are familiar with how to create a new user in Control Hub
 
+
 2. You have **completed Lab 2 - IVR Contact Routing:**
  - You are familiar with creating and modifying flows
 
+
 3. You have **completed Lab 3 - Agent and Supervisor Desktops:**
  - You are familiar with editing and updating desktop layout JSON
+
 
 4. You have **Webex Calling installed** in your mobile phone and supervisor created in Lab 1 from which you can make calls to the contact center
 
@@ -63,6 +66,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 # Lab Section
 
 > Due to limitation with the number of WxM tenants, all the participants will use the same tenant (**Pod29**) for this lab.
+
 | **Account** | **Username**      | **Password**                   |
 | ----------- | ----------------- | -------------------------------- |
 | WxM admin       | wxmdemoadmin   | Login@123 |
@@ -74,6 +78,8 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 We have configured the WxM Connector for you. You just need to login in Control Hub with Pod29 credentials, navigate to _Services -> Contact Center -> Connectors_ and **check that the WxM Connector is already created**.
 
 However, we recommend you to **have a look to the video and configuration steps below**, to get an idea of how WxM Connector is configured
+
+
 
 >The following video outlines the steps required to create the WxM connector. WxCC uses this connector to read the dispatches that are configured in WxM. This connector is also used to load the widgets into the agent desktop and FeedBack is triggered via the same.
 
@@ -132,7 +138,7 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
  
 ## Part 3: Enable WxM widgets in Desktop Layout
 
-The following video demos how the Agent Desktop Layout JSON has to modify with the appropriate values of the WxM dashboard so that they are loaded into the widgets. The Space ID and the Metrics ID extracted from WxM decide which widget will be loaded for the agent. This lab section assumes that you are familiar with how the agent desktop layout can be modified and applied to a team.
+>The following video demos how the Agent Desktop Layout JSON has to modify with the appropriate values of the WxM dashboard so that they are loaded into the widgets. The Space ID and the Metrics ID extracted from WxM decide which widget will be loaded for the agent. This lab section assumes that you are familiar with how the agent desktop layout can be modified and applied to a team.
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/Njie8PrB6Kk?rel=0" title="Enabling WxM Widgets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -171,7 +177,13 @@ The following video demos how the Agent Desktop Layout JSON has to modify with t
 
 ## Part 4: Configure Feedback node in Flow
 
-The following video does a quick demo on how the FeedBack node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. Since Email and Chat are not integrated with Flow, Feedback cannot be used for those interactions. 
+We have created the Flow and configured the Feedback node for you.
+Login in the Tenant Portal, navigate to Routing Strategies and open the Flow to see how the Flow Diagram is buit.
+You can also see the video and the **Configure Feedback Node** section to see the configuration steps needed.
+
+
+
+>The following video does a quick demo on how the FeedBack node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. Since Email and Chat are not integrated with Flow, Feedback cannot be used for those interactions. 
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/qGW6lRI7AA0?rel=0" title="Configure Feedback Node" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -190,15 +202,14 @@ The following video does a quick demo on how the FeedBack node should be impleme
 ### 2. Test Voice interaction and confirm that the survey is received by the caller's email
 
 * Login to the recently created agent who has been OnBoarded in WXM.
-* Trigger a voice call and ensure that the call connects to the agent and then terminate it.
-* The survey link should be sent to the email specified in the flow custom variable.
-* Click the link and fill the survey.
+* Trigger a voice call and ensure that the call connects to the agent
+* End the call from the Agent
+* They should call you for getting voice survey
 
 ### 3. Validate that the survey filled by the caller is recorded properly in WxM
 
-* Login to the [WxM console](https://cx.cloudcherry.com)
-* Enter the admin credentials.
-* Dismiss informative alerts if any.
-* Navigate to the `Overall Experience` dashboard and ensure that the feedback you provided is recorded in `WxM`
+* Login to the **[WxM console](https://cx.cloudcherry.com)**
+* Enter the **WxM admin credentials.**
+* Navigate to the **`Overall Experience`** dashboard and ensure that the feedback you provided is recorded
 
 
