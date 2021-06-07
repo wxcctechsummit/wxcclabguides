@@ -1,8 +1,8 @@
 ---
-title: "Lab 4: Analyzer Exercises 4.1 to 4.2"
+title: "Lab 6: Analyzer Exercises 4.1 to 4.2"
 ---
 
-# Webex CC Partner Summit Lab 4: Analyzer Lab
+# Webex CC Partner Summit Lab 6: Analyzer Lab
 ## Exercises 4.1 and 4.2
 
 
