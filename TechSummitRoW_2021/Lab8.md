@@ -1,5 +1,5 @@
 ---
-title: "Lab 9: Webex Experience Management"
+title: "Lab 8: Webex Experience Management"
 ---
 
 ## Overview of the lab:
@@ -31,33 +31,25 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 # Introduction
 
 ## Lab Objective
-- Explore the WxM console and its features
+- **Explore the WxM console** and its features
 
-- Edit the Desktop Layout for configuring the WxM widget
+- Edit the **Desktop Layout for configuring the WxM widget**
 
-- Learn how to configure a flow for geting feedback
+- Learn how to configure a **flow for geting feedback**
  
 
 ## Pre-requisites
 
-* You have the WxM and Pod29 admin login credentials:
-
-| **User** | **Username**      | **Password**                   |
-| ----------- | ----------------- | -------------------------------- |
-| WxM admin       | wxmdemoadmin   | Login@123 |
-| Pod29 admin         | admin1pod29@email.carehybrid.com  | ReadyNext2021! |
-
-
-* You have completed Lab 1 - Control Hub & Admin Portal:
+1. You have **completed Lab 1 - Control Hub & Admin Portal:**
  - You are familiar with how to create a new user in Control Hub
 
-* You have completed Lab 2 - IVR Contact Routing:
+2. You have **completed Lab 2 - IVR Contact Routing:**
  - You are familiar with creating and modifying flows
 
-* You have completed Lab 3 - Agent and Supervisor Desktops:
+3. You have **completed Lab 3 - Agent and Supervisor Desktops:**
  - You are familiar with editing and updating desktop layout JSON
 
-* You have Webex Calling installed in your mobile phone and supervisor created in Lab 1 from which you can make calls to the contact center
+4. You have **Webex Calling installed** in your mobile phone and supervisor created in Lab 1 from which you can make calls to the contact center
 
 
 
@@ -70,16 +62,20 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 # Lab Section
 
-> Due to limitation with the number of WxM tenants, all the participants will use the same tenant (Pod29) for this lab.
+> Due to limitation with the number of WxM tenants, all the participants will use the same tenant (**Pod29**) for this lab.
+| **Account** | **Username**      | **Password**                   |
+| ----------- | ----------------- | -------------------------------- |
+| WxM admin       | wxmdemoadmin   | Login@123 |
+| Pod29 admin         | admin1pod29@email.carehybrid.com  | ReadyNext2021! |
 
-## Part 1: WxM Connector setup
 
-## NOT NEED TO COMPLETE THIS PART, ALREADY CONFIGURED
-> We have configured the WxM Connector for you. You just need to login in Control Hub with Pod29 credentials, navigate to Services -> Contact Center -> Connectors and check that the WxM Connector is already created.
+## Part 1: WxM Connector setup -- Not need to complete it, already configured
 
-> Have a look to the video and configuration steps below if you want to have an idea of how WxM Connector can be configured
+We have configured the WxM Connector for you. You just need to login in Control Hub with Pod29 credentials, navigate to _Services -> Contact Center -> Connectors_ and **check that the WxM Connector is already created**.
 
-The following video outlines the steps required to create the WxM connector. WxCC uses this connector to read the dispatches that are configured in WxM. This connector is also used to load the widgets into the agent desktop and FeedBack is triggered via the same.
+However, we recommend you to **have a look to the video and configuration steps below**, to get an idea of how WxM Connector is configured
+
+>The following video outlines the steps required to create the WxM connector. WxCC uses this connector to read the dispatches that are configured in WxM. This connector is also used to load the widgets into the agent desktop and FeedBack is triggered via the same.
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/GI4nzVLLFCk?rel=0" title="WxM Lab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -122,71 +118,18 @@ The following video demos how a Control Hub user is onboarded to WxM. We have to
 * We will use this agent to login to Agent Desktop and handle voice calls, Email interaction, and Chat interaction.
 * Hence ensure that the configured agent profile has required channels and is part of the voice, email & chat queue, and the respective Team
 
-### 1. Create WxM User and Generate API key
-
-* Login to the [WxM console](https://cx.cloudcherry.com)
-* Enter the admin credentials.
-* Dismiss informative alerts if any.
-* Navigate and click CX Setup by clicking the top left stacked 3 dots menu
-* Click on Account Settings and then Users submenu
-* Click on CREATE USER
-* Input Display Name, Email, and Username.
-* Scroll down and select Read & Write in USER TYPE.
-* Click on Assigned Spaces and Check the 3 boxes to enable access to all 3 spaces.
-* Click on CREATE and wait for the user creation confirmation dialog.
-* Check the email inbox and click on the link in the email from Cisco Webex Experience Management support@xm.webex.com
-* Set a password and confirm that you can login to WxM with these credentials.
-* Note the username & password of the WxM agent which will be used to link the CH user with this WxM user.
-
-### 2. Identify Org ID, CH User ID and email of Agent
-
-* Login to [Control Hub](https://admin.webex.com)
-* Enter the Customer admin email id and the password.
-* Click on Users
-* Right-Click inside the browser and select the appropriate menu to open browser developer tools. If this is not possible, please use the browser menu option and open developer tools.
-* open browsers developer tool's Network tab.
-* Type in text Users into filter Urls by text.
-* Now click on the newly added agent.
-* Identify the URL which is of the form https://identity.webex.com/identity/scim/c0f66d1f-1a05-4843-bbb1-1ba5e19c233b/v1/Users/dee300db-5784-4bae-bae9-2f39d34f5ec0
-* **Note that the text in the above URL will not match the one you find, as it's used just as an example
-* From the URL the User id is the text after /Users/. Note this down.
-* Alternatively, if you are proficient with browser dev tool debugging, you could just copy the bearer token of the above request and then run the same API in any of the REST clients and identify the User ID.
-* Copy the email id of the agent and note it down.
-* Close the browser dev tools.
-* Now navigate to Account in Control Hub UI and copy the Organization ID and note it down.
-
-### 3. Run WxM OnBoard API
-
-* Open any of the available REST clients. if you don't have a REST client installed on your laptop, please install the latest version of the postman.
-* Open a new API request tab and select the HTTP method as POST.
-* Input the URL as https://api.getcloudcherry.com/api/account/UpdateExternalIdp/Bulk
-* Set the Authorization as Basic Auth and input the Username & Password of the WxM Agent that we created and activated above.
-* In the Body section of the API request, paste the below:
-
-```
-{
-   "ExternalIdentityProviderName":"webexci",
-   "IDPMapppings":[
-      {
-         "ExternalUserId":"",
-         "ExternalOrgId":"",
-         "ExternalEmailId":""
-      }
-   ]
-}
-```
 
 * Input the UserID, OrgID, and EmailID values which you have noted down from the above steps.
 * Ensure that the API request Accept and Content-Type Headers are set to "application/JSON"
 * Click the button to trigger the API request.
 
 ## Part 2: Create new agent in CH
-* Login in the [Control Hub](https://admin.webex.com) with credentials of Pod29
-* Create and activate a new agent with the following naming convention: WxM_Agent_<ID>_TS
-* Make sure you activate Webex Calling and give an extension number like you did in Lab 1 - Control Hub & Admin Portal 
-* Navigate to the [Tenant Portal](https://portal.wxcc-us1.cisco.com/portal) and create Team1_<ID>_TS for your Agent
+* Login in the **[Control Hub](https://admin.webex.com)** with credentials of **Pod29**
+* Create and activate a new agent with the following naming convention: **`WxM_Agent_<ID>_TS`**
+* Make sure you **activate Webex Calling and give an extension number**, like you did in Lab 1 - Control Hub & Admin Portal 
+* Navigate to the **[Tenant Portal](https://portal.wxcc-us1.cisco.com/portal)** and create **``Team1_<ID>_TS``** for your Agent
 * Add your team to the Queue Distribution Group
-
+ 
 ## Part 3: Enable WxM widgets in Desktop Layout
 
 The following video demos how the Agent Desktop Layout JSON has to modify with the appropriate values of the WxM dashboard so that they are loaded into the widgets. The Space ID and the Metrics ID extracted from WxM decide which widget will be loaded for the agent. This lab section assumes that you are familiar with how the agent desktop layout can be modified and applied to a team.
@@ -196,37 +139,34 @@ The following video demos how the Agent Desktop Layout JSON has to modify with t
 
 ### 1. Enable wxmConfigured flag
 
-* Download the current layout of the team used by the newly created Agent.
-* Edit the JSON file in an editor and search for the key wxmConfigured.
-* If not changed already, change the value to true
+* **Download the current desktop default layout** of the team used by the newly created Agent.
+* Edit the JSON file in an editor and search for the key **_wxmConfigured_**.
+* If not changed already, change the value to **True**
 
 ### 2. Enable Customer Experience Journey Widget
 
-* Login to the [WxM console](https://cx.cloudcherry.com)
-* Enter the admin credentials.
+* Login to the **[WxM console](https://cx.cloudcherry.com)** with the WxM admin credentials
+* Enter the **WxM admin credentials**.
 * Dismiss informative alerts if any.
-* Navigate to the Customer Experience Journey response page.
-* Click the Vertical Ellipsis on the right side of the screen and Export To Cisco Contact Center
-* From the information pane, copy the Space Id and update this in the Customer Experience Journey section of the layout JSON.
-* Since Customer Experience Journey, does not have metricsId you can use the space Id copied here as the metrics Id. Else you can the metrics Id of Customer Experience Analytics and paste it here (which you will get in the below steps)
+* Navigate to the **Overall Experience** response page.
+* Click the Vertical Ellipsis on the right side of the screen and **Export To Cisco Contact Center**
+* From the information pane, **copy the Space Id** and update this in the **Customer Experience Journey section** of the layout JSON.
+* Since Customer Experience Journey, does not have metricsId **you can use the space Id copied here as the metrics Id**. Else you can the metrics Id of Customer Experience Analytics and paste it here (which you will get in the below steps)
 
 ### 3. Enable Customer Experience Analytics Widget
 
-* Login to the [WxM console](https://cx.cloudcherry.com)
-* Enter the admin credentials.
-* Dismiss informative alerts if any.
-* Navigate to the Customer Experience Analytics Dashboard page.
-* Click the Vertical Ellipsis on the right side of the screen and Export To Cisco Contact Center
-* From the information pane, copy the Space Id and update this in the Customer Experience Analytics section of the layout JSON.
-* From the information pane, copy the Metrics Id and update this in the Customer Experience Analytics section of the layout JSON.
-* Save this JSON file and upload it in the appropriate layout used by the Test Agents Team.
+* Navigate to the **Agent Dashboard** page.
+* Make sure you have **Customer Experience Analytics** selected in the top-left corner
+* Click the Vertical Ellipsis on the right side of the screen and **Export To Cisco Contact Center**
+* From the information pane, copy the **Space Id** and update this in the **Customer Experience Analytics section** of the layout JSON.
+* From the information pane, copy the **Metrics Id** and update this in the **Customer Experience Analytics section** of the layout JSON.
+* Save this JSON file and **upload** it in the appropriate layout used by the Test Agents Team.
 * Now if you login as an agent and test Voice interactions, you will be able to access both the Customer Experience Analytics widget and Customer Experience Journey widget.
 
-### 4. Test Voice, Email and Chat Interaction
+### 4. Check Widgets in Agent Desktop
 
-* Login to the recently created agent who has been OnBoarded in WxM.
-* Trigger Voice, Email, and Chat interaction and confirm that both the WxM widgets are loaded on Agent Desktop and are visible.
-* This confirms that our OnBoarding and the Json layout update is successful.
+* Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\ with the recently created agent credentials
+* Confirm that the WxM widgets are loaded on Agent Desktop and are visible.
 
 
 ## Part 4: Configure Feedback node in Flow
