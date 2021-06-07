@@ -71,7 +71,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 9. Customize the field sizes by reducing the field header names as shown in the video
 10. Congratulations.  This completes Lab 2.  Proceed to Lab 3.
 
-## Next Lab is Lab 3: Custom Visualizations
+## Next Lab 6: Analyzer Exercises 3: Custom Visualizations
 > * [Lab 6: Analyzer Exercises 3](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/analyzerlab3.html)
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
