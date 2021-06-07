@@ -34,11 +34,11 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 <iframe width="1024" height="576" src="https://youtube.com/embed/-N8PtiDL6Kg?rel=0" title="Analyzer Videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-**Section Information**
+**Instructions**
 - Set User Profile back to All Entry Points
 - Create a new visualization for Realtime Contacts
 
-1. Prior to starting the lab exercise, navitate to the user profile and return your user access for Entry Points to `All`
+1. Before starting the lab exercise, navigate to the user profile and return your user access for Entry Points to `All`
 2. Navigate to Analyzer and `Create` a new report visualization that will be saved in your personal directory.
 > * [Create New Visualization](https://www.youtube.com/embed/-N8PtiDL6Kg?start=101)
 3. This will be a Realtime report so select the appropriate value under `Compute` on the left side of the screen
@@ -52,7 +52,7 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 <iframe width="1024" height="576" src="https://youtube.com/embed/J7vWAftcGn8?rel=0" title="Exercise 2.1 Execute Stock Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-**Section Information**
+**Instructions**
 - Create a new AAR Agent Activity Realtime Report
 
 1. Create a new visualization in Analyzer as an `Agent Activity Record`
@@ -70,7 +70,7 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 <iframe width="1024" height="576" src="https://youtube.com/embed/_fkY1FKvH-0?rel=0" title="Exercise 2.1 Execute Stock Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-**Section Information**
+**Instructions**
 - Create a new `Chart View` historical report for Total Calls and Abandoned Calls
 
 1. Create a new visualization using CSR report data. `CSR is Customer Session Record`
@@ -79,7 +79,7 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 4. When done, save this chart as `3.3_CSR_ContactVolume`
 5. This section is done.  When complete, move to Lab exercises 5.
 
-## Next Lab is Lab 4: Advanced Insights
+## Next Lab is Lab 6: Analyzer Exercises 4: Advanced Insights
 > * [Lab 6: Analyzer Exercises 4](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/analyzerlab4.html)
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
