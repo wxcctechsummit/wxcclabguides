@@ -8,7 +8,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 # Table of Contents
 
-- [Part 1: WxM Connector setup](#part-1-wxm-connector-setup)
+- [Part 1: WxM Connector setup](#part-1-wxm-connector-setup----not-need-to-complete-it-already-configured)
   * [1. Identify the API key from WxM](#1-identify-the-api-key-from-wxm)
   * [2. Configure WxM connector in Control hub](#2-configure-wxm-connector-in-control-hub)
 - [Part 2: Onboarding CH Agent as WxM User](#part-2-onboarding-ch-agent-as-wxm-user)
@@ -19,7 +19,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
   * [2. Enable Customer Experience Journey Widget](#2-enable-customer-experience-journey-widget)
   * [3. Enable Customer Experience Analytics Widget](#3-enable-customer-experience-analytics-widget)
   * [4. Check Widgets in Agent Desktop](#4-check-widgets-in-agent-desktop)
-- [Part 4: Configure Feedback node in Flow](#part-4-configure-feedback-node-in-flow)
+- [Part 4: Configure Feedback node in Flow](#part-4-configure-ivr-feedback-node-in-flow----dont-change-the-logic-of-the-flow)
   * [1. Configure Feedback Node](#1-configure-feedback-node)
   * [2. Test Voice interaction and confirm that voice survey is forwarded to the ANI](#2-test-voice-interaction-and-confirm-that-voice-survey-is-forwarded-to-the-ani)
   * [3.  Validate that the survey filled by the caller is recorded properly in WxM](#3-validate-that-the-survey-filled-by-the-caller-is-recorded-properly-in-wxm)
@@ -174,29 +174,32 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 
 
+>THIS VIDEO EXPLAINS HOW TO CONFIGURE EMAIL/SMS FEEFBACK. For IVR Feedback configuration, follow the steps written below.
 >The following video does a quick demo on how the FeedBack node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. Since Email and Chat are not integrated with Flow, Feedback cannot be used for those interactions. 
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/qGW6lRI7AA0?rel=0" title="Configure Feedback Node" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 1. Configure Feedback Node
+### 1. Configure IVR Feedback Node
 
-* Login to portal with admin credential and navigate to `Routing Strategy`
-* Click on `Flows` and edit the flow used in the call flow.
-* Create 2 custom variables and hardcode values that will be used as `Customer ID` and `Email`.
-* Navigate to `Event Flows` and insert `Feedback` node after `ContactEnded` event.
-* Input `Activity Label` of your choice and select `Demo Email` from the `Dispatch` dropdown.
-* Select `Set Language` to `English (US)` and select appropriate values for `Customer ID` and `Email`.
-* For `Phone Number`, select the built-in flow variable `NewPhoneContact.ANI`
-* Ensure that the `Feedback` nodes are connected properly with end nodes and `Validation` passes. Publish the change by clicking the `Publish Flow` button.
+* Login to portal with admin credential and navigate to **`Routing Strategy`**
+* Click on **`Flows` and open the WxM_Feedback_Flow**
+* Create **2 custom variables** and hardcode values that will be used as **Customer ID and Email**.
+* Under Main flow, ensure that a **`Global_FeedbackSurveyOptin`** variable is given **`TRUE`** value either by menu choice or prompt for customer to opt-in.
+* Navigate to **`Event Flows` and Drag the Feedback V2** note from the library on the left and **connect it the AgentDisconnected event**
+* Within the Feedback V2 settings on the right-hand side, select the **Survey Method as Voice based, and choose the survey named “Contact Center IVR Feedback”**
+* Under the Set Language button, **select English (US)** from the drop-down.
+* From the drop-down select appropriate values for **`Customer ID` (custom variable), `Email` (custom variable) and `Phone Number` (NewPhoneContact.ANI)**
+* **Validate the flow and publish it.**
 
 ### 2. Test Voice interaction and confirm that voice survey is forwarded to the ANI
 
 * Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}** with the recently created agent credentials
 * **Trigger a voice call** from the Webex Calling app to the Dial Number mapped to the Entry Point: **`+14402308308`**
-* End the call **from the Agent**
-* They should call you for getting voice survey
-* After testing the call interaction move the Agent from Available status, so the rest of attendees can also complete this task
+* End the call **from the Agent Desktop**
+* A **voice surver should be played **in the caller user phone
+* **Complete the voice survey**
+* After testing the call interaction **move the Agent to non-Available status**, so the rest of attendees can also complete this task
 
 ### 3. Validate that the survey filled by the caller is recorded properly in WxM
 
