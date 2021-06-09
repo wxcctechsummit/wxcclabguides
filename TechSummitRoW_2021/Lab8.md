@@ -1,5 +1,5 @@
 ---
-title: "Lab 8: Webex Experience Management"
+title: "Lab 7: Webex Experience Management"
 ---
 
 ## Overview of the lab:
@@ -207,4 +207,25 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * Enter the **WxM admin credentials.**
 * Navigate to the **`Overall Experience`** dashboard and ensure that the feedback you provided is recorded
 
+### Congratulations, you have compleated Lab7 tasks!
 
+
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab8.html";}
+</script>
+
+<div id="button-row">
+	<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go back to Main Page</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Next Lab 8: API</button>
+
+</div>
