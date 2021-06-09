@@ -317,7 +317,7 @@ This is a supportive video that does not require any actions since your tenant i
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab2.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/IVR.html";}
 </script>
 
 <div id="button-row">
