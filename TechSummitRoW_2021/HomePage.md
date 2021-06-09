@@ -20,5 +20,5 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | Week 2 - June 14th | Lab 5 - Google CCAI Integration Lab               | [Lab 5 - Coming soon!](){:target="\_blank"} 
 | Week 3 - June 21st | Lab 6 - Analyzer Deep Dive Lab        | [Lab 6 - Analyzer Labs](Lab7.md){:target="\_blank"}                  
 | Week 3 - June 21st | Lab 7 - WxM Integration Lab               | [Lab 7 - Coming soon!](){:target="\_blank"}  
-| Week 3 - June 21st | Lab 8 - API Lab                        | [Lab 8 - Coming soon!](){:target="\_blank"} 
+| Week 3 - June 21st | Lab 8 - API Lab                        | [Lab 8 - API Lab](APIs.md){:target="\_blank"} 
 
