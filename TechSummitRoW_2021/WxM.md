@@ -196,9 +196,9 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 * Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}** with the recently created agent credentials
 * **Trigger a voice call** from the Webex Calling app to the Dial Number mapped to the Entry Point: **`+14402308308`**
-* End the call **from the Agent Desktop**
-* A **voice surver should be played **in the caller user phone
-* **Complete the voice survey**
+* End the call **from the Agent Desktop and select a Wrap-Up option**
+* A **voice surver should be played** in the caller user phone
+* Complete the voice survey **dialing a number** in the Webex Calling app from where you made the call
 * After testing the call interaction **move the Agent to non-Available status**, so the rest of attendees can also complete this task
 
 ### 3. Validate that the survey filled by the caller is recorded properly in WxM
