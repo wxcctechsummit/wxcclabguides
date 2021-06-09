@@ -226,6 +226,6 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 8: API</button>
+  padding: 10px;">Next Lab 8: Coming soon!</button>
 
 </div>
