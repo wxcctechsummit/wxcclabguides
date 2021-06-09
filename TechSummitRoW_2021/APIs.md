@@ -4,12 +4,12 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 # Table of Contents
 - [Part 1: Legacy 1.0 APIs: CSR, CSR Query](#part-1-legacy-10-apis-csr-csr-query)
-  * [1. Verify that you have a Analyzer Report created and a Call recording exists](#1-verify-that-you-have-a-analyzer-report-created-and-a-call-recording-exists)
+  * [1. Verify that you have an Analyzer Report created and a Call recording exists](#1-verify-that-you-have-an-analyzer-report-created-and-a-call-recording-exists)
   * [2. Verify you have Postman Installed](#2-verify-you-have-postman-installed)
   * [3. Create a GET CSR Request](#3-create-a-get-csr-request)
   * [4. Plug these into Postman as described in the video](#4-plug-these-into-postman-as-described-in-the-video)
   * [5. Inspect the Browser to create a CSR Query](#5-inspect-the-browser-to-create-a-csr-query)
-  * [6. Copy only the content after `query` and before the ending braces. I.e this content as an example**](#6-copy-only-the-content-after-query-and-before-the-ending-braces-ie-this-content-as-an-example--)
+  * [6. Copy only the content after query and before the ending braces. I.e this content as an example**](#6-copy-only-the-content-after-query-and-before-the-ending-braces-ie-this-content-as-an-example--)
   * [7. Encode this in a URL encoded format. i.e Copy this string and paste it in an encoder](#7-encode-this-in-a-url-encoded-format-ie-copy-this-string-and-paste-it-in-an-encoder)
   * [8. Plug this into the query parameters. Execute the Query](#8-plug-this-into-the-query-parameters-execute-the-query)
   * [9. Add an Accept Header of text/csv](#9-add-an-accept-header-of-textcsv)
