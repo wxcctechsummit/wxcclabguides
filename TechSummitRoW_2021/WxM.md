@@ -212,7 +212,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab8.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/API.html";}
 </script>
 
 <div id="button-row">
@@ -226,6 +226,6 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 8: Coming soon!</button>
+  padding: 10px;">Next Lab 8: API</button>
 
 </div>
