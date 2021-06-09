@@ -299,9 +299,15 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jThcPefuzTA?rel=0" title="WxCC Lab #8 Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## 1. Login to developer.webex.com > Documentation > API Reference > Contact Center
+## 1. Login to developer.webex.com 
+- Login with the POD admin account.
+
+- Go to > Documentation > API Reference > Contact Center.
+
 - Go to the Get Tasks section.
+
 - Fetch all the tasks using the "From Date/time" in Epoch milliseconds.
+
 - To get the Epoch time use [epochconverter](https://www.epochconverter.com)
 
 ## 2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in. 
@@ -343,7 +349,6 @@ POST https://webexapis.com/v1/contactCenter/captures/query
 ## Addendum
 
 - To develop applications with the new APIs, you must build an integration with Webex.
-
 
 - See **[Contact Center Dev Portal Docs - Early Access](https://devportal.produs1.ciscoccservice.com/)** for all the details. 
 
