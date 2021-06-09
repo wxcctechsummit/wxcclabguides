@@ -279,7 +279,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab4.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html";}
 </script>
 
 <div id="button-row">	
