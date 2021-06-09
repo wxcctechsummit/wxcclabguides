@@ -55,11 +55,9 @@ Before you begin this lab:
 > WxCC Analyzer: **[https://analyzer.wxcc-us1.cisco.com/analyzer/home](https://analyzer.wxcc-us1.cisco.com/analyzer/home){:target="_blank"}**\
 > HMAC Generator: **[https://www.liavaag.org/English/SHA-Generator/HMAC/](https://www.liavaag.org/English/SHA-Generator/HMAC/){:target="_blank"}**\
 > Legacy V1.0 endpoint - Resource: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}){:target="_blank"}**\
-> Legacy V1.0 endpoint - Query: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}){:target="_blank"}**\
-Resources can be of type: `csrs`, `cars`, `asrs`, `aars`
-> Developer Portal Early Access - Detailed Documentation: **[https://apim-dev-portal.appstaging.ciscoccservice.com/](https://apim-dev-portal.appstaging.ciscoccservice.com/){:target="_blank"}**\
-> The Official Developer docs are at: **[https://developer.webex.com](https://developer.webex.com){:target="_blank"}** > `Documentation` > `API Reference` > `Contact Center`.\
-> Note: The documentaion will be avalable after Jun 7.
+> Legacy V1.0 endpoint - Query: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}){:target="_blank"}**. Resources can be of type: `csrs`, `cars`, `asrs`, `aars`\
+> Developer Portal Early Access: **[https://apim-dev-portal.appstaging.ciscoccservice.com/](https://apim-dev-portal.appstaging.ciscoccservice.com/){:target="_blank"}**\
+> The Official Developer docs: **[https://developer.webex.com](https://developer.webex.com){:target="_blank"}**\
 
 
 # Part 1: Legacy 1.0 APIs: CSR, CSR Query
