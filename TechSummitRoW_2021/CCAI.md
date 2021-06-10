@@ -68,7 +68,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Enter your credit/debit card details and click on **START MY FREE TRIAL**. 
 
-- Click on **CLOSE* on the next pop-up window.
+- Click on **CLOSE** on the next pop-up window.
 
 - On the search bar, type `text to speech` and click on the **Cloud Text-to-Speech API**.
 
@@ -96,7 +96,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - To generate the required .json keys, click on the service account you created (e.g. **ts2021-ccai-sa@ts2021-ccai.iam.gserviceaccount.com**).
 
-- Click on the **KEYS** tab and then on *ADD KEY** > **Create new key**.
+- Click on the **KEYS** tab and then on **ADD KEY** > **Create new key**.
 
 - Choose the **JSON** key type and click on **CREATE**. Make sure you have the key saved locally.
 
@@ -107,7 +107,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Open [Control Hub Admin](https://admin.webex.com/) page.
 
-- Go to **Contact Center** > **Connectors** and click **Set Up* on Google connector.
+- Go to **Contact Center** > **Connectors** and click **Set Up* on Google connector**.
 
 - Give a name to the connector, e.g. `techsummit_google_tts` and click on **Upload Authentication Key** to upload the .json file key downloaded before. Click on **Done**.
 
@@ -148,19 +148,19 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - In the **Success** Play Message block, chose **Enable Text-to-Speech** under Prompt, choose your created connector (e.g. `techsummit_google_tts`) and set language as **en-GB-Standard-A**.
 
-- Type `Thanks {{% raw %}} {{Customer_Name}} {{% endraw %}}, we got your information` as your TTS message.
+- Type "Thanks {{% raw %}} {{Customer_Name}} {{% endraw %}}, we got your information" as your TTS message.
 
 - Make a new test call and verify that you get a personalized message with the customer's name based on the PIN provided.
 
 - For **ETW**, after the **QueueContact1** node, add a **Get Queue info** block.
 
-- Under *Queue Information**, select **Static Queue** and enter your queue.
+- Under **Queue Information**, select **Static Queue** and enter your queue.
 
-- On success path, add a new **Play Message** block. Name it *EWT_PIQ**.
+- On success path, add a new **Play Message** block. Name it **EWT_PIQ**.
 
-- Add the TTS connector to it similar to the step above and type `You Estimated Wait Time is {{% raw %}} {{GetQueueInfo.EWT}} {{% endraw %}} and your position in Queue is {{% raw %}} {{GetQueueInfo.PIQ}} {{% endraw %}}` as message.
+- Add the TTS connector to it similar to the step above and type "You Estimated Wait Time is {{% raw %}} {{GetQueueInfo.EWT}} {{% endraw %}} and your position in Queue is {{% raw %}} {{GetQueueInfo.PIQ}} {{% endraw %}}" as message.
 
-- Similarly, for the **Insufficient Information** block, add a a new **Play Message** block and name it *PIQ**.
+- Similarly, for the **Insufficient Information** block, add a a new **Play Message** block and name it **PIQ**.
 
 - Again, add the TTS connector and type `Your position in Queue is {{% raw %}} {{GetQueueInfo.PIQ}} {{% endraw %}}` as message.
 
