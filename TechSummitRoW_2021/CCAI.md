@@ -142,7 +142,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 - Click on **Finish** to complete the Virtual Agent creation.
 
 
-### Part 3: TTS, EWT & PIQ asdda
+### Part 3: TTS, EWT & PIQ 
 
 - Open Flow 3 in the Flow Designer from Lab 2 (IVR and Contact Routing).
 
@@ -158,7 +158,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - On success path, add a new **Play Message** block. Name it **EWT_PIQ**.
 
-- Add the TTS connector to it similar to the step above and type "You Estimated Wait Time is \{\{GetQueueInfo.EWT\}\} and your position in Queue is {{GetQueueInfo.PIQ}}" as message.
+- Add the TTS connector to it similar to the step above and type `You Estimated Wait Time is {{GetQueueInfo.EWT}} and your position in Queue is {{GetQueueInfo.PIQ}}` as message.
 
 - Similarly, for the **Insufficient Information** block, add a a new **Play Message** block and name it **PIQ**.
 
