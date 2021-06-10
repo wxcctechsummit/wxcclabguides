@@ -8,7 +8,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 # Table of Contents
 
-- [Overview](#overview) 
+- [Introduction](#overview) 
   * [Lab Objective](#lab-objective)
   * [Pre-Requisites](#pre-requisites)
   * [Quick Links](#quick-links)
@@ -18,7 +18,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 # Introduction
 
-## Lab Objective
+### Lab Objective
 
 - This lab is designed to help you configure a Google DialogFlow Agent using CCAI (Contact Center AI) on Webex Contact Center and utilize TTS (Text-to-speech) capabilities.
 
