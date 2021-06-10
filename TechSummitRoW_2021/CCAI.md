@@ -158,11 +158,11 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - On success path, add a new **Play Message** block. Name it **EWT_PIQ**.
 
-- Add the TTS connector to it similar to the step above and type `You Estimated Wait Time is {{GetQueueInfo.EWT}} and your position in Queue is {{GetQueueInfo.PIQ}}` as message.
+- Add the TTS connector to it similar to the step above and type `You Estimated Wait Time is \{\{GetQueueInfo.EWT\}\} and your position in Queue is \{\{GetQueueInfo.PIQ\}\}` as message.
 
 - Similarly, for the **Insufficient Information** block, add a a new **Play Message** block and name it **PIQ**.
 
-- Again, add the TTS connector and type `Your position in Queue is{{GetQueueInfo.PIQ}}` as message.
+- Again, add the TTS connector and type `Your position in Queue is \{\{GetQueueInfo.PIQ\}\}` as message.
 
 - Save and publish the flow. Test the call flow and make sure you hear the PIQ prompt.
 
