@@ -183,7 +183,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Respectively, for `Escalated` output, which means that self-service was not sufficient and we need to escalate this to an agent, connect the output to a **Queue Contact** block and assign your Queue to that block.
 
-- Add a **Play Message** block with some music on hold and loop it to itself to use as MOH while customer is waiting for an available agent.
+- Add a **Play Music** block with some music on hold and loop it to itself to use as MOH while customer is waiting for an available agent.
 
 - Map that flow to your entry point to be able to make test calls.
 
