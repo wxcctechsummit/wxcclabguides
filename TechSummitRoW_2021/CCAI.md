@@ -15,6 +15,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 - [Part 1: Setup the Google Account](#1_setup_the_google_account)
 - [Part 2: Setup Dialogflow Agent & Google Connector](#2_setup_dialogflow_google_connector)
 - [Part 3: TTS, EWT & PIQ](#3_tts_etw_piq)
+- [Part 4: Virtual Agent](#4_virtual_agent)
 
 # Introduction
 
@@ -168,53 +169,33 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 > **Note:** Make sure no agent is available to handle the call to be able to listen to the PIQ prompt.
 
+### Part 4: Virtual Agent
 
+- Create a new call flow in the Flow Designer.
 
+- Create a flow logic similar to the video guide, i.e. first add a **Virtual Agent** block after the **New Phone Contact**.
 
+- Under **Conversational Experience**, add the virtual agent you have created (e.g. `TS_CCAI_Agent`) and enable **Make Prompts Interruptible**.
 
-### 2. Wire up the DialogFlow Agent inside of the Flow.
+- For `Handled` output from Virtual Agent, which means that self-service was successful, connect the output to a **Play Message** block and add a "Call successfully handled by virtual agent!" TTS message to it. 
 
-- In Flow Designer – Remove the menu block and the welcome message block. - We will use the CCAI Bot to front end the conversation, and then perform the lookup and send it to the queue.
-- Put in the Virtual Agent block.
-- For the Virtual Agent selection, select the CLUS_CCAI_Bot
-- Make Prompts Interruptible for the bot.
-- Under the Advanced settings, ensure that “Enable Conversation Transcript” is checked. This will help the agent get a copy of the conversation with the customer.
-- Scroll down and configure the bot settings as detailed below
+- Connect that Play Message to a **Disconnect Contact** block.
 
-### 3. Configure the Settings for the Bot and the output connections
+- Respectively, for `Escalated` output, which means that self-service was not sufficient and we need to escalate this to an agent, connect the output to a **Queue Contact** block and assign your Queue to that block.
 
-- The Bot has 2 connections – Handled and Escalated.
-- Handled is meant to gracefully disconnect the call and end Self Service. - Connect the handled branch to a play message block with “Thank you for calling” using a TTS Play Message block.
-- Escalated is meant to send the call to the queue. Send the caller to a Queued block by connecting the escalated Intent to the queued block.
+- Add a **Play Message** block with some music on hold and loop it to itself to use as MOH while customer is waiting for an available agent.
 
-### 4. Store the bot variables as CAD variables for the screen pop
+- Map that flow to your entry point to be able to make test calls.
 
-- The bot block (VirtualAgent1) has 2 variables : LastIntent and TranscriptURL
-- We will store these in CAD variables and pop them on the agent desktop.
-- Create 2 CAD variables called lastIntent and transcriptURL
-- Use the set variables as shown in the example above to set these as CAD variables.
-- This will ensure that when the call hits the agent, the agent is able to view these statistics. It is also helpful during debugging.
+- Make a test call and when virtual agent greets you and asks you what you would want, answer with `I don't need any more help`. This will trigger the **Handled** output and terminate the call after a message from the bot.
 
-### 5. Test the end to end flow
+- Make another test call. This time, answer with `I need help with billing`. This will trigger the **Escalated** output and search for an available agent.
 
-- Login to the agent desktop and go Idle (Not Ready)
-- Call the main number on the entry point.
-- You should hear the bot asks you what you want to do. (e.g “How may I help you”)
+- Optionally, you can send the transcript of the conversation between the customer and the virtual agent to the agent when connected. To do so, you would need to **Enable Conversation Transcipt** under Advanced Settings in the Virtual Agent block.
 
-### 6. Experiment with what the configured Bot can do
+- Also, you would need to create a CAD Variable to save the **TranscriptURL** output variable from the Virtual Agent block and pass it to the desktop.
 
-> **Note:** This simple bot has been programmed on DialogFlow to give you information about the Cisco Live Session Schedule as well as escalate the call to an agent).
-
-- Use any of the trigger intents to get information about the lab: “Cisco - - Live” “Tell me about your lab” “What labs are supported”
-- Use any of the trigger intents to get to an agent: “I need Help” “I need an Agent” “Where is my proctor” “Help” “Assistance”, etc – these are the words that have utterances trained to trigger the escalation intent of the bot.
-### 7. Have the Agent handle the call
-- Have the agent go ready after you said “I need an agent”.
-- The Agent should get the call, and be able to view the transcript on the agent desktop.
-
-
-
-
-
+- Feel free to play around with various phrases as responses to the virtual agent and see if it is able to handle them properly.
 
 
 ---
