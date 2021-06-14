@@ -53,6 +53,9 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 ### 1. Setup the Google Account
 
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/h2-dWC5yo-U?rel=0" title="Google CCAI Integration Lab: Setup Google Account" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 - Login to [Google Cloud Console](https://console.cloud.google.com/) with your Google Account credentials.
 
 - Click on **Select a project** on top and then on **NEW PROJECT** on the pop-up window.
@@ -106,6 +109,9 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 ### Part 2. Setup Dialogflow Agent & Google Connector
 
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/VHWBWSdj-sQ?rel=0" title="Google CCAI Integration Lab: Setup Dialogflow Agent & Google Connector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 - Open [Control Hub Admin](https://admin.webex.com/) page.
 
 - Go to **Contact Center** > **Connectors** and click **Set Up* on Google connector**.
@@ -145,6 +151,8 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 ### Part 3: TTS, EWT & PIQ 
 
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/0XFQfwzPhzw?rel=0" title="Google CCAI Integration Lab: TTS EWT PIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 - Open Flow 3 in the Flow Designer from Lab 2 (IVR and Contact Routing).
 
 - In the **Success** Play Message block, chose **Enable Text-to-Speech** under Prompt, choose your created connector (e.g. `techsummit_google_tts`) and set language as **en-GB-Standard-A**.
@@ -170,6 +178,8 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 > **Note:** Make sure no agent is available to handle the call to be able to listen to the PIQ prompt.
 
 ### Part 4: Virtual Agent
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/QHkKbr2DsMA?rel=0" title="Google CCAI Integration Lab: Virtual Agent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - Create a new call flow in the Flow Designer.
 
