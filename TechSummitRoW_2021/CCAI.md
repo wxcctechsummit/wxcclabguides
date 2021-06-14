@@ -37,9 +37,9 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 ### Quick Links
 
-> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Control hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**
 
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**
 
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}**
 
@@ -86,7 +86,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - On **Grant this service account access to project**, search and choose the **DialogFlow API Admin** role and then click on **CONTINUE** and then on **DONE**.
 
-- Similarly, now on the search bar type type `dialogflow API` and click on the **Dialogflow API**.
+- Similarly, now on the search bar type `dialogflow API` and click on the **Dialogflow API**.
 
 - Click on **ENABLE**.
 
@@ -114,7 +114,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Open [Control Hub Admin](https://admin.webex.com/) page.
 
-- Go to **Contact Center** > **Connectors** and click **Set Up* on Google connector**.
+- Go to **Contact Center** > **Connectors** and click **Set Up** on Google connector**.
 
 - Give a name to the connector, e.g. `techsummit_google_tts` and click on **Upload Authentication Key** to upload the .json file key downloaded before. Click on **Done**.
 
@@ -157,11 +157,11 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - In the **Success** Play Message block, chose **Enable Text-to-Speech** under Prompt, choose your created connector (e.g. `techsummit_google_tts`) and set language as **en-GB-Standard-A**.
 
-- Type "Thanks {{% raw %}} {{Customer_Name}} {{% endraw %}}, we got your information" as your TTS message.
+- Type "Thanks \{\{Customer_Name\}\}, we got your information" as your TTS message.
 
 - Make a new test call and verify that you get a personalized message with the customer's name based on the PIN provided.
 
-- For **ETW**, after the **QueueContact1** node, add a **Get Queue info** block.
+- For **EWT**, after the **QueueContact1** node, add a **Get Queue info** block.
 
 - Under **Queue Information**, select **Static Queue** and enter your queue.
 
