@@ -71,9 +71,9 @@ By following each of the steps, you will have better understanding of the new Ag
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/IwZhFw7NT5g?rel=0" title="WxCC Lab #2 Part 2: Agent Desktop Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> **Note:** In this section you don't need to do anny tasks. This section was created to familiarize you with the agent interface.
+> **Note:** In this section you don't need to do any tasks. This section was created to familiarize you with the agent interface.
 
-![Image1](AgentDesktopOverview.png)
+![Image1](./images/AgentDesktopOverview.png)
 
 The Agent Desktop is divided in 6 sections. In the image above you can see a general view of the Agent Desktop and where each section is located. We explain them all shortly:
 1. **Task List**: When a request is routed to your queue and you are _Available_, a new request appears in your Task List pane. You must accept the requests to start communication with the customer.
