@@ -73,7 +73,7 @@ By following each of the steps, you will have better understanding of the new Ag
 
 > **Note:** In this section you don't need to do any tasks. This section was created to familiarize you with the agent interface.
 
-![Image1](./images/AgentDesktopOverview.png)
+![Image1](AgentDesktopOverview.png)
 
 The Agent Desktop is divided in 6 sections. In the image above you can see a general view of the Agent Desktop and where each section is located. We explain them all shortly:
 1. **Task List**: When a request is routed to your queue and you are _Available_, a new request appears in your Task List pane. You must accept the requests to start communication with the customer.
