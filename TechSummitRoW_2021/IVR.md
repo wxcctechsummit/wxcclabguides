@@ -51,7 +51,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - **IVR Prompts:** We will expect you to configure and upload static prompts shared for use below.
 
-> [Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/iwhcfzroulxbnse0cblwy759gkzy5pdq){:target="\_blank"}
+> [Download the IVR Prompts - Static Prompts HERE](https://cisco.app.box.com/s/3ojdwnnhgz8q1evlhkcqhy9g7vpkq5o6){:target="\_blank"}
 
 - **Lookups, Advanced Scripting, Screen-pops:** We have chosen specific areas of focus for advanced scripting topics. We have more content shared in the bonus sections on how to get other use cases configured.
 
@@ -123,7 +123,7 @@ In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mapp
 
 - The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
 
-[Download the IVR Prompts - Static Prompts HERE](https://cisco.box.com/s/iwhcfzroulxbnse0cblwy759gkzy5pdq){:target="\_blank"}
+[Download the IVR Prompts - Static Prompts HERE](https://cisco.app.box.com/s/3ojdwnnhgz8q1evlhkcqhy9g7vpkq5o6){:target="\_blank"}
 
 > **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
 
