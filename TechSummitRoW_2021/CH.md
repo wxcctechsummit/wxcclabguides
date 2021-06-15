@@ -153,7 +153,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Input Name as `MMP_<ID>_TS`.
 
-- In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, `3` for **_Social Channel_** and click **_Save_**.
+- In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, and click **_Save_**.
 
 ### 2. Create new Site
 
