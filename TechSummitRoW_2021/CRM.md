@@ -19,6 +19,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 6. Basic knowledge of JSON format​.
 7. Salesforce Custom Desktop Layout.
 8. Use any online [JSON validator](https://jsonlint.com/) to validate the file​.
+9. Lab 2 (IVR and Contact Routing) completed.
 
 
 # Table of Contents
@@ -38,6 +39,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
     * [8. WebexCC Salesforce Desktop Report View](#8-webexcc-salesforce-desktop-report-view)
 - [Part 5: WebexCC Desktop Layout](#part-5-webexcc-dekstop-layout)
     * [9. WebexCC Salesforce Desktop Layout Configuration](#9-webexcc-salesforce-desktop-layout-configuration)
+- [Login Agent and Make a Test Call](#login-agent-make-call)
 
 
 ## Optional: Create Salesforce Account
@@ -169,7 +171,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 - Select **Page Layouts** on the left of the Task details page.
 
-- Click on **Page Layout Assignment** on top-right and then on Edit** Assignment**.
+- Click on **Page Layout Assignment** on top-right and then on **Edit Assignment**.
 
 - Select the **System Administrator** profile from the displayed list in the Profiles column.
 
@@ -218,6 +220,17 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 - Click **Save**. This will create a custom Desktop Layout named Salesforce in WebexCC.
 
+## Login Agent and Make a Test Call
+
+- Back on Salesforce page, click on **App Launcher** icon on top left and then click on **Webex Contact Center**.
+
+- On the bottom left, click on **Phone** and then **Sign In**.
+
+- Sign in an agent that is part of the team that the Dekstop Layout was associated with previously. You can use the agent, EPs and flow created in Lab 2 Part 2 (IVR and Contact Routing) for the queued to agent scenario.
+
+- Make sure the agent is in available state and make a test call to your EP.
+
+- Upon accepting the call, we will see account information populated for this call. A `task activity` should also be created and visible upon accepting the call. 
 
 
 ### **Congratulations! CRM Integration lab is now complete!**
