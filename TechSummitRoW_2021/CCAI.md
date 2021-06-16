@@ -109,7 +109,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 ### Part 2. Setup Dialogflow Agent & Google Connector
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/VHWBWSdj-sQ?rel=0" title="Google CCAI Integration Lab: Setup Dialogflow Agent & Google Connector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/Q0j13mrjKrw?rel=0" title="Google CCAI Integration Lab: Setup Dialogflow Agent & Google Connector" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 - Open [Control Hub Admin](https://admin.webex.com/) page.
