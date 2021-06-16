@@ -17,7 +17,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | Week 2 - June 14th | Lab 2 - IVR Contact Routing Lab        | [Lab 2 - IVR Contact Routing](IVR.md){:target="\_blank"}                                      
 | Week 2 - June 14th | Lab 3 - Agent and Supervisor Desktops              | [Lab 3 - Agent and Supervisor Desktops](AgentSupervisor.md){:target="\_blank"}  
 | Week 2 - June 14th | Lab 4 - CRM Integration Lab               | [Lab 4 - CRM Integration](CRM.md){:target="\_blank"}  
-| Week 2 - June 14th | Lab 5 - Google CCAI Integration Lab               | [Lab 5 - Coming soon!](){:target="\_blank"} 
+| Week 2 - June 14th | Lab 5 - Google CCAI Integration Lab               | [Lab 5 - Google CCAI Integration](CCAI.md){:target="\_blank"} 
 | Week 3 - June 21st | Lab 6 - Analyzer Deep Dive Lab        | [Lab 6 - Analyzer Labs](Analyzer.md){:target="\_blank"}                  
 | Week 3 - June 21st | Lab 7 - WxM Integration Lab               | [Lab 7 - WxM Integration Lab](WxM.md){:target="\_blank"}  
 | Week 3 - June 21st | Lab 8 - API Lab                        | [Lab 8 - API Lab](APIs.md){:target="\_blank"} 
