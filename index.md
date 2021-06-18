@@ -8,9 +8,9 @@ Welcome to the 2021 Cisco Webex Contact Center Technical Partner Summit. There a
 
 
 
-| Event Title                              | Month Created | Year | Link                                                     |
+| Month Created | Year | Event Title                              | Link                                                     |
 |------------------------------------------|---------------|------|----------------------------------------------------------|
-| Webex Contact Center Partner Enablement  | January       | 2021 | [Webex Contact Center Partner Enablement - Sharepoint - Home](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="_blank"} |
-| WebexCC Partner Summit Pilot Lab Library           | February        | 2021 |  [February 2021 Technical Partner Summit Lab Library](LabLibrary.md){:target="_blank"}                                                      |
-| WebexCC Partner Summit Gold Lab Library            | April     | 2021 |  [April 2021 Technical Partner Summit Gold Tenant Lab Library](LabLibrarynew.md){:target="_blank"}                                                       |
-| WebexCC Partner Summit in APJC           | June        | 2021 |  [June 2021 Technical Partner Summit Lab Library](TechSummitRoW_2021/HomePage.md){:target="_blank"}                                                      |
+| January       | 2021 | Webex Contact Center Partner Enablement  | [Webex Contact Center Partner Enablement - Sharepoint - Home](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="_blank"} |
+| February        | 2021 | WebexCC Partner Summit Pilot Lab Library           |  [February 2021 Technical Partner Summit Lab Library](LabLibrary.md){:target="_blank"}                                                      |
+| April     | 2021 | US WebexCC Partner Summit Gold Lab Library            |  [April 2021 Technical Partner Summit Gold Tenant Lab Library](LabLibrarynew.md){:target="_blank"}                                                       |
+| June        | 2021 | APJC WebexCC Partner Summit            |  [June 2021 Technical Partner Summit Lab Library](TechSummitRoW_2021/HomePage.md){:target="_blank"}                                                      |
