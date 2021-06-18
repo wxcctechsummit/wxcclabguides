@@ -241,7 +241,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CCAI.html";}
 </script>
 
 <div id="button-row">
@@ -255,7 +255,7 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 5: Coming Soon!</button>
+  padding: 10px;">Next Lab 5: Google CCAI & TTS Integration Lab</button>
 
 </div>
 
