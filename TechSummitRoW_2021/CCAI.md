@@ -1,5 +1,5 @@
 ---
-title: "Lab 5: Google CCAI Integration"
+title: "Lab 5: Google CCAI & TTS Integration Lab"
 ---
 
 ### Overview of the lab:
