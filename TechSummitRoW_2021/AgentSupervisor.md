@@ -181,7 +181,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 >The following video outlines the existing dashboards available to the supervisor in the management portal. Follow the instructions to find out which dashboards are available and what they are for.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/E5IQn55aFmM?rel=0" title="WxCC Lab #5 Part 1: Portal Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/QA5XSfYZgiw?rel=0" title="WxCC Lab #5 Part 1: Portal Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
 ### 1. Management Portal with Supervisor account
 
