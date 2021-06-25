@@ -69,7 +69,7 @@ By following each of the steps, you will have better understanding of the new Ag
 
 > Watch the following video, where each of the sections and their main options are explained. You will get a better idea of how the Agent Desktop look like and how to use it.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/3bgyMdMGWLU?rel=0" title="WxCC Lab #2 Part 2: Agent Desktop Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/3bgyMdMGWLU?rel=0" title="Part1: Agent Desktop Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > **Note:** In this section you don't need to do any tasks. This section was created to familiarize you with the agent interface.
 
@@ -87,7 +87,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 > Watch the following video to learn the dekstop layout customization process. After the video, you will be able to customize the Agent Desktop with your company logo.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/btx1ZiQlsU8?rel=0" title="WxCC Lab #2 Part 4: Custom Desktop Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/btx1ZiQlsU8?rel=0" title="Part 2: Custom Desktop Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### 1. Download default desktop Layout
@@ -181,7 +181,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 >The following video outlines the existing dashboards available to the supervisor in the management portal. Follow the instructions to find out which dashboards are available and what they are for.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/QA5XSfYZgiw?rel=0" title="WxCC Lab #5 Part 1: Portal Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/QA5XSfYZgiw?rel=0" title="Part 3: Portal Dashboards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
 ### 1. Management Portal with Supervisor account
 
@@ -230,7 +230,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 >Here we go through the newly added dashboard. We will learn how to change supervisor permissions and how to manually log out agents by using a supervisor account.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/nGOrskpqwGg?rel=0" title="WxCC Lab #5 Part 2: Supervisor permissions and remote agent logout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/nGOrskpqwGg?rel=0" title="Part 4: Supervisor permissions and remote agent logout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### 1. Remote Agent Logout 
