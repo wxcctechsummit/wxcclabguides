@@ -111,6 +111,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 - Mapping the DN to the main Entry Point. In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mappings), map the listed DN to `EP_Main_TS`.
 
 - Navigate to Routing Strategy > Flow and create new flow `Flow_Main_TS` if it has not been created yet. Follow the steps below to build main flow:
+
 	- Add Menu activity and name it "Flow_Main_Menu"
 	- Choose IVR prompt "Flow_Main_Menu.wav"
 	- Tick checkbox "Make Prompt Interruptible"
