@@ -311,11 +311,11 @@ This is a supportive video that does not require any actions since your tenant i
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/m9QamZh4LwI?rel=0" title="WxCC Lab #1 Part 6: Trial Tenant Setup - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Congratulations, you have compleated Lab1 tasks! We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
-
-
 
 ---
+
+### Congratulations, you have compleated Lab1 tasks! 
+## We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
