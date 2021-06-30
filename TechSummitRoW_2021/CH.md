@@ -334,7 +334,7 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   margin: auto;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 15px;">Survey</button>
+  padding: 15px;">Take Survey</button>
 
 <button onclick="nextLab()" style="
   position: absolute;
