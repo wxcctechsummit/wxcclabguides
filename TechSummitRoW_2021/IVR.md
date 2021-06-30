@@ -64,8 +64,8 @@ In this Lab, we will learn the configuration we need to complete for making a si
 # Lab Pre-requisites
 
 1. **Webex Calling App** is installed on your **PC or MAC, and Mobile.**
- 	- PC or MAC Webex calling App for Agent to accept calls.
- 	- Mobile Webex Calling App for Supervisor to accept calls and to place test calls to EP.
+	- PC or MAC Webex calling App for Agent to accept calls.
+	- Mobile Webex Calling App for Supervisor to accept calls and to place test calls to EP.
 2. All the tasks from **Lab1 (Control Hub and Admin Portal)** are completed.
 	- You have the administrator's access to the Tenant Management Portal.
 	- Agent and Supervisor users created and configured
