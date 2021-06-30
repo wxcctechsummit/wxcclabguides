@@ -330,9 +330,7 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   padding: 10px;">Go back to Main Page</button>
 
 <button onclick="survey()" style="
-  width:50%;
-  margin-left:25%;
-  margin-right:25%;
+  text-align: center;
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 15px;">Survey</button>
