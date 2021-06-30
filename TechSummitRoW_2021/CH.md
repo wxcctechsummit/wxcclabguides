@@ -324,14 +324,12 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
 </script>
 
 <div id="button-row">
-	<button onclick="mainPage()" style="
+<button onclick="mainPage()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 10px;">Go back to Main Page</button>
 
 <button onclick="survey()" style="
-  position: absolute;
-  right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 10px;">Survey</button>
