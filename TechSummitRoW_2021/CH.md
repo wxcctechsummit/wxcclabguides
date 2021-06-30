@@ -65,7 +65,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 | Agent        | agent1_\<ID\>@mailinator.com   | 1XXX |
 | Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2XXX |
 
-> **NOTE:** The pool of \<IDs\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with multiple administrators in your organization, in that case, the **ID** and the **User Ext** should be unique for each user.
+> **NOTE:** Your \<IDs\> was provided through the email in the **"Attendee ID"** line. It's based on the first letter of your name plus your surname. You can share your tenant with multiple administrators in your organization, in that case, the **ID** and the **User Ext** should be unique for each user.
 
 
 ### 1. Add an agent and a supervisor users and configure the calling extension
