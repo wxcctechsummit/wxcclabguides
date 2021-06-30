@@ -315,7 +315,7 @@ This is a supportive video that does not require any actions since your tenant i
 ---
 
 ### Congratulations, you have compleated Lab1 tasks! 
-## We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
