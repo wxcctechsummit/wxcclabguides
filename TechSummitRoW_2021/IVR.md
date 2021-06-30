@@ -111,17 +111,17 @@ In this Lab, we will learn the configuration we need to complete for making a si
 - Mapping the DN to the main Entry Point. In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mappings), map the listed DN to `EP_Main_TS`.
 
 - Navigate to Routing Strategy > Flow and create new flow `Flow_Main_TS` if it has not been created yet. Follow the steps below to build main flow:
- 	- Add Menu activity and name it "Flow_Main_Menu"
- 	- Choose IVR prompt "Flow_Main_Menu.wav"
- 	- Tick checkbox "Make Prompt Interruptible"
- 	- Set "Entry Timeout" to 10 seconds
- 	- Loop "Entry Timeout" and "Unmatched Entry" of the "Error Handling" section to the input of "Main_Menu" activity
- 	- Terminate any "Custom Links" outputs of menu with "DisconnectContact" activity
- 	- Verify and publish the flow.
+	- Add Menu activity and name it "Flow_Main_Menu"
+	- Choose IVR prompt "Flow_Main_Menu.wav"
+	- Tick checkbox "Make Prompt Interruptible"
+	- Set "Entry Timeout" to 10 seconds
+	- Loop "Entry Timeout" and "Unmatched Entry" of the "Error Handling" section to the input of "Main_Menu" activity
+	- Terminate any "Custom Links" outputs of menu with "DisconnectContact" activity
+	- Verify and publish the flow.
 
 - Configure the Routing Strategy for main Entry Point `EP_Main_TS`:
- 	- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_Main_TS`.
- 	- Map the flow `Flow_Main_TS` you just created above.
+	- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_Main_TS`.
+	- Map the flow `Flow_Main_TS` you just created above.
 
 ### 3. Create an inbound Voice Entry Point and Voice Queue as a team member
 
