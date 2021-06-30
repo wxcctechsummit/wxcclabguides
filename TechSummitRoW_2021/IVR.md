@@ -9,11 +9,15 @@ In this Lab, we will learn the configuration we need to complete for making a si
 # Table of Contents
 
 - [Part 1: Setup a Simple Flow and make a test call](#part-1-setup-a-simple-flow-and-make-a-test-call)
-  - [1. Create the Voice Entry Point and Voice Queue](#1-create-an-inbound-voice-entry-point-and-voice-queue)
-  - [2. Verify/Upload the Audio Prompts, Create the Entry Point Flow.](#2-verify-the-audio-prompts-create-the-entry-point-flow)
-  - [3. Configure and Publish the Flow](#3-configure-and-publish-the-flow)
-  - [4. Configure the Entry Point Routing Strategy](#4-configure-the-entry-point-routing-strategy)
-  - [5. Make a test call](#5-make-a-test-call)
+  - [1. Verify and upload Audio Prompts](#1-verify-and-upload-audio-prompts)
+  - [2. Create main inbound Voice Entry Point and Main IVR to reach the Entry Point of team member](#2-create-main-inbound-voice-entry-point-and-main-ivr-to-reach-the-entry-point-of-team-member)
+  - [3. Create an inbound Voice Entry Point and Voice Queue as a team member](#3-create-an-inbound-voice-entry-point-and-voice-queue-as-a-team-member)
+  - [4. Add your Entry Point into the chain within the main flow](#4-add-your-entry-point-into-the-chain-within-the-main-flow)
+  - [5. Configure and Publish simple flow](#5-configure-and-publish-simple-flow)
+  - [6. Configure the Entry Point Routing Strategy](#6-configure-the-entry-point-routing-strategy)
+  - [7. Make a call to test simple flow](#7-make-a-call-to-test-simple-flow)
+  - [8. Modify and Publish simple flow](#8-modify-and-publish-simple-flow)
+  - [9. Make a call to test modified flow](#9-make-a-call-to-test-modified-flow)
 - [Part 2: Adding Menu and Queue treatment to the call](#part-2-adding-menu-and-queue-treatment-to-the-call)
   - [1. Copy out the flow and configure the advanced flow](#1-copy-out-the-flow-and-configure-the-advance-flow)
   - [2. Configure the Queue Treatment loop and Opt Out and Callback steps](#2-configure-the-queue-treatment-loop-and-opt-out-and-callback-steps)
@@ -25,7 +29,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
   - [2. Configure the Agent profile](#3-create-the-outdial-queue-routing-strategy)
   - [3. Create the Outdial Entry Point Routing Strategy](#2-create-the-outdial-entry-point-routing-strategy)
 - [Part 4: HTTP Requests](#part-4-advanced-scripting-steps-http-requests)
-  - [2. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advance-flow)
+  - [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advance-flow)
   - [2. Enhance the existing flow with an HTTP Request](#2-enhance-the-existing-flow-with-an-authentication-piece)
   - [3. Configure the Collect Digits block](#3-configure-the-collect-digits-block)
   - [4. Configure the custom variables and the HTTP Request Block](#4-configure-the-custom-variables-and-the-http-request-block)
@@ -88,19 +92,50 @@ In this Lab, we will learn the configuration we need to complete for making a si
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/n_PiLTFcgZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 1. Create an inbound Voice Entry Point and Voice Queue
+### 1. Verify and upload Audio Prompts
+
+- The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
+
+[Download the IVR Prompts - Static Prompts HERE](https://cisco.app.box.com/s/3ojdwnnhgz8q1evlhkcqhy9g7vpkq5o6){:target="\_blank"}
+
+> **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
+
+### 2. Create main inbound Voice Entry Point and Main IVR to reach the Entry Point of team member
+
+> **NOTE:** This lab assumes there are few members of your team which are sharing the same tenant. Each one can create their own call flow but use menu IVR under the main flow to help make a decision on what Entry Point you want the call to take. e.g. Map DN to `EP_Main_TS` > `Flow_Main_TS`, then branch out to your own Entry Point from Flow_Main_TS through corresponding menu item using "GoTo" activity.
+
+> **NOTE:** This step should only be performed by the first atendee, which is configuring the POD.
+
+- Login to Portal and create the main inbound voice Entry Point. (Provisioning > Entry Point / Queue). Create the Entry Point named `EP_Main_TS` if it has not been created yet.
+
+- Mapping the DN to the main Entry Point. In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mappings), map the listed DN to `EP_Main_TS`.
+
+- Navigate to Routing Strategy > Flow and create new flow `Flow_Main_TS` if it has not been created yet. Follow the steps below to build main flow:
+ 	- Add Menu activity and name it "Flow_Main_Menu"
+ 	- Choose IVR prompt "Flow_Main_Menu.wav"
+ 	- Tick checkbox "Make Prompt Interruptible"
+ 	- Set "Entry Timeout" to 10 seconds
+ 	- Loop "Entry Timeout" and "Unmatched Entry" of the "Error Handling" section to the input of "Main_Menu" activity
+ 	- Terminate any "Custom Links" outputs of menu with "DisconnectContact" activity
+ 	- Verify and publish the flow.
+
+- Configure the Routing Strategy for main Entry Point `EP_Main_TS`:
+ 	- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_Main_TS`.
+ 	- Map the flow `Flow_Main_TS` you just created above.
+
+### 3. Create an inbound Voice Entry Point and Voice Queue as a team member
 
 - Login to Portal and create an inbound voice entry point and voice queue. (Provisioning > Entry Point / Queue).
 
 - Create the Entry Point named `EP_<ID>_TS`.
-
+ 
 - Create the Queue named `Q_<ID>_TS`.
 
 **Here are the Queue Settings**
 
 | Configuration                       | field Value             |
 | ----------------------------------- | ----------------------- |
-| Name                                | `Q_<ID>_TS`             |
+| Name                                | `Q_<ID>_TS`  |
 | Channel Type                        | Telephony               |
 | _---- Contact Routing Settings ---_ |
 | Queue Routing Type                  | Longest Available Agent |
@@ -110,28 +145,37 @@ In this Lab, we will learn the configuration we need to complete for making a si
 | Maximum Time in Queue               | 600                     |
 | Time Zone                           | Default                 |
 
----
+### 4. Add your Entry Point into the chain within the main flow
 
-- Please see below note if your POD is shared with other members. 
+- Navigate to Routing Strategy > Flow and edit `Flow_Main_TS`
 
-> **NOTE:**  If you are sharing the tenant with other members on your team, each one can create their own call flow but use the IVR under the DN EP to help make the decision on what flow you want the call to take. e.g. Map DN to `EP_Main_TS' > Flow_Main, then branch out to your  `EP_<ID>_TS` from Flow_Main.
+- Add new custom menu link in the "Flow_Main_Menu" and terminate it by GoTo activity.
 
-- Mapping the DN to the Entry Point:
-In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mappings), map the listed DN to `EP_<ID>_TS`. 
+- Choose "Go to Entry Point" in "Flow Destination Settings" of GoTo acivity and choose your `EP_<ID>_TS` from the drop-down list. 
 
-### 2. Verify the Audio Prompts, Create the Entry Point flow.
+- Verify and publish main flow.
 
-- The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
+### 5. Configure and Publish simple flow
 
-[Download the IVR Prompts - Static Prompts HERE](https://cisco.app.box.com/s/3ojdwnnhgz8q1evlhkcqhy9g7vpkq5o6){:target="\_blank"}
+- Configure the flow `Flow1_<ID>` with a Play prompt - welcome message and Disconnect
 
-> **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
+- Verify and publish your flow.
 
-### 3. Configure and Publish the flow
+### 6. Configure the Entry Point Routing Strategy
 
-- Configure the flow `Flow1<ID>` with a Play prompt - welcome message and Disconnect
+- Configure the Open 24x7 routing strategy time of day on your Entry Point Routing strategy by selecting it on the Routing Strategies > `EP_<ID>_TS`.
+
+- Map the flow `Flow1_<ID>` you just created above.
 	
-- Configure the flow `Flow1<ID>` with a Play prompt - welcome message and queue block and play music block.
+### 7. Make a call to test simple flow
+
+- Login to the agent desktop into `Team_<ID>_TS` and go to a ready state.
+
+- Call the Dial number > Hear main menu and press corresponding digt to go to your Entry Point > Hear the welcome prompt and call should get disconnected.
+
+### 8. Modify and Publish simple flow
+
+- Go to the flow `Flow1_<ID>` and configure it with a Play prompt - welcome message and queue block and play music block.
 	
 - Configure the Queue Block to `Q_<ID>_TS`. Map the queue inside of the queue block.
 	
@@ -139,23 +183,13 @@ In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mapp
 	
 - Verify and publish the flow.
 
-### 4. Configure the Entry Point Routing Strategy
-
-- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_<ID>_TS`.
-	
-- Map the flow flow1_<ID> you just created in there.
-
-### 5. Make a test call
+### 9. Make a call to test modified flow
 
 - Login to the agent desktop into `Team_<ID>_TS` and go to a ready state.
 
-- Task 1 > Call the Dial number > Hear the welcome prompt and call should get disconnected.
-	
-- Task 2 > Call the Dial number > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
+- Call the Dial number > Hear main menu and press corresponding digt to go to your Entry Point > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
 
 ---
-
-
 
 ## Part 2: Adding Menu and Queue treatment to the call
 
