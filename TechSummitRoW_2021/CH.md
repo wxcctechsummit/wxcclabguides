@@ -319,7 +319,7 @@ This is a supportive video that does not require any actions since your tenant i
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function survey() {window.location.href = "https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006","_blank";}
+function survey() {window.location.href = "https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank'); }
 function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/IVR.html";}
 </script>
 
@@ -332,7 +332,7 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
 <button onclick="survey()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 15px;">Survey1</button>
+  padding: 15px;">Survey</button>
 
 <button onclick="nextLab()" style="
   position: absolute;
