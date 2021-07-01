@@ -275,16 +275,24 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 [To top of this lab](#table-of-contents)
 
 
+---
+
+### Congratulations, you have compleated Lab 3 tasks! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html";}
+function nextLab() 
+ {
+ window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CRM.html";
+ }
 </script>
 
 <div id="button-row">	
 <button onclick="mainPage()" style="border-radius: 5px;background-color: rgb(116,191,75);padding: 10px">Go back to Main Page</button>
 
-<button onclick="nextLab()" style="position: absolute;right: 200px;border-radius: 5px;background-color: rgb(116,191,75);padding: 10px;">Next Lab 4: CRM Integration</button>
+<button onclick="nextLab()" style="position: absolute;right: 200px;border-radius: 5px;background-color: rgb(116,191,75);padding: 10px;">Take Survey and Go to Lab 4</button>
 
 </div>
