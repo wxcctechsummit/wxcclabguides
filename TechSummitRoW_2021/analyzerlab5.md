@@ -88,9 +88,17 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 
 ---
 
+### Congratulations, you have compleated all Lab tasks! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+
+
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab8.html";}
+function nextLab() 
+ {
+ window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/WxM.html";
+ }
 </script>
 
 <div id="button-row">
@@ -104,7 +112,7 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 8 - WxM Integration</button>
+  padding: 10px;">Take Survey and Go to Lab 7</button>
 
 </div>
 
