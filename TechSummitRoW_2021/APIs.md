@@ -394,18 +394,24 @@ application/x-www-form-urlencoded
 
 > redirect_uri
 
+---
 
 ### Congratulations, you have completed **ALL section**. Well done!!!
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 <script>
-function celeButton() {document.body.style.backgroundImage="url('https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/giphy.gif')";}
+function celeButton() 
+	{
+	window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
+	document.body.style.backgroundImage="url('https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/giphy.gif')";
+	}
 </script>
 
 <div id="button-row">
 	<button onclick="celeButton()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Click To Finish</button>
+  padding: 10px;">Take Survey and Finish Labs</button>
 </div>
 
 <br />
