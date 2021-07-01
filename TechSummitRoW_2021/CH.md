@@ -84,7 +84,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Verify that the **Email addresses** are same as in the table above and click **_Next_**.
 
-- Check **_Webex Teams_** , **_Webex Calling (Enterprise)_** & **_Contact Center_**.
+- Check **_Messaging_** , **_Webex Calling (Professional)_** & **_Contact Center_**.
 
 - Ensure that the License Type is **_Premium Agent_** and Role is **_Agent_** and click **_Next_**. 
 
