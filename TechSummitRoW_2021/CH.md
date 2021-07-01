@@ -319,7 +319,6 @@ This is a supportive video that does not require any actions since your tenant i
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function survey() {window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank'); }
 function nextLab() 
  {
  window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
@@ -333,17 +332,11 @@ function nextLab()
   background-color: rgb(116,191,75);
   padding: 10px;">Go back to Main Page</button>
 
-<button onclick="survey()" style="
-  margin: auto;
-  border-radius: 5px;
-  background-color: rgb(100,149,237);
-  padding: 15px;">Take Survey</button>
-
 <button onclick="nextLab()" style="
   position: absolute;
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 2: IVR and Contact Routing</button>
+  padding: 10px;">Take Survey and Go to Lab 2</button>
 
 </div>
