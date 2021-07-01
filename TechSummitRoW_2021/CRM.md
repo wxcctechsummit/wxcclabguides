@@ -239,9 +239,17 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 ---
 
+### Congratulations, you have compleated Lab 4 tasks! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+
+
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CCAI.html";}
+function nextLab() 
+ {
+ window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/CCAI.html";
+ }
 </script>
 
 <div id="button-row">
@@ -255,7 +263,7 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 5: Google CCAI & TTS Integration Lab</button>
+  padding: 10px;">Take Survey and Go to Lab 5</button>
 
 </div>
 
