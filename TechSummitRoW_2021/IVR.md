@@ -229,6 +229,15 @@ In this Lab, we will learn the configuration we need to complete for making a si
 ### 2. Configure the Queue Treatment loop and Opt Out and Callback steps
 
 - In Flow Designer - Configure the Queue treatment for the first queue. Use the queueCounter variable and configure the Opt out steps including the high volume message and the callback step.
+
+- In the Callback Settings of the Callback block, you have two options on how to configure the **Callback Dial Number**.
+
+	1. If you set it to `NewPhoneContact.ANI` , as the video guide indicates, you will need to make the call to the Entry Point via your own mobile phone number. 
+
+
+	> **Note:** This call will be billed as an international call to your personal phone bill with all applicable fees. If you want to avoid that cost, you can configure it using Option 2.
+
+	2. You can create a new **Flow Variable** (e.g. CallbackANI) and set its **Variable Type** as `String` and its **Variable Value** to your mobile phone number (format should be `+country code`, e.g. `+32...`). Then, in the Callback block, you can set this created Flow variable as the Callback Dial Number. In this scenario, you can make the initial call with your supervisor extension and then receive the callback on your mobile phone number.
 	
 - Configure the voicemail destination to the same Cisco Toll Free number above.
 	
@@ -246,7 +255,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 	
 - Test Queue treatment by going not ready on the agent desktop.
 	
-- Using your **supervisor extension**, Call the main number associated to entry point and go into the queue. You should hear the queue twice and then have an option to leave a callback.
+- Call the main number (either via your **mobile** or through the **supervisor extension**, based on how you configured the Callback Dial) associated to entry point and go into the queue. You should hear the queue twice and then have an option to leave a callback.
 	
 - Leave the callback and the call should end.
 
