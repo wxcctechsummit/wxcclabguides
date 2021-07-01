@@ -207,12 +207,19 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * Enter the **WxM admin credentials.**
 * Navigate to the **`Overall Experience`** dashboard and ensure that the feedback you provided is recorded
 
-### Congratulations, you have compleated Lab7 tasks!
+---
+
+### Congratulations, you have compleated Lab 7 tasks! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
-function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/APIs.html";}
+function nextLab() 
+ {
+ window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/APIs.html";
+ }
 </script>
 
 <div id="button-row">
@@ -226,6 +233,6 @@ function nextLab() {window.location.href = "https://wxcctechsummit.github.io/wxc
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Next Lab 8: API</button>
+  padding: 10px;">Take Survey and Go to Lab 8</button>
 
 </div>
