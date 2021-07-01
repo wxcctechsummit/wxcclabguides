@@ -102,7 +102,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 ### 2. Create main inbound Voice Entry Point and Main IVR to reach the Entry Point of team member
 
-> **NOTE:** This lab assumes there are few members of your team which are sharing the same tenant. Each one can create their own call flow but use menu IVR under the main flow to help make a decision on what Entry Point you want the call to take. e.g. Map DN to `EP_Main_TS` > `Flow_Main_TS`, then branch out to your own Entry Point from Flow_Main_TS through corresponding menu item using "GoTo" activity.
+> **NOTE:** This lab assumes there are few members of your team which are sharing the same tenant. Each one can create their own call flow and by using menu IVR under the main flow a decision can be made on what Entry Point you want the call to take. e.g. Map DN to `EP_Main_TS` > `Flow_Main_TS`, then branch out to your own Entry Point from Flow_Main_TS through corresponding menu item using "GoTo" activity.
 
 > **NOTE:** This step should only be performed by the first atendee, which is configuring the POD.
 
@@ -118,6 +118,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 	- Loop "Entry Timeout" and "Unmatched Entry" of the "Error Handling" section to the input of "Main_Menu" activity
 	- Terminate any "Custom Links" outputs of menu with "DisconnectContact" activity
 	- Verify and publish the flow.
+
 
 - Configure the Routing Strategy for main Entry Point `EP_Main_TS`:
 	- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_Main_TS`.
