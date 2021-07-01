@@ -519,7 +519,7 @@ function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wx
 function nextLab() 
  {
  window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/IVR.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/AgentSupervisor.html";
  }
 </script>
 
