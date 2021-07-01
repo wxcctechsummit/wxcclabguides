@@ -55,7 +55,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - **IVR Prompts:** We will expect you to configure and upload static prompts shared for use below.
 
-> [Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/Tech%20Summit%20ANZ%202021-WAVFiles.zip){:target="\_blank"}
+> [Download the IVR Prompts - Static Prompts HERE](https://github.com/wxcctechsummit/wxcclabguides/blob/master/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
 
 - **Lookups, Advanced Scripting, Screen-pops:** We have chosen specific areas of focus for advanced scripting topics. We have more content shared in the bonus sections on how to get other use cases configured.
 
@@ -96,7 +96,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
 
-[Download the IVR Prompts - Static Prompts HERE](https://cisco.app.box.com/s/3ojdwnnhgz8q1evlhkcqhy9g7vpkq5o6){:target="\_blank"}
+[Download the IVR Prompts - Static Prompts HERE](https://github.com/wxcctechsummit/wxcclabguides/blob/master/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
 
 > **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
 
