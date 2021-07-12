@@ -236,8 +236,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Select the **Agent** user `agent1_<ID>@mailinator.com` created in the previus lab.
 
 - In the User settings, make sure that the following **_Services_** are listed:
-   -  **_Messaging_** as **Cisco Webex Teams**.
-   -  **_Calling_** as **Webex Calling Enterprise**.
+   -  **_Messaging_** as **Advanced Messaging**.
+   -  **_Calling_** as **Webex Calling (Professional)**.
    -  **_Contact Center_**.
 
 - Scroll down to **_Calling Behaviour_** and select **_Webex Calling app_**. Click **_Save_**.
@@ -260,7 +260,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Open Webex Calling and сlick **Sign In**. Specify the agent credentials for `agent1_<ID>@mailinator.com`.
 
-- Navigate to **_File > Edit Server Address_** and make sure you have selected **North America** region
+- Depending on your operation system, navigate to the Webex Callin Menu **_Edit Server Address_** and make sure you have selected **North America** region.
 
 ### 3. Download and Login in the Webex Calling app for mobile
 
@@ -285,7 +285,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **Username** `agent1_<ID>@mailinator.com` which you created in the previous lab.
+- Enter the agent’s **email ID** `agent1_<ID>@mailinator.com` which you created in the previous lab.
 
 - Enter the **Password** for the appropriate Username.
 
