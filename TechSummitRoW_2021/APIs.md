@@ -56,7 +56,7 @@ Before you begin this lab:
 > HMAC Generator: **[https://www.liavaag.org/English/SHA-Generator/HMAC/](https://www.liavaag.org/English/SHA-Generator/HMAC/){:target="_blank"}**\
 > Legacy V1.0 endpoint - Resource: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}){:target="_blank"}**\
 > Legacy V1.0 endpoint - Query: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}){:target="_blank"}**. Resources can be of type: `csrs`, `cars`, `asrs`, `aars`\
-> Developer Portal Early Access: **[https://apim-dev-portal.appstaging.ciscoccservice.com/](https://apim-dev-portal.appstaging.ciscoccservice.com/){:target="_blank"}**\
+> Developer Portal: **[https://devportal.wxcc-us1.cisco.com/](https://devportal.wxcc-us1.cisco.com/){:target="_blank"}**\
 > The Official Developer docs: **[https://developer.webex.com](https://developer.webex.com){:target="_blank"}**\
 
 
@@ -297,8 +297,8 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jThcPefuzTA?rel=0" title="WxCC Lab #8 Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## 1. Login to developer.webex.com 
-- Login with the POD admin account.
+## 1. Login to devportal
+- Login with the POD admin account to https://devportal.wxcc-us1.cisco.com/.
 
 - Go to > Documentation > API Reference > Contact Center.
 
@@ -348,7 +348,7 @@ POST https://webexapis.com/v1/contactCenter/captures/query
 
 - To develop applications with the new APIs, you must build an integration with Webex.
 
-- See **[Contact Center Dev Portal Docs - Early Access](https://devportal.produs1.ciscoccservice.com/)** for all the details. 
+- See **[Contact Center Dev Portal Docs](https://devportal.wxcc-us1.cisco.com/)** for all the details. 
 
 Here is a summary: 
 
