@@ -56,7 +56,8 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> WxM Console **[https://cx.cloudcherry.com](https://cx.cloudcherry.com){:target="_blank"}**
+> WxM Console: **[https://cx.cloudcherry.com](https://cx.cloudcherry.com){:target="_blank"}**
+> WxM Documentation: **[https://xm.webex.com/docs/webex_cc/pcs_ivr_setup](https://xm.webex.com/docs/webex_cc/pcs_ivr_setup){:target="_blank"}**
 
 
 # Lab Section
@@ -73,11 +74,11 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 * **We have configured the WxM Connector for you**. 
 
-
 * You just need to login in Control Hub with Pod29 credentials, navigate to _Services -> Contact Center -> Connectors_ and **check that the WxM Connector is already created**.
 
-
 * However, we recommend you to **have a look to the video and configuration steps below**, to get an idea of how WxM Connector is configured
+
+* For more details, review the **[WxM Documentation](https://xm.webex.com/docs/webex_cc/pcs_ivr_setup){:target="_blank"}**
 
 
 
@@ -88,12 +89,15 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 1. Identify the API key from WxM
 
-* Login to the [WxM console](https://cx.cloudcherry.com){:target="_blank"}
-* Enter the WxM admin credentials.
-* Dismiss informative alerts if any.
-* Click on the User Profile (Top) icon and then Edit Profile
-* Copy the API Key from the API Key section.
-* If the API key is not present, click on Create and then copy the key.
+* Login to the **[WxM console](https://cx.cloudcherry.com){:target="_blank"}**
+* Enter the **WxM admin credentials**
+* Dismiss informative alerts if any
+* In the top-left corner select **_CX Setup_**
+* Open the **_Account Settings_** section and navigate to **_Users_**
+* In the table, look for the **username with **_`system`_** as a suffix** in the username
+> **Note**: Webex XM automatically creates ‘Machine sub-users’ in the account to be used to integrate with any platform
+* Copy the username and the **API Key**
+* If the API key is not present, click on **Create** and then copy the key.
 
 ### 2. Configure WxM connector in Control hub
 
@@ -101,11 +105,11 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * Enter the Customer admin email id and the password.
 * Navigate to **_Contact Center_** Card
 * Click on **_Connectors_**
-* Click on Set Up on Webex Experience Management card.
+* Click on **Set Up** on Webex Experience Management card.
 * Provide a unique identifier in the Name text area
-* Provide the WxM admin Username
-* Paste the API Key (copied above)
-* Click on Save and then Close.
+* Provide the **WxM admin Username**
+* Paste the **API Key (copied above)**
+* Click on **Save** and then Close.
 
 
 ## Part 2: Onboarding CH Agent as WxM User
