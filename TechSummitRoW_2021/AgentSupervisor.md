@@ -69,7 +69,7 @@ By following each of the steps, you will have better understanding of the new Ag
 
 > Watch the following video, where each of the sections and their main options are explained. You will get a better idea of how the Agent Desktop look like and how to use it.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/3bgyMdMGWLU?rel=0" title="Part1: Agent Desktop Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/Xa4j9TVQZKg?rel=0" title="Part1: Agent Desktop Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > **Note:** In this section you don't need to do any tasks. This section was created to familiarize you with the agent interface.
 
