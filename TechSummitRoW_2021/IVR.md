@@ -55,7 +55,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - **IVR Prompts:** We will expect you to configure and upload static prompts shared for use below.
 
-> [Download the IVR Prompts - Static Prompts HERE](https://github.com/wxcctechsummit/wxcclabguides/blob/master/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
+> [Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
 
 - **Lookups, Advanced Scripting, Screen-pops:** We have chosen specific areas of focus for advanced scripting topics. We have more content shared in the bonus sections on how to get other use cases configured.
 
