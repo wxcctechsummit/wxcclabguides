@@ -87,7 +87,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 > Watch the following video to learn the dekstop layout customization process. After the video, you will be able to customize the Agent Desktop with your company logo.
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/btx1ZiQlsU8?rel=0" title="Part 2: Custom Desktop Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/zCFwhqaBPWU?rel=0" title="Part 2: Custom Desktop Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### 1. Download default desktop Layout
