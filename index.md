@@ -10,7 +10,6 @@ Welcome to the 2021 Cisco Webex Contact Center Technical Partner Summit. There a
 
 | Month Created | Year | Event Title                              | Link                                                     |
 |------------------------------------------|---------------|------|----------------------------------------------------------|
-| January       | 2021 | Webex Contact Center Partner Enablement  | [Webex Contact Center Partner Enablement - Sharepoint - Home](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="_blank"} |
 | February        | 2021 | WebexCC Partner Summit Pilot Lab Library           |  [February 2021 Technical Partner Summit Lab Library](LabLibrary.md){:target="_blank"}                                                      |
 | April     | 2021 | WebexCC Partner Summit Gold Lab Library            |  [April 2021 Technical Partner Summit Gold Tenant Lab Library](LabLibrarynew.md){:target="_blank"}                                                       |
 | June        | 2021 | APJC WebexCC Partner Summit            |  [June 2021 Technical Partner Summit Lab Library](TechSummitRoW_2021/HomePage.md){:target="_blank"}                                                      |
