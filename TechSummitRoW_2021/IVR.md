@@ -96,7 +96,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
 
-[Download the IVR Prompts - Static Prompts HERE](https://github.com/wxcctechsummit/wxcclabguides/blob/master/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
+[Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
 
 > **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
 
