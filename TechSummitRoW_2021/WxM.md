@@ -130,7 +130,8 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
  
 ## Part 3: Enable WxM widgets in Desktop Layout
 
->The following video demos how the Agent Desktop Layout JSON has to modify with the appropriate values of the WxM dashboard so that they are loaded into the widgets. The Space ID and the Metrics ID extracted from WxM decide which widget will be loaded for the agent. This lab section assumes that you are familiar with how the agent desktop layout can be modified and applied to a team.
+>The following video shows how the Agent Desktop Layout JSON has to be modified with the appropriate values of the WxM dashboard, so that they are loaded into the widgets. The Space ID and the Metrics ID extracted from WxM decide which widget will be loaded for the agent. 
+>This lab section assumes that you are familiar with how the agent desktop layout can be modified and applied to a team.
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/Njie8PrB6Kk?rel=0" title="Enabling WxM Widgets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -143,7 +144,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 2. Enable Customer Experience Journey Widget
 
-* Login to the **[WxM console](https://cx.cloudcherry.com){:target="_blank"}** with the WxM admin credentials
+* Login to the **[WxM console](https://cx.cloudcherry.com){:target="_blank"}\** with the WxM admin credentials
 * Enter the **WxM admin credentials**.
 * Dismiss informative alerts if any.
 * Navigate to the **Overall Experience** response page.
@@ -163,7 +164,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 4. Check Widgets in Agent Desktop
 
-* Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\ with the recently created agent credentials
+* Login in the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com){:target="_blank"}** with the recently created agent credentials
 * Confirm that the **WxM widgets are visible on Agent Desktop.**
 
 
@@ -173,18 +174,20 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 
 * Login in the Tenant Portal, navigate to Routing Strategies and open the **`WxM_Feedback_Flow`** to see how the Flow Diagram is buit.
-> Do not change the logic of the flow, since the pod is shared with all partners
+**DO NOT change the logic of the flow**, since the pod is shared with all partners
 
 
 * You can also **see the video and the Configure Feedback Node section** to know the configuration steps needed.
 
 
 
->THIS VIDEO EXPLAINS HOW TO CONFIGURE EMAIL/SMS FEEFBACK. For IVR Feedback configuration, follow the steps written below.
->The following video does a quick demo on how the FeedBack node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. Since Email and Chat are not integrated with Flow, Feedback cannot be used for those interactions. 
+>**THIS VIDEO EXPLAINS HOW TO CONFIGURE EMAIL/SMS FEEFBACK.**
+>It does a quick demo on how the Feedback node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. 
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/qGW6lRI7AA0?rel=0" title="Configure Feedback Node" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+>**For IVR Feedback configuration, follow the steps written below.**
 
 ### 1. Configure IVR Feedback Node
 
