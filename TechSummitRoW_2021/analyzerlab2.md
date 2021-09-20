@@ -46,7 +46,7 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 6. Click on the `Details` tab for the report and review the various report configuration objects
 7. Click on the `Settings` button and test the various options outlined in the video like hiding columns or copying data elements.  Direct link to this part of the video below.
 > * [Test Stock Report Options](https://www.youtube.com/embed/r58kwjR3xRY?start=139)
-8. Run the report in the `Tenant Time Zone`
+8. Run the report in the `Tenant Time Zone`. Timezone can be changed at Analyzer home page
 9. Review the Analyzer URL for the report which shows the Tenant ID (tid) and Report ID (rid). The tenant ID is unique to every tenant and very useful for troubleshooting or back end change requests.
 10. This concludes the first lab in Exercise Section 2
 
