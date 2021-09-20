@@ -144,7 +144,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 2. Enable Customer Experience Journey Widget
 
-* Login to the **[WxM console](https://cx.cloudcherry.com){:target="_blank"}\** with the WxM admin credentials
+* Login to the **[WxM console](https://cx.cloudcherry.com){:target="_blank"}** with the WxM admin credentials
 * Enter the **WxM admin credentials**.
 * Dismiss informative alerts if any.
 * Navigate to the **Overall Experience** response page.
@@ -179,15 +179,12 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 * You can also **see the video and the Configure Feedback Node section** to know the configuration steps needed.
 
+* **THE VIDEO EXPLAINS HOW TO CONFIGURE EMAIL/SMS FEEFBACK. For IVR Feedback configuration, follow the steps written below.**
 
-
->**THIS VIDEO EXPLAINS HOW TO CONFIGURE EMAIL/SMS FEEFBACK.**
->It does a quick demo on how the Feedback node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. 
+>The video does a quick demo on how the Feedback node should be implemented such that the caller receives an email with the survey link after completion of the call. The same steps can be followed to trigger an SMS with the survey link to the call ANI. 
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/qGW6lRI7AA0?rel=0" title="Configure Feedback Node" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
->**For IVR Feedback configuration, follow the steps written below.**
 
 ### 1. Configure IVR Feedback Node
 
