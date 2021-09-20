@@ -77,8 +77,10 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 4. Select the `Visualization` icon to navigate to the Visualization repository
 > * <a href="https://www.youtube.com/embed/1T4pWE0meBI?start=72" target="_blank">Visualization</a>
 5. Use the `Search` box to find specific or groups of reports
-6. Report information on card <a href="https://www.youtube.com/embed/1T4pWE0meBI?start=166" target="_blank">Timeslot 2:46</a>
+6. Type 'agent' in the 'Search' box and see list of 'Visualizations' and 'Folders' matching your string
+7. Report information on card <a href="https://www.youtube.com/embed/1T4pWE0meBI?start=166" target="_blank">Timeslot 2:46</a>
 8. Set preferred view characteristics <a href="https://www.youtube.com/embed/1T4pWE0meBI?start=220" target="_blank">Timeslot 3:40</a>
+9. Identify the view which allows administrator sort 'Last Modified' details to identify most recently modified Visualization report
 
 # Exercise 1.3 Access Control
 
