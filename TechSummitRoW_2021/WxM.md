@@ -50,7 +50,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 4. You have **Webex Calling installed** in your mobile phone and supervisor created in Lab 1 from which you can make calls to the contact center
 
-> **RECOMMENDED**: To have more information and undestanding about the WxM solution, follow this **[online training](https://salesconnect.cisco.com/#/mylearningmap/SC_LMS_1689  ){:target="_blank"}**\ first 
+> **RECOMMENDED**: To have more information and undestanding about the WxM solution, follow this **[online training](https://salesconnect.cisco.com/#/mylearningmap/SC_LMS_1689  ){:target="_blank"}** first 
 
 
 
