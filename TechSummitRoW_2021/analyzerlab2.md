@@ -65,10 +65,10 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 5. Following the video instructions, make the recommended changes to the new report.
 > * [Make Changes to Team Details Direct Link](https://www.youtube.com/embed/pG4lcs5vVJs?start=153)
 6. Follow the video guide to make changes as suggested. `Note that in this report you may make any changes you wish since no future labs will use this report`  However, don't take too much time here if falling behind on time.
-7. `Save as` on this report into your personal folder
+7. `Save as` on this report into your Team folder
 8. Change the filter to ensure that no other team data is being shown on your report if needed.
 > * [Add a Filter](https://www.youtube.com/embed/pG4lcs5vVJs?start=259)
-9. Customize the field sizes by reducing the field header names as shown in the video
+9. Customize the field sizes by reducing the field header names as shown in the video to fit all columns within your display if possible
 10. Congratulations.  This completes Lab 2.  Proceed to Lab 3.
 
 ## Next Lab 6: Analyzer Exercises 3: Custom Visualizations
