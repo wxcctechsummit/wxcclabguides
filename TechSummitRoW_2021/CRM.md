@@ -115,6 +115,8 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 - Configure `Softphone Height: 600` and `Softphone Width: 550`. 
 
+- Click **Save**
+
 
 ### 4. Adding Call Center Users To Salesforce Call Center Application
 
