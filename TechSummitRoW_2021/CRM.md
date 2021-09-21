@@ -218,7 +218,7 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 - Add the **Teams** to Desktop layout. Agents associated with that team will get the Salesforce Desktop Layout.
 
 - Upload the custom desktop layout for WebexCC Salesforce Desktop.
-[WebexCC_Salesforce_Desktop.zip](https://github.com/wxcctechsummit/wxcclabguides/blob/08fb8082092b2552ec89e1b42dbe84b12214a805/WebexCC_Salesforce_Desktop.zip)
+[WebexCC_Salesforce_Desktop.zip](https://raw.githubusercontent.com/wxcctechsummit/wxcclabguides/08fb8082092b2552ec89e1b42dbe84b12214a805/)
 
 - Click **Save**. This will create a custom Desktop Layout named Salesforce in WebexCC.
 
