@@ -206,9 +206,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - Open the Portal > Routing Strategy > Flow page.
 	
-- Copy the existing flow `Flow1_<ID>` and edit the copied flow - name it `Flow2_<ID>`
-	
-- Edit the flow to go into flow designer.
+- Copy the existing flow `Flow1_<ID>` and edit the name inside the flow designer window - name it `Flow2_<ID>`
 	
 - Ensure that you configure the Menu steps with a 3 options - for example 1 & 2 to go to a queue and 3 Blind Transfer to external number.
 	
