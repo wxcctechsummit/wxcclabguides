@@ -34,11 +34,10 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 <iframe width="1024" height="576" src="https://youtube.com/embed/-N8PtiDL6Kg?rel=0" title="Analyzer Videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-**Objectives**
+**Instructions**
 - Set User Profile back to All Entry Points
 - Create a new visualization for Realtime Contacts
 
-**Instructions**
 1. Before starting the lab exercise, navigate to the user profile and return your user access for Entry Points to `All` if you had restricted to selected Entry Points in earlier labs
 2. Navigate to Analyzer and `Create` a new report visualization that will be saved in your personal directory.
 > * [Create New Visualization](https://www.youtube.com/embed/-N8PtiDL6Kg?start=101)
@@ -53,10 +52,9 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 <iframe width="1024" height="576" src="https://youtube.com/embed/J7vWAftcGn8?rel=0" title="Exercise 2.1 Execute Stock Reports" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-**Objective**
+**Instructions**
 - Create a new AAR Agent Activity Realtime Report
 
-**Instructions**
 1. Create a new visualization in Analyzer as an `Agent Activity Record`
 2. Set this report as a Realtime Report with a Snapshot refresh rate of 3 seconds
 3. Follow the video guide to add the reporting element columns 
