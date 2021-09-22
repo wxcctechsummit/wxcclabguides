@@ -85,9 +85,13 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 # Lab Section
 
-## Part 1: Setup a Simple Flow and make a test call
+## Part 1: Setup and test a Simple Call Flow
 
 > This lab is designed to help you to make an end to end test call into the contact center. The lab concludes with sending a test call from the caller (customer) to the agent desktop using a Simple Flow.
+
+> **WARNING:** Instructions provided in the video slightly differ from the instructions provided below due to limited amount of PSNT numbers. This lab assumes there are few members of your team which are sharing the same tenant. Each one can create their own call flow and by using menu IVR under the main flow a decision can be made on what Entry Point you want the call to take. e.g. Map DN to `EP_Main_TS` > `Flow_Main_TS`, then branch out to your own Entry Point from Flow_Main_TS through corresponding menu item using "GoTo" activity., in this lab every attendee will need to call into the main flow and, from there, route their calls to personal flows.
+
+> **NOTE:** Instructions provided in sections 1, 2 and 3 need to be performed only by the first person working on this lab. If you're not the first accessing the POD, start this lab from section 4.
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/n_PiLTFcgZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -102,14 +106,11 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 ### 2. Create main inbound Voice Entry Point and Main IVR to reach the Entry Point of team member
 
-> **NOTE:** This section should only be performed by the first attendee, who is configuring the POD.
-This lab assumes there are few members of your team which are sharing the same tenant. Each one can create their own call flow and by using menu IVR under the main flow a decision can be made on what Entry Point you want the call to take. e.g. Map DN to `EP_Main_TS` > `Flow_Main_TS`, then branch out to your own Entry Point from Flow_Main_TS through corresponding menu item using "GoTo" activity.
-
 - Login to Portal and create the main inbound voice Entry Point. (Provisioning > Entry Point / Queue). Create the Entry Point named `EP_Main_TS` if it has not been created yet.
 
-- Mapping the DN to the main Entry Point. In the Portal, under Entry Point Mappings page (Proivisioning > Entry Point Mappings), map the listed DN to `EP_Main_TS`.
+- Mapping the DN to the main Entry Point. In the Portal, under Entry Point Mappings page (Provisioning > Entry Point Mappings), map the listed DN to `EP_Main_TS`.
 
-- Navigate to Routing Strategy > Flow and create new flow `Flow_Main_TS` if it has not been created yet. Follow the steps below to build main flow:
+- Navigate to Routing Strategy: Con > Flow and create new flow `Flow_Main_TS` if it has not been created yet. Follow the steps below to build main flow:
 	- Add Menu activity and name it "Flow_Main_Menu"
 	- Choose IVR prompt "Flow_Main_Menu.wav"
 	- Tick checkbox "Make Prompt Interruptible"
@@ -154,41 +155,62 @@ This lab assumes there are few members of your team which are sharing the same t
 
 - Choose "Go to Entry Point" in "Flow Destination Settings" of GoTo acivity and choose your `EP_<ID>_TS` from the drop-down list. 
 
-- Verify and publish main flow.
+- Select "Validate" to verify the are no errors in the flow.
 
-### 5. Configure and Publish simple flow
+- Select "Publish" to save the call flow.
 
-- Configure the flow `Flow1_<ID>` with a Play prompt - welcome message and Disconnect
+### 5. Create and Publish a simple flow
 
-- Verify and publish your flow.
+- Navigate to Routing Strategy > Flow and select "+ New"
+
+- Rename the flow `Flow1_<ID>`
+
+- Select "Play Message" from the library and connect it to the "Start Flow". Edit its property by changing the label with a name of your preference and by selecting the "Welcome Message".
+
+- Select "Disconnect Contact" from the library and connect it to the "Play Message",
+
+- Select "Validate" to verify the are no errors in the flow.
+
+- Select "Publish" to save the call flow.
 
 ### 6. Configure the Entry Point Routing Strategy
 
-- Configure the Open 24x7 routing strategy time of day on your Entry Point Routing strategy by selecting it on the Routing Strategies > `EP_<ID>_TS`.
+- Navigate to Routing Strategy > Routing > Routing Strategies.
 
-- Map the flow `Flow1_<ID>` you just created above.
+- From the drop-down menu select `EP_<ID>_TS`
+
+- Select "+ New Strategy"
+
+- Name the strategy as `RS_<ID>_TS`, set the "Time Settings" so that it would be Open 24x7, select the default Music on Hold from the dropdown and finally select the flow `Flow1_<ID>` you just created above.
 	
 ### 7. Make a call to test simple flow
 
-- Login to the agent desktop into `Team_<ID>_TS` and go to a ready state.
+- Navigate to the configuration Portal > Provisioning > Entry Point Mappings to obtain the DN number to be called.
 
-- Call the Dial number > Hear main menu and press corresponding digt to go to your Entry Point > Hear the welcome prompt and call should get disconnected.
+- Call the Dial Number > Hear main menu and press corresponding digt to go to your Entry Point > Hear the welcome prompt and call should get disconnected.
 
-### 8. Modify and Publish simple flow
+### 8. Modify and Publish your simple flow
 
-- Go to the flow `Flow1_<ID>` and configure it with a Play prompt - welcome message and queue block and play music block.
+- Navigate to Routing Strategy > Flow and select `Flow1_<ID>`
+
+- Remove the "Disconnect Contact".
 	
-- Configure the Queue Block to `Q_<ID>_TS`. Map the queue inside of the queue block.
+- Select the "Queue Contact" from the library and connect it to the "Play Message". Edit it so to select `Q_<ID>_TS`.
 	
-- Configure the play music to loop, and start 0, end 10 to play 10 seconds of music.
+- Select the "Play Music" from the library and connect it to the "Queue Contact". On the other end connect it to itself to create a loop. Edit it by selecting the "MOH" file, set Start Offset at 0, set Music Duration at 10.
+
+- Go to "Event Flows", for each event select and connect the "End Flow" from the library.
 	
-- Verify and publish the flow.
+- Select "Validate" to verify the are no errors in the flow.
+
+- Select "Publish" to save the call flow.
 
 ### 9. Make a call to test modified flow
 
 - Login to the agent desktop into `Team_<ID>_TS` and go to a ready state.
 
-- Call the Dial number > Hear main menu and press corresponding digt to go to your Entry Point > Available agent gets connected immediately, If the Agent is not available the call is queued and music is played.
+- Call the Dial number > Hear main menu and press corresponding digt to go to your Entry Point > Available agent gets connected immediately (if the Agent is not available the call is queued and music is played).
+
 
 ---
 
