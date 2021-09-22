@@ -21,18 +21,18 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 ### Lab Objective
 
-- This lab is designed to help you configure a Google DialogFlow Agent using CCAI (Contact Center AI) on Webex Contact Center and utilize TTS (Text-to-speech) capabilities.
+- This lab is designed to help you configure a Google DialogFlow Agent using CCAI (Contact Center AI) on Webex Contact Center and utilize TTS (Text-to-Speech) capabilities.
 
 - At the end of this lab, you should have a fully functioning bot front-ending the Webex Contact Center and text to speech prompts.
 
-### Pre-requisites
+### Prerequisites
 
 - You must have a Google Account created.
 
 - A credit/debit card (American Express, Mastercard or Visa) is needed to create the Google Billing account.
-> **Note:** No card will be automatically billed anything, but a billing account needs to be setup to utilize TTS.
+> **Note:** No card will be automatically billed any cost, but a billing account needs to be setup to be able to utilize TTS.
 
-- Lab 2 (IVR Contact Routing Lab) should be completed, as same call flows will be used and expanded upon.
+- Lab 2 ([IVR Contact Routing Lab](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/IVR.html)) should be completed, as same call flows will be used and expanded upon.
 
 
 ### Quick Links
@@ -41,15 +41,15 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**
 
-> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}**
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}**
 
-> Google Cloud Console: **[https://console.cloud.google.com/](https://console.cloud.google.com/){:target="_blank"}**
+> Google Cloud Console: **[https://console.cloud.google.com](https://console.cloud.google.com/){:target="_blank"}**
 
-> Dialogflow: **[https://dialogflow.cloud.google.com/](https://dialogflow.cloud.google.com/){:target="_blank"}**
+> Dialogflow: **[https://dialogflow.cloud.google.com](https://dialogflow.cloud.google.com/){:target="_blank"}**
 
 
 
-## Part 1: CCAI
+## Lab Section
 
 ### 1. Setup the Google Account
 
@@ -80,7 +80,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Click on **CREATE CREDENTIALS** on the top-right. 
 
-- If prompted,choose **Cloud Text-to-Speech API** from the dropdown menu and check the **Application Data** option and **No, I'n not using them** and then click on **NEXT**.
+- If prompted,choose **Cloud Text-to-Speech API** from the dropdown menu and check the **Application Data** option and **No, I'm not using them** and then click on **NEXT**.
 
 - On the **Service account details**, enter a name for the service account, e.g. `TS2021_TTS_SA` and then click on **CREATE AND CONTINUE**. 
 
@@ -104,7 +104,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Choose the **JSON** key type and click on **CREATE**. Make sure you have the key saved locally.
 
-- Click on **Service Accounts** ot the left and follow the same procedure to download the TTS JSON key as well.
+- Click on **Service Accounts** on the left and follow the same procedure to download the TTS JSON key as well.
 
 
 ### Part 2. Setup Dialogflow Agent & Google Connector
@@ -114,7 +114,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Open [Control Hub Admin](https://admin.webex.com/) page.
 
-- Go to **Contact Center** > **Connectors** and click **Set Up** on Google connector**.
+- Go to **Contact Center** > **Connectors** and click **Set Up** on **Google connector**.
 
 - Give a name to the connector, e.g. `techsummit_google_tts` and click on **Upload Authentication Key** to upload the .json file key downloaded before. Click on **Done**.
 
@@ -132,11 +132,11 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Click on **Create an Agent**.
 
-- On the **GOOGLE PROJECT**, give a name to the agent,e.g. `TS_DF_Agent`,  choose the project created in the previous step and click on **CREATE**.
+- On the **GOOGLE PROJECT**, give a name to the agent, e.g. `TS_DF_Agent`,  choose the project created in the previous step and click on **CREATE**.
 
 - On the next page, click on the dots on the top right (next to **CREATE INTENT**) and choose **Upload Intent**.
 
-- Unzip the two intents you downloaded from Control Hub (**escalation.json** & **handled.json**) and upload it here.
+- Unzip the two intents you downloaded from Control Hub (**escalation.json** & **handled.json**) and upload them here.
 
 - Go back to the Control Hub tab and click on **Next**.
 
@@ -153,7 +153,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/0XFQfwzPhzw?rel=0" title="Google CCAI Integration Lab: TTS EWT PIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Open Flow 3 in the Flow Designer from Lab 2 (IVR and Contact Routing).
+- Open Flow 3 in the Flow Designer from Lab 2 ([IVR Contact Routing Lab](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/IVR.html)).
 
 - In the **Success** Play Message block, chose **Enable Text-to-Speech** under Prompt, choose your created connector (e.g. `techsummit_google_tts`) and set language as **en-GB-Standard-A**.
 
@@ -169,7 +169,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Add the TTS connector to it similar to the step above and type "You Estimated Wait Time is \{\{GetQueueInfo.EWT\}\} and your position in Queue is \{\{GetQueueInfo.PIQ\}\}" as message.
 
-- Similarly, for the **Insufficient Information** block, add a a new **Play Message** block and name it **PIQ**.
+- Similarly, for the **Insufficient Information** block, add a new **Play Message** block and name it **PIQ**.
 
 - Again, add the TTS connector and type "Your position in Queue is \{\{GetQueueInfo.PIQ\}\}" as message.
 
