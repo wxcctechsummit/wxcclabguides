@@ -94,11 +94,11 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 ### 1. Verify and upload Audio Prompts
 
-- The audio prompts required for the script build out are wav files. The whole bundle of wav files are given below
+- As indicated in the Lab Objectives, download the bundle of wav files for this lab
 
-[Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
+- Upload the audio files. Go to: Configuration Portal > Routing Strategy > Resources > Audio Files. 
 
-> **Note:** Upload the audio files under > Routing Strategy (from Portal) > Resources > Audio Files.
+> **Note:** [Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
 
 ### 2. Create main inbound Voice Entry Point and Main IVR to reach the Entry Point of team member
 
