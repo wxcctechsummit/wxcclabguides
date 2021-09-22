@@ -243,25 +243,23 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 ### 3. Plug In New Flow into Routing Strategy
 
-- Go to the routing Strategy page > Routing Strategy > `EP_<ID>_TS`
+- Return to the Routing Strategy page and select your Entry Point: Routing > Routing Strategy > `EP_<ID>_TS`
 	
-- Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow2_<ID>`
+- Edit your Entry Point Routing strategy to point to the new flow `Flow2_<ID>`
 
 ### 4. Test the end to end flow
 
-- Login to the agent desktop and go Idle (Not Ready)
+- Login to the agent desktop and set the agent in Idle (Not Ready).
 	
-- Test Queue treatment by going not ready on the agent desktop.
+- Call the main number (either via your **mobile** or through the **supervisor extension**, based on how you configured the Callback Dial) associated to entry point and go into the queue. You should hear the queue message twice and then get the option to request the callback.
 	
-- Call the main number (either via your **mobile** or through the **supervisor extension**, based on how you configured the Callback Dial) associated to entry point and go into the queue. You should hear the queue twice and then have an option to leave a callback.
-	
-- Leave the callback and the call should end.
+- Select the menu option requesting the callback. The call should then end.
 
 ### 5. Execute the Callback
 
-- Have the agent go ready after you left a callback.
+- Set the agent to Ready state, after you left the callback.
 	
-- They should receive the callback call.
+- Both Agent and orginal caller should receive the callback call.
 
 
 ## Part 3: Configuring Outdial
