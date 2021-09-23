@@ -91,7 +91,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 > **WARNING:** Instructions provided in the video slightly differ from the instructions provided below due to limited amount of PSNT numbers. This lab assumes there are few members of your team which are sharing the same tenant. Each one can create their own call flow and by using menu IVR under the main flow a decision can be made on what Entry Point you want the call to take. e.g. Map DN to `EP_Main_TS` > `Flow_Main_TS`, then branch out to your own Entry Point from Flow_Main_TS through corresponding menu item using "GoTo" activity., in this lab every attendee will need to call into the main flow and, from there, route their calls to personal flows.
 
-> **NOTE:** Instructions provided in sections 1, 2 and 3 need to be performed only by the first person working on this lab. If you're not the first accessing the POD, start this lab from section 4.
+> **NOTE:** Instructions provided in sections 1 and 2 need to be performed only by the first person working on this lab. If you're not the first accessing the POD, start this lab from section 3.
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/n_PiLTFcgZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
