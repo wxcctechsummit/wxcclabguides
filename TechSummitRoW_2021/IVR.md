@@ -286,7 +286,6 @@ In this Lab, we will learn the configuration we need to complete for making a si
 ## Part 3: Configuring Outdial
 
 > This lab is designed to complete configuring the outdial capability on the Agent Desktop.
-
 > At the end of the lab, your agent will be able to make an outbound call from the Agent Desktop.
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/NMu9goAQJQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
