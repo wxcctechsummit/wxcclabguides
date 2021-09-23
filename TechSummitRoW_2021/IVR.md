@@ -13,10 +13,10 @@ In this Lab, we will learn the configuration we need to complete for making a si
   - [2. Create main inbound Voice Entry Point and Main IVR to reach the Entry Point of team member](#2-create-main-inbound-voice-entry-point-and-main-ivr-to-reach-the-entry-point-of-team-member)
   - [3. Create an inbound Voice Entry Point and Voice Queue as a team member](#3-create-an-inbound-voice-entry-point-and-voice-queue-as-a-team-member)
   - [4. Add your Entry Point into the chain within the main flow](#4-add-your-entry-point-into-the-chain-within-the-main-flow)
-  - [5. Configure and Publish simple flow](#5-configure-and-publish-simple-flow)
+  - [5. Create and Publish a simple flow](#5-create-and-publish-a-simple-flow)
   - [6. Configure the Entry Point Routing Strategy](#6-configure-the-entry-point-routing-strategy)
-  - [7. Make a call to test simple flow](#7-make-a-call-to-test-simple-flow)
-  - [8. Modify and Publish simple flow](#8-modify-and-publish-simple-flow)
+  - [7. Make a call to test your simple flow](#7-make-a-call-to-test-your-simple-flow)
+  - [8. Modify and Publish your simple flow](#8-modify-and-publish-your-simple-flow)
   - [9. Make a call to test modified flow](#9-make-a-call-to-test-modified-flow)
 - [Part 2: Adding Menu and Queue treatment to the call](#part-2-adding-menu-and-queue-treatment-to-the-call)
   - [1. Copy out the flow and configure the advanced flow](#1-copy-out-the-flow-and-configure-the-advance-flow)
@@ -183,7 +183,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - Name the strategy as `RS_<ID>_TS`, set the "Time Settings" so that it would be Open 24x7, select the default Music on Hold from the dropdown and finally select the flow `Flow1_<ID>` you just created above.
 	
-### 7. Make a call to test simple flow
+### 7. Make a call to test your simple flow
 
 - Navigate to the configuration Portal > Provisioning > Entry Point Mappings to obtain the DN number to be called.
 
