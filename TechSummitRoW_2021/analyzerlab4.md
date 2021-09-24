@@ -80,6 +80,8 @@ Outcome reports in this lab will be
 - 4.2.1_CSR_QueueStatus
 - 4.2.2_CSR_ContactVolume
 
+(NOTE: To execute this lab, you will need to have some realtime sessions running on telephony, email, chat and social channels)
+
 1. Begin by running a previously created report named `4.1.1_CSR_QueueStatus` to review the report information
 > * <a href="https://youtube.com/embed/47j7YKu7f7I?start=84" target="_blank">Start at timestamp</a>
 2. Edit the report to add reporting functionality 
