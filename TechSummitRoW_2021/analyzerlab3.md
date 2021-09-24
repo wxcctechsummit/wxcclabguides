@@ -53,7 +53,7 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 
 
 **Instructions**
-- Create a new AAR Agent Activity Realtime Report
+- Create a new AAR Agent Activity Realtime Report (NOTE: You probably only see telephony channel type report since earlier sections cover telephony only)
 
 1. Create a new visualization in Analyzer as an `Agent Activity Record`
 2. Set this report as a Realtime Report with a Snapshot refresh rate of 3 seconds
@@ -61,8 +61,7 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 > * [Add New Column Data](https://www.youtube.com/embed/J7vWAftcGn8?start=88)
 4. Once done, `Save` the new report as `3.2_AAR_AgentState`
 5. `Review` the report by doing a preview and if all is good, this exercise is complete 
-NOTE: You probably see telephony channel type unless you have created other channel type agents as well.
-7. Move to the next and last exercise
+6. Move to the next and last exercise
 
 
 # Exercise 3.3 - Create Chat Reports with Interval
