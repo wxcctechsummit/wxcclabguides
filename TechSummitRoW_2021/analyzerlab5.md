@@ -28,6 +28,8 @@ This lab is designed to introduce you to the dashboards available in Analyzer.  
 2. Admin or supervisor credential with Analytics access in user profile
 3. Make sure to make few test calls and answered by the agent the day you attempting this lab (to ensure we have some data to analyze)
 
+NOTE: You may not see report outputs as shown in the videos which has some channel sessions running in the background
+
 # Exercise 5.1 Stock Dashboards
 
 <iframe width="1024" height="576" src="https://youtube.com/embed/vfMlNmVZcQM?rel=0" title="Webex CC Partner Summit Lab 6: Analyzer Lab 5.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
