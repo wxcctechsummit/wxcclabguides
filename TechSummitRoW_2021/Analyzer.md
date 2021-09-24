@@ -22,7 +22,7 @@ title: "Lab 6: Analyzer Exercises 1.1 to 1.3"
 This lab was created with existing Supervisor Profiles as well as Team designations.  The content may make reference to this or direct the user to use these designations to make changes as part of the learning process and lab goals.  Additionally, there may be previous lab dependencies as some labs will build on the completion of other labs so it is recommended to complete these labs in order.
 
 **Example:** 
-- Lab may state to change the Supervisor Profile for your student number.  Supervisor Team 3 for example.  This profile will not exist on your Gold Tenant unless you create the profile.
+- Lab may state to change the Supervisor Profile for your student number.  Supervisor Team 3 for example.  This profile will not exist on your allocated tenant unless you create the profile.
 
 `Resolution` of these designations can be accomplished with some of these suggestions which should be done prior to going through these labs.
 - Previous videos specified creating `Team1_TS` and if those were done then supplement the training video with using a team you created earlier.
@@ -33,7 +33,7 @@ This lab was created with existing Supervisor Profiles as well as Team designati
 
 ### OR
 - Ignore or overlook the specific lab instructions as you see fit.  If this option is chosen, it may mean limited success with some labs that may build on the existence of the team and supervisor profiles
-- Lab videos are still viable learning regardless of whether your GOLD tenant has these configurations
+- Lab videos are still viable learning regardless of whether your allocated tenant has these configurations
 
 
 ## Lab Objective
