@@ -80,7 +80,7 @@ Outcome reports in this lab will be
 - 4.2.1_CSR_QueueStatus
 - 4.2.2_CSR_ContactVolume
 
-(NOTE: To execute this lab, you will need to have some realtime sessions running on telephony, email, chat and social channels)
+NOTE: To execute this lab, you will need to have some realtime sessions running on telephony (with consult), email, chat and social channels
 
 1. Begin by running a previously created report named `4.1.1_CSR_QueueStatus` to review the report information
 > * <a href="https://youtube.com/embed/47j7YKu7f7I?start=84" target="_blank">Start at timestamp</a>
@@ -102,7 +102,7 @@ Outcome reports in this lab will be
 13. Choose a call that was transferred by looking for a `consult`
 > * If this doesn't exist, you may decide to create some consult transfer calls
 15. Watching the video, as specified, click on the Agent Name option under fields.  This takes you to the first agent name.
-16. Click on the Field called Second Agent Name to see who this call was consult transferred to
+16. Click on the Field called 'Second Agent Name' to see who this call was consult transferred to
 17. Experiment with Drill-down and export or open in a new tab
 18. `Next` Time to jump to the next and last part of this exercise
 > * <a href="https://youtube.com/embed/47j7YKu7f7I?start=637" target="_blank">Start at timestamp</a>
