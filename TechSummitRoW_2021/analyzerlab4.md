@@ -58,7 +58,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 17. `Save` this new report as `4.1.2_AAR_AgentState`
 18. `Next` Edit the newly created report in Lab 3 named `3.1_CSR_Contacts` 
 > * <a href="https://youtube.com/embed/U2I5rw7sELU?start=545" target="_blank">Start at timestamp</a>
-20. `Add a Filter` using Final Queue Name and set a Regular Expression
+20. `Add a Filter` using Final Queue Name and set a Regular Expression since all telephony queues starts with 'QV'
   - Use the expression `QV_+` as the wildcard.  
   - Refer <a href="https://regex101.com/" target="_blank">REGEX</a> to learn and test your regular expressions 
 21. `Save` the expression then choose `Save as` and call this new report `4.1.3_CSR_Contacts'
