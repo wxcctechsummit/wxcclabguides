@@ -40,7 +40,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 1. Create a CSR report and set it as a Realtime report with a refresh set to 3 seconds
 2. On the Row Segment set Final Queue Name.  `Instructions are also listed on screen in the videos`
 3. Drag Connected Count to `Profile Variables` 
-4. Drag Contact Session ID to Profile Variables and set a `filter` here for calls that are Parked
+4. Drag Contact Session ID to Profile Variables and set a `filter` here for calls that are parked. If you cannot find 'parked' option in the drop-down menu, type 'parked' under Field
 5. Drag Realtime Update Timestamp to `Profile Variables` and set for the `Minimum Value of`
 6. Right click and `create a new formula` on the Realtime Update Timestamp
 7. The new formula should be named LongestDuration and the expression should be `Current Timestamp` - `Minimum Realtime Update Timestamp`
