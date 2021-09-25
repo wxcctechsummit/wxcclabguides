@@ -76,8 +76,8 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 1. Create a new visualization using CSR report data. `CSR is Customer Session Record`
 2. Set this as a `Monthly` report
 3. Follow the instructions in the video to complete the fields.  There are two fields to be added to this report:
- 3.1. Select 'Contact Session ID' and select 'Count of Contact Session ID' to represent total calls. Rename header as "Total Calls'
- 3.2. Select 'Contact Session ID' again and select 'Count of Contact Session ID' but this time add 'Termination Type' as filter an equal to 'abandon' to capture total abandon calls`. Rename header as "Abandon Calls'
+3.1.  Select 'Contact Session ID' and select 'Count of Contact Session ID' to represent total calls. Rename header as "Total Calls'
+3.2 Select 'Contact Session ID' again and select 'Count of Contact Session ID' but this time add 'Termination Type' as filter an equal to 'abandon' to capture total abandon calls`. Rename header as "Abandon Calls'
 4. Change 'Output Type' to 'Line Chart`
 5. When done, save this chart as `3.3_CSR_ContactVolume`
 6. This section is done.  When complete, move to Lab exercises 5.
