@@ -42,6 +42,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
   - [3. Crete Skill Profile](#3-create-skill-profile)
   - [4. Add skill profile to User/ Agent](#4-add-skill-profile-to-user-agent)
   - [5. Modify the Previous Flow into a new Flow 4](#5-modify-the-previous-flow-into-a-new-flow-4)
+  - [6. Update the Entry Point Routing Strategy](#6-update-the-entry-point-routing-strategy)
 
 
 
@@ -535,6 +536,18 @@ Execute the Test:
 	> `Skillset >= 3`
 
 	> Remove the requirement of the VIP Customer skill.
+
+### 6. Update the Entry Point Routing Strategy
+
+- Navigate to Routing Strategy > Routing > Routing Strategies.
+
+- From the drop-down menu select `EP_<ID>_TS`.
+
+- Select the existing strategy.
+
+- From the dropdown menu select Flow4<`ID'> and click save.
+
+- Click on the 3-dots icon for the current strategy and select 'Delete', the confirm the deletion.
 
 ---
 
