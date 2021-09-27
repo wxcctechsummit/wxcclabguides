@@ -329,8 +329,9 @@ In this Lab, we will learn the configuration we need to complete for making a si
 	
 - You should see the Outdial button and the agent is now able to make an outdial call.
 	
-- Test it by calling the Cisco Tollfree Number - `+18005536387` –Note: This will actually connect you to a live toll free number for Cisco Support!
-	
+- Test it by calling the Cisco Tollfree Number - `+18005536387`, as an example –Note: This will actually connect you to a live toll free number for Cisco Support!
+> **Note:** Please consider the dialing number and the POD you use for testing. For PODs 1-30 use US number to dial, for PODs 31-45 us UK numbers to dial. Intenational dialing is restricted in the Lab PODs.
+
 - You should have all the connected call features pop on the agent desktop once the call is established and the call should land on your Calling endpoint.
 
 
