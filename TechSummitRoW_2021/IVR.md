@@ -28,7 +28,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
   - [1. Verify/create the Outdial Entry Point and Queue](#1-verifycreate-the-outdial-entry-point-and-queue)
   - [2. Configure the Agent profile](#3-create-the-outdial-queue-routing-strategy)
   - [3. Create the Outdial Entry Point Routing Strategy](#2-create-the-outdial-entry-point-routing-strategy)
-- [Part 4: HTTP Requests](#part-4-advanced-scripting-steps-http-requests)
+- [Part 4: HTTP Requests](#part-4-advanced-scripting-steps-for-http-requests)
   - [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advance-flow)
   - [2. Enhance the existing flow with an HTTP Request](#2-enhance-the-existing-flow-with-an-authentication-piece)
   - [3. Configure the Collect Digits block](#3-configure-the-collect-digits-block)
@@ -334,7 +334,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 ---
 
-## Part 4: Advanced Scripting Steps - HTTP Request
+## Part 4: Advanced Scripting Steps for HTTP Requests
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/gXhVTkGazmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
