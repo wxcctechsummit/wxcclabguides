@@ -8,7 +8,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 # Table of Contents
 
-- [Part 1: Setup a Simple Flow and make a test call](#part-1-setup-a-simple-flow-and-make-a-test-call)
+- [Part 1: Setup a Simple Flow and make a test call](#part-1-setup-and-test-a-fimple-fall-flow)
   - [1. Verify and upload Audio Prompts](#1-verify-and-upload-audio-prompts)
   - [2. Create main inbound Voice Entry Point and Main IVR to reach the Entry Point of team member](#2-create-main-inbound-voice-entry-point-and-main-ivr-to-reach-the-entry-point-of-team-member)
   - [3. Create an inbound Voice Entry Point and Voice Queue as a team member](#3-create-an-inbound-voice-entry-point-and-voice-queue-as-a-team-member)
@@ -29,7 +29,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
   - [2. Configure the Agent profile](#3-create-the-outdial-queue-routing-strategy)
   - [3. Create the Outdial Entry Point Routing Strategy](#2-create-the-outdial-entry-point-routing-strategy)
 - [Part 4: HTTP Requests](#part-4-advanced-scripting-steps-for-http-requests)
-  - [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advance-flow)
+  - [1. Copy out the flow and configure the advanced flow 2](#1-copy-out-the-flow-and-configure-the-advance-flow-2)
   - [2. Enhance the existing flow with an HTTP Request](#2-enhance-the-existing-flow-with-an-authentication-piece)
   - [3. Configure the Collect Digits block](#3-configure-the-collect-digits-block)
   - [4. Configure the custom variables and the HTTP Request Block](#4-configure-the-custom-variables-and-the-http-request-block)
