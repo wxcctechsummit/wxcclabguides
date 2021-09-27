@@ -19,7 +19,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
   - [8. Modify and Publish your simple flow](#8-modify-and-publish-your-simple-flow)
   - [9. Make a call to test modified flow](#9-make-a-call-to-test-modified-flow)
 - [Part 2: Adding Menu and Queue treatment to the call](#part-2-adding-menu-and-queue-treatment-to-the-call)
-  - [1. Copy out the flow and configure the advanced flow](#1-copy-out-the-flow-and-configure-the-advance-flow)
+  - [1. Copy out the flow and configure the advanced flow](#1-copy-out-the-flow-and-configure-the-advanced-flow)
   - [2. Configure the Queue Treatment loop and Opt Out and Callback steps](#2-configure-the-queue-treatment-loop-and-opt-out-and-callback-steps)
   - [3. Plug In New Flow into Routing Strategy](#3-plug-in-new-flow-into-routing-strategy)
   - [4. Test the end to end flow](#4-test-the-end-to-end-flow)
