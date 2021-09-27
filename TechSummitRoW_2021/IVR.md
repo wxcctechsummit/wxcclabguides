@@ -309,7 +309,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 - Go Routing Strategy > Choose the One you just setup OR the default Outdial Entry Point-1
 	
 - In Call Controll section set the Outdial Queue to 'Outdial Queue-1' 
-> **Note:** Control script option was removed from available settings to change.
+> **Note:** Control script option (as on video) was removed from available settings to change.
 	
 - Ensure the strategy time of day setting is correctly open 24x7 and marked default.
 
