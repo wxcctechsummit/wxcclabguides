@@ -446,11 +446,11 @@ Execute the Test:
 
 ---
 
-## Part 5: Skills Based Routing - Contact Priority - Skill Relaxation
+## Part 5: Skills Based Routing
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/b-KyHUia-Bk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### 1.Create new Queue with Skill based routing and Add team
+### 1. Create new Queue with Skill based routing and Add team
 
 - Open portal > Provisioning > Entry point/Queue > Queue
 	
@@ -474,7 +474,7 @@ Execute the Test:
 | Maximum Time in Queue      | 600                  |
 | Time Zone                  | Default              |
 
-### 2.Create Skill Definitions
+### 2. Create Skill Definitions
 
 - Open portal > Provisioning > Skill > Skill Definition
 	
@@ -484,7 +484,7 @@ Execute the Test:
 
 > **Note:** We are using "TEXT Skills" in this SBR lab so that you can directly target agents with a specific variable from flow. This gives powerful capabilities as you will see later.
 
-### 3.Crete Skill Profile
+### 3. Create Skill Profile
 
 - Open portal > Provisioning > Skill > skill Profile
 	
