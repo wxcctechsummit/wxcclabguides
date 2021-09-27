@@ -501,7 +501,7 @@ Execute the Test:
 
 ### 5. Modify the Previous Flow into a new Flow 4
 
-- Open Flow > Copy Existing Flow2<`ID`> - Rename it as Flow4<`ID'>.
+- Open Flow > Copy Existing `Flow2<ID>` - Rename it as `Flow4<ID>`.
 	
 - Create a new variable `skill`. 
 	
@@ -545,7 +545,7 @@ Execute the Test:
 
 - Select the existing strategy.
 
-- From the dropdown menu select Flow4<`ID'> and click save.
+- From the dropdown menu select `Flow4<ID>` and click save.
 
 - Click on the 3-dots icon for the current strategy and select 'Delete', the confirm the deletion.
 
