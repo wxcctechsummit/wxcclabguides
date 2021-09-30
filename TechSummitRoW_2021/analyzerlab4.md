@@ -41,6 +41,7 @@ There are some changes required (compared to what's presented in the video) to b
 a. You have to use Customer Activity Record (CAR) depository instead of Customer Session Record (CSR); and
 b. You have to use Activity Start Timestamp depository instead of Realtime Contact Timestamp to create the Formula
 
+Steps 1 to 14 are updated and different from video
 1. Create a CAR report and set it as a Realtime report with a refresh set to 3 seconds
 2. On the Row Segment select Queue Name.
 3. Drag Contact Session ID to Profile Variables and set a `filter` here for calls that are connected. If you cannot find 'connected' option in the drop-down menu, type 'connected' under Field
@@ -55,6 +56,7 @@ b. You have to use Activity Start Timestamp depository instead of Realtime Conta
 12. On the `left` column, add a filter and use "Activity State'
 13. In the filter under the `Fields` section, set the "Activity State' to 'park' and 'connected' to display only these activity states in the report
 14. Be sure to save the LongestDuration as a global variable
+
 15. `Next` we will be opening a newly created report from Lab 3 - 3.2_AAR_AgentState 
 > * <a href="https://youtube.com/embed/U2I5rw7sELU?start=476" target="_blank">Start at timestamp</a>
 16. Use the global filter created in the previous report to filter your team in this report
