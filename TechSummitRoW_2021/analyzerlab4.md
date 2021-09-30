@@ -35,24 +35,27 @@ This lab is designed to build upon previous labs where custom reports were creat
 
 ## Instructions
 - Create a Queue Performance Report
-- Add report values like number of connected calls for a queue, number of calls waiting in queue and longest duration for calls in queue
+- Add report values like number of connected calls for a queue, number of calls waiting in queue and longest duration for calls in queue or connected
+## NOTE:
+There are some changes required (compared to what's presented in the video) to build the Queue Performance Report:
+a. You have to use Customer Activity Record (CAR) depository instead of Customer Session Record (CSR); and
+b. You have to use Activity Start Timestamp depository instead of Realtime Contact Timestamp to create the Formula
 
-1. Create a CSR report and set it as a Realtime report with a refresh set to 3 seconds
-2. On the Row Segment set Final Queue Name.  `Instructions are also listed on screen in the videos`
-3. Drag Connected Count to `Profile Variables` 
+1. Create a CAR report and set it as a Realtime report with a refresh set to 3 seconds
+2. On the Row Segment select Queue Name.
+3. Drag Contact Session ID to Profile Variables and set a `filter` here for calls that are connected. If you cannot find 'connected' option in the drop-down menu, type 'connected' under Field
 4. Drag Contact Session ID to Profile Variables and set a `filter` here for calls that are parked. If you cannot find 'parked' option in the drop-down menu, type 'parked' under Field
-5. Drag Realtime Update Timestamp to `Profile Variables` and set for the `Minimum Value of`
-6. Right click and `create a new formula` on the Realtime Update Timestamp
-7. The new formula should be named LongestDuration and the expression should be `Current Timestamp` - `Minimum Realtime Update Timestamp`
-
-
-8. Hide the Minimum Realtime Contact Timestamp created in step 6.
-9. Save the report as `4.1_CSR_QueueStatus`
-10. Set any columns that require timestamps with the appropriate formatting
-11. On the `left` column, add a filter and use Final Queue Name
-12. In the filter under the `Fields` section, set the Queue names that should appear in the report
-13. Be sure to save the LongestDuration as a global variable
-14. `Next` we will be opening a newly created report from Lab 3 - 3.2_AAR_AgentState 
+5. Drag Activity Start Timestamp to `Profile Variables` and set for the `Minimum Value of`
+6. Right click and `create a new formula` on the Activity Start Timestamp
+7. The new formula should be named LongestDuration and the expression should be `Current Timestamp` - `Minimum Activity Start Timestamp`
+8. Hide the Minimum Activity Start Timestamp created in step 5
+9. At the 'Modules' tab, Click on 'Add Filter' and search for "Activity State'. Drag it to the center and select 'park' and 'connected' in the field.
+10. Save the report as `4.1_CSR_QueueStatus`
+11. Set any columns that require timestamps with the appropriate formatting
+12. On the `left` column, add a filter and use "Activity State'
+13. In the filter under the `Fields` section, set the "Activity State' to 'park' and 'connected' to display only these activity states in the report
+14. Be sure to save the LongestDuration as a global variable
+15. `Next` we will be opening a newly created report from Lab 3 - 3.2_AAR_AgentState 
 > * <a href="https://youtube.com/embed/U2I5rw7sELU?start=476" target="_blank">Start at timestamp</a>
 16. Use the global filter created in the previous report to filter your team in this report
 17. `Save` this new report as `4.1.2_AAR_AgentState`
