@@ -49,12 +49,12 @@ Steps 1 to 14 are updated with latest instructions. Please ignore steps provided
 6. Right click and `create a new formula` on the Activity Start Timestamp
 7. The new formula should be named LongestDuration and the expression should be `Current Timestamp` - `Minimum Activity Start Timestamp`
 8. Hide the Minimum Activity Start Timestamp created in step 5
-9. At the 'Modules' tab, Click on 'Add Filter' and search for "Activity State'. Drag it to the center and select 'park' and 'connected' in the field.
-10. Save the report as `4.1_CSR_QueueStatus`
+9. On the `left` column, add a filter and use "Activity State'
+10. In the filter under the `Fields` section, set the "Activity State' to 'park' and 'connected' to display only these activity states in the report
 11. Set any columns that require timestamps with the appropriate formatting
-12. On the `left` column, add a filter and use "Activity State'
-13. In the filter under the `Fields` section, set the "Activity State' to 'park' and 'connected' to display only these activity states in the report
-14. Be sure to save the LongestDuration as a global variable
+12. Save the report as `4.1_CSR_QueueStatus`
+13. Be sure to save the LongestDuration as a global variable
+14. Make some test calls to validate your report
 
 15. `Next` we will be opening a newly created report from Lab 3 - 3.2_AAR_AgentState 
 > * <a href="https://youtube.com/embed/U2I5rw7sELU?start=476" target="_blank">Start at timestamp</a>
