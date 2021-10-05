@@ -39,7 +39,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 ## NOTE:
 There are some changes required (compared to what's presented in the video) to build the Queue Performance Report:
 a. You have to use Customer Activity Record (CAR) depository instead of Customer Session Record (CSR); and
-b. You have to use Activity Start Timestamp depository instead of Realtime Contact Timestamp to create the Formula
+b. You have to use Activity Start Timestamp instead of Realtime Contact Timestamp to create the Formula
 
 Steps 1 to 14 are updated and different from video
 1. Create a CAR report and set it as a Realtime report with a refresh set to 3 seconds
