@@ -41,7 +41,7 @@ There are some changes required (compared to what's presented in the video) to b
 a. You have to use Customer Activity Record (CAR) depository instead of Customer Session Record (CSR); and
 b. You have to use Activity Start Timestamp instead of Realtime Contact Timestamp to create the Formula
 
-Steps 1 to 14 are updated and different from video
+Steps 1 to 14 are updated with latest instructions. Please ignore steps provided in video
 1. Create a CAR report and set it as a Realtime report with a refresh set to 3 seconds
 2. On the Row Segment select Queue Name.
 3. Drag Contact Session ID to Profile Variables and set a `filter` here for calls that are connected. If you cannot find 'connected' option in the drop-down menu, type 'connected' under Field
