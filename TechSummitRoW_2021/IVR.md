@@ -291,7 +291,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 > At the end of the lab, your agent will be able to make an outbound call from the Agent Desktop.
 
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/NMu9goAQJQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/DN7mm81hHdQ?rel=0" title="WxCC Lab #2 Part 3: Configuring Outdial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
 
 ### 1. Verify/create the Outdial Entry Point and Queue
