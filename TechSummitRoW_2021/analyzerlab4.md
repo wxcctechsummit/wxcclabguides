@@ -30,8 +30,7 @@ This lab is designed to build upon previous labs where custom reports were creat
 
 # Exercise 4.1 Using Formulas and Filters
 
-
-<iframe width="1024" height="576" src="https://youtube.com/embed/U2I5rw7sELU?rel=0" title="Exercise 4.1 Using Formulas and Filters" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/3dB4XrZk384?rel=0" title="WxCC Lab #6 Part 4.1: Using Formulas and Filters" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Instructions
 - Create a Queue Performance Report
