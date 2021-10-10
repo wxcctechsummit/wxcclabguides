@@ -300,9 +300,9 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 ## 1. Login to devportal
 - Login with the POD admin account to https://devportal.wxcc-us1.cisco.com/.
 
-- Go to > Documentation > API Reference > Contact Center.
+- Go to > Documentation > API Reference.
 
-- Go to the Get Tasks section.
+- Go to the Tasks section.
 
 - Fetch all the tasks using the "From Date/time" in Epoch milliseconds.
 
