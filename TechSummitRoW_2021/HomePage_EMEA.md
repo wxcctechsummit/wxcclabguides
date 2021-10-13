@@ -13,7 +13,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 
 | Date       | Session                                | Corresponding Lab                                                                                      
 | ---------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------ 
-| Doc       | Webex Contact Center Partner Enablement. > **NOTE:** It is just for reference. The document explains how to order a new Gold Tenant in November.  | [Webex Contact Center Partner Enablement - Sharepoint - Home](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="_blank"} |
+| Doc       | Webex Contact Center Partner Enablement. (It is just for reference. The document explains how to order a new Gold Tenant in November) | [Webex Contact Center Partner Enablement - Sharepoint - Home](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="_blank"} |
 | Week 1 | Lab 1 - Control Hub & Admin Portal  | [Control Hub & Admin Portal Lab](CH.md){:target="\_blank"}                               
 | Week 2 | Lab 2 - IVR Contact Routing         | [IVR Contact Routing Lab](IVR.md){:target="\_blank"}                                      
 | Week 2 | Lab 3 - Agent and Supervisor Desktops               | [Agent and Supervisor Desktops Lab](AgentSupervisor.md){:target="\_blank"}  
