@@ -106,7 +106,8 @@ Output: Base64
 
 Headers after HMAC encoding: 
 
-    Authorization: `EnCoDeDaPiKeY=`
+    Authorization: `EnCoDeDaPiKeY=`;tenantId=xx 
+    ** xx is the tenant ID. To identify your respective tenantID, pls open any one of the Analyzer reports and in the URL you will have the tId
         
     From: `userID@portal-controlhub.com`
 
