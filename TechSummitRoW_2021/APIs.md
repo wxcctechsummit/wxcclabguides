@@ -20,8 +20,6 @@ title: "Lab 8: # Webex Contact Center APIs"
 - [Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings](#part-3-new-webex-contact-center-apis-retrieving-tasks-and-call-recordings)
   * [1. Login to developer.webex.com > Documentation > API Reference > Contact Center](#1-login-to-developerwebexcom--documentation--api-reference--contact-center)
   * [2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in](#2-fetch-the-tasks-from-yesterday-or-the-last-week---depending-on-the-number-of-contacts-that-came-in)
-  * [3. Use the following Body for a POST Captures query. Ensure you have includeSegments set to true](#3-use-the-following-body-for-a-post-captures-query-ensure-you-have-includesegments-set-to-true)
-  * [4. Use the links from the response to download the recordings](#4-use-the-links-from-the-response-to-download-the-recordings)
 
 
 # Introduction
