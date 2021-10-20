@@ -294,87 +294,107 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 
 
-# Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings
+# Part 3: New Webex Contact Center APIs: Retrieving Tasks,Queue Statistics
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jThcPefuzTA?rel=0" title="WxCC Lab #8 Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## 1. Login to devportal
-- Login with the POD admin account to https://devportal.wxcc-us1.cisco.com/.
+- Login with the POD admin account to https://developer.webex-cx.com/.
 
 - Go to > Documentation > API Reference.
 
+## 2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in.
+
 - Go to the Tasks section.
+
+- Click on GET Tasks  > Try Out
 
 - Fetch all the tasks using the "From Date/time" in Epoch milliseconds.
 
 - To get the Epoch time use [epochconverter](https://www.epochconverter.com)
 
-## 2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in. 
-
-- Follow the steps outlined in the video to fetch all the contact information of tasks from yesterday.
+- Enter the Org ID and channel type > Press Run
 
 The same request can be drafted on Postman using your personal Bearer Token.
 
-Example of a GET Task: 
+Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks?channelTypes=email%2Ctelephony&from={EPOCHTIME}&to={EPOCHTIME}&pageSize=100&orgId={ORGID}____
 
-> https://webexapis.com/v1/contactCenter/tasks?from=__&channelTypes=telephony&orgId=____
+- Create a new collection in Postman
 
-> curl --location --request GET '/tasks?channelTypes=&from=&to=&pageSize=&orgId=' \
---header 'Authorization: Bearer YOUR_AUTHORIZATION_TOKEN' 
+- Under that add a request
 
-> `Authorization:` `Bearer your-bearer-token-from-dev-portal`
+-  Enter the request URL copied from the developer portal. Make changes to the from and to times and the org ID to refelect your tenant.
 
-## 3. Use the following Body for a POST Captures query. Ensure you have includeSegments set to true
+- Under Headers enter the _Key:_ _Authorization_ and _Value _: _Bearer 'Your Bearer token copied from the developer portal'_
 
-POST https://webexapis.com/v1/contactCenter/captures/query
+- Click on Send
 
-```javascript
-{
-        "orgId": "93912f11-6017-404b-bf14-5331890b1797",
-        "taskIds": ["6a64d539-4653-4c48-98d7-78fb66c1bc1d", "9dd4a070-4047-46ac-abec-942f48f5535e"],
-        "urlExpiration": 30,
-        "includeSegments": true
-    }
+## 3. Fetch Queue Statistics
 
-```
+- Go to the Queues section.
 
-## 4. Use the links from the response to download the recordings
+- Click on List Queues > Try Out
 
-- If you are doing this programmatically, iterate over all the call recording objects and send a GET request to the call recording target.
+- Enter the ordID and the channel type
+
+- Click on Run
+
+To try this out in Postman follow the steps outlined in the previous example
 
 
------- 
 
 ## Addendum
 
 - To develop applications with the new APIs, you must build an integration with Webex.
 
-- See **[Contact Center Dev Portal Docs](https://devportal.wxcc-us1.cisco.com/)** for all the details. 
+- See **[Contact Center Dev Portal Docs](https://developer.webex-cx.com/documentation/getting-started)** for all the details. 
 
 Here is a summary: 
 
-- Got to: developer.webex.com > My Webex Apps > Integration > New 
+**API Access- Registering an Application(Early Access)**
 
-- Check the scopes : `cjp:config_read` (for WxCC) and `cjp:analyzer_read` (For hybrid)
+Submit a Request to Obtain Access
 
-Example: Getting Access – Bearer Token
+- The New  Webex Contact Center APIs are accessed by using Webex OAuth2
 
-> Your App Completes the OAuth2 authorization to retrieve the Bearer Token
+- OAuth2 by design, requires a client ID, clinet secret, callback URL(Redirect URL)
+
+- Fill up the Smartsheet(https://app.smartsheet.com/b/form/7af787e752834bbfba604bfc85a5eff1) with your details to register your app with webex contact center
+
+- Use the client ID, client secret, callback URL to obtain access_token for your org.Use the Access token to hit the API
+
+- Use the refresh_token before it expires to renew your access_token
+
+**OAuth2 Mechanism - Implications**
+
+- With the OAuth2 support- Will require a "One Time Onboarding" User interface to obtain access to an org
+
+- "Login with Webex" > Button to access an org
+
+- You will register an App with us and use it for N orgs
+
+- Have each Org administrator login into your App at least once to   obtain the tokens
+
+- This is a "Required Onboarding " Process
+
+- Once you obtain an Org's access_token and refresh_token, you can access their data
+
+**OAuth2 Access Token Flow**
+
+- Your App redirects to authorize with Webex (GET)
 
 1. GET `https://webexapis.com/v1/authorize?client_id=______&response_type=code&redirect_uri=_https://your-app/auth___&scope=cjp:config_read&state=set_state_here`
 
-application/x-www-form-urlencoded
-
-> Redirect sent to your App.
+- Admin user COMPLETES login.Redirect back to your App (GET)
 
 2. GET https://your-app/auth?code=___unique_code_sent
 
--  Redirect back to Your App with the code parameter (GET)
--  Authorize (GET)
+-  Your App usess this code - API Endpoint - and then sends a POST request back to Webex
 
-> Request Access Token AND subsequent Refresh Tokens with the Code (POST)
+- Request Access Token AND/OR Refresh Tokens (POST)
 
-`POST https://webexapis.com/v1/access_token`
+3. POST https://webexapis.com/v1/access_token`
+   application/x-www-form-urlencoded
 
 ```javascript
 {"access_token":"ZDI3MGEyYzQtNmFlNS00NDNhLWFlNzAtZGVjNjE0MGU1OGZmZWNmZDEwN2ItYTU3",
@@ -385,7 +405,7 @@ application/x-www-form-urlencoded
 
 > Expiry in seconds and required x-www-form-urlencoded values include
 
-> grant_type
+> grant_type = _authorisation_code OR refresh_token_
 
 > client_id
 
