@@ -150,7 +150,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 * Navigate to the **Overall Experience** response page.
 * Click the Vertical Ellipsis on the right side of the screen and **Export To Cisco Contact Center**
 * From the information pane, **copy the Space Id** and update this in the **Customer Experience Journey section** of the layout JSON.
-* Since Customer Experience Journey, does not have metricsId **you can use the space Id copied here as the metrics Id**. Else you can the metrics Id of Customer Experience Analytics and paste it here (which you will get in the below steps)
+* Since Customer Experience Journey, does not have metricsId **you can use the space Id copied here as the metrics Id**. Else you can copy the metrics Id of Customer Experience Analytics and paste it here (which you will get in the below steps)
 
 ### 3. Enable Customer Experience Analytics Widget
 
