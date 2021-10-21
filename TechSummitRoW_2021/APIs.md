@@ -339,7 +339,35 @@ Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks?channelTypes=ema
 
 To try this out in Postman follow the steps outlined in the previous example
 
+## 3. Create a Team
 
+- Go to the Teams section.
+
+- Click on Create Teams > Try Out
+
+- Enter the desktopLayoutID, siteID,name,OrgnaisationID,teamstatus,teamtype
+  The ID can be obtained by login in to the contact centre portal
+  
+- The request body will look like this
+  
+{
+  "desktopLayoutId": "AXoO4PwqeaoutNTWPuSv",
+  "siteId": "a71d8da5-fce4-48a5-a20e-e25f8600a13e",
+  "active": false,
+  "name": "API1",
+  "organizationId": "0fcc295b-8733-4e7b-b708-8d410a928e53",
+  "teamStatus": "IN_SERVICE",
+  "lastUpdatedTime": 0,
+  "skillProfileId": "",
+  "createdTime": 0,
+  "teamType": "AGENT",
+  "version": 0,
+  "multiMediaProfileId": ""
+}
+
+- Click on Run
+
+To try this out in Postman follow the steps outlined in the previous example
 
 ## Addendum
 
