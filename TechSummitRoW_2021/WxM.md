@@ -155,7 +155,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 ### 3. Enable Customer Experience Analytics Widget
 
 * Navigate to the **Agent Dashboard** page.
-* Make sure you have **Customer Experience Analytics** selected in the top-left corner
+* Make sure you have **Customer Experience Analytics** selected under **Metrics** tab top-left corner
 * Click the Vertical Ellipsis on the right side of the screen and **Export To Cisco Contact Center**
 * From the information pane, copy the **Space Id** and update this in the **Customer Experience Analytics section** of the layout JSON.
 * From the information pane, copy the **Metrics Id** and update this in the **Customer Experience Analytics section** of the layout JSON.
