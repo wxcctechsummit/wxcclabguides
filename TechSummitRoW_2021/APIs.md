@@ -21,8 +21,7 @@ title: "Lab 8: # Webex Contact Center APIs"
 - [Part 3: Introduction to the New Webex Contact Center APIs and Sample App](#Part 3: Introduction to the New Webex Contact Center APIs and Sample App)
   * [1. Login to developer.webex.com > Documentation > API Reference > Contact Center](#1-login-to-developerwebexcom--documentation--api-reference--contact-center)
   * [2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in](#2-fetch-the-tasks-from-yesterday-or-the-last-week---depending-on-the-number-of-contacts-that-came-in)
-  * [Part 3: Introduction to the New Webex Contact Center APIs and Sample App
-
+  
 
 # Introduction
 
@@ -425,7 +424,7 @@ Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks
 
 To try this out in Postman follow the steps outlined in the previous example
 
-## 3. Fetch Agent ACtivities
+## 3. Fetch Agent Activities
 
 - Go to the Agents section.
 
