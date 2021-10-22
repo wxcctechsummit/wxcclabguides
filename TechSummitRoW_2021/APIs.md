@@ -19,10 +19,21 @@ title: "Lab 8: # Webex Contact Center APIs"
     * [1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format](#1-understand-contact-start-and-contact-end-timestamps-are-in-unix-epoch-format)
     * [2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.](#2-copy-the-same-csr-request-get-csr-request-and-tweak-it-to-a-car-request)
     * [3. Complete Building out the above requests.](#3-complete-building-out-the-above-requests)
-- [APIv2](#apiv2)
+- [APIv2 (new version)](#apiv2-new-version)
   - [Part 1: Introduction to the New Webex CC APIs, Sample App and auth flow](#part-1-introduction-to-the-new-webex-cc-apis-sample-app-and-auth-flow)
-  * [1. Login to developer.webex.com > Documentation > API Reference > Contact Center](#1-login-to-developerwebexcom--documentation--api-reference--contact-center)
-  * [2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in](#2-fetch-the-tasks-from-yesterday-or-the-last-week---depending-on-the-number-of-contacts-that-came-in)
+    * [1. Introduction](#1-introduction)
+    * [2. Initial Setup](#1-initial-setup)
+  - [Part 2: Reporting APIs](#part-2-reporting-apis)
+    * [1. Fetch Tasks](#1-fetch-tasks)
+    * [2. Fetch Queue Statistics](#2-fetch-queue-statistics)
+    * [3. Fetch Agent Activities](#3-fetch-agent-activities)
+    * [4. Fetch Agent Statistics](#4-fetch-agent-statistics)
+  - [Part 3: Call Recording APIs](#part-3-call-recording-apis)
+    * [1. List Captures](#1-list-captures)
+  - [Part 4: Configuration APIs](#part-2-configuration-apis)
+    * [1. Create a Site](#1-create-a-site)
+    * [2. Update Site by ID](#2-update-site-by-id)
+    * [3. Bulk Upload](#3-bulk-upload)
   
 
 # Introduction
@@ -293,7 +304,7 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 - Every CAR has a reference to the CSR, which is in the `session` attribute within the object.
 -
 
-# APIv2
+# APIv2 (new version)
 
 ## Part 1: Introduction to the New Webex CC APIs, Sample App and auth flow
 
