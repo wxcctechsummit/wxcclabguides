@@ -54,9 +54,10 @@ Before you begin this lab:
 > HMAC Generator: **[https://www.liavaag.org/English/SHA-Generator/HMAC/](https://www.liavaag.org/English/SHA-Generator/HMAC/){:target="_blank"}**\
 > Legacy V1.0 endpoint - Resource: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}){:target="_blank"}**\
 > Legacy V1.0 endpoint - Query: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}){:target="_blank"}**. Resources can be of type: `csrs`, `cars`, `asrs`, `aars`\
-> Developer Portal: **[https://developer.webex-cx.com/](https://devportal.wxcc-us1.cisco.com/){:target="_blank"}**\
-> The Official Developer docs: **[https://developer.webex.com](https://developer.webex.com){:target="_blank"}**\
+> Developer Portal: **[https://developer.webex-cx.com/](https://developer.webex-cx.com/){:target="_blank"}**\
+> The Official Developer docs: **[https://developer.webex-cx.com](https://developer.webex-cx.com){:target="_blank"}**\
 
+Note: 
 
 # Part 1: Legacy 1.0 APIs: CSR, CSR Query
 
@@ -290,86 +291,8 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 
 
-
-
-# Part 3: New Webex Contact Center APIs: Retrieving Tasks,Queue Statistics
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/jThcPefuzTA?rel=0" title="WxCC Lab #8 Part 3: New Webex Contact Center APIs: Retrieving Tasks and Call Recordings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-## 1. Login to devportal
-- Login with the POD admin account to https://developer.webex-cx.com/.
-
-- Go to > Documentation > API Reference.
-
-## 2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in.
-
-- Go to the Tasks section.
-
-- Click on GET Tasks  > Try Out
-
-- Fetch all the tasks using the "From Date/time" in Epoch milliseconds.
-
-- To get the Epoch time use [epochconverter](https://www.epochconverter.com)
-
-- Enter the Org ID and channel type > Press Run
-
-The same request can be drafted on Postman using your personal Bearer Token.
-
-Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks?channelTypes=email%2Ctelephony&from={EPOCHTIME}&to={EPOCHTIME}&pageSize=100&orgId={ORGID}____
-
-- Create a new collection in Postman
-
-- Under that add a request
-
--  Enter the request URL copied from the developer portal. Make changes to the from and to times and the org ID to refelect your tenant.
-
-- Under Headers enter the _Key:_ _Authorization_ and _Value _: _Bearer 'Your Bearer token copied from the developer portal'_
-
-- Click on Send
-
-## 3. Fetch Queue Statistics
-
-- Go to the Queues section.
-
-- Click on List Queues > Try Out
-
-- Enter the ordID and the channel type
-
-- Click on Run
-
-To try this out in Postman follow the steps outlined in the previous example
-
-## 3. Create a Team
-
-- Go to the Teams section.
-
-- Click on Create Teams > Try Out
-
-- Enter the desktopLayoutID, siteID,name,OrgnaisationID,teamstatus,teamtype
-  The ID can be obtained by login in to the contact centre portal
-  
-- The request body will look like this
-  
-{
-  "desktopLayoutId": "AXoO4PwqeaoutNTWPuSv",
-  "siteId": "a71d8da5-fce4-48a5-a20e-e25f8600a13e",
-  "active": false,
-  "name": "API1",
-  "organizationId": "0fcc295b-8733-4e7b-b708-8d410a928e53",
-  "teamStatus": "IN_SERVICE",
-  "lastUpdatedTime": 0,
-  "skillProfileId": "",
-  "createdTime": 0,
-  "teamType": "AGENT",
-  "version": 0,
-  "multiMediaProfileId": ""
-}
-
-- Click on Run
-
-To try this out in Postman follow the steps outlined in the previous example
-
-## Addendum
+# Part 3: Introduction to the New Webex Contact Center APIs and Sample App
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/EiCXsxX2EHI?rel=0" title="WxCC Lab #3 Part 3:Introduction to the New Webex Contact Center APIs and Sample Ap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - To develop applications with the new APIs, you must build an integration with Webex.
 
@@ -441,7 +364,142 @@ Submit a Request to Obtain Access
 
 > redirect_uri
 
----
+## 1. Initial Setup
+- Login with the POD admin account to https://developer.webex-cx.com/.
+
+- Go to > Documentation > API Reference.
+
+- Follow the instructions in the video to request access to your sample app.
+
+- The sample app is available here :https://github.com/arubhatt/webexcc-api-sample
+
+- Follow the instructions in the video to clone the repository and run the app.
+- 
+
+# Part 4: Reporting APIs
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/CND6N_HpHs8?rel=0" title="WxCC Lab #4 Part 4:Reporting APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Login with the POD admin account to https://developer.webex-cx.com/.
+
+- Go to > Documentation > API Reference.
+
+## 1. Fetch Tasks
+
+- Go to the Tasks section.
+
+- Click on GET Tasks  > Try Out
+
+- Fetch all the tasks using the "From Date/time" in Epoch milliseconds.
+
+- To get the Epoch time use [epochconverter](https://www.epochconverter.com)
+
+- Enter the Org ID and channel type > Press Run
+
+The same request can be drafted on Postman using your personal Bearer Token.
+
+Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks
+
+- Create a new collection in Postman
+
+- Under that add a request
+
+-  Enter the request URL copied from the developer portal. Make changes to the from and to times and the org ID to refelect your tenant.
+
+- Under Headers enter the _Key:_ _Authorization_ and _Value _: _Bearer 'Your Bearer token copied from the developer portal'_
+
+- Under Parameters enter the values you wil be passing as shown in the video
+
+- Click on Send
+
+## 2. Fetch Queue Statistics
+
+- Go to the Queues section.
+
+- Click on Get Queue Statistics > Try Out
+
+- Enter the from date, to date and the interval 
+
+- Click on Run
+
+To try this out in Postman follow the steps outlined in the previous example
+
+## 3. Fetch Agent ACtivities
+
+- Go to the Agents section.
+
+- Click on get Agent Activities > Try Out
+
+- Enter the required parameters as explained in the video .Click on Run
+
+To try this out in Postman follow the steps outlined in the previous example
+
+## 4. Fetch Agent Statistics
+
+- Go to the Agents section.
+
+- Click on get Agent Statistics > Try Out
+
+- Enter the required parameters as explained in the video .Click on Run
+
+To try this out in Postman follow the steps outlined in the previous example
+
+# Part 5: Call Recording APIs
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/iehZnNvRzVc?rel=0" title="WxCC Lab #5 Part 5:Call Recording APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## 1. List Captures
+
+- Run the Get Tasks API as explained in the video and get teh required task IDs
+
+- Go to Captures section
+
+- Click on List Captures > Try Out
+
+- Enter the parameters :orgid, taskids,urlexpiration
+
+- Click on Run
+
+- Use the Filepath in the response to download and listen to the recording
+
+- Enter the required parameters as explained in the video .Click on Run
+
+To try this out in Postman follow the steps outlined in the previous example
+
+# Part 6: Configuration APIs
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/W5C3AvTEYmY?rel=0" title="WxCC Lab #5 Part 6:Configuration APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 1. Create a Site
+
+- Go to Sites section
+
+- Click on Create Sites > Try Out
+
+- Enter the parameters :active,orgid, multimediaprofileid,name
+
+- Click on Run
+
+To try this out in Postman follow the steps outlined in the previous example
+
+## 2. Update Site by ID
+
+- Go to Sites section
+
+- Click on Update Site by ID > Try Out
+
+- Enter the parameters orgid and the id (The site ID that was created in the previous exercise)
+
+- In the request body update the orgid,id, multimediaprofileid, name
+
+- Click on Run
+
+To try this out in Postman follow the steps outlined in the previous example
+
+## 3. Bulk Upload
+
+Follow the instructions in the vdeo to use Postman and create mutiple sites using a csv file
+
 
 ### Congratulations, you have completed **ALL section**. Well done!!!
 ### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
