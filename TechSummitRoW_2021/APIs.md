@@ -19,8 +19,8 @@ title: "Lab 8: # Webex Contact Center APIs"
     * [1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format](#1-understand-contact-start-and-contact-end-timestamps-are-in-unix-epoch-format)
     * [2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.](#2-copy-the-same-csr-request-get-csr-request-and-tweak-it-to-a-car-request)
     * [3. Complete Building out the above requests.](#3-complete-building-out-the-above-requests)
-- APIv2
-  - [Part 3: Introduction to the New Webex Contact Center APIs and Sample App](#Part 3: Introduction to the New Webex Contact Center APIs and Sample App)
+- [APIv2](#apiv2)
+  - [Part 1: Introduction to the New Webex CC APIs, Sample App and auth flow](#part-1-introduction-to-the-new-webex-cc-apis-sample-app-and-auth-flow)
   * [1. Login to developer.webex.com > Documentation > API Reference > Contact Center](#1-login-to-developerwebexcom--documentation--api-reference--contact-center)
   * [2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in](#2-fetch-the-tasks-from-yesterday-or-the-last-week---depending-on-the-number-of-contacts-that-came-in)
   
@@ -295,14 +295,14 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 # APIv2
 
-# Part 3: Introduction to the New Webex Contact Center APIs and Sample App
+## Part 1: Introduction to the New Webex CC APIs, Sample App and auth flow
 
 <iframe width="1024" height="500" src="https://www.youtube-nocookie.com/embed/EiCXsxX2EHI?rel=0" title="WxCC Lab #3 Part 3:Introduction to the New Webex Contact Center APIs and Sample Ap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
 
-
+### 1. Introduction 
 - To develop applications with the new APIs, you must build an integration with Webex.
 
 - See **[Contact Center Dev Portal Docs](https://developer.webex-cx.com/documentation/getting-started)** for all the details. 
@@ -379,7 +379,7 @@ Submit a Request to Obtain Access
 
 > redirect_uri
 
-## 1. Initial Setup
+### 2. Initial Setup
 
 - Login with the POD admin account to https://developer.webex-cx.com/.
 
@@ -392,7 +392,7 @@ Submit a Request to Obtain Access
 - Follow the instructions in the video to clone the repository and run the app.
 
 
-# Part 4: Reporting APIs
+## Part 2: Reporting APIs
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/CND6N_HpHs8?rel=0" title="WxCC Lab #4 Part 4:Reporting APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -404,7 +404,7 @@ Submit a Request to Obtain Access
 
 
 
-## 1. Fetch Tasks
+### 1. Fetch Tasks
 
 
 - Go to the Tasks section.
@@ -434,7 +434,7 @@ Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks
 - Click on Send
 
 
-## 2. Fetch Queue Statistics
+### 2. Fetch Queue Statistics
 
 - Go to the Queues section.
 
@@ -447,7 +447,7 @@ Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks
 To try this out in Postman follow the steps outlined in the previous example
 
 
-## 3. Fetch Agent Activities
+### 3. Fetch Agent Activities
 
 - Go to the Agents section.
 
@@ -458,7 +458,7 @@ To try this out in Postman follow the steps outlined in the previous example
 To try this out in Postman follow the steps outlined in the previous example
 
 
-## 4. Fetch Agent Statistics
+### 4. Fetch Agent Statistics
 
 - Go to the Agents section.
 
@@ -470,14 +470,14 @@ To try this out in Postman follow the steps outlined in the previous example
 
 
 
-# Part 5: Call Recording APIs
+## Part 3: Call Recording APIs
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/iehZnNvRzVc?rel=0" title="WxCC Lab #5 Part 5:Call Recording APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
 
-## 1. List Captures
+### 1. List Captures
 
 - Run the Get Tasks API as explained in the video and get teh required task IDs
 
@@ -497,13 +497,13 @@ To try this out in Postman follow the steps outlined in the previous example
 
 
 
-# Part 6: Configuration APIs
+## Part 4: Configuration APIs
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/W5C3AvTEYmY?rel=0" title="WxCC Lab #5 Part 6:Configuration APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
-## 1. Create a Site
+### 1. Create a Site
 
 - Go to Sites section
 
@@ -516,7 +516,7 @@ To try this out in Postman follow the steps outlined in the previous example
 To try this out in Postman follow the steps outlined in the previous example
 
 
-## 2. Update Site by ID
+### 2. Update Site by ID
 
 - Go to Sites section
 
@@ -531,7 +531,7 @@ To try this out in Postman follow the steps outlined in the previous example
 To try this out in Postman follow the steps outlined in the previous example
 
 
-## 3. Bulk Upload
+### 3. Bulk Upload
 
 Follow the instructions in the vdeo to use Postman and create mutiple sites using a csv file
 
