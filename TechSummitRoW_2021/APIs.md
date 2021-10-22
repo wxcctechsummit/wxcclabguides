@@ -295,11 +295,15 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 # Part 3: Introduction to the New Webex Contact Center APIs and Sample App
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/EiCXsxX2EHI?rel=0" title="WxCC Lab #3 Part 3:Introduction to the New Webex Contact Center APIs and Sample Ap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+
+
 - To develop applications with the new APIs, you must build an integration with Webex.
 
 - See **[Contact Center Dev Portal Docs](https://developer.webex-cx.com/documentation/getting-started)** for all the details. 
 
 Here is a summary: 
+
 
 **API Access- Registering an Application(Early Access)**
 
@@ -315,6 +319,8 @@ Submit a Request to Obtain Access
 
 - Use the refresh_token before it expires to renew your access_token
 
+
+
 **OAuth2 Mechanism - Implications**
 
 - With the OAuth2 support- Will require a "One Time Onboarding" User interface to obtain access to an org
@@ -328,6 +334,8 @@ Submit a Request to Obtain Access
 - This is a "Required Onboarding " Process
 
 - Once you obtain an Org's access_token and refresh_token, you can access their data
+
+
 
 **OAuth2 Access Token Flow**
 
@@ -366,6 +374,7 @@ Submit a Request to Obtain Access
 > redirect_uri
 
 ## 1. Initial Setup
+
 - Login with the POD admin account to https://developer.webex-cx.com/.
 
 - Go to > Documentation > API Reference.
@@ -375,16 +384,22 @@ Submit a Request to Obtain Access
 - The sample app is available here :https://github.com/arubhatt/webexcc-api-sample
 
 - Follow the instructions in the video to clone the repository and run the app.
-- 
+
 
 # Part 4: Reporting APIs
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/CND6N_HpHs8?rel=0" title="WxCC Lab #4 Part 4:Reporting APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 
 - Login with the POD admin account to https://developer.webex-cx.com/.
 
 - Go to > Documentation > API Reference.
 
+
+
 ## 1. Fetch Tasks
+
 
 - Go to the Tasks section.
 
@@ -412,6 +427,7 @@ Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks
 
 - Click on Send
 
+
 ## 2. Fetch Queue Statistics
 
 - Go to the Queues section.
@@ -424,6 +440,7 @@ Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks
 
 To try this out in Postman follow the steps outlined in the previous example
 
+
 ## 3. Fetch Agent Activities
 
 - Go to the Agents section.
@@ -433,6 +450,7 @@ To try this out in Postman follow the steps outlined in the previous example
 - Enter the required parameters as explained in the video .Click on Run
 
 To try this out in Postman follow the steps outlined in the previous example
+
 
 ## 4. Fetch Agent Statistics
 
@@ -444,9 +462,13 @@ To try this out in Postman follow the steps outlined in the previous example
 
 To try this out in Postman follow the steps outlined in the previous example
 
+
+
 # Part 5: Call Recording APIs
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/iehZnNvRzVc?rel=0" title="WxCC Lab #5 Part 5:Call Recording APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 
 ## 1. List Captures
@@ -467,9 +489,13 @@ To try this out in Postman follow the steps outlined in the previous example
 
 To try this out in Postman follow the steps outlined in the previous example
 
+
+
 # Part 6: Configuration APIs
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/W5C3AvTEYmY?rel=0" title="WxCC Lab #5 Part 6:Configuration APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 ## 1. Create a Site
 
@@ -482,6 +508,7 @@ To try this out in Postman follow the steps outlined in the previous example
 - Click on Run
 
 To try this out in Postman follow the steps outlined in the previous example
+
 
 ## 2. Update Site by ID
 
@@ -496,6 +523,7 @@ To try this out in Postman follow the steps outlined in the previous example
 - Click on Run
 
 To try this out in Postman follow the steps outlined in the previous example
+
 
 ## 3. Bulk Upload
 
