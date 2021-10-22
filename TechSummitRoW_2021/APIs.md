@@ -4,6 +4,7 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 # Table of Contents
 
+- APIv1 (deprecated)
 - [Part 1: Legacy 1.0 APIs: CSR, CSR Query](#part-1-legacy-10-apis-csr-csr-query)
   * [1. Verify that you have an Analyzer Report created and a Call recording exists](#1-verify-that-you-have-an-analyzer-report-created-and-a-call-recording-exists)
   * [2. Verify you have Postman Installed](#2-verify-you-have-postman-installed)
@@ -18,6 +19,7 @@ title: "Lab 8: # Webex Contact Center APIs"
   * [1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format](#1-understand-contact-start-and-contact-end-timestamps-are-in-unix-epoch-format)
   * [2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.](#2-copy-the-same-csr-request-get-csr-request-and-tweak-it-to-a-car-request)
   * [3. Complete Building out the above requests.](#3-complete-building-out-the-above-requests)
+- APIv2
 - [Part 3: Introduction to the New Webex Contact Center APIs and Sample App](#Part 3: Introduction to the New Webex Contact Center APIs and Sample App)
   * [1. Login to developer.webex.com > Documentation > API Reference > Contact Center](#1-login-to-developerwebexcom--documentation--api-reference--contact-center)
   * [2. Fetch the Tasks from yesterday or the last week - depending on the number of contacts that came in](#2-fetch-the-tasks-from-yesterday-or-the-last-week---depending-on-the-number-of-contacts-that-came-in)
