@@ -30,7 +30,7 @@ title: "Lab 8: # Webex Contact Center APIs"
     * [4. Fetch Agent Statistics](#4-fetch-agent-statistics)
   - [Part 3: Call Recording APIs](#part-3-call-recording-apis)
     * [1. List Captures](#1-list-captures)
-  - [Part 4: Configuration APIs](#part-2-configuration-apis)
+  - [Part 4: Configuration APIs](#part-4-configuration-apis)
     * [1. Create a Site](#1-create-a-site)
     * [2. Update Site by ID](#2-update-site-by-id)
     * [3. Bulk Upload](#3-bulk-upload)
