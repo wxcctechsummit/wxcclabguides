@@ -4,7 +4,7 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 # Table of Contents
 
-- APIv1 (deprecated)
+- [APIv1 (legacy version)](#apiv1-legacy-version)
   - [Part 1: Legacy 1.0 APIs: CSR, CSR Query](#part-1-legacy-10-apis-csr-csr-query)
     * [1. Verify that you have an Analyzer Report created and a Call recording exists](#1-verify-that-you-have-an-analyzer-report-created-and-a-call-recording-exists)
     * [2. Verify you have Postman Installed](#2-verify-you-have-postman-installed)
@@ -16,9 +16,9 @@ title: "Lab 8: # Webex Contact Center APIs"
     * [8. Plug this into the query parameters. Execute the Query](#8-plug-this-into-the-query-parameters-execute-the-query)
     * [9. Add an Accept Header of text/csv](#9-add-an-accept-header-of-textcsv)
 - [Part 2: Legacy 1.0 APIs: CARs and activity chains](#part-2-legacy-10-apis-cars-and-activity-chains)
-  * [1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format](#1-understand-contact-start-and-contact-end-timestamps-are-in-unix-epoch-format)
-  * [2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.](#2-copy-the-same-csr-request-get-csr-request-and-tweak-it-to-a-car-request)
-  * [3. Complete Building out the above requests.](#3-complete-building-out-the-above-requests)
+    * [1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format](#1-understand-contact-start-and-contact-end-timestamps-are-in-unix-epoch-format)
+    * [2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.](#2-copy-the-same-csr-request-get-csr-request-and-tweak-it-to-a-car-request)
+    * [3. Complete Building out the above requests.](#3-complete-building-out-the-above-requests)
 - APIv2
   - [Part 3: Introduction to the New Webex Contact Center APIs and Sample App](#Part 3: Introduction to the New Webex Contact Center APIs and Sample App)
   * [1. Login to developer.webex.com > Documentation > API Reference > Contact Center](#1-login-to-developerwebexcom--documentation--api-reference--contact-center)
@@ -60,26 +60,26 @@ Before you begin this lab:
 > Developer Portal: **[https://developer.webex-cx.com/](https://developer.webex-cx.com/){:target="_blank"}**\
 > The Official Developer docs: **[https://developer.webex-cx.com](https://developer.webex-cx.com){:target="_blank"}**\
 
-Note: 
+# APIv1 (legacy version)
 
-# Part 1: Legacy 1.0 APIs: CSR, CSR Query
+## Part 1: Legacy 1.0 APIs: CSR, CSR Query
 
 > The following video outlines the pre-requisites as well as Part 1
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/S0OO6rxciqo?rel=0" title="WxCC Lab #8 Part 1: Legacy 1.0 APIs: CSR, CSR Query" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## 1. Verify that you have an Analyzer Report created and a Call recording exists
+### 1. Verify that you have an Analyzer Report created and a Call recording exists
 - Follow the steps outlined in the Analizer Lab to create an analyzer report by logging into Analyzer and creating a CSR report. It is assumed you already have completed the Analyzer Lab in the previous sections.
 
-## 2. Verify you have Postman Installed
+### 2. Verify you have Postman Installed
 - Install Postman from the link.
 
 - Create a Folder to store your requests.
 
 - Create variables to hold critical information in all the requests. From Header and the Authorization Header.
 
-## 3. Create a GET CSR Request
+### 3. Create a GET CSR Request
 - Review the CSRs in your setup using Analyzer.
 
 - Draft the GET CSR request using the format
@@ -113,12 +113,12 @@ Headers after HMAC encoding: 
         
     From: `userID@portal-controlhub.com`
 
-## 4. Plug these into Postman as described in the video
+### 4. Plug these into Postman as described in the video
 - Run the GET CSR request using: 
 
 `https://rest.wxcc-us1.cisco.com/aws/api/csrs/{your-example-contact-session-id-here}`
 
-## 5. Inspect the Browser to create a CSR Query
+### 5. Inspect the Browser to create a CSR Query
 - On the Analyzer Report for CSRs Today - Inspect the report - Right Click > Inspect.
 
 - Go to the network tab > Refresh > Search for a request in the format: `dataQuery?GET_DATA=`
@@ -176,7 +176,7 @@ Example:
 		}
 
 ```
-## 6. Copy only the content after `query` and before the ending braces. I.e this content as an example**
+### 6. Copy only the content after `query` and before the ending braces. I.e this content as an example**
 
 ```javascript
 {
@@ -221,7 +221,7 @@ Example:
 }
 ```
 
-## 7. Encode this in a URL encoded format. i.e Copy this string and paste it in an encoder
+### 7. Encode this in a URL encoded format. i.e Copy this string and paste it in an encoder
 
 Example Site (3rd Party): 
 https://meyerweb.com/eric/tools/dencoder/ 
@@ -236,7 +236,7 @@ It will give you this text.
 %7B%0A%09%09%09%22anchorId%22%3A%20%2211894%22%2C%0A%09%09%09%22dateBegin%22%3A%20%5B%0A%09%09%09%091612155600000%0A%09%09%09%5D%2C%0A%09%09%09%22dateEnd%22%3A%20%5B%0A%09%09%09%091612328400000%0A%09%09%09%5D%2C%0A%09%09%09%22timezone%22%3A%20%22America%2FNew_York%22%2C%0A%09%09%09%22numberOfRecords%22%3A%201000000%2C%0A%09%09%09%22lastNRecords%22%3A%20false%2C%0A%09%09%09%22activityType%22%3A%20%22INTERACTION%22%2C%0A%09%09%09%22aggregateQueryProperties%22%3A%20%7B%0A%09%09%09%09%22computeInterval%22%3A%200%2C%0A%09%09%09%09%22computeIntervalUnit%22%3A%20%22NONE%22%2C%0A%09%09%09%09%22lookbackCount%22%3A%200%2C%0A%09%09%09%09%22frequency%22%3A%200%2C%0A%09%09%09%09%22movingWindow%22%3A%20false%2C%0A%09%09%09%09%22cumulative%22%3A%20false%2C%0A%09%09%09%09%22rowSegmentSet%22%3A%20%5B%5D%2C%0A%09%09%09%09%22columnSegmentSet%22%3A%20%5B%5D%2C%0A%09%09%09%09%22queryType%22%3A%20%22TEMPORAL%22%2C%0A%09%09%09%09%22requestType%22%3A%20%22PROFILE%22%2C%0A%09%09%09%09%22intervalAxis%22%3A%20%22ROW%22%2C%0A%09%09%09%09%22computeSummaries%22%3A%20true%0A%09%09%09%7D%2C%0A%09%09%09%22aggregations%22%3A%20%5B%0A%09%09%09%09%7B%0A%09%09%09%09%09%22id%22%3A%200%2C%0A%09%09%09%09%09%22filterGroups%22%3A%20%5B%0A%09%09%09%09%09%09%7B%0A%09%09%09%09%09%09%09%22operator%22%3A%20%22AND%22%2C%0A%09%09%09%09%09%09%09%22valueFilters%22%3A%20%5B%5D%0A%09%09%09%09%09%09%7D%0A%09%09%09%09%09%5D%2C%0A%09%09%09%09%09%22aggregationType%22%3A%20%22VALUE%22%2C%0A%09%09%09%09%09%22computeColumnName%22%3A%20%22sid%22%0A%09%09%09%09%7D%0A%09%09%09%5D%0A%7D
 ```
 
-## 8. Plug this into the query parameters. Execute the Query
+### 8. Plug this into the query parameters. Execute the Query
 
 For example, the query is : 
 
@@ -247,7 +247,7 @@ i.e
 **https://rest.wxcc-us1.cisco.com/aws/api/csrs?q=`%7B%0A%09%09%09%22anchorId%22%3A%20%2211894%22%2C%0A%09%09%09%22dateBegin%22%3A%20%5B%0A%09%09%09%091612155600000%0A%09%09%09%5D%2C%0A%09%09%09%22dateEnd%22%3A%20%5B%0A%09%09%09%091612328400000%0A%09%09%09%5D%2C%0A%09%09%09%22timezone%22%3A%20%22America%2FNew_York%22%2C%0A%09%09%09%22numberOfRecords%22%3A%201000000%2C%0A%09%09%09%22lastNRecords%22%3A%20false%2C%0A%09%09%09%22activityType%22%3A%20%22INTERACTION%22%2C%0A%09%09%09%22aggregateQueryProperties%22%3A%20%7B%0A%09%09%09%09%22computeInterval%22%3A%200%2C%0A%09%09%09%09%22computeIntervalUnit%22%3A%20%22NONE%22%2C%0A%09%09%09%09%22lookbackCount%22%3A%200%2C%0A%09%09%09%09%22frequency%22%3A%200%2C%0A%09%09%09%09%22movingWindow%22%3A%20false%2C%0A%09%09%09%09%22cumulative%22%3A%20false%2C%0A%09%09%09%09%22rowSegmentSet%22%3A%20%5B%5D%2C%0A%09%09%09%09%22columnSegmentSet%22%3A%20%5B%5D%2C%0A%09%09%09%09%22queryType%22%3A%20%22TEMPORAL%22%2C%0A%09%09%09%09%22requestType%22%3A%20%22PROFILE%22%2C%0A%09%09%09%09%22intervalAxis%22%3A%20%22ROW%22%2C%0A%09%09%09%09%22computeSummaries%22%3A%20true%0A%09%09%09%7D%2C%0A%09%09%09%22aggregations%22%3A%20%5B%0A%09%09%09%09%7B%0A%09%09%09%09%09%22id%22%3A%200%2C%0A%09%09%09%09%09%22filterGroups%22%3A%20%5B%0A%09%09%09%09%09%09%7B%0A%09%09%09%09%09%09%09%22operator%22%3A%20%22AND%22%2C%0A%09%09%09%09%09%09%09%22valueFilters%22%3A%20%5B%5D%0A%09%09%09%09%09%09%7D%0A%09%09%09%09%09%5D%2C%0A%09%09%09%09%09%22aggregationType%22%3A%20%22VALUE%22%2C%0A%09%09%09%09%09%22computeColumnName%22%3A%20%22sid%22%0A%09%09%09%09%7D%0A%09%09%09%5D%0A%7D`**
 
 
-## 9. Add an Accept Header of text/csv
+### 9. Add an Accept Header of text/csv
 - Add another header of `Accept` of type `text/csv` to accept the raw CSV data from Analyzer for those CSR records.
 
     `Accept:` `text/csv`
@@ -256,14 +256,14 @@ i.e
 
 
 
-# Part 2: Legacy 1.0 APIs: CARs and activity chains
+## Part 2: Legacy 1.0 APIs: CARs and activity chains
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/PSTexkK2cxs?rel=0" title="WxCC Lab #8 Part 2: Legacy 1.0 APIs: CARs and activity chains" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## 1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format
+### 1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format
 - Epoch time for fields `cstts` (Contact Start Time Stamp) and `cetts` (Contact end Time Stamp) can be understood by looking at the Epoch converter [https://www.epochconverter.com/](https://www.epochconverter.com/){:target="_blank"}
 
-## 2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.
+### 2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.
 - A CAR (Contact Activity Record) is in the format : https://rest.wxcc-us1.cisco.com/aws/api/cars/{contactsession}-{timestamp}-{event}
 
 - Contact Session Record : CSR
@@ -282,7 +282,7 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 > Substitute your values by Chaining the activity event types like `new` > `ivr-connected` > `parked` and retrieve the `cetts` for those events to plug in the epoch time stamps.
 
-## 3. Complete Building out the above requests.
+### 3. Complete Building out the above requests.
 
 - Understand that you can start the Analyzer request chain by pulling a CSR report.
 
@@ -293,6 +293,7 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 - Every CAR has a reference to the CSR, which is in the `session` attribute within the object.
 -
 
+# APIv2
 
 # Part 3: Introduction to the New Webex Contact Center APIs and Sample App
 
