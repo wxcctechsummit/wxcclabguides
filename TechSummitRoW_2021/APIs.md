@@ -308,7 +308,7 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 
 
-### 1. Introduction 
+### 1. Walkthrough of Auth Flow 
 - To develop applications with the new APIs, you must build an integration with Webex.
 
 - See **[Contact Center Dev Portal Docs](https://developer.webex-cx.com/documentation/getting-started)** for all the details. 
@@ -385,7 +385,7 @@ Submit a Request to Obtain Access
 
 > redirect_uri
 
-### 2. Initial Setup
+### 2. Initial Setup of Sample App
 
 - Login with the POD admin account to https://developer.webex-cx.com/.
 
