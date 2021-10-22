@@ -20,7 +20,7 @@ title: "Lab 8: # Webex Contact Center APIs"
     * [2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.](#2-copy-the-same-csr-request-get-csr-request-and-tweak-it-to-a-car-request)
     * [3. Complete Building out the above requests.](#3-complete-building-out-the-above-requests)
 - [APIv2 (new version)](#apiv2-new-version)
-  - [Part 1: Introduction to the New Webex CC APIs, Sample App and auth flow](#part-1-introduction-to-the-new-webex-cc-apis-sample-app-and-auth-flow)
+  - [Part 1: Introduction to the New Webex CC APIs](#part-1-introduction-to-the-new-webex-cc-apis)
     * [1. Introduction](#1-introduction)
     * [2. Initial Setup](#1-initial-setup)
   - [Part 2: Reporting APIs](#part-2-reporting-apis)
@@ -42,13 +42,7 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 - This lab is designed to ensure you are able to retrieve reporting data using the Legacy APIs from version 1.0 - carried forward into the New Webex Contact Center platform.
 
-- The New Webex Contact Center APIs are currently in an Early release and have 4 endpoints available - GET Tasks, GET Agent Statistics, GET Queue Statistics and POST Capture Query (Call recording retrieval).
-
 - We will explore both the flavors of accessing reporting and call recording data - authenticating using an API Key using the legacy API and using a Bearer token with the new Webex Contact Center APIs on the developer portal.
-
-> **Note: If you would like to try out the new API endpoints you can go straight to Part 3**/
-> New Webex Contact Center API endpoints are accessed via - `https://api.wxcc-us1.cisco.com/{endpoint}`/
-> The Developer docs are at: **https://devportal.wxcc-us1.cisco.com/** > `Documentation`
 
 ## Pre-requisite
 
@@ -306,9 +300,10 @@ https://rest.wxcc-us1.cisco.com/aws/api/cars/74d98c29-39b4-4e1e-81fa-0ce0ae5aebb
 
 # APIv2 (new version)
 
-## Part 1: Introduction to the New Webex CC APIs, Sample App and auth flow
+## Part 1: Introduction to the New Webex CC APIs
+> This is the introduction video. It explains what API we have, what application and authorization mechanisms exist and how to get started.
 
-<iframe width="1024" height="500" src="https://www.youtube-nocookie.com/embed/EiCXsxX2EHI?rel=0" title="WxCC Lab #3 Part 3:Introduction to the New Webex Contact Center APIs and Sample Ap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="500" src="https://www.youtube-nocookie.com/embed/EiCXsxX2EHI?rel=0" title="WxCC Lab #8 Part 1:Introduction to the New Webex Contact Center APIs and Sample Ap" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
