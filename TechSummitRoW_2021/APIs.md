@@ -22,7 +22,7 @@ title: "Lab 8: # Webex Contact Center APIs"
 - [APIv2 (new version)](#apiv2-new-version)
   - [Part 1: Introduction to the New Webex CC APIs](#part-1-introduction-to-the-new-webex-cc-apis)
     * [1. Walkthrough of Auth Flow](#1-walkthrough-of-auth-flow)
-    * [2. Initial Setup of Sample App](#1-initial-setup-of-sample-app)
+    * [2. Initial Setup of Sample App](#2-initial-setup-of-sample-app)
   - [Part 2: Reporting APIs](#part-2-reporting-apis)
     * [1. Executing "Get Tasks" API](#1-executing-get-tasks-api)
     * [2. Executing "Get Queue Statistics" API](#2-executing-get-queue-statistics-api)
@@ -31,7 +31,7 @@ title: "Lab 8: # Webex Contact Center APIs"
   - [Part 3: Call Recording APIs](#part-3-call-recording-apis)
     * [Working with "List Captures" API](#working-with-list-captures-api)
   - [Part 4: Configuration APIs](#part-4-configuration-apis)
-    * [1. Creating a Site with "Create Sites" API](#1-creating-a-site-with-create-a-site-api)
+    * [1. Creating a Site with "Create Sites" API](#1-creating-a-site-with-create-site-api)
     * [2. Changing the Site name with "Update Site By ID" API](#2-changing-the-site-name-with-update-site-by-id-api)
     * [3. Practicing with Bulk Upload](#3-practicing-with-bulk-upload)
   
