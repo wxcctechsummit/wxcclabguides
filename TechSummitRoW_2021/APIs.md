@@ -24,16 +24,16 @@ title: "Lab 8: # Webex Contact Center APIs"
     * [1. Walkthrough of Auth Flow](#1-walkthrough-of-auth-flow)
     * [2. Initial Setup of Sample App](#1-initial-setup-of-sample-app)
   - [Part 2: Reporting APIs](#part-2-reporting-apis)
-    * [1. Fetch Tasks](#1-fetch-tasks)
-    * [2. Fetch Queue Statistics](#2-fetch-queue-statistics)
-    * [3. Fetch Agent Activities](#3-fetch-agent-activities)
-    * [4. Fetch Agent Statistics](#4-fetch-agent-statistics)
+    * [1. Executing "Get Tasks" API](#1-executing-get-tasks-api)
+    * [2. Executing "Get Queue Statistics" API](#2-executing-get-queue-statistics-api)
+    * [3. Executing "Get Agent Activities" API](#3-executing-get-agent-activities-api)
+    * [4. Executing "Get Agent Statistics" API](#4-executing-get-agent-statistics-api)
   - [Part 3: Call Recording APIs](#part-3-call-recording-apis)
-    * [1. List Captures](#1-list-captures)
+    * [Working with "List Captures" API](#working-with-list-captures-api)
   - [Part 4: Configuration APIs](#part-4-configuration-apis)
-    * [1. Create a Site](#1-create-a-site)
-    * [2. Update Site by ID](#2-update-site-by-id)
-    * [3. Bulk Upload](#3-bulk-upload)
+    * [1. Creating a Site with "Create Sites" API](#1-creating-a-site-with-create-a-site-api)
+    * [2. Changing the Site name with "Update Site By ID" API](#2-changing-the-site-name-with-update-site-by-id-api)
+    * [3. Practicing with Bulk Upload](#3-practicing-with-bulk-upload)
   
 
 # Introduction
@@ -399,9 +399,10 @@ Submit a Request to Obtain Access
 
 
 ## Part 2: Reporting APIs
+
+> In this video we will go through the developer portal and execute your first API calls through Postman.
+
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/CND6N_HpHs8?rel=0" title="WxCC Lab #4 Part 4:Reporting APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 
 
 - Login with the POD admin account to https://developer.webex-cx.com/.
@@ -410,7 +411,7 @@ Submit a Request to Obtain Access
 
 
 
-### 1. Fetch Tasks
+### 1. Executing "Get Tasks" API
 
 
 - Go to the Tasks section.
@@ -440,7 +441,7 @@ Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks
 - Click on Send
 
 
-### 2. Fetch Queue Statistics
+### 2. Executing "Get Queue Statistics" API
 
 - Go to the Queues section.
 
@@ -453,7 +454,7 @@ Example of a GET Task:  https://api.wxcc-us1.cisco.com/v1/tasks
 To try this out in Postman follow the steps outlined in the previous example
 
 
-### 3. Fetch Agent Activities
+### 3. Executing "Get Agent Activities" API
 
 - Go to the Agents section.
 
@@ -464,7 +465,7 @@ To try this out in Postman follow the steps outlined in the previous example
 To try this out in Postman follow the steps outlined in the previous example
 
 
-### 4. Fetch Agent Statistics
+### 4. Executing "Get Agent Statistics" API
 
 - Go to the Agents section.
 
@@ -478,12 +479,14 @@ To try this out in Postman follow the steps outlined in the previous example
 
 ## Part 3: Call Recording APIs
 
+> In this video we will concentrate on "Captures" API. Captures are audio recordings that can be downloaded through API.
+
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/iehZnNvRzVc?rel=0" title="WxCC Lab #5 Part 5:Call Recording APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
 
-### 1. List Captures
+### Working with "List Captures" API
 
 - Run the Get Tasks API as explained in the video and get teh required task IDs
 
@@ -505,11 +508,13 @@ To try this out in Postman follow the steps outlined in the previous example
 
 ## Part 4: Configuration APIs
 
+> This is the bonus section of New WxCC APIs where you will be able to create/change settings in the Webex Contact Center by using the Configuration APIs.
+
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/W5C3AvTEYmY?rel=0" title="WxCC Lab #5 Part 6:Configuration APIs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
-### 1. Create a Site
+### 1. Creating a Site with "Create Sites" API
 
 - Go to Sites section
 
@@ -522,7 +527,7 @@ To try this out in Postman follow the steps outlined in the previous example
 To try this out in Postman follow the steps outlined in the previous example
 
 
-### 2. Update Site by ID
+### 2. Changing the Site name with "Update Site By ID" API
 
 - Go to Sites section
 
@@ -537,7 +542,7 @@ To try this out in Postman follow the steps outlined in the previous example
 To try this out in Postman follow the steps outlined in the previous example
 
 
-### 3. Bulk Upload
+### 3. Practicing with Bulk Upload
 
 Follow the instructions in the vdeo to use Postman and create mutiple sites using a csv file
 
