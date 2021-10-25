@@ -4,7 +4,7 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 # Table of Contents
 
-- [All New Webex Contact Center APIs (new version)](#apiv2-new-version)
+- [All New Webex Contact Center APIs (new version)](#all-new-webex-contact-center-apis-new-version)
   - [Part 1: Introduction to the New Webex CC APIs](#part-1-introduction-to-the-new-webex-cc-apis)
     * [1. Walkthrough of Auth Flow](#1-walkthrough-of-auth-flow)
     * [2. Initial Setup of Sample App](#2-initial-setup-of-sample-app)
