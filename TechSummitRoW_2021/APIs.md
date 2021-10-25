@@ -73,13 +73,17 @@ Submit a Request to Obtain Access
 
 - OAuth2 by design, requires a client ID, clinet secret, callback URL(Redirect URL)
 
-- Fill up the Smartsheet(https://app.smartsheet.com/b/form/7af787e752834bbfba604bfc85a5eff1) with your details to register your app with webex contact center
+- Fill up the **[API App Request Form](https://app.smartsheet.com/b/form/7af787e752834bbfba604bfc85a5eff1)** with your details to register your app with webex contact center. We will provide you with a Client ID and Client Secret.
 
-- Use the client ID, client secret, callback URL to obtain access_token for your org.Use the Access token to hit the API
+**Note:** `This is a temporary form for Early Access. The Automated Sign up and App Management & Integration is coming soon to the developer portal.`
 
-- Use the refresh_token before it expires to renew your access_token
+- Use the Client ID, Client Secret, Redirect URI (callback URL) to obtain access_token for your Org. Use the Access token to hit the API inside of the Authorization header. 
 
+`Authorization: Bearer yourAccessToken`
 
+- Use the refresh_token before it expires to renew your access_token - and get a new set of Access and Refresh Tokens.
+
+`By Default, the access_token is valid for 12 hours and the refresh token is valid for 60 days, however using another call for the refresh token will give you a new set of tokens. Maintaining this access is important for perpetual access. One can write a simple scheduler that performs this background refresh activity.`
 
 **OAuth2 Mechanism - Implications**
 
