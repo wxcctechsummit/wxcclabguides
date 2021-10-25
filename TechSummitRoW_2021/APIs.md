@@ -31,7 +31,7 @@ title: "Lab 8: # Webex Contact Center APIs"
     * [7. Encode this in a URL encoded format. i.e Copy this string and paste it in an encoder](#7-encode-this-in-a-url-encoded-format-ie-copy-this-string-and-paste-it-in-an-encoder)
     * [8. Plug this into the query parameters. Execute the Query](#8-plug-this-into-the-query-parameters-execute-the-query)
     * [9. Add an Accept Header of text/csv](#9-add-an-accept-header-of-textcsv)
-- [Part 2: Legacy 1.0 APIs: CARs and activity chains](#part-2-legacy-10-apis-cars-and-activity-chains)
+  - [Part 2: Legacy 1.0 APIs: CARs and activity chains](#part-2-legacy-10-apis-cars-and-activity-chains)
     * [1. Understand Contact Start and Contact End Timestamps are in Unix/ Epoch format](#1-understand-contact-start-and-contact-end-timestamps-are-in-unix-epoch-format)
     * [2. Copy the Same CSR Request GET CSR Request and tweak it to a CAR request.](#2-copy-the-same-csr-request-get-csr-request-and-tweak-it-to-a-car-request)
     * [3. Complete Building out the above requests.](#3-complete-building-out-the-above-requests)
