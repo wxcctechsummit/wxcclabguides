@@ -46,7 +46,7 @@ title: "Lab 8: # Webex Contact Center APIs"
 - For a quick start and overview, refer to the Overview / Quick start section.
 
 
-# APIv2 (new version)
+# All New Webex Contact Center APIs (New Version)
 
 ## Part 1: Introduction to the New Webex CC APIs
 > This is the introduction video. It explains what API we have, what application and authorization mechanisms exist and how to get started.
