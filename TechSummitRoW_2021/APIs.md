@@ -4,7 +4,7 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 # Table of Contents
 
-- [APIv2 (new version)](#apiv2-new-version)
+- [New APIs (new version)](#apiv2-new-version)
   - [Part 1: Introduction to the New Webex CC APIs](#part-1-introduction-to-the-new-webex-cc-apis)
     * [1. Walkthrough of Auth Flow](#1-walkthrough-of-auth-flow)
     * [2. Initial Setup of Sample App](#2-initial-setup-of-sample-app)
@@ -20,7 +20,7 @@ title: "Lab 8: # Webex Contact Center APIs"
     * [2. Changing the Site name with "Update Site By ID" API](#2-changing-the-site-name-with-update-site-by-id-api)
     * [3. Practicing with Bulk Upload](#3-practicing-with-bulk-upload)
 
-- [APIv1 (legacy version)](#apiv1-legacy-version)
+- [APIv1 (Legacy version)](#apiv1-legacy-version)
   - [Part 1: Legacy 1.0 APIs: CSR, CSR Query](#part-1-legacy-10-apis-csr-csr-query)
     * [1. Verify that you have an Analyzer Report created and a Call recording exists](#1-verify-that-you-have-an-analyzer-report-created-and-a-call-recording-exists)
     * [2. Verify you have Postman Installed](#2-verify-you-have-postman-installed)
@@ -38,32 +38,12 @@ title: "Lab 8: # Webex Contact Center APIs"
 
 # Introduction
 
-## Lab Objective
+**Important:** Changes to the API Lab.
 
-- This lab is designed to ensure you are able to retrieve reporting data using the Legacy APIs from version 1.0 - carried forward into the New Webex Contact Center platform.
-
-- We will explore both the flavors of accessing reporting and call recording data - authenticating using an API Key using the legacy API and using a Bearer token with the new Webex Contact Center APIs on the developer portal.
-
-## Pre-requisite
-
-Before you begin this lab:
-
-1. You already have test calls made (Lab 1 and Lab 2).
-2. You understand how to create Analyzer reports. Review the analyzer lab if you need more information (Lab 6).
-3. Call Recordings are visible under recording management.
-4. You already have an API key generated for `admin1podX` where X is your pod number. View the video below to verify this from the Portal. Reach out to the lab proctors if you require any information around this.
-5. You have the Postman client downloaded and installed to make queries to the Webex Contact Center APIs. Download it here: [Download and Install Postman](https://www.postman.com)
-
-### Quick Links
-
-> Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
-> WxCC Analyzer: **[https://analyzer.wxcc-us1.cisco.com/analyzer/home](https://analyzer.wxcc-us1.cisco.com/analyzer/home){:target="_blank"}**\
-> HMAC Generator: **[https://www.liavaag.org/English/SHA-Generator/HMAC/](https://www.liavaag.org/English/SHA-Generator/HMAC/){:target="_blank"}**\
-> Legacy V1.0 endpoint - Resource: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}){:target="_blank"}**\
-> Legacy V1.0 endpoint - Query: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}){:target="_blank"}**. Resources can be of type: `csrs`, `cars`, `asrs`, `aars`\
-> Developer Portal: **[https://developer.webex-cx.com/](https://developer.webex-cx.com/){:target="_blank"}**\
-> The Official Developer docs: **[https://developer.webex-cx.com](https://developer.webex-cx.com){:target="_blank"}**\
+- The New Webex Contact Center APIs are now available on **[developer.webex-cx.com](https://developer.webex-cx.com)** and use OAuth2 as opposed to One-time API Keys.
+- The Legacy APIs (v1) are still available and are documented in the later section of this lab.
+- The lab assumes that you will use the All New Webex Contact Center APIs which are documented below.
+- For a quick start and overview, refer to the Overview / Quick start section.
 
 
 # APIv2 (new version)
@@ -317,6 +297,37 @@ Follow the instructions in the vdeo to use Postman and create mutiple sites usin
 
 
 # APIv1 (legacy version)
+
+The following section covers the `Older Webex Contact Center APIs (Legacy) - Common to Webex Contact Center 1.0 and the New platform.`
+Although these APIs are available today - we recommend to only use the New Webex Contact Center APIs documented in the new Developer portal.
+
+## Lab Objective
+
+- This lab is designed to ensure you are able to retrieve reporting data using the Legacy APIs from version 1.0 - carried forward into the New Webex Contact Center platform.
+
+- We will explore both the flavors of accessing reporting and call recording data - authenticating using an API Key using the legacy API and using a Bearer token with the new Webex Contact Center APIs on the developer portal.
+
+## Pre-requisite
+
+Before you begin this lab:
+
+1. You already have test calls made (Lab 1 and Lab 2).
+2. You understand how to create Analyzer reports. Review the analyzer lab if you need more information (Lab 6).
+3. Call Recordings are visible under recording management.
+4. You already have an API key generated for `admin1podX` where X is your pod number. View the video below to verify this from the Portal. Reach out to the lab proctors if you require any information around this.
+5. You have the Postman client downloaded and installed to make queries to the Webex Contact Center APIs. Download it here: [Download and Install Postman](https://www.postman.com)
+
+### Quick Links
+
+> Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> WxCC Analyzer: **[https://analyzer.wxcc-us1.cisco.com/analyzer/home](https://analyzer.wxcc-us1.cisco.com/analyzer/home){:target="_blank"}**\
+> HMAC Generator: **[https://www.liavaag.org/English/SHA-Generator/HMAC/](https://www.liavaag.org/English/SHA-Generator/HMAC/){:target="_blank"}**\
+> Legacy V1.0 endpoint - Resource: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}/{id}){:target="_blank"}**\
+> Legacy V1.0 endpoint - Query: **[https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}](https://rest.wxcc-us1.cisco.com/aws/api/{record-type}?q={your-query}){:target="_blank"}**. Resources can be of type: `csrs`, `cars`, `asrs`, `aars`\
+> Developer Portal: **[https://developer.webex-cx.com/](https://developer.webex-cx.com/){:target="_blank"}**\
+> The Official Developer docs: **[https://developer.webex-cx.com](https://developer.webex-cx.com){:target="_blank"}**\
+
 
 ## Part 1: Legacy 1.0 APIs: CSR, CSR Query
 
