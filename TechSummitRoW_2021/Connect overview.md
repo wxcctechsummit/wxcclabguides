@@ -4,9 +4,16 @@ title: "Lab 1d: # Connect overview"
 
 # Table of Contents
 
-- [Introduction to the New Webex CC APIs](#part-1-introduction-to-the-new-webex-cc-apis)
-  * [1. Walkthrough of Auth Flow](#1-walkthrough-of-auth-flow)
-  * [2. Initial Setup of Sample App](#2-initial-setup-of-sample-app)
+- [Overview steps of IMI Connect](#overview-steps-of-imi-connect)
+  * [1. Services](#1-services)
+  * [2. Reports](#2-reports)
+  * [2. Assets](#2-assets)
+  * [2. Tools](#2-tools)
+  * [2. Debug](#2-debug)
+  * [2. Help](#2-help)
+  * [2. App Tray](#2-app-tray)
+  * [2. Settings](#2-settings)
+
 
 # Introduction
 
@@ -53,29 +60,50 @@ The task of that lab is to introduce the IMI Connect interface which is used for
 
 ## 4. Tools
 
-- 
+- Click on **TOOLS** > **Download SDKs**. Here you can download SDK if you want to build your own application.
+
+- Go to **TOOLS** > **Templates**. Here you can create a new template for one of 4 existing channels.
+
+- Now, switch to **Export Logs** in the same **TOOLS** menu. This option will be needed during email configuration. You may also use it during troubleshooting.
+
+- While you are in **Export Logs**, in the **Inbound Logs** section select your service name, Channel Event, time period, and click **DOWNLOAD** button.
 
 
+## 5. Debug
 
-### Congratulations, you have completed **ALL section**. Well done!!!
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+- Go to **DEBUG** which is the next menu item. Debug Console used for troubleshooting purposes of the Flow. 
 
-<script>
-function celeButton() 
-	{
-	window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
-	document.body.style.backgroundImage="url('https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/giphy.gif')";
-	}
-</script>
+- In the **Historical Log** section, select the query Channel type and date range. Click on the **SEARCH** button and check if you have any data.
 
-<div id="button-row">
-	<button onclick="celeButton()" style="
-  border-radius: 5px;
-  background-color: rgb(116,191,75);
-  padding: 10px;">Take Survey and Finish Labs</button>
-</div>
 
-<br />
-<br />
-&nbsp;
-&nbsp;
+## 6. Help
+
+- Go to the next menu item by clicking on **HELP** > **Documentation** which redirects to the IMI documentation portal. All menu items are documented in that documentation.
+
+- Go to the second item in the **HELP** menu by clicking on **API Reference**. This will forward you to the API documentation portal.
+
+- Now switch to the **Change Log** item in the same menu. Here you can find the updates of the product.
+
+
+## 7. App Tray
+
+- Click on the **APP TRAY** > **Bot Builder**. Application Tray allows running a Bot Builder tool where you will create the bot in one of the next tasks.
+
+## 8. Settings
+
+- Click on the next item **Settings** > **Profile Settings** and check the Profile settings.
+
+- Go to **SETTINGS** > **Tenant Settings** and verify the configured Time Zone and Date Format.
+
+- Open **SETTINGS** > **Usage** to see the general statistic of the entire tenant.
+
+- Click on the next item **SETTINGS** > **Contact Support**. Here you can check the details of support email IDs.
+
+- Click on the next item **SETTINGS** > **Teammates**. From here you can add more users to IMI Connect or change the permissions for existing users.
+
+- Go to **SETTINGS** > **Groups/Teams** where you can create a new group or team. Please refer to _"here"_ link to see the explanation of Groups and Teams.
+
+- As the final step click on the **Logout** in the **SETTINGS** menu and make sure that you are signed out from the IMI Connect.
+
+
+### Congratulations, you have completed this section. Well done!!!
