@@ -38,17 +38,22 @@ The task of that lab is to introduce the IMI Connect interface which is used for
 
 ## 2. Reports
 
-- Login with the POD admin account to https://developer.webex-cx.com/.
+- Click on the next item in menu **REPORTS** for generating a report based on the existing service. Select your service in **ENTITY** > **Live Chat** as channel > **Last 30 days** and click on the "GET REPORTS" button. Since there is no data, you will get a "No records found." message.
 
-- Go to > Documentation > API Reference.
+- Since that is a new Service, you should not see any statistics. You will get a _"No records found."_ message. Later you can find here such data as numbers of Submitted, Rejected, Delivered, Read, and Failed messages.
 
-- Follow the instructions in the video to request access to your sample app.
+## 3. Assets
 
-- The sample app is available here :https://github.com/arubhatt/webexcc-api-sample
+- Go to the next item in menu **ASSETS** > **Numbers**. This will show you the list of SMS numbers added to the platform.
 
-- Follow the instructions in the video to clone the repository and run the app.
+- Now click on **ASSETS** > **Apps**. Here you will be able to configure later new applications such as "Email", "Messenger" (FaceBook), "Mobile/ Web" (Live Chat).
+
+- Click on next item **ASSETS** > **Integrations** to see the list of all integrations configured for different events. By default, you should see only 2 Prebuilt Integrations.
 
 
+## 4. Tools
+
+- 
 
 
 
