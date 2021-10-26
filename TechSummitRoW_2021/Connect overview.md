@@ -7,12 +7,12 @@ title: "Lab 1d: # Connect overview"
 - [Overview steps of IMI Connect](#overview-steps-of-imi-connect)
   * [1. Services](#1-services)
   * [2. Reports](#2-reports)
-  * [3. Assets](#2-assets)
-  * [4. Tools](#2-tools)
-  * [5. Debug](#2-debug)
-  * [6. Help](#2-help)
-  * [7. App Tray](#2-app-tray)
-  * [8. Settings](#2-settings)
+  * [3. Assets](#3-assets)
+  * [4. Tools](#4-tools)
+  * [5. Debug](#5-debug)
+  * [6. Help](#6-help)
+  * [7. App Tray](#7-app-tray)
+  * [8. Settings](#8-settings)
 
 
 # Introduction
