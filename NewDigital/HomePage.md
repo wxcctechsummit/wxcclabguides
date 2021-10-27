@@ -11,11 +11,13 @@ The Lab schedule has changed while all labs are being updated to align with the 
 
 ## Lab Schedule
 
+
 | Topic        | Session                                | Corresponding Lab                                                                                      
 | ------------ | -------------------------------------- | ------------------------------------------------------------------------------------------------------ 
 | Introduction | Lab 1a - Control Hub Changes  | [Control Hub Changes](X.md){:target="\_blank"}                               
-|  | Lab 1b - WxCC portal changes   | [WxCC portal changes](X.md){:target="\_blank"}                               
-|  | Lab 1c - Engage overview   | [Engage overview](X.md){:target="\_blank"}                               
-|  | Lab 1d - Connect overview   | [Connect overview](Connect_overview.md){:target="\_blank"}                               
-|  | Lab 1e - Configuration Overview   | [Configuration Overview](X.md){:target="\_blank"}                               
-
+| Introduction | Lab 1b - WxCC portal changes   | [WxCC portal changes](X.md){:target="\_blank"}                               
+| Introduction | Lab 1c - Engage overview   | [Engage overview](X.md){:target="\_blank"}                               
+| Introduction | Lab 1d - Connect overview   | [Connect overview](Connect_overview.md){:target="\_blank"}                               
+| Introduction | Lab 1e - Configuration Overview   | [Configuration Overview](X.md){:target="\_blank"}  
+| IMI Connect  | Lab 2a - Standard Flows    | [Standard Flows](X.md){:target="\_blank"}  
+| IMI Connect  | Lab 2b - Flow Debugging basics    | [Flow Debugging basics](X.md){:target="\_blank"}  
