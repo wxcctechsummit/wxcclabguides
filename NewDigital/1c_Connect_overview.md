@@ -1,6 +1,5 @@
----
-title: "Lab 1d: # Connect overview"
----
+# Lab 1(d): Connect Overview
+
 
 # Table of Contents
 
@@ -23,7 +22,8 @@ The task of that lab is to introduce the IMI Connect interface which is used for
 
 # Overview steps of IMI Connect
 > This is the introduction video. It walks through the menu items and explains the purposes of each tab.
-<iframe width="1024" height="500" src="https://www.youtube-nocookie.com/embed/XXXX?rel=0" title="Lab  1d:Connect overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5cgJyEfVddc" title="Lab 1(d): Connect Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 

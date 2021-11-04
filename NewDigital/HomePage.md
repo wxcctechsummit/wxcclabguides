@@ -10,22 +10,24 @@ The Lab schedule has changed while all labs are being updated to align with the 
 
 ## Lab Schedule
 
-| Topic           | Session                                   | Corresponding Lab                                             |
-| --------------- | ----------------------------------------- | ------------------------------------------------------------- |
-| Introduction    | Lab 1a - Control Hub Changes              | [Control Hub Changes](X.md){:target="\_blank"}                |
-| Introduction    | Lab 1b - WxCC portal changes              | [WxCC portal changes](X.md){:target="\_blank"}                |
-| Introduction    | Lab 1c - Engage overview                  | [Engage overview](Engage_overview.md){:target="\_blank"}      |
-| Introduction    | Lab 1d - Connect overview                 | [Connect overview](Connect_overview.md){:target="\_blank"}    |
-| Introduction    | Lab 1e - Configuration Overview           | [Configuration Overview](X.md){:target="\_blank"}             |
-| IMI Connect     | Lab 2a - Standard Flows                   | [Standard Flows](X.md){:target="\_blank"}                     |
-| IMI Connect     | Lab 2b - Flow Debugging basics            | [Flow Debugging basics](Flow_debugging.md){:target="\_blank"} |
-| Chat / Email    | Lab 3a - Asset creation end to end (Chat) | [Asset creation end to end (Chat)](X.md){:target="\_blank"}   |
-| Chat / Email    | Lab 3b - Workflow association (Chat)      | [Workflow association (Chat)](X.md){:target="\_blank"}        |
-| Chat / Email    | Lab 3c - Asset creation end to end (Mail) | [Asset creation end to end (Mail)](X.md){:target="\_blank"}   |
-| Chat / Email    | Lab 3d - Workflow association(Mail)       | [Workflow association(Mail)](X.md){:target="\_blank"}         |
-| Facebook / SMS  | Lab 3a - Asset creation end to end        | [Asset creation end to end](X.md){:target="\_blank"}          |
-| Facebook / SMS  | Lab 3b - Workflow association             | [Workflow association](X.md){:target="\_blank"}               |
-| Templates & Bot | Lab 4a - Templates                        | [Templates](X.md){:target="\_blank"}                          |
-| Templates & Bot | Lab 4b - QnA Bot                          | [QnA Bot](X.md){:target="\_blank"}                            |
-| Templates & Bot | Lab 4c - Task Bot                         | [Task Bot](X.md){:target="\_blank"}                           |
-| Templates & Bot | Lab 4d - Associate bot in FBM Flow        | [Associate bot in FBM Flow](X.md){:target="\_blank"}          |
+| Topic           | Session                                   | Corresponding Lab                                                       |
+| --------------- | ----------------------------------------- | -------------------------------------------------------------           |
+| Introduction    | Lab 1a - Control Hub & Portal Changes     | [Control Hub Changes](1a_CH_Portal_Changes.md){:target="\_blank"}                          |
+| Introduction    | Lab 1b - Engage overview                  | [Engage overview](1b_Engage_overview.md){:target="\_blank"}                |
+| Introduction    | Lab 1c - Connect overview                 | [Connect overview](1c_Connect_overview.md){:target="\_blank"}              |
+| Introduction    | Lab 1d - Connect user management          | [Connect overview](1d_Connect_users.md){:target="\_blank"}              |
+| IMI Connect     | Lab 2a - Standard Flows                   | [Standard Flows](2a_Access_Standard_Flows.md){:target="\_blank"}                               |
+| IMI Connect     | Lab 2b - Configuring Standard Flows       | [Configuring Standard Flows](2b_Configure_Standard_Flows.md){:target="\_blank"}      |
+| IMI Connect     | Lab 2c - Flow Debugging basics            | [Flow Debugging basics](2c_Flow_debugging.md){:target="\_blank"}           |
+| Chat / Email    | Lab 3a - Asset creation end to end (Chat) | [Asset creation end to end (Chat)](X.md){:target="\_blank"}             |
+| Chat / Email    | Lab 3b - Workflow association (Chat)      | [Workflow association (Chat)](X.md){:target="\_blank"}                  | 
+| Chat / Email    | Lab 3c - Asset creation end to end (Mail) | [Asset creation end to end (Mail)](3c_d_Email_Configuration.md){:target="\_blank"}             |
+| Chat / Email    | Lab 3d - Workflow association (Mail)      | [Workflow association(Mail)](3c_d_Email_Configuration.md){:target="\_blank"}                   |
+| Facebook / SMS  | Lab 4a - Asset creation end to end (SMS)  | [Asset creation end to end](X.md){:target="\_blank"}                    |
+| Facebook / SMS  | Lab 4b - Workflow association (SMS)       | [Workflow association](X.md){:target="\_blank"}                         |
+| Facebook / SMS  | Lab 4c - Asset creation end to end (FBM)  | [Asset creation end to end](X.md){:target="\_blank"}                    |
+| Facebook / SMS  | Lab 4d - Workflow association (FBM)       | [Workflow association](X.md){:target="\_blank"}                         |
+| Templates & Bot | Lab 5a - Templates                        | [Templates](X.md){:target="\_blank"}                                    |
+| Templates & Bot | Lab 5b - QnA Bot                          | [QnA Bot](X.md){:target="\_blank"}                                      |
+| Templates & Bot | Lab 5c - Task Bot                         | [Task Bot](X.md){:target="\_blank"}                                     |
+| Templates & Bot | Lab 5d - Associate bot in FBM Flow        | [Associate bot in FBM Flow](X.md){:target="\_blank"}                    |
