@@ -5,8 +5,8 @@ title: 'Lab 1(a): Control Hub and Portal Changes'
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uGU7u4gPnB4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
-1. [Control Hub Digital channels verfication](#1.-Control-Hub-Digital-channels-verfication)
-2. [New component cross-launch](#2.-New-component-cross-launch)
+1. [Control Hub Digital channels verfication](#1-control-hub-digital-channels-verification)
+2. [New component cross-launch](#2-New-component-cross-launch)
 
 # Introduction
 
@@ -34,7 +34,7 @@ This lab is designed to verify that the new digital channels is enabled in the t
 
 ![Banner](imi_images/CH_settings_2.jpg)
 
-# 2. New component cross-launch
+# 2. New component cross launch
 - 'Services' select  'Contact Center' > 'Settings' > 'General' > 'Advanced Configuration' > Select 'Go to Webex Contact Center Management Portal' to cross launch to administration portal 
 
 - In Administration portal, select 'New Digital Channels' to cross launch into the new component 'Engage' 
