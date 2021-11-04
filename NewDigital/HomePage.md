@@ -15,7 +15,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | Introduction    | Lab 1a - Control Hub & Portal Changes     | [Control Hub Changes](1a_CH_Portal_Changes.md){:target="\_blank"}                          |
 | Introduction    | Lab 1b - Engage overview                  | [Engage overview](1b_Engage_overview.md){:target="\_blank"}                |
 | Introduction    | Lab 1c - Connect overview                 | [Connect overview](1c_Connect_overview.md){:target="\_blank"}              |
-| Introduction    | Lab 1d - Connect user management          | [Connect overview](1d_Connect_users.md){:target="\_blank"}              |
+| Introduction    | Lab 1d - Connect user management          | [Connect user management](1d_Connect_users.md){:target="\_blank"}              |
 | IMI Connect     | Lab 2a - Standard Flows                   | [Standard Flows](2a_Access_Standard_Flows.md){:target="\_blank"}                               |
 | IMI Connect     | Lab 2b - Configuring Standard Flows       | [Configuring Standard Flows](2b_Configure_Standard_Flows.md){:target="\_blank"}      |
 | IMI Connect     | Lab 2c - Flow Debugging basics            | [Flow Debugging basics](2c_Flow_debugging.md){:target="\_blank"}           |
