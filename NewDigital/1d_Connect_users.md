@@ -1,0 +1,57 @@
+
+# Lab 1(d): Connect User Management
+
+Video example
+
+<iframe width="560" height="315" src="https://tscfeedbacklive.azureedge.net/uploads/g013900fVZj3IKipdytZVHX34abbH/feb846bb-5c8a-4395-b60a-4a403ee3d514.mp4?sv=2019-07-07&sr=b&sig=CRFbEJ8bvCZJyUahUHub2zlKSX9qNADunxkRKgKe34k%3D&st=2021-10-21T07%3A55%3A31Z&se=2021-10-22T08%3A00%3A31Z&sp=r" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Table of Contents
+1. Login to Connect portal
+2. Add new users with administrator role
+3. New user activation
+
+# Introduction
+
+## Lab Objective
+
+This lab is designed to add new administrator users in Connect. This is an optional lab if you want to add more administrators to the connect tenant. The connect portal will be used only by Webex Contact Centre administrators.
+
+## Pre-requisite
+
+1. IMI Connect portal URL
+2. Tenant Owner credentials to login to IMI Connect portal
+
+
+# 1. Login to Connect portal
+
+- Access IMI connect URL (this is specific to the tenant you are using) 
+- Login with tenant owner credentials 
+- The owner credential is usually sent to the WxCC tenant (partner Gold tenant) administrator once the IMI tenant provisioning is complete
+    - Please contact your Cisco Partner Success Account Manager (PSAM) if there are any challenges identifying the IMI connect owner details
+
+![Banner](imi_images/Connect_1.jpg)
+
+
+# 2. Add new users with administrator role
+- Once logged in to Connect, go to 'Settings' > 'Teammates'
+- Add a new user (must be a working emailID) and select 'Full access' role and click 'Invite user'
+
+![Banner](imi_images/Connect_2.jpg)
+
+# 3. New user activation
+- Click 'Join the team' link in the welcome email to complete user registration
+- Provide your name and setup the passwords, click 'Next'
+- Fill out additional details about yourself and click 'Next'
+
+![Banner](imi_images/Connect_user_1.jpg)
+![Banner](imi_images/Connect_user_2.jpg)
+
+
+Changelog:
+
+| **Version** | **Comments** | **Author(s)** | **Date** |
+| --- | --- | --- | --- |
+| 1.0 | Initial Release | Gagarin JS (gasathiy@cisco.com) | 31 Oct 2021 |
+
+
+
