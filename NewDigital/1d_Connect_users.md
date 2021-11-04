@@ -1,9 +1,7 @@
+---
+title: 'Lab 1(d): Connect User Management'
+---
 
-# Lab 1(d): Connect User Management
-
-Video example
-
-<iframe width="560" height="315" src="https://tscfeedbacklive.azureedge.net/uploads/g013900fVZj3IKipdytZVHX34abbH/feb846bb-5c8a-4395-b60a-4a403ee3d514.mp4?sv=2019-07-07&sr=b&sig=CRFbEJ8bvCZJyUahUHub2zlKSX9qNADunxkRKgKe34k%3D&st=2021-10-21T07%3A55%3A31Z&se=2021-10-22T08%3A00%3A31Z&sp=r" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 1. Login to Connect portal
