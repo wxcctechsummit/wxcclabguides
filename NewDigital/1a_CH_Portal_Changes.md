@@ -2,6 +2,7 @@
 title: 'Lab 1(a): Control Hub and Portal Changes'
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uGU7u4gPnB4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 1. Control Hub Digital channels verfication

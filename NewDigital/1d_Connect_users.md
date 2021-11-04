@@ -2,7 +2,6 @@
 title: 'Lab 1(d): Connect User Management'
 ---
 
-
 # Table of Contents
 1. Login to Connect portal
 2. Add new users with administrator role
@@ -41,8 +40,8 @@ This lab is designed to add new administrator users in Connect. This is an optio
 - Provide your name and setup the passwords, click 'Next'
 - Fill out additional details about yourself and click 'Next'
 
-![Banner](imi_images/Connect_user_1.jpg)
-![Banner](imi_images/Connect_user_2.jpg)
+![Banner](imi_images/Connect_User_1.jpg)
+![Banner](imi_images/Connect_User_2.jpg)
 
 
 Changelog:
