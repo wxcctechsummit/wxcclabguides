@@ -15,3 +15,4 @@ Welcome to the 2021 Cisco Webex Contact Center Technical Partner Summit. There a
 | June        | 2021 | APJC WebexCC Partner Summit            |  [June 2021 Technical Partner Summit Lab Library](TechSummitRoW_2021/HomePage.md){:target="_blank"}                                                      |
 | July        | 2021 | UK WebexCC Partner Summit            |  [July 2021 Technical Partner Summit Lab Library](TechSummitRoW_2021/HomePageUK.md){:target="_blank"}                                                      |
 | October        | 2021 | EMEA WebexCC Partner Summit            |  [October 2021 Technical Partner Summit Lab Library](TechSummitRoW_2021/HomePage_EMEA.md){:target="_blank"}                                                      |
+| November        | 2021 | ASWAN WebexCC Partner Summit            |  [November 2021 Technical Partner Summit Lab Library](TechSummitRoW_2021/HomePage.md){:target="_blank"}                                                      |
