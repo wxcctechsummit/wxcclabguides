@@ -119,7 +119,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 	- Set "Entry Timeout" to 10 seconds
 	- Loop "Entry Timeout" and "Unmatched Entry" of the "Error Handling" section to the input of "Main_Menu" activity
 	- Terminate any "Custom Links" outputs of menu with "DisconnectContact" activity
-	- Verify and publish the flow.
+	- Verify and publish the flow. 
 
 > **NOTE:** Later on each member will return to the “Flow_Main_TS” and create a Menu Link to their Entry Point.
 
