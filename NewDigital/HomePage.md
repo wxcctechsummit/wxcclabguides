@@ -19,8 +19,8 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | IMI Connect     | Lab 2a - Standard Flows                   | [Standard Flows](2a_Access_Standard_Flows.md){:target="\_blank"}                               |
 | IMI Connect     | Lab 2b - Configuring Standard Flows       | [Configuring Standard Flows](2b_Configure_Standard_Flows.md){:target="\_blank"}      |
 | IMI Connect     | Lab 2c - Flow Debugging basics            | [Flow Debugging basics](2c_Flow_debugging.md){:target="\_blank"}           |
-| Chat / Email    | Lab 3a - Asset creation end to end (Chat) | [Asset creation end to end (Chat)](X.md){:target="\_blank"}             |
-| Chat / Email    | Lab 3b - Workflow association (Chat)      | [Workflow association (Chat)](X.md){:target="\_blank"}                  | 
+| Chat / Email    | Lab 3a - Asset creation end to end (Chat) | [Asset creation end to end (Chat)](3a_b_Chat_Configuration.md){:target="\_blank"}             |
+| Chat / Email    | Lab 3b - Workflow association (Chat)      | [Workflow association (Chat)](3a_b_Chat_Configuration.md){:target="\_blank"}                  | 
 | Chat / Email    | Lab 3c - Asset creation end to end (Mail) | [Asset creation end to end (Mail)](3c_d_Email_Configuration.md){:target="\_blank"}             |
 | Chat / Email    | Lab 3d - Workflow association (Mail)      | [Workflow association(Mail)](3c_d_Email_Configuration.md){:target="\_blank"}                   |
 | Facebook / SMS  | Lab 4a - Asset creation end to end (SMS)  | [Asset creation end to end](X.md){:target="\_blank"}                    |
