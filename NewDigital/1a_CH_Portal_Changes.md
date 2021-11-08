@@ -54,6 +54,12 @@ This lab is designed to verify that the new digital channels is enabled in the t
 ### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 
+Changelog:
+
+| **Version** | **Comments** | **Author(s)** | **Date** |
+| --- | --- | --- | --- |
+| 1.0 | Initial Release | Gagarin JS (gasathiy@cisco.com) | 31 Oct 2021 |
+
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}
 function nextLab() 
@@ -80,11 +86,6 @@ function nextLab()
 </div>
 
 
-Changelog:
-
-| **Version** | **Comments** | **Author(s)** | **Date** |
-| --- | --- | --- | --- |
-| 1.0 | Initial Release | Gagarin JS (gasathiy@cisco.com) | 31 Oct 2021 |
 
 
 
