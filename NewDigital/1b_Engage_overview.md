@@ -63,8 +63,42 @@ On the customner care login, there is an option to download transcript.
 - Copy the conversationID from IMIconnect workflow debugger.(for example - CSRA8EHKTBTIVNU7)
 - Paste it in search box and your trascript will appear.
 
+---
+
+### Congratulations, you have compleated this section! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+
+[Back to top](#table-of-contents)
+
+---
+
 Changelog:
 
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Shrishail (sdoddali@cisco.com) | 31 Oct 2021 |
+
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}
+function nextLab() 
+ {
+ window.open("https://app.smartsheet.com/b/form/ff1e015c4aed46bfab3f5caed7850aa4", '_blank');
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/1c_Connect_overview.html";
+ }
+</script>
+
+<div id="button-row">
+	<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go back to Main Page</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Take Survey and Go to Next Lab</button>
+
+
+</div>
