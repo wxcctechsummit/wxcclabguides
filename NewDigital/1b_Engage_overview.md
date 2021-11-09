@@ -65,8 +65,8 @@ On the customner care login, there is an option to download transcript.
 
 ---
 
-### Congratulations, you have compleated this section! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+### Congratulations, you have completed this section! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete a short survey.
 
 [Back to top](#table-of-contents)
 
@@ -77,6 +77,7 @@ Changelog:
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Shrishail (sdoddali@cisco.com) | 31 Oct 2021 |
+| 2.0 | Format Changes | Gagarin JS (gasathiy@cisco.com) | 09 Nov 2021 |
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}

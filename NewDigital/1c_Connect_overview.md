@@ -108,8 +108,8 @@ The task of that lab is to introduce the IMI Connect interface which is used for
 
 ---
 
-### Congratulations, you have compleated this section! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+### Congratulations, you have completed this section! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete a short survey.
 
 [Back to top](#table-of-contents)
 

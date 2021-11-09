@@ -11,7 +11,7 @@ Changelog:
 | 1.0 | Initial page created | Gagarin JS (gasathiy@cisco.com) | 09 Nov 2021 |
 
 ### Congratulations, you have completed **ALL section**. Well done!!!
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete a short survey.
 
 <script>
 function celeButton() 
