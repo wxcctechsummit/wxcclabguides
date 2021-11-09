@@ -2,7 +2,7 @@
 title: 'Lab 3(a,b): Chat Configuration'
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sWkg876L67A" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/sWkg876L67A" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 
@@ -27,15 +27,17 @@ This lab is designed to complete required Chat configurations in WxCC/IMI. You w
 We will be configuring  Service, Chat Assets, Entry Point, Queue, Chat Template, Website Settings, and corresponding workflows.
 
 ## Pre-requisite
-WxCC Portal, Agent Desktop and IMI connect URL.
-Admin credentials to complete configurations in WxCC portal and IMI connect.
-Agent Credentials to Handle the Chat.
+- WxCC Portal, Agent Desktop and IMI connect URL.
+- Admin credentials to complete configurations in WxCC portal and IMI connect.
+- Agent Credentials to Handle the Chat.
 
 ## Lab 3a - Asset creation end to end (Chat)
 ### 1. Service Creation
-.Customer admin logs in to IMI connect UI using the URL provided by the IMI team with the credentials. Here for the demo tenant the URL is "https://solutionassuranceesrgt-sa.imiconnect.io/login". 
-.Login to IMI connect, from menu goto Services=> CREATE NEW SERVICE
-.Provide a Name
+- Customer admin logs in to IMI connect UI using the URL provided by the IMI team with the credentials. Here for the demo tenant the URL is "https://solutionassuranceesrgt-sa.imiconnect.io/login". 
+
+- Login to IMI connect, from menu goto Services=> CREATE NEW SERVICE
+
+- Provide a Name
 
 ### 2. Chat Asset configuration and Register to Webex CC in IMI Connect
  

@@ -2,7 +2,7 @@
 title: 'Lab 3(c,d): Email Configuration'
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ESaqR2Mwnww" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/ESaqR2Mwnww" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 - [Lab 3c - Asset creation end to end (Mail)](#Lab-3c---Asset-creation-end-to-end-(Mail))
@@ -140,7 +140,14 @@ NOTE: Repeat the step 10 for all Engage and WxCC nodes.
 - Add wrap up and close the task.
 
 
+---
 
+### Congratulations, you have compleated this section! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+
+[Back to top](#table-of-contents)
+
+---
 
 Changelog:
 
@@ -149,4 +156,27 @@ Changelog:
 | 1.0 | Initial Release | Naveen Kumar Narasimhan Almeti (naveenkn@cisco.com) | 21 Oct 2021 |
 | 2.0 | Format Changes | Gagarin JS (gasathiy@cisco.com) | 04 Nov 2021 |
 
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}
+function nextLab() 
+ {
+ window.open("https://app.smartsheet.com/b/form/ff1e015c4aed46bfab3f5caed7850aa4", '_blank');
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/4a_b_SMS_Configuration.html";
+ }
+</script>
 
+<div id="button-row">
+	<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go back to Main Page</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Take Survey and Go to Next Lab</button>
+
+
+</div>

@@ -1,32 +1,8 @@
 ---
-title: 'Lab 2(a): Standard Flows'
+title: 'Lab 4(a,b): SMS Configuration'
 ---
 
-<iframe width="1024" height="576" src="https://www.youtube.com/embed/YtplIAY1hys" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-# Table of Contents
-
-1. Download the Standard Flows
-
-
-# Introduction
-
-## Lab Objective
-
-This lab is designed to ensure we will be able to download the standard flows.  
-
-## Pre-requisite
-
-1. Admin credentials to login to IMI Connect.
-
-# 1. Download the Standard Flows
-- Login to IMI Connect 
-- Go to help and click Documentation 
-- Click View all under CISCO WEBEX CONTACT CENTER & IMICONNECT INTEGRATION 
-- Click Flow Configuration Using Sample Templates
-- Click on "These flows are available for download here."
-- Click Save to save the file
-
+# This lab is not yet available. Cisco Team will notify in the lab support room when this lab is ready. Thank you.
 
 ---
 
@@ -36,19 +12,18 @@ This lab is designed to ensure we will be able to download the standard flows.
 [Back to top](#table-of-contents)
 
 ---
-
 Changelog:
 
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
-| 1.0 | Initial Release | Chandra Sekhar Gali | 27 Oct. 21 |
+| 1.0 | Initial page created | Gagarin JS (gasathiy@cisco.com) | 09 Nov 2021 |
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}
 function nextLab() 
  {
  window.open("https://app.smartsheet.com/b/form/ff1e015c4aed46bfab3f5caed7850aa4", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/2b_Configure_Standard_Flows.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/4c_d_FBM_Configuration.html";
  }
 </script>
 
@@ -67,9 +42,3 @@ function nextLab()
 
 
 </div>
-
-
-
-
-
-

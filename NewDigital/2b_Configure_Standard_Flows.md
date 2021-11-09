@@ -2,7 +2,7 @@
 title: 'Lab 2(b): Configuring Standard Flows'
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d3ZIhE4UZDI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/d3ZIhE4UZDI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 
