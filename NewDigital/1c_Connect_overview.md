@@ -24,7 +24,7 @@ The task of that lab is to introduce the IMI Connect interface which is used for
 # Overview steps of IMI Connect
 > This is the introduction video. It walks through the menu items and explains the purposes of each tab.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5cgJyEfVddc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/5cgJyEfVddc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
