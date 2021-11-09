@@ -57,8 +57,8 @@ This lab is designed to ensure we will be able to upload and configure the Stand
 
 ---
 
-### Congratulations, you have compleated this section! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
+### Congratulations, you have completed this section! 
+### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete a short survey.
 
 [Back to top](#table-of-contents)
 
@@ -68,7 +68,8 @@ Changelog:
 
 | **Version** | **Comments** | **Author(s)** | **Date** |
 | --- | --- | --- | --- |
-| 1.0 | Initial Release | Chandra Sekhar Gali | 27 Oct. 21 |
+| 1.0 | Initial Release | Chandra Sekhar Gali (chgali@cisco.com) | 27 Oct 21 |
+| 2.0 | Format Changes | Gagarin JS (gasathiy@cisco.com) | 09 Nov 2021 |
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}
