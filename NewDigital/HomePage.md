@@ -12,6 +12,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 
 | Topic           | Session                                   | Corresponding Lab                                                       |
 | --------------- | ----------------------------------------- | -------------------------------------------------------------           |
+| Before you Begin| Lab Pre-requisites, Format, Support       | [Lab Information](Lab_Information.md){:target="\_blank"}                          |
 | Introduction    | Lab 1a - Control Hub & Portal Changes     | [Control Hub Changes](1a_CH_Portal_Changes.md){:target="\_blank"}                          |
 | Introduction    | Lab 1b - Engage overview                  | [Engage overview](1b_Engage_overview.md){:target="\_blank"}                |
 | Introduction    | Lab 1c - Connect overview                 | [Connect overview](1c_Connect_overview.md){:target="\_blank"}              |
