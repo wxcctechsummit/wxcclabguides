@@ -1,5 +1,5 @@
 ---
-title: 'New Digital Channels Summit'
+title: 'Lab Pre-requisites, Format, Support'
 ---
 
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/prUqQC2FxPU" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -12,7 +12,7 @@ title: 'New Digital Channels Summit'
 | ProdUS1 (WxCC US DC)| https://portal-v2.wxcc-us1.cisco.com| https://desktop.wxcc-us1.cisco.com |
 | ProdEU1 (WxCC Uk DC)| https://portal-v2.wxcc-eu1.cisco.com| https://desktop.wxcc-eu1.cisco.com |
 
-`Before starting the labs, please confirm that you can login to WxCC Admin portal and Agent desktop`
+## Before starting the labs, please confirm that you can login to WxCC Admin portal and Agent desktop
 
 1. Control Hub/Administration portal should use a different user (Ex: user-1) with Administrator privileges. 
 
@@ -22,7 +22,7 @@ If agent is also assigned admin roles, this will cause issue with accepting digi
 3. Identify Connect URL of your Gold Tenant. Request Connect owner in your org to add you as an admin user (Ex: user-3). Users are locally managed in Connect. (Review Lab 1(d) for steps)
 
 
-`Lab Support`
+## Lab Support
 
 1. All registered participants will be added to the support room. 
 
