@@ -2,6 +2,11 @@
 title: 'Lab 2(b): Configuring Standard Flows'
 ---
 
+`Please review this video before you proceed with this lab task.` 
+
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/jt-cLg_8Axc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+`Lab task video`
 <iframe width="1024" height="576" src="https://www.youtube.com/embed/d3ZIhE4UZDI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
@@ -70,6 +75,7 @@ Changelog:
 | --- | --- | --- | --- |
 | 1.0 | Initial Release | Chandra Sekhar Gali (chgali@cisco.com) | 27 Oct 21 |
 | 2.0 | Format Changes | Gagarin JS (gasathiy@cisco.com) | 09 Nov 2021 |
+| 3.0 | Adding pre-configured template info | Gagarin JS (gasathiy@cisco.com) | 10 Nov 2021 |
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}
