@@ -7,7 +7,7 @@ title: 'Lab Pre-requisites, Format, Support'
                                                     
 ## Access URLs
 
-| Environment     | Webex CC Admin portal                     | Agent Desktop Lab                                                       |
+| Environment     | Webex CC Admin portal                     | Agent Desktop                                                       |
 | --------------- | ----------------------------------------- | -------------------------------------------------------------           |
 | ProdUS1 (WxCC US DC)| https://portal-v2.wxcc-us1.cisco.com| https://desktop.wxcc-us1.cisco.com |
 | ProdEU1 (WxCC Uk DC)| https://portal-v2.wxcc-eu1.cisco.com| https://desktop.wxcc-eu1.cisco.com |
