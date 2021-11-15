@@ -29,6 +29,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - [Part 5: WebexCC Desktop Layout](#part-5-webexcc-dekstop-layout)
     * [9. WebexCC Salesforce Desktop Layout Configuration](#9-webexcc-salesforce-desktop-layout-configuration)
 - [Login Agent and Make a Test Call](#login-agent-make-call)
+
 [4.2 Microsoft Dynamics 365 integration](#42-microsoft-dynamics-365-integration)
 
 
