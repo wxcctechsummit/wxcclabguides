@@ -33,6 +33,8 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 [4.2 Microsoft Dynamics 365 integration](#42-microsoft-dynamics-365-integration)
 - [Optional: Start Microsoft Dynamics Trial](#optional-start-microsoft-dynamics-trial)
 - [Part 1: Install applications for MS Dynamics 365 environment](#part-1-install-applications-for-ms-dynamics-365-environment)
+    * [1. Channel Integration Framework installation from AppSource](#1-channel-integration-framework-installation-from-appsource)
+    * [2. Cisco Webex Contact Center for Microsoft Dynamics installation from AppSource](#2-cisco-webex-contact-center-for-microsoft-dynamics-installation-from-appsource)
 - [Part 2: Configure applications for MS Dynamics 365 environment](#part-2-configure-applications-for-ms-dynamics-365-environment)
 - [Part 3: Test Webex Contact Center Agent Desktop for MS Dynamics 365](#part-3-test-webex-contact-center-agent-desktop-for-ms-dynamics-365)
 
@@ -297,6 +299,44 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 ## Part 1: Install applications for MS Dynamics 365 environment
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/h3RWXoFZDJg?rel=0" title="CRM Integration Lab: Install applications for MS Dynamics 365 environment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 1. Channel Integration Framework installation from AppSource
+
+- Sign into [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+
+- Go to Environments and click on the environment you created for this lab.
+
+- Click on **Dynamics 365 apps** link under "Resources" section of your environment.
+
+- Click on **Open AppSource** at the top of the apps page.
+
+- Search for "channel" on the AppSource page and choose "Dynamics 365 Channel Integration Framework" from the list.
+
+- Press **Get it now** button on the app page to install it.
+
+- Sign into AppSource if needed using your username (in the form of an e-mail address). Then press **Get it now** on the app page one more time.
+
+- Complete the form by choosing Country/region, tick the checkbox to grant permission and press **Continue** button to proceed.
+
+- Select an environment, tick both checkboxes and press **Install** button to start the installation.
+
+- Use **Refresh** button at the top of "Dynamics 365 apps" page and wait untill the status of "Dynamics 365 Channel Integration Framework" app is changed to "Installed".
+
+
+### 2. Cisco Webex Contact Center for Microsoft Dynamics installation from AppSource
+
+- Click on **Open AppSource** at the top of the apps page one more time in order to navigate to AppSource.
+
+- Search for "webex" on the AppSource page and choose "Cisco Webex Contact Center for Microsoft Dynamics" from the list.
+
+- Press **Get it now** button on the app page to install it.
+
+- Tick the checkbox to grant permission and press **Continue** button to proceed.
+
+- Select an environment, tick both checkboxes and press **Install** button to start the installation.
+
+- Use **Refresh** button at the top of "Dynamics 365 apps" page and wait untill the status of "Cisco Webex Contact Center for Microsoft Dynamics" app is changed to "Installed".
 
 
 ## Part 2: Configure applications for MS Dynamics 365 environment
