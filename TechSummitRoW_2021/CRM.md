@@ -13,7 +13,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 # Table of Contents
 
 [4.1 Salesforce integration](#41-salesforce-integration)
-- [Optional: Salesforce Account Creation](#optional-create-salesforce-account)
+- [Optional: Create Salesforce Account](#optional-create-salesforce-account)
 - [Part 1: Connector Installation](#part-1-connector-installation)
     * [1. Connector Installation From Salesforce AppExchange](#1-connector-installation-from-salesforce-appexchange)
     * [2. Connector Installation Verification](#2-connector-installation-verification)
@@ -31,6 +31,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - [Login Agent and Make a Test Call](#login-agent-make-call)
 
 [4.2 Microsoft Dynamics 365 integration](#42-microsoft-dynamics-365-integration)
+- [Optional: Start Microsoft Dynamics Trial](#optional-start-microsoft-dynamics-trial)
 
 
 # 4.1 Salesforce integration
@@ -51,6 +52,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 ## Optional: Create Salesforce Account
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/_4ZgHUSsp4U?rel=0" title="CRM Integration Lab: Salesforce Account Creation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 - Navigate to [Salesforce Developer](https://developer.salesforce.com) website and click on **Sign Up**.
@@ -255,6 +257,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 ## Optional: Start Microsoft Dynamics Trial
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/p2KYPe1LAYs?rel=0" title="CRM Integration Lab: Start Microsoft Dynamics Trial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 - Navigate to [Dynamics 365 Free Trial](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) website
