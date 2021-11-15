@@ -43,14 +43,14 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 ### Pre-requisites
 
-1. Administrator/ Supervisor with Salesforce access​.
-2. Administrator/ Supervisor with WebexCC portal access​.
-3. New user (Agent) is already created​.
-4. Agent is able to login to agent desktop​.
-5. Agent should be part of a team​.
-6. Basic knowledge of JSON format​.
+1. Administrator/ Supervisor with Salesforce access.
+2. Administrator/ Supervisor with WebexCC portal access.
+3. New user (Agent) is already created.
+4. Agent is able to login to agent desktop.
+5. Agent should be part of a team.
+6. Basic knowledge of JSON format.
 7. Salesforce Custom Desktop Layout.
-8. Use any online [JSON validator](https://jsonlint.com/) to validate the file​.
+8. Use any online [JSON validator](https://jsonlint.com/) to validate the file.
 9. Lab 2 (IVR and Contact Routing) completed.
 
 
