@@ -2,26 +2,12 @@
 title: "Lab 4: CRM Integration"
 ---
 
-# 4.1 Salesfoce integration
 
 # Introduction
 
 ### Lab Objective
 
 The object of this lab excercise is to Install and Configure the WebexCC Salesforce Agent Desktop Application.
-
-### Pre-requisites
-
-1. Administrator/ Supervisor with Salesforce access​.
-2. Administrator/ Supervisor with WebexCC portal access​.
-3. New user (Agent) is already created​.
-4. Agent is able to login to agent desktop​.
-5. Agent should be part of a team​.
-6. Basic knowledge of JSON format​.
-7. Salesforce Custom Desktop Layout.
-8. Use any online [JSON validator](https://jsonlint.com/) to validate the file​.
-9. Lab 2 (IVR and Contact Routing) completed.
-
 
 # Table of Contents
 
@@ -41,6 +27,21 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 - [Part 5: WebexCC Desktop Layout](#part-5-webexcc-dekstop-layout)
     * [9. WebexCC Salesforce Desktop Layout Configuration](#9-webexcc-salesforce-desktop-layout-configuration)
 - [Login Agent and Make a Test Call](#login-agent-make-call)
+
+
+# 4.1 Salesfoce integration
+
+### Pre-requisites
+
+1. Administrator/ Supervisor with Salesforce access​.
+2. Administrator/ Supervisor with WebexCC portal access​.
+3. New user (Agent) is already created​.
+4. Agent is able to login to agent desktop​.
+5. Agent should be part of a team​.
+6. Basic knowledge of JSON format​.
+7. Salesforce Custom Desktop Layout.
+8. Use any online [JSON validator](https://jsonlint.com/) to validate the file​.
+9. Lab 2 (IVR and Contact Routing) completed.
 
 
 ## Optional: Create Salesforce Account
@@ -287,4 +288,3 @@ function nextLab()
   padding: 10px;">Take Survey and Go to Lab 5</button>
 
 </div>
-
