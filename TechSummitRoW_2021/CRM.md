@@ -257,17 +257,48 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/p2KYPe1LAYs?rel=0" title="CRM Integration Lab: Start Microsoft Dynamics Trial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Install applications within MS Dynamics 365
+- Navigate to [Dynamics 365 Free Trial](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) website
+
+- Scroll down and click on **Try for free** under "Dynamics 365 Sales".
+
+- Enter your email address at "Let's get started" page and press **Start your free trial** button.
+
+> **Note:** If there is a notification about using work account, click on **set up** link to create new account. Then follow the wizard.
+
+- Enter the same email address at the first step of account creation wizard and press **Next**.
+
+- Complete the form with your personal details and click on **Next** to continue.
+
+- Verify your account using either SMS or phone call.
+
+- Enter username, subdomain name under ".onmicrosoft.com" domain and password. Then press **Next** button.
+
+- Copy and note your username at the last step of the wizard and click on **Get Started** button to create an account.
+
+- Sing into Power Platform Admin Center under created account by providing username (in the form of an e-mail address) and password.
+
+- In "New environment" dialog enter "Name", choose "Region" and press **Next**.
+
+- In "Add database" dialog choose the language if needed and press **Save** to create an environment.
+
+- Use **Refresh** button at the top of "Environments" page and wait untill the status of new envornment is changed to "Ready".
+
+- Go to your e-mail inbox and click **Start your trial** link to activate trial.
+
+- Once you are forwarded to "Microsoft 365 admin center" make sure that "Subscription status" is "Active".
+
+
+## Part 1: Install applications within MS Dynamics 365
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/h3RWXoFZDJg?rel=0" title="CRM Integration Lab: Install applications within MS Dynamics 365" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Configure applications within MS Dynamics 365
+## Part 2: Configure applications within MS Dynamics 365
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/Ku3-ek0o4_0?rel=0" title="CRM Integration Lab: Configure applications within MS Dynamics 365" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Test Webex Contact Center Agent Desktop embedded into MS Dynamics
+## Part 3: Test Webex Contact Center Agent Desktop embedded into MS Dynamics
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/PVJiQeNd2NQ?rel=0" title="CRM Integration Lab: Test Webex Contact Center Agent Desktop embedded into MS Dynamics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
