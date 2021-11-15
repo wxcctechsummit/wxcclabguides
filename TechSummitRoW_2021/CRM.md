@@ -56,7 +56,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/_4ZgHUSsp4U?rel=0" title="CRM Integration Lab: Salesforce Account Creation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-###
+\
 
 - Navigate to [Salesforce Developer](https://developer.salesforce.com) website and click on **Sign Up**.
 
@@ -261,7 +261,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/p2KYPe1LAYs?rel=0" title="CRM Integration Lab: Start Microsoft Dynamics Trial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-###
+\
 
 - Navigate to [Dynamics 365 Free Trial](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) website
 
