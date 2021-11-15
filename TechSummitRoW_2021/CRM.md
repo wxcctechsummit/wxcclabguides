@@ -31,7 +31,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - [Login Agent and Make a Test Call](#login-agent-make-call)
 
 
-# 4.1 Salesfoce integration
+# 4.1 Salesforce integration
 
 ### Pre-requisites
 
