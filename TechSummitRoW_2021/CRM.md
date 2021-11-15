@@ -2,6 +2,7 @@
 title: "Lab 4: CRM Integration"
 ---
 
+# 4.1 Salesfoce integration
 
 # Introduction
 
@@ -233,6 +234,24 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 - Make sure the agent is in available state and make a test call to your EP.
 
 - Upon accepting the call, we will see account information populated for this call. A `task activity` should also be created and visible upon accepting the call. 
+
+
+# 4.2 Microsoft Mynamics 365 integration
+
+### Lab Objective
+
+This lab covers the New Microsoft Dynamics Integrated Desktop – this is an Integrated Desktop within the Microsoft Dynamics 365 Console and allows you to launch the Webex Contact Center Agent Desktop from within the CRM, providing an integrated Agent Experience for inbound and outbound calls.
+This lab covers the end-to-end configuration of the integrated Webex Contact Center Desktop within MS Dynamics 365.
+
+### Pre-requisites
+
+1. Access to a Webex Contact Center instance
+2. Administrator access to the organization on [Control Hub](https://admin.webex.com/) and [Webex Contact Center Management Portal](https://portal.wxcc-us1.cisco.com/). 
+3. An Agent account with access to the [Desktop](https://desktop.wxcc-us1.cisco.com/).
+4. An MS Dynamics Sales instance. For specifics, refer the next section Starting an MS Dynamics Trial
+5. Access to the [Webex Contact Contact Center Desktop Layout for Microsoft Dynamics](https://github.com/CiscoDevNet/webex-contact-center-widget-starter/tree/master/Examples/Layouts/MS Dynamics/) JSON.
+6. Lab 2 (IVR and Contact Routing) completed.
+
 
 
 ### **Congratulations! CRM Integration lab is now complete!**
