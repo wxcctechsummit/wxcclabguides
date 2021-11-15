@@ -7,11 +7,13 @@ title: "Lab 4: CRM Integration"
 
 ### Lab Objective
 
-The object of this lab excercise is to Install and Configure the WebexCC Salesforce Agent Desktop Application.
+This lab covers Webex Contact Center Agent Desktop integration with the most popular CRM solutions (Salesforce and Microsoft Dynamics 365) which allows you to launch the Agent Desktop from within the CRM, providing an integrated Agent Experience for inbound and outbound calls.
+
 
 # Table of Contents
 
-- [Optional: Salesforce Account Creation](#optional-salesforce-account-creation)
+- [4.1 Salesfoce integration](#4-1-salesfoce-integration)
+- [Optional: Salesforce Account Creation](#optional-create-salesforce-account)
 - [Part 1: Connector Installation](#part-1-connector-installation)
     * [1. Connector Installation From Salesforce AppExchange](#1-connector-installation-from-salesforce-appexchange)
     * [2. Connector Installation Verification](#2-connector-installation-verification)
@@ -239,20 +241,19 @@ The object of this lab excercise is to Install and Configure the WebexCC Salesfo
 
 # 4.2 Microsoft Mynamics 365 integration
 
-### Lab Objective
-
-This lab covers the New Microsoft Dynamics Integrated Desktop – this is an Integrated Desktop within the Microsoft Dynamics 365 Console and allows you to launch the Webex Contact Center Agent Desktop from within the CRM, providing an integrated Agent Experience for inbound and outbound calls.
-This lab covers the end-to-end configuration of the integrated Webex Contact Center Desktop within MS Dynamics 365.
-
 ### Pre-requisites
 
 1. Access to a Webex Contact Center instance
 2. Administrator access to the organization on [Control Hub](https://admin.webex.com/) and [Webex Contact Center Management Portal](https://portal.wxcc-us1.cisco.com/). 
 3. An Agent account with access to the [Desktop](https://desktop.wxcc-us1.cisco.com/).
-4. An MS Dynamics Sales instance. For specifics, refer the next section Starting an MS Dynamics Trial
+4. An MS Dynamics Sales instance. For specifics, refer the next section "Start Microsoft Dynamics Trial"
 5. Access to the [Webex Contact Contact Center Desktop Layout for Microsoft Dynamics](https://github.com/CiscoDevNet/webex-contact-center-widget-starter/tree/master/Examples/Layouts/MS Dynamics/) JSON.
 6. Lab 2 (IVR and Contact Routing) completed.
 
+
+## Optional: Start Microsoft Dynamics Trial
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/p2KYPe1LAYs?rel=0" title="CRM Integration Lab: Salesforce Account Creation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### **Congratulations! CRM Integration lab is now complete!**
