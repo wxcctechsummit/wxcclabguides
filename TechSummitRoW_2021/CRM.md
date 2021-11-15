@@ -12,7 +12,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 # Table of Contents
 
-[4.1 Salesforce integration](#4-1-salesforce-integration)
+[4.1 Salesforce integration](#-4-1-salesforce-integration)
 - [Optional: Salesforce Account Creation](#optional-create-salesforce-account)
 - [Part 1: Connector Installation](#part-1-connector-installation)
     * [1. Connector Installation From Salesforce AppExchange](#1-connector-installation-from-salesforce-appexchange)
