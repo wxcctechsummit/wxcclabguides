@@ -344,7 +344,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/Ku3-ek0o4_0?rel=0" title="CRM Integration Lab: Configure applications for MS Dynamics 365 environment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 1. Channel Integration Framework configuration
+### 3. Channel Integration Framework configuration
 
 - Sign into [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -352,7 +352,30 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 - Click on **Open Environment** at the top of the environment page.
 
--
+- Choose **Channel Integration Framework** on the page with published apps.
+
+- Press **New** button at the top of "Channel Providers" page to create new channel provider.
+
+- Complete channel provider configuration by providing the following details:
+|Parameter Name               |Parameter Value                   |
+|Name                         |Cisco Webex Contact Center        |
+|Label                        |Cisco Webex Contact Center        |
+|Channel URL                  |https://desktop.wxcc-us1.cisco.com|
+|Enable Outbound Communication|Yes                               |
+|Channel Order                |1                                 |
+|API version                  |1.0                               |
+|Trusted Domain               |https://desktop.wxcc-us1.cisco.com|
+
+- Select "Customer Services Hub" as Unified Interface Apps for the Channel.
+
+- Select all roles available for the channel.
+
+- Press "Save & Close" button at the top of the page to save changes.
+
+
+### 4. Dektop Layout configuration
+
+
 
 
 ## Part 3: Test Webex Contact Center Agent Desktop for MS Dynamics 365
