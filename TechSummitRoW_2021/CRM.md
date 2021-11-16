@@ -357,6 +357,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - Press **New** button at the top of "Channel Providers" page to create new channel provider.
 
 - Complete channel provider configuration by providing the following details:
+
 | Parameter Name                | Parameter Value                    |
 | ----------------------------- | ---------------------------------- |
 | Name                          | Cisco Webex Contact Center         |
