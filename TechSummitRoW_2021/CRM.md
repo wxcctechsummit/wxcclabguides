@@ -359,6 +359,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - Complete channel provider configuration by providing the following details:
 
 | Parameter Name                | Parameter Value                    |
+| -----                         | -----                              |
 | Name                          | Cisco Webex Contact Center         |
 | Label                         | Cisco Webex Contact Center         |
 | Channel URL                   | https://desktop.wxcc-us1.cisco.com |
@@ -374,7 +375,30 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - Press "Save & Close" button at the top of the page to save changes.
 
 
-### 4. Dektop Layout configuration - v5
+### 4. Create Dektop Layout file
+
+- Sign into [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+
+- Go to "Environments" and click on the environment you created for this lab.
+
+- Rigth-click on the link under "Environment URL" and copy link value. The value of Environment URL looks like **https://org2a50d69e.crm11.dynamics.com/** Then paste this URL into the text editor and save - we will need it later when making Desktop Layout JSON file later.
+
+- Navigate to [MS Dynamics Layout](https://github.com/CiscoDevNet/webex-contact-center-widget-starter/tree/master/Examples/Layouts/MS%20Dynamics) page.
+
+- Click to "MSDynamics_Desktop.json" file. Copy the content of the file and past it into any text editor.
+
+- Find "hostname" key and replace the value of this key by Environment URL which you noted before. For examnple:
+```
+"hostName":"https://org2a50d69e.crm11.dynamics.com/"
+```
+
+- Save the file with .json extension. For example, MSDynamics_Desktop.json
+
+
+### 5. Upload Dektop Layout to Webex CC
+
+- Login to [Webex CC managemnt Portal](https://portal.wxcc-us1.cisco.com/) of your lab pod.
+
 
 
 
