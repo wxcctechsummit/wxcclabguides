@@ -161,7 +161,7 @@ function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wx
 function nextLab() 
  {
  window.open("https://app.smartsheet.com/b/form/ff1e015c4aed46bfab3f5caed7850aa4", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/4a_b_SMS_Configuration.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/4a_SMS_Configuration.html";
  }
 </script>
 

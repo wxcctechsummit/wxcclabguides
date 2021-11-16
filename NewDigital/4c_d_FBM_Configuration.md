@@ -8,7 +8,7 @@ title: 'Lab 4(c,d): Facebook Configuration'
 
 - Lab 4c - Asset creation end to end 
     * Facebook page configuration
-    * Create Facebook Asset and Register to WebeXCC
+    * Create Facebook Asset and Register to WebexCC
     * Create EntryPoint and Queue
     
 - Lab 4d - Workflow association
@@ -38,7 +38,7 @@ We will be configuring  Facebook Asset, Entry Point, Queue and corresponding wor
 
 - Additional details of facebook page setup is available here: https://www.facebook.com/business/pages/set-up
 
-### 2. Create Facebook Asset and Register to WebeXCC
+### 2. Create Facebook Asset and Register to WebexCC
 - Customer admin logs in to IMI connect UI  (this is specific to the tenant you are using) and is provided agter tenant creation. 
     - Please contact your Cisco Partner Success Account Manager (PSAM) if there are any challenges identifying the IMI connect URL or login details
 
@@ -50,7 +50,7 @@ We will be configuring  Facebook Asset, Entry Point, Queue and corresponding wor
 
 ### 3. Create EntryPoint and Queue
 
-- Customer admin logs into “CJP Management Portal” URL with the credentials and accesses the menu ‘Provisioning -> Entry Point/Queues -> Entry Point’.
+- Log into Webex Contact Centre Administration portal URL with the admin credentials go to Menu > Provisioning > Entry Point/Queues > Entry Point
 
 - Select “New Entry Point” and enter the respective values and click save.
 
