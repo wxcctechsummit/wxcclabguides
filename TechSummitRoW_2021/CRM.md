@@ -36,6 +36,10 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
     * [1. Channel Integration Framework installation from AppSource](#1-channel-integration-framework-installation-from-appsource)
     * [2. Cisco Webex Contact Center for Microsoft Dynamics installation from AppSource](#2-cisco-webex-contact-center-for-microsoft-dynamics-installation-from-appsource)
 - [Part 2: Configure applications for MS Dynamics 365 environment](#part-2-configure-applications-for-ms-dynamics-365-environment)
+    * [3. Channel Integration Framework configuration](#3-channel-integration-framework-configuration)
+    * [4. Creating Desktop Layout file](#4-creating-desktop-layout-file)
+    * [5. Uploading Desktop Layout to Webex Contact Center Mangement Portal](#5-uploading-desktop-layout-to-webex-contact-center-management-portal)
+    * [6. Updating Security Policy on Control Hub](#6-updating-security-policy-on-control-hub)
 - [Part 3: Test Webex Contact Center Agent Desktop for MS Dynamics 365](#part-3-test-webex-contact-center-agent-desktop-for-ms-dynamics-365)
 
 
@@ -303,7 +307,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 ### 1. Channel Integration Framework installation from AppSource
 
-- Sign into [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+- Sign into [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
 - Go to "Environments" and click on the environment you created for this lab.
 
@@ -346,7 +350,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 ### 3. Channel Integration Framework configuration
 
-- Sign into [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+- Sign into [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
 - Go to "Environments" and click on the environment you created for this lab.
 
@@ -375,14 +379,14 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - Press "Save & Close" button at the top of the page to save changes.
 
 
-### 4. Create Dektop Layout file
+### 4. Creating Desktop Layout file
 
-- Sign into [MS Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+- Sign into [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
 - Go to "Environments" and click on the environment you created for this lab.
 
-- Rigth-click on the link under "Environment URL" and copy link value. The example of Environment URL: **https://org2a50d69e.crm11.dynamics.com/** <br/>
-Then paste this URL into the text editor and save - we will need it later when making Desktop Layout JSON file.
+- Rigth-click on the link under "Environment URL" and copy link value. For example: **https://org2a50d69e.crm11.dynamics.com/** <br/>
+Then paste this URL into the text editor and save - we will need it later when creating Desktop Layout JSON file.
 
 - Navigate to [MS Dynamics Layout](https://github.com/CiscoDevNet/webex-contact-center-widget-starter/tree/master/Examples/Layouts/MS%20Dynamics) page.
 
@@ -396,9 +400,9 @@ Then paste this URL into the text editor and save - we will need it later when m
 - Save the file with .json extension. For example, **MSDynamics_Desktop.json**
 
 
-### 5. Upload Dektop Layout to Webex CC
+### 5. Uploading Desktop Layout to Webex Contact Center Management Portal
 
-- Login to [Webex CC managemnt Portal](https://portal.wxcc-us1.cisco.com/) of your lab pod.
+- Sing into [Webex Contact Center Managemnt Portal](https://portal.wxcc-us1.cisco.com/) of your lab pod.
 
 - Go to Provisioning -> Desktop Layout and press "New Layout" button.
 
@@ -411,10 +415,13 @@ Then paste this URL into the text editor and save - we will need it later when m
 - Press "Save" to create the layout. Once layout is created make sure it is "Active".
 
 
-### 6. Update security settings on Control Hub
+### 6. Updating Security Policy on Control Hub
 
+- Sign into [Webex Control Hub](https://admin.webex.com/) of your lab pod.
 
+- Go to Contact Center -> Settings -> Security and scroll down to "Content Secuity Policy Allowed List".
 
+- If the **\*.dynamics.com** value is not added, paste it into the text field and press "Add" button. Make sure the value has been added.
 
 
 ## Part 3: Test Webex Contact Center Agent Desktop for MS Dynamics 365
