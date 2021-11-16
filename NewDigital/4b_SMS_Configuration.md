@@ -1,6 +1,8 @@
 ---
-title: 'Lab 4b: SMS Workflow Association'
+title: 'Lab 4b: Workflow Association(SMS)'
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pfE2fn4RoCc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 
@@ -79,6 +81,7 @@ Changelog:
 | 1.0 | Initial page created | Gagarin JS (gasathiy@cisco.com) | 09 Nov 2021 |
 | 2.0 | SMS content update | Abhishek Singh (asingh9@cisco.com) | 15 Nov 2021 |
 | 3.0 | Format Changes | Gagarin JS (gasathiy@cisco.com) | 16 Nov 2021 |
+| 4.0 | Video guide addition | Gagarin JS (gasathiy@cisco.com) | 16 Nov 2021 |
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}
