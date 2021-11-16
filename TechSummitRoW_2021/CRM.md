@@ -33,14 +33,17 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 [4.2 Microsoft Dynamics 365 integration](#42-microsoft-dynamics-365-integration)
 - [Optional: Start Microsoft Dynamics Trial](#optional-start-microsoft-dynamics-trial)
 - [Part 1: Install applications for MS Dynamics 365 environment](#part-1-install-applications-for-ms-dynamics-365-environment)
-    * [1. Channel Integration Framework installation from AppSource](#1-channel-integration-framework-installation-from-appsource)
-    * [2. Cisco Webex Contact Center for Microsoft Dynamics installation from AppSource](#2-cisco-webex-contact-center-for-microsoft-dynamics-installation-from-appsource)
+    * [1. Install Channel Integration Framework from AppSource](#1-install-channel-integration-framework-from-appsource)
+    * [2. Install Cisco Webex Contact Center for Microsoft Dynamics from AppSource](#2-install-cisco-webex-contact-center-for-microsoft-dynamics-from-appsource)
 - [Part 2: Configure applications for MS Dynamics 365 environment](#part-2-configure-applications-for-ms-dynamics-365-environment)
-    * [3. Channel Integration Framework configuration](#3-channel-integration-framework-configuration)
-    * [4. Creating Desktop Layout file](#4-creating-desktop-layout-file)
-    * [5. Uploading Desktop Layout to Webex Contact Center Mangement Portal](#5-uploading-desktop-layout-to-webex-contact-center-management-portal)
-    * [6. Updating Security Policy on Control Hub](#6-updating-security-policy-on-control-hub)
+    * [3. Configure Channel Integration Framework](#3-configure-channel-integration-framework)
+    * [4. Create Desktop Layout file](#4-create-desktop-layout-file)
+    * [5. Upload Desktop Layout to Webex Contact Center Mangement Portal](#5-upload-desktop-layout-to-webex-contact-center-management-portal)
+    * [6. Update Security Policy on Control Hub](#6-update-security-policy-on-control-hub)
 - [Part 3: Test Webex Contact Center Agent Desktop for MS Dynamics 365](#part-3-test-webex-contact-center-agent-desktop-for-ms-dynamics-365)
+    * [7. Sign into Webex Contact Center for Microsoft Dynamics 365](#7-sign-into-webex-contact-center-for-microsoft-dynamics-365)
+    * [8. Create new contact record in MS Dynamics](#8-create-new-contact-record-in-ms-dynamics)
+    * [9. Make inbound test calls](#9-make-inbound-test-calls)
 
 
 # 4.1 Salesforce integration
@@ -305,7 +308,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/h3RWXoFZDJg?rel=0" title="CRM Integration Lab: Install applications for MS Dynamics 365 environment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 1. Channel Integration Framework installation from AppSource
+### 1. Install Channel Integration Framework from AppSource
 
 - Sign into [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -328,7 +331,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - Use **Refresh** button at the top of "Dynamics 365 apps" page and wait untill the status of "Dynamics 365 Channel Integration Framework" app is changed to "Installed".
 
 
-### 2. Cisco Webex Contact Center for Microsoft Dynamics installation from AppSource
+### 2. Install Cisco Webex Contact Center for Microsoft Dynamics from AppSource
 
 - Click on **Open AppSource** at the top of the apps page one more time in order to navigate to AppSource.
 
@@ -348,7 +351,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/Ku3-ek0o4_0?rel=0" title="CRM Integration Lab: Configure applications for MS Dynamics 365 environment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 3. Channel Integration Framework configuration
+### 3. Configure Channel Integration Framework
 
 - Sign into [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -379,7 +382,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - Press "Save & Close" button at the top of the page to save changes.
 
 
-### 4. Creating Desktop Layout file
+### 4. Create Desktop Layout file
 
 - Sign into [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
@@ -400,7 +403,7 @@ Then paste this URL into the text editor and save - we will need it later when c
 - Save the file with .json extension. For example, **MSDynamics_Desktop.json**
 
 
-### 5. Uploading Desktop Layout to Webex Contact Center Management Portal
+### 5. Upload Desktop Layout to Webex Contact Center Management Portal
 
 - Sing into [Webex Contact Center Managemnt Portal](https://portal.wxcc-us1.cisco.com/) of your lab pod.
 
@@ -415,7 +418,7 @@ Then paste this URL into the text editor and save - we will need it later when c
 - Press "Save" to create the layout. Once layout is created make sure it is "Active".
 
 
-### 6. Updating Security Policy on Control Hub
+### 6. Update Security Policy on Control Hub
 
 - Sign into [Webex Control Hub](https://admin.webex.com/) of your lab pod.
 
@@ -429,8 +432,60 @@ Then paste this URL into the text editor and save - we will need it later when c
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/PVJiQeNd2NQ?rel=0" title="CRM Integration Lab: Test Webex Contact Center Agent Desktop for MS Dynamics 365" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 7. Updating Security Policy on Control Hub
+### 7. Sign into Webex Contact Center for Microsoft Dynamics 365
 
+- Sign into [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+
+- Go to "Environments" and click on the environment you created for this lab.
+
+- Click on **Open Environment** at the top of the environment page to see the list of published apps on the Apps page.
+
+> **Note:** If you are forwarded to Channel Integration Framework page intead of Apps page, just click to **Channel Integration Framework** link at the top of the page near "Dynamics 365" title. Then you will see Apps page with the list of published apps.
+
+- Click on "Customer Service Hub" app and you will be redirected to Dashboards tab of Customer Service Hub.
+
+- Press "Sign In" button within "Cisco Webex Contact Center" app on the right-hand side and provide agent credentials on new borwser tab.
+
+- Once authentication is completed, provide "Dialed Number" / "Extension" and choose proper team within "Cisco Webex Contact Center" app.
+
+> **Note:** This team must have Desktop Layout for Dynamics 365 applied in Webex Contact Center Management Portal in the previous part of this lab.
+
+- Make agent desktop "Available" by selecting corresponding state.
+
+
+### 8. Create new contact record in MS Dynamics
+
+> **Note:** You may create new contact record in Dynamics 365 to test the scenario when calling number matches or does not match phone number of the contact.
+
+- Go to "Contacts" tab of Customer Service Hub and press "New" button at the top to create new account.
+
+- Complete contact form with the details:
+    * First Name
+    * Last name
+    * Mobile Phone
+
+- Press "Save & Close" button to save the contact.
+
+
+### 9. Make inbound test calls
+
+- Initiate a call from the calling number which matches the one configured under new contact created on the previous step.
+
+- Answer the call by the agent and make sure you see screen pop with the details of new contact created above.
+
+- Answer the call and wait few seconds. Then hang up and wrap-up the call.
+
+- Make sure you see activity record with call details created within MS Dynamics. "Call From" must be pre-populated with contact name.
+
+- Initiate one more call from calling number which does not match any contact in MS Dynamics and compare the behavior.
+
+- Answer the call by the agent and make sure you see screen pop with "No results found" notification.
+
+- Answer the call and wait few seconds. Then hang up and wrap-up the call.
+
+- Make sure you see activity record with call details created within MS Dynamics. "Call From" must be empty.
+
+- Go to "Activities" and make sure you see both records created after the calls.
 
 
 ### **Congratulations! CRM Integration lab is now complete!**
