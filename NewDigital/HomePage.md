@@ -24,8 +24,8 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | Chat / Email    | Lab 3b - Workflow association (Chat)      | [Workflow association (Chat)](3a_b_Chat_Configuration.md){:target="\_blank"}                  | 
 | Chat / Email    | Lab 3c - Asset creation end to end (Mail) | [Asset creation end to end (Mail)](3c_d_Email_Configuration.md){:target="\_blank"}             |
 | Chat / Email    | Lab 3d - Workflow association (Mail)      | [Workflow association(Mail)](3c_d_Email_Configuration.md){:target="\_blank"}                   |
-| Facebook / SMS  | Lab 4a - Asset creation end to end (SMS)  | [Asset creation end to end](4a_b_SMS_Configuration.md){:target="\_blank"}                    |
-| Facebook / SMS  | Lab 4b - Workflow association (SMS)       | [Workflow association](4a_b_SMS_Configuration.md){:target="\_blank"}                         |
+| Facebook / SMS  | Lab 4a - Asset creation end to end (SMS)  | [Asset creation end to end](4a_SMS_Configuration.md){:target="\_blank"}                    |
+| Facebook / SMS  | Lab 4b - Workflow association (SMS)       | [Workflow association](4b_SMS_Configuration.md){:target="\_blank"}                         |
 | Facebook / SMS  | Lab 4c - Asset creation end to end (FBM)  | [Asset creation end to end](4c_d_FBM_Configuration.md){:target="\_blank"}                    |
 | Facebook / SMS  | Lab 4d - Workflow association (FBM)       | [Workflow association](4c_d_FBM_Configuration.md){:target="\_blank"}                         |
 | Templates & Bot | Lab 5a - Templates                        | [Templates](5_Templates_Bots.md){:target="\_blank"}                                    |
