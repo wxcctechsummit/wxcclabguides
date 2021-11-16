@@ -359,7 +359,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - Complete channel provider configuration by providing the following details:
 
 | Parameter Name                | Parameter Value                    |
-| --------------                | --------------                     |
+| -----                         | -----                              |
 | Name                          | Cisco Webex Contact Center         |
 | Label                         | Cisco Webex Contact Center         |
 | Channel URL                   | https://desktop.wxcc-us1.cisco.com |
