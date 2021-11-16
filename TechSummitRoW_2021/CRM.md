@@ -305,7 +305,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 - Sign into [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
-- Go to Environments and click on the environment you created for this lab.
+- Go to "Environments" and click on the environment you created for this lab.
 
 - Click on **Dynamics 365 apps** link under "Resources" section of your environment.
 
@@ -342,6 +342,17 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 ## Part 2: Configure applications for MS Dynamics 365 environment
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/Ku3-ek0o4_0?rel=0" title="CRM Integration Lab: Configure applications for MS Dynamics 365 environment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 1. Channel Integration Framework configuration
+
+- Sign into [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+
+- Go to "Environments" and click on the environment you created for this lab.
+
+- Click on **Open Environment** at the top of the environment page.
+
+-
 
 
 ## Part 3: Test Webex Contact Center Agent Desktop for MS Dynamics 365
