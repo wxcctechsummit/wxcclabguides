@@ -357,14 +357,15 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 - Press **New** button at the top of "Channel Providers" page to create new channel provider.
 
 - Complete channel provider configuration by providing the following details:
-|Parameter Name               |Parameter Value                   |
-|Name                         |Cisco Webex Contact Center        |
-|Label                        |Cisco Webex Contact Center        |
-|Channel URL                  |https://desktop.wxcc-us1.cisco.com|
-|Enable Outbound Communication|Yes                               |
-|Channel Order                |1                                 |
-|API version                  |1.0                               |
-|Trusted Domain               |https://desktop.wxcc-us1.cisco.com|
+| Parameter Name                | Parameter Value                    |
+| ----------------------------- | ---------------------------------- |
+| Name                          | Cisco Webex Contact Center         |
+| Label                         | Cisco Webex Contact Center         |
+| Channel URL                   | https://desktop.wxcc-us1.cisco.com |
+| Enable Outbound Communication | Yes                                |
+| Channel Order                 | 1                                  |
+| API version                   | 1.0                                |
+| Trusted Domain                | https://desktop.wxcc-us1.cisco.com |
 
 - Select "Customer Services Hub" as Unified Interface Apps for the Channel.
 
