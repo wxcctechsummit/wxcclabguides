@@ -2,7 +2,7 @@
 title: 'Lab 4b: Workflow Association(SMS)'
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pfE2fn4RoCc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube.com/embed/pfE2fn4RoCc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Table of Contents
 
