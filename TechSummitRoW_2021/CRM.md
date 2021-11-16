@@ -265,7 +265,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 ## Optional: Start Microsoft Dynamics Trial
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/p2KYPe1LAYs?rel=0" title="CRM Integration Lab: Start Microsoft Dynamics Trial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/tXRt5PmWCAw?rel=0" title="CRM Integration Lab: Start Microsoft Dynamics Trial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br/>
 
@@ -427,6 +427,10 @@ Then paste this URL into the text editor and save - we will need it later when c
 ## Part 3: Test Webex Contact Center Agent Desktop for MS Dynamics 365
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/PVJiQeNd2NQ?rel=0" title="CRM Integration Lab: Test Webex Contact Center Agent Desktop for MS Dynamics 365" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 7. Updating Security Policy on Control Hub
+
 
 
 ### **Congratulations! CRM Integration lab is now complete!**
