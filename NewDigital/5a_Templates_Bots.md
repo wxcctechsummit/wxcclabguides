@@ -6,34 +6,11 @@ title: 'Lab 5a: Templates'
 
 # Table of Contents
 
-- Lab 4c - Asset creation end to end 
-    * Facebook page configuration
-    * Create Facebook Asset and Register to WebexCC
-    * Create EntryPoint and Queue
+- Lab 4a - Creating Templates 
+    * 
     
-- Lab 4d - Workflow association
-    * Create/Upload Facebook flow
-    * Add Authorizations for each of the Engage and WxCC nodes
-    * Demo 
 
-# Introduction
-
-## Lab Objective
-This lab is designed to complete required Facebook configurations in WxCC/IMI. You will be able to initiate a contact from Facebook messenger and will be able to accept and respond to the Facebook contact by logging in as an agent.
-
-We will be configuring  Facebook Asset, Entry Point, Queue and corresponding workflows.
-
-## Pre-requisite
-- WxCC Portal, Agent Desktop and IMI connect URL.
-- Admin credentials to complete configurations in WxCC portal and IMI connect.
-- Agent Credentials to Handle the Chat
-- Facebook business page 
-
-## Lab 4c - Asset creation end to end
-
-### 1. Facebook page configuration
-
-
+This lab is progress. Cisco will notify once this lab is ready. 
 
 ---
 

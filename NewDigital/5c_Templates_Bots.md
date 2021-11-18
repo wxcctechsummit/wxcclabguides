@@ -22,7 +22,7 @@ This lab is designed to complete a new task bot creation, add intents/entities a
 - Admin credentials to complete configurations in WxCC portal and IMI connect.
 - Agent Credentials to Handle FBM digital contact
 
-## Lab 5b - Task Bot Creation
+## Lab 5c - Task Bot Creation
 
 ### 1. Navigate to BOT Builder and Create bot
 - Log on to Connect portal and navigate to BOT Builder 
