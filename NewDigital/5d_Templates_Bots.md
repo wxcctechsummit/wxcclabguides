@@ -49,68 +49,117 @@ This lab is designed to complete the integration of the QnA bot with the Faceboo
 - Connect the `Create Task` node to `QnA Bot` node 
 
 - Open `QnA Bot` update the below values and Save
+    
     - BOT: Select your bot in this dropdown
+    
     - MESSAGE: $(messagetext)
+    
     - PS ID: $(n2.messenger.psId)
 
 - Connect the `QnA Bot` (onSucess event) to the new `Messenger` node
 
 - Open `Messenger` node and update the below values and Save 
+    
     - DESTINATION TYPE: PS Id
+    
     - DESTINATION: $(n2.messenger.psId)
+    
     - MESSAGING TYPE: RESPONSE 
+    
     - NOTIFICATION TYPE: REGULAR
+    
     - MESSAGE TYPE: TEXT
+    
     - MESSAGE: $(n955.qnabot.text_response)
+        
         - n955 is the node ID of the `QnA Bot` node used in the demo
+        
         - This value might might be different in your configuration
+        
         - Verify and Use the `QnA Bot` nodeID
 
 - Connect the `Messenger` node to `Append Conversation`
 
 - Open the `Append Conversation` node and update the below values and Save 
+    
     - METHOD NAME: Append Chat 
+    
     - NODE RUNTIME AUTHORIZATION: Create a new AUTH or add an existing AUTH 
+    
     - CHANNEL: Facebook Messenger
+    
     - CONVERSATION ID: $(ConversationId)
+    
     - Direction: Outbound
+    
     - TEXT: $(n955.qnabot.text_response)
+        
         - n955 is the node ID of the `QnA Bot` node used in the demo
+        
         - This value might might be different in your configuration
+        
         - Verify and Use the `QnA Bot` nodeID
+    
     - TIMESTAMP (IN UTC): $(n956.send.sentDateTime)
+        
         - n956 is the node ID of the `Messenger` node used in the demo
+        
         - This value might might be different in your configuration
-        - Verify and Use the `Messenger` nodeID
+        
+         - Verify and Use the `Messenger` nodeID
+    
     - ATTACHMENTS: $(parseDataAttachment)
 
 - Open the `Receive` node and update the below values and Save 
+    
     - Under `Configuration` tab
+        
         - Select 'Receive Messenger message/event'
+        
         - FROM (PSID): $(n2.messenger.psId)
+        
         - EVENT NAME: Incoming Message
+    
     - Under `Transition Actions` tab, configure action
+        
         - TIME: On-Enter
+        
         - ACTION: Set Variable 
+        
         - VARIABLE: messagetext
+        
         - VALUE: $(n959.receive.message)
+            
             - n956 is the node ID of the `Receive` node used in the demo
+            
             - This value might might be different in your configuration
+            
             - Verify and Use the `Receive` nodeID
 
 - Connect the `Receive` node to `Append Conversation`
 
 - Open the `Append Conversation` node and update the below values and Save 
+    
     - METHOD NAME: Append Chat 
+    
     - NODE RUNTIME AUTHORIZATION: Create a new AUTH or add an existing AUTH 
+    
     - CHANNEL: Facebook Messenger
+    
     - CONVERSATION ID: $(ConversationId)
+    
     - Direction: Inbound
+    
     - TEXT: $(messagetext)
+    
     - TIMESTAMP (IN UTC): $(n956.send.sentDateTime)
+        
         - n956 is the node ID of the `Messenger` node used in the demo
+        
         - This value might might be different in your configuration
+        
         - Verify and Use the `Messenger` nodeID
+    
     - ATTACHMENTS: $(parseDataAttachment)
 
 - Connect (loop back) this `Append Conversation` node back to `QnA Bot` node
