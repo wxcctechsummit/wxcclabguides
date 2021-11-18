@@ -52,7 +52,7 @@ We will be configuring  Facebook Asset, Entry Point, Queue and corresponding wor
 
 - Log into Webex Contact Centre Administration portal URL with the admin credentials go to Menu > Provisioning > Entry Point/Queues > Entry Point
 
-- Select “New Entry Point” and enter the respective values and click save.
+- Select `New Entry Point` and enter the respective values and click save.
 
 - Customer admin accesses the menu ‘Provisioning -> Entry Point/Queues -> Queue’ • Select “New Queue” and enter the respective values and click save.
 

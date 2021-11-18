@@ -28,7 +28,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | Facebook / SMS  | Lab 4b - Workflow association (SMS)       | [Workflow association (SMS)](4b_SMS_Configuration.md){:target="\_blank"}                         |
 | Facebook / SMS  | Lab 4c - Asset creation end to end (FBM)  | [Asset creation end to end (FBM)](4c_d_FBM_Configuration.md){:target="\_blank"}                    |
 | Facebook / SMS  | Lab 4d - Workflow association (FBM)       | [Workflow association (FBM)](4c_d_FBM_Configuration.md){:target="\_blank"}                         |
-| Templates & Bot | Lab 5a - Templates                        | [Templates](5_Templates_Bots.md){:target="\_blank"}                                    |
-| Templates & Bot | Lab 5b - QnA Bot                          | [QnA Bot](5_Templates_Bots.md){:target="\_blank"}                                      |
-| Templates & Bot | Lab 5c - Task Bot                         | [Task Bot](5_Templates_Bots.md){:target="\_blank"}                                     |
-| Templates & Bot | Lab 5d - Associate bot in FBM Flow        | [Associate bot in FBM Flow](5_Templates_Bots.md){:target="\_blank"}                    |
+| Templates & Bot | Lab 5a - Templates                        | [Templates](5a_Templates_Bots.md){:target="\_blank"}                                    |
+| Templates & Bot | Lab 5b - QnA Bot                          | [QnA Bot](5b_Templates_Bots.md){:target="\_blank"}                                      |
+| Templates & Bot | Lab 5c - Task Bot                         | [Task Bot](5c_Templates_Bots.md){:target="\_blank"}                                     |
+| Templates & Bot | Lab 5d - Associate bot in FBM Flow        | [Associate bot in FBM Flow](5d_Templates_Bots.md){:target="\_blank"}                    |
