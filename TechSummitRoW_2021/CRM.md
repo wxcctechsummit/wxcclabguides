@@ -393,7 +393,7 @@ Then paste this URL into the text editor and save - we will need it later when c
 
 - Navigate to [MS Dynamics Layout](https://github.com/CiscoDevNet/webex-contact-center-widget-starter/tree/master/Examples/Layouts/MS%20Dynamics) page.
 
-- Click to "MSDynamics_Desktop.json" file. Copy the content of the file and past it into any text editor.
+- Click to "MSDynamics_Desktop.json" file. Copy the content of the file and paste it into any text editor.
 
 - Find "hostname" key and replace the value of this key by Environment URL which you noted before. For example:
 ```
@@ -561,6 +561,32 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
 - Check and make sure "AgentDesktopHostUrl" field contains **https://desktop.wxcc-us1.cisco.com** value for Cisco Webex Contact Center app in Zendesk Admin Center. Then scroll donw and press "Install" buttonat the bottom of the page.
 
 - Wait few seconds untill installation is completed and "Cisco Webex Contact Center" appears in the list of currently installed apps.
+
+
+## Part 2: Configure Webex Contact Center and Zendesk instance
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/OJp6-lKnDX4?rel=0" title="CRM Integration Lab: Configure Webex Contact Center and Zendesk instance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 2. Create Desktop Layout for Zendesk
+
+- Navigate to [Zendesk Layout](https://github.com/CiscoDevNet/webex-contact-center-widget-starter/tree/master/Examples/Layouts/Zendesk) page.
+
+- Click to "Zendesk_Desktop.json" file. Copy the content of the file, paste it into any text editor and save with .json extension. For example, **Zendesk_Desktop.json**
+
+- Sing into [Webex Contact Center Managemnt Portal](https://portal.wxcc-us1.cisco.com/) of your lab pod.
+
+- Go to Provisioning -> Desktop Layout and press **New Layout** button.
+
+- Enter layout name (for example, "Zendesk Desktop Layout"), press **Upload** and choose JSON file with layout you have created above. Once file is uploaded, make sure it is validated successfully.
+
+- Click on "Teams" row and choose one or more teams.
+
+> **Note:** The agent you will use to test the integration with Zendesk must be the part of the team chosen above.
+
+- Press "Save" to create the layout. Once layout is created make sure it is "Active".
+
+
 
 -->
 
