@@ -444,7 +444,7 @@ Then paste this URL into the text editor and save - we will need it later when c
 
 - Click on "Customer Service Hub" app and you will be redirected to Dashboards tab of Customer Service Hub.
 
-- Press **Sign In** button within "Cisco Webex Contact Center" app on the right-hand side and provide agent credentials on new borwser tab.
+- Press **Sign In** button within "Cisco Webex Contact Center" app on the right-hand side and provide agent credentials in new borwser tab.
 
 - Once authentication is completed, provide "Dialed Number" / "Extension" and choose proper team within "Cisco Webex Contact Center" app.
 
@@ -541,12 +541,12 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
 - Press **Next** on "Help your customers on any channel". Then click on **Skip tour and go to setup** on "See how ticketing works" page to get to your Zendesk instance.
 
 
-## Part 1: Install Cisco Webex Contact Center application for Zendesk
+## Part 1: Install application for Zendesk
 
 <iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/gxQtY3OC97w?rel=0" title="CRM Integration Lab: Install Cisco Webex Contact Center application for Zendesk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-### 1. Install Cisco Webex Contact Center application for Zendesk
+### 1. Install Cisco Webex Contact Center application for Zendesk from Marketplace
 
 - Sign into your Zendesk instance. URL should have format - **https://<your-zendesk-subdomain>.zendesk.com**
  
@@ -563,9 +563,9 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
 - Wait few seconds untill installation is completed and "Cisco Webex Contact Center" appears in the list of currently installed apps.
 
 
-## Part 2: Configure Webex Contact Center and Zendesk instance
+## Part 2: Configure Webex Contact Center tenant and Zendesk instance
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/OJp6-lKnDX4?rel=0" title="CRM Integration Lab: Configure Webex Contact Center and Zendesk instance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/OJp6-lKnDX4?rel=0" title="CRM Integration Lab: Configure Webex Contact Center tenant and Zendesk instance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### 2. Create Desktop Layout for Zendesk
@@ -613,11 +613,45 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
 - Go to "Customers" tab one more time to make sure new user is successfully added.
 
 
+## Part 3: Test Webex Contact Center Agent Desktop for Zendesk
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/9-TmtxanubU?rel=0" title="CRM Integration Lab: Test Webex Contact Center Agent Desktop for Zendesk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+### 5. Sign into Webex Contact Center for Zendesk
+
+- Sign into your Zendesk instance.
+
+- Click to "Cisco Webex Contact Center" icon (grey square with white circle inside) at the top right corner of Zendesk window to see agent desktop.
+
+- Press **Sign In** button within "Cisco Webex Contact Center" app on the right-hand side and provide agent credentials in new borwser tab.
+
+- Once authentication is completed, provide "Dialed Number" / "Extension" and choose proper team within "Cisco Webex Contact Center" app.
+
+> **Note:** This team must have Desktop Layout for Zendesk applied in Webex Contact Center Management Portal in the previous part of this lab.
+
+- Make agent desktop "Available" by selecting corresponding state.
 
 
+### 6. Make inbound test calls
 
+- Initiate a call from the calling number which matches the one configured under Zendesk user created in the previous part of this lab.
+
+- Answer the call by the agent and make sure you see screen pop with the details of the user created in the previous part of this lab and new ticket. "Requester" filed of the ticket must be pre-populated with user's name.
+
+- Answer the call and wait few seconds. Then hang up and wrap-up the call.
+
+- Make sure the ticket is completed with call details.
+
+- Initiate one more call from calling number which does not match any user in Zendesk and compare the behavior.
+
+- Answer the call by the agent and make sure you see screen pop with the details of new user created just after answering the call and new ticket. "Requester" filed of the ticket must be pre-populated with new user's name.
+
+- Answer the call and wait few seconds. Then hang up and wrap-up the call.
+
+- Make sure the ticket is completed with call details.
+
+- Click on "Views" item of the vertical menu bar on the left. Then click on "All unresolved tickets" and make sure you see both records created after the calls.
 
 -->
 
