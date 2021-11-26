@@ -507,6 +507,8 @@ Then paste this URL into the text editor and save - we will need it later when c
 
 <br/>
 
+> **Note:** Zendesk free trial is valid for 14 days only. So, you need to complete the configuration and all tests within this time frame.
+
 - Navigate to [Zendesk](https://www.zendesk.com/) website
 
 - Click on **Free Trial** on the main page of the website.
@@ -517,9 +519,48 @@ Then paste this URL into the text editor and save - we will need it later when c
 
 > **Note:** The phone number is mandatory, but it is not used for any kind of verification, authentication or authorization. Thus you may provide any number.
 
-- On the last step of the wizard fill in Company Name, Number of employees, purpose of the solution and Zendesk subdomain. Then choose Language, enter new Password and click on **Complete trial signup**.
+- On the last step of the wizard fill in the following fields:
+    * Company Name
+    * Number of employees (it is recommended to choose **1-9**)
+    * Purpose of the solution
+    * Zendesk subdomain
+Then choose Language, enter new Password and click on **Complete trial signup**.
 
 > **Note:** It is recommended to use host part of your eamil as Zendesk subdoamin for simplicity. For example, if your email is testemail@customer.com. try to use **testemail** (user portion of it as a subdomain). In case this subdomain is already occupied, wizard will propose another form of this name to you.
+
+- Wait few minutes, then check and make sure that you have received 2 emails:
+    * Welcome to Zendesk: Verify your email
+    * Welcome to your 14-day Zendesk trial
+
+- Once free trial provisioning is completed, go to verification email and click on **Verify your account**.
+
+> **Note:** If you received both emails from Zendesk mentioned above, but free trial provisioning is still not completed in 3-5 minutes (there is spinning circle at the last step of the wizard), please go to verification email and click on **Verify your account**.
+
+- Once you are redeirected to **Welcome to Zendesk Suite** page, press **Get started** button to proceed.
+ 
+- Press **Next** on "Help your customers on any channel". Then click on **Skip tour and go to setup** on "See how ticketing works" page to get to your Zendesk instance.
+
+
+## Part 1: Install Cisco Webex Contact Center application for Zendesk
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/gxQtY3OC97w?rel=0" title="CRM Integration Lab: Install Cisco Webex Contact Center application for Zendesk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### 1. Install Cisco Webex Contact Center application for Zendesk
+
+- Sign into your Zendesk instance. URL should have format - **https://<your-zendesk-subdomain>.zendesk.com**
+ 
+> **Note:** You may find URL of your Zendesk trial instance within "Welcome to your 14-day Zendesk trial" email. It is printed next to "Your account:" section.
+
+- Once, signed into Zendesk, click on "Admin" (gear icon at the botton of menu bar on the left-hand side of the screen). Then click on **Marketplace** under **Apps** section. Zendesk Marketplace will be opened in new tab of the web browser.
+
+- Search for "webex" on Marketplace and click on **Cisco Webex Contact Center** application.
+
+- Click on **Install** on the page of "Cisco Webex Contact Center" application. Then choose an account to install this app from drop-down list (if you started free trial, there should be only one item in the list) and click on "Install" one more time. You will be redirected to "Zendesk Admin Center".
+
+- Check and make sure "AgentDesktopHostUrl" field contains **https://desktop.wxcc-us1.cisco.com** value for Cisco Webex Contact Center app in Zendesk Admin Center. Then scroll donw and press "Install" buttonat the bottom of the page.
+
+- Wait few seconds untill installation is completed and "Cisco Webex Contact Center" appears in the list of currently installed apps.
 
 -->
 
