@@ -335,7 +335,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 - Click on **Open AppSource** at the top of the apps page one more time in order to navigate to AppSource.
 
-- Search for "webex" on the AppSource page and choose "Cisco Webex Contact Center for Microsoft Dynamics" from the list.
+- Search for "webex" on the AppSource page and choose **Cisco Webex Contact Center for Microsoft Dynamics** from the list.
 
 - Press **Get it now** button on the app page to install it.
 
@@ -407,7 +407,7 @@ Then paste this URL into the text editor and save - we will need it later when c
 
 - Sing into [Webex Contact Center Managemnt Portal](https://portal.wxcc-us1.cisco.com/) of your lab pod.
 
-- Go to Provisioning -> Desktop Layout and press "New Layout" button.
+- Go to **Provisioning** -> **Desktop Layout** and press **New Layout** button.
 
 - Enter layout name (for example, "MS Dynamics 365"), press "Upload" and choose JSON file with layout you have created above. Once file is uploaded, make sure it is validated successfully.
 
@@ -415,16 +415,16 @@ Then paste this URL into the text editor and save - we will need it later when c
 
 > **Note:** The agent you will use to test the integration with Dynamics 365 must be the part of the team chosen above.
 
-- Press "Save" to create the layout. Once layout is created make sure it is "Active".
+- Press **Save** to create the layout. Once layout is created make sure it is "Active".
 
 
 ### 6. Update Security Policy on Control Hub
 
 - Sign into [Webex Control Hub](https://admin.webex.com/) of your lab pod.
 
-- Go to Contact Center -> Settings -> Security and scroll down to "Content Secuity Policy Allowed List".
+- Go to **Contact Center** -> **Settings** -> **Security** and scroll down to "Content Secuity Policy Allowed List".
 
-- If the **\*.dynamics.com** value is not added, paste it into the text field and press "Add" button. Make sure the value has been added.
+- If the **\*.dynamics.com** value is not added, paste it into the text field and press **Add** button. Make sure the value has been added.
 
 
 ## Part 3: Test Webex Contact Center Agent Desktop for MS Dynamics 365
@@ -444,7 +444,7 @@ Then paste this URL into the text editor and save - we will need it later when c
 
 - Click on "Customer Service Hub" app and you will be redirected to Dashboards tab of Customer Service Hub.
 
-- Press "Sign In" button within "Cisco Webex Contact Center" app on the right-hand side and provide agent credentials on new borwser tab.
+- Press **Sign In** button within "Cisco Webex Contact Center" app on the right-hand side and provide agent credentials on new borwser tab.
 
 - Once authentication is completed, provide "Dialed Number" / "Extension" and choose proper team within "Cisco Webex Contact Center" app.
 
@@ -462,7 +462,7 @@ Then paste this URL into the text editor and save - we will need it later when c
 - Complete contact form with the details:
     * First Name
     * Last name
-    * Mobile Phone
+    * Mobile Phone (please enter calling number which you will use to make test call to Webex Contact Center later)
 
 - Press "Save & Close" button to save the contact.
 
@@ -552,7 +552,7 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
  
 > **Note:** You may find URL of your Zendesk trial instance within "Welcome to your 14-day Zendesk trial" email. It is printed next to "Your account:" section.
 
-- Once, signed into Zendesk, click on "Admin" (gear icon at the botton of menu bar on the left-hand side of the screen). Then click on **Marketplace** under **Apps** section. Zendesk Marketplace will be opened in new tab of the web browser.
+- Once, signed into Zendesk, click on "Admin" menu item (gear icon at the botton) of the vertical menu bar on the left. Then click on **Marketplace** under **Apps** section. Zendesk Marketplace will be opened in new tab of the web browser.
 
 - Search for "webex" on Marketplace and click on **Cisco Webex Contact Center** application.
 
@@ -584,7 +584,38 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
 
 > **Note:** The agent you will use to test the integration with Zendesk must be the part of the team chosen above.
 
-- Press "Save" to create the layout. Once layout is created make sure it is "Active".
+- Press **Save** to create the layout. Once layout is created make sure it is "Active".
+
+
+### 3. Create new Organization in Zendesk
+
+- Sign into your Zendesk instance.
+
+- Click on "Organizations" item of the vertical menu bar on the left.
+
+- Hover over **+ Add** button and choose **Organization** item from the pop-up menu.
+
+- Enter organization name and domain, then click **Save**.
+
+- Go to "Organizations" tab one more time to make sure new organization is successfully added.
+
+
+### 4. Create new Customer in Zendesk
+
+- In Zendesk instance click on "Customers" item of the vertical menu bar on the left.
+
+- Hover over **+ Add** button and choose **User** item from the pop-up menu.
+
+- Enter user name and email. Choose user type "End User" and press **Add** button.
+
+- Click on **+ add contact** link on the left and enter calling number which you will use to make test call to Webex Contact Center later.
+
+- Go to "Customers" tab one more time to make sure new user is successfully added.
+
+
+
+
+
 
 
 
