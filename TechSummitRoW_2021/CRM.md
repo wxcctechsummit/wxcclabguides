@@ -261,7 +261,7 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
 
 1. Administrator access to the organization on [Control Hub](https://admin.webex.com/) and [Webex Contact Center Management Portal](https://portal.wxcc-us1.cisco.com/). 
 2. An agent account with access to [Agent Desktop](https://desktop.wxcc-us1.cisco.com/).
-3. An MS Dynamics Sales instance. For specifics, refer the next section "Start Microsoft Dynamics Trial"
+3. An MS Dynamics Sales instance. For the details, refer the next section "Start Microsoft Dynamics Trial"
 4. Access to the [Webex Contact Contact Center Desktop Layout for Microsoft Dynamics](https://github.com/CiscoDevNet/webex-contact-center-widget-starter/tree/master/Examples/Layouts/MS Dynamics/) JSON.
 5. Lab 2 (IVR and Contact Routing) completed.
 
@@ -486,6 +486,42 @@ Then paste this URL into the text editor and save - we will need it later when c
 - Make sure you see activity record with call details created within MS Dynamics. "Call From" must be empty.
 
 - Go to "Activities" and make sure you see both records created after the calls.
+
+<!---
+
+
+# 4.3 Zendesk integration
+
+### Pre-requisites
+
+1. Administrator access to the organization on [Control Hub](https://admin.webex.com/) and [Webex Contact Center Management Portal](https://portal.wxcc-us1.cisco.com/). 
+2. An agent account with access to [Agent Desktop](https://desktop.wxcc-us1.cisco.com/).
+3. Zendesk instance. For the details, refer the next section "Start Zendesk Trial".
+4. Access to the [Webex Contact Contact Center Desktop Layout for Zendesk](hhttps://github.com/CiscoDevNet/webex-contact-center-widget-starter/tree/master/Examples/Layouts/Zendesk/) JSON.
+5. Lab 2 (IVR and Contact Routing) completed.
+
+
+## Optional: Start Zendesk Trial
+
+<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/nhTgM2OQQCY?rel=0" title="CRM Integration Lab: Start Zendesk Trial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br/>
+
+- Navigate to [Zendesk](https://www.zendesk.com/) website
+
+- Click on **Free Trial** on the main page of the website.
+
+- Enter your email address at "Start your free Zendesk trial" page, choose **No** under the option to get occasional emails and press **Next** button.
+
+- Provide your First Name, Last Name and Phone number on the second step of the wizard and press **Next** button.
+
+> **Note:** The phone number is mandatory, but it is not used for any kind of verification, authentication or authorization. Thus you may provide any number.
+
+- On the last step of the wizard fill in Company Name, Number of employees, purpose of the solution and Zendesk subdomain. Then choose Language, enter new Password and click on **Complete trial signup**.
+
+> **Note:** It is recommended to use host part of your eamil as Zendesk subdoamin for simplicity. For example, if your email is testemail@customer.com. try to use **testemail** (user portion of it as a subdomain). In case this subdomain is already occupied, wizard will propose another form of this name to you.
+
+-->
 
 
 ### **Congratulations! CRM Integration lab is now complete!**
