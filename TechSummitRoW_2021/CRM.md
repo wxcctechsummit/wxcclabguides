@@ -7,7 +7,7 @@ title: "Lab 4: CRM Integration"
 
 ### Lab Objective
 
-This lab covers Webex Contact Center Agent Desktop integration with the most popular CRM solutions (Salesforce and Microsoft Dynamics 365) which allows you to launch the Agent Desktop from within the CRM, providing an integrated Agent Experience for inbound and outbound calls.
+This lab covers Webex Contact Center Agent Desktop integration with the most popular CRM solutions (Salesforce, Microsoft Dynamics 365 and Zendesk) which allows you to launch the Agent Desktop from within the CRM, providing an integrated Agent Experience for inbound and outbound calls.
 
 
 # Table of Contents
