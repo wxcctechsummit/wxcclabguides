@@ -45,6 +45,18 @@ This lab covers Webex Contact Center Agent Desktop integration with the most pop
     * [8. Create new contact record in MS Dynamics](#8-create-new-contact-record-in-ms-dynamics)
     * [9. Make inbound test calls](#9-make-inbound-test-calls)
 
+[4.3 Zendesk integration](#43-zendesk-integration)
+- [Optional: Start Zendesk Trial](#optional-start-zendesk-trial)
+- [Part 1: Install application for Zendesk](#part-1-install-application-for-zendesk)
+    * [1. Install Cisco Webex Contact Center application for Zendesk from Marketplace](#1-install-cisco-webex-contact-center-application-for-zendesk-from-marketplace)
+- [Part 2: Configure Webex Contact Center tenant and Zendesk instance](#part-2-configure-webex-contact-center-tenant-and-zendesk-instance)
+    * [2. Create Desktop Layout for Zendesk](#2-create-desktop-layout-for-zendesk)
+    * [3. Create new Organization in Zendesk](#3-create-new-organization-in-zendesk)
+    * [4. Create new Customer in Zendesk](#4-create-new-customer-in-zendesk)
+- [Part 3: Test Webex Contact Center Agent Desktop for Zendesk](#part-3-test-webex-contact-center-agent-desktop-for-zendesk)
+    * [5. Sign into Webex Contact Center for Zendesk](#5-sign-into-webex-contact-center-for-zendesk)
+    * [6. Make inbound test calls](#6-make-inbound-test-calls)
+
 
 # 4.1 Salesforce integration
 
@@ -487,8 +499,6 @@ Then paste this URL into the text editor and save - we will need it later when c
 
 - Go to "Activities" and make sure you see both records created after the calls.
 
-<!---
-
 
 # 4.3 Zendesk integration
 
@@ -651,9 +661,7 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
 
 - Make sure the ticket is completed with call details.
 
-- Click on "Views" item of the vertical menu bar on the left. Then click on "All unresolved tickets" and make sure you see both records created after the calls.
-
--->
+- Click on "Views" item of the vertical menu bar on the left. Then click on "All unresolved tickets" and make sure you see both records created after test calls.
 
 
 ### **Congratulations! CRM Integration lab is now complete!**
