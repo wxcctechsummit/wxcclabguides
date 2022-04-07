@@ -12,7 +12,6 @@ Welcome to the Webex Contact Center Bootcamp. Labs can be started once you get t
 
 Type |Session                                | Corresponding Lab                                                                                      
 ------|-------------------------------------- | ------------------------------------------------------------------------------------------------------ 
-Optional | WebexCC Partner Enablement (the document explains the partner onboarding process that will be started in November) | [Webex Contact Center Partner Enablement - Sharepoint - Home](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="_blank"} |
 Mandatory | Lab 1 - Control Hub & Admin Portal  | [Control Hub & Admin Portal Lab](CH.md){:target="\_blank"}                               
 Mandatory | Lab 2 - IVR Contact Routing         | [IVR Contact Routing Lab](IVR.md){:target="\_blank"}                                      
 Mandatory | Lab 3 - Agent and Supervisor Desktops               | [Agent and Supervisor Desktops Lab](AgentSupervisor.md){:target="\_blank"}  
