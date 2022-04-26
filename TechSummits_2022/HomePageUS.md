@@ -14,7 +14,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | Date       | Session                                | Corresponding Lab                                                                                      
 | ---------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------ 
 | Doc       | WebexCC Partner Enablement (the document explains the partner onboarding process) | [Webex Contact Center Partner Enablement - Sharepoint - Home](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement){:target="_blank"} |
-| Week1 | Lab 1 - Control Hub & Admin Portal  | [Control Hub & Admin Portal Lab](CH.md){:target="\_blank"}                               
+| Week1 | **Lab 1 - Control Hub & Admin Portal**  | [Control Hub & Admin Portal Lab](CH.md){:target="\_blank"}                               
 | Week2 | Lab 2 - IVR Contact Routing         | [IVR Contact Routing Lab](IVR.md){:target="\_blank"}                                      
 | Week2 | Lab 3 - Agent and Supervisor Desktops               | [Agent and Supervisor Desktops Lab](AgentSupervisor.md){:target="\_blank"}  
 | Week2 | Lab 4 - CRM Integration                | [CRM Integration Lab](CRM.md){:target="\_blank"}  
