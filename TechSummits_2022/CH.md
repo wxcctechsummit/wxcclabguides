@@ -76,8 +76,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Select **_Next_** in **_Manage Users_** pane.
 
 - Input the **Email addresses** of the agent and supervisor users and click **_Next_**. 
+	- Users and email addresses should have already been created for the purpose of these exercises.  
 
-- Verify that the **Email addresses** are same as in the table above and click **_Next_**.
+- For consistency, verify that the **Email addresses** are same as in the table above and click **_Next_**.  *(this step is not mandatory but will help with the consistency of the labs)*
 
 - Check **_Messaging_** , **_Webex Calling (Professional)_** & **_Contact Center_**.
 
@@ -141,7 +142,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on `+ New Multimedia Profile` to open Multimedia Profile configuration page.
 
-- Input Name as `MMP_<ID>_TS`.
+- Input Name as `MMP_2022_TS`.
 
 - In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, and click **_Save_**.
 
@@ -149,9 +150,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Navigate to **_Provisioning_** and select **_Site_**.
 
-- Click on `+ New Site` button and provide the Name as `Site_<ID>_TS`.
+- Click on `+ New Site` button and provide the Name as `Site_2022_TS`.
 
-- Select `MMP_<ID>_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
+- Select `MMP_2022_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
 
 ### 3. Create new Team 1
 
@@ -203,7 +204,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - In the **_Agent Settings_** section, select `Site_2022_TS` in the **_Site_** drop-down.
 
-- Click the **_Teams_** area and select `Team1_<ID>_TS` and `Team2_2022_TS`.
+- Click the **_Teams_** area and select `Team1_2022_TS` and `Team2_2022_TS`.
 
 - Select `MMP_2022_TS` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
 
@@ -305,15 +306,15 @@ This is a supportive video that does not require any actions since your tenant i
 
 ---
 
-### Congratulations, you have compleated Lab1 tasks! 
+### Congratulations, you have completed Lab1 tasks! 
 ### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummits_2022/HomePageUS.html";}
 function nextLab() 
  {
  window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/IVR.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummits_2022/IVR.html";
  }
 </script>
 
@@ -331,3 +332,5 @@ function nextLab()
   padding: 10px;">Take Survey and Go to Lab 2</button>
 
 </div>
+
+
