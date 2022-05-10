@@ -44,7 +44,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
  - You are familiar with creating and modifying flows
 
 
-3. You have **completed Lab 3 - Agent and Supervisor Desktops:**
+3. You have **completed Lab 3 - Agent Desktop:**
  - You are familiar with editing and updating desktop layout JSON
 
 
