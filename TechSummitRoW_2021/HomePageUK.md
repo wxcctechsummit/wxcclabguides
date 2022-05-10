@@ -15,7 +15,7 @@ The Lab schedule has changed while all labs are being updated to align with the 
 | ---------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------ 
 | Week 1 | Lab 1 - Control Hub & Admin Portal  | [Control Hub & Admin Portal Lab](CH.md){:target="\_blank"}                               
 | Week 2 | Lab 2 - IVR Contact Routing         | [IVR Contact Routing Lab](IVR.md){:target="\_blank"}                                      
-| Week 2 | Lab 3 - Agent and Supervisor Desktops               | [Agent and Supervisor Desktops Lab](AgentSupervisor.md){:target="\_blank"}  
+| Week 2 | Lab 3 - Agent Desktop               | [Agent Desktop Lab](AgentSupervisor.md){:target="\_blank"}
 | Week 2 | Lab 4 - CRM Integration                | [CRM Integration Lab](CRM.md){:target="\_blank"}  
 | Week 2 | Lab 5 - Google CCAI & TTS Integration                | [Google CCAI & TTS Integration Lab](CCAI.md){:target="\_blank"} 
 | Week 3 | Lab 6 - Analyzer Deep Dive        | [Analyzer Deep Dive Labs](Analyzer.md){:target="\_blank"}                  
