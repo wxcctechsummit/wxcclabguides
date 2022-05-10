@@ -1,5 +1,5 @@
 ---
-title: 'Lab 3: Agent and Supervisor Desktop'
+title: 'Lab 3: Agent Desktop'
 ---
 
 ### Overview of the lab:
