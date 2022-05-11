@@ -10,7 +10,7 @@ Welcome to the Lab Guide Library.
 
 
 
-## Lab Schedule
+## Lab Exercises
 
 | Topic           | Content Owner              | Corresponding Lab                                                       |
 | --------------- | -------------------------- | -------------------------------------------------------------           |
