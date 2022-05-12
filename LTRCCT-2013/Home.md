@@ -14,7 +14,7 @@ Welcome to the Lab Guide Library.
 
 | Content Owner   | Topic.                     | Corresponding Lab                                                       |
 | --------------- | -------------------------- | -------------------------------------------------------------           |
-|  Dmitry | Before you Begin | [Lab Information](Lab_Info.md){:target="\_blank"}  |
+|  Dmitry (Done) | Before you Begin | [Lab Information](Lab_Info.md){:target="\_blank"}  |
 |  Dmitry | Preconfiguration | [Flow Management](Ex1.md){:target="\_blank"}  |
 |  Dmitry | Email Configuration | [Email creation end to end](Ex3_Email.md){:target="\_blank"} |
 |  Carles | Chat Configuration | [Chat creation end to end](Ex2_Chat.md){:target="\_blank"} |
