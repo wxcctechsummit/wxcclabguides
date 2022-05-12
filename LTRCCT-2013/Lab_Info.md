@@ -42,7 +42,7 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Flow_Managment.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Ex1.html";
  }
 </script>
 
