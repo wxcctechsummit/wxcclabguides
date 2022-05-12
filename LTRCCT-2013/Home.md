@@ -4,7 +4,7 @@ title: 'Dip into NEW Digital Channels for Webex Contact Center'
 ## Speakers: Gagarin Sathiyanarayanan, Carles Duz Palau, Dmitry Bokatov
 ---
 
-<img align="middle" src="images/Picture 1.jpg" width="1000" />
+<img align="middle" src="images/road-690087_1920.jpeg" width="1000" />
 
 Welcome to the Lab Guide Library. 
 
