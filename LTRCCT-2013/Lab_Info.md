@@ -1,5 +1,5 @@
 ---
-title: 'Lab Pre-requisites
+title: 'Lab Pre-requisites'
 ---
 ## Introduction
 Digital channels are now more impactful than ever. 
@@ -18,7 +18,7 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 | Agent Desktop | http://desktop.wxcc-us1.cisco.com/ | cl1agent**X**@email.carehybrid.com |
 
 > Note: 
-> X – is your unique POD ID listed on the card.
+> **X** – is your unique POD ID listed on the card.
 > The lab POD is the same as the production tenant which is located in the US Datacenter. These labs are for instructional purposes only but the configuration can be reused for the real deployment..
 
 ## Before starting the labs
