@@ -17,8 +17,8 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 | IMI Connect | [https://cl1pod**X**.imiconnect.io/](https://cl1podX.imiconnect.io/){:target="_blank"} | cl1admin**X**@email.carehybrid.com |
 | Agent Desktop | [https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"} | cl1agent**X**@email.carehybrid.com |
 
-> Note: 
-> **X** – is your unique POD ID listed on the card.
+> **NOTE:** \ 
+> **X** – is your unique POD ID listed on the card. \
 > The lab POD is the same as the production tenant which is located in the US Datacenter. These labs are for instructional purposes only but the configuration can be reused for the real deployment..
 
 ## Before starting the labs
