@@ -38,3 +38,25 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 
 2. All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the digital channels.
 
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function nextLab() 
+ {
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Flow_Managment.html";
+ }
+</script>
+
+<div id="button-row">
+<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Main Page</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Next Lab</button>
+
+</div>
