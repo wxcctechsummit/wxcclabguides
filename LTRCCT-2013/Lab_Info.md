@@ -4,7 +4,7 @@ title: 'Lab Pre-requisites, Format, Support'
 
 
 ## Lab Topology
-
+<img align="middle" src="images/topology.png" width="1000" />
 
 ## Access URLs
 
