@@ -14,7 +14,7 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 | --------------- | ----------------------------------------- | -------------------------------------------------------------           |
 | Webex CC Control Hub | [https://admin.webex.com](https://admin.webex.com){:target="_blank"} | cl1admin**X**@email.carehybrid.com |
 | Management Portal | [https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"} | cl1admin**X**@email.carehybrid.com |
-| IMI Connect | [https://cl1podX.imiconnect.io/](https://cl1podX.imiconnect.io/){:target="_blank"} | cl1admin**X**@email.carehybrid.com |
+| IMI Connect | [https://cl1pod**X**.imiconnect.io/](https://cl1podX.imiconnect.io/){:target="_blank"} | cl1admin**X**@email.carehybrid.com |
 | Agent Desktop | [https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"} | cl1agent**X**@email.carehybrid.com |
 
 > Note: 
