@@ -12,12 +12,12 @@ Welcome to the Lab Guide Library.
 
 ## Lab Exercises
 
-| Topic           | Content Owner              | Corresponding Lab                                                       |
+| Content Owner   | Topic.                     | Corresponding Lab                                                       |
 | --------------- | -------------------------- | -------------------------------------------------------------           |
-| Before you Begin| Dmitry | [Lab Information](Lab_Info.md){:target="\_blank"}  |
-| Tenant Preparation | Dmitry | [Flow Management](Ex1.md){:target="\_blank"}  |
-| Email Configuration | Dmitry | [Email creation end to end](Ex3_Email.md){:target="\_blank"} |
-| Chat Configuration | Carles  | [Chat creation end to end](Ex2_Chat.md){:target="\_blank"} |
-| Facebook Setup  | Carles  | [FBM creation end to end](Ex5_FBM.md){:target="\_blank"}   |
-| SMS Setup  | Gagarin  | [SMS creation end to end](Ex4_SMS.md){:target="\_blank"}    |
-| WhatsApp Messenger Setup  | Gagarin | [WhatsApp configuration](Ex6_WhatsApp.md){:target="\_blank"}      |
+|  Dmitry | Before you Begin | [Lab Information](Lab_Info.md){:target="\_blank"}  |
+|  Dmitry | Preconfiguration | [Flow Management](Ex1.md){:target="\_blank"}  |
+|  Dmitry | Email Configuration | [Email creation end to end](Ex3_Email.md){:target="\_blank"} |
+|  Carles | Chat Configuration | [Chat creation end to end](Ex2_Chat.md){:target="\_blank"} |
+|  Carles | Facebook Setup  | [FBM creation end to end](Ex5_FBM.md){:target="\_blank"}   |
+|  Gagarin | SMS Setup | [SMS creation end to end](Ex4_SMS.md){:target="\_blank"}    |
+|  Gagarin | WhatsApp Messenger Setup | [WhatsApp configuration](Ex6_WhatsApp.md){:target="\_blank"}      |
