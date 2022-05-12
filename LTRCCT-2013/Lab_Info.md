@@ -2,7 +2,10 @@
 title: 'Lab Pre-requisites, Format, Support'
 ---
 
-                                                    
+
+## Lab Topology
+
+
 ## Access URLs
 
 | Environment     | Webex CC Admin portal                     | Agent Desktop                                                       |
