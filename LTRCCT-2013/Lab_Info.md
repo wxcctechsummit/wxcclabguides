@@ -12,10 +12,10 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 
 | Component     | URL                     | Login                                                       |
 | --------------- | ----------------------------------------- | -------------------------------------------------------------           |
-| Webex CC Control Hub | https://admin.webex.com/ | cl1admin**X**@email.carehybrid.com |
-| Management Portal | https://portal-v2.wxcc-us1.cisco.com/portal/ | cl1admin**X**@email.carehybrid.com |
-| IMI Connect | https://cl1podX.imiconnect.io/ | cl1admin**X**@email.carehybrid.com |
-| Agent Desktop | http://desktop.wxcc-us1.cisco.com/ | cl1agent**X**@email.carehybrid.com |
+| Webex CC Control Hub | [https://admin.webex.com](https://admin.webex.com){:target="_blank"} | cl1admin**X**@email.carehybrid.com |
+| Management Portal | [https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"} | cl1admin**X**@email.carehybrid.com |
+| IMI Connect | [https://cl1podX.imiconnect.io/](https://cl1podX.imiconnect.io/){:target="_blank"} | cl1admin**X**@email.carehybrid.com |
+| Agent Desktop | [https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"} | cl1agent**X**@email.carehybrid.com |
 
 > Note: 
 > **X** – is your unique POD ID listed on the card.
