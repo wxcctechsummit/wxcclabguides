@@ -31,6 +31,19 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 
 4. Please follow the labs in the same order as they are provided. Some of the lambs would have dependencies.
 
+## Users
+The users have the following preconfiguration
+| **User Role** | **User email**      |
+| ----------- | ----------------- | 
+| Agent        | cl1agent**X**@email.carehybrid.com   | 
+| Supervisor         | cl1sup**X**@email.carehybrid.com  | 
+
+| **Entity**          | **Name** |
+| ------------------- | -------- |
+| Multimedia Profiles | MMP   |
+| Site                | Site  |
+| Team1               | Team1 |
+| Team2               | Team2 |
 
 ## Lab Support
 
