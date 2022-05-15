@@ -63,22 +63,29 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference) 
 > • Close Task - Closing the conversation
 
-1. Download CA flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} ( navigate to **Webex Connect Flows** -> **v2.1**)
-2. Login to the **Connect** with the admin account.
-3. Nabigate to **Services** and click on **CREATE NEW SERVICE**
+1. Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} ( navigate to **Webex Connect Flows** -> **v2.1**)
+2. Unzip All Files
+3. Login to the **Connect** with the admin account.
+4. Nabigate to **Services** and click on **CREATE NEW SERVICE**
 
 <img align="middle" src="images/Services.png" width="1000" />
 
-4. Set the anme __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service
-5. In the service click on **FLOWS** -> **CREATE FLOW**
+5. Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
+P.S. You can choose a different Service name. It is just an exmple.
+
+7. In the service click on **FLOWS** -> **CREATE FLOW**
 
 <img align="middle" src="images/Flows.png" width="1000" />
 
-6. In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE**
+6. In the **FLOW NAME** section set **Task Close Flow**
 
-<img align="middle" src="images/Upload.png" width="1000" />
+7. In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
 
-7. 
+8. Now you can click on **CREATE** button
+
+<img align="middle" src="images/Lab1_Create.png" width="1000" />
+
+9. 
 
 ## Step 2: Setup agents in Portal (Agents, Team, MMP)
 
