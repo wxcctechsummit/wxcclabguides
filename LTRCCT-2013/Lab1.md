@@ -54,11 +54,21 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/ConfigOrder.png" width="1000" />
 
-## Part 1: Control Hub User Management Admin Task
 
-> The following video outlines the process to manage different types of users to the Customer tenant. Following the steps, you will add new users and set the Calling extension. While adding the user, we will see how to select user roles. 
+## Step 1: Download and upload CA flows in Connect 
+Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} (available in Webex Connect Flows -> v2.1). CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows – DO NOT MODIFY”
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/0p37TL5wtCY?rel=0" title="WxCC Lab #1 Part 1: Control Hub User Management Admin Task" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+The agnostic flows consist of:
+• Task Routed - Adding an agent participant to a conversation
+• Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference) 
+• Close Task - Closing the conversation
+
+
+
+
+## Step 2: Setup agents in Portal (Agents, Team, MMP)
+
+
 
 | **User Role** | **User email**      | **User Extension**                   |
 | ----------- | ----------------- | -------------------------------- |
