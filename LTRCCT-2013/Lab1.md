@@ -63,100 +63,45 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference);\
 > • Task Close - Closing the conversation;
 
-1. Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} ( navigate to **Webex Connect Flows** -> **v2.1**)
-2. Unzip All Files
-3. Login to the **Connect** with the admin account.
-4. Nabigate to **Services** and click on **CREATE NEW SERVICE**
+1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} ( navigate to **Webex Connect Flows** -> **v2.1**)
+2) Unzip All Files
+3) Login to the **Connect** with the admin account.
+4) Nabigate to **Services** and click on **CREATE NEW SERVICE**
 
 <img align="middle" src="images/Services.png" width="1000" />
 
-5. Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
-> **NOTE** You can choose a different Service name. It is just an exmple.
+5) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
+> **Note** You can choose a different Service name. It is just an exmple.
 
-6. In the service click on **FLOWS** -> **CREATE FLOW**
+6) In the service click on **FLOWS** -> **CREATE FLOW**
 
 <img align="middle" src="images/Flows.png" width="1000" />
 
-7. In the **FLOW NAME** section set **Task Close Flow**
+7) In the **FLOW NAME** section set **Task Close Flow**
 
-8. In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
+8) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
 
-9. Now you can click on **CREATE** button
+9) Now you can click on **CREATE** button
 
 <img align="middle" src="images/Lab1_Create.png" width="1000" />
 
-10. In the new menu click on **SAVE** and then **MAKE LIVE**
+10) In the new menu click on **SAVE** and then **MAKE LIVE**
 
 <img align="middle" src="images/Lab1_Live.png" width="1000" />
 
-11. Repeate steps 6 - 10 for **Task Routed flow** and **Task Modified Flow**
+11) Repeate steps 6 - 10 for **Task Routed flow** and **Task Modified Flow**
 
 
 ## Step 2: Setup agents in Portal (Agents, Team, MMP)
 
+> This step shows how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. 
 
 
-| **User Role** | **User email**      | **User Extension**                   |
-| ----------- | ----------------- | -------------------------------- |
-| Agent        | agent1_\<ID\>@mailinator.com   | 1XXX |
-| Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2XXX |
+| **User Role** | **User email**      | 
+| ----------- | ----------------- | 
+| Agent        | agent1_\<ID\>@mailinator.com   | 
+| Supervisor         | supervisor1_\<ID\>@mailinator.com  |
 
-> **NOTE:** Your \<IDs\> was provided through the email in the **"Attendee ID"** line. It's based on the first letter of your name plus your surname. You can share your tenant with multiple administrators in your organization, in that case, the **ID** and the **User Ext** should be unique for each user.
-
-
-### 1. Add an agent and a supervisor users and configure the calling extension
-
-- Login to the [Control Hub](https://admin.webex.com){:target="_blank"} with the admin account.
-
-- Navigate to **_Users_**.
-
-- Click on **_Manage Users_** button.
-
-- Click on **_Manually Add or Modify User_**.
-
-- Select **_Next_** in **_Manage Users_** pane.
-
-- Input the **Email addresses** of the agent and supervisor users and click **_Next_**. 
-
-- Verify that the **Email addresses** are same as in the table above and click **_Next_**.
-
-- Check **_Messaging_** , **_Webex Calling (Professional)_** & **_Contact Center_**.
-
-- Ensure that the License Type is **_Premium Agent_** and Role is **_Agent_** and click **_Next_**. 
-
-- On the next page, make sure that the **_Location_** is selected under **_Assign Numbers_**. The correct value should be already selected by default. 
-
-- The **_Phone Number_** left as **None**.
-
-- On the same page, Enter the correct `Extension` under **_Assign Numbers_**. You can find this in the table above.
-
-- Click **_Finish_**.
-
-- On the next page, you should get confirmation **"2 Total records processed"**. Confirm the same by pressing **_Finish_**.
-
-- Select the supervisor user and modify his role to **_Supervisor_** by clicking the top **_Edit_** button in front of **_Services_**. Click **_Save_** to confirm the changes.
-
-- Validate the users by going to [https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"} and putting agent/supervisor email in to **_Enter Public Mailinator Inbox_** 
-
-> **Note:** You do not need a password to open the inbox on mailinator. You can read any emails without mailbox credentials. Just insert agent name in the top right form and click **GO**.
-> ![Mailinator](../images/mailinator.png)
-
-- Check the email inboxes and follow the **Cisco Webex** email instructions to activate the user accounts. For the user activation, you have to set the password twice for both users.
-
-- Refresh the **_Users_** page in the Control Hub, make sure that all users are in **Active** status.
-
-### 2. Optionally, add the rest of the users
-
-- Follow the same steps as above to add any extra users that you want to add to the Contact Center.
-
-[To top of this lab](#table-of-contents)
-
-
-## Part 2: Admin Portal Multimedia Profile, Site and Team Configuration
-
-> The following video outlines how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. We will also see how to navigate to the Webex Contact Center Management Portal from Control Hub UI.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/92ou5Yias-8?rel=0" title="WxCC Lab #1 Part 2: Admin Portal Multimedia Profile, Site and Team Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 | **Entity**          | **Name** |
 | ------------------- | -------- |
@@ -165,7 +110,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 | Team1               | Team1_\<ID\>_TS |
 | Team2               | Team2_\<ID\>_TS |
 
-> **NOTE:** Multiple \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
+
+> **Note:** Your \<IDs\> was provided to you personally.  \<IDs\> is the unique number equal to your POD.
+
 
 ### 1. Create new MultiMedia Profile
 
