@@ -56,14 +56,17 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 
 ## Step 1: Download and upload CA flows in Connect 
-Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} (available in Webex Connect Flows -> v2.1). CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows – DO NOT MODIFY”
+> **Note** Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows – DO NOT MODIFY”
 
-The agnostic flows consist of:
-• Task Routed - Adding an agent participant to a conversation
-• Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference) 
-• Close Task - Closing the conversation
+> The agnostic flows consist of:
+> • Task Routed - Adding an agent participant to a conversation
+> • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference) 
+> • Close Task - Closing the conversation
 
-
+1. Download CA flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} ( navigate to **Webex Connect Flows** -> **v2.1**)
+2. Login to the **Connect** with the admin account.
+3. Nabigate to **Services** and click on **CREATE NEW SERVICE**
+<img align="middle" src="images/Services.png" width="1000" />
 
 
 ## Step 2: Setup agents in Portal (Agents, Team, MMP)
