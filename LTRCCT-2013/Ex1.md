@@ -1,10 +1,10 @@
 ---
-title: 'Lab 1: Control Hub And Admin Portal'
+title: 'Lab 1: Preconfiguration and Flow Managment'
 ---
 
 ### Overview of the lab:
 
-In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by a customer administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to log in to an agent interface with the configured user extension.
+In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by a customer administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to log in to an agent interface.
 
 # Table of Contents
 
@@ -31,28 +31,27 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Lab Objective
 
-- This lab is designed to help you do the initial setup and configuration for your GOLD tenant and to be familiar with the control hub and admin portal UI.
-- The lab contains multiple exercises on Control Hub and Admin Portal to make you comfortable with the Webex Contact Center application.
+- This lab is designed to help you do the initial setup and configuration for your tenant. 
+- The lab contains multiple exercises to make you familiar with the control hub, Managment portal UI, Connect and Engage Portals.
+
 
 ### Pre-requisites
 
-- You have recived the **admin login** credentials with a full admin access.
-
-- You have 2 **calling numbers** assigned to your POD.
-
-- You need 2 devices where you can install webex calling (example: PC or Mac and Mobile).
+- You have recived the access credentials with a full admin access.
 
 
 ### Quick Links
 
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
-> Mailinator: **[https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Webex Calling app **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}**
+> Connect: https://cl1pod**X**.imiconnect.io/\
 
 
 # Lab Section
+
+### Configuration Order
+
 
 ## Part 1: Control Hub User Management Admin Task
 
