@@ -51,7 +51,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 # Lab Section
 
 ### Configuration Order
-
+![Configuration Order](../images/ConfigOrder.png)
 
 ## Part 1: Control Hub User Management Admin Task
 
