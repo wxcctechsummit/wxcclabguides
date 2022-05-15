@@ -66,10 +66,19 @@ In this Lab, we will go through the tasks that are required to complete the gene
 1. Download CA flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} ( navigate to **Webex Connect Flows** -> **v2.1**)
 2. Login to the **Connect** with the admin account.
 3. Nabigate to **Services** and click on **CREATE NEW SERVICE**
+
 <img align="middle" src="images/Services.png" width="1000" />
+
 4. Set the anme __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service
 5. In the service click on **FLOWS** -> **CREATE FLOW**
+
 <img align="middle" src="images/Flows.png" width="1000" />
+
+6. In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE**
+
+<img align="middle" src="images/Upload.png" width="1000" />
+
+7. 
 
 ## Step 2: Setup agents in Portal (Agents, Team, MMP)
 
