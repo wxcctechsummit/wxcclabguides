@@ -33,11 +33,12 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 
 ## Users
 The users have the following preconfiguration
-| **User Role** | **User email**      |
-| ----------- | ----------------- | 
-| Agent        | cl1agent**X**@email.carehybrid.com   | 
-| Supervisor         | cl1sup**X**@email.carehybrid.com  | 
+| **User Role** | **User email**                       |
+| ------------- | ------------------------------------ | 
+| Agent         | cl1agent**X**@email.carehybrid.com   | 
+| Supervisor    | cl1sup**X**@email.carehybrid.com     | 
 
+## User Settings
 | **Entity**          | **Name** |
 | ------------------- | -------- |
 | Multimedia Profiles | MMP   |
