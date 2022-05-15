@@ -97,21 +97,22 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > This step shows how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. 
 
 
-| **User Role** | **User email**      | 
-| ----------- | ----------------- | 
-| Agent        | agent1_\<ID\>@mailinator.com   | 
-| Supervisor         | supervisor1_\<ID\>@mailinator.com  |
+### Users
+The users have the following preconfiguration
+| **User Role** | **User email**                       |
+| ------------- | ------------------------------------ | 
+| Agent         | cl1agent**\<ID\>**@email.carehybrid.com   | 
+| Supervisor    | cl1sup**\<ID\>**@email.carehybrid.com     | 
 
-
+### User Settings
 | **Entity**          | **Name** |
 | ------------------- | -------- |
-| Multimedia Profiles | MMP_\<ID\>_TS   |
-| Site                | Site_\<ID\>_TS  |
-| Team1               | Team1_\<ID\>_TS |
-| Team2               | Team2_\<ID\>_TS |
+| Multimedia Profiles | MMP   |
+| Site                | Site  |
+| Team1               | Team1 |
+| Team2               | Team2 |
 
-
-> **Note:** Your \<IDs\> was provided to you personally.  \<IDs\> is the unique number equal to your POD.
+> **Note:** Your \<ID\> was provided to you personally.  \<ID\> is the unique number equal to your POD.
 
 
 ### 1. Create new MultiMedia Profile
