@@ -98,6 +98,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 
 ### Users
+
 The users have the following preconfiguration
 | **User Role** | **User email**                       |
 | ------------- | ------------------------------------ | 
@@ -105,6 +106,7 @@ The users have the following preconfiguration
 | Supervisor    | cl1sup**\<ID\>**@email.carehybrid.com     | 
 
 ### User Settings
+
 | **Entity**          | **Name** |
 | ------------------- | -------- |
 | Multimedia Profiles | MMP   |
