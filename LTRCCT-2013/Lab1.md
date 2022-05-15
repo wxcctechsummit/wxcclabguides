@@ -85,7 +85,10 @@ P.S. You can choose a different Service name. It is just an exmple.
 
 <img align="middle" src="images/Lab1_Create.png" width="1000" />
 
-9. 
+9. In the new menu click on **SAVE** and then on **MAKE LIVE**
+
+<img align="middle" src="images/Lab1_Live.png" width="1000" />
+
 
 ## Step 2: Setup agents in Portal (Agents, Team, MMP)
 
