@@ -45,7 +45,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Connect: https://cl1pod**X**.imiconnect.io/\
+> Connect: https://cl1pod**X**.imiconnect.io/
 
 
 # Lab Section
@@ -58,10 +58,10 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ## Step 1: Download and upload CA flows in Connect 
 > **Note** Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
 
-> The agnostic flows consist of:
-> • Task Routed - Adding an agent participant to a conversation
-> • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference) 
-> • Close Task - Closing the conversation
+> The agnostic flows consist of:\
+> • Task Routed - Adding an agent participant to a conversation;\
+> • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference);\
+> • Task Close - Closing the conversation;
 
 1. Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} ( navigate to **Webex Connect Flows** -> **v2.1**)
 2. Unzip All Files
@@ -71,23 +71,25 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <img align="middle" src="images/Services.png" width="1000" />
 
 5. Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
-P.S. You can choose a different Service name. It is just an exmple.
+> **NOTE** You can choose a different Service name. It is just an exmple.
 
-7. In the service click on **FLOWS** -> **CREATE FLOW**
+6. In the service click on **FLOWS** -> **CREATE FLOW**
 
 <img align="middle" src="images/Flows.png" width="1000" />
 
-6. In the **FLOW NAME** section set **Task Close Flow**
+7. In the **FLOW NAME** section set **Task Close Flow**
 
-7. In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
+8. In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
 
-8. Now you can click on **CREATE** button
+9. Now you can click on **CREATE** button
 
 <img align="middle" src="images/Lab1_Create.png" width="1000" />
 
-9. In the new menu click on **SAVE** and then on **MAKE LIVE**
+10. In the new menu click on **SAVE** and then **MAKE LIVE**
 
 <img align="middle" src="images/Lab1_Live.png" width="1000" />
+
+11. Repeate steps 6 - 10 for **Task Routed flow** and **Task Modified Flow**
 
 
 ## Step 2: Setup agents in Portal (Agents, Team, MMP)
