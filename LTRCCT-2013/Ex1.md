@@ -1,5 +1,5 @@
 ---
-title: 'Lab 1: Preconfiguration and Flow Managment'
+title: 'Lab 1: Preconfiguration'
 ---
 
 ### Overview of the lab:
