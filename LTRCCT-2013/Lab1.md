@@ -4,10 +4,10 @@ title: 'Lab 1: Preconfiguration'
 
 # Table of Contents
 
-- [Step 1: Download and upload CA flows in Connect](#step-1-download-and-upload-ca-flows-in-connect) 
-- [Step 2: Node Authorization for Webex CC Task and Engage nodes](#step-2-node-authorization-for-webex-cc-task-and-engage-nodes)
-- [Step 3: Setup agents in Portal (Agents, Team, MMP)](#step-3-setup-agents-in-portal-agents-team-mmp)
-- [Step 4: Setup RONA timers](#step-4-setup-rona-timers)
+- [Step 1. Download and upload CA flows in Connect](#step-1-download-and-upload-ca-flows-in-connect) 
+- [Step 2. Node Authorization for Webex CC Task and Engage nodes](#step-2-node-authorization-for-webex-cc-task-and-engage-nodes)
+- [Step 3. Setup agents in Portal (Agents, Team, MMP)](#step-3-setup-agents-in-portal-agents-team-mmp)
+- [Step 4. Setup RONA timers](#step-4-setup-rona-timers)
 - [Access to the Agent Desktop](#access-to-the-agent-desktop)
 
 # Introduction
@@ -37,7 +37,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <img align="middle" src="images/Lab1_ConfigOrder.png" width="1000" />
 
 
-## Step 1: Download and upload CA flows in Connect 
+## Step 1. Download and upload CA flows in Connect 
 > Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
 
 > The agnostic flows consist of:\
@@ -79,7 +79,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 12) Repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
 
 
-## Step 2: Node Authorization for Webex CC Task and Engage nodes
+## Step 2. Node Authorization for Webex CC Task and Engage nodes
 
 > Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
@@ -117,7 +117,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <img align="middle" src="images/Lab1_authorized2.png" width="1000" />
 
 
-## Step 3: Setup agents in Portal (Agents, Team, MMP)
+## Step 3. Setup agents in Portal (Agents, Team, MMP)
 
 > This step shows how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. 
 
@@ -221,7 +221,7 @@ The users have the following preconfiguration
 
 [To top of this lab](#table-of-contents)
 
-## Step 4: Setup RONA timers
+## Step 4. Setup RONA timers
 
 In the process...
 
