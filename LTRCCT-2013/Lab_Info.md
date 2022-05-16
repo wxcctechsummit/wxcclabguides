@@ -60,7 +60,7 @@ The users have the following preconfiguration
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Ex1.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab1.html";
  }
 </script>
 
