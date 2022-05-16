@@ -65,10 +65,11 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 <img align="middle" src="images/Lab2_Gmail3.png" width="1000" />
 
-- Select **Security** option and turn `ON` the **Less secure app access**
+- Select **Security** option and turn `ON` the **Less secure app access**. 
 
 <img align="middle" src="images/Lab2_Gmail4.png" width="1000" />
 
+- Do not close the gmail tab in the browser.
 
 ### 3. Disable captcha for the account
 
@@ -81,26 +82,68 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 ### 1. Create Email Assest
 
-- Customer admin logs in to IMI connect UI using the URL provided by the IMI team with the credentials. Here for the demo tenant the URL is "https://solutionassuranceesrgt-sa.imiconnect.io/login". 
+- As an admin, login to Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
-- Select Assets -> Apps -> Configure New App -> Email and enter the respective values and click test connection.
+- Select **Assets** -> **Apps** -> **CONFIGURE NEW APP** -> **Email**.
 
-- Once test is successfully completed, click on save.
+<img align="middle" src="images/Lab2_Assest1.png" width="1000" />
 
-- Click on Register to WebeXCC -> Select the appropriate service and click register.
+- Set the settings according to the table below
+
+| **Entity**          | **Name** |
+| ------------------- | -------- |
+| Asset Name | EmailAsset   |
+| Email ID   | cl1webex**X**@gmail.com  |
+| SMTP Server  | smtp.gmail.com |
+| Username     | cl1webex**X**@gmail.com |
+| Port     | 465 |
+| Security     | SSL |
+
+> where X is your POD ID
+
+- Click **TEST CONNECTION** and if test is successfully completed, click on **SAVE**.
+
+<img align="middle" src="images/Lab2_Assest2.png" width="1000" />
+
+- Click on **REGISTER TO WEBEX CC** -> Select the appropriate service (the default **My First Service**) and click **REGISTER**.
+
+<img align="middle" src="images/Lab2_Assest3.png" width="1000" />
 
 ### 2. Add forwarding Address
 
-- Copy the forwarding address from the created asset in previous step and in Gmail account, click on settings icon on top right corner -> Select “See all settings” -> Click on “Forwarding and POP/IMAP” -> click on add a forwarding address -> Paste the copied forwarding address from the created asset and click Next.
+- Copy the forwarding address from the created asset in previous step and in Gmail account. 
+ 
+ <img align="middle" src="images/Lab2_Assest4.png" width="1000" />
 
-- A new pop up tab opens and click proceed and then click OK when it prompts.
+- Go back to the Gmail account and click on settings icon on top right corner -> Select **See all settings**.
 
-- Now in IMI connect, click on Tools -> Export Logs. Under Inbound logs, Select the App that we created -> Select Channel Event as Incoming Email -> Select the period as today and click Download. A log file gets downloaded.
+<img align="middle" src="images/Lab2_Gmail1.png" width="1000" />
 
-- Open the log file, under the subject column, copy the confirmation code and paste it in the email account for verification and click verify.
+- Click on **Forwarding and POP/IMAP** -> click on add a forwarding address -> Paste the copied forwarding address from the created asset. Then click on **Next**.
 
-- Select Forward a copy of incoming mail to the verified address and click save.
+<img align="middle" src="images/Lab2_Gmail6.png" width="1000" />
 
+- A new pop up tab opens and click **Proceed** and then click **OK** when it prompts.
+
+<img align="middle" src="images/Lab2_Gmail7.png" width="1000" />
+
+- Go back to Webex Connect and click on **Tools** -> **Export Logs**. 
+
+- Under Inbound logs, Select the App that was created -> Select Channel Event as `Incoming Email` -> Select the period as `Today` and click **Download**. 
+
+<img align="middle" src="images/Lab2_ExportLog1.png" width="1000" />
+
+- Once a log file is downloaded, open the log file, under the **Subject** column, copy the confirmation code. 
+
+<img align="middle" src="images/Lab2_ExportLog2.png" width="1000" />
+
+- Go back to the Gmail account, paste the code in the email account verification section and click verify.
+
+<img align="middle" src="images/Lab2_Gmail8.png" width="1000" />
+
+- Select **Forward a copy of incoming mail to** the verified address and click **Save Changes**.
+
+<img align="middle" src="images/Lab2_Gmail9.png" width="1000" />
 
 ## Step 3. Email Entry Point and Queue creation
 
