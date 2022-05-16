@@ -12,24 +12,27 @@ title: 'Lab 2: Email Configuration'
 - [Lab 3d - Workflow association(Mail)](#Lab-3d---Workflow-association(Mail))
     * Create/Upload Email flow
     * Add Authorizations for each of the Engage and WxCC nodes
-    * Demo 
+
 
 # Introduction
 
-## Lab Objective
+### Lab Objective
 
-This lab is designed to ensure we onboard Email account configuration into WxCC using IMI. You will be able to initiate an email to the Contact Center and be able to accept/respond to the email by logging in as an agent.  
+In this Lab, we will go through the tasks that are required to complete the basic email configuration. You will be able to initiate an email to the Contact Center and be able to accept/respond to the email by logging in as an agent.  
 
-We will be configuring Email Account settings, Email Assets, Entry Point, Queue and corresponding workflows. This helps us connecting the Email account with our application.  
+We will be configuring Email Account settings, Email Assets, Entry Point and corresponding workflows. All those steps are require for connecting the Email account with our application.  
 
-## Pre-requisite
+### Pre-requisite
 
 1. An Email account to be used in WxCC.
 2. Portal, Agent Desktop and IMI connect URL.
 3. Admin credentials to configure in portal and IMI connect.
 4. Agent Credentials to Handle the Email.
 
-# Lab 3c - Asset creation end to end (Mail)
+# Lab Section
+
+### Configuration Order
+<img align="middle" src="images/Lab2_ConfigOrder.png" width="1000" />
 
 ## 1. Organization admin – sets up support email account
 
