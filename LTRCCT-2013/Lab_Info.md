@@ -19,7 +19,8 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 
 > **NOTE:**  
 > **X** – is your unique POD ID listed on the card. \
-> The lab POD is the same as the production tenant which is located in the US Datacenter. These labs are for instructional purposes only but the configuration can be reused for the real deployment..
+> The lab POD is the same as the production tenant which is located in the US Datacenter. These labs are for instructional purposes only but the configuration can be reused for the real deployment.
+> The telephony service is not activated. This pod is used only for digital channels.
 
 ## Before starting the labs
 
