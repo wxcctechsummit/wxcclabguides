@@ -20,7 +20,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Pre-requisites
 
-- You have recived the access credentials with a full admin access.
+- You have recived the access credentials with a full admin access 
+- You have recived the access to the agent account.
 
 
 ### Quick Links
