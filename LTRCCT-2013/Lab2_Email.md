@@ -4,14 +4,10 @@ title: 'Lab 2: Email Configuration'
 
 # Table of Contents
 - [Step 1. Gmail account configuration](#step-1-gmail-account-configuration)
-    * Email account settings
-    * Create Email Asset and Register to WebeXCC
-    * Add forwarding Address 
-    * Create EP/Q
-
-- [Lab 3d - Workflow association(Mail)](#Lab-3d---Workflow-association(Mail))
-    * Create/Upload Email flow
-    * Add Authorizations for each of the Engage and WxCC nodes
+- [Step 2. Create Email Asset and Register to WebeXCC](#step-2-create-email-asset-and-register-to-webexcc)
+- [Step 3. Email Entry Point and Queue creation](#step-3-email-entry-point-and-queue-creation)
+- [Step 4. Create/Upload Email flow](#step-4-createupload-email-flow)
+- [Verification - send an Email and accept the request](#verification-send-an-email-and-accept-the-request)
 
 
 # Introduction
