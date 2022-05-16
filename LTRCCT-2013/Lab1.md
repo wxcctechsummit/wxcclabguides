@@ -185,7 +185,7 @@ The users have the following preconfiguration
 <img align="middle" src="images/Lab1_Site.png" width="1000" />
 
 
-### 3. Create a Team 1
+### 3. Create new Teams
 
 - Navigate to **_Provisioning_** and select **_Team_**.
 
@@ -203,108 +203,41 @@ The users have the following preconfiguration
 
 <img align="middle" src="images/Lab1_Team.png" width="1000" />
 
-### 4. Create a Team 2
-
 - Please follow the same steps as above to add an extra Team as `Team2`. 
 
 [To top of this lab](#table-of-contents)
 
-## Step 4: Admin Portal User Configuration
-
-> The following video outlines how to configure the users in Admin Portal that were added first in Control Hub. This is a very critical task from the Contact Center perspective. We also would take a look at how to associate customer-created Site, Team, and Multi-Media Profile with those users. After this, we should be able to login as an agent.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/r_A-BPhoTaA?rel=0" title="WxCC Lab #1 Part 3: Admin Portal User Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### 1. Synchronize Webex Contact Center Users
-
-- Login to Control Hub by accessing [https://admin.webex.com](https://admin.webex.com){:target="\_blank"}.
-
-- Enter the admin email id and the password.
-
-- Navigate to **_Contact Center_** card.
-
-- Click on **_Settings_** and then `Synchronize Users`.
-
-### 2. Manage settings for existing user
-
-- Go back to the **_Webex Contact Center Management Portal_**.
+### 4. User Configuration
 
 - Click on **_Provisioning_** and select **_Users_**.
 
-- Click on `...` for the first user, to launch the **_Edit_** view for a particular User configuration.
+- Click on `...` for the **Agent** user, to launch the **_Edit_** view for a particular User configuration.
+
+- Make sure that the **_User Profile_** is set as **_Premium Agent User Profile_** 
 
 - Click on **_Contact Center Enabled_** toggle to move it to **_On_**.
 
-- In the **_Agent Settings_** section, select `Site_<ID>_TS` in the **_Site_** drop-down.
+- In the **_Agent Settings_** section, select `Site` in the **_Site_** drop-down.
 
-- Click the **_Teams_** area and select `Team1_<ID>_TS` and `Team2_<ID>_TS`.
+- Click the **_Teams_** area and select `Team1` and `Team2`.
 
-- Select `MMP_<ID>_TS` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
+- Select `Agent Profile` in the **_Agent Profile_** drop-down list.
+
+- Select `MMP` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
 
 - Make sure that the user are now shown with the **_Contact Center Enabled_** flag as `Yes` and **_Status_** as `Active`.
 
+<img align="middle" src="images/Lab1_User.png" width="1000" />
+
+- Please follow the same steps for **Supervisor** user. 
+
 [To top of this lab](#table-of-contents)
 
-## Part 4: Access to the Agent Desktop
->The following video explains the process to access the Agent Desktop. Following the steps, you will log in with your credentials and indicate the number where you want to receive the calls. 
+## Step 4: Setup RONA timers
 
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/2bmoiAfxpTU?rel=0" title="WxCC Lab #2 Part 4: Access to the Agent Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+In the process...
 
-
-### 1. Activate Webex Calling
-
-- Login the **[Control Hub](https://admin.webex.com/){:target="_blank"}** with your admin credentials.
-
-- Navigate to **_Users_**.
-
-- Select the **Agent** user `agent1_<ID>@mailinator.com` created in the previus lab.
-
-- In the User settings, make sure that the following **_Services_** are listed:
-   -  **_Messaging_** as **Advanced Messaging**.
-   -  **_Calling_** as **Webex Calling (Professional)**.
-   -  **_Contact Center_**.
-
-- Scroll down to **_Calling Behaviour_** and select **_Webex Calling app_**. Click **_Save_**.
-
-- Repeat the same steps for **Supervisor** user `supervisor1_<ID>@mailinator.com`. Make sure that **_Webex Calling app_** has been activated.
-
-### 2. Download and Login in the Webex Calling app for PC or Mac
-
-> **Note:** You need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. Alternatively, if you have a US number, you can use it as an agent's extension. This tenant does not allow numbers outside of the United States. In this lab, we will use the Webex Calling app for PC or Mac for **agent** account.
-
-- Login to **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}** by using account `agent1_<ID>@mailinator.com`.
-
-- Click on **_Webex Calling_** this will cross launch CUP in a new browser tab.
-
-- Go to **_My Apps_**.
-
-- Click `Download` the Webex Calling Client **Desktop Software**.
-
-- Install the application on your PC/Mac.
-
-- Open Webex Calling and сlick **Sign In**. Specify the agent credentials for `agent1_<ID>@mailinator.com`.
-
-- Depending on your operation system, navigate to the Webex Callin Menu **_Edit Server Address_** and make sure you have selected **North America** region.
-
-### 3. Download and Login in the Webex Calling app for mobile
-
-> **Note:** You need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. In this lab, we will use the Webex Calling app for mobile for **supervisor** account.
-
-- Open the Application Manager (**Play Store** or **App Store**) on your mobile phone.
-
-- Search for **_webex calling_**.
-
-- **Download** and **Open** the app. Click `Get Started`.
-
-- Login in the app by selecting **_Region_** as **North America**.
-
-- Set **_Email address_** and **_Password_** as the supervisor account `supervisor1_<ID>@mailinator.com`.
-
-> **Note:** Make sure that you give access to the phone's microphone for the calling app.
-
-![WxCallingAndroid](../images/wxcallingandroid.png)
-
-### 4. Agent Desktop Login
+## Tests: Access to the Agent Desktop
 > **Note**: To log in to the agent desktop, use either a separate web browser or a new incognito web page. This will prevent any browser caching issues with admin and agent credentials.
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
@@ -323,31 +256,17 @@ The users have the following preconfiguration
 
 [To top of this lab](#table-of-contents)
 
-## Part 5: **BONUS** Tenant Creation Walkthrough
-This is a supportive video that does not require any actions since your tenant is already provisioned. The video demonstrates the initial provisioning task for New Webex Contact Center. The initial walkthrough assumes that a new partner is creating both Webex Control Hub and Webex Contact Center Gold Tenant. This process you will use in the feature for setting up your GOLD tenant using Webex Calling. 
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/SYY4yOogBC0?rel=0" title="WxCC Lab #1 Part 5: Tenant Creation Walkthrough - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-## Part 6 **BONUS** Trial Tenant Setup Video
-
-> The bonus video shows how to set up a Trial Tenant. The steps are similar but since this is a trial tenant it is not necessary to go through the ordering process. Trial tenants are a great option for partners who are willing to start with the configuration before billing started. 
-> **Please note, by default the trial feature is not available in the Partner's CH. It can be activated only after approval. Please contact your PSM/CSM**.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/m9QamZh4LwI?rel=0" title="WxCC Lab #1 Part 6: Trial Tenant Setup - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ---
 
 ### Congratulations, you have compleated Lab1 tasks! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
 function nextLab() 
  {
- window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/IVR.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab2.html";
  }
 </script>
 
