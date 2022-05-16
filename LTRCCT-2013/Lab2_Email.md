@@ -147,17 +147,49 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 ## Step 3. Email Entry Point and Queue creation
 
-### 1. Email EP Creation
+### 1. Create Entry Point in Managment Portal 
 
-- Customer admin logs into “Webex Management Portal” URL with the credentials and accesses the menu ‘Provisioning -> Entry Point/Queues -> Entry Point’.
+- Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Entry Point_**.
 
-- Select “New Entry Point” and enter the respective values and click save
+- Click on `New Entry Point`.
 
-### 2. Email Queue creation
+- Input **_Name_** as `Email_EP`.
 
-- Customer admin accesses the menu ‘Provisioning -> Entry Point/Queues -> Queue’
+- Select `Email` in the **_Channel Type_** section.
 
-- Select “New Queue” and enter the respective values and click save
+- Leave the **_Asset Name_** as appered value `EmailASSET`.
+
+- Set **_Service Level Threshold_** as `2` hours.
+
+- The **_Time Zone_** can stay as default value.
+
+- Click on **Save** after comparing your values with the screenshot below.
+
+<img align="middle" src="images/Lab2_Email_EP.png" width="1000" />
+
+### 2. Create Queue in Managment Portal 
+
+- Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
+
+- Click on `New Queue`.
+
+- Input **_Name_** as `Email_Q`.
+
+- Select `Email` in the **_Channel Type_** section.
+
+- Leave the **_Queue Routing Type_** as default value `Longest Available Agent`.
+
+- In the the **_Chat Distribution_** click on **Add Group** and select `Team1` and `Team2`.
+
+- Set **_Service Level Threshold_** as `2` hours.
+
+- Set **_Maximum Time in Queue_** as `3` hours.
+
+- The **_Time Zone_** can stay as default value.
+
+- Click on **Save** after comparing your values with the screenshot below.
+
+<img align="middle" src="images/Lab2_Email_Q.png" width="1000" />
 
 
 ## Step 4. Create/Upload Email flow
