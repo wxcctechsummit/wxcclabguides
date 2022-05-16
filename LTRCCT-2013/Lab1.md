@@ -2,10 +2,6 @@
 title: 'Lab 1: Preconfiguration'
 ---
 
-### Overview of the lab:
-
-In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by a customer administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to log in to an agent interface.
-
 # Table of Contents
 
 - [Step 1: Download and upload CA flows in Connect](#step-1-download-and-upload-ca-flows-in-connect) 
@@ -19,8 +15,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Lab Objective
 
-- This lab is designed to help you do the initial setup and configuration for your tenant. 
-- The lab contains multiple exercises to make you familiar with the Control Hub, Managment portal UI and Webex Connect.
+In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. The lab contains multiple exercises to make you familiar with the Control Hub, Managment portal UI and Webex Connect. At the end of the lab, you should be able to log in to an agent interface.
 
 
 ### Pre-requisites
