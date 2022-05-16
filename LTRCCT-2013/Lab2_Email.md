@@ -241,44 +241,30 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Add wrap up and close the task.
 
 
-
+[Back to top](#table-of-contents)
 ---
 
 ### Congratulations, you have completed this section! 
 
-
-[Back to top](#table-of-contents)
-
----
-
-Changelog:
-
-| **Version** | **Comments** | **Author(s)** | **Date** |
-| --- | --- | --- | --- |
-| 1.0 | Initial Release | Naveen Kumar Narasimhan Almeti (naveenkn@cisco.com) | 21 Oct 2021 |
-| 2.0 | Format Changes | Gagarin JS (gasathiy@cisco.com) | 04 Nov 2021 |
-
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/HomePage.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
 function nextLab() 
  {
- window.open("https://app.smartsheet.com/b/form/ff1e015c4aed46bfab3f5caed7850aa4", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/NewDigital/4a_SMS_Configuration.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab3_Chat.html";
  }
 </script>
 
 <div id="button-row">
-	<button onclick="mainPage()" style="
+<button onclick="mainPage()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Go back to Main Page</button>
+  padding: 10px;">Home Page</button>
 
 <button onclick="nextLab()" style="
   position: absolute;
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Take Survey and Go to Next Lab</button>
-
+  padding: 10px;">Go to the Next Lab</button>
 
 </div>
