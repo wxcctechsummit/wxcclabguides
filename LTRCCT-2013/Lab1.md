@@ -32,7 +32,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Lab Objective
 
 - This lab is designed to help you do the initial setup and configuration for your tenant. 
-- The lab contains multiple exercises to make you familiar with the control hub, Managment portal UI, Connect and Engage Portals.
+- The lab contains multiple exercises to make you familiar with the Control Hub, Managment portal UI and Webex Connect.
 
 
 ### Pre-requisites
@@ -46,7 +46,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
 > Connect: https://cl1pod**X**.imiconnect.io/
-
+> where **X** is your POD number
 
 # Lab Section
 
