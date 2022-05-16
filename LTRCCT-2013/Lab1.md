@@ -63,7 +63,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference);\
 > • Task Close - Closing the conversation;
 
-1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}\ 
+1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.\
 2) Navigate to **Webex Connect Flows** -> **v2.1**.\
 3) Unzip All Files.\
 4) Login to the **Webex Connect** portal with the admin account.\
@@ -242,17 +242,17 @@ In the process...
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **email ID** `agent1_<ID>@mailinator.com` which you created in the previous lab.
+- Enter the agent’s **email ID** `cl1agent**X**@email.carehybrid.com`.
 
 - Enter the **Password** for the appropriate Username.
 
-- In the **_Station Login_** pane, select **"Extension"** and input the configured number for that user. 
+- In the **_Station Login_** pane, select **"Extension"** and put any number, for instance 1000. 
 
-> **Note:** Please use Webex Callin Extension for this lab. Optionally, if you have a US number, you can use it from the agent's desktop. This tenant does not allow numbers outside of the United States.
+> **Note:** The Webex Calling service is not activated at this tenant we need to set an extension only once during login.
 
-- Select the `Team1_<ID>_TS`, with default desktop layout.
+- Select the `Team1` and click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the next section.
 
-- Click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the next section.
+<img align="middle" src="images/Lab1_Login.png" width="1000" />
 
 [To top of this lab](#table-of-contents)
 
