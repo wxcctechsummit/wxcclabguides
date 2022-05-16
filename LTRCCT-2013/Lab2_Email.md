@@ -20,26 +20,28 @@ title: 'Lab 2: Email Configuration'
 
 In this Lab, we will go through the tasks that are required to complete the basic email configuration. You will be able to initiate an email to the Contact Center and be able to accept/respond to the email by logging in as an agent.  
 
-We will be configuring Email Account settings, Email Assets, Entry Point and corresponding workflows. All those steps are require for connecting the Email account with our application.  
+In this lab you will be configuring **Gmail** Account settings, Email Assets, Entry Point and corresponding workflows. All those steps are require for connecting the Email account with our application.  
 
 ### Pre-requisite
 
-1. An Email account to be used in WxCC.
-2. Portal, Agent Desktop and IMI connect URL.
-3. Admin credentials to configure in portal and IMI connect.
-4. Agent Credentials to Handle the Email.
+1. You recived an admin credentials to configure in Managment Portal and Webex Connect.
+2. You recived an an Email account credentials.
+3. You have successfully compleated the previus Lab **Preconfiguration**
 
 # Lab Section
 
 ### Configuration Order
 <img align="middle" src="images/Lab2_ConfigOrder.png" width="1000" />
 
-## 1. Organization admin – sets up support email account
 
-• Customer/Partner should have an Email account that can be used in WxCC for polling and handling the emails. It can be a Gmail account or Office 365 account or any account which has email forwarding.
+## Step 1. Gmail account configuration
+
+>**Note**: For this lab, we created a Gmail account. Optionally, use your own account for polling and handling the emails. It can be a Gmail account or Office 365 account or any account which has email forwarding.
+
+### 1. Google Account – Access to the mailbox
 
 
-## 2. Gmail account – Enable POP3/IMAP setting
+### 2. Google Account Setting – Enable POP3/IMAP setting
 
 - If a Gmail account is used, we need to enable POP3/IMAP setting. 
 
@@ -48,17 +50,19 @@ We will be configuring Email Account settings, Email Assets, Entry Point and cor
 - Now Click on “Forwarding and POP/IMAP” and enable the “POP Download” and “IMAP access” and click save.
 
 
-## 3. Google Account Setting – Security setting (allow less secure app access)
+### 3. Google Account Setting – Security setting (allow less secure app access)
 
 - Click on “Google Apps” icon on top right corner -> Select “Account”
 
 - Select “Security” option and turn “ON” the “Less secure app access”
 
-## 4. Disable captcha for the account
+### 4. Disable captcha for the account
 
 - Use the following link to disable captcha for the account https://accounts.google.com/b/0/DisplayUnlockCaptcha and click Continue.
 
-## 5. Create Email Asset and Register to WebeXCC
+
+
+## Step 2. Create Email Asset and Register to WebeXCC
 
 - Customer admin logs in to IMI connect UI using the URL provided by the IMI team with the credentials. Here for the demo tenant the URL is "https://solutionassuranceesrgt-sa.imiconnect.io/login". 
 
