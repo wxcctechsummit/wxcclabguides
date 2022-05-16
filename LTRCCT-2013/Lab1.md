@@ -62,7 +62,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference);\
 > • Task Close - Closing the conversation;
 
-1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.\
+1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
 2) Navigate to **Webex Connect Flows** -> **v2.1**.
 
@@ -70,7 +70,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 4) Login to the **Webex Connect** portal with the admin account.
 
-5) Nabigate to **Services** and click on **CREATE NEW SERVICE**\
+5) Nabigate to **Services** and click on **CREATE NEW SERVICE**
 
 <img align="middle" src="images/Services.png" width="1000" />
 
@@ -102,27 +102,27 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 1) To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
 
-2) In front of **Webex CC Engage** Click Actions → Manage.
+2) In front of **Webex CC Engage** Click **Actions** → **Manage**.
 
 <img align="middle" src="images/Lab1_Integration1.png" width="1000" />
 
 3) On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
 
-4) Click Action → Add Authorization associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.\
+4) Click **Action** → **Add Authorization** associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
 
-5) Enter the Authorization Name and click Authorize. In that example we use **WebexCCAuth**\
+5) Enter the Authorization Name and click **Authorize**. In that example we use **WebexCCAuth**\
 
 <img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
 
-6) Click on the back button for being redirected back to **Integrations** page and in front of **Webex CC Task** Click Actions → Manage.\
+6) Click on the back button for being redirected back to **Integrations** page and in front of **Webex CC Task** Click **Actions** → **Manage**.
 
 <img align="middle" src="images/Lab1_ManageIntegration2.png" width="1000" />
 
 7) On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
 
-8) Click Action → Add Authorization associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.\
+8) Click **Action** → **Add Authorization** associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
 
