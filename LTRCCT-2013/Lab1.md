@@ -45,8 +45,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Connect: https://cl1pod**X**.imiconnect.io/
-> where **X** is your POD number
+> Connect: https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number)
 
 # Lab Section
 
@@ -64,9 +63,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > • Task Close - Closing the conversation;
 
 1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.\
+
 2) Navigate to **Webex Connect Flows** -> **v2.1**.\
+
 3) Unzip All Files.\
+
 4) Login to the **Webex Connect** portal with the admin account.\
+
 5) Nabigate to **Services** and click on **CREATE NEW SERVICE**\
 
 <img align="middle" src="images/Services.png" width="1000" />
