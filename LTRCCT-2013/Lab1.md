@@ -135,6 +135,8 @@ The users have the following preconfiguration
 | Agent         | cl1agent**\<ID\>**@email.carehybrid.com   | 
 | Supervisor    | cl1sup**\<ID\>**@email.carehybrid.com     | 
 
+> **Note:** Your \<ID\> was provided to you personally.  \<ID\> is the unique number equal to your POD.
+
 ### User Settings
 
 | **Entity**          | **Name** |
@@ -143,8 +145,6 @@ The users have the following preconfiguration
 | Site                | Site  |
 | Team1               | Team1 |
 | Team2               | Team2 |
-
-> **Note:** Your \<ID\> was provided to you personally.  \<ID\> is the unique number equal to your POD.
 
 
 ### 1. Create new MultiMedia Profile
@@ -222,9 +222,48 @@ The users have the following preconfiguration
 
 - Please follow the same steps for **Supervisor** user. 
 
+
+
+## Step 4. Create Queues in Portal 
+
+### Queues
+
+| **Channel Type**  | **Name** | **Description** |
+| ----------------- | -------- | ----------------|
+| Chat  | Chat_Q   | Chat Queue      |
+| Email            | Email_Q  | Email Queue     |
+| Social Channel   | FB_Q | Facebook Queue     |
+| Social Channel   | SMS_Q | SMS Queue     |
+| Social Channel   | WA_Q | WhatsApp Queue     |
+
+- Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
+
+- Click on `New Queue`.
+
+- Input **_Name_** as `Chat_Q`.
+
+- Select `Chat` in the **_Channel Type_** section.
+
+- Leave the **_Queue Routing Type_** as default value `Longest Available Agent`.
+
+- In the the **_Chat Distribution_** click on **Add Group** and select `Team1` and `Team2`.
+
+- Set **_Service Level Threshold_** as `120` seconds.
+
+- Set **_Maximum Time in Queue_** as `600` seconds.
+
+- The **_Time Zone_** can stay as default value.
+
+- Click on **Save** after comparing your values with the screenshot below.
+
+<img align="middle" src="images/Lab1_Queueu.png" width="1000" />
+
+- Please follow the same steps for the rest of the queues (email, FB, SMS, WA)
+
+
 [To top of this lab](#table-of-contents)
 
-## Step 4: Setup RONA timers
+## Step 5: Setup RONA timers
 
 In the process...
 
