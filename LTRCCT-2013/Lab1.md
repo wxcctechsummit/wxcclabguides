@@ -52,11 +52,11 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Configuration Order
 
-<img align="middle" src="images/ConfigOrder.png" width="1000" />
+<img align="middle" src="images/Lab1_ConfigOrder.png" width="1000" />
 
 
 ## Step 1: Download and upload CA flows in Connect 
-> **Note** Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
+> Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
 
 > The agnostic flows consist of:\
 > • Task Routed - Adding an agent participant to a conversation;\
@@ -93,9 +93,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 12) Repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
 
 
-## Step 2: Node Authorization for Webex Contact Center Task nodes
+## Step 2: Node Authorization for Webex CC Task and Engage nodes
 
-Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
+> Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
 1) To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
 2) In front of **Webex CC Engage** Click Actions → Manage.
@@ -122,7 +122,7 @@ Webex Connect is required to provide a valid access token for using various Webe
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
 
-9) Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco email address (cl1admin**X**@email.carehybrid.com) and click **Sign in**.
+9) Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**X**@email.carehybrid.com) and click **Sign in**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
 
@@ -158,59 +158,58 @@ The users have the following preconfiguration
 
 ### 1. Create new MultiMedia Profile
 
-- Login to Control Hub by accessing [https://admin.webex.com](https://admin.webex.com){:target="\_blank"}.
+- Login to Managment Portal by accessing [https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}.
 
-- Enter the admin email id and the password.
-
-- Navigate to **_Contact Center_** Card.
-
-- Click **_Settings_** in the upper right corner.
-
-- Scroll down to the **_Advanced Configuration_** section.
-
-- Click on **_Go to Webex Contact Center Management Portal_**.
-
-- Ensure that browser pop up blockers are not blocking the **_Admin Portal_** pop up.
+- Enter the admin email address (cl1admin\<ID\>@email.carehybrid.com) and click **Sign in**
 
 - Click on **_Provisioning_** and select **_Multimedia Profiles_**.
 
 - Click on `+ New Multimedia Profile` to open Multimedia Profile configuration page.
 
-- Input Name as `MMP_<ID>_TS`.
+- Input Name as `MMP`.
 
-- In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, and click **_Save_**.
+- In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, , `3` for **_Social Channel_** and click on **_Save_** button.
+
+<img align="middle" src="images/Lab1_MMP.png" width="1000" />
+
 
 ### 2. Create new Site
 
 - Navigate to **_Provisioning_** and select **_Site_**.
 
-- Click on `+ New Site` button and provide the Name as `Site_<ID>_TS`.
+- Click on `+ New Site` button and provide the Name as `Site`.
 
-- Select `MMP_<ID>_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
+- Select `MMP` in the **_Multimedia Profile_** drop down and hit **_Save_**.
 
-### 3. Create new Team 1
+
+<img align="middle" src="images/Lab1_Site.png" width="1000" />
+
+
+### 3. Create a Team 1
 
 - Navigate to **_Provisioning_** and select **_Team_**.
 
 - Click on `+ New Team`.
 
-- Select `Site_<ID>_TS` from the **_Site_** drop-down.
+- Select `Site` from the **_Site_** drop-down.
 
-- Input **_Name_** as `Team1_<ID>_TS`.
+- Input **_Name_** as `Team1`.
 
 - Use the default **_Type_** `Agent Based`.
 
-- Select `MMP_<ID>_TS` in the **_Multimedia Profile_** drop-down.
+- Select `MMP` in the **_Multimedia Profile_** drop-down.
 
 - Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
 
-### 4. Create new Team 2
+<img align="middle" src="images/Lab1_Team.png" width="1000" />
 
-- Please follow the same steps as above to add an extra Team as `Team2_<ID>_TS`. Later we will use this team to assign a custom Desktop Layout.
+### 4. Create a Team 2
+
+- Please follow the same steps as above to add an extra Team as `Team2`. 
 
 [To top of this lab](#table-of-contents)
 
-## Part 3: Admin Portal User Configuration
+## Step 4: Admin Portal User Configuration
 
 > The following video outlines how to configure the users in Admin Portal that were added first in Control Hub. This is a very critical task from the Contact Center perspective. We also would take a look at how to associate customer-created Site, Team, and Multi-Media Profile with those users. After this, we should be able to login as an agent.
 
