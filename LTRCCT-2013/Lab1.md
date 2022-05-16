@@ -97,32 +97,33 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 > Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
-1) To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
-2) In front of **Webex CC Engage** Click Actions → Manage.
+1) To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.\
+
+2) In front of **Webex CC Engage** Click Actions → Manage.\
 
 <img align="middle" src="images/Lab1_Integration1.png" width="1000" />
 
-3) On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration. 
+3) On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.\
 
-4) Click Action → Add Authorization associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
+4) Click Action → Add Authorization associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.\
 
 <img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
 
-5) Enter the Authorization Name and click Authorize. In that example we use **WebexCCAuth**
+5) Enter the Authorization Name and click Authorize. In that example we use **WebexCCAuth**\
 
 <img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
 
-6) Click on the back button for being redirected back to **Integrations** page and in front of **Webex CC Task** Click Actions → Manage.
+6) Click on the back button for being redirected back to **Integrations** page and in front of **Webex CC Task** Click Actions → Manage.\
 
 <img align="middle" src="images/Lab1_ManageIntegration2.png" width="1000" />
 
-7) On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration. 
+7) On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.\
 
-8) Click Action → Add Authorization associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
+8) Click Action → Add Authorization associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.\
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
 
-9) Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**X**@email.carehybrid.com) and click **Sign in**.
+9) Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**X**@email.carehybrid.com) and click **Sign in**.\
 
 <img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
 
