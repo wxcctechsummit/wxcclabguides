@@ -38,31 +38,46 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 >**Note**: For this lab, we created a Gmail account. Optionally, use your own account for polling and handling the emails. It can be a Gmail account or Office 365 account or any account which has email forwarding.
 
-### 1. Google Account – Access to the mailbox
+### 1. Google Account Setting – Enable POP3/IMAP setting
 
 
-### 2. Google Account Setting – Enable POP3/IMAP setting
-
-- If a Gmail account is used, we need to enable POP3/IMAP setting. 
-
-- Login to the Gmail account with the credentials -> Click on settings icon on top right corner -> Select “See all settings”.
-
-- Now Click on “Forwarding and POP/IMAP” and enable the “POP Download” and “IMAP access” and click save.
+| **User email**                       |
+| ------------------------------------ | 
+| cl1webex**\<ID\>**@gmail.com   | 
 
 
-### 3. Google Account Setting – Security setting (allow less secure app access)
+- Login to the Gmail account with the credentials above[https://mail.google.com](https://mail.google.com){:target="_blank"}. The password is the same as for Webex admin account.
 
-- Click on “Google Apps” icon on top right corner -> Select “Account”
+- Enable POP3/IMAP setting by clicking on settings icon on top right corner and selecting **See all settings**.
 
-- Select “Security” option and turn “ON” the “Less secure app access”
+<img align="middle" src="images/Lab2_Gmail1.png" width="1000" />
 
-### 4. Disable captcha for the account
+- Now Click on **Forwarding and POP/IMAP**, enable the `POP Download` and `IMAP access` then click **Save Changes**.
+
+<img align="middle" src="images/Lab2_Gmail2.png" width="1000" />
+
+
+### 2. Google Account Setting – Security setting (allow less secure app access)
+
+- Click on **Google Apps** icon on top right corner -> Select **Account**
+
+<img align="middle" src="images/Lab2_Gmail3.png" width="1000" />
+
+- Select **Security** option and turn `ON` the **Less secure app access**
+
+<img align="middle" src="images/Lab2_Gmail4.png" width="1000" />
+
+
+### 3. Disable captcha for the account
 
 - Use the following link to disable captcha for the account https://accounts.google.com/b/0/DisplayUnlockCaptcha and click Continue.
 
+<img align="middle" src="images/Lab2_Gmail5.png" width="1000" />
 
 
 ## Step 2. Create Email Asset and Register to WebeXCC
+
+### 1. Create Email Assest
 
 - Customer admin logs in to IMI connect UI using the URL provided by the IMI team with the credentials. Here for the demo tenant the URL is "https://solutionassuranceesrgt-sa.imiconnect.io/login". 
 
@@ -72,7 +87,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 - Click on Register to WebeXCC -> Select the appropriate service and click register.
 
-## 6. Add forwarding Address
+### 2. Add forwarding Address
 
 - Copy the forwarding address from the created asset in previous step and in Gmail account, click on settings icon on top right corner -> Select “See all settings” -> Click on “Forwarding and POP/IMAP” -> click on add a forwarding address -> Paste the copied forwarding address from the created asset and click Next.
 
@@ -85,21 +100,22 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Select Forward a copy of incoming mail to the verified address and click save.
 
 
-## 7. Email Entry Point creation
+## Step 3. Email Entry Point and Queue creation
 
-- Customer admin logs into “CJP Management Portal” URL with the credentials and accesses the menu ‘Provisioning -> Entry Point/Queues -> Entry Point’.
+### 1. Email EP Creation
+
+- Customer admin logs into “Webex Management Portal” URL with the credentials and accesses the menu ‘Provisioning -> Entry Point/Queues -> Entry Point’.
 
 - Select “New Entry Point” and enter the respective values and click save
 
-## 8. Email Queue creation
+### 2. Email Queue creation
 
 - Customer admin accesses the menu ‘Provisioning -> Entry Point/Queues -> Queue’
 
 - Select “New Queue” and enter the respective values and click save
 
-# Lab 3d - Workflow association(Mail)
 
-## 9. Create/Upload Email flow
+## Step 4. Create/Upload Email flow
 
 - Download the template flows from "https://github.com/CiscoDevNet/webexcc-digital-channels" link.
 
