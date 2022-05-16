@@ -45,6 +45,8 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 | ------------------------------------ | 
 | cl1webex**\<ID\>**@gmail.com   | 
 
+> **Note:** Your \<ID\> was provided to you personally.  \<ID\> is the unique number equal to your POD.
+
 
 - Login to the Gmail account with the credentials above[https://mail.google.com](https://mail.google.com){:target="_blank"}. The password is the same as for Webex admin account.
 
