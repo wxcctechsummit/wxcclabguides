@@ -194,54 +194,58 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 ## Step 4. Create/Upload Email flow
 
-- Download the template flows from "https://github.com/CiscoDevNet/webexcc-digital-channels" link.
+- Download the email flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
-- Select the appropriate data center flows and select the zip file and click download.
+- Navigate to **Webex Connect Flows** -> **v2.1** -> **Email Inbound Flow.workflow.zip**, select the zip file and click download.
 
 - Unzip the downloaded file.
 
-- In IMI connect click on Services and select the service in which the Asset is created in step 5.
+- Go to Webex Connect, click on **Services** and select the service in which the Asset is created in step 2. It should be **My First Service**
 
-- Navigate to Flows -> Create Flow -> Enter the flow name, select the type as work flow and under method select "upload a flow".
+- In the service click on **FLOWS** -> **CREATE FLOW** 
 
-- Drag and drop the "Email_Inbound_US.workflow" flow that is downloaded in zip file and click create and then click save.
+- Enter the **FLOW NAME** as **Email Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
-## 10. Add Authorizations for each of the Engage and WxCC nodes
+- Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
-- Double click on Engage or WxCC node and select the authorization if we already have one, else create a new one under Node Runtime Authorization.
+<img align="middle" src="images/Lab2_WF1.png" width="1000" />
 
-- For Engage node authorization, provide the Authorization Name and client details that was shared by IMI Team upon tenant provisioning and click authorize.
+- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
 
-- For WxCC node authorization, provide the Authorization Name and click authorize. This routes to the WxCC login page. Provide the Admin user email address and click sign in.
+<img align="middle" src="images/Lab2_WF2.png" width="1000" />
 
-NOTE: Repeat the step 10 for all Engage and WxCC nodes.
+- Click on **Settings** on top right corner and click on **Custom variables**. Here in **bizemailid** row, update the email address of the account that is added. Click on **SAVE**.
 
-- After adding authorization details, click on save on top right corner.
-
-- Click on settings on top right corner and click Custom variables. Here in bizemailid row, update the email address of the account that is added and click save.
+<img align="middle" src="images/Lab2_WF3.png" width="1000" />
 
 - Finally click on Make Live on top right corner -> Select the Application/Asset that we have created and click Make Live.
 
+<img align="middle" src="images/Lab2_WF4.png" width="1000" />
 
-## 11. Customer sends an Email
+[To top of this lab](#table-of-contents)
 
-- Customer sends an email to the support email address that was initially configured in the Email Asset creation.
+## Verification - send an Email and accept the request
 
-## 12. Agent Desktop – Email offering to an Agent, Acceptance, and closure
+- Go to the Gmail account and send an email to the support email address that was initially configured in the Email Asset creation.
 
-- Once the agent goes Available, the Email will be offered to the agent.
+- Go to the Agent Desktop and make the agent Available. 
 
-- Click "Accept" to handle the email.
+<img align="middle" src="images/Lab2_Agent1.png" width="1000" />
 
-- Click "Reply" or Reply All" to reply to the email and enter the body of the email and hit send button
+- The Email will be offered to the agent. Click "Accept" to handle the email.
+
+<img align="middle" src="images/Lab2_Agent2.png" width="1000" />
+
+- Click "Reply" or Reply All" to reply to the email and enter the body of the email and hit send button.
 
 - Add wrap up and close the task.
+
 
 
 ---
 
 ### Congratulations, you have completed this section! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete a short survey.
+
 
 [Back to top](#table-of-contents)
 
