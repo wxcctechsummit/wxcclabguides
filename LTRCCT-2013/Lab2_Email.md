@@ -3,7 +3,7 @@ title: 'Lab 2: Email Configuration'
 ---
 
 # Table of Contents
-- [Lab 3c - Asset creation end to end (Mail)](#Lab-3c---Asset-creation-end-to-end-(Mail))
+- [Step 1. Gmail account configuration](#step-1-gmail-account-configuration)
     * Email account settings
     * Create Email Asset and Register to WebeXCC
     * Add forwarding Address 
