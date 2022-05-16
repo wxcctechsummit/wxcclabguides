@@ -257,7 +257,7 @@ In the process...
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab2.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab2_Email.html";
  }
 </script>
 
