@@ -11,7 +11,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - [Step 1: Download and upload CA flows in Connect](#step-1-download-and-upload-ca-flows-in-connect) 
 - [Step 2: Node Authorization for Webex CC Task and Engage nodes](#step-2-node-authorization-for-webex-cc-task-and-engage-nodes)
 - [Step 3: Setup agents in Portal (Agents, Team, MMP)](#step-3-setup-agents-in-portal-agents-team-mmp)
-- [Step 4: Setup RONA timers](#step-4-setup-rona-timers)
+- [Step 4. Create Queues in Portal ](#step-4-create-queues-in-portal)
+- [Step 5: Setup RONA timers](#step-5-setup-rona-timers)
 - [Access to the Agent Desktop](#access-to-the-agent-desktop)
 
 # Introduction
