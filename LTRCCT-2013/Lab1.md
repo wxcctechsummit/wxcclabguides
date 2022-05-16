@@ -63,36 +63,57 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference);\
 > • Task Close - Closing the conversation;
 
-1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"} ( navigate to **Webex Connect Flows** -> **v2.1**)
-2) Unzip All Files
-3) Login to the **Connect** with the admin account.
-4) Nabigate to **Services** and click on **CREATE NEW SERVICE**
+1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}\ 
+2) Navigate to **Webex Connect Flows** -> **v2.1**.\
+3) Unzip All Files.\
+4) Login to the **Webex Connect** portal with the admin account.\
+5) Nabigate to **Services** and click on **CREATE NEW SERVICE**\
 
 <img align="middle" src="images/Services.png" width="1000" />
 
-5) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
+6) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
 > **Note** You can choose a different Service name. It is just an exmple.
 
-6) In the service click on **FLOWS** -> **CREATE FLOW**
+7) In the service click on **FLOWS** -> **CREATE FLOW**
 
 <img align="middle" src="images/Flows.png" width="1000" />
 
-7) In the **FLOW NAME** section set **Task Close Flow**
+8) In the **FLOW NAME** section set **Task Close Flow**
 
-8) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
+9) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
 
-9) Now you can click on **CREATE** button
+10) Now you can click on **CREATE** button
 
 <img align="middle" src="images/Lab1_Create.png" width="1000" />
 
-10) In the new menu click on **SAVE** and then **MAKE LIVE**
+11) In the new menu click on **SAVE** and then **MAKE LIVE**. You should get the message that "Flow successfully made live"
 
 <img align="middle" src="images/Lab1_Live.png" width="1000" />
 
-11) Repeate steps 6 - 10 for **Task Routed flow** and **Task Modified Flow**
+12) Repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
 
 
-## Step 2: Setup agents in Portal (Agents, Team, MMP)
+## Step 2: Node Authorization
+Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
+
+1) To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
+2) In front of **Webex CC Engage** Click Actions → Manage.
+
+<img align="middle" src="images/Lab1_Integration1.png" width="1000" />
+
+3) On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration. 
+4) Click Action → Add Authorization associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
+
+<img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
+
+5) Enter the Authorization Name and click Authorize. In that example we use **WebexCCAuth**
+
+<img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
+
+6) 
+
+
+## Step 3: Setup agents in Portal (Agents, Team, MMP)
 
 > This step shows how to access the admin portal and navigate the different configuration menus to create a Site, Team, and Multimedia Profile that will be assigned to the Contact Center user. 
 
