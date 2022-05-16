@@ -112,6 +112,9 @@ Webex Connect is required to provide a valid access token for using various Webe
 
 6) 
 
+> **Note**: The status of the authorization will change to Authorized and all the nodes under this authorization are authorized and ready for use.
+<img align="middle" src="images/Lab1_authorized.png" width="1000" />
+
 
 ## Step 3: Setup agents in Portal (Agents, Team, MMP)
 
