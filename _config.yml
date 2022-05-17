@@ -1,11 +1,9 @@
-title: Your awesome title
+title: Webex Contact Center Lab Repository
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: Lab support email
+  email: 'wxcclabs@cisco.com'
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  # 2022 Lab guide repository
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -49,8 +47,8 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+header_pages:
+- TechSummitRoW_2021/HomePage_EMEA.md
 
 # Build settings
 theme: minima
