@@ -100,14 +100,14 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 5) Navigate to **Services** and click on **CREATE NEW SERVICE**
 
-<img align="middle" src="images/Services.png" width="1000" />
+<img align="middle" src="images/Lab1_Services.png" width="1000" />
 
 6) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
 > **Note** You can choose a different Service name. It is just an exmple.
 
 7) In the service click on **FLOWS** -> **CREATE FLOW**
 
-<img align="middle" src="images/Flows.png" width="1000" />
+<img align="middle" src="images/Lab1_Flows.png" width="1000" />
 
 8) In the **FLOW NAME** section set **Task Close Flow**
 
