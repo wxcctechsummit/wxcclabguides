@@ -20,7 +20,7 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 |  Carles | Chat Configuration | [Chat creation end to end](Lab3_Chat.md){:target="\_blank"} |
 |  Carles | Facebook Setup  | [FBM creation end to end](Lab4_FBM.md){:target="\_blank"}   |
 |  Gagarin | SMS Setup | [SMS creation end to end](Lab5_SMS.md){:target="\_blank"}    |
-|  Gagarin | WhatsApp Messenger Setup ??? | [WhatsApp configuration](Lab6_WhatsApp.md){:target="\_blank"}      |
+|  Gagarin | WhatsApp Messenger Setup ??? | [WhatsApp configuration](Lab6_Whatsapp.md){:target="\_blank"}      |
 |  Dmitry  | Email Advanced Configuration | [Email Advanced Configuration](Lab7.md){:target="\_blank"}      |
 |  Gagarin | Event and Rules - agent productivity | [Event and Rules - agent productivity](Lab8_AgentProductivity.md){:target="\_blank"}      |
 |  Gagarin | Debug and Troubleshooting | [Debug and Troubleshooting](Lab9_Troubleshooting.md){:target="\_blank"}      |
