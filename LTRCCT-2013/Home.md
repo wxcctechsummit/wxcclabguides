@@ -21,3 +21,9 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 |  Carles | Facebook Setup  | [FBM creation end to end](Lab4_FBM.md){:target="\_blank"}   |
 |  Gagarin | SMS Setup | [SMS creation end to end](Lab5_SMS.md){:target="\_blank"}    |
 |  Gagarin | WhatsApp Messenger Setup | [WhatsApp configuration](Lab6_WhatsApp.md){:target="\_blank"}      |
+
+<style>
+  .footer {
+    display: none;
+  }
+</style>
