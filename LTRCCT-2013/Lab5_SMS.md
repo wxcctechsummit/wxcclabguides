@@ -46,7 +46,11 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 ## Step 1. Verify SMS Number Assignment
 
->**Note**: For this lab, we created a Gmail account. Optionally, use your own account for polling and handling the emails. It can be a Gmail account or Office 365 account or any account which has email forwarding.
+- Login to your respective Webex Connect tenant
+
+- 
+
+>**Note**: SMS Numbers cannot be procured directly from the WxCC integrated IMI Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
 
 
 
