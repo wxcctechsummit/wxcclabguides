@@ -28,6 +28,7 @@ In this Lab, we will go through the tasks that are required to complete the basi
 
 In this lab you will be configuring **SMS** number settings, SMS Assets, Entry Point and corresponding workflows. All these steps are required for integrating SMS with our application.  
 
+
 ### Pre-requisite
 
 1. You recived an admin credentials to configure in Managment Portal and Webex Connect.
