@@ -3,7 +3,7 @@ author:
   name: Lab support email
   email: 'wxcclabs@cisco.com'
 description: > # this means to ignore newlines until "show_excerpts:"
-  # 2022 Lab guide repository
+  © 2022 Webex CC Lab repository, All right reserved.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
