@@ -25,5 +25,6 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 |  Gagarin | Event and Rules - agent productivity | [Event and Rules - agent productivity](Lab8.md){:target="\_blank"}      |
 |  Gagarin | Debug and Troubleshootin | [Debug and Troubleshootin](Lab9.md){:target="\_blank"}      |
 |  Dmitry  | Integration with smartsheet | [Integration with smartsheet](Lab10.md){:target="\_blank"}      |
+|  Carles  | Something else... | [Something else...](Lab11.md){:target="\_blank"}      |
 
 
