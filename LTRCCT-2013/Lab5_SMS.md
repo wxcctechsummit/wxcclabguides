@@ -11,10 +11,9 @@ title: 'Lab 5: SMS Configuration'
     - [Lab Objective](#lab-objective)
     - [Pre-requisite](#pre-requisite)
 - [Lab Section](#lab-section)
-    - [Configuration Order](#configuration-order)
   - [Step 1. Verify SMS Number Assignment](#step-1-verify-sms-number-assignment)
-  - [Step 2. Create SMS Asset and Register to WebeXCC](#step-2-create-sms-asset-and-register-to-webexcc)
-    - [1. Create Email Assest](#1-create-email-assest)
+  - [Step 2. SMS Asset registration to WebexCC](#step-2-sms-asset-registration-to-webexcc)
+    - [1. Register SMS asset to WebexCC](#1-register-sms-asset-to-webexcc)
   - [Step 3. SMS Entry Point and Queue creation](#step-3-sms-entry-point-and-queue-creation)
     - [1. Create Entry Point in Managment Portal](#1-create-entry-point-in-managment-portal)
   - [Step 4. Create/Upload SMS flow](#step-4-createupload-sms-flow)
@@ -40,62 +39,85 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 # Lab Section
 
-### Configuration Order
-<img align="middle" src="images/Lab2_ConfigOrder.png" width="1000" />
-
-
 ## Step 1. Verify SMS Number Assignment
 
-- Login to your respective Webex Connect tenant
+- Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
-- 
+- Navigate to Assets > Numbers and verify that the tenant you are using has a SMS number assigned 
+<img align="middle" src="images/Lab5_1.png" width="1000" />
 
 >**Note**: SMS Numbers cannot be procured directly from the WxCC integrated IMI Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
 
 
+## Step 2. SMS Asset registration to WebexCC
 
+### 1. Register SMS asset to WebexCC
 
-## Step 2. Create SMS Asset and Register to WebeXCC
+- In the SMS number assigned, under actions select the 'Manage' option 
+<img align="middle" src="images/Lab5_2.png" width="1000" />
 
-### 1. Create Email Assest
+- Click 'Register to WebexCC option' 
+<img align="middle" src="images/Lab5_3.png" width="1000" />
 
-- As an admin, login to Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
+- In the resulting window, select a service under which this asset would be managed
+- <img align="middle" src="images/Lab5_4.png" width="1000" />
 
-- Select **Assets** -> **Apps** -> **CONFIGURE NEW APP** -> **Email**.
-
-<img align="middle" src="images/Lab2_Assest1.png" width="1000" />
-
-
+- Verify that the 'Register to Webex CC' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
+<img align="middle" src="images/Lab5_5.png" width="1000" />
 
 ## Step 3. SMS Entry Point and Queue creation
 
 ### 1. Create Entry Point in Managment Portal 
 
+- Login to Webex Contact Centre administration portal 
+
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Entry Point_**.
 
 - Click on `New Entry Point`.
+<img align="middle" src="images/Lab5_6.png" width="1000" />
 
-- Input **_Name_** as `Email_EP`.
+- Input **_Name_** as `SMS_EP`.
 
-- Select `Email` in the **_Channel Type_** section.
+- Select `Social Channel` in the **_Channel Type_** section.
 
-- Leave the **_Asset Name_** as appered value `EmailASSET`.
+- Select `SMS` in the **_Social Channel Type_** section.
 
-- Set **_Service Level Threshold_** as `2` hours.
+- Leave the **_Asset Name_** as appered value `SMS Number assigned in your Connect tenant`.
 
 - The **_Time Zone_** can stay as default value.
 
 - Click on **Save** after comparing your values with the screenshot below.
+<img align="middle" src="images/Lab5_7.png" width="1000" />
 
-<img align="middle" src="images/Lab2_Email_EP.png" width="1000" />
+- Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
 
+- Click on `New Queue`.
+<img align="middle" src="images/Lab5_8.png" width="1000" />
+
+- Input **_Name_** as `SMS_Queue`.
+
+- Select `Social Channel` in the **_Channel Type_** section.
+
+- Click `Add Group` in the **_Conversation distribution_** section.
+<img align="middle" src="images/Lab5_9.png" width="1000" />
+
+- Select the Agent based teams created in the previous lab and click `Save` . Once saved, click `Close` to exit this window. 
+<img align="middle" src="images/Lab5_10.png" width="1000" />
+
+- Input **_Maximum Time in Queue_** as `300`.
+
+- The **_Time Zone_** can stay as default value.
+
+- Click on **Save** after comparing your values with the screenshot below.
+<img align="middle" src="images/Lab5_11.png" width="1000" />
 
 
 ## Step 4. Create/Upload SMS flow
 
-- Download the email flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
+- Download the SMS flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
-- Navigate to **Webex Connect Flows** -> **v2.1** -> **Email Inbound Flow.workflow.zip**, select the zip file and click download.
+- Navigate to **Webex Connect Flows** -> **v2.1** -> **SMS Inbound Flow.workflow.zip**, select the zip file and click download.
+<img align="middle" src="images/Lab5_12.png" width="1000" />
 
 - Unzip the downloaded file.
 
@@ -103,38 +125,48 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - In the service click on **FLOWS** -> **CREATE FLOW** 
 
-- Enter the **FLOW NAME** as **Email Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
+- Enter the **FLOW NAME** as **SMS Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
 - Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
+<img align="middle" src="images/Lab5_13.png" width="1000" />
 
-<img align="middle" src="images/Lab2_WF1.png" width="1000" />
+- Once the flow is saved, the 'Configure SMS Event' node will open. Select the SMS number assigned to your tenant in the **_INCOMING NUMBER_** section 
 
+- Input **_*_** as `Keyword` and click on **Verify**
+  
+- Once the **Success** message is displayed, click on **Save**
 
+- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
+<img align="middle" src="images/Lab5_15.png" width="1000" />
 
+- Find and open all the **SMS** nodes and select the SMS number assigned to your tenant in the **_FROM NUMBER_** section 
+<img align="middle" src="images/Lab5_16.png" width="1000" />
+<img align="middle" src="images/Lab5_17.png" width="1000" />
 
+- Finally click on Make Live on top right corner and click Make Live.
+<img align="middle" src="images/Lab5_18.png" width="1000" />
 
-
-
-
-
+- Wait for 2 minutes and verify that the flow is published successfully. 
+<img align="middle" src="images/Lab5_19.png" width="1000" />
 
 [To top of this lab](#table-of-contents)
 
 ## Verification - send SMS and accept the request
 
-- Go to the Gmail account and send an email to the support email address that was initially configured in the Email Asset creation.
+- Login to the Agent Desktop and make the agent Available. 
+  <img align="middle" src="images/Lab2_Agent1.png" width="1000" />
 
-- Go to the Agent Desktop and make the agent Available. 
+- From your mobile number send a SMS to the number that is assigned to your Webex Connect tenant and the one used in the flow configuration earlier.
 
-<img align="middle" src="images/Lab2_Agent1.png" width="1000" />
+- The SMS will be offered to the agent. Click "Accept" to handle the SMS.
+<img align="middle" src="images/Lab5_20.png" width="1000" />
 
-- The Email will be offered to the agent. Click "Accept" to handle the email.
+- Type a response and hit send button.
+  <img align="middle" src="images/Lab5_21.png" width="1000" />
 
-<img align="middle" src="images/Lab2_Agent2.png" width="1000" />
-
-- Click "Reply" or Reply All" to reply to the email and enter the body of the email and hit send button.
-
-- Add wrap up and close the task.
+- End the contact, add wrap up and close the task.
+  <img align="middle" src="images/Lab5_22.png" width="1000" />
+  <img align="middle" src="images/Lab5_23.png" width="1000" />
 
 
 [Back to top](#table-of-contents)
@@ -146,7 +178,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab3_Chat.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab6_Whatsapp.html";
  }
 </script>
 
