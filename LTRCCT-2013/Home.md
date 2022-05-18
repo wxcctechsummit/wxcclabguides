@@ -23,7 +23,7 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 |  Gagarin | WhatsApp Messenger Setup ??? | [WhatsApp configuration](Lab6_Whatsapp.md){:target="\_blank"}      |
 |  Dmitry  | Email Advanced Configuration | [Email Advanced Configuration](Lab7.md){:target="\_blank"}      |
 |  Gagarin | Event and Rules - agent productivity | [Event and Rules - agent productivity](Lab8_AgentProductivity.md){:target="\_blank"}      |
-|  Gagarin | Debug and Troubleshooting | [Debug and Troubleshooting](Lab9_Troubleshooting.md){:target="\_blank"}      |
+|  Gagarin (Done) | Flow Debug Capabilities | [Flow Debug Capabilities](Lab9_Troubleshooting.md){:target="\_blank"}      |
 |  Dmitry  | Integration with smartsheet | [Integration with smartsheet](Lab10.md){:target="\_blank"}      |
 |  Carles  | Something else... | [Something else...](Lab11.md){:target="\_blank"}      |
 
