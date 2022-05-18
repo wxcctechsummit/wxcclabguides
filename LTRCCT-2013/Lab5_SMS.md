@@ -152,7 +152,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 ## Verification - send SMS and accept the request
 
 - Login to the Agent Desktop and make the agent Available. 
-  <img align="middle" src="images/Lab2_Agent1.jpg" width="1000" />
+  <img align="middle" src="images/Lab2_Agent1.png" width="1000" />
 
 - From your mobile number send a SMS to the number that is assigned to your Webex Connect tenant and the one used in the flow configuration earlier.
 
