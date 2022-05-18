@@ -162,8 +162,10 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 - Type a response and hit send button.
   <img align="middle" src="images/Lab5_21.jpg" width="1000" />
 
-- End the contact, add wrap up and close the task.
+- End the contact
   <img align="middle" src="images/Lab5_22.jpg" width="1000" />
+
+- Add wrap up and close the task. 
   <img align="middle" src="images/Lab5_23.jpg" width="1000" />
 
 
