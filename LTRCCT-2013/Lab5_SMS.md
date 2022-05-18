@@ -2,8 +2,6 @@
 title: 'Lab 5: SMS Configuration'
 ---
 
-#IN-PROGRESS
-
 
 # Table of Contents
 - [Table of Contents](#table-of-contents)
@@ -44,7 +42,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
 - Navigate to Assets > Numbers and verify that the tenant you are using has a SMS number assigned 
-<img align="middle" src="images/Lab5_1.png" width="1000" />
+<img align="middle" src="images/Lab5_1.jpg" width="1000" />
 
 >**Note**: SMS Numbers cannot be procured directly from the WxCC integrated IMI Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
 
@@ -54,16 +52,16 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 ### 1. Register SMS asset to WebexCC
 
 - In the SMS number assigned, under actions select the 'Manage' option 
-<img align="middle" src="images/Lab5_2.png" width="1000" />
+<img align="middle" src="images/Lab5_2.jpg" width="1000" />
 
 - Click 'Register to WebexCC option' 
-<img align="middle" src="images/Lab5_3.png" width="1000" />
+<img align="middle" src="images/Lab5_3.jpg" width="1000" />
 
 - In the resulting window, select a service under which this asset would be managed
-- <img align="middle" src="images/Lab5_4.png" width="1000" />
+- <img align="middle" src="images/Lab5_4.jpg" width="1000" />
 
 - Verify that the 'Register to Webex CC' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
-<img align="middle" src="images/Lab5_5.png" width="1000" />
+<img align="middle" src="images/Lab5_5.jpg" width="1000" />
 
 ## Step 3. SMS Entry Point and Queue creation
 
@@ -74,7 +72,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Entry Point_**.
 
 - Click on `New Entry Point`.
-<img align="middle" src="images/Lab5_6.png" width="1000" />
+<img align="middle" src="images/Lab5_6.jpg" width="1000" />
 
 - Input **_Name_** as `SMS_EP`.
 
@@ -87,29 +85,29 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 - The **_Time Zone_** can stay as default value.
 
 - Click on **Save** after comparing your values with the screenshot below.
-<img align="middle" src="images/Lab5_7.png" width="1000" />
+<img align="middle" src="images/Lab5_7.jpg" width="1000" />
 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
 
 - Click on `New Queue`.
-<img align="middle" src="images/Lab5_8.png" width="1000" />
+<img align="middle" src="images/Lab5_8.jpg" width="1000" />
 
 - Input **_Name_** as `SMS_Queue`.
 
 - Select `Social Channel` in the **_Channel Type_** section.
 
 - Click `Add Group` in the **_Conversation distribution_** section.
-<img align="middle" src="images/Lab5_9.png" width="1000" />
+<img align="middle" src="images/Lab5_9.jpg" width="1000" />
 
 - Select the Agent based teams created in the previous lab and click `Save` . Once saved, click `Close` to exit this window. 
-<img align="middle" src="images/Lab5_10.png" width="1000" />
+<img align="middle" src="images/Lab5_10.jpg" width="1000" />
 
 - Input **_Maximum Time in Queue_** as `300`.
 
 - The **_Time Zone_** can stay as default value.
 
 - Click on **Save** after comparing your values with the screenshot below.
-<img align="middle" src="images/Lab5_11.png" width="1000" />
+<img align="middle" src="images/Lab5_11.jpg" width="1000" />
 
 
 ## Step 4. Create/Upload SMS flow
@@ -117,7 +115,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 - Download the SMS flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
 - Navigate to **Webex Connect Flows** -> **v2.1** -> **SMS Inbound Flow.workflow.zip**, select the zip file and click download.
-<img align="middle" src="images/Lab5_12.png" width="1000" />
+<img align="middle" src="images/Lab5_12.jpg" width="1000" />
 
 - Unzip the downloaded file.
 
@@ -128,7 +126,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 - Enter the **FLOW NAME** as **SMS Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
 - Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
-<img align="middle" src="images/Lab5_13.png" width="1000" />
+<img align="middle" src="images/Lab5_13.jpg" width="1000" />
 
 - Once the flow is saved, the 'Configure SMS Event' node will open. Select the SMS number assigned to your tenant in the **_INCOMING NUMBER_** section 
 
@@ -137,36 +135,36 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 - Once the **Success** message is displayed, click on **Save**
 
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
-<img align="middle" src="images/Lab5_15.png" width="1000" />
+<img align="middle" src="images/Lab5_15.jpg" width="1000" />
 
 - Find and open all the **SMS** nodes and select the SMS number assigned to your tenant in the **_FROM NUMBER_** section 
-<img align="middle" src="images/Lab5_16.png" width="1000" />
-<img align="middle" src="images/Lab5_17.png" width="1000" />
+<img align="middle" src="images/Lab5_16.jpg" width="1000" />
+<img align="middle" src="images/Lab5_17.jpg" width="1000" />
 
 - Finally click on Make Live on top right corner and click Make Live.
-<img align="middle" src="images/Lab5_18.png" width="1000" />
+<img align="middle" src="images/Lab5_18.jpg" width="1000" />
 
 - Wait for 2 minutes and verify that the flow is published successfully. 
-<img align="middle" src="images/Lab5_19.png" width="1000" />
+<img align="middle" src="images/Lab5_19.jpg" width="1000" />
 
 [To top of this lab](#table-of-contents)
 
 ## Verification - send SMS and accept the request
 
 - Login to the Agent Desktop and make the agent Available. 
-  <img align="middle" src="images/Lab2_Agent1.png" width="1000" />
+  <img align="middle" src="images/Lab2_Agent1.jpg" width="1000" />
 
 - From your mobile number send a SMS to the number that is assigned to your Webex Connect tenant and the one used in the flow configuration earlier.
 
 - The SMS will be offered to the agent. Click "Accept" to handle the SMS.
-<img align="middle" src="images/Lab5_20.png" width="1000" />
+<img align="middle" src="images/Lab5_20.jpg" width="1000" />
 
 - Type a response and hit send button.
-  <img align="middle" src="images/Lab5_21.png" width="1000" />
+  <img align="middle" src="images/Lab5_21.jpg" width="1000" />
 
 - End the contact, add wrap up and close the task.
-  <img align="middle" src="images/Lab5_22.png" width="1000" />
-  <img align="middle" src="images/Lab5_23.png" width="1000" />
+  <img align="middle" src="images/Lab5_22.jpg" width="1000" />
+  <img align="middle" src="images/Lab5_23.jpg" width="1000" />
 
 
 [Back to top](#table-of-contents)
