@@ -14,6 +14,8 @@ title: 'Lab 9: Flow Debug Capabilities'
   - [3. Accessing the logs](#3-accessing-the-logs)
   - [4. Flow Analytics](#4-flow-analytics)
   - [5. Share Flow Settings](#5-share-flow-settings)
+  - [Back to top](#back-to-top)
+    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 
 # Introduction
@@ -32,6 +34,7 @@ In this lab, we will go through the concepts and basics of flow debugging option
 
 >**Note**: Each Webex Connect tenant will have one owner added when the tenant is created. This owner will have decryption access by default. For any additional users added to the Connect tenant, please ensure that decryption access is enabled.
 
+
 - Login to Webex Connect and navigate to Settings > Team mates 
 
 <img align="middle" src="images/Lab9_0.jpg" width="1000" />
@@ -49,11 +52,11 @@ In this lab, we will go through the concepts and basics of flow debugging option
 
 <img align="middle" src="images/Lab9_1.jpg" width="1000" />
 
-<img align="middle" src="images/Lab9_2.jpgg" width="1000" />
+<img align="middle" src="images/Lab9_2.jpg" width="1000" />
 
 - In order to enable debug logs to see the complete HTTP request and response, Click on settings icon from top right and enable the toggle 'descriptive logs'
 
-<img align="middle" src="images/Lab9_3.jpgg" width="1000" />
+<img align="middle" src="images/Lab9_3.jpg" width="1000" />
 
 
 ## 3. Accessing the logs
@@ -121,3 +124,32 @@ In this lab, we will go through the concepts and basics of flow debugging option
 - Open the flow and on the right side click 'Share Flow' option to configure a password and share the flow in view only mode 
 
 <img align="middle" src="images/Lab9_13.jpg" width="1000" />
+
+
+[Back to top](#table-of-contents)
+---
+
+### Congratulations, you have completed this section! 
+
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function nextLab() 
+ {
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";
+ }
+</script>
+
+<div id="button-row">
+<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Home Page</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go to the Next Lab</button>
+
+</div>
