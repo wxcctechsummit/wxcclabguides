@@ -28,7 +28,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Connect: https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number)
+> Connect: https://cl1pod**/<ID/>**.imiconnect.io/ (where **/<ID/>** is your POD number)
 
 # Lab Section
 
@@ -40,19 +40,19 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 > Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
-- To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
+- To authorize a pre-built integration go to **Assets** -> **Integrations**. The integrations which are not yet authorized show the status as **Authorization Pending**.
 
-- In front of **Webex CC Engage** Click **Actions** → **Manage**.
+- In front of **Webex CC Engage** Click **Actions** -> **Manage**.
 
 <img align="middle" src="images/Lab1_Integration1.png" width="1000" />
 
 - On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
 
-- Click **Action** → **Add Authorization** associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
+- Click **Action** → **Add Authorization** associated with the **WxCC Engage Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
 
-- Enter the Authorization Name and click **Authorize**. In that example we use **WebexCCAuth**\
+- Enter the Authorization Name and click **Authorize**. In that example we use **WxCC Engage Authorisation**\
 
 <img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
 
@@ -62,15 +62,17 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
 
-- Click **Action** → **Add Authorization** associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
+- Click **Action** → **Add Authorization** associated with the **WxCC Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
 
-- Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**X**@email.carehybrid.com) and click **Sign in**.
+- Enter the **Authorization Name** (for example: **WxCC Authorisation**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**/<ID/>**@email.carehybrid.com) and click **Sign in**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
 
-> **!!!**: The status of the authorization will change to Authorized and all the nodes under this authorization are authorized and ready for use.
+- Click on the back button for being redirected back to **Integrations** page.
+
+- Verify that the status of the authorizations is changed to Authorized.
 <img align="middle" src="images/Lab1_authorized2.png" width="1000" />
 
 ## Step 2. Download and upload CA flows in Connect 
@@ -93,7 +95,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/Services.png" width="1000" />
 
-6) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
+6) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name and press on **CREATE** button. This will create a new service.
 > **Note** You can choose a different Service name. It is just an exmple.
 
 7) In the service click on **FLOWS** -> **CREATE FLOW**
@@ -108,11 +110,11 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/Lab1_Create.png" width="1000" />
 
-11) In the new menu click on **SAVE** and then **MAKE LIVE**. You should get the message that "Flow successfully made live"
+11) In the new menu click on **SAVE** and then **MAKE LIVE**. On pop up window click on **MAKE LIVE** again.
 
 <img align="middle" src="images/Lab1_Live.png" width="1000" />
 
-12) Repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
+12) **!!!** Click on back button in the flow and repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
 
 
 ## Step 3. Setup agents in Portal (Agents, Team, MMP)
@@ -228,7 +230,7 @@ In the process...
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **email ID** `cl1agent**X**@email.carehybrid.com`.
+- Enter the agent’s **email ID** `cl1agent**/<ID/>**@email.carehybrid.com`.
 
 - Enter the **Password** for the appropriate Username.
 
