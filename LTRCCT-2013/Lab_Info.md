@@ -1,7 +1,15 @@
 ---
 title: 'Lab Pre-requisites'
 ---
-## Introduction
+
+# Table of Contents
+
+- [Lab Topology](#lab-topology)
+- [Access URLs](#access-urls) 
+- [Before starting the labs](#before-starting-the-labs)
+- [Lab Support](#lab-support)
+
+# Introduction
 Digital channels are now more impactful than ever. 
 This labs are specially designed for the Cisco Live session. The main purpose of the labs is to give a clear understanding of New Digital Channels functionality. You will learn how to create and configure all digital channels including Chat, Email, Facebook, and SMS. You will get a clear understanding of the scripts' logic and how to troubleshoot issues by using the debug console.
 
@@ -53,6 +61,9 @@ The users have the following preconfiguration
 1. Proctors is your number 1 contact. If you need assistance just raise your hand.
 
 2. All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the digital channels.
+
+
+### May good fortune smile on you as you begin this new adventure :) 
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
