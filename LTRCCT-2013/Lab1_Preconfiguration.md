@@ -28,7 +28,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Connect: https://cl1pod**/<ID/>**.imiconnect.io/ (where **/<ID/>** is your POD number)
+> Connect: https://cl1pod**\<ID\>>**.imiconnect.io/ (where **\<ID\>>** is your POD number)
 
 # Lab Section
 
@@ -66,7 +66,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
 
-- Enter the **Authorization Name** (for example: **WxCC Authorisation**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**/<ID/>**@email.carehybrid.com) and click **Sign in**.
+- Enter the **Authorization Name** (for example: **WxCC Authorisation**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**\<ID\>>**@email.carehybrid.com) and click **Sign in**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
 
@@ -230,7 +230,7 @@ In the process...
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **email ID** `cl1agent**/<ID/>**@email.carehybrid.com`.
+- Enter the agent’s **email ID** `cl1agent**\<ID\>**@email.carehybrid.com`.
 
 - Enter the **Password** for the appropriate Username.
 
