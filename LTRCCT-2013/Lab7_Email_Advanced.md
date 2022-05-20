@@ -46,11 +46,11 @@ The node has three types of output flow branches. These branches get triggered b
 
 - Click on **EDIT** button in the upper right corner.
 
--  Drug and drop the **PIQ and EWT** node from the Node Palette to the main canvas.
+- Drug and drop the **PIQ and EWT** node from the Node Palette to the main canvas.
 
 <img align="middle" src="images/Lab7_workflow2.png" width="1000" />
 
-- Delete the existin Queued link by clickin on it and pressing delete button. Re-connect **Queue Task** with **PIQ and EWT**
+- Delete the existin **Queue Task** **Queued link** by clickin on it and pressing delete button. Re-connect **Queue Task** with **PIQ and EWT**
 
 <img align="middle" src="images/Lab7_workflow3.png" width="1000" />
 
@@ -70,37 +70,100 @@ The node has three types of output flow branches. These branches get triggered b
   
 <img align="middle" src="images/Lab7_workflow4.png" width="1000" />
 
--  Click **SAVE** and link all exit states of **PIQ and EWT** with **Update Conversation**.
+- Click **SAVE** and link all exit states of **PIQ and EWT** with **Update Conversation**.
   
 <img align="middle" src="images/Lab7_workflow5.png" width="1000" />
 
 
 Step 3. Autoreply Configuration
   
-In the default script the autoreply is already preconfigured for all new tasks. In this step we will enhance the answer by adding changing the message and adding the PIQ variable.
+In the default script, the autoreply is already preconfigured for all new tasks. In this step, we will enhance the answer by adding changing the message and adding the PIQ variable.
   
 - Double click on the **Email** node and in the **MESSAGE**. 
 
 <img align="middle" src="images/Lab7_autoanswer1.png" width="1000" />  
 
-- Set the customized message. Exampel: __Dear $(n2.email.senderName). We have successfully received your request. You have $(n1894.positionInQueue) Position In Queue.__
+- Set the customized message. Exampel: __Dear $(n2.email.senderName). We have successfully received your request. You have $(n1894.positionInQueue) Position In Queue.__ and click on **SAVE**.
   
 > **Note:** Your PIQ node ID can be different from the example above.
   
 <img align="middle" src="images/Lab7_autoanswer2.png" width="1000" />  
+
+- Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
   
 - Make sure that the agent is in **IDLE** state in the Agent Desktop.
  
-- Go to personal email account and send 2 emails with different subject to the configured email address.
+- Go to your personal email account or ask the proktor to send 2 emails with different subject to the configured email address.
 
 - Wait for 1 minute and check the auto response, you should see your PIQ.
   
   
 ## Step 4. Enhancing Routing based on the Subject
-  
+In this task, you will be checking the **Subject** for **Cisco Live** text. If it is not there, the task will be closed with the auto-reply message "There is no Cisco Live text in your subject".
+The branch node allows you to split your flow based on conditional statements without the need to write any custom code. You can configure multiple branches within a single node. The node uses a top-down sequential approach to evaluate the conditions. The supported conditions are:
+    - Equals
+    - Not equals
+    - Less than
+    - Greater than
+    - Less than or equals
+    - Greater than or equals
+    - Regular expression (RegEx)
+    - Equals ignore case
+    - Contains
+    - Contains ignore case
+    - In
+    - Not in
+    - Starts with
+    - Ends with
+    - Between
 
-## Step 5. Screenpop configuration
+ 
+- Drug and drop the **Branch** node from the Node Palette to the main canvas.
+
+<img align="middle" src="images/Lab7_subject1.png" width="1000" />  
+
+- Delete the existin **Create Task** **Created** link by clickin on it and pressing delete button. Re-connect **Create Task** with **Branch**
   
+<img align="middle" src="images/Lab7_subject2.png" width="1000" />  
+  
+- Double click on the **Branch** node and set the following conditions for Branch1: 
+  
+  | **Setting's Name** | **Value**                       |
+| ------------- | ------------------------------------ | 
+| Variable    | $(n2.email.subject) | 
+| CONDITION   | Regular expression (RegEx) | 
+| VALUE    | [cC][iI][sS][cC][oO]\s[lL][iI][vV][eE] | 
+
+ 
+<img align="middle" src="images/Lab7_subject3.png" width="1000" />  
+  
+- Drug and drop the **Email** node from the Node Palette to the main canvas. And connect exit **Branch1** with **Queue Task** and **None of the above** exit with the **Email**
+
+<img align="middle" src="images/Lab7_subject4.png" width="1000" />  
+  
+- Double click on the **Email** node and set the following settings: 
+  
+| **Setting's Name** | **Value**                       |
+| ------------- | ------------------------------------ | 
+| DESTINATION ID    | $(n2.email.subject) | 
+| FROM NAME   | $(n2.email.senderName) | 
+| SUBJECT    | $(n2.email.subject) |   
+| MESSAGE    | There is no "Cisco Live" text in your subject |   
+| HEADER PARAMETER    | In-Reply-To |   
+| VALUE    | $(n2.email.messageId) |   
+  
+<img align="middle" src="images/Lab7_subject5.png" width="1000" />  
+  
+- Click on **SAVE** and link all exit events for the **Email** with the **Close Task**
+
+<img align="middle" src="images/Lab7_subject6.png" width="1000" />  
+  
+- Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
+  
+- Go to your personal email account or ask the proctor to send 2 emails (with and without the "Cisco Live" subject.
+
+- As a result, only 1 email should come into the Email queue. Wait for 1 minute and check the auto replies, 1 email should come with PIQ autoreply, another one with the "no Cisco Live in subject" message.
+
   
 ## Step 6. Integration with Smartsheet using smartsheet APIs
   
