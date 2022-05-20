@@ -222,7 +222,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 ## Verification: Send an Email and accept the task
 
-- Go to the Gmail account and send an email to the support email address that was initially configured in the Email Asset creation.
+- Go to personal email account and send an email to the support email address that was initially configured in the Email Asset.
 
 - Go to the Agent Desktop and make the agent Available. 
 
