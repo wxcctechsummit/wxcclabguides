@@ -46,13 +46,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/Lab1_Integration1.png" width="1000" />
 
-- On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
+- On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the authorizations mapped to this integration.
 
 - Click **Action** → **Add Authorization** associated with the **WxCC Engage Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
 
-- Enter the Authorization Name and click **Authorize**. In that example we use **WxCC Engage Authorisation**\
+- Enter the Authorization Name and click **Authorize**. In that example we use **WxCC Engage Authorisation**
 
 <img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
 
@@ -60,7 +60,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/Lab1_ManageIntegration2.png" width="1000" />
 
-- On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
+- On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the authorizations mapped to this integration.
 
 - Click **Action** → **Add Authorization** associated with the **WxCC Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
 
@@ -72,7 +72,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on the back button for being redirected back to **Integrations** page.
 
-- Verify that the status of the authorizations is changed to Authorized.
+- Verify that the status of the authorizations is changed to **Authorized**.
 <img align="middle" src="images/Lab1_authorized2.png" width="1000" />
 
 ## Step 2. Download and upload CA flows in Connect 
@@ -236,7 +236,7 @@ In the process...
 
 - In the **_Station Login_** pane, select **"Extension"** and put any number, for instance 1000. 
 
-> **Note:** The Webex Calling service is not activated at this tenant we need to set an extension only once during login.
+> **Note:**  The Webex Calling service is not activated at this tenant we need to set a dummy extension only once during the login.
 
 - Select the `Team1` and click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the next section.
 
@@ -262,13 +262,13 @@ function nextLab()
 <button onclick="mainPage()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Home Page</button>
+  padding: 10px;">Main Page</button>
 
 <button onclick="nextLab()" style="
   position: absolute;
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Go to the Next Lab</button>
+  padding: 10px;">Next Lab</button>
 
 </div>
