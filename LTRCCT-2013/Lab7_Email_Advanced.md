@@ -21,13 +21,53 @@ This lab includes multiple script customizations and shows how to create an HTTP
 
 ### Pre-requisite
 
-- You have successfully compleated the the Lab1 and Lab2 (Email Configuration).
+- You have successfully compleated the Lab1 and Lab2 (Email Configuration).
 
 # Lab Section
 
 ## Step 1. Email Workflow Overview
 
->**Note**: For this lab, we created a Gmail account. Optionally, use your own account for polling and handling the emails. It can be a Gmail account or Office 365 account or any account which has email forwarding.
+Before proceeding with the configuration task, you need to understand the flow logic. Please follow the diagram below and call the proctor if you have any questions.
+
+<img align="middle" src="images/Lab7_workflow.png" width="1000" />
+
+
+
+## Step 2. Position In Queue Configuration
+In this task we will use the predefined node **PIQ and EWT**. This node provides the caller's current Position in Queue (PIQ) and the Estimated Wait Time (EWT). The flow developer can use these variables with flow logic to determine agent availability in a queue and route elsewhere when needed.
+The node has three types of output flow branches. These branches get triggered based on return status and values of EWT and PIQ.
+  - Success: Triggered when both EWT and PIQ APIs succeed and return nonnegative values.
+  - Insufficient Information Flow: Triggered when the PIQ API returns a valid variable value, and EWT has the value as -1. 
+  - Failure: This branch is triggered when PIQ API or EWT API fail and/or return invalid values. 
+
+> **Note:** PIQ/EWT node can currently be used only after the Queue Task Node.
+
+
+- Go to the **Services - My First Service** and open the **Email Inbound Flow**.
+
+- Click on **EDIT** button in the upper right corner.
+
+-  Drug and drop the **PIQ and EWT** node from the Node Palette to the main canvas.
+
+<img align="middle" src="images/Lab7_workflow2.png" width="1000" />
+
+- Delete the existin Queued link by clickin on it and pressing delete button. Re-connect **Queue Task** with **PIQ and EWT**
+
+<img align="middle" src="images/Lab7_workflow2.png" width="1000" />
+
+- Double click on the **PIQ and EWT** node and set:
+ - **METHOD NAME** as **Fetch Position in Queue**
+ - **NODE RUNTIME AUTHORIZATION** as **WxCC Authorization**
+ - **QUEUE ID** as
+
+<img align="middle" src="images/Lab7_workflow4.png" width="1000" />
+
+-  and connecte all exit states of **PIQ and EWT** with **Update Conversation**.
+
+> **Note:** There are 3 exit states for 
+
+<img align="middle" src="images/Lab7_workflow3.png" width="1000" />
+
 
 ### 1. Google Account Setting – Enable POP3/IMAP setting
 
