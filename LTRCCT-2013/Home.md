@@ -15,15 +15,15 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 | Content Owner   | Topic.                     | Corresponding Lab                                                       |
 | --------------- | -------------------------- | -------------------------------------------------------------           |
 |  Dmitry (Done) | Before you Begin | [Lab Information](Lab_Info.md){:target="\_blank"}  |
-|  Dmitry (Done) | Preconfiguration | [Preconfiguration](Lab1_Preconfiguration.md){:target="\_blank"}  |
-|  Dmitry (Done) | Email Configuration | [Email creation end to end](Lab2_Email.md){:target="\_blank"} |
-|  Carles | Chat Configuration | [Chat creation end to end](Lab3_Chat.md){:target="\_blank"} |
-|  Carles | Facebook Setup  | [FBM creation end to end](Lab4_FBM.md){:target="\_blank"}   |
-|  Gagarin (Done) | SMS Setup | [SMS creation end to end](Lab5_SMS.md){:target="\_blank"}    |
-|  Gagarin | WhatsApp Messenger Setup ??? | [WhatsApp configuration](Lab6_Whatsapp.md){:target="\_blank"}      |
-|  Dmitry  | Advanced Email Configuration | [Auto Reply, PIQ, Screenpop, Subject Filter, API requests](Lab7_Email_Advance.md){:target="\_blank"}      |
-|  Gagarin | Event and Rules - agent productivity | [Event and Rules - agent productivity](Lab8_AgentProductivity.md){:target="\_blank"}      |
-|  Gagarin (Done) | Flow Debug Capabilities | [Flow Debug Capabilities](Lab9_Troubleshooting.md){:target="\_blank"}      |
-|  Carles  | Something else... | [Something else...](Lab10.md){:target="\_blank"}      |
+|  Dmitry (Done) | Lab1: Preconfiguration | [Preconfiguration](Lab1_Preconfiguration.md){:target="\_blank"}  |
+|  Dmitry (Done) | Lab2: Email Configuration | [Email creation end to end](Lab2_Email.md){:target="\_blank"} |
+|  Carles | Lab3: Chat Configuration | [Chat creation end to end](Lab3_Chat.md){:target="\_blank"} |
+|  Carles | Lab4: Facebook Setup  | [FBM creation end to end](Lab4_FBM.md){:target="\_blank"}   |
+|  Gagarin (Done) | Lab5: SMS Setup | [SMS creation end to end](Lab5_SMS.md){:target="\_blank"}    |
+|  Gagarin | Lab6: WhatsApp Messenger Setup ??? | [WhatsApp configuration](Lab6_Whatsapp.md){:target="\_blank"}      |
+|  Dmitry  | Lab7: Advanced Email Configuration | [Auto Reply, PIQ, Screenpop, Subject Filter, API requests](Lab7_Email_Advance.md){:target="\_blank"}      |
+|  Gagarin | Lab8: Event and Rules - agent productivity | [Event and Rules - agent productivity](Lab8_AgentProductivity.md){:target="\_blank"}      |
+|  Gagarin (Done) | Lab9: Flow Debug Capabilities | [Flow Debug Capabilities](Lab9_Troubleshooting.md){:target="\_blank"}      |
+|  Carles  | Lab10: Something else... | [Something else...](Lab10.md){:target="\_blank"}      |
 
 
