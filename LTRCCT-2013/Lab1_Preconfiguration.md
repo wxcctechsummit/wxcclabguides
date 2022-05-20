@@ -4,8 +4,8 @@ title: 'Lab 1: Preconfiguration'
 
 # Table of Contents
 
-- [Step 1. Download and upload CA flows in Connect](#step-1-download-and-upload-ca-flows-in-connect) 
-- [Step 2. Node Authorization for Webex CC Task and Engage nodes](#step-2-node-authorization-for-webex-cc-task-and-engage-nodes)
+- [Step 1. Node Authorization for Webex CC Task and Engage nodes](#step-1-node-authorization-for-webex-cc-task-and-engage-nodes)
+- [Step 2. Download and upload CA flows in Connect](#step-2-download-and-upload-ca-flows-in-connect) 
 - [Step 3. Setup agents in Portal (Agents, Team, MMP)](#step-3-setup-agents-in-portal-(agents-team-mmp))
 - [Step 4. Setup RONA timers](#step-4-setup-rona-timers)
 - [Access to the Agent Desktop](#access-to-the-agent-desktop)
@@ -20,7 +20,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Pre-requisites
 
 - You have recived the access credentials with a full admin access 
-- You have recived the access to the agent account.
+- You have recived the access to the agent and supervisor account.
 
 
 ### Quick Links
@@ -36,8 +36,44 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/Lab1_ConfigOrder.png" width="1000" />
 
+## Step 1. Node Authorization for Webex CC Task and Engage nodes
 
-## Step 1. Download and upload CA flows in Connect 
+> Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
+
+- To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
+
+- In front of **Webex CC Engage** Click **Actions** → **Manage**.
+
+<img align="middle" src="images/Lab1_Integration1.png" width="1000" />
+
+- On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
+
+- Click **Action** → **Add Authorization** associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
+
+<img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
+
+- Enter the Authorization Name and click **Authorize**. In that example we use **WebexCCAuth**\
+
+<img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
+
+- Click on the back button for being redirected back to **Integrations** page and in front of **Webex CC Task** Click **Actions** → **Manage**.
+
+<img align="middle" src="images/Lab1_ManageIntegration2.png" width="1000" />
+
+- On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
+
+- Click **Action** → **Add Authorization** associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
+
+<img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
+
+- Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**X**@email.carehybrid.com) and click **Sign in**.
+
+<img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
+
+> **!!!**: The status of the authorization will change to Authorized and all the nodes under this authorization are authorized and ready for use.
+<img align="middle" src="images/Lab1_authorized2.png" width="1000" />
+
+## Step 2. Download and upload CA flows in Connect 
 > Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
 
 > The agnostic flows consist of:\
@@ -77,44 +113,6 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <img align="middle" src="images/Lab1_Live.png" width="1000" />
 
 12) Repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
-
-
-## Step 2. Node Authorization for Webex CC Task and Engage nodes
-
-> Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
-
-- To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
-
-- In front of **Webex CC Engage** Click **Actions** → **Manage**.
-
-<img align="middle" src="images/Lab1_Integration1.png" width="1000" />
-
-- On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
-
-- Click **Action** → **Add Authorization** associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
-
-<img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
-
-- Enter the Authorization Name and click **Authorize**. In that example we use **WebexCCAuth**\
-
-<img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
-
-- Click on the back button for being redirected back to **Integrations** page and in front of **Webex CC Task** Click **Actions** → **Manage**.
-
-<img align="middle" src="images/Lab1_ManageIntegration2.png" width="1000" />
-
-- On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
-
-- Click **Action** → **Add Authorization** associated with the authorization, where Auth Type is oauth2 and Status is Authorization Pending.
-
-<img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
-
-- Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**X**@email.carehybrid.com) and click **Sign in**.
-
-<img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
-
-> **!!!**: The status of the authorization will change to Authorized and all the nodes under this authorization are authorized and ready for use.
-<img align="middle" src="images/Lab1_authorized2.png" width="1000" />
 
 
 ## Step 3. Setup agents in Portal (Agents, Team, MMP)
