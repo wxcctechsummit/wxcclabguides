@@ -15,7 +15,7 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 | Content Owner   | Topic.                     | Corresponding Lab                                                       |
 | --------------- | -------------------------- | -------------------------------------------------------------           |
 |  Dmitry (Done) | Before you Begin | [Lab Information](Lab_Info.md){:target="\_blank"}  |
-|  Dmitry (Done) | Preconfiguration | [Preconfiguration](Lab1.md){:target="\_blank"}  |
+|  Dmitry (Done) | Preconfiguration | [Preconfiguration](Lab1_Preconfiguration.md){:target="\_blank"}  |
 |  Dmitry (Done) | Email Configuration | [Email creation end to end](Lab2_Email.md){:target="\_blank"} |
 |  Carles | Chat Configuration | [Chat creation end to end](Lab3_Chat.md){:target="\_blank"} |
 |  Carles | Facebook Setup  | [FBM creation end to end](Lab4_FBM.md){:target="\_blank"}   |
