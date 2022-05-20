@@ -3,11 +3,12 @@ title: 'Lab 7: Advanced Email Configuration'
 ---
 
 # Table of Contents
-- [Step 1. Email Workflow Overview](#step-1-gmail-account-configuration)
-- [Step 2. Position In Queue Configuration](#step-1-gmail-account-configuration)
-- [Step 3. Autoreply Configuration](#step-1-gmail-account-configuration)
-- [Step 4. Enhancing Routing based on a Subject](#step-2-create-email-asset-and-register-to-webexcc)
-- [Step 5. Integration with Smartsheet using smartsheet APIs](#step-4-createupload-email-flow)
+- [Step 1. Email Workflow Overview](#step-1-email-workflow-overview)
+- [Step 2. Position In Queue Configuration](#step-2-position-in-queue-configuration)
+- [Step 3. Autoreply Configuration](#step-3-autoreply-configuration)
+- [Step 4. Enhancing Routing based on a Subject](#step-2-enhancing-routing-based-on-a-subject)
+- [Step 5. Integration with Smartsheet using smartsheet APIs](#step-5-integration-with-smartsheet-using-smartsheet-apis)
+- [BONUS TASK - Integration with Webex Teams (Alarm notification)](#bonus-task-integration-with-webex-teams-alarm-notification)
 
 
 # Introduction
@@ -235,7 +236,7 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 - After 1 minute check the smartsheet table. The row with the email details has to appear: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
   
  
-## BONUS TASK - Integrations with Webex Teams (Alarm notification)
+## BONUS TASK - Integration with Webex Teams (Alarm notification)
 The idea is to show that you can integrate the Flow with Webex Teams and this can be used as the notifications for supervisors based on the specific criteria.
 This section has the bonus category where we can check how you understand this topic. Here we give you the task without a step-by-step explanation the result will be the message from the Webex bot in our Cisco Live space. 
 
