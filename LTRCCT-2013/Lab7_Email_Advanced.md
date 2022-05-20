@@ -170,7 +170,7 @@ In this task, you will learn how to work with HTTP Request node. As the example 
 
 In our case, if the subject does not contain "Cisco Live" we will be adding a new row with the details in this smartsheet table: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
 
-### 1. Procofigured settings
+### 1. Preconfigured settings
 The 3 steps below were **preconfigured** for you. They has to be done only once.
 >1) The smartsheet API key has been generated according to the guide https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests
 
@@ -236,9 +236,36 @@ It needs just for the verification, exactly the same we will be doing in the Ema
   
  
 ## BONUS TASK - Integrations with Webex Teams (Alarm notification)
-  
-  
+The idea is to show that you can integrate the Flow with Webex Teams and this can be used as the notifications for supervisors based on the specific criteria.
+This section has the bonus category where we can check how you understand this topic. Here we give you the task without a step-by-step explanation the result will be the message from the Webex bot in our Cisco Live space. 
 
+**Use case:** As a supervisor, I want to get the notifications in the Webex Teams if there are more then 3 email in queue (PIQ).
+
+1) The Webex API token is generated for you
+  
+<img align="middle" src="images/Lab7_webex1.png" width="1000" />   
+  
+2) Here is the example of the Postman request
+
+<img align="middle" src="images/Lab7_webex2.png" width="1000" /> 
+  
+3) **HTTP Request** node settings: 
+  
+| **Setting's Name** | **Value**                       |
+| ------------- | ------------------------------------ | 
+| METHOD    | POST | 
+| ENDPOINT URL   | https://webexapis.com/v1/messages | 
+| Authorization    | Bearer XXXXXXXXXXXXXXXXXX |   
+| Content-Type    | application/json |   
+| BODY    | {
+    "roomId":"Y2lzY29zcGFyazovL3VzL1JPT00vYzI5ODg1ZDAtZDg3ZC0xMWVjLTk2ZjQtZmQzNzA1YTFjMGJi",
+    "text":"There are more than $(nX.positionInQueue) tasks in queue!"
+} |   
+| TIMEOUT    | 3000 |   
+
+<img align="middle" src="images/Lab7_webex3.png" width="1000" /> 
+
+ 
 
 [Back to top](#table-of-contents)
 ---
