@@ -21,7 +21,7 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 |  Carles | Facebook Setup  | [FBM creation end to end](Lab4_FBM.md){:target="\_blank"}   |
 |  Gagarin (Done) | SMS Setup | [SMS creation end to end](Lab5_SMS.md){:target="\_blank"}    |
 |  Gagarin | WhatsApp Messenger Setup ??? | [WhatsApp configuration](Lab6_Whatsapp.md){:target="\_blank"}      |
-|  Dmitry  | Advanced Email Configuration | [Auto Reply, PIC, Screenpop, Subject, API requests](Lab7.md){:target="\_blank"}      |
+|  Dmitry  | Advanced Email Configuration | [Auto Reply, PIQ, Screenpop, Subject Filter, API requests](Lab7.md){:target="\_blank"}      |
 |  Gagarin | Event and Rules - agent productivity | [Event and Rules - agent productivity](Lab8_AgentProductivity.md){:target="\_blank"}      |
 |  Gagarin (Done) | Flow Debug Capabilities | [Flow Debug Capabilities](Lab9_Troubleshooting.md){:target="\_blank"}      |
 |  Carles  | Something else... | [Something else...](Lab10.md){:target="\_blank"}      |
