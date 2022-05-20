@@ -7,7 +7,7 @@ title: 'Lab 2: Email Configuration'
 - [Step 2. Create Email Asset and Register to WebeXCC](#step-2-create-email-asset-and-register-to-webexcc)
 - [Step 3. Email Entry Point and Queue creation](#step-3-email-entry-point-and-queue-creation)
 - [Step 4. Create/Upload Email flow](#step-4-createupload-email-flow)
-- [Verification - send an Email and accept the request](#verification-send-an-email-and-accept-the-request)
+- [Verification: Send an Email and accept the task](#verification-send-an-email-and-accept-the-task)
 
 
 # Introduction
@@ -220,7 +220,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 [To top of this lab](#table-of-contents)
 
-## Verification - send an Email and accept the request
+## Verification: Send an Email and accept the task
 
 - Go to the Gmail account and send an email to the support email address that was initially configured in the Email Asset creation.
 
