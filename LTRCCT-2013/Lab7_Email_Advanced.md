@@ -7,8 +7,7 @@ title: 'Lab 7: Advanced Email Configuration'
 - [Step 2. Position In Queue Configuration](#step-1-gmail-account-configuration)
 - [Step 3. Autoreply Configuration](#step-1-gmail-account-configuration)
 - [Step 4. Enhancing Routing based on the Subject](#step-2-create-email-asset-and-register-to-webexcc)
-- [Step 5. Screenpop configuration](#step-3-email-entry-point-and-queue-creation)
-- [Step 6. Integration with Smartsheet using smartsheet APIs](#step-4-createupload-email-flow)
+- [Step 5. Integration with Smartsheet using smartsheet APIs](#step-4-createupload-email-flow)
 
 
 # Introduction
