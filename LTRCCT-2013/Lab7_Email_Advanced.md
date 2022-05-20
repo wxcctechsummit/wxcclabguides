@@ -6,7 +6,7 @@ title: 'Lab 7: Advanced Email Configuration'
 - [Step 1. Email Workflow Overview](#step-1-gmail-account-configuration)
 - [Step 2. Position In Queue Configuration](#step-1-gmail-account-configuration)
 - [Step 3. Autoreply Configuration](#step-1-gmail-account-configuration)
-- [Step 4. Improving Routing based on the Subject](#step-2-create-email-asset-and-register-to-webexcc)
+- [Step 4. Enhancing Routing based on the Subject](#step-2-create-email-asset-and-register-to-webexcc)
 - [Step 5. Screenpop configuration](#step-3-email-entry-point-and-queue-creation)
 - [Step 6. Integration with Smartsheet using smartsheet APIs](#step-4-createupload-email-flow)
 
@@ -42,7 +42,6 @@ The node has three types of output flow branches. These branches get triggered b
 
 > **Note:** PIQ/EWT node can currently be used only after the Queue Task Node.
 
-
 - Go to the **Services - My First Service** and open the **Email Inbound Flow**.
 
 - Click on **EDIT** button in the upper right corner.
@@ -53,22 +52,57 @@ The node has three types of output flow branches. These branches get triggered b
 
 - Delete the existin Queued link by clickin on it and pressing delete button. Re-connect **Queue Task** with **PIQ and EWT**
 
-<img align="middle" src="images/Lab7_workflow2.png" width="1000" />
+<img align="middle" src="images/Lab7_workflow3.png" width="1000" />
 
-- Double click on the **PIQ and EWT** node and set:
- - **METHOD NAME** as **Fetch Position in Queue**
- - **NODE RUNTIME AUTHORIZATION** as **WxCC Authorization**
- - **QUEUE ID** as
+- You will have to set the Queue ID in the PIQ node. Copy the Queue ID from the **[Management Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** -> **_Provisioning_** -> **_Entry Points/Queues_** -> **_Queue_**
+
+<img align="middle" src="images/Lab7_QueueID.png" width="1000" />
+
+- Go back to Webex Connect and double click on the **PIQ and EWT** node. Set up the following configuration:
+
+| **Setting's Name** | **Value**                       |
+| ------------- | ------------------------------------ | 
+| METHOD NAME         | Fetch Position in Queue | 
+| NODE RUNTIME AUTHORIZATION    | WxCC Authorization | 
+| QUEUE ID    | <Queue ID from Managment Portal> | 
+| TASK ID    | $(n1850.Task ID) | 
+| LOOKBACK MINUTES    | 5 | 
 
 <img align="middle" src="images/Lab7_workflow4.png" width="1000" />
 
--  and connecte all exit states of **PIQ and EWT** with **Update Conversation**.
-
-> **Note:** There are 3 exit states for 
-
-<img align="middle" src="images/Lab7_workflow3.png" width="1000" />
+-  Click **SAVE** and link all exit states of **PIQ and EWT** with **Update Conversation**.
+  
+<img align="middle" src="images/Lab7_workflow5.png" width="1000" />
 
 
+Step 3. Autoreply Configuration
+  
+ In the default script the autoreply is already preconfigured for all new tasks. In this step we will enhance the answer by adding changing the message and adding the PIQ variable.
+  
+ - Double click on the **Email** node and in the **MESSAGE** set the customized message. Exampel: __Dear $(n2.email.senderName). We have successfully received your request. You have $(n1894.positionInQueue) Position In Queue.__
+
+  > **Note:** Your PIQ node ID can be different from the example above.
+  
+ - Make sure that the agent is in **IDLE** state in the Agent Desktop.
+ 
+- Go to personal email account and send 2 emails with different subject to the configured email address.
+
+- Wait for 1 minute and check the auto response, you should see your PIQ.
+  
+
+  
+  
+## Step 4. Enhancing Routing based on the Subject
+  
+
+## Step 5. Screenpop configuration
+  
+  
+## Step 6. Integration with Smartsheet using smartsheet APIs
+  
+  
+  
+  
 ### 1. Google Account Setting – Enable POP3/IMAP setting
 
 
