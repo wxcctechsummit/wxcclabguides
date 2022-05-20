@@ -8,7 +8,7 @@ title: 'Lab 1: Preconfiguration'
 - [Step 2. Download and upload CA flows in Connect](#step-2-download-and-upload-ca-flows-in-connect) 
 - [Step 3. Setup agents in Portal (Agents, Team, MMP)](#step-3-setup-agents-in-portal-(agents-team-mmp))
 - [Step 4. Setup RONA timers](#step-4-setup-rona-timers)
-- [Access to the Agent Desktop](#access-to-the-agent-desktop)
+- [Verification: Access to the Agent Desktop](#verification-access-to-the-agent-desktop)
 
 # Introduction
 
@@ -223,7 +223,7 @@ The users have the following preconfiguration
 
 In the process...
 
-## Access to the Agent Desktop
+## Verification: Access to the Agent Desktop
 > **Note**: To log in to the agent desktop, use either a separate web browser or a new incognito web page. This will prevent any browser caching issues with admin and agent credentials.
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
