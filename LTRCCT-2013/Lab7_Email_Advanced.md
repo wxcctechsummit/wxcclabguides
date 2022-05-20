@@ -6,7 +6,7 @@ title: 'Lab 7: Advanced Email Configuration'
 - [Step 1. Email Workflow Overview](#step-1-gmail-account-configuration)
 - [Step 2. Position In Queue Configuration](#step-1-gmail-account-configuration)
 - [Step 3. Autoreply Configuration](#step-1-gmail-account-configuration)
-- [Step 4. Enhancing Routing based on the Subject](#step-2-create-email-asset-and-register-to-webexcc)
+- [Step 4. Enhancing Routing based on a Subject](#step-2-create-email-asset-and-register-to-webexcc)
 - [Step 5. Integration with Smartsheet using smartsheet APIs](#step-4-createupload-email-flow)
 
 
@@ -97,7 +97,7 @@ In the default script, the autoreply is already preconfigured for all new tasks.
 - Wait for 1 minute and check the auto response, you should see your PIQ.
   
   
-## Step 4. Enhancing Routing based on the Subject
+## Step 4. Enhancing Routing based on a Subject
 In this task, you will be checking the **Subject** for **Cisco Live** text. If it is not there, the task will be closed with the auto-reply message "There is no Cisco Live text in your subject".
 The branch node allows you to split your flow based on conditional statements without the need to write any custom code. You can configure multiple branches within a single node. The node uses a top-down sequential approach to evaluate the conditions. The supported conditions are:
     - Equals
@@ -116,6 +116,7 @@ The branch node allows you to split your flow based on conditional statements wi
     - Ends with
     - Between
 
+- Click on **EDIT** button in the upper right corner.
  
 - Drug and drop the **Branch** node from the Node Palette to the main canvas.
 
@@ -136,7 +137,7 @@ The branch node allows you to split your flow based on conditional statements wi
  
 <img align="middle" src="images/Lab7_subject3.png" width="1000" />  
   
-- Drug and drop the **Email** node from the Node Palette to the main canvas. And connect exit **Branch1** with **Queue Task** and **None of the above** exit with the **Email**
+- Drug and drop the **Email** node from the Node Palette to the main canvas. Connect exit **Branch1** with **Queue Task** and **None of the above** exit with the **Email**
 
 <img align="middle" src="images/Lab7_subject4.png" width="1000" />  
   
@@ -159,37 +160,84 @@ The branch node allows you to split your flow based on conditional statements wi
   
 - Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
   
-- Go to your personal email account or ask the proctor to send 2 emails (with and without the "Cisco Live" subject.
+- Go to your personal email account or ask the proctor to send 2 emails (with and without the "Cisco Live" subject).
 
 - As a result, only 1 email should come into the Email queue. Wait for 1 minute and check the auto replies, 1 email should come with PIQ autoreply, another one with the "no Cisco Live in subject" message.
 
   
 ## Step 6. Integration with Smartsheet using smartsheet APIs
+In this task, you will learn how to work with HTTP Request node. As the example we are going to use a smartsheet API. Smartsheet APIs allow you to programmatically access and manage Smartsheet data especially read and update sheets.
+
+In our case, if the subject does not contain "Cisco Live" we will be adding a new row with the details in this smartsheet table: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
+
+### 1. Procofigured settings
+The 3 steps below were **preconfigured** for you. They has to be done only once.
+>1) The smartsheet API key has been generated according to the guide https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests
+
+<img align="middle" src="images/Lab7_smartsheet1.png" width="1000" />  
+
+> 2) The smartsheet grid was created. And Columns’ ID were collected through API (we will need it for the API request when we will be adding a new row).
+
+<img align="middle" src="images/Lab7_smartsheet2.png" width="1000" />  
+  
+> 3) We checked that we are able to add a row through the postman acording to the documentation: https://smartsheet.redoc.ly/#operation/rows-addToSheet
+It needs just for the verification, exactly the same we will be doing in the Email Workflow with HTTP Request node.
+  
+<img align="middle" src="images/Lab7_smartsheet3.png" width="1000" />  
+
+### 2. HTTP Request configuration  
+
+- First Click on **EDIT** button in the upper right corner.
+  
+- Drug and drop the **HTTP Request** node from the Node Palette to the main canvas. Connect exit **Email** with **On Success** with the **HTTP Request**
+
+<img align="middle" src="images/Lab7_smartsheet4.png" width="1000" />  
+
+- Double click on the **HTTP Request** node, set the following settings and click **SAVE**.
+  
+| **Setting's Name** | **Value**                       |
+| ------------- | ------------------------------------ | 
+| METHOD    | POST | 
+| ENDPOINT URL   | https://api.smartsheet.com/2.0/sheets/6430831221729156/rows | 
+| Authorization    | Bearer XXXXXXXXXXXXXXXXXX |   
+| Content-Type    | application/json |   
+| BODY    | {
+    "cells": [
+      {
+        "columnId": 8617723039115140,
+        "value": "$(n2.email.senderName)",
+        "strict": false
+      },
+      {
+        "columnId": 4114123411744644,
+        "value": "$(n2.email.emailId)",
+        "strict": false
+      },
+      {
+        "columnId": 4958548341876612,
+        "value": "$(n2.email.subject)",
+        "strict": false
+      }
+    ]
+  } |   
+| TIMEOUT    | 3000 |   
+  
+<img align="middle" src="images/Lab7_smartsheet5.png" width="1000" /> 
+  
+- Connect all exits with **Close Task** node.
+
+<img align="middle" src="images/Lab7_smartsheet6.png" width="1000" /> 
+
+- Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
+  
+- Go to your personal email account or ask the proctor to send 1 email without the "Cisco Live" subject.
+
+- After 1 minute check the smartsheet table. The row with the email details has to appear: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
+  
+ 
+## BONUS TASK - Integrations with Webex Teams (Alarm notification)
   
   
-  
-  
-### 1. Google Account Setting – Enable POP3/IMAP setting
-
-
-| **User email**                       |
-| ------------------------------------ | 
-| cl1webex**\<ID\>**@gmail.com   | 
-
-> **Note:** Your \<ID\> was provided to you personally.  \<ID\> is the unique number equal to your POD.
-
-
-- Login to the Gmail account with the credentials above[https://mail.google.com](https://mail.google.com){:target="_blank"}. The password is the same as for Webex admin account.
-
-- Enable POP3/IMAP setting by clicking on settings icon on top right corner and selecting **See all settings**.
-
-<img align="middle" src="images/Lab2_Gmail1.png" width="1000" />
-
-- Now Click on **Forwarding and POP/IMAP**, enable the `POP Download` and `IMAP access` then click **Save Changes**.
-
-<img align="middle" src="images/Lab2_Gmail2.png" width="1000" />
-
-
 
 
 [Back to top](#table-of-contents)
