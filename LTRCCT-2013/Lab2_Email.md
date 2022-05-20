@@ -78,7 +78,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 ### 1. Create Email Assest
 
-- As an admin, login to Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
+- As an admin, login to Webex Connect UI using the provided URL https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number).
 
 - Select **Assets** -> **Apps** -> **CONFIGURE NEW APP** -> **Email**.
 
@@ -89,13 +89,13 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 | **Entity**          | **Name** |
 | ------------------- | -------- |
 | Asset Name | EmailAsset   |
-| Email ID   | cl1webex**X**@gmail.com  |
+| Email ID   | cl1webex**\<ID\>**@gmail.com  |
 | SMTP Server  | smtp.gmail.com |
-| Username     | cl1webex**X**@gmail.com |
+| Username     | cl1webex**\<ID\>**@gmail.com |
 | Port     | 465 |
 | Security     | SSL |
 
-> where X is your POD ID
+> where \<ID\> is your POD ID
 
 - Click **TEST CONNECTION** and if test is successfully completed, click on **SAVE**.
 
