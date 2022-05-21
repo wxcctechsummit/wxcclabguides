@@ -35,6 +35,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Configuration Order
 
 <img align="middle" src="images/Lab1_ConfigOrder.png" width="1000" />
+<br/>
+<br/>
 
 ## Step 1. Node Authorization for Webex CC Task and Engage nodes
 
@@ -45,35 +47,49 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - In front of **Webex CC Engage** Click **Actions** -> **Manage**.
 
 <img align="middle" src="images/Lab1_Integration1.png" width="1000" />
+<br/>
+<br/>
 
 - On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the authorizations mapped to this integration.
 
 - Click **Action** → **Add Authorization** associated with the **WxCC Engage Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
+<br/>
+<br/>
 
-- Enter the Authorization Name and click **Authorize**. In that example we use **WxCC Engage Authorisation**
+- Enter the Authorization Name and click **Authorize**. In that example we use **WxCC Engage Authorisation**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
+<br/>
+<br/>
 
 - Click on the back button for being redirected back to **Integrations** page and in front of **Webex CC Task** Click **Actions** → **Manage**.
 
 <img align="middle" src="images/Lab1_ManageIntegration2.png" width="1000" />
+<br/>
+<br/>
 
 - On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the authorizations mapped to this integration.
 
 - Click **Action** → **Add Authorization** associated with the **WxCC Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
+<br/>
+<br/>
 
 - Enter the **Authorization Name** (for example: **WxCC Authorisation**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**\<ID\>**@email.carehybrid.com) and click **Sign in**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
+<br/>
+<br/>
 
 - Click on the back button for being redirected back to **Integrations** page.
 
 - Verify that the status of the authorizations is changed to **Authorized**.
 <img align="middle" src="images/Lab1_authorized2.png" width="1000" />
+<br/>
+<br/>
 
 ## Step 2. Download and upload CA flows in Connect 
 > Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
@@ -91,28 +107,36 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 4) Login to the **Webex Connect** portal with the admin account.
 
-5) Nabigate to **Services** and click on **CREATE NEW SERVICE**
+5) Nabigate to **Services** and click on **CREATE NEW SERVICE**.
 
 <img align="middle" src="images/Services.png" width="1000" />
+<br/>
+<br/>
 
 6) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name and press on **CREATE** button. This will create a new service.
 > **Note** You can choose a different Service name. It is just an exmple.
 
-7) In the service click on **FLOWS** -> **CREATE FLOW**
+7) In the service click on **FLOWS** -> **CREATE FLOW**.
 
 <img align="middle" src="images/Flows.png" width="1000" />
+<br/>
+<br/>
 
-8) In the **FLOW NAME** section set **Task Close Flow**
+8) In the **FLOW NAME** section set **Task Close Flow**.
 
-9) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
+9) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file.
 
-10) Now you can click on **CREATE** button
+10) Now you can click on **CREATE** button.
 
 <img align="middle" src="images/Lab1_Create.png" width="1000" />
+<br/>
+<br/>
 
 11) In the new menu click on **SAVE** and then **MAKE LIVE**. On pop up window click on **MAKE LIVE** again.
 
 <img align="middle" src="images/Lab1_Live.png" width="1000" />
+<br/>
+<br/>
 
 12) **!!!** Click on back button in the flow and repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
 
@@ -147,7 +171,7 @@ The users have the following preconfiguration
 
 - Login to Managment Portal by accessing [https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}.
 
-- Enter the admin email address (cl1admin\<ID\>@email.carehybrid.com) and click **Sign in**
+- Enter the admin email address (cl1admin\<ID\>@email.carehybrid.com) and click **Sign in**.
 
 - Click on **_Provisioning_** and select **_Multimedia Profiles_**.
 
@@ -158,7 +182,8 @@ The users have the following preconfiguration
 - In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, , `3` for **_Social Channel_** and click on **_Save_** button.
 
 <img align="middle" src="images/Lab1_MMP.png" width="1000" />
-
+<br/>
+<br/>
 
 ### 2. Create new Site
 
@@ -170,7 +195,8 @@ The users have the following preconfiguration
 
 
 <img align="middle" src="images/Lab1_Site.png" width="1000" />
-
+<br/>
+<br/>
 
 ### 3. Create new Teams
 
@@ -189,6 +215,8 @@ The users have the following preconfiguration
 - Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
 
 <img align="middle" src="images/Lab1_Team.png" width="1000" />
+<br/>
+<br/>
 
 - Please follow the same steps as above to add an extra Team as `Team2`. 
 
@@ -200,7 +228,7 @@ The users have the following preconfiguration
 
 - Click on `...` for the **Agent** user, to launch the **_Edit_** view for a particular User configuration.
 
-- Make sure that the **_User Profile_** is set as **_Premium Agent User Profile_** 
+- Make sure that the **_User Profile_** is set as **_Premium Agent User Profile_**.
 
 - Click on **_Contact Center Enabled_** toggle to move it to **_On_**.
 
@@ -215,6 +243,8 @@ The users have the following preconfiguration
 - Make sure that the user are now shown with the **_Contact Center Enabled_** flag as `Yes` and **_Status_** as `Active`.
 
 <img align="middle" src="images/Lab1_User.png" width="1000" />
+<br/>
+<br/>
 
 - Please follow the same steps for **Supervisor** user. 
 
@@ -241,6 +271,8 @@ In the process...
 - Select the `Team1` and click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the next section.
 
 <img align="middle" src="images/Lab1_Login.png" width="1000" />
+<br/>
+<br/>
 
 [To top of this lab](#table-of-contents)
 
