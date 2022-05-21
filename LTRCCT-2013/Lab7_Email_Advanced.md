@@ -84,15 +84,15 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 
 ## Step 3. Autoreply Configuration
   
-In the default script, the autoreply is already preconfigured for all new tasks. In this step, we will enhance the answer by adding changing the message and adding the PIQ variable.
-  
-- Double click on the **Email** node and in the **MESSAGE**. 
+In the default workflow, auto-reply is already configured for all new tasks. In this step, we will improve the answer by changing the message and adding the PIQ variable.
+
+- Double-click the the **Email** node and in the **MESSAGE**. 
 
 <img align="middle" src="images/Lab7_autoanswer1.png" width="1000" />  
 <br/>
 <br/>
 
-- Set the customized message. Exampel: __Dear $(n2.email.senderName). We have successfully received your request. You have $(n1894.positionInQueue) Position In Queue.__ and click on **SAVE**.
+- Set the customized message. Exampel: __Dear $(n2.email.senderName). We have successfully received your request. You are $(n1894.positionInQueue) in Queue.__. Press **SAVE**.
   
 > **Note:** Your PIQ node ID can be different from the example above.
   
@@ -100,33 +100,33 @@ In the default script, the autoreply is already preconfigured for all new tasks.
 <br/>
 <br/>
 
-- Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
+- Publish your workflow by clicking **SAVE** and **MAKE LIVE**.
   
-- Make sure that the agent is in **IDLE** state in the Agent Desktop.
+- The goal is to get several emails in queue. Make sure that the agent is in **IDLE** state in the Agent Desktop. 
  
-- Go to your personal email account or ask the proktor to send 2 emails with different subject to the configured email address.
+- Go to your personal email account or ask the proctor to send 2 emails with different subjects to the configured email address.
 
 - Wait for 1 minute and check the auto response, you should see your PIQ.
   
   
 ## Step 4. Enhancing Routing based on a Subject
 In this task, you will be checking the **Subject** for **Cisco Live** text. If it is not there, the task will be closed with the auto-reply message "There is no Cisco Live text in your subject".
-The branch node allows you to split your flow based on conditional statements without the need to write any custom code. You can configure multiple branches within a single node. The node uses a top-down sequential approach to evaluate the conditions. The supported conditions are:
-    - Equals
-    - Not equals
-    - Less than
-    - Greater than
-    - Less than or equals
-    - Greater than or equals
-    - Regular expression (RegEx)
-    - Equals ignore case
-    - Contains
-    - Contains ignore case
-    - In
-    - Not in
-    - Starts with
-    - Ends with
-    - Between
+The branch node allows you to split your flow based on conditional statements without the need to write any custom code. You can configure multiple branches within a single node. The node uses a top-down sequential approach to evaluate the conditions. The supported conditions are:\
+    - Equals\
+    - Not equals\
+    - Less than\
+    - Greater than\
+    - Less than or equals\
+    - Greater than or equals\
+    - Regular expression (RegEx)\
+    - Equals ignore case\
+    - Contains\
+    - Contains ignore case\
+    - In\
+    - Not in\
+    - Starts with\
+    - Ends with\
+    - Between\
 
 - Click on **EDIT** button in the upper right corner.
  
