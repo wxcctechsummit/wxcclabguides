@@ -65,18 +65,19 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 | ------------- | ------------------------------------ | 
 | METHOD NAME         | Fetch Position in Queue | 
 | NODE RUNTIME AUTHORIZATION    | WxCC Authorization | 
-| QUEUE ID    | <Queue ID from Managment Portal> | 
+| QUEUE ID    | \<Queue ID from Managment Portal\> | 
 | TASK ID    | $(n1850.Task ID) | 
 | LOOKBACK MINUTES    | 5 | 
   
 <img align="middle" src="images/Lab7_workflow4.png" width="1000" />
+
 
 - Click **SAVE** and link all exit states of **PIQ and EWT** with **Update Conversation**.
   
 <img align="middle" src="images/Lab7_workflow5.png" width="1000" />
 
 
-Step 3. Autoreply Configuration
+## Step 3. Autoreply Configuration
   
 In the default script, the autoreply is already preconfigured for all new tasks. In this step, we will enhance the answer by adding changing the message and adding the PIQ variable.
   
