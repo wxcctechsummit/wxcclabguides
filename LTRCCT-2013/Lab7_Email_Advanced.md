@@ -52,13 +52,13 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 - Delete the existing **Queue Task** `Queued` link by clicking on it and pressing the delete button. Re-connect the **Queue Task** with the **PIQ and EWT**
 
 <img align="middle" src="images/Lab7_workflow3.png" width="1000" />
-\
+  
+  
 - You will have to set the Queue ID in the PIQ node. Copy the Queue ID from the **[Management Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** -> **_Provisioning_** -> **_Entry Points/Queues_** -> **_Queue_**
 
 <img align="middle" src="images/Lab7_QueueID.png" width="1000" />
-\
-\
-
+  
+  
 - Go back to Webex Connect and double click on the **PIQ and EWT** node. Set up the following configuration:
 
 | **Setting's Name** | **Value**                       |
@@ -70,8 +70,8 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 | LOOKBACK MINUTES    | 5 | 
   
 <img align="middle" src="images/Lab7_workflow4.png" width="1000" />
-\
-\
+  
+  
 
 - Click **SAVE** and link all exit states of **PIQ and EWT** with **Update Conversation**.
   
