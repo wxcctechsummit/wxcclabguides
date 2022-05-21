@@ -22,13 +22,14 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 1. You recived an admin credentials to configure in Managment Portal and Webex Connect.
 2. You recived an an Email account credentials.
-3. You have successfully compleated the previus Lab **Preconfiguration**
+3. You have successfully compleated the previus Lab1 **Preconfiguration**.
 
 # Lab Section
 
 ### Configuration Order
 <img align="middle" src="images/Lab2_ConfigOrder.png" width="1000" />
-
+<br/>
+<br/>
 
 ## Step 1. Gmail account configuration
 
@@ -49,21 +50,28 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Enable POP3/IMAP setting by clicking on settings icon on top right corner and selecting **See all settings**.
 
 <img align="middle" src="images/Lab2_Gmail1.png" width="1000" />
+<br/>
+<br/>
 
 - Now Click on **Forwarding and POP/IMAP**, enable the `POP Download` and `IMAP access` then click **Save Changes**.
 
 <img align="middle" src="images/Lab2_Gmail2.png" width="1000" />
-
+<br/>
+<br/>
 
 ### 2. Google Account Setting – Security setting (allow less secure app access)
 
-- Click on **Google Apps** icon on top right corner -> Select **Account**
+- Click on **Google Apps** icon on top right corner -> Select **Account**.
 
 <img align="middle" src="images/Lab2_Gmail3.png" width="1000" />
+<br/>
+<br/>
 
 - Select **Security** option and turn `ON` the **Less secure app access**. 
 
 <img align="middle" src="images/Lab2_Gmail4.png" width="1000" />
+<br/>
+<br/>
 
 - Do not close the gmail tab in the browser.
 
@@ -72,7 +80,8 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Use the following link to disable captcha for the account https://accounts.google.com/b/0/DisplayUnlockCaptcha and click Continue.
 
 <img align="middle" src="images/Lab2_Gmail5.png" width="1000" />
-
+<br/>
+<br/>
 
 ## Step 2. Create Email Asset and Register to WebeXCC
 
@@ -83,8 +92,10 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Select **Assets** -> **Apps** -> **CONFIGURE NEW APP** -> **Email**.
 
 <img align="middle" src="images/Lab2_Assest1.png" width="1000" />
+<br/>
+<br/>
 
-- Set the settings according to the table below
+- Set the settings according to the table below:
 
 | **Entity**          | **Name** |
 | ------------------- | -------- |
@@ -100,46 +111,66 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Click **TEST CONNECTION** and if test is successfully completed, click on **SAVE**.
 
 <img align="middle" src="images/Lab2_Assest2.png" width="1000" />
+<br/>
+<br/>
 
 - Click on **REGISTER TO WEBEX CC** -> Select the appropriate service (the default **My First Service**) and click **REGISTER**.
 
 <img align="middle" src="images/Lab2_Assest3.png" width="1000" />
+<br/>
+<br/>
 
 ### 2. Add forwarding Address
 
 - Copy the forwarding address from the created asset in previous step and in Gmail account. 
  
- <img align="middle" src="images/Lab2_Assest4.png" width="1000" />
+<img align="middle" src="images/Lab2_Assest4.png" width="1000" />
+<br/>
+<br/>
 
 - Go back to the Gmail account and click on settings icon on top right corner -> Select **See all settings**.
 
 <img align="middle" src="images/Lab2_Gmail1.png" width="1000" />
+<br/>
+<br/>
 
 - Click on **Forwarding and POP/IMAP** -> click on add a forwarding address -> Paste the copied forwarding address from the created asset. Then click on **Next**.
 
 <img align="middle" src="images/Lab2_Gmail6.png" width="1000" />
+<br/>
+<br/>
 
 - A new pop up tab opens and click **Proceed** and then click **OK** when it prompts.
 
 <img align="middle" src="images/Lab2_Gmail7.png" width="1000" />
+<br/>
+<br/>
 
 - Go back to Webex Connect and click on **Tools** -> **Export Logs**. 
 
 - Under Inbound logs, Select the App that was created -> Select Channel Event as `Incoming Email` -> Select the period as `Today` and click **Download**. 
 
 <img align="middle" src="images/Lab2_ExportLog1.png" width="1000" />
+<br/>
+<br/>
 
 - Once a log file is downloaded, open the log file, under the **Subject** column, copy the confirmation code. 
 
 <img align="middle" src="images/Lab2_ExportLog2.png" width="1000" />
+<br/>
+<br/>
 
 - Go back to the Gmail account, paste the code in the email account verification section and click verify.
 
 <img align="middle" src="images/Lab2_Gmail8.png" width="1000" />
+<br/>
+<br/>
 
 - Select **Forward a copy of incoming mail to** the verified address and click **Save Changes**.
 
 <img align="middle" src="images/Lab2_Gmail9.png" width="1000" />
+<br/>
+<br/>
 
 ## Step 3. Email Entry Point and Queue creation
 
@@ -162,6 +193,8 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Click on **Save** after comparing your values with the screenshot below.
 
 <img align="middle" src="images/Lab2_Email_EP.png" width="1000" />
+<br/>
+<br/>
 
 ### 2. Create Queue in Managment Portal 
 
@@ -186,7 +219,8 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Click on **Save** after comparing your values with the screenshot below.
 
 <img align="middle" src="images/Lab2_Email_Q.png" width="1000" />
-
+<br/>
+<br/>
 
 ## Step 4. Create/Upload Email flow
 
@@ -198,25 +232,33 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 - Go to Webex Connect, click on **Services** and select the service in which the Asset is created in step 2. It should be **My First Service**
 
-- In the service click on **FLOWS** -> **CREATE FLOW** 
+- In the service click on **FLOWS** -> **CREATE FLOW** .
 
 - Enter the **FLOW NAME** as **Email Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
 - Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
 <img align="middle" src="images/Lab2_WF1.png" width="1000" />
+<br/>
+<br/>
 
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
 
 <img align="middle" src="images/Lab2_WF2.png" width="1000" />
+<br/>
+<br/>
 
 - Click on **Settings** on top right corner and click on **Custom variables**. Here in **bizemailid** row, update the email address of the account that is added. Click on **SAVE**.
 
 <img align="middle" src="images/Lab2_WF3.png" width="1000" />
+<br/>
+<br/>
 
 - Finally click on Make Live on top right corner -> Select the Application/Asset that we have created and click Make Live.
 
 <img align="middle" src="images/Lab2_WF4.png" width="1000" />
+<br/>
+<br/>
 
 [To top of this lab](#table-of-contents)
 
@@ -227,10 +269,14 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Go to the Agent Desktop and make the agent Available. 
 
 <img align="middle" src="images/Lab2_Agent1.png" width="1000" />
+<br/>
+<br/>
 
 - The Email will be offered to the agent. Click "Accept" to handle the email.
 
 <img align="middle" src="images/Lab2_Agent2.png" width="1000" />
+<br/>
+<br/>
 
 - Click "Reply" or Reply All" to reply to the email and enter the body of the email and hit send button.
 
