@@ -203,7 +203,7 @@ You will be using this API key in your lab.
 <br/>
 
 - The smartsheet grid was created. And Columns’ ID were collected through API (we will need it for the API request when we will be adding a new row).
-Make sure that you have an access to the smartsheet table: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
+Make sure that you have an access to the [smartsheet table](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid).
 
 <img align="middle" src="images/Lab7_smartsheet2.png" width="1000" />  
 <br/>
