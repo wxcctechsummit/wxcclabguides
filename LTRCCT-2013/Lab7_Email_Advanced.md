@@ -22,6 +22,14 @@ This lab will give you a detailed understanding of the workflow logic. With that
 
 - You have successfully compleated the Lab1 and Lab2 (Email Configuration).
 
+### Quick Links
+
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> Smartsheet Table: [smartsheet table](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid)
+> Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
+
+
 # Lab Section
 
 ## Step 1. Email Workflow Overview
