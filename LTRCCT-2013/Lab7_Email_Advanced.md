@@ -110,8 +110,8 @@ In the default workflow, auto-reply is already configured for all new tasks. In 
   
   
 ## Step 4. Enhancing Routing based on a Subject
-In this task, you will be checking the **Subject** for **Cisco Live** text. If it is not there, the task will be closed with the auto-reply message "There is no Cisco Live text in your subject".
-The branch node allows you to split your flow based on conditional statements without the need to write any custom code. You can configure multiple branches within a single node. The node uses a top-down sequential approach to evaluate the conditions. The supported conditions are:\
+In this task, you will be checking the **Cisco Live** text in **Subject**. If it is not there, the task will be closed with the auto-reply message "There is no Cisco Live text in your subject".
+The branch node allows you to split your flow based on conditional statements without the need to write any custom code. You can configure multiple branches within a single node. The supported conditions are:\
     - Equals\
     - Not equals\
     - Less than\
@@ -128,21 +128,21 @@ The branch node allows you to split your flow based on conditional statements wi
     - Ends with\
     - Between\
 
-- Click on **EDIT** button in the upper right corner.
+- Click the **EDIT** button in the upper right corner.
  
-- Drug and drop the **Branch** node from the Node Palette to the main canvas.
+- Drag the **Branch** node from the nodes palette to the main canvas.
 
 <img align="middle" src="images/Lab7_subject1.png" width="1000" />  
 <br/>
 <br/>
 
-- Delete the existin **Create Task** **Created** link by clickin on it and pressing delete button. Re-connect **Create Task** with **Branch**
-  
+- Delete the existing **Create Task** `Created` link by clicking on it and pressing the delete button. Re-connect **Create Task** with **Branch**.
+   
 <img align="middle" src="images/Lab7_subject2.png" width="1000" />  
 <br/>
 <br/>
 
-- Double click on the **Branch** node and set the following conditions for Branch1: 
+- Double-click the **Branch** node and set the following conditions for Branch 1:
   
 | **Setting's Name** | **Value**                       |
 | ------------- | ------------------------------------ | 
@@ -150,18 +150,18 @@ The branch node allows you to split your flow based on conditional statements wi
 | CONDITION   | Regular expression (RegEx) | 
 | VALUE    | [cC][iI][sS][cC][oO]\s[lL][iI][vV][eE] | 
 
- 
+
 <img align="middle" src="images/Lab7_subject3.png" width="1000" />  
 <br/>
 <br/>
 
-- Drug and drop the **Email** node from the Node Palette to the main canvas. Connect exit **Branch1** with **Queue Task** and **None of the above** exit with the **Email**
+- Drug the **Email** node from the Node Palette to the main canvas. Connect exit `Branch1` with **Queue Task** and `None of the above` exit with the **Email**.
 
 <img align="middle" src="images/Lab7_subject4.png" width="1000" />  
 <br/>
 <br/>
 
-- Double click on the **Email** node and set the following settings: 
+Double-click the **Email** node and set the following options:
   
 | **Setting's Name** | **Value**                       |
 | ------------- | ------------------------------------ | 
@@ -176,40 +176,41 @@ The branch node allows you to split your flow based on conditional statements wi
 <br/>
 <br/>
 
-- Click on **SAVE** and link all exit events for the **Email** with the **Close Task**
+- Click **SAVE** and link all exit events of **Email** with **Close Task**.
 
 <img align="middle" src="images/Lab7_subject6.png" width="1000" />  
 <br/>
 <br/>
 
-- Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
+- Publish your workflow by clicking **SAVE** and **MAKE LIVE**.
   
-- Go to your personal email account or ask the proctor to send 2 emails (with and without the "Cisco Live" subject).
+- Go to your personal email account or ask the proctor to send 2 emails **with and without** the "Cisco Live" subject.
 
-- As a result, only 1 email should come into the Email queue. Wait for 1 minute and check the auto replies, 1 email should come with PIQ autoreply, another one with the "no Cisco Live in subject" message.
+- As a result, only 1 email should come into the Email queue. Wait for 1 minute and check the auto-replies, 1 email should come with PIQ autoreply, another one with the "no Cisco Live in subject" message.
 
   
 ## Step 5. Integration with Smartsheet using smartsheet APIs
-In this task, you will learn how to work with HTTP Request node. As the example we are going to use a smartsheet API. Smartsheet APIs allow you to programmatically access and manage Smartsheet data especially read and update sheets.
-
-In our case, if the subject does not contain "Cisco Live" we will be adding a new row with the details in this smartsheet table: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
+In this task, you will learn how to work with the **HTTP Request** node. As an example, we are going to use smartsheet APIs. Smartsheet APIs allow you to programmatically access and manage Smartsheet data especially read and update sheets.
+In this task, if the email's subject does not contain "Cisco Live" we will be adding a new row to the smartsheet with the email details. 
 
 ### 1. Preconfigured settings
 The 3 steps below were **preconfigured** for you. They has to be done only once.
->1) The smartsheet API key has been generated according to the guide https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests
+- The smartsheet API key has been generated according to the guide https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests
+You will be using this API key in your lab.
 
 <img align="middle" src="images/Lab7_smartsheet1.png" width="1000" />  
 <br/>
 <br/>
 
-> 2) The smartsheet grid was created. And Columns’ ID were collected through API (we will need it for the API request when we will be adding a new row).
+- The smartsheet grid was created. And Columns’ ID were collected through API (we will need it for the API request when we will be adding a new row).
+Make sure that you have an access to the smartsheet table: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
 
 <img align="middle" src="images/Lab7_smartsheet2.png" width="1000" />  
 <br/>
 <br/>
 
-> 3) We checked that we are able to add a row through the postman acording to the documentation: https://smartsheet.redoc.ly/#operation/rows-addToSheet
-It needs just for the verification, exactly the same we will be doing in the Email Workflow with HTTP Request node.
+- We checked that we are able to add a row through the postman acording to the [smartsheet documentation](https://smartsheet.redoc.ly/#operation/rows-addToSheet){:target="_blank"}.
+It needs just for the verification, exactly the same we will be doing in the Email Workflow with the **HTTP Request** node.
   
 <img align="middle" src="images/Lab7_smartsheet3.png" width="1000" />  
 <br/>
@@ -217,7 +218,7 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 
 ### 2. HTTP Request configuration  
 
-- First Click on **EDIT** button in the upper right corner.
+- First Click the **EDIT** button in the upper right corner.
   
 - Drug and drop the **HTTP Request** node from the Node Palette to the main canvas. Connect exit **Email** with **On Success** with the **HTTP Request**
 
@@ -225,7 +226,7 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 <br/>
 <br/>
 
-- Double click on the **HTTP Request** node, set the following settings and click **SAVE**.
+- Double-click the **HTTP Request** node, set the following options, and click **SAVE**.
   
 | **Setting's Name** | **Value**                       |
 | ------------- | ------------------------------------ | 
@@ -263,13 +264,13 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 <br/>
 <br/>
 
-- Connect all exits with **Close Task** node.
+- Connect all exits with the **Close Task** node.
 
 <img align="middle" src="images/Lab7_smartsheet6.png" width="1000" /> 
 <br/>
 <br/>
 
-- Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
+- Publish your workflow by clicking the **SAVE** and **MAKE LIVE**.
   
 - Go to your personal email account or ask the proctor to send 1 email without the "Cisco Live" subject.
 
@@ -280,15 +281,15 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 The idea is to show that you can integrate the Flow with Webex Teams and this can be used as the notifications for supervisors based on the specific criteria.
 This section has the bonus category where we can check how you understand this topic. Here we give you the task without a step-by-step explanation the result will be the message from the Webex bot in our Cisco Live space. 
 
-**Use case:** As a supervisor, I want to get the notifications in the Webex Teams if there are more then 3 email in queue (PIQ).
+**Use case:** As a supervisor, I want to get the notifications in the Webex Teams if there are more then 3 email in queue (PIQ > 3).
 
-1) The Webex API token is generated for you
+1) The Webex API token is generated for you.
   
 <img align="middle" src="images/Lab7_webex1.png" width="1000" />   
 <br/>
 <br/>
 
-2) Here is the example of the Postman request
+2) Here is the example of the Postman request.
 
 <img align="middle" src="images/Lab7_webex2.png" width="1000" /> 
 <br/>
