@@ -126,7 +126,7 @@ The branch node allows you to split your flow based on conditional statements wi
     - Not in\
     - Starts with\
     - Ends with\
-    - Between\
+    - Between
 
 - Click the **EDIT** button in the upper right corner.
  
