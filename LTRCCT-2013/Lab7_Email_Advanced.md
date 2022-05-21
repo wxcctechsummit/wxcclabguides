@@ -73,14 +73,14 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 | LOOKBACK MINUTES    | 5 | 
   
 <img align="middle" src="images/Lab7_workflow4.png" width="1000" />
-  
-  
+<br/>
+<br/>
 
 - Click **SAVE** and link all exit states of **PIQ and EWT** with **Update Conversation**.
   
 <img align="middle" src="images/Lab7_workflow5.png" width="1000" />
-\
-\
+<br/>
+<br/>
 
 ## Step 3. Autoreply Configuration
   
@@ -89,12 +89,16 @@ In the default script, the autoreply is already preconfigured for all new tasks.
 - Double click on the **Email** node and in the **MESSAGE**. 
 
 <img align="middle" src="images/Lab7_autoanswer1.png" width="1000" />  
+<br/>
+<br/>
 
 - Set the customized message. Exampel: __Dear $(n2.email.senderName). We have successfully received your request. You have $(n1894.positionInQueue) Position In Queue.__ and click on **SAVE**.
   
 > **Note:** Your PIQ node ID can be different from the example above.
   
 <img align="middle" src="images/Lab7_autoanswer2.png" width="1000" />  
+<br/>
+<br/>
 
 - Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
   
@@ -129,14 +133,18 @@ The branch node allows you to split your flow based on conditional statements wi
 - Drug and drop the **Branch** node from the Node Palette to the main canvas.
 
 <img align="middle" src="images/Lab7_subject1.png" width="1000" />  
+<br/>
+<br/>
 
 - Delete the existin **Create Task** **Created** link by clickin on it and pressing delete button. Re-connect **Create Task** with **Branch**
   
 <img align="middle" src="images/Lab7_subject2.png" width="1000" />  
-  
+<br/>
+<br/>
+
 - Double click on the **Branch** node and set the following conditions for Branch1: 
   
-  | **Setting's Name** | **Value**                       |
+| **Setting's Name** | **Value**                       |
 | ------------- | ------------------------------------ | 
 | Variable    | $(n2.email.subject) | 
 | CONDITION   | Regular expression (RegEx) | 
@@ -144,11 +152,15 @@ The branch node allows you to split your flow based on conditional statements wi
 
  
 <img align="middle" src="images/Lab7_subject3.png" width="1000" />  
-  
+<br/>
+<br/>
+
 - Drug and drop the **Email** node from the Node Palette to the main canvas. Connect exit **Branch1** with **Queue Task** and **None of the above** exit with the **Email**
 
 <img align="middle" src="images/Lab7_subject4.png" width="1000" />  
-  
+<br/>
+<br/>
+
 - Double click on the **Email** node and set the following settings: 
   
 | **Setting's Name** | **Value**                       |
@@ -161,11 +173,15 @@ The branch node allows you to split your flow based on conditional statements wi
 | VALUE    | $(n2.email.messageId) |   
   
 <img align="middle" src="images/Lab7_subject5.png" width="1000" />  
-  
+<br/>
+<br/>
+
 - Click on **SAVE** and link all exit events for the **Email** with the **Close Task**
 
 <img align="middle" src="images/Lab7_subject6.png" width="1000" />  
-  
+<br/>
+<br/>
+
 - Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
   
 - Go to your personal email account or ask the proctor to send 2 emails (with and without the "Cisco Live" subject).
@@ -183,15 +199,21 @@ The 3 steps below were **preconfigured** for you. They has to be done only once.
 >1) The smartsheet API key has been generated according to the guide https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests
 
 <img align="middle" src="images/Lab7_smartsheet1.png" width="1000" />  
+<br/>
+<br/>
 
 > 2) The smartsheet grid was created. And Columns’ ID were collected through API (we will need it for the API request when we will be adding a new row).
 
 <img align="middle" src="images/Lab7_smartsheet2.png" width="1000" />  
-  
+<br/>
+<br/>
+
 > 3) We checked that we are able to add a row through the postman acording to the documentation: https://smartsheet.redoc.ly/#operation/rows-addToSheet
 It needs just for the verification, exactly the same we will be doing in the Email Workflow with HTTP Request node.
   
 <img align="middle" src="images/Lab7_smartsheet3.png" width="1000" />  
+<br/>
+<br/>
 
 ### 2. HTTP Request configuration  
 
@@ -200,6 +222,8 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 - Drug and drop the **HTTP Request** node from the Node Palette to the main canvas. Connect exit **Email** with **On Success** with the **HTTP Request**
 
 <img align="middle" src="images/Lab7_smartsheet4.png" width="1000" />  
+<br/>
+<br/>
 
 - Double click on the **HTTP Request** node, set the following settings and click **SAVE**.
   
@@ -209,7 +233,11 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 | ENDPOINT URL   | https://api.smartsheet.com/2.0/sheets/6430831221729156/rows | 
 | Authorization    | Bearer XXXXXXXXXXXXXXXXXX |   
 | Content-Type    | application/json |   
-| BODY    | {
+| TIMEOUT    | 3000 |   
+
+**BODY:**
+```
+{
     "cells": [
       {
         "columnId": 8617723039115140,
@@ -227,14 +255,19 @@ It needs just for the verification, exactly the same we will be doing in the Ema
         "strict": false
       }
     ]
-  } |   
-| TIMEOUT    | 3000 |   
+  }
+```
+
   
 <img align="middle" src="images/Lab7_smartsheet5.png" width="1000" /> 
-  
+<br/>
+<br/>
+
 - Connect all exits with **Close Task** node.
 
 <img align="middle" src="images/Lab7_smartsheet6.png" width="1000" /> 
+<br/>
+<br/>
 
 - Publish your workflow by clicking on **SAVE** and **MAKE LIVE**.
   
@@ -252,11 +285,15 @@ This section has the bonus category where we can check how you understand this t
 1) The Webex API token is generated for you
   
 <img align="middle" src="images/Lab7_webex1.png" width="1000" />   
-  
+<br/>
+<br/>
+
 2) Here is the example of the Postman request
 
 <img align="middle" src="images/Lab7_webex2.png" width="1000" /> 
-  
+<br/>
+<br/>
+
 3) **HTTP Request** node settings: 
   
 | **Setting's Name** | **Value**                       |
@@ -265,14 +302,19 @@ This section has the bonus category where we can check how you understand this t
 | ENDPOINT URL   | https://webexapis.com/v1/messages | 
 | Authorization    | Bearer XXXXXXXXXXXXXXXXXX |   
 | Content-Type    | application/json |   
-| BODY    | {
-    "roomId":"Y2lzY29zcGFyazovL3VzL1JPT00vYzI5ODg1ZDAtZDg3ZC0xMWVjLTk2ZjQtZmQzNzA1YTFjMGJi",
-    "text":"There are more than $(nX.positionInQueue) tasks in queue!"
-} |   
 | TIMEOUT    | 3000 |   
 
-<img align="middle" src="images/Lab7_webex3.png" width="1000" /> 
+**BODY:**
+```
+{
+    "roomId":"Y2lzY29zcGFyazovL3VzL1JPT00vYzI5ODg1ZDAtZDg3ZC0xMWVjLTk2ZjQtZmQzNzA1YTFjMGJi",
+    "text":"There are more than $(nX.positionInQueue) tasks in queue!"
+}
+```
 
+<img align="middle" src="images/Lab7_webex3.png" width="1000" /> 
+<br/>
+<br/>
  
 
 [Back to top](#table-of-contents)
