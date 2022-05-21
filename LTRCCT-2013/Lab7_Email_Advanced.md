@@ -29,9 +29,7 @@ This lab will give you a detailed understanding of the workflow logic. With that
 Before proceeding with the configuration task, you need to understand the flow logic. Please follow the diagram below and call the proctor if you have any questions.
 
 <img align="middle" src="images/Lab7_workflow.png" width="1000" />
-
-
-
+\
 ## Step 2. Position In Queue Configuration
 In this task, we will use the predefined node **PIQ and EWT**. This node provides the caller’s current Position in Queue (PIQ) and the Estimated Wait Time (EWT). The flow developer can use these variables with flow logic to determine agent availability in a queue and route elsewhere when needed. The node has three types of output flow branches. These branches get triggered based on return status and values of EWT and PIQ.
   - **Success**: Triggered when both EWT and PIQ APIs succeed and return nonnegative values.
@@ -55,7 +53,6 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 
 <img align="middle" src="images/Lab7_workflow3.png" width="1000" />
 \
-
 - You will have to set the Queue ID in the PIQ node. Copy the Queue ID from the **[Management Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** -> **_Provisioning_** -> **_Entry Points/Queues_** -> **_Queue_**
 
 <img align="middle" src="images/Lab7_QueueID.png" width="1000" />
