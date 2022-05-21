@@ -24,6 +24,16 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 2. You recived an an Email account credentials.
 3. You have successfully compleated the previus Lab1 **Preconfiguration**.
 
+### Quick Links
+
+> Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
+> Gmail: **[https://mail.google.com](https://mail.google.com){:target="_blank"}**\
+> Workflows: **[GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}**\
+> Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
+
+
 # Lab Section
 
 ### Configuration Order
