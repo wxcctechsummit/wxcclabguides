@@ -15,8 +15,7 @@ title: 'Lab 7: Advanced Email Configuration'
 
 ### Lab Objective
 
-This lab will give you a detailed understanding of the predefined workflow logic. With that, you will be able to improve the script and do a more advanced configuration.
-This lab includes multiple script customizations and shows how to create an HTTP Request which is needed for integration with external HTTP services (as an example it uses smartsheet API).
+This lab will give you a detailed understanding of the workflow logic. With that, you will be able to improve the script and do a more advanced configuration. This lab includes multiple script customizations and shows how to create an HTTP Request which is needed for integration with external HTTP services (as an example it uses smartsheet and Webex APIs).
 
 
 ### Pre-requisite
@@ -34,29 +33,31 @@ Before proceeding with the configuration task, you need to understand the flow l
 
 
 ## Step 2. Position In Queue Configuration
-In this task we will use the predefined node **PIQ and EWT**. This node provides the caller's current Position in Queue (PIQ) and the Estimated Wait Time (EWT). The flow developer can use these variables with flow logic to determine agent availability in a queue and route elsewhere when needed.
-The node has three types of output flow branches. These branches get triggered based on return status and values of EWT and PIQ.
-  - Success: Triggered when both EWT and PIQ APIs succeed and return nonnegative values.
-  - Insufficient Information Flow: Triggered when the PIQ API returns a valid variable value, and EWT has the value as -1. 
-  - Failure: This branch is triggered when PIQ API or EWT API fail and/or return invalid values. 
+In this task, we will use the predefined node **PIQ and EWT**. This node provides the caller’s current Position in Queue (PIQ) and the Estimated Wait Time (EWT). The flow developer can use these variables with flow logic to determine agent availability in a queue and route elsewhere when needed. The node has three types of output flow branches. These branches get triggered based on return status and values of EWT and PIQ.
+  - **Success**: Triggered when both EWT and PIQ APIs succeed and return nonnegative values.
+  - **Insufficient Information Flow**: Triggered when the PIQ API returns a valid variable value, and EWT has the value as -1. 
+  - **Failure**: This branch is triggered when PIQ API or EWT API fail and/or return invalid values. 
 
 > **Note:** PIQ/EWT node can currently be used only after the Queue Task Node.
 
 - Go to the **Services - My First Service** and open the **Email Inbound Flow**.
 
-- Click on **EDIT** button in the upper right corner.
+- Click on the **EDIT** button in the upper right corner.
 
 - Drug and drop the **PIQ and EWT** node from the Node Palette to the main canvas.
 
 <img align="middle" src="images/Lab7_workflow2.png" width="1000" />
 
-- Delete the existin **Queue Task** **Queued link** by clickin on it and pressing delete button. Re-connect **Queue Task** with **PIQ and EWT**
+
+- Delete the existing **Queue Task** `Queued` link by clicking on it and pressing the delete button. Re-connect the **Queue Task** with the **PIQ and EWT**
 
 <img align="middle" src="images/Lab7_workflow3.png" width="1000" />
+
 
 - You will have to set the Queue ID in the PIQ node. Copy the Queue ID from the **[Management Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** -> **_Provisioning_** -> **_Entry Points/Queues_** -> **_Queue_**
 
 <img align="middle" src="images/Lab7_QueueID.png" width="1000" />
+
 
 - Go back to Webex Connect and double click on the **PIQ and EWT** node. Set up the following configuration:
 
