@@ -6,7 +6,7 @@ title: 'Lab 7: Advanced Email Configuration'
 - [Step 1. Email Workflow Overview](#step-1-email-workflow-overview)
 - [Step 2. Position In Queue Configuration](#step-2-position-in-queue-configuration)
 - [Step 3. Autoreply Configuration](#step-3-autoreply-configuration)
-- [Step 4. Enhancing Routing based on a Subject](#step-2-enhancing-routing-based-on-a-subject)
+- [Step 4. Enhancing Routing based on a Subject](#step-4-enhancing-routing-based-on-a-subject)
 - [Step 5. Integration with Smartsheet using smartsheet APIs](#step-5-integration-with-smartsheet-using-smartsheet-apis)
 - [BONUS TASK - Integration with Webex Teams (Alarm notification)](#bonus-task-integration-with-webex-teams-alarm-notification)
 
@@ -189,7 +189,7 @@ The branch node allows you to split your flow based on conditional statements wi
 - As a result, only 1 email should come into the Email queue. Wait for 1 minute and check the auto replies, 1 email should come with PIQ autoreply, another one with the "no Cisco Live in subject" message.
 
   
-## Step 6. Integration with Smartsheet using smartsheet APIs
+## Step 5. Integration with Smartsheet using smartsheet APIs
 In this task, you will learn how to work with HTTP Request node. As the example we are going to use a smartsheet API. Smartsheet APIs allow you to programmatically access and manage Smartsheet data especially read and update sheets.
 
 In our case, if the subject does not contain "Cisco Live" we will be adding a new row with the details in this smartsheet table: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
