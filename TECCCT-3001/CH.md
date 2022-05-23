@@ -310,11 +310,10 @@ This is a supportive video that does not require any actions since your tenant i
 ### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummits_2022/HomePageUS.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/HomePage.html";}
 function nextLab() 
  {
- window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummits_2022/IVR.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/IVR.html";
  }
 </script>
 
