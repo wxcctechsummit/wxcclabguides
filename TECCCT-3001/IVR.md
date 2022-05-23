@@ -577,7 +577,7 @@ function nextLab()
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Take Survey and Go to Lab 3</button>
+  padding: 10px;">Go to Lab 3</button>
 
 
 </div>
