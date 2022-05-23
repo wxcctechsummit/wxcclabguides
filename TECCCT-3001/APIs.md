@@ -580,7 +580,7 @@ function celeButton()
 	<button onclick="celeButton()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Take Survey and Finish Labs</button>
+  padding: 10px;">Press to Finish the Lab</button>
 </div>
 
 <br />
