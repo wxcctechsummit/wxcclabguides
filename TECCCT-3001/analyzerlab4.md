@@ -123,6 +123,6 @@ NOTE: To execute this lab, you will need to have some realtime sessions running 
 
 
 ## Next Lab is Lab 6: Analyzer Exercises 5
-> * [Lab 6: Analyzer Exercises 5](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/analyzerlab5.html)
+> * [Lab 6: Analyzer Exercises 5](https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/analyzerlab5.html)
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
