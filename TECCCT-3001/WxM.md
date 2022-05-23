@@ -220,11 +220,10 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/HomePage.html";}
 function nextLab() 
  {
- window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/APIs.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/APIs.html";
  }
 </script>
 
