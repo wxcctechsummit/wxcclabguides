@@ -83,6 +83,6 @@ This lab is designed to dig deeper into Analyzer and rather than copying and edi
 6. This section is done.  When complete, move to Lab exercises 5.
 
 ## Next Lab is Lab 6: Analyzer Exercises 4: Advanced Insights
-> * [Lab 6: Analyzer Exercises 4](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/analyzerlab4.html)
+> * [Lab 6: Analyzer Exercises 4](https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/analyzerlab4.html)
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
