@@ -72,6 +72,6 @@ We will also be creating two new reports (one for Call and one for agent) to cap
 10. Congratulations.  This completes Lab 2.  Proceed to Lab 3.
 
 ## Next Lab 6: Analyzer Exercises 3: Custom Visualizations
-> * [Lab 6: Analyzer Exercises 3](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/analyzerlab3.html)
+> * [Lab 6: Analyzer Exercises 3](https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/analyzerlab3.html)
 
 [Back to top](#webex-cc-partner-summit-lab5-analyzer-lab)
