@@ -95,11 +95,10 @@ NOTE: You may not see report outputs as shown in the videos which has some chann
 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/HomePage.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/HomePage.html";}
 function nextLab() 
  {
- window.open("https://app.smartsheet.com/b/form/42c2c1f4e71940088ad0ea8053ac3006", '_blank');
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/WxM.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/WxM.html";
  }
 </script>
 
