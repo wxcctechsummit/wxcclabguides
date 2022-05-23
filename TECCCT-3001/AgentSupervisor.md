@@ -292,6 +292,6 @@ function nextLab()
 <div id="button-row">	
 <button onclick="mainPage()" style="border-radius: 5px;background-color: rgb(116,191,75);padding: 10px">Go back to Main Page</button>
 
-<button onclick="nextLab()" style="position: absolute;right: 200px;border-radius: 5px;background-color: rgb(116,191,75);padding: 10px;">Take Survey and Go to Lab 4</button>
+<button onclick="nextLab()" style="position: absolute;right: 200px;border-radius: 5px;background-color: rgb(116,191,75);padding: 10px;">Go to Lab 4</button>
 
 </div>
