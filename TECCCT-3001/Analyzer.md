@@ -25,7 +25,7 @@ This lab was created with existing Supervisor Profiles as well as Team designati
 - Lab may state to change the Supervisor Profile for your student number.  Supervisor Team 3 for example.  This profile will not exist on your allocated tenant unless you create the profile.
 
 `Resolution` of these designations can be accomplished with some of these suggestions which should be done prior to going through these labs.
-- Previous videos specified creating `Team1_TS` and if those were done then supplement the training video with using a team you created earlier.
+- Previous videos specified creating `Team1_CL` and if those were done then supplement the training video with using a team you created earlier.
 - If no Supervisor Profile was previously created and no users were designated as a Supervisor, follow the guideline below
 	- In Control Hub under Users, ensure that at least one of your users is designated as a Supervisor
 	- In WebexCC ensure that a Supervisor Profile is assigned to that user.  You may create your own supervisor profile or use the stock profile in the system.
