@@ -91,7 +91,6 @@ NOTE: You may not see report outputs as shown in the videos which has some chann
 ---
 
 ### Congratulations, you have compleated all Lab tasks! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 
 <script>
