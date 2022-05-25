@@ -20,13 +20,13 @@ This lab will give you a detailed understanding of the workflow logic. With that
 
 ### Pre-requisite
 
-- You have successfully compleated the Lab1 and Lab2 (Email Configuration).
+You have successfully compleated the Lab1 and Lab2 (Email Configuration).
 
 ### Quick Links
 
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Smartsheet Table: [smartsheet table](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid)
+> Smartsheet Table: **[smartsheet table](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid){:target="_blank"}**\
 > Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
 
 
@@ -102,7 +102,7 @@ In the default workflow, auto-reply is already configured for all new tasks. In 
 
 - Set the customized message. Exampel: __Dear $(n2.email.senderName). We have successfully received your request. You are $(n1894.positionInQueue) in Queue.__. Press **SAVE**.
   
-> **Note:** Your PIQ node ID can be different from the example above.
+> **Note:** Your PIQ node ID can be different from the example above. Select the right variable from the **Input Variables** in the right panel.
   
 <img align="middle" src="images/Lab7_autoanswer2.png" width="1000" />  
 <br/>
@@ -203,7 +203,7 @@ In this task, if the email's subject does not contain "Cisco Live" we will be ad
 
 ### 1. Preconfigured settings
 The 3 steps below were **preconfigured** for you. They has to be done only once.
-- The smartsheet API key has been generated according to the guide https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests
+- The smartsheet API key has been generated according to the [smarthseet guide](https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests){:target="_blank"}.
 You will be using this API key in your lab.
 
 <img align="middle" src="images/Lab7_smartsheet1.png" width="1000" />  
@@ -211,7 +211,7 @@ You will be using this API key in your lab.
 <br/>
 
 - The smartsheet grid was created. And Columns’ ID were collected through API (we will need it for the API request when we will be adding a new row).
-Make sure that you have an access to the [smartsheet table](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid).
+Make sure that you have an access to the [smartsheet table](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid){:target="_blank"}.
 
 <img align="middle" src="images/Lab7_smartsheet2.png" width="1000" />  
 <br/>
@@ -282,7 +282,7 @@ It needs just for the verification, exactly the same we will be doing in the Ema
   
 - Go to your personal email account or ask the proctor to send 1 email without the "Cisco Live" subject.
 
-- After 1 minute check the smartsheet table. The row with the email details has to appear: https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid
+- After 1 minute check the smartsheet table. The row with the email details has to appear: [https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid){:target="_blank"}
   
  
 ## BONUS TASK - Integration with Webex Teams (Alarm notification)
