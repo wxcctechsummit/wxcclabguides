@@ -211,7 +211,6 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 ---
 
 ### **Congratulations! Google CCAI Integration lab is now complete!**
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 [Back to top](#table-of-contents)
 
