@@ -116,9 +116,9 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 - Click on **_New Layout_**.
 
-- Provide the following **name**: `CustomDesktopLayout_<ID>_TS`. Your \<ID\> is provided in the email in the **"Attendee ID"** line.
+- Provide the following **name**: `CustomDesktopLayout_<ID>_CL`. Your \<ID\> is provided in the email in the **"Attendee ID"** line.
 
-- Select `Team2_<ID>_TS` as Team.
+- Select `Team2_<ID>_CL` as Team.
 
 - Click **_Upload_** button to upload the modified JSON file.	
 
@@ -130,7 +130,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 - Open the **_User Profile_** and click on the arrow `>` under **_Team_**.
 
-- Change the team of the agent to `Team2_<ID>_TS`.
+- Change the team of the agent to `Team2_<ID>_CL`.
 
 - Click on **_Save Team Selection_**.
 
@@ -151,7 +151,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 - Provide any preferable **name and description**.
 
-- Select `Team1_<ID>_TS` again as Team.
+- Select `Team1_<ID>_CL` again as Team.
 
 - Click **_Upload_** button to upload the modified JSON file.
 
@@ -159,7 +159,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 ### 2. Verify the new custom desktop layout
 
-- Go back to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** and change the team to `Team1_<ID>_TS`.
+- Go back to the **[Agent Desktop](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** and change the team to `Team1_<ID>_CL`.
 
 - **Explore** the new Desktop Layout, new widgets have been added.
 
@@ -246,7 +246,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 ### 2. Supervisor’s User Profile
 
-- Make sure the agent is logged back into the agent interface. During the agent login select the `Team2_<ID>_TS`.
+- Make sure the agent is logged back into the agent interface. During the agent login select the `Team2_<ID>_CL`.
 
 - In the **[Management Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**_, navigate to **_Provisioning_** and select **_User Profiles_**.
 
@@ -256,7 +256,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 - In the **User Profile** page click on **Access Rights**.
 
-- In **Teams** field set only team1 `Team1_<ID>_TS` and click **Save**.
+- In **Teams** field set only team1 `Team1_<ID>_CL` and click **Save**.
 
 - Navigate to **_Provisioning_**, select **_Users_** and modify your supervisor account.
 
@@ -268,7 +268,7 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 
 - Verify that there are **no agents in the `Agent State Data – Realtime` dashboard** with a new profile.
 
-- Go to the agent desktop and change the team settings. **Switch the agent to `Team1_<ID>_TS`**.
+- Go to the agent desktop and change the team settings. **Switch the agent to `Team1_<ID>_CL`**.
 
 - In the agent dashboard click the **Auto Refresh** button and make sure the agent appears.
 
@@ -278,7 +278,6 @@ The Agent Desktop is divided in 6 sections. In the image above you can see a gen
 ---
 
 ### Congratulations, you have compleated Lab 3 tasks! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 
 <script>
