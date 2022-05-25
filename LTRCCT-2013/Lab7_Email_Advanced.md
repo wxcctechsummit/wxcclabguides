@@ -118,8 +118,9 @@ In the default workflow, auto-reply is already configured for all new tasks. In 
   
   
 ## Step 4. Enhancing Routing based on a Subject
-In this task, you will be checking the **Cisco Live** text in **Subject**. If it is not there, the task will be closed with the auto-reply message "There is no Cisco Live text in your subject".
-The branch node allows you to split your flow based on conditional statements without the need to write any custom code. You can configure multiple branches within a single node. The supported conditions are:\
+In this task, you will be checking **"Cisco Live"** text in the **Subject**. If it is not there, the task will be routed to another queue **Email_Q2**.
+
+We will use the **Branch** node which allows you to split your flow based on conditional statements without the need to write any custom code. You can configure multiple branches within a single node. The supported conditions are:\
     - Equals\
     - Not equals\
     - Less than\
@@ -163,38 +164,61 @@ The branch node allows you to split your flow based on conditional statements wi
 <br/>
 <br/>
 
-- Drug the **Email** node from the Node Palette to the main canvas. Connect exit `Branch1` with **Queue Task** and `None of the above` exit with the **Email**.
+- Drug a second **Queue Task** node from the Node Palette to the main canvas. 
+
+- Connect exit `Branch1` with the second **Queue Task**. Connect `None of the above` exit with the first (existing) **Queue Task**.
+
+- Connect `onError` node outcome with the  **Close Conversation** .
 
 <img align="middle" src="images/Lab7_subject4.png" width="1000" />  
 <br/>
 <br/>
 
-Double-click the **Email** node and set the following options:
+Double-click the second **Queue Task** node and set the following options:
   
 | **Setting's Name** | **Value**                       |
 | ------------- | ------------------------------------ | 
-| DESTINATION ID    | $(n2.email.subject) | 
-| FROM NAME   | $(n2.email.senderName) | 
-| SUBJECT    | $(n2.email.subject) |   
-| MESSAGE    | There is no "Cisco Live" text in your subject |   
-| HEADER PARAMETER    | In-Reply-To |   
-| VALUE    | $(n2.email.messageId) |   
+| NODE AUTHORIZATION    | \<WxCC Authorisation\>  | 
+| TASK ID   | $(flid) | 
+| CONVERSATION ID    | $(conversationId) |   
+| MEDIA TYPE    | Email |   
+| MEDIA CHANNEL    | Email |   
+| QUEUE NAME    | Email_Q2 |   
   
 <img align="middle" src="images/Lab7_subject5.png" width="1000" />  
 <br/>
 <br/>
 
-- Click **SAVE** and link all exit events of **Email** with **Close Task**.
+- Click **SAVE** and link all exit events of the second **Queue Task** node:
+  - `Queued` with **PIQ and EWT**.
+  - `onErro`, `OnTimeout`, `onInvalideData`, `taskFailed`, etc with the **Close Task**.
 
 <img align="middle" src="images/Lab7_subject6.png" width="1000" />  
 <br/>
 <br/>
 
 - Publish your workflow by clicking **SAVE** and **MAKE LIVE**.
-  
+
 - Go to your personal email account or ask the proctor to send 2 emails **with and without** the "Cisco Live" subject.
 
-- As a result, only 1 email should come into the Email queue. Wait for 1 minute and check the auto-replies, 1 email should come with PIQ autoreply, another one with the "no Cisco Live in subject" message.
+- Go to the agent desktop [https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}. Sign in as the agent in "Team1" and make the agent **Available**. You should get only 1 email without "Cisco Live" subject. 
+
+<img align="middle" src="images/Lab7_subject7.png" width="1000" />  
+<br/>
+<br/>
+
+- End this task.
+
+- Change the agent team, by clicking on **Profile Settings**. In the Team section, choose the `Team2` from the Team drop-down list and click **Save Team Selection**.
+
+> **Note:** You cannot change your team if you have active tasks, interactions, or incoming task requests. The Team option is disabled.
+
+
+<img align="middle" src="images/Lab7_subject8.png" width="1000" />  
+<br/>
+<br/>
+
+- Make the agent **Available**. As a result, the second email should come into the Email queue with the **"Cisco Live"** subject. Wait for 1 minute and check the auto-replies, 1 email should come with PIQ autoreply.
 
   
 ## Step 5. Integration with Smartsheet using smartsheet APIs
