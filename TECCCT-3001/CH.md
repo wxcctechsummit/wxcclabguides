@@ -5,7 +5,6 @@ title: 'Lab 1: Control Hub And Admin Portal'
 ### Overview of the lab:
 
 In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by a customer administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. At the end of the lab, you should be able to log in to an agent interface with the configured user extension.
-- **It is assumed that Partners involved in this summit have already configured their GOLD tenant.**
 
 # Table of Contents
 
@@ -25,8 +24,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
   * [2. Download and Login in the Webex Calling app for PC or Mac](#2-download-and-login-in-the-webex-calling-app-for-pc-or-mac)
   * [3. Download and Login in the Webex Calling app for mobile](#3-download-and-login-in-the-webex-calling-app-for-mobile)
   * [4. Agent Desktop Login](#4-agent-desktop-login)
-- [Part 5: BONUS Tenant Creation Walkthrough](#part-5-bonus-tenant-creation-walkthrough)
-- [Part 6: Bonus Video Only Trial Tenant Setup](#part-6-bonus-trial-tenant-setup-video)
+
 
 # Introduction
 
@@ -37,13 +35,18 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Pre-requisites
 
-- You have Admin access to Control Hub and can create your GOLD tenant OR already have a GOLD Tenant created
+- You have recived the **admin login** credentials with a full admin access.
+
+- You have 2 **calling numbers** assigned to your POD.
+
+- You need 2 devices where you can install webex calling (example: PC or Mac and Mobile).
 
 
 ### Quick Links
 
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
+> Mailinator: **[https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
 > Webex Calling app **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}**
 
@@ -58,9 +61,10 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 | **User Role** | **User email**      | **User Extension**                   |
 | ----------- | ----------------- | -------------------------------- |
-| Agent        | agent1<@youremail.com> | <assign a DN> |
-| Supervisor         | supervisor1<@youremail.com>  | <assign a DN> |
+| Agent        | agent1_\<ID\>@mailinator.com   | 1XXX |
+| Supervisor         | supervisor1_\<ID\>@mailinator.com  | 2XXX |
 
+> **NOTE:** Your \<IDs\> was provided through the email in the **"Attendee ID"** line. It's based on the first letter of your name plus your surname. You can share your tenant with multiple administrators in your organization, in that case, the **ID** and the **User Ext** should be unique for each user.
 
 
 ### 1. Add an agent and a supervisor users and configure the calling extension
@@ -76,9 +80,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Select **_Next_** in **_Manage Users_** pane.
 
 - Input the **Email addresses** of the agent and supervisor users and click **_Next_**. 
-	- Users and email addresses should have already been created for the purpose of these exercises.  
 
-- For consistency, verify that the **Email addresses** are same as in the table above and click **_Next_**.  *(this step is not mandatory but will help with the consistency of the labs)*
+- Verify that the **Email addresses** are same as in the table above and click **_Next_**.
 
 - Check **_Messaging_** , **_Webex Calling (Professional)_** & **_Contact Center_**.
 
@@ -96,7 +99,12 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Select the supervisor user and modify his role to **_Supervisor_** by clicking the top **_Edit_** button in front of **_Services_**. Click **_Save_** to confirm the changes.
 
-- Validate the users by going to the assigned email account you chose for agent or supervisor and follow the **Cisco Webex** instructions to activate
+- Validate the users by going to [https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"} and putting agent/supervisor email in to **_Enter Public Mailinator Inbox_** 
+
+> **Note:** You do not need a password to open the inbox on mailinator. You can read any emails without mailbox credentials. Just insert agent name in the top right form and click **GO**.
+> ![Mailinator](../images/mailinator.png)
+
+- Check the email inboxes and follow the **Cisco Webex** email instructions to activate the user accounts. For the user activation, you have to set the password twice for both users.
 
 - Refresh the **_Users_** page in the Control Hub, make sure that all users are in **Active** status.
 
@@ -115,10 +123,10 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 | **Entity**          | **Name** |
 | ------------------- | -------- |
-| Multimedia Profiles | MMP_2022_TS   |
-| Site                | Site_2022_TS  |
-| Team1               | Team1_2022_TS |
-| Team2               | Team2_2022_TS |
+| Multimedia Profiles | MMP_\<ID\>_CL   |
+| Site                | Site_\<ID\>_CL  |
+| Team1               | Team1_\<ID\>_CL |
+| Team2               | Team2_\<ID\>_CL |
 
 > **NOTE:** Multiple \<ID\> were provided in the email in the **"Attendee ID"** line. You can share your tenant with the multiple administrators in your organization, in that case the ID should be unique for each user.
 
@@ -142,7 +150,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on `+ New Multimedia Profile` to open Multimedia Profile configuration page.
 
-- Input Name as `MMP_2022_TS`.
+- Input Name as `MMP_<ID>_CL`.
 
 - In the Media Details section, select the blended multimedia profile and input `1` for **_Voice_**, `3` for **_Chat_**, `3` for **_Email_**, and click **_Save_**.
 
@@ -150,9 +158,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Navigate to **_Provisioning_** and select **_Site_**.
 
-- Click on `+ New Site` button and provide the Name as `Site_2022_TS`.
+- Click on `+ New Site` button and provide the Name as `Site_<ID>_CL`.
 
-- Select `MMP_2022_TS` in the **_Multimedia Profile_** drop down and hit **_Save_**.
+- Select `MMP_<ID>_CL` in the **_Multimedia Profile_** drop down and hit **_Save_**.
 
 ### 3. Create new Team 1
 
@@ -160,19 +168,19 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on `+ New Team`.
 
-- Select `Site_2022_TS` from the **_Site_** drop-down.
+- Select `Site_<ID>_CL` from the **_Site_** drop-down.
 
-- Input **_Name_** as `Team1_2022_TS`.
+- Input **_Name_** as `Team1_<ID>_CL`.
 
 - Use the default **_Type_** `Agent Based`.
 
-- Select `MMP_2022_TS` in the **_Multimedia Profile_** drop-down.
+- Select `MMP_<ID>_CL` in the **_Multimedia Profile_** drop-down.
 
 - Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
 
 ### 4. Create new Team 2
 
-- Please follow the same steps as above to add an extra Team as `Team2_2022_TS`. Later we will use this team to assign a custom Desktop Layout.
+- Please follow the same steps as above to add an extra Team as `Team2_<ID>_CL`. Later we will use this team to assign a custom Desktop Layout.
 
 [To top of this lab](#table-of-contents)
 
@@ -202,11 +210,11 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on **_Contact Center Enabled_** toggle to move it to **_On_**.
 
-- In the **_Agent Settings_** section, select `Site_2022_TS` in the **_Site_** drop-down.
+- In the **_Agent Settings_** section, select `Site_<ID>_CL` in the **_Site_** drop-down.
 
-- Click the **_Teams_** area and select `Team1_2022_TS` and `Team2_2022_TS`.
+- Click the **_Teams_** area and select `Team1_<ID>_CL` and `Team2_<ID>_CL`.
 
-- Select `MMP_2022_TS` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
+- Select `MMP_<ID>_CL` in the **_Multimedia Profile_** drop-down and hit **_Save_**.
 
 - Make sure that the user are now shown with the **_Contact Center Enabled_** flag as `Yes` and **_Status_** as `Active`.
 
@@ -224,7 +232,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Navigate to **_Users_**.
 
-- Select the **Agent** user 
+- Select the **Agent** user `agent1_<ID>@mailinator.com` created in the previus lab.
 
 - In the User settings, make sure that the following **_Services_** are listed:
    -  **_Messaging_** as **Advanced Messaging**.
@@ -233,13 +241,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Scroll down to **_Calling Behaviour_** and select **_Webex Calling app_**. Click **_Save_**.
 
-- Repeat the same steps for **Supervisor** user. Make sure that **_Webex Calling app_** has been activated.
+- Repeat the same steps for **Supervisor** user `supervisor1_<ID>@mailinator.com`. Make sure that **_Webex Calling app_** has been activated.
 
 ### 2. Download and Login in the Webex Calling app for PC or Mac
 
 > **Note:** You need two Webex Calling app for placing a call to Entry Point and accepting on the agent side. Alternatively, if you have a US number, you can use it as an agent's extension. This tenant does not allow numbers outside of the United States. In this lab, we will use the Webex Calling app for PC or Mac for **agent** account.
 
-- Login to **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}** by using account `agent1`.
+- Login to **[https://settings.webex.com/](https://settings.webex.com/){:target="_blank"}** by using account `agent1_<ID>@mailinator.com`.
 
 - Click on **_Webex Calling_** this will cross launch CUP in a new browser tab.
 
@@ -249,7 +257,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Install the application on your PC/Mac.
 
-- Open Webex Calling and сlick **Sign In**. Specify the agent credentials for `agent1`.
+- Open Webex Calling and сlick **Sign In**. Specify the agent credentials for `agent1_<ID>@mailinator.com`.
 
 - Depending on your operation system, navigate to the Webex Callin Menu **_Edit Server Address_** and make sure you have selected **North America** region.
 
@@ -265,7 +273,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Login in the app by selecting **_Region_** as **North America**.
 
-- Set **_Email address_** and **_Password_** as the supervisor account `supervisor1`.
+- Set **_Email address_** and **_Password_** as the supervisor account `supervisor1_<ID>@mailinator.com`.
 
 > **Note:** Make sure that you give access to the phone's microphone for the calling app.
 
@@ -276,7 +284,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **email ID** `agent1` which you created in the previous lab.
+- Enter the agent’s **email ID** `agent1_<ID>@mailinator.com` which you created in the previous lab.
 
 - Enter the **Password** for the appropriate Username.
 
@@ -284,30 +292,16 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 > **Note:** Please use Webex Callin Extension for this lab. Optionally, if you have a US number, you can use it from the agent's desktop. This tenant does not allow numbers outside of the United States.
 
-- Select the `Team1_2022_TS`, with default desktop layout.
+- Select the `Team1_<ID>_CL`, with default desktop layout.
 
 - Click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the next section.
 
 [To top of this lab](#table-of-contents)
 
-## Part 5: **BONUS** Tenant Creation Walkthrough
-This is a supportive video that does not require any actions since your tenant is already provisioned. The video demonstrates the initial provisioning task for New Webex Contact Center. The initial walkthrough assumes that a new partner is creating both Webex Control Hub and Webex Contact Center Gold Tenant. This process you will use in the feature for setting up your GOLD tenant using Webex Calling. 
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/SYY4yOogBC0?rel=0" title="WxCC Lab #1 Part 5: Tenant Creation Walkthrough - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-## Part 6 **BONUS** Trial Tenant Setup Video
-
-> The bonus video shows how to set up a Trial Tenant. The steps are similar but since this is a trial tenant it is not necessary to go through the ordering process. Trial tenants are a great option for partners who are willing to start with the configuration before billing started. 
-> **Please note, by default the trial feature is not available in the Partner's CH. It can be activated only after approval. Please contact your PSM/CSM**.
-
-<iframe width="1024" height="576" src="https://www.youtube-nocookie.com/embed/m9QamZh4LwI?rel=0" title="WxCC Lab #1 Part 6: Trial Tenant Setup - BONUS Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ---
 
 ### Congratulations, you have completed Lab1 tasks! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/TECCCT-3001/HomePage.html";}
