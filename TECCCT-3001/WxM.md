@@ -118,15 +118,15 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 
 ### 1. Create new Agent in CH
 * Login in the **[Control Hub](https://admin.webex.com){:target="_blank"}** with credentials of **Pod29**
-* Create and activate a new agent with the following naming convention: **`WxM_Agent_<ID>_TS@mailinator.com`**
+* Create and activate a new agent with the following naming convention: **`WxM_Agent_<ID>_CL@mailinator.com`**
 * Make sure you **activate Webex Calling and give an extension number**, like you did in [Lab 1 - Control Hub & Admin Portal](https://wxcctechsummit.github.io/wxcclabguides/TechSummitRoW_2021/Lab1.html){:target="_blank"}
 
 ### 2. Complete the Agent configuration
 * Navigate to the **[Tenant Portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** 
-* **Create a new Team** for your Agent, name it **``Team1_<ID>_TS``**
+* **Create a new Team** for your Agent, name it **``Team1_<ID>_CL``**
 * Edit your User and mark **Contact Center Enabled ON**
-* Assign the **`MMP_29_TS` Multimedia Profile** to your user
-* Add your team to the **`Q_Voice_Test_TS`** Queue distribution group
+* Assign the **`MMP_29_CL` Multimedia Profile** to your user
+* Add your team to the **`Q_Voice_Test_CL`** Queue distribution group
  
 ## Part 3: Enable WxM widgets in Desktop Layout
 
@@ -216,7 +216,6 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 ---
 
 ### Congratulations, you have compleated Lab 7 tasks! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 
 <script>
