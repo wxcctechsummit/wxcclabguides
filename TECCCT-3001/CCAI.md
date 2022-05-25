@@ -60,7 +60,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Click on **Select a project** on top and then on **NEW PROJECT** on the pop-up window.
 
-- Enter a name for your project, e.g. `TS2021-CCAI` and click on **CREATE**.
+- Enter a name for your project, e.g. `CL-CCAI` and click on **CREATE**.
 
 - Make sure you have this project selected. 
 
@@ -82,7 +82,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - If prompted,choose **Cloud Text-to-Speech API** from the dropdown menu and check the **Application Data** option and **No, I'm not using them** and then click on **NEXT**.
 
-- On the **Service account details**, enter a name for the service account, e.g. `TS2021_TTS_SA` and then click on **CREATE AND CONTINUE**. 
+- On the **Service account details**, enter a name for the service account, e.g. `CL_TTS` and then click on **CREATE AND CONTINUE**. 
 
 - On **Grant this service account access to project**, search and choose the **DialogFlow API Admin** role and then click on **CONTINUE** and then on **DONE**.
 
@@ -94,7 +94,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - If prompted,choose **Dialogflow API** from the dropdown menu and check the **Application Data** option and **No, I'n not using them** and then click on **NEXT**.
 
-- On the **Service account details**, enter a name for the service account, e.g. `TS2021_CCAI_SA` and then click on **CREATE AND CONTINUE**. 
+- On the **Service account details**, enter a name for the service account, e.g. `CL_CCAI` and then click on **CREATE AND CONTINUE**. 
 
 - On **Grant this service account access to project**, search and choose the **DialogFlow API Admin** role and then click on **CONTINUE** and then on **DONE**.
 
@@ -132,7 +132,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Click on **Create an Agent**.
 
-- On the **GOOGLE PROJECT**, give a name to the agent, e.g. `TS_DF_Agent`,  choose the project created in the previous step and click on **CREATE**.
+- On the **GOOGLE PROJECT**, give a name to the agent, e.g. `CL_DF_Agent`,  choose the project created in the previous step and click on **CREATE**.
 
 - On the next page, click on the dots on the top right (next to **CREATE INTENT**) and choose **Upload Intent**.
 
@@ -140,7 +140,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Go back to the Control Hub tab and click on **Next**.
 
-- Give a name to your virtual agent, e.g. `TS_CCAI_Agent` and click on **Next**.
+- Give a name to your virtual agent, e.g. `CL_CCAI_Agent` and click on **Next**.
 
 - Upload the CCAI/Dialogflow .json key downloaded in the previous part and click on **Validate**. If all is good, click on **Next**.
 
@@ -185,7 +185,7 @@ In this Lab, we will go through the tasks that are required to setup **Contact C
 
 - Create a flow logic similar to the video guide, i.e. first add a **Virtual Agent** block after the **New Phone Contact**.
 
-- Under **Conversational Experience**, add the virtual agent you have created (e.g. `TS_CCAI_Agent`) and enable **Make Prompts Interruptible**.
+- Under **Conversational Experience**, add the virtual agent you have created (e.g. `CL_CCAI_Agent`) and enable **Make Prompts Interruptible**.
 
 - For `Handled` output from Virtual Agent, which means that self-service was successful, connect the output to a **Play Message** block and add a "Call successfully handled by virtual agent!" TTS message to it. 
 
