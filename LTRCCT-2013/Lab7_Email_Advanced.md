@@ -222,11 +222,11 @@ Double-click the second **Queue Task** node and set the following options:
 
   
 ## Step 5. Integration with Smartsheet using smartsheet APIs
-In this task, you will learn how to work with the **HTTP Request** node. As an example, we are going to use smartsheet APIs. Smartsheet APIs allow you to programmatically access and manage Smartsheet data especially read and update sheets.
-In this task, if the email's subject does not contain "Cisco Live" we will be adding a new row to the smartsheet with the email details. 
+In this task, you will learn how to work with the **HTTP Request** node. As an example, we are going to make the integration with the external product through smartsheet APIs. Smartsheet APIs are used as an example. They allow you to programmatically access and manage Smartsheet data especially read and update sheets.
+In our logic, if the email's subject does not contain "Cisco Live" we will be adding a new row to the smartsheet with the email details (Sender Name, From Address and Subject). 
 
-### 1. Preconfigured settings
-The 3 steps below were **preconfigured** for you. They has to be done only once.
+### 1. Preconfigured settings (no actions needed)
+The steps below were **preconfigured** for you. They has to be done only once.
 - The smartsheet API key has been generated according to the [smarthseet guide](https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests){:target="_blank"}.
 You will be using this API key in your lab.
 
@@ -235,7 +235,6 @@ You will be using this API key in your lab.
 <br/>
 
 - The smartsheet grid was created. And Columns’ ID were collected through API (we will need it for the API request when we will be adding a new row).
-Make sure that you have an access to the [smartsheet table](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid){:target="_blank"}.
 
 <img align="middle" src="images/Lab7_smartsheet2.png" width="1000" />  
 <br/>
@@ -250,9 +249,11 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 
 ### 2. HTTP Request configuration  
 
-- First Click the **EDIT** button in the upper right corner.
+- Make sure that you have an access to the [smartsheet table](https://app.smartsheet.com/sheets/mGxggWGV8qcxmxvgcvRmfjxqfhcCFwGg4RHmQP71?view=grid){:target="_blank"}. Please ask the proctor to grand the access.
+
+- Click the **EDIT** button in the upper right corner.
   
-- Drug and drop the **HTTP Request** node from the Node Palette to the main canvas. Connect exit **Email** with **On Success** with the **HTTP Request**
+- Drug and drop the **HTTP Request** node from the Node Palette to the main canvas. Connect exit of the first **Queue Task** `Queued` with the **HTTP Request**
 
 <img align="middle" src="images/Lab7_smartsheet4.png" width="1000" />  
 <br/>
@@ -296,7 +297,7 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 <br/>
 <br/>
 
-- Connect all exits with the **Close Task** node.
+- Connect all exits of the **HTTP Request** with the **Update Conversation** node.
 
 <img align="middle" src="images/Lab7_smartsheet6.png" width="1000" /> 
 <br/>
