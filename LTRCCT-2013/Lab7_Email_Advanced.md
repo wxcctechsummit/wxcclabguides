@@ -218,7 +218,7 @@ Double-click the second **Queue Task** node and set the following options:
 <br/>
 <br/>
 
-- Make the agent **Available**. As a result, the second email should come into the Email queue with the **"Cisco Live"** subject. Wait for 1 minute and check the auto-replies, 1 email should come with PIQ autoreply.
+- Make the agent **Available**. As a result, the second email should come into the Email queue for the `Team2` with the **"Cisco Live"** subject. 
 
   
 ## Step 5. Integration with Smartsheet using smartsheet APIs
