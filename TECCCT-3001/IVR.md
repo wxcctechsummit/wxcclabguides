@@ -57,7 +57,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - **IVR Prompts:** We will expect you to configure and upload static prompts shared for use below.
 
-> [Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
+> [Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/CL_WAVFiles.zip){:target="\_blank"}
 
 - **Lookups, Advanced Scripting, Screen-pops:** We have chosen specific areas of focus for advanced scripting topics. We have more content shared in the bonus sections on how to get other use cases configured.
 
@@ -91,7 +91,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 > This lab is designed to help you to make an end to end test call into the contact center. The lab concludes with sending a test call from the caller (customer) to the agent desktop using a Simple Flow.
 
-> **WARNING:** Instructions provided in the video slightly differ from the instructions provided below due to limited amount of PSNT numbers. This lab assumes there are few members of which are sharing the same tenant. Each one can create their own call flow and by using menu IVR under the main flow a decision can be made on what Entry Point you want the call to take. e.g. Map DN to `EP_Main_TS` > `Flow_Main_TS`, then branch out to your own Entry Point from Flow_Main_TS through corresponding menu item using "GoTo" activity., in this lab every attendee will need to call into the main flow and, from there, route their calls to personal flows.
+> **WARNING:** Instructions provided in the video slightly differ from the instructions provided below due to limited amount of PSNT numbers. This lab assumes there are few members of which are sharing the same tenant. Each one can create their own call flow and by using menu IVR under the main flow a decision can be made on what Entry Point you want the call to take. e.g. Map DN to `EP_Main_CL` > `Flow_Main_CL`, then branch out to your own Entry Point from Flow_Main_CL through corresponding menu item using "GoTo" activity., in this lab every attendee will need to call into the main flow and, from there, route their calls to personal flows.
 
 > **NOTE:** Instructions provided in sections 1 and 2 need to be performed only by the first person working on this lab. If you're not the first accessing the POD, start this lab from section 3.
 
@@ -104,15 +104,15 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - Upload the audio files. Go to: Configuration Portal > Routing Strategy > Resources > Audio Files. 
 
-> **Note:** [Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/Tech_Summit_2021_WAVFiles.zip){:target="\_blank"}
+> **Note:** [Download the IVR Prompts - Static Prompts HERE](https://wxcctechsummit.github.io/wxcclabguides/prompts/CL_WAVFiles.zip){:target="\_blank"}
 
 ### 2. Create main inbound Voice Entry Point and Main IVR to reach the Entry Point of team member
 
-- Login to Portal and create the main inbound voice Entry Point. (Provisioning > Entry Point / Queue). Create the Entry Point named `EP_Main_TS` if it has not been created yet.
+- Login to Portal and create the main inbound voice Entry Point. (Provisioning > Entry Point / Queue). Create the Entry Point named `EP_Main_CL` if it has not been created yet.
 
-- Mapping the DN to the main Entry Point. In the Portal, under Entry Point Mappings page (Provisioning > Entry Point Mappings), map the listed DN to `EP_Main_TS`.
+- Mapping the DN to the main Entry Point. In the Portal, under Entry Point Mappings page (Provisioning > Entry Point Mappings), map the listed DN to `EP_Main_CL`.
 
-- Navigate to Routing Strategy: Con > Flow and create new flow `Flow_Main_TS` if it has not been created yet. Follow the steps below to build main flow:
+- Navigate to Routing Strategy: Con > Flow and create new flow `Flow_Main_CL` if it has not been created yet. Follow the steps below to build main flow:
 	- Add Menu activity and name it "Flow_Main_Menu"
 	- Choose IVR prompt "Flow_Main_Menu.wav"
 	- Tick checkbox "Make Prompt Interruptible"
@@ -121,25 +121,25 @@ In this Lab, we will learn the configuration we need to complete for making a si
 	- Terminate any "Custom Links" outputs of menu with "DisconnectContact" activity
 	- Verify and publish the flow. 
 
-> **NOTE:** Later on each member will return to the “Flow_Main_TS” and create a Menu Link to their Entry Point.
+> **NOTE:** Later on each member will return to the “Flow_Main_CL” and create a Menu Link to their Entry Point.
 
-- Configure the Routing Strategy for main Entry Point `EP_Main_TS`:
-	- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_Main_TS`.
-	- Map the flow Flow_Main_TS you just created above
+- Configure the Routing Strategy for main Entry Point `EP_Main_CL`:
+	- Configure the Open 24x7 routing strategy time of day on the Entry Point Routing strategy by selecting it on the Routing Strategies >`EP_Main_CL`.
+	- Map the flow Flow_Main_CL you just created above
 
 ### 3. Create an inbound Voice Entry Point and Voice Queue as a team member
 
 - Login to Portal and create an inbound voice entry point and voice queue. (Provisioning > Entry Point / Queue).
 
-- Create the Entry Point named `EP_<ID>_TS`.
+- Create the Entry Point named `EP_<ID>_CL`.
  
-- Create the Queue named `Q_<ID>_TS`.
+- Create the Queue named `Q_<ID>_CL`.
 
 **Here are the Queue Settings**
 
 | Configuration                       | field Value             |
 | ----------------------------------- | ----------------------- |
-| Name                                | `Q_<ID>_TS`  |
+| Name                                | `Q_<ID>_CL`  |
 | Channel Type                        | Telephony               |
 | _---- Contact Routing Settings ---_ |
 | Queue Routing Type                  | Longest Available Agent |
@@ -151,11 +151,11 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 ### 4. Add your Entry Point into the chain within the main flow
 
-- Navigate to Routing Strategy > Flow and edit `Flow_Main_TS`
+- Navigate to Routing Strategy > Flow and edit `Flow_Main_CL`
 
 - Add new custom menu link in the "Flow_Main_Menu" and terminate it by GoTo activity.
 
-- Choose "Go to Entry Point" in "Flow Destination Settings" of GoTo acivity and choose your `EP_<ID>_TS` from the drop-down list. 
+- Choose "Go to Entry Point" in "Flow Destination Settings" of GoTo acivity and choose your `EP_<ID>_CL` from the drop-down list. 
 
 - Select "Validate" to verify the are no errors in the flow.
 
@@ -179,11 +179,11 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - Navigate to Routing Strategy > Routing > Routing Strategies.
 
-- From the drop-down menu select `EP_<ID>_TS`
+- From the drop-down menu select `EP_<ID>_CL`
 
 - Select "+ New Strategy"
 
-- Name the strategy as `RS_<ID>_TS`, set the "Time Settings" so that it would be Open 24x7, select the default Music on Hold from the dropdown and finally select the flow `Flow1_<ID>` you just created above.
+- Name the strategy as `RS_<ID>_CL`, set the "Time Settings" so that it would be Open 24x7, select the default Music on Hold from the dropdown and finally select the flow `Flow1_<ID>` you just created above.
 	
 ### 7. Make a call to test your simple flow
 
@@ -197,7 +197,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 - Remove the "Disconnect Contact".
 	
-- Select the "Queue Contact" from the library and connect it to the "Play Message". Edit it so to select `Q_<ID>_TS`.
+- Select the "Queue Contact" from the library and connect it to the "Play Message". Edit it so to select `Q_<ID>_CL`.
 	
 - Select the "Play Music" from the library and connect it to the "Queue Contact". On the other end connect it to itself to create a loop. Edit it by selecting the "MOH" file, set Start Offset at 0, set Music Duration at 10.
 
@@ -209,7 +209,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 ### 9. Make a call to test modified flow
 
-- Login to the agent desktop into `Team_<ID>_TS` and go to a ready state.
+- Login to the agent desktop into `Team_<ID>_CL` and go to a ready state.
 
 - Call the Dial number > Hear main menu and press corresponding digt to go to your Entry Point > Available agent gets connected immediately (if the Agent is not available the call is queued and music is played).
 
@@ -266,7 +266,7 @@ In this Lab, we will learn the configuration we need to complete for making a si
 
 ### 3. Plug In New Flow into Routing Strategy
 
-- Return to the Routing Strategy page and select your Entry Point: Routing > Routing Strategy > `EP_<ID>_TS`
+- Return to the Routing Strategy page and select your Entry Point: Routing > Routing Strategy > `EP_<ID>_CL`
 	
 - Edit your Entry Point Routing strategy to point to the new flow `Flow2_<ID>`
 
@@ -395,7 +395,7 @@ customerEmail = $.[0].email
 customerPhone = $.[0].phone
 ```
 
-**Tech-Tip:** Here are some practice exercises you can try by going to jsonpath.com
+**Tip:** Here are some practice exercises you can try by going to jsonpath.com
 
 > - Go to https://5f97898842706e0016957443.mockapi.io/crm/api/customers
 
@@ -431,7 +431,7 @@ customerPhone = $.[0].phone
 
 ### 6. Point to the New flow in the Routing Strategy
 
-- Go to the routing Strategy page > Routing Strategy > `EP_<ID>_TS`
+- Go to the routing Strategy page > Routing Strategy > `EP_<ID>_CL`
 	
 - Once the flow is published, configure the Entry Point Routing strategy to point to the new flow `Flow3_<ID>`.
 
@@ -462,11 +462,11 @@ Execute the Test:
 	
 - Queue Routing Type > Skill Based > Best Available Agent
 	
-- Add Team > `Team_<ID>_TS`
+- Add Team > `Team_<ID>_CL`
 
 | Configuration field        | Value                |
 | -------------------------- | -------------------- |
-| Name                       | `Q_<ID>_TS_SBR`      |
+| Name                       | `Q_<ID>_CL_SBR`      |
 | Channel Type               | Telephony            |
 | _Contact Routing Settings_ |
 | Queue Routing Type         | Skills Based         |
@@ -490,17 +490,17 @@ Execute the Test:
 
 - Open portal > Provisioning > Skill > skill Profile
 	
-- Click (New Skill Profile) > Give Name - `TechSummitSkill` and Description -`TechSummitSkill`
+- Click (New Skill Profile) > Give Name - `CLSkill` and Description -`CLSkill`
 	
 - Select `SkillSet` and enter the Skill Value as `8`
 	
-- Select `VIP Customer` and enter the `Skill Value` to `Techsummit`
+- Select `VIP Customer` and enter the `Skill Value` to `CL`
 
 ### 4. Add skill profile to User/ Agent
 
 - Open Portal > Users
 	
-- Edit User > Under Skill Profile select the skill profile created in step 2 - `TechSummitSkill`
+- Edit User > Under Skill Profile select the skill profile created in step 2 - `CLSkill`
 
 ### 5. Modify the Previous Flow into a new Flow 4
 
@@ -514,7 +514,7 @@ Execute the Test:
 	
 	> Variable Type > `string`
 	
-	> Variable Value > `Techsummit`
+	> Variable Value > `CL`
 	
 	> Turn on `MArk as CAD Variable`
 	
@@ -544,7 +544,7 @@ Execute the Test:
 
 - Navigate to Routing Strategy > Routing > Routing Strategies.
 
-- From the drop-down menu select `EP_<ID>_TS`.
+- From the drop-down menu select `EP_<ID>_CL`.
 
 - Select the existing strategy.
 
@@ -555,7 +555,6 @@ Execute the Test:
 ---
 
 ### Congratulations, you have compleated Lab2 tasks! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 
 <script>
