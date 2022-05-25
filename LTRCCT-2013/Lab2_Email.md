@@ -206,7 +206,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 <br/>
 <br/>
 
-### 2. Create Queue in Managment Portal 
+### 2. Create 2 Queues in Managment Portal 
 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
 
@@ -218,7 +218,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 
 - Leave the **_Queue Routing Type_** as default value `Longest Available Agent`.
 
-- In the the **_Chat Distribution_** click on **Add Group** and select `Team1` and `Team2`.
+- In the the **_Chat Distribution_** click on **Add Group** and select `Team1`.
 
 - Set **_Service Level Threshold_** as `2` hours.
 
@@ -229,6 +229,18 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 - Click on **Save** after comparing your values with the screenshot below.
 
 <img align="middle" src="images/Lab2_Email_Q.png" width="1000" />
+<br/>
+<br/>
+
+- Create a second queue by repeating the same steps as above.
+
+- Input **_Name_** as `Email_Q2`.
+
+- Select `Email` in the **_Channel Type_** section.
+
+- In the the **_Chat Distribution_** click on **Add Group** and select `Team2`.
+
+<img align="middle" src="images/Lab2_Email_Q2.png" width="1000" />
 <br/>
 <br/>
 
