@@ -671,7 +671,6 @@ Then choose Language, enter new Password and click on **Complete trial signup**.
 ---
 
 ### Congratulations, you have compleated Lab 4 tasks! 
-### We would like to keep track of your progress and make sure that we are giving you effective support. Please take approximately one minute to complete the short survey.
 
 
 <script>
