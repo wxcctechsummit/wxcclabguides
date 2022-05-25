@@ -102,7 +102,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Validate the users by going to [https://www.mailinator.com/](https://www.mailinator.com/){:target="_blank"} and putting agent/supervisor email in to **_Enter Public Mailinator Inbox_** 
 
 > **Note:** You do not need a password to open the inbox on mailinator. You can read any emails without mailbox credentials. Just insert agent name in the top right form and click **GO**.
-> ![Mailinator](../images/mailinator.png)
+> ![Mailinator](images/mailinator.png)
 
 - Check the email inboxes and follow the **Cisco Webex** email instructions to activate the user accounts. For the user activation, you have to set the password twice for both users.
 
