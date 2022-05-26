@@ -1,4 +1,14 @@
-# Chat Configuration
+---
+title: Chat Configuration
+---
+
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Creating a Service](#creating-a-service)
+
+# Introduction
 
 In this lab exercise we are going to configure a basic in Live Chat applet and deploy it on a website that you can access directly from the internet.  We will be downloading Workflow templates from GitHub, creating a free website on glitch.me, work with Webex Copnnect Flows and much more.
 
@@ -8,8 +18,8 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 - Click the **Create New Service** button
 - Create a name for your service
 - Navigate to [Workflow GitHub](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/main/Webex%20Connect%20Flows)
-- Download: [Task Routed](https://github.com/CiscoDevNet/webexcc-digital-channels/blob/main/Webex%20Connect%20Flows/v2.1/Task%20Routed%20Flow.workflow.zip) [Task Modified](https://github.com/CiscoDevNet/webexcc-digital-channels/blob/main/Webex%20Connect%20Flows/v2.1/Task%20Modified%20Flow.workflow.zip) [Task Closed](https://github.com/CiscoDevNet/webexcc-digital-channels/blob/main/Webex%20Connect%20Flows/v2.1/Task%20Close%20Flow.workflow.zip) [Live Chat Inbound](https://github.com/CiscoDevNet/webexcc-digital-channels/blob/main/Webex%20Connect%20Flows/v2.1/Live%20Chat%20Inbound%20Flow.workflow.zip)
-- Unzip workflow files
+- Download: [Live Chat Inbound](https://github.com/CiscoDevNet/webexcc-digital-channels/blob/main/Webex%20Connect%20Flows/v2.1/Live%20Chat%20Inbound%20Flow.workflow.zip)
+- Unzip workflow file
 - Click View My Flows 
 - For each workflow file: <img align="right" src="images/Create_Workflow.PNG" width="50%" />
 > 1. Click Create Flow
@@ -22,4 +32,40 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 
 
 ## Creating an App
-- 
+
+
+
+
+
+
+
+[To top of this lab](#table-of-contents)
+
+
+
+---
+
+### Congratulations, you have completed Lab1 tasks! 
+
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/1_PreReq.html";}
+function nextLab() 
+ {
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3_QnABot.html";
+ }
+</script>
+
+<div id="button-row">
+<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go to the Previous Lab</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go to the Next Lab</button>
+
+</div>
