@@ -1,5 +1,5 @@
 ---
-title: Chat Configuration
+title: Lab 2: Chat Configuration
 ---
 
 # Table of Contents
@@ -45,7 +45,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 
 ---
 
-### Congratulations, you have completed Lab1 tasks! 
+### Congratulations, you have completed Lab2 tasks! 
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/1_PreReq.html";}
