@@ -1,5 +1,5 @@
 ---
-title: Lab 2: Chat Configuration
+title: 'Lab 2: Chat Configuration'
 ---
 
 # Table of Contents
@@ -7,6 +7,7 @@ title: Lab 2: Chat Configuration
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Creating a Service](#creating-a-service)
+- [Creating an App](#creating-an-app)
 
 # Introduction
 
@@ -21,17 +22,21 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 - Download: [Live Chat Inbound](https://github.com/CiscoDevNet/webexcc-digital-channels/blob/main/Webex%20Connect%20Flows/v2.1/Live%20Chat%20Inbound%20Flow.workflow.zip)
 - Unzip workflow file
 - Click View My Flows 
-- For each workflow file: <img align="right" src="images/Create_Workflow.PNG" width="50%" />
+- For each workflow file: 
+> <img align="right" src="images/Create_Workflow.PNG" width="35%"/>
+
 > 1. Click Create Flow
 > 2. Use the workflow file name for the Flow Name 
 > 3. Type: Workflow 
 > 4. Metod: Upload a flow 
 > 5. Attach the unzipped workflow file 
 > 6. Click Create
-
+----
 
 
 ## Creating an App
+- 
+
 
 
 
