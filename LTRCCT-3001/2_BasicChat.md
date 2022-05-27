@@ -2,18 +2,12 @@
 title: 'Lab 2: Chat Configuration'
 ---
 
-
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-  - [Creating a Service](#creating-a-service)
-  - [> 6. Click Create](#-6-click-create)
-  - [Creating an App](#creating-an-app)
-  - [Create a website](#create-a-website)
-  - [Conecting to Webex Contact Center](#conecting-to-webex-contact-center)
-    - [Congratulations, you have completed Lab2 tasks!](#congratulations-you-have-completed-lab2-tasks)
-
+- [Creating a Service](#creating-a-service)
+- [Creating an App](#creating-an-app)
 
 # Introduction
 
@@ -29,7 +23,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 - Unzip workflow file
 - Click View My Flows 
 - For each workflow file: 
-> <img align="right" src="images/Lab2_Create_Workflow.PNG"  height="150"/>
+> <img align="right" src="images/Create_Workflow.PNG" width="35%"/>
 
 > 1. Click Create Flow
 > 2. Use the workflow file name for the Flow Name 
@@ -41,39 +35,14 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 
 
 ## Creating an App
-- From the service:
-  - Click configure Apps
-  - Configure New App => Mobile Web
-- Give your App a Name
-- Enable Live Chat / In-App Messaging
-  - Select Transport Protocals
-  - Select "Use Secured Port"
-  - Click Save
-  - Click Register to Webex CC
-
-## Create a website 
-- In a new tab, go to [Glitch](glitch.com)
-- Create a new account using the sign up button
-  - Select Email Magic Link
-  - Create a Hello World Website
-    - Note the URL
 - 
 
-## Conecting to Webex Contact Center
-
-- Log into Webex Contact Center as Admin
-  - Create an Entry Point 
-  - Create a Queue
 
 
 
 
 
 
-
-
-
----
 
 [To top of this lab](#table-of-contents)
 
