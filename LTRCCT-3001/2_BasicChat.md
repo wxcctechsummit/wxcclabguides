@@ -11,6 +11,7 @@ title: 'Lab 2: Chat Configuration'
   - [Creating an App](#creating-an-app)
   - [Create a Website](#create-a-website)
   - [Conecting to Webex Contact Center](#conecting-to-webex-contact-center)
+  - [Launch the Engage Protal](#launch-the-engage-protal)
     - [Congratulations, you have completed Lab2 tasks!](#congratulations-you-have-completed-lab2-tasks)
 
 
@@ -60,8 +61,39 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 ## Conecting to Webex Contact Center
 
 - Log into Webex Contact Center as Admin
-  - Create an Entry Point 
+  - Create an Entry Point:
+    > Name: Name of your choice 
+    >
+    > Channel Type: Chat 
+    >
+    > Asset Name: Your Asset
+    >
+    > Servie Level: 120
+    ---
   - Create a Queue
+    > Name: Name of your choice 
+    >
+    > Channel Type: Chat 
+    >
+    > Queue Routing Type: Longest Available agent
+    >
+    >Chat Distribution: Put your team into Group 1
+    >
+    > Servie Level Threshold: 120
+    >
+    > Maximum Time in Queue: 3600
+    ---
+## Launch the Engage Protal
+
+- Click on **New Digital Channels** to launch the Engage Portal <img align="" src="images\Lab2_New_Digital_Channels.PNG" height="20">
+  - Click on Assets <img align="" src="images\Lab2_Assets.PNG" height="25">
+    - You will see A live Chat Channel type With the name os your asset
+    - Click edit in the Action column
+    - Click websites
+      - Click Add Website 
+        > therte
+
+
 
 
 
