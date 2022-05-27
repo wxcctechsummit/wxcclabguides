@@ -17,3 +17,6 @@ You will receive a legal warranty on all items you buy in our stores. Despite ou
 
 How do I redeem a discount code?
 When your order is complete, go to the shopping cart. The discount code can be entered on this page. You can find the input field at the bottom of the page. The discount is deducted immediately. Note: you can only enter 1 discount code at a time.
+
+When is Cisco Live? 
+On Jun 12th, 2022
