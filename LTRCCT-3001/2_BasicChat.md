@@ -11,7 +11,10 @@ title: 'Lab 2: Chat Configuration'
   - [Creating an App](#creating-an-app)
   - [Create a Website](#create-a-website)
   - [Conecting to Webex Contact Center](#conecting-to-webex-contact-center)
-  - [Launch the Engage Protal](#launch-the-engage-protal)
+  - [Launch the Engage Portal](#launch-the-engage-portal)
+  - [Adding the Applet to Your Website](#adding-the-applet-to-your-website)
+  - [Modifying the Chat Flow](#modifying-the-chat-flow)
+  - [Time to test our first chat flow!](#time-to-test-our-first-chat-flow)
     - [Congratulations, you have completed Lab2 tasks!](#congratulations-you-have-completed-lab2-tasks)
 
 
@@ -39,7 +42,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 > 6. Click Create
 > ---
 
-
+[To top of this lab](#table-of-contents)
 ## Creating an App
 - From the service:
   - Click configure Apps
@@ -51,13 +54,16 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   - Click Save
   - Click Register to Webex CC
 
+[To top of this lab](#table-of-contents)
+
 ## Create a Website 
-- In a new tab, go to [Glitch](glitch.com)
+- In a new tab, go to [Glitch](https://glitch.com)
 - Create a new account using the sign up button
   - Select Email Magic Link
   - Create a Hello World Website
     - Note the URL 
-
+  
+[To top of this lab](#table-of-contents)
 ## Conecting to Webex Contact Center
 
 - Log into Webex Contact Center as Admin
@@ -83,7 +89,8 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
     >
     > Maximum Time in Queue: 3600
     ---
-## Launch the Engage Protal
+[To top of this lab](#table-of-contents)
+## Launch the Engage Portal
 
 - Click on **New Digital Channels** to launch the Engage Portal <img align="" src="images\Lab2_New_Digital_Channels.PNG" height="20">
   - Click on Assets <img align="" src="images\Lab2_Assets.PNG" height="25">
@@ -93,7 +100,24 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
       - Click Add Website 
         > therte
 
+[To top of this lab](#table-of-contents)
 
+## Adding the Applet to Your Website
+- Return to the Glitch tab in youe browser
+- Open index.html
+- Scroll to the bottom of the code
+- Paste the applet code between the body and html closing tags
+- 
+
+
+## Modifying the Chat Flow
+
+[To top of this lab](#table-of-contents)
+## Time to test our first chat flow!
+- Log into the contact center as an agent
+- open ht echat applet on your website and start a chat
+
+[To top of this lab](#table-of-contents)
 
 
 
