@@ -252,8 +252,29 @@ The users have the following preconfiguration
 [To top of this lab](#table-of-contents)
 
 ## Step 4. Setup RONA timers
+If an agent doesn’t answer a contact request, the contact request will return to the queue and the agent state will change to **Redirection on No Answer (RONA)**. In this task, you will play with the new feature that allows administrators to override the default RONA timeout values at the tenant level for every channel type to suit the business needs of the organization. The available timers are:
+- Telephony 
+- Chat 
+- Email 
+- Social (Facebook and WhatsApp)
 
-In the process...
+- Log in to the Control Hub at [https://admin.webex.com](https://admin.webex.com){:target="_blank"}
+
+- Navigate to **Services** -> **Contact Center** -> **Settings** -> **Desktop** -> **RONA Timeouts**.
+<img align="middle" src="images/Lab1_RONA.png" width="1000" />
+<br/>
+<br/>
+
+- Modify the existing timers by putting the values from the tables below:
+
+| **Channel** | **New Values** | **Limitations** |
+| ----------- | -------------- | --------------- |
+| Telephony   | 18  | 1 - 120 seconds |
+| Chat        | 60  | 1 - 6000 seconds |
+| Email       | 90  | 1 - 6000 seconds |
+| Social      | 60  | 1 - 6000 seconds |
+
+
 
 ## Verification: Access to the Agent Desktop
 > **Note**: To log in to the agent desktop, use either a separate web browser or a new incognito web page. This will prevent any browser caching issues with admin and agent credentials.
