@@ -55,9 +55,36 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   - Click Save
   - Click Register to Webex CC
 
+  ---
+
 [To top of this lab](#table-of-contents)
 ## Create a Chat Template
-- 
+- Click the Wrench for the Tools menu <img src="images\Lab2_Tools.PNG" Height="20">
+- Click Templates <img src="images\Lab2_Templates.PNG" height="20">
+- Click Add New Template
+> Name: Give your template a meaningful name 
+> 
+> Channel: Live Chat / In-App Mesaging
+> 
+> Message Type: Form
+>
+>Title: Please provide the following information.
+>
+>Form Fields:
+>
+>> Click Add Field
+>>
+>> Type: Name
+>>
+>> Name: Name
+>>
+>> Label: Name
+>>
+>> Mandatory Field: Enabled
+> 
+> Create another form field for Email Address
+ 
+---
 
 
 [To top of this lab](#table-of-contents)
@@ -142,7 +169,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   > Click Save
 
   ---
-- Double click on the Pre-chat form
+- Double click on the Pre-chat Form node
   > Select the Form Template From the Dropdown 
   >
   > Click Save
@@ -153,6 +180,9 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   >
   > Click Save
   
+- DoubleClick the Queue Task node
+  > Select the queue that you created in the Queue name drop down
+
   ---
 - Click Save
 - Click Make Live
