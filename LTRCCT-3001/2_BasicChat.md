@@ -96,9 +96,21 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   - Click on Assets <img align="" src="images\Lab2_Assets.PNG" height="25">
     - You will see A live Chat Channel type With the name os your asset
     - Click edit in the Action column
-    - Click websites
+    - Click Websites
       - Click Add Website 
-        > therte
+        > Display Name: North Pole Holiday Infused Widgets and Bobbles
+        >
+        > Domain: the domain of your glitch website
+        > 
+        > Save Changes! 
+        >
+        > Click the Website Settings Banner back option <img src="images\Lab2_WS_Settings_Back.PNG" height="15">
+        >
+        > Click on the Installation Tab
+        >
+        > Copy out the Code
+        >
+        ---
 
 [To top of this lab](#table-of-contents)
 
@@ -107,15 +119,22 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 - Open index.html
 - Scroll to the bottom of the code
 - Paste the applet code between the body and html closing tags
-- 
+- Click the preview button (note that chat will not work yet as we need to setup the flow first)
 
-
+[To top of this lab](#table-of-contents)
 ## Modifying the Chat Flow
+- Go back to the service that you created
+- Click on flows
+- Click on the name of the flow
+- In the upper right corner click the settings cog <img src="images\Lab2_Settings _Cog.PNG" height="20">
+- Click Custom Variables
+- 
+- 
 
 [To top of this lab](#table-of-contents)
 ## Time to test our first chat flow!
 - Log into the contact center as an agent
-- open ht echat applet on your website and start a chat
+- open the chat applet on your website and start a chat
 
 [To top of this lab](#table-of-contents)
 
