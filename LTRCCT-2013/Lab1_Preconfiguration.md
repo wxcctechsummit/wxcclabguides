@@ -252,7 +252,7 @@ The users have the following preconfiguration
 [To top of this lab](#table-of-contents)
 
 ## Step 4. Setup RONA timers
-If an agent doesn’t answer a contact request, the contact request will return to the queue and the agent state will change to **Redirection on No Answer (RONA)**. In this task, you will play with the new feature that allows administrators to override the default RONA timeout values at the tenant level for every channel type to suit the business needs of the organization. The available timers are:
+If an agent doesn’t answer a contact request, the contact request will return to the queue and the agent state will change to **Redirection on No Answer (RONA)**. In this task, you will play with the new feature that allows administrators to override the default RONA timeout values at the tenant level for every channel type to suit the business needs of the organization. The available channels are:
 - Telephony 
 - Chat 
 - Email 
@@ -289,7 +289,7 @@ If an agent doesn’t answer a contact request, the contact request will return 
 
 > **Note:**  The Webex Calling service is not activated at this tenant we need to set a dummy extension only once during the login.
 
-- Select the `Team1` and click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the next section.
+- Select the `Team1` and click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the Next Lab.
 
 <img align="middle" src="images/Lab1_Login.png" width="1000" />
 <br/>
