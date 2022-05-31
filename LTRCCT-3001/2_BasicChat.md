@@ -9,6 +9,7 @@ title: 'Lab 2: Chat Configuration'
 - [Introduction](#introduction)
   - [Creating a Service](#creating-a-service)
   - [Creating an App](#creating-an-app)
+  - [Create a Chat Template](#create-a-chat-template)
   - [Create a Website](#create-a-website)
   - [Conecting to Webex Contact Center](#conecting-to-webex-contact-center)
   - [Launch the Engage Portal](#launch-the-engage-portal)
@@ -55,7 +56,11 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   - Click Register to Webex CC
 
 [To top of this lab](#table-of-contents)
+## Create a Chat Template
+- 
 
+
+[To top of this lab](#table-of-contents)
 ## Create a Website 
 - In a new tab, go to [Glitch](https://glitch.com)
 - Create a new account using the sign up button
@@ -122,14 +127,35 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 - Click the preview button (note that chat will not work yet as we need to setup the flow first)
 
 [To top of this lab](#table-of-contents)
+
 ## Modifying the Chat Flow
 - Go back to the service that you created
 - Click on flows
 - Click on the name of the flow
 - In the upper right corner click the settings cog <img src="images\Lab2_Settings _Cog.PNG" height="20">
-- Click Custom Variables
-- 
-- 
+  > Click Custom Variables
+  > 
+  > Change Live Chat Domain to your Glitch domain
+  > 
+  > Change the appid to your appid
+  > 
+  > Click Save
+
+  ---
+- Double click on the Pre-chat form
+  > Select the Form Template From the Dropdown 
+  >
+  > Click Save
+
+  ---
+- Double click on the Recieve node
+  > Select the Form Template From the Dropdown 
+  >
+  > Click Save
+  
+  ---
+- Click Save
+- Click Make Live
 
 [To top of this lab](#table-of-contents)
 ## Time to test our first chat flow!
