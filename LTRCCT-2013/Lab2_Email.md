@@ -63,12 +63,10 @@ Starting from May 30 the **Less Secure Apps** feature was disabled on all Google
 <br/>
 <br/>
 
-- Keep the default project's name and press **Create** at the bottom. 
+- Keep the default project's name and press **Create** at the bottom. Make sure that now you have selected this project. 
 <img align="middle" src="images/Lab2_NewGmail2.png" width="1000" />
 <br/>
 <br/>
-
-- Click **SELECT PROJECT** button.
 
 ### 2. Enable Gmail API
 
@@ -77,37 +75,45 @@ Starting from May 30 the **Less Secure Apps** feature was disabled on all Google
 <br/>
 <br/>
 
-- You need to enable the API for your project
+- You need to enable the API for your project by clickin **ENABLE** button.
 <img align="middle" src="images/Lab2_NewGmail4.png" width="1000" />
 <br/>
 <br/>
 
-### 3. Credentials and authentication with OAuth 2.0
+### 3. Configure OAuth Consent Screen and Scopes
 
-- Once the API is enabled, you’ll be taken to a nice dashboard that says, **To use this API, you may need credentials**.
+- Once the API is enabled, you’ll be taken to a nice dashboard that says, `"To use this API, you may need credentials"`.
 <img align="middle" src="images/Lab2_NewGmail5.png" width="1000" />
 <br/>
 <br/>
+
+- To create an OAuth client ID, you must first configure your consent screen. Under the APIs and Services section, click on **OAuth Consent Screen**, set the user type as `External` and click **CREATE** button.
+<img align="middle" src="images/Lab2_NewGmail6.png" width="1000" />
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+-  It will bring you to a page with many fields. Just enter the **App name** as `WebexCCEmail`, choose your **User support email** and enter the same email in the **Developer contact information**.
+<img align="middle" src="images/Lab2_NewGmail9.png" width="1000" />
+<br/>
+<br/>
+
+
+### 4. Credentials and authentication with OAuth 2.0
+
 
 - Click the Credential tab on the left, and then pick **OAuth client ID** from the drop-down list of the **CREATE CREDENTIALS** button. 
 <img align="middle" src="images/Lab2_NewGmail6.png" width="1000" />
 <br/>
 <br/>
 
-- To create an OAuth client ID, you must first configure your consent screen. Click on **CONFIGURE CONSENT SCREEN** button.
-<img align="middle" src="images/Lab2_NewGmail7.png" width="1000" />
-<br/>
-<br/>
-
-- Set the user type as `External` and click **CREATE** button.
-<img align="middle" src="images/Lab2_NewGmail8.png" width="1000" />
-<br/>
-<br/>
-
--  It will bring you to a page with many fields. Just enter the **App name** as `WebexCCEmail`, choose your **User support email** and enter the same email in the **Developer contact information**.
-<img align="middle" src="images/Lab2_NewGmail9.png" width="1000" />
-<br/>
-<br/>
 
 
 
