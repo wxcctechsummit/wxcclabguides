@@ -23,6 +23,8 @@ title: 'Lab 2: Chat Configuration'
 
 In this lab exercise we are going to configure a basic in Live Chat applet and deploy it on a website that you can access directly from the internet.  We will be downloading Workflow templates from GitHub, creating a free website on glitch.me, work with Webex Copnnect Flows and much more.
 
+---
+
 ## Creating a Service
 
 - Navigate to https://cl2podXX.imiconnect.io/ (where the XX is your lab ID)
@@ -41,6 +43,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 > 4. Metod: Upload a flow 
 > 5. Attach the unzipped workflow file 
 > 6. Click Create
+> 
 > ---
 
 [To top of this lab](#table-of-contents)
@@ -107,6 +110,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
     > Asset Name: Your Asset
     >
     > Servie Level: 120
+
     ---
   - Create a Queue
     > Name: Name of your choice 
@@ -120,8 +124,11 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
     > Servie Level Threshold: 120
     >
     > Maximum Time in Queue: 3600
+
     ---
+
 [To top of this lab](#table-of-contents)
+
 ## Launch the Engage Portal
 
 - Click on **New Digital Channels** to launch the Engage Portal <img align="" src="images\Lab2_New_Digital_Channels.PNG" height="20">
@@ -186,6 +193,8 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   ---
 - Click Save
 - Click Make Live
+  
+  ---
 
 [To top of this lab](#table-of-contents)
 ## Time to test our first chat flow!
@@ -195,16 +204,6 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 [To top of this lab](#table-of-contents)
 
 
-
-
-
-
-
-
-
----
-
-[To top of this lab](#table-of-contents)
 
 
 
