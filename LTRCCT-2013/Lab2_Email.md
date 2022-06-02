@@ -76,11 +76,13 @@ We need to activate API if we want to use Gmail accont for outbound emails.
 - Login to [Google Developers Console](https://console.developers.google.com/){:target="_blank"} with the credentials above. The password is the same as for Webex CC admin account.
 
 - You will have to agree with the Terms of Service and pick their Country of residence. Then click **Select a project** and create a **NEW PROJECT**.
+
 <img align="middle" src="images/Lab2_NewGmail1.png" width="1000" />
 <br/>
 <br/>
 
 - Keep the default project's name and press **Create** at the bottom. Make sure that now you have selected this project. 
+
 <img align="middle" src="images/Lab2_NewGmail2.png" width="1000" />
 <br/>
 <br/>
@@ -88,11 +90,13 @@ We need to activate API if we want to use Gmail accont for outbound emails.
 ### 3. Enable Gmail API (for outgoing emails)
 
 - Enter `Gmail API` in the search bar and click on it once found.
+
 <img align="middle" src="images/Lab2_NewGmail3.png" width="1000" />
 <br/>
 <br/>
 
 - You need to enable the API for your project by clickin **ENABLE** button.
+
 <img align="middle" src="images/Lab2_NewGmail4.png" width="1000" />
 <br/>
 <br/>
@@ -100,26 +104,31 @@ We need to activate API if we want to use Gmail accont for outbound emails.
 ### 4. Configure OAuth Consent Screen and Scopes
 
 - Once the API is enabled, you’ll be taken to a nice dashboard that says, `"To use this API, you may need credentials"`.
+
 <img align="middle" src="images/Lab2_NewGmail5.png" width="1000" />
 <br/>
 <br/>
 
 - To create an OAuth client ID, you must first configure your consent screen. Under the APIs and Services section, click on **OAuth Consent Screen**, set the user type as `External` and click **CREATE** button.
+
 <img align="middle" src="images/Lab2_NewGmail6.png" width="1000" />
 <br/>
 <br/>
 
--  It will bring you to a page with many fields. Just enter the **App name** as `WebexApp`, choose your **User support email** and enter the same email in the **Developer contact information**. In the end press **SAVE AND CONTINUE**
+-  It will bring you to a page with many fields. Just enter the **App name** as `WebexApp`, choose your **User support email** and enter the same email in the **Developer contact information**. In the end press **SAVE AND CONTINUE**.
+
 <img align="middle" src="images/Lab2_NewGmail7.png" width="1000" />
 <br/>
 <br/>
 
 - On the next screen, you need to provide Auth 2.0 Scopes for Google APIs. Click the **Add Or Remove Scopes** button and add https://www.googleapis.com/auth/gmail.send to the list of scopes since we only want to send emails from Gmail and not read any user data. Click **SAVE AND CONTINUE**.
+
 <img align="middle" src="images/Lab2_NewGmail8.png" width="1000" />
 <br/>
 <br/>
 
 - On the test user page, click **ADD USERS** and enter the gmail address. Click **Save and Continue**.
+
 <img align="middle" src="images/Lab2_NewGmail9.png" width="1000" />
 <br/>
 <br/>
@@ -130,6 +139,7 @@ We need to activate API if we want to use Gmail accont for outbound emails.
 Now create a new client ID that will be used to identify your application to Google’s OAuth servers.
 
 - In the APIs & Services section, click on **Credentials** and then pick **OAuth client ID** from the drop-down list of the **CREATE CREDENTIALS** button. 
+
 <img align="middle" src="images/Lab2_NewGmail10.png" width="1000" />
 <br/>
 <br/>
@@ -139,11 +149,13 @@ Now create a new client ID that will be used to identify your application to Goo
 - You can leave the default name. The name of your OAuth 2.0 client is only used to identify the client in the Google Cloud console and will not be shown to application users. 
 
 - In the **Authorized redirect URIs** section click **ADD URL** button and set `https://cl1pod\<ID\>.imiconnect.io/callback` where \<ID\> is your tenant number. Click **CREATE** button in the end.
+
 <img align="middle" src="images/Lab2_NewGmail11.png" width="1000" />
 <br/>
 <br/>
 
 - Download a JSON file with your credentials – you’ll need it later.
+
 <img align="middle" src="images/Lab2_NewGmail12.png" width="1000" />
 <br/>
 <br/>
@@ -192,6 +204,7 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 
 - Verify that the **ACCESS TOKEN** and **REFRESH TOKEN** are generated and click **SAVE**.
+
 <img align="middle" src="images/Lab2_As3.png" width="1000" />
 <br/>
 <br/>
