@@ -167,20 +167,36 @@ Now create a new client ID that will be used to identify your application to Goo
 | ------------------- | -------- |
 | Asset Name | EmailAsset   |
 | Email ID   | cl1webex**\<ID\>**@gmail.com  |
+| Authentication Type | OAuth 2.0   |
 | SMTP Server  | smtp.gmail.com |
 | Username     | cl1webex**\<ID\>**@gmail.com |
 | Port     | 465 |
 | Security     | SSL |
+| Client ID | \<client_id from JSON file\>   |
+| client Secret | \<client_secret from JSON file\>    |
+| Authorization URL | https://accounts.google.com/o/oauth2/auth |
+| Scope | https://mail.google.com/ https://www.googleapis.com/auth/gmail.send |
+| Access Token URL | https://oauth2.googleapis.com/token |
+| Refresh Token URL | https://accounts.google.com/o/oauth2/auth |
 
 > where \<ID\> is your POD ID
 
-- Click **TEST CONNECTION** and if test is successfully completed, click on **SAVE**.
-
-<img align="middle" src="images/Lab2_Assest2.png" width="1000" />
+<img align="middle" src="images/Lab2_As1.png" width="1000" />
 <br/>
 <br/>
 
-- Click on **REGISTER TO WEBEX CC** -> Select the appropriate service (the default **My First Service**) and click **REGISTER**.
+- Click **GENERATE TOKEN** and follow the step on the screenshot:
+
+<img align="middle" src="images/Lab2_As2.png" width="1000" />
+<br/>
+<br/>
+
+- Verify that the **ACCESS TOKEN** and **REFRESH TOKEN** are generated and click **SAVE**.
+<img align="middle" src="images/Lab2_As3.png" width="1000" />
+<br/>
+<br/>
+
+- Click on **REGISTER TO WEBEX CC** and Select the appropriate service (the default **My First Service**). In the end click **REGISTER**.
 
 <img align="middle" src="images/Lab2_Assest3.png" width="1000" />
 <br/>
