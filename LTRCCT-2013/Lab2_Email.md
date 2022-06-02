@@ -47,77 +47,13 @@ Starting from May 30 the **Less Secure Apps** feature was disabled on all Google
 >**Note**: For this lab, we have created a Gmail account. Optionally, use your own account for polling and handling the emails. It can be a Gmail account or Office 365 account or any account which has email forwarding. The instructions below are applicable only for the Gmail accounts.
 
 
-### 1. Create a project at Google API Console
-
+### 1. Gmail forwarding activation (for incoming emails)
 
 | **User email**                       |
 | ------------------------------------ | 
 | cl1webex**\<ID\>**@gmail.com   | 
 
 > **Note:** Your \<ID\> was provided to you personally.  \<ID\> is the unique number equal to your POD.
-
-- Login to [Google Developers Console](https://console.developers.google.com/){:target="_blank"} with the credentials above. The password is the same as for Webex CC admin account.
-
-- You will have to agree with the Terms of Service and pick their Country of residence. Then click **Select a project** and create a **NEW PROJECT**.
-<img align="middle" src="images/Lab2_NewGmail1.png" width="1000" />
-<br/>
-<br/>
-
-- Keep the default project's name and press **Create** at the bottom. Make sure that now you have selected this project. 
-<img align="middle" src="images/Lab2_NewGmail2.png" width="1000" />
-<br/>
-<br/>
-
-### 2. Enable Gmail API
-
-- Enter `Gmail API` in the search bar and click on it once found.
-<img align="middle" src="images/Lab2_NewGmail3.png" width="1000" />
-<br/>
-<br/>
-
-- You need to enable the API for your project by clickin **ENABLE** button.
-<img align="middle" src="images/Lab2_NewGmail4.png" width="1000" />
-<br/>
-<br/>
-
-### 3. Configure OAuth Consent Screen and Scopes
-
-- Once the API is enabled, you’ll be taken to a nice dashboard that says, `"To use this API, you may need credentials"`.
-<img align="middle" src="images/Lab2_NewGmail5.png" width="1000" />
-<br/>
-<br/>
-
-- To create an OAuth client ID, you must first configure your consent screen. Under the APIs and Services section, click on **OAuth Consent Screen**, set the user type as `External` and click **CREATE** button.
-<img align="middle" src="images/Lab2_NewGmail6.png" width="1000" />
-<br/>
-<br/>
-
-
-
-
-
-
-
-
-
--  It will bring you to a page with many fields. Just enter the **App name** as `WebexCCEmail`, choose your **User support email** and enter the same email in the **Developer contact information**.
-<img align="middle" src="images/Lab2_NewGmail9.png" width="1000" />
-<br/>
-<br/>
-
-
-### 4. Credentials and authentication with OAuth 2.0
-
-
-- Click the Credential tab on the left, and then pick **OAuth client ID** from the drop-down list of the **CREATE CREDENTIALS** button. 
-<img align="middle" src="images/Lab2_NewGmail6.png" width="1000" />
-<br/>
-<br/>
-
-
-
-
-
 
 - Login to the Gmail account with the credentials above[https://mail.google.com](https://mail.google.com){:target="_blank"}. The password is the same as for Webex admin account.
 
@@ -133,29 +69,85 @@ Starting from May 30 the **Less Secure Apps** feature was disabled on all Google
 <br/>
 <br/>
 
-### 2. Google Account Setting – Security setting (allow less secure app access)
 
-- Click on **Google Apps** icon on top right corner -> Select **Account**.
+### 2. Create a project at Google API Console 
+We need to activate API if we want to use Gmail accont for outbound emails. 
 
-<img align="middle" src="images/Lab2_Gmail3.png" width="1000" />
+- Login to [Google Developers Console](https://console.developers.google.com/){:target="_blank"} with the credentials above. The password is the same as for Webex CC admin account.
+
+- You will have to agree with the Terms of Service and pick their Country of residence. Then click **Select a project** and create a **NEW PROJECT**.
+<img align="middle" src="images/Lab2_NewGmail1.png" width="1000" />
 <br/>
 <br/>
 
-- Select **Security** option and turn `ON` the **Less secure app access**. 
-
-<img align="middle" src="images/Lab2_Gmail4.png" width="1000" />
+- Keep the default project's name and press **Create** at the bottom. Make sure that now you have selected this project. 
+<img align="middle" src="images/Lab2_NewGmail2.png" width="1000" />
 <br/>
 <br/>
 
-- Do not close the gmail tab in the browser.
+### 3. Enable Gmail API (for outgoing emails)
 
-### 3. Disable captcha for the account
-
-- Use the following link to disable captcha for the account https://accounts.google.com/b/0/DisplayUnlockCaptcha and click Continue.
-
-<img align="middle" src="images/Lab2_Gmail5.png" width="1000" />
+- Enter `Gmail API` in the search bar and click on it once found.
+<img align="middle" src="images/Lab2_NewGmail3.png" width="1000" />
 <br/>
 <br/>
+
+- You need to enable the API for your project by clickin **ENABLE** button.
+<img align="middle" src="images/Lab2_NewGmail4.png" width="1000" />
+<br/>
+<br/>
+
+### 4. Configure OAuth Consent Screen and Scopes
+
+- Once the API is enabled, you’ll be taken to a nice dashboard that says, `"To use this API, you may need credentials"`.
+<img align="middle" src="images/Lab2_NewGmail5.png" width="1000" />
+<br/>
+<br/>
+
+- To create an OAuth client ID, you must first configure your consent screen. Under the APIs and Services section, click on **OAuth Consent Screen**, set the user type as `External` and click **CREATE** button.
+<img align="middle" src="images/Lab2_NewGmail6.png" width="1000" />
+<br/>
+<br/>
+
+-  It will bring you to a page with many fields. Just enter the **App name** as `WebexApp`, choose your **User support email** and enter the same email in the **Developer contact information**. In the end press **SAVE AND CONTINUE**
+<img align="middle" src="images/Lab2_NewGmail7.png" width="1000" />
+<br/>
+<br/>
+
+- On the next screen, you need to provide Auth 2.0 Scopes for Google APIs. Click the **Add Or Remove Scopes** button and add https://www.googleapis.com/auth/gmail.send to the list of scopes since we only want to send emails from Gmail and not read any user data. Click **SAVE AND CONTINUE**.
+<img align="middle" src="images/Lab2_NewGmail8.png" width="1000" />
+<br/>
+<br/>
+
+- On the test user page, click **ADD USERS** and enter the gmail address. Click **Save and Continue**.
+<img align="middle" src="images/Lab2_NewGmail9.png" width="1000" />
+<br/>
+<br/>
+
+
+### 5. Credentials and authentication with OAuth 2.0
+
+Now create a new client ID that will be used to identify your application to Google’s OAuth servers.
+
+- In the APIs & Services section, click on **Credentials** and then pick **OAuth client ID** from the drop-down list of the **CREATE CREDENTIALS** button. 
+<img align="middle" src="images/Lab2_NewGmail10.png" width="1000" />
+<br/>
+<br/>
+
+- Select `Web application` in the **Application type**
+
+- You can leave the default name. The name of your OAuth 2.0 client is only used to identify the client in the Google Cloud console and will not be shown to application users. 
+
+- In the **Authorized redirect URIs** section click **ADD URL** button and set `https://cl1pod\<ID\>.imiconnect.io/callback` where \<ID\> is your tenant number. Click **CREATE** button in the end.
+<img align="middle" src="images/Lab2_NewGmail11.png" width="1000" />
+<br/>
+<br/>
+
+- Download a JSON file with your credentials – you’ll need it later.
+<img align="middle" src="images/Lab2_NewGmail12.png" width="1000" />
+<br/>
+<br/>
+
 
 ## Step 2. Create Email Asset and Register to WebeXCC
 
