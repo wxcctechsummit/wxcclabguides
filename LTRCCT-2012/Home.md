@@ -4,7 +4,7 @@ title: 'Webex Contact Centre New Digital Channels Bot Capabilities'
 ## Speakers: Gagarin Sathiyanarayanan, Kevin Simpson
 ---
 
-<img align="middle" src="images/LTRCCT-3001.jpg" width="1000" />
+<img align="middle" src="../images/12_51_47.jpg" width="1000" />
 
 Welcome to the Lab Guide Library. Here you will find the step-by-step guides on how to setup bot capabilities with New digital channels in Webex Contact Centre.
 
