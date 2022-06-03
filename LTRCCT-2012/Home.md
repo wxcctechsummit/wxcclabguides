@@ -25,4 +25,4 @@ Contact Center Flow Buidler.
 | Tracey | Lab 3 |  Dynamic prompt change & preferred agent | [Dynamic_prompt](Dynamic_prompt.md){:target="\_blank"} |change prompt dynamically and queue to agent  |
 | ChandraMouli   | Lab 4 | Skill Based Routing  | [Skill_Based_Routing](SBR.md){:target="\_blank"}   | Advanced Skill Based routing |
 | ChandraMouli | Lab 5 | Advanced HTTP Request | [HTTP](HTTP.md){:target="\_blank"}    |  External Data Dip |
-| ChandraMouli | Lab 6 | Bonus TTS & Google CCAI DialogFlow Bot | [DialogFlow](DialogFlow.md){:target="\_blank"}    | Google Dialog Flow |
+| ChandraMouli | Lab 6 | Bonus TTS & Google CCAI DialogFlow Bot | [DialogFlow](DialogFlow.md){:target="\_blank1"}    | Google Dialog Flow |
