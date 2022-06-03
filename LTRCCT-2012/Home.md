@@ -6,9 +6,7 @@ title: 'Webex Contact Center Flow Designer: Orchestrating Customer Experiences'
 
 <<<<<<< HEAD
 <img align="middle" src="images/Home.jpg" width="1000" />
-=======
-<img align="middle" src="../images/12_51_47.jpg" width="1000" />
->>>>>>> 540a2bfd48e63da412eb0646adcf0c0e8ca39144
+
 
 Welcome, this lab will handhold from the basics to advanced topic in Webex
 Contact Center Flow Buidler.
