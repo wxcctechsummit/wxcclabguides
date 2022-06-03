@@ -26,6 +26,9 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 ## Tools we will be using
 - Postman
 - Bot Builder
+- requestcatcher.com
+- jsonpathfinder.com
+- mockapi.io
 - Webex Connect Flow Builder
 
 
@@ -82,3 +85,4 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
 
 ## Launch Flow Builder 
+- 
