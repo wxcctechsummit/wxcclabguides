@@ -5,7 +5,7 @@ title: 'Webex Contact Center Flow Designer: Orchestrating Customer Experiences'
 ---
 
 <<<<<<< HEAD
-<img align="middle" src="images/Home.jpg" width="1000" />
+<img align="middle" src="Images/Home.jpg" width="1000" />
 
 
 Welcome, this lab will handhold from the basics to advanced topic in Webex
