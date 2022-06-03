@@ -136,13 +136,13 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 8. Next step is creating a flow, to create first flow click on **Routing Strategies** from the portal and click on **Flows** and click **New**
 
-<img align="middle" src="Images/Portal_flow1.jpg" width="500" />
+<img align="middle" src="Images/portal_flow1.jpg" width="500" />
 
 9. Give any name and click on **Start Building Flow**
 
-<img align="middle" src="Images/Portal_flow2.jpg" width="500" />
+<img align="middle" src="Images/portal_flow2.jpg" width="500" />
 
-<img align="middle" src="Images/Portal_flow3.jpg" width="500" />
+<img align="middle" src="Images/portal_flow3.jpg" width="500" />
 
 10. From the Flow Pallete, drag and drop **Play Message Node** and **Disconnect Node** and connect all nodes
 
@@ -164,7 +164,7 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 13. Routing Strategies tags the flow created with an Entry point, to create routing  strategies click on **Routing Strategies-->New Strategy**
 
-<img align="middle" src="Images/Portal_RS_1.jpg" width="500" />
+<img align="middle" src="Images/portal_RS_1.jpg" width="500" />
 
 
 
@@ -180,7 +180,7 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 15. As a last step make sure the routing strategy becomes **Current**
 
-<img align="middle" src="Images/Portal_RS_4.jpg" width="1000" />
+<img align="middle" src="Images/portal_RS_4.jpg" width="1000" />
 
 ### Dial the Number from your mobile phone and make sure you hear the welcome voice prompt
 
