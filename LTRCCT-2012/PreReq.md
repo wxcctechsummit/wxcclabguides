@@ -122,7 +122,7 @@ The default time zone is the Tenant's time zone.
 
 5. To Map an Entry point  created with a Dial Number, Click **Provisioning-->EntryPoint Mapping**
 
-<img align="middle" src="Images/Portal_DN_EP.jpg" width="500" />
+<img align="middle" src="Images/Portal_DN_EP.jpg" width="300" />
 
 6. Click on **New Mapping**
 
@@ -164,7 +164,7 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 13. Routing Strategies tags the flow created with an Entry point, to create routing  strategies click on **Routing Strategies-->New Strategy**
 
-<img align="middle" src="Images/portal_RS_1.jpg" width="500" />
+<img align="middle" src="Images/portal_RS_1.jpg" width="300" />
 
 
 
