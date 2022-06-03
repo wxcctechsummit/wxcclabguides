@@ -146,21 +146,21 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 10. From the Flow Pallete, drag and drop **Play Message Node** and **Disconnect Node** and connect all nodes
 
-<img align="middle" src="Images/Portal_flow4.jpg" width="500" />
+<img align="middle" src="Images/portal_flow4.jpg" width="500" />
 
-<img align="middle" src="Images/Portal_flow5.jpg" width="500" />
+<img align="middle" src="Images/portal_flow5.jpg" width="500" />
 
 11. Click on **Play Message** node to select the voice prompt
 
-<img align="middle" src="Images/Portal_flow6.jpg" width="500" />
+<img align="middle" src="Images/portal_flow6.jpg" width="500" />
 
 >Note all the prompts are pre loaded in the lab under **Routing Strategies-->Resources**
 
 12. Enable **Validation** and **Publish** the flow
 
-<img align="middle" src="Images/Portal_flow6.jpg" width="500" />
+<img align="middle" src="Images/portal_flow6.jpg" width="500" />
 
-<img align="middle" src="Images/Portal_flow7.jpg" width="500" />
+<img align="middle" src="Images/portal_flow7.jpg" width="500" />
 
 13. Routing Strategies tags the flow created with an Entry point, to create routing  strategies click on **Routing Strategies-->New Strategy**
 
@@ -172,7 +172,7 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 14. Create and Routing strategy which act as a  Bridge between an EntryPoint and Flow
 
-<img align="middle" src="Images/Portal_RS_3.jpg" width="1000" />
+<img align="middle" src="Images/portal_RS_3.jpg" width="1000" />
 
 >For each entry point, you should create a set of default routing strategies that cover all time intervals. In addition, you can schedule an alternate strategy beyond the default strategy for any time interval. For example, EP 1 could have a BusyHourStrategy for the normal day shift and an OffHoursStrategy for non-business hours.
 
