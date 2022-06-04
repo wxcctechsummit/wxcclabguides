@@ -107,13 +107,20 @@ In this Lab, we will go through the tasks that are required to complete the inte
 
 ## Step 5: Bot flow verification 
 
-- Launch the website where chat code is deployed (this should have been completed as part of lab-2. Click the chat widget and then **New Conversation** . Input chat form details and Enter. 
-<img align="middle" src="images/Lab3b_12.png" width="300" /> <img align="middle" src="images/Lab3b_13.png" width="300" />
+- Launch the website where chat code is deployed (this should have been completed as part of lab-2. Click the chat widget and then **New Conversation**
+
+<img align="middle" src="images/Lab3b_12.png" width="300" />
+
+- Input chat form details and Enter. 
+
+<img align="middle" src="images/Lab3b_13.png" width="300" />
 
 - Test the bot with the sample questions configured while creating the bot in earlier section of this lab and verify that the response received from bot matches one of the configured response variants. 
+
 <img align="middle" src="images/Lab8_16.png" width="300" /> 
 
 - To wrap up the contact, click the icon on top left of chat widget and select **End chat**
+
 <img align="middle" src="images/Lab8_17.png" width="300" /> 
 
 
