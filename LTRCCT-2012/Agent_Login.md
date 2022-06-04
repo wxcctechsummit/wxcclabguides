@@ -1,16 +1,17 @@
----
-title: 'Lab 0: Preconfiguration'
+title: 'Lab 1: Agent_login'
 ---
 
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
+    - [Recap](#Recap)
     - [Lab Objective](#lab-objective)
     - [Pre-requisites](#pre-requisites)
     - [Quick Links](#quick-links)
+
 - [Lab Section](#lab-section)
-  - [Step 1. Control Hub users & License](#Control_Hub_Users&License)
+  - [Step 1. Site,Team,Agent](#Site,Team,Agent)
   - [Step 2. Webex Calling Settings](#webex_calling_Settings)
   - [Step 3. Entry Point, Routing Strategy & Flow )](EP_RS_Flow)
     - [1. Create new Entry Point](#1-create_EP)
@@ -20,16 +21,27 @@ title: 'Lab 0: Preconfiguration'
 
 # Introduction
 
+### Recap
+
+ In the first Lab, we Learned
+ 1. Map Dial number to Entry point
+ 2. Create basic flow with Play Message node
+ 3. Dial Number-->Entry Point --> Routing Point-->Flow
+ 4. Successfully routed a contact into Webex Contact Center and heard initial welcome prompt
+
 ### Lab Objective
 
-In this section, we will go over the steps that are required to be completed for general pre-configuration of a tenant. By following each of these steps you will have prepared your tenant to begin configuring different services offered by the platform.At the end of this Lab, you should be able to
-1. Login to Portal
-2. Dial the Number Assigned to you and hear welcome prompt
+In this section, we will go over the steps that are required to Login an Agent . In this Lab you will learn the following
+1. Creating Site, Queue, Team
+2. Agent Desktop Login
+3. Enhance the Flow created in Lab 0 to add steps to queue contact to Agent
+
+
 
 
 ### Pre-requisites
 
-- You have received the access credentials with a full admin access
+- Basic IVR flow worked, caller can connect to WXCC and hear welcome music
 
 
 
@@ -39,22 +51,41 @@ In this section, we will go over the steps that are required to be completed for
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
 
+<img align="middle" src="Images/Lab1/Flowchart1.jpg" width="1000" />
+
 
 # Lab Section
 
-## Step 1. User and License Verification
+## Step 1. Site,Team Agent
 
-> Once Webex Contact Center Org is onboarded with the admin user, you should be able to login to control hub portal, using the credentials you have created .
+> **Site** -- A site is a physical contact center location under the control of your enterprise. For example, enterprise Acme can have sites in Chicago, Manila, and Bangalore with agents to handle customer contacts.
 
-- Login to control Hub using the credentials given, Below is control hub landing page.
-<img align="middle" src="Images/CH_Landing.jpg" width="1000" />
+<img align="middle" src="Images/Lab1/site.jpg" width="400" />
+
+>.
+
+<img align="middle" src="Images/Lab1/Site1.jpg" width="500" />
+
+- **Important Note** For this lab, we use the site tagged to admin user,  check your admin user and create team part of the same site
+
+### Team
+>**TEAM** -- A team is a group of people who support a specific group of functions. For example, supporting the Gold customers or managing billing, and so on. A team consists of agents.
+
+<img align="middle" src="Images/Lab1/Team.jpg" width="500" />
+
+> Team is tagged to the site, and agents will login into team.
+Agent can have Skill and multimedia profile at the team level.If agents has skill and multimedia profile configured under **Users** that supersedes the one configured at team level
+
+<img align="middle" src="Images/Lab1/Team1.jpg" width="700" />
+
+### Agent aka Users
+
+>All the users added at control hub are by default synched to WxCC portal under **Provisioning-->Users**  Based on the user profile, a User take different role(Agent, Supervisor, Administrator)
+
+<img align="middle" src="Images/Lab1/Users.jpg" width="700" />
 
 
-- In the  **Control hub** Click **Users** from the left menu and make sure the user you logged in with is present here
 
-<img align="middle" src="Images/CH_User.jpg" width="1000" />
-
--  Click on the  **admin Users** scroll Down and click **Edit Licenses** and again click on **Edit Licenses**  and click on **Contact Center** and make sure the user is licensed as premium Agent and Administration option is enabled
 
 > User with premium Agent license can log in as Agent as well as perform Admin tasks
 
