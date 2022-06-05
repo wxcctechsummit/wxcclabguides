@@ -49,7 +49,7 @@ In this section, we will go over the steps that are required to be completed for
 > Once Webex Contact Center Org is onboarded with the admin user, you should be able to login to control hub portal, using the credentials you have created .
 
 - Login to control Hub using the credentials given, Below is control hub landing page.
-<img align="middle" src="Images/CH_Landing.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/CH_Landing.jpg" width="1000" />
 
 
 - In the  **Control hub** Click **Users** from the left menu and make sure the user you logged in with is present here
@@ -61,7 +61,7 @@ In this section, we will go over the steps that are required to be completed for
 > User with premium Agent license can log in as Agent as well as perform Admin tasks
 
 
-<img align="middle" src="Images/CH_User_License.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/CH_User_License.jpg" width="1000" />
 
 - Upon verifying the user, Click **Cancel** and from the mainPage click on **Calling** and verify Directory Number is assigned to this user, if not click on **Add Number** to add a Directory Number.
 
@@ -174,7 +174,7 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 14. Create and Routing strategy which act as a  Bridge between an EntryPoint and Flow
 
-<img align="middle" src="Images/portal_RS_3.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/portal_RS_3.jpg" width="1000" />
 
 >For each entry point, you should create a set of default routing strategies that cover all time intervals. In addition, you can schedule an alternate strategy beyond the default strategy for any time interval. For example, EP 1 could have a BusyHourStrategy for the normal day shift and an OffHoursStrategy for non-business hours.
 
@@ -182,7 +182,7 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 15. As a last step make sure the routing strategy becomes **Current**
 
-<img align="middle" src="Images/portal_RS_4.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/portal_RS_4.jpg" width="1000" />
 
 ### Dial the Number from your mobile phone and make sure you hear the welcome voice prompt
 
