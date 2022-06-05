@@ -54,7 +54,7 @@ In this section, we will go over the steps that are required to be completed for
 
 - In the  **Control hub** Click **Users** from the left menu and make sure the user you logged in with is present here
 
-<img align="middle" src="Images/CH_User.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/CH_User.jpg" width="1000" />
 
 -  Click on the  **admin Users** scroll Down and click **Edit Licenses** and again click on **Edit Licenses**  and click on **Contact Center** and make sure the user is licensed as premium Agent and Administration option is enabled
 
@@ -71,7 +71,7 @@ In this section, we will go over the steps that are required to be completed for
 
 1) In the  **Control hub** Click **Calling** from the left menu and make sure the user calling Numbers are added here
 
-<img align="middle" src="Images/CH_Number.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/CH_Number.jpg" width="1000" />
 
 > Main number is tagged to the location, the second number will be used through out this lab to call and test flows
 
@@ -83,7 +83,7 @@ In this section, we will go over the steps that are required to be completed for
 1) In the  **Control hub** Click **contact Center** under Services
 2) click on **Settings**
 
-<img align="middle" src="Images/CH_Contact_Center.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/CH_Contact_Center.jpg" width="1000" />
 
 > Voice Channel setting for Webex Contact Center can be validated here, in the screen shot about, this Org is programmed with Webex calling and Cloud connected PSTN, note there are 3 options available
 
@@ -100,15 +100,15 @@ In this section, we will go over the steps that are required to be completed for
 1. In the  **Control hub -->contact Center -->Settings**
 2. click on **Go to Webex Contact Center Management Portal** under **Advanced configuration** to cross launch to Webex Contact Center Portal.
 
-<img align="middle" src="Images/Portal_Landing.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/Portal_Landing.jpg" width="1000" />
 
 3.From the Portal Click **Provisioning-->Entrypoint/Queues-->Entrypoint**
 
-<img align="middle" src="Images/Portal_EP.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/Portal_EP.jpg" width="1000" />
 
 4. Click on **New Entry Point** to create a new Entry point
 
-<img align="middle" src="Images/Portal_EP1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/Portal_EP1.jpg" width="500" />
 
 > Name  -->    The name of the entry point.
 
@@ -124,49 +124,49 @@ The default time zone is the Tenant's time zone.
 
 5. To Map an Entry point  created with a Dial Number, Click **Provisioning-->EntryPoint Mapping**
 
-<img align="middle" src="Images/Portal_DN_EP.jpg" width="300" />
+<img align="middle" src="Images/Lab0/Portal_DN_EP.jpg" width="300" />
 
 6. Click on **New Mapping**
 
-<img align="middle" src="Images/Portal_DN_EP1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/Portal_DN_EP1.jpg" width="500" />
 
 
 7. upon selecting  **Location** all  number  associate to that  location will be
 available for mapping, choose available **Number** and map it with the **Entry point** created  at step 4
 
-<img align="middle" src="Images/Portal_DN_EP2.jpg" width="500" />
+<img align="middle" src="Images/Lab0/Portal_DN_EP2.jpg" width="500" />
 
 8. Next step is creating a flow, to create first flow click on **Routing Strategies** from the portal and click on **Flows** and click **New**
 
-<img align="middle" src="Images/portal_flow1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow1.jpg" width="500" />
 
 9. Give any name and click on **Start Building Flow**
 
-<img align="middle" src="Images/portal_flow2.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow2.jpg" width="500" />
 
-<img align="middle" src="Images/portal_flow3.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow3.jpg" width="500" />
 
 10. From the Flow Pallete, drag and drop **Play Message Node** and **Disconnect Node** and connect all nodes
 
-<img align="middle" src="Images/portal_flow4.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow4.jpg" width="500" />
 
-<img align="middle" src="Images/portal_flow5.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow5.jpg" width="500" />
 
 11. Click on **Play Message** node to select the voice prompt
 
-<img align="middle" src="Images/portal_flow6.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow6.jpg" width="500" />
 
 >Note all the prompts are pre loaded in the lab under **Routing Strategies-->Resources**
 
 12. Enable **Validation** and **Publish** the flow
 
-<img align="middle" src="Images/portal_flow6.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow6.jpg" width="500" />
 
-<img align="middle" src="Images/portal_flow7.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow7.jpg" width="500" />
 
 13. Routing Strategies tags the flow created with an Entry point, to create routing  strategies click on **Routing Strategies-->New Strategy**
 
-<img align="middle" src="Images/portal_RS_1.jpg" width="300" />
+<img align="middle" src="Images/Lab0/portal_RS_1.jpg" width="300" />
 
 
 
