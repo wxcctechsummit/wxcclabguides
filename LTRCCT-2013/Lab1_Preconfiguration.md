@@ -28,7 +28,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
+> Webex Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
 
@@ -46,7 +46,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - In front of **Webex CC Engage** Click **Actions** -> **Manage**.
 
-<img align="middle" src="images/Lab1_Integration1.png" width="1000" />
+<img align="middle" src="images/Lab1_Integration1.gif" width="1000" />
 <br/>
 <br/>
 
