@@ -99,13 +99,17 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 2) Navigate to **Webex Connect Flows** -> **v2.1**.
 
+<img align="middle" src="images/Lab1_GitHub.gif" width="1000" />
+<br/>
+<br/>
+
 3) Unzip All Files.
 
 4) Login to the **Webex Connect** portal with the admin account.
 
 5) Nabigate to **Services** and click on **CREATE NEW SERVICE**.
 
-<img align="middle" src="images/Services.png" width="1000" />
+<img align="middle" src="images/Lab1_Services.png" width="1000" />
 <br/>
 <br/>
 
@@ -114,7 +118,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 7) In the service click on **FLOWS** -> **CREATE FLOW**.
 
-<img align="middle" src="images/Flows.png" width="1000" />
+<img align="middle" src="images/Lab1_Flows.png" width="1000" />
 <br/>
 <br/>
 
@@ -128,13 +132,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-11) In the new menu click on **SAVE** and then **MAKE LIVE**. On pop up window click on **MAKE LIVE** again.
+11) In the new menu click **SAVE** and then **MAKE LIVE**. On pop up window click on **MAKE LIVE** again.
 
-<img align="middle" src="images/Lab1_Live.png" width="1000" />
+<img align="middle" src="images/Lab1_Live.gif" width="1000" />
 <br/>
 <br/>
 
-12) **!!!** Click on back button in the flow and repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
+12) **!!!** Go back and repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**. Select the corresponding names.
 
 
 ## Step 3. Setup agents in Portal (Agents, Team, MMP)
