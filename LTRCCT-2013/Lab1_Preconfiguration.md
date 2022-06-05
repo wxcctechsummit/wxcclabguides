@@ -291,7 +291,7 @@ If an agent doesn’t answer a contact request, the contact request will return 
 
 - Select the `Team1` and click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the Next Lab.
 
-<img align="middle" src="images/Lab1_Login.png" width="1000" />
+<img align="middle" src="images/Lab1_Login.gif" width="1000" />
 <br/>
 <br/>
 
