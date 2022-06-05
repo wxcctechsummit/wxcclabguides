@@ -343,7 +343,7 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 <br/>
 
-- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
+- Click **Save** and in the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
 
 <img align="middle" src="images/Lab2_WF2.png" width="1000" />
 <br/>
