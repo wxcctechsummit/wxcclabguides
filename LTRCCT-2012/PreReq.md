@@ -108,7 +108,7 @@ In this section, we will go over the steps that are required to be completed for
 
 4. Click on **New Entry Point** to create a new Entry point
 
-<img align="middle" src="Images/Lab0/portal_EP1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/Portal_EP1.jpg" width="500" />
 
 > Name  -->    The name of the entry point.
 
@@ -134,7 +134,7 @@ The default time zone is the Tenant's time zone.
 7. upon selecting  **Location** all  number  associate to that  location will be
 available for mapping, choose available **Number** and map it with the **Entry point** created  at step 4
 
-<img align="middle" src="Images/Lab0/portal_DN_EP2.jpg" width="500" />
+<img align="middle" src="Images/Lab0/Portal_DN_EP2.jpg" width="500" />
 
 8. Next step is creating a flow, to create first flow click on **Routing Strategies** from the portal and click on **Flows** and click **New**
 
