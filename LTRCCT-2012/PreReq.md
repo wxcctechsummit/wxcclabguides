@@ -100,15 +100,15 @@ In this section, we will go over the steps that are required to be completed for
 1. In the  **Control hub -->contact Center -->Settings**
 2. click on **Go to Webex Contact Center Management Portal** under **Advanced configuration** to cross launch to Webex Contact Center Portal.
 
-<img align="middle" src="Images/Lab0/Portal_Landing.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/portal_Landing.jpg" width="1000" />
 
 3.From the Portal Click **Provisioning-->Entrypoint/Queues-->Entrypoint**
 
-<img align="middle" src="Images/Lab0/Portal_EP.jpg" width="1000" />
+<img align="middle" src="Images/Lab0/portal_EP.jpg" width="1000" />
 
 4. Click on **New Entry Point** to create a new Entry point
 
-<img align="middle" src="Images/Lab0/Portal_EP1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_EP1.jpg" width="500" />
 
 > Name  -->    The name of the entry point.
 
@@ -124,17 +124,17 @@ The default time zone is the Tenant's time zone.
 
 5. To Map an Entry point  created with a Dial Number, Click **Provisioning-->EntryPoint Mapping**
 
-<img align="middle" src="Images/Lab0/Portal_DN_EP.jpg" width="300" />
+<img align="middle" src="Images/Lab0/portal_DN_EP.jpg" width="300" />
 
 6. Click on **New Mapping**
 
-<img align="middle" src="Images/Lab0/Portal_DN_EP1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_DN_EP1.jpg" width="500" />
 
 
 7. upon selecting  **Location** all  number  associate to that  location will be
 available for mapping, choose available **Number** and map it with the **Entry point** created  at step 4
 
-<img align="middle" src="Images/Lab0/Portal_DN_EP2.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_DN_EP2.jpg" width="500" />
 
 8. Next step is creating a flow, to create first flow click on **Routing Strategies** from the portal and click on **Flows** and click **New**
 
