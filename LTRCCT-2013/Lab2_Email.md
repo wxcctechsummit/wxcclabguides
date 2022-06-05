@@ -373,13 +373,13 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 <br/>
 
-- The Email will be offered to the agent. Click **Accept** to handle the email. Send the reply and verify that it is delivered.
+- The Email will be offered to the agent. Click **Accept** to handle the email. 
 
 <img align="middle" src="images/Lab2_Agent2.png" width="1000" />
 <br/>
 <br/>
 
-- Click "Reply" or Reply All" to reply to the email and enter the body of the email and hit send button.
+- Click "Reply" or Reply All" to the email and hit send button.
 
 - Add wrap up and close the task.
 
