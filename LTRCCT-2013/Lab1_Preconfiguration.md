@@ -66,13 +66,11 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Click on the back button for being redirected back to **Integrations** page and in front of **Webex CC Task** Click **Actions** → **Manage**.
 
-<img align="middle" src="images/Lab1_ManageIntegration2.png" width="1000" />
+<img align="middle" src="images/Lab1_ManageIntegration2.gif" width="1000" />
 <br/>
 <br/>
 
-- On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the authorizations mapped to this integration.
-
-- Click **Action** → **Add Authorization** associated with the **WxCC Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
+- On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the authorizations mapped to this integration. Click **Action** → **Add Authorization** associated with the **WxCC Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
 <br/>
@@ -84,10 +82,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-- Click on the back button for being redirected back to **Integrations** page.
-
-- Verify that the status of the authorizations is changed to **Authorized**.
-<img align="middle" src="images/Lab1_authorized2.png" width="1000" />
+- Click back button for being redirected back to **Integrations** page. Verify that the status of the authorizations is changed to **Authorized**.
+<img align="middle" src="images/Lab1_authorized2.gif" width="1000" />
 <br/>
 <br/>
 
