@@ -349,7 +349,7 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 <br/>
 
-- Click on **Settings** on top right corner and click on **Custom variables**. Here in **bizemailid** row, update the email address of the account that is added. Click on **SAVE**.
+- Click **Settings** on top right corner and switch to **Custom variables** tab. Here in the **bizemailid** row, update the default value with your email address of the Gmail account. Click **SAVE**.
 
 <img align="middle" src="images/Lab2_WF3.png" width="1000" />
 <br/>
