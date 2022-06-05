@@ -26,6 +26,8 @@ In this section, we will go over the steps that are required to be completed for
 1. Login to Portal
 2. Dial the Number Assigned to you and hear welcome prompt
 
+<img align="middle" src="Images/Lab1/Flowchat.jpg" width="1000" />
+
 
 ### Pre-requisites
 

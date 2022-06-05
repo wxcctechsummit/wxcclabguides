@@ -12,11 +12,9 @@ title: 'Lab 1: Agent_login'
 
 - [Lab Section](#lab-section)
   - [Step 1. Site,Team,Agent](#Site,Team,Agent)
-  - [Step 2. Webex Calling Settings](#webex_calling_Settings)
-  - [Step 3. Entry Point, Routing Strategy & Flow )](EP_RS_Flow)
-    - [1. Create new Entry Point](#1-create_EP)
-    - [2. Create new Routing Strategy](#2-create-RS)
-    - [3. Create new Flow](#3-create-new-flow)
+  - [Step 2. Agent Login](#AGent login)
+  - [Step 3. Flow configuration  )](Flow configuration )
+
     - [Congratulations, you have completed Lab1 tasks!](#congratulations-you-have-completed-prereq-tasks)
 
 # Introduction
@@ -60,7 +58,7 @@ In this section, we will go over the steps that are required to Login an Agent .
 
 > **Site** -- A site is a physical contact center location under the control of your enterprise. For example, enterprise Acme can have sites in Chicago, Manila, and Bangalore with agents to handle customer contacts.
 
-<img align="middle" src="Images/Lab1/site.jpg" width="400" />
+<img align="middle" src="Images/Lab1/Site.jpg" width="400" />
 
 >.
 
@@ -85,137 +83,78 @@ Agent can have Skill and multimedia profile at the team level.If agents has skil
 <img align="middle" src="Images/Lab1/Users.jpg" width="700" />
 
 
-
-
 > User with premium Agent license can log in as Agent as well as perform Admin tasks
 
+> **Note** In this Lab, we will using Admin user as Agent as well.
 
-<img align="middle" src="Images/CH_User_License.jpg" width="1000" />
+<img align="middle" src="Images/Lab1/Profiles.jpg" width="700" />
 
-- Upon verifying the user, Click **Cancel** and from the mainPage click on **Calling** and verify Directory Number is assigned to this user, if not click on **Add Number** to add a Directory Number.
+> **Note** For this lab, use Default Agent and Multimedia profile
 
 
-## Step 2. Webex Calling Settings
-> All the lab orgs are pre configured with Webex Calling &  Cloud connected PSTN, to validate numbers are already available  
+### Create Queue
 
-1) In the  **Control hub** Click **Calling** from the left menu and make sure the user calling Numbers are added here
+1. From portal -->provisioning -->Create new queue
+2. add call distribution group aka Teams
+3. make sure give service level threshold time (preferably 3600) and service level threshold
 
-<img align="middle" src="Images/CH_Number.jpg" width="1000" />
+<img align="middle" src="Images/Lab1/queue1.jpg" width="200" />
+<img align="middle" src="Images/Lab1/queue2.jpg" width="600" />
+<img align="middle" src="Images/Lab1/queue3.jpg" width="600" />
 
-> Main number is tagged to the location, the second number will be used through out this lab to call and test flows
 
+## Step 2. Agent Login
 
-## Step 3. Setup Entry Point, routing Strategy and Flow
+1. Download Webex Client from this [link](https://settings.webex.com/login)
+2. Login with Admin Credentials
+3. click on Webex Calling -->My Apps and Download Webex apps -- https://www.webex.com/downloads.html
+4. Login to Webex apps using same admin credentials
 
-> Control Hub offers a holistic view of all your Webex services. Contact center is also a Services under Control Hub, to cross launch to contact Center portal.
+<img align="middle" src="Images/Lab1/webexcallingpage.jpg" width="200" />
+<img align="middle" src="Images/Lab1/webexappdownload.jpg" width="200" />
+<img align="middle" src="Images/Lab1/webexsignin.jpg" width="200" />
 
-1) In the  **Control hub** Click **contact Center** under Services
-2) click on **Settings**
+> Using below link to login to agent desktop  alternatively you can cross launch from portal also
 
-<img align="middle" src="Images/CH_Contact_Center.jpg" width="1000" />
+Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com)
 
-> Voice Channel setting for Webex Contact Center can be validated here, in the screen shot about, this Org is programmed with Webex calling and Cloud connected PSTN, note there are 3 options available
+<img align="middle" src="Images/Lab1/Desktop_Crosslaunch.jpg" width="400" />
 
->  **Webex Contact Center PSTN:** This option is available when you order the Cisco PSTN for Contact Center add-on.
+> While login into agent desktop make sure to choose **Extension** and correct **Team**
 
->  **Voice POP Bridge:** This option allows you to use the PSTN services with Webex Contact Center. The PSTN services can be either from your own PBX or procured from a carrier partner.
+<img align="middle" src="Images/Lab1/stationlogin.jpg" width="200" />
+<img align="middle" src="Images/Lab1/agentstatus.jpg" width="200" />
+<img align="middle" src="Images/Lab1/team&profile.jpg" width="200" />
 
-> **Webex Calling:** This option allows you to use the Cloud Connected PSTN or Local Gateway option provided by your Webex Calling subscription for voice capabilities in Webex Contact Center.
 
-> Please note For trials, **only the Voice POP Bridge or Webex Calling voice options are available**; the Webex Contact Center PSTN option **isn't** available. When you convert the trial to a subscription, Webex Contact Center retains the voice option, however you can use **PSTN Switch** option to change the PSTN connection.
 
-  ### Create Entry Point on Contact Center Portal
 
-1. In the  **Control hub -->contact Center -->Settings**
-2. click on **Go to Webex Contact Center Management Portal** under **Advanced configuration** to cross launch to Webex Contact Center Portal.
+## Step 3. Flow configuration
 
-<img align="middle" src="Images/Portal_Landing.jpg" width="1000" />
+1. Copy the Lab0 flow by clicking on 3 dot <img align="middle" src="Images/Lab1/copyflow.jpg" width="100" />
+2. open the copy of Lab 0 and rename it to Lab1 <img align="middle" src="Images/Lab1/flowrename.jpg" width="200" />
+3. Delete Disconnect node and add Queue node and play music node, loop back play music as shown below
 
-3.From the Portal Click **Provisioning-->Entrypoint/Queues-->Entrypoint**
 
-<img align="middle" src="Images/Portal_EP.jpg" width="1000" />
+ <img align="middle" src="Images/Lab1/flow2.jpg" width="400" />
 
-4. Click on **New Entry Point** to create a new Entry point
+4. select queue created above and the **0_MOH** for music
 
-<img align="middle" src="Images/Portal_EP1.jpg" width="500" />
+<img align="middle" src="Images/Lab1/selectqueue.jpg" width="400" />
+<img align="middle" src="Images/Lab1/selectmusic.jpg" width="400" />
 
-> Name  -->    The name of the entry point.
+5. Validate the flow and publish the flow
 
->Channel Type Choose a channel type, such as Telephony, Email, and Chat.
->The default channel type is Telephony.
+6. change **current** routing strategy and change the flow from Lab_0 to Lab_1
 
->Service Level Threshold -->Enter the duration for which a customer request can be in a queue before the system flags it as outside the service level. If the agent completes a customer service request within this time interval, the system considers it within the service level.
+<img align="middle" src="Images/Lab1/Rschange.jpg" width="400" />
 
-> Time Zone (Routing Strategies Only)
-	(Optional) Enter the time zone that routing strategies use for this entry point.
-The default time zone is the Tenant's time zone.
 
+### Dial the Number from your mobile phone and make sure you hear the welcome voice prompt and call get queued to agent and agent desktop can get the call
 
-5. To Map an Entry point  created with a Dial Number, Click **Provisioning-->EntryPoint Mapping**
 
-<img align="middle" src="Images/Portal_DN_EP.jpg" width="300" />
 
-6. Click on **New Mapping**
-
-<img align="middle" src="Images/Portal_DN_EP1.jpg" width="500" />
-
-
-7. upon selecting  **Location** all  number  associate to that  location will be
-available for mapping, choose available **Number** and map it with the **Entry point** created  at step 4
-
-<img align="middle" src="Images/Portal_DN_EP2.jpg" width="500" />
-
-8. Next step is creating a flow, to create first flow click on **Routing Strategies** from the portal and click on **Flows** and click **New**
-
-<img align="middle" src="Images/portal_flow1.jpg" width="500" />
-
-9. Give any name and click on **Start Building Flow**
-
-<img align="middle" src="Images/portal_flow2.jpg" width="500" />
-
-<img align="middle" src="Images/portal_flow3.jpg" width="500" />
-
-10. From the Flow Pallete, drag and drop **Play Message Node** and **Disconnect Node** and connect all nodes
-
-<img align="middle" src="Images/portal_flow4.jpg" width="500" />
-
-<img align="middle" src="Images/portal_flow5.jpg" width="500" />
-
-11. Click on **Play Message** node to select the voice prompt
-
-<img align="middle" src="Images/portal_flow6.jpg" width="500" />
-
->Note all the prompts are pre loaded in the lab under **Routing Strategies-->Resources**
-
-12. Enable **Validation** and **Publish** the flow
-
-<img align="middle" src="Images/portal_flow6.jpg" width="500" />
-
-<img align="middle" src="Images/portal_flow7.jpg" width="500" />
-
-13. Routing Strategies tags the flow created with an Entry point, to create routing  strategies click on **Routing Strategies-->New Strategy**
-
-<img align="middle" src="Images/portal_RS_1.jpg" width="300" />
-
-
-
-
-
-14. Create and Routing strategy which act as a  Bridge between an EntryPoint and Flow
-
-<img align="middle" src="Images/portal_RS_3.jpg" width="1000" />
-
->For each entry point, you should create a set of default routing strategies that cover all time intervals. In addition, you can schedule an alternate strategy beyond the default strategy for any time interval. For example, EP 1 could have a BusyHourStrategy for the normal day shift and an OffHoursStrategy for non-business hours.
-
->Flag the normal daily schedule as the default strategy. You can create a non-default strategy, such as a holiday schedule for a time interval that overlaps the default strategy. A strategy that is not flagged as default overrides a default strategy and is used as an exception to the default schedule. This means that the system first checks for a strategy that is not flagged as default, and if none exists, the system uses the default strategy.
-
-15. As a last step make sure the routing strategy becomes **Current**
-
-<img align="middle" src="Images/portal_RS_4.jpg" width="1000" />
-
-### Dial the Number from your mobile phone and make sure you hear the welcome voice prompt
-
-### Congratulations, you have completed prereq tasks!
+### Congratulations, you have completed Lab1 tasks!
 
 
 
