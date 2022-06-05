@@ -199,7 +199,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Click **GENERATE TOKEN** and follow the step on the screenshot:
 
-<img align="middle" src="images/Lab2_As2.png" width="1000" />
+<img align="middle" src="images/Lab2_As2.gif" width="1000" />
 <br/>
 <br/>
 
