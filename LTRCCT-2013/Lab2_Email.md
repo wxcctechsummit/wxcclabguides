@@ -31,7 +31,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
 > Gmail: **[https://mail.google.com](https://mail.google.com){:target="_blank"}**\
 > Workflows: **[GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}**\
-> Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
+> Webex Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
 
 
 # Lab Section
@@ -55,7 +55,7 @@ Starting from May 30 the **Less Secure Apps** feature was disabled on all Google
 
 > **Note:** Your \<ID\> was provided to you personally.  \<ID\> is the unique number equal to your POD.
 
-- Login to the Gmail account with the credentials above[https://mail.google.com](https://mail.google.com){:target="_blank"}. The password is the same as for Webex admin account.
+- Login to the Gmail account with the credentials above [https://mail.google.com](https://mail.google.com){:target="_blank"}. The password is the same as for Webex admin account. During first login select **Turn off smart features** 
 
 - Enable POP3/IMAP setting by clicking on settings icon on top right corner and selecting **See all settings**.
 
@@ -127,7 +127,7 @@ We need to activate API if we want to use Gmail accont for outbound emails.
 <br/>
 <br/>
 
-- On the test user page, click **ADD USERS** and enter the gmail address. Click **Save and Continue**.
+- On the test user page, click **ADD USERS** and enter your gmail address. Click **Save and Continue**.
 
 <img align="middle" src="images/Lab2_NewGmail9.png" width="1000" />
 <br/>
@@ -169,7 +169,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Select **Assets** -> **Apps** -> **CONFIGURE NEW APP** -> **Email**.
 
-<img align="middle" src="images/Lab2_Assest1.png" width="1000" />
+<img align="middle" src="images/Lab2_Assest1.gif" width="1000" />
 <br/>
 <br/>
 
@@ -193,7 +193,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 > where \<ID\> is your POD ID
 
-<img align="middle" src="images/Lab2_As1.png" width="1000" />
+<img align="middle" src="images/Lab2_As1.gif" width="1000" />
 <br/>
 <br/>
 
@@ -209,9 +209,9 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 <br/>
 
-- Click on **REGISTER TO WEBEX CC** and Select the appropriate service (the default **My First Service**). In the end click **REGISTER**.
+- Click on **REGISTER TO WEBEX CC** and Select the service **My First Service**. In the end click **REGISTER**.
 
-<img align="middle" src="images/Lab2_Assest3.png" width="1000" />
+<img align="middle" src="images/Lab2_As4.gif" width="1000" />
 <br/>
 <br/>
 
@@ -229,23 +229,17 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 <br/>
 
-- Click on **Forwarding and POP/IMAP** -> click on add a forwarding address -> Paste the copied forwarding address from the created asset. Then click on **Next**.
+- Click on **Forwarding and POP/IMAP** -> click on **Add a forwarding address** -> Paste the copied forwarding address from the created asset. Then click on **Next**. In a new pop up tab click **Proceed** and then click **OK** when it prompts.
 
-<img align="middle" src="images/Lab2_Gmail6.png" width="1000" />
-<br/>
-<br/>
-
-- A new pop up tab opens and click **Proceed** and then click **OK** when it prompts.
-
-<img align="middle" src="images/Lab2_Gmail7.png" width="1000" />
+<img align="middle" src="images/Lab2_Gmail6.gif" width="1000" />
 <br/>
 <br/>
 
 - Go back to Webex Connect and click on **Tools** -> **Export Logs**. 
 
-- Under Inbound logs, Select the App that was created -> Select Channel Event as `Incoming Email` -> Select the period as `Today` and click **Download**. 
+- Under Inbound logs, Select the App that was created -> Select Channel Event as `Incoming Email` -> Select the period as `Today`. Wait until status is changed to **Ready for download** and click **Download** icon. 
 
-<img align="middle" src="images/Lab2_ExportLog1.png" width="1000" />
+<img align="middle" src="images/Lab2_ExportLog1.gif" width="1000" />
 <br/>
 <br/>
 
@@ -379,7 +373,7 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 <br/>
 
-- The Email will be offered to the agent. Click "Accept" to handle the email.
+- The Email will be offered to the agent. Click **Accept** to handle the email. Send the reply and verify that it is delivered.
 
 <img align="middle" src="images/Lab2_Agent2.png" width="1000" />
 <br/>
