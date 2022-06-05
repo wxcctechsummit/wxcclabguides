@@ -1,3 +1,4 @@
+---
 title: 'Lab 2: Menu & opt_Out'
 ---
 
@@ -103,7 +104,7 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
 <img align="middle" src="Images/Lab1/agentstatus.jpg" width="200" />
 <img align="middle" src="Images/Lab1/team&profile.jpg" width="200" />
 
-
+>Set the Agent status to ```Not Ready```
 
 
 ## Step 3. Flow configuration
