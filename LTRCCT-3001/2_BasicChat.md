@@ -215,7 +215,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/1_PreReq.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3_QnABot.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3.1_QnABotConfiguration.html";
  }
 </script>
 

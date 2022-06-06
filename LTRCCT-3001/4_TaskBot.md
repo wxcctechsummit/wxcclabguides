@@ -10,15 +10,12 @@ title: 'Lab 4: Creating a Task Bot'
   - [Vocabulary](#vocabulary)
   - [Accessing the Bot Builder](#accessing-the-bot-builder)
   - [Creating a Task Bot](#creating-a-task-bot)
-  - [Training](#training)
-      - [Creating Entities](#creating-entities)
-      - [Creating an Intent](#creating-an-intent)
-  - [Creating Responses](#creating-responses)
-  - [Launch Flow Builder](#launch-flow-builder)
+  - [Editing the Flow to use your bot](#editing-the-flow-to-use-your-bot)
+  - [Decide between Code or Flow Builder for actioning bot logic.](#decide-between-code-or-flow-builder-for-actioning-bot-logic)
 
 
 # Introduction
-In this lab we will be creating a task bot using the bot builder in Webex Connect. We will collect information from the customer and either action it directly via API or pass the information to our chat agent so that they can assist our customer.  
+In this lab we will be creating a task bot using the bot builder in Webex Connect. We will collect information from the customer and either action it directly via API or pass the information to our chat agent so that they can assist our customer.  There are two paths that you can take to accomplish our use cases; using python or using the flow bulder.
 
 ---
 
@@ -53,36 +50,131 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 - Give the bot a name
 - Click done
 
-## Training
-- Click Training <img src="images\Lab4_Training_menu.PNG" height="25">
-#### Creating Entities 
-- Select Entities
-- For Each Entity:
-  - Click Create Entity
-    > Name: 
+## Editing the Flow to use your bot
+- Retun to Services
+- click on the service that you created
+- Click View My Flows
+- Click Create Flow
+  > Flow Name: give your task flow a name 
+  >
+  > Type: Work Flow 
+  >
+  > Method: Copy from existing flow 
+  >
+  > Select flow: your inbound chat flow
+  > 
+  > Click Create
+
+  ---
+
+- Open the first Recieve Node
+- Click on Transaction Actions:
+
+    > Add Action
     >
-    > Entity Type:
+    > Time: On-Leave
+    > 
+    > Action: Set Variable
     >
-    
+    > Variable: messageForBot
+    >
+    > Value: Output Varriables > InApp - Form Response > inappmessaging.message
+    >
+
     ---
 
-#### Creating an Intent
-- Select Intents
-- Click Create Intent
-  - 
-- Add uterances 
-  > Create a phrase similar to what a user might enter.
+- Add Task Bot Node
+
+    > Bot: your task bot
     >
-    > Click link entity
+    > Message: Custom Variables > messageForBot $(messageForBot)
+    >
+    > Channel: In-App
+    >
+    > Unique ID: Custom Variables > conversationId $(conversationId)
+    >
+
+    ---
+
+- Add Live Chat or In-App Messaging Node
+
+    > 
+    >
     >
     >
     >
 
     ---
 
-## Creating Responses
--  Click Responses <img src="images\Lab4_responses_menu.PNG" height="25"> 
+- Add Append Conversation Node
+
+	>
+	>
+	>
+	>
+
+	---
+
+- Add a Recieve Node
+
+	>
+	>
+	>
+
+	---
 
 
-## Launch Flow Builder 
-- 
+- Add Append Conversation Node
+
+	>
+	>
+	>
+	>
+
+	---
+
+
+- Add Live Chat or In-App Messaging Node for error handeling
+
+	>
+	>
+	>
+	>
+
+	---
+
+
+## Decide between Code or Flow Builder for actioning bot logic.
+- [Code]([4_TaskBot_Code.md](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Code.html))
+- [Flow Builder]([4_TaskBot_Flow.md](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Flow.html))
+
+
+
+
+
+
+
+
+<script>
+function code() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3.2_QnABotFlowConfig.html";
+}
+function flowBuilder() {
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5_CCAI.html";
+ }
+</script>
+
+<div id="button-row">
+<button onclick="code()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Code</button>
+
+<button onclick="flowBuilder()" style="
+  position: relitive;
+  left: 300px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Flow Builder</button>
+
+</div>
+
