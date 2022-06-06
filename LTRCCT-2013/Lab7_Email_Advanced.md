@@ -54,13 +54,13 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 
 - Drug and drop the **PIQ and EWT** node from the Node Palette to the main canvas.
 
-<img align="middle" src="images/Lab7_workflow2.png" width="1000" />
+<img align="middle" src="images/Lab7_workflow2.gif" width="1000" />
 <br/>
 <br/>
 
 - Delete the existing **Queue Task** `Queued` link by clicking on it and pressing the delete button. Re-connect the **Queue Task** with the **PIQ and EWT**
 
-<img align="middle" src="images/Lab7_workflow3.png" width="1000" />
+<img align="middle" src="images/Lab7_workflow3.gif" width="1000" />
 <br/>
 <br/>  
 
@@ -86,7 +86,7 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 
 - Click **SAVE** and link all exit states of **PIQ and EWT** with **Update Conversation**.
   
-<img align="middle" src="images/Lab7_workflow5.png" width="1000" />
+<img align="middle" src="images/Lab7_workflow5.gif" width="1000" />
 <br/>
 <br/>
 
@@ -141,13 +141,13 @@ We will use the **Branch** node which allows you to split your flow based on con
  
 - Drag the **Branch** node from the nodes palette to the main canvas.
 
-<img align="middle" src="images/Lab7_subject1.png" width="1000" />  
+<img align="middle" src="images/Lab7_subject1.gif" width="1000" />  
 <br/>
 <br/>
 
 - Delete the existing **Create Task** `Created` link by clicking on it and pressing the delete button. Re-connect **Create Task** with **Branch**.
    
-<img align="middle" src="images/Lab7_subject2.png" width="1000" />  
+<img align="middle" src="images/Lab7_subject2.gif" width="1000" />  
 <br/>
 <br/>
 
@@ -170,7 +170,7 @@ We will use the **Branch** node which allows you to split your flow based on con
 
 - Connect `onError` node outcome with the  **Close Conversation** .
 
-<img align="middle" src="images/Lab7_subject4.png" width="1000" />  
+<img align="middle" src="images/Lab7_subject4.gif" width="1000" />  
 <br/>
 <br/>
 
@@ -193,7 +193,7 @@ Double-click the second **Queue Task** node and set the following options:
   - `Queued` with **PIQ and EWT**.
   - `onErro`, `OnTimeout`, `onInvalideData`, `taskFailed`, etc with the **Close Task**.
 
-<img align="middle" src="images/Lab7_subject6.png" width="1000" />  
+<img align="middle" src="images/Lab7_subject6.gif" width="1000" />  
 <br/>
 <br/>
 
@@ -214,7 +214,7 @@ Double-click the second **Queue Task** node and set the following options:
 > **Note:** You cannot change your team if you have active tasks, interactions, or incoming task requests. The Team option is disabled.
 
 
-<img align="middle" src="images/Lab7_subject8.png" width="1000" />  
+<img align="middle" src="images/Lab7_subject8.gif" width="1000" />  
 <br/>
 <br/>
 
@@ -255,7 +255,7 @@ It needs just for the verification, exactly the same we will be doing in the Ema
   
 - Drug and drop the **HTTP Request** node from the Node Palette to the main canvas. Connect exit of the first **Queue Task** `Queued` with the **HTTP Request**
 
-<img align="middle" src="images/Lab7_smartsheet4.png" width="1000" />  
+<img align="middle" src="images/Lab7_smartsheet4.gif" width="1000" />  
 <br/>
 <br/>
 
