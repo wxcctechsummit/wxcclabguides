@@ -86,6 +86,7 @@ Go to https://5f97898842706e0016957443.mockapi.io/crm/api/customers
 Copy out the JSON into https://jsonpath.com on the left pane.
 
 Try out all of these to learn how JSON path works!
+
 |Query For |	Parse statement |
 |----------|------------------|
 |All Customers|	$.*|
@@ -107,110 +108,83 @@ Try out all of these to learn how JSON path works!
 
 ## Step 3. Flow configuration
 
-1. Copy the Lab1 flow by clicking on 3 dot
-<img align="middle" src="Images/Lab2/Flow1.jpg" width="500" />
+1. Copy the Lab2 flow by clicking on 3 dot and open the copied the flow
+<img align="middle" src="Images/Lab3/1.jpg" width="1000" />
 
-2. Remove Play message node
-<img align="middle" src="Images/Lab2/Flow2.jpg" width="500" />
+2. Add Play message node and select ```0_welcome_CL.wav``` file
+<img align="middle" src="Images/Lab3/2.jpg" width="1000" />
 
-3. Drag and Drop Menu Node and connect NewPhoneContact node to MenuNode
-<img align="middle" src="Images/Lab2/Flow3.jpg" width="500" />
+3. Drag and drop ```CollectDigits1``` node and select ```5_enter_pin.wav``` file, under Advanced setting change min and max Digits to ```5```
 
-4. i) Click on Menu node, rename it to ```MainMenu``` and
+as a best practice always enable ```Make prompt interruptible```
 
-   ii) Select ```1_main_main.wav``` file
+Connect ```No-input timeout``` as well as ```unmatched Entry``` to itself
 
-   iii) Add 3 custom menu link 1,2,3 and add respective Descriptions
+<img align="middle" src="Images/Lab3/3.jpg" width="1000" />
 
-   <img align="middle" src="Images/Lab2/Flow41.jpg" width="200" />
-   <img align="middle" src="Images/Lab2/Flow42.jpg" width="200" />
-   <img align="middle" src="Images/Lab2/Flow43.jpg" width="200" />
+> Create 3 string Variable and mark all 3 are ```Agent Viewable```
+Customer_Name
+Customer_Email
+Customer_Account
+
+
+<img align="middle" src="Images/Lab3/31.jpg" width="200" />
+<img align="middle" src="Images/Lab3/32.jpg" width="200" />
+<img align="middle" src="Images/Lab3/33.jpg" width="200" />
+
+4. Drag and drop ```HTTP Request``` Rename it to  ```DataDip```
+
+i) Disable, ```Use authenticated endpoints```
+
+ii) In the Request URL enter  ```https://5f97898842706e0016957443.mockapi.io/crm/api/customers```
+
+iii) Method select ```GET```
+iv) Under Query Parameters Key==pin, value ==```{{CollectDigits.DigitsEntered}}```
+v) Content Type == application/json
+
+   <img align="middle" src="Images/Lab3/41.jpg" width="200" />
+   <img align="middle" src="Images/Lab3/42.jpg" width="200" />
+
+
+   <img align="middle" src="Images/Lab3/44.jpg" width="200" />
+   <img align="middle" src="Images/Lab3/45.jpg" width="200" />
+
 
 
  <img align="middle" src="Images/Lab2/flow44.jpg" width="500" />
 
-5. Drag and drop Queue contact node and select ```Dummy_Queue``` created
+5. Parse the Json for  ```Name``` ```Email``` and ```Account```
 
-<img align="middle" src="Images/Lab2/selectqueue.jpg" width="500" />
+>Use ```https://jsonpath.com/``` website to parse the value, take the json by entering the webservices in Firefox browser
+
+<img align="middle" src="Images/Lab3/51.jpg" width="500" />
+<img align="middle" src="Images/Lab3/5.jpg" width="500" />
 
 
-6. To Set ```QueueCounter``` Variable
+6. Drag and drop  ```condition``` Node and set the condition to
 
-   i) Click anywhere on the Flow canvas
-
-   ii)Click on ```Add Flow Variable```
-
-   iii) Create a ```integer```variable named ```QueueCounter``` and set Default value to ```0```
-
-   <img align="middle" src="Images/Lab2/Flow61.jpg" width="500" />
-   <img align="middle" src="Images/Lab2/Flow62.jpg" width="500" />
+ `{{DataDip.httpStatusCode}}``
 
 
 
-7. Set ```QueueCounter``` variable
- i) Drag and Drop ```SetVarible``` node
-
- ii) In the variable select ```QueueCounter``` variable created
-
- iii) In the set value type ```{{QueueCounter+1}}```, Note: variable in the set node must always be typed inside ```{{}} ``` braces
-
- <img align="middle" src="Images/Lab2/Flow71.jpg" width="500" />
+   <img align="middle" src="Images/Lab3/6.jpg" width="500" />
 
 
 
-8. Drag and Drop ```PlayMusic``` node and select ```Music File``` and set ```offset``` to ```5```
-  <img align="middle" src="Images/Lab2/Flow81.jpg" width="500" />
 
-9. Drag and Drop ```Condition``` node and set the condition to  ```{{QueueCounter<2}}``` if ```True``` connect it to ```SetQCounter```
+7. if the condition is true to connect to ```play message```
 
-  <img align="middle" src="Images/Lab2/Flow81.jpg" width="500" />
 
-10. Drag and Drop ```PlayMessage``` node and select  ```2_high_call_volume.wav``` file and connect ```False``` output to   ```PlayMessage```  node
+ <img align="middle" src="Images/Lab3/7.jpg" width="200" />
+ <img align="middle" src="Images/Lab3/8.jpg" width="200" />
 
-  <img align="middle" src="Images/Lab2/Flow101.jpg" width="500" />
 
-11. Drag and Drop ```Menu``` node and select  ```3_callback_menu.wav``` file and add  2 more custom links 1 and 2 for  ```callback``` and  ```Voicemail```  
+8. Validate and Publish the Flow
 
-    <img align="middle" src="Images/Lab2/Flow111.jpg" width="500" />
+9. Edit ```Current``` Routing Strategy and  change the flow to ```Lab3```
 
-12. Set call back
 
-i) Drag and Drop ```PlayMessage``` node and select  ```4_callback_confirm.wav``` file
 
-ii) Drag and Drop ```Callback``` node and set  ```callback Dial Number``` to ```NewPhoneContact.ANI```  and ```Static Queue```  to the queue created in lab 1
-
-iii) connect ```DisconnectContact``` node to callback node
-
-  <img align="middle" src="Images/Lab2/Flow121.jpg" width="500" />
-
-  <img align="middle" src="Images/Lab2/Flow122.jpg" width="500" />
-
-13. Set Voicemail
-
-i) Drag and Drop ```Blindtransfer``` node and set  ```Number``` to ```+18005532447``` which is Cisco  TAC support number
-
-ii) Repeat the same for ```optout``` menu as well
- <img align="middle" src="Images/Lab2/Flow131.jpg" width="500" />
-
-  <img align="middle" src="Images/Lab2/Flow132.jpg" width="500" />
-
-14. Connect ```No-input Timeout``` and ```Unmatched Entry``` from Main menu to itself
-
-15. Connect ```No-input Timeout``` and ```Unmatched Entry``` from OptOut menu to ```SetQCounter```  node
-
-16. validate &  Publish the flow
-
-<img align="middle" src="Images/Lab2/Flow151.jpg" width="500" />
-
-<img align="middle" src="Images/Lab2/Flow152.jpg" width="500" />
-
-17. Edit ```Current``` Routing Strategy and  change the flow to ```Lab2```
-
-<img align="middle" src="Images/Lab2/Flow171.jpg" width="500" />
-
-18. Validate the flow
-
-i) To test the flow call the Dial Number configured and traverse through different menu and leave ```CallBack``` and make sure Agent get the call
 
 
 ### Dial the Number from your mobile phone and make sure to traverse through different menu and leave ```CallBack``` and ```Voicemail```
