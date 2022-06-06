@@ -66,6 +66,7 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
   > Click Create
 
   ---
+
 - Open the first Recieve Node
 - Click on Transaction Actions:
 
@@ -154,5 +155,26 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
 
 
+<script>
+function code() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3.2_QnABotFlowConfig.html";
+}
+function flowBuilder() {
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5_CCAI.html";
+ }
+</script>
 
+<div id="button-row">
+<button onclick="code()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Code</button>
+
+<button onclick="flowBuilder()" style="
+  position: relitive;
+  left: 300px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Flow Builder</button>
+
+</div>
 
