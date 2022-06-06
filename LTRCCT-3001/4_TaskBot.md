@@ -145,21 +145,12 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
 
 ## Decide between Code or Flow Builder for actioning bot logic.
-- [Code]([4_TaskBot_Code.md](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Code.html))
-- [Flow Builder]([4_TaskBot_Flow.md](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Flow.html))
-
-
-
-
-
-
-
 
 <script>
-function code() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3.2_QnABotFlowConfig.html";
+function code() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Code.html";
 }
 function flowBuilder() {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5_CCAI.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Flow.html";
  }
 </script>
 
@@ -168,10 +159,8 @@ function flowBuilder() {
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 10px;">Code</button>
-
+Or 
 <button onclick="flowBuilder()" style="
-  position: relitive;
-  left: 300px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 10px;">Flow Builder</button>
