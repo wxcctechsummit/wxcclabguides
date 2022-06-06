@@ -11,7 +11,7 @@ title: 'Lab 4: Creating a Task Bot'
   - [Accessing the Bot Builder](#accessing-the-bot-builder)
   - [Creating a Task Bot](#creating-a-task-bot)
   - [Editing the Flow to use your bot](#editing-the-flow-to-use-your-bot)
-  - [Decide between Code or [Flow Builder](4_TaskBot_Flow.md)  for actioning bot logic](#decide-between-code-or-flow-builder--for-actioning-bot-logic)
+  - [Decide between Code or Flow Builder for actioning bot logic.](#decide-between-code-or-flow-builder-for-actioning-bot-logic)
 
 
 # Introduction
@@ -142,7 +142,12 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
 	---
 
-## Decide between [Code](4_TaskBot_Code.md) or [Flow Builder](4_TaskBot_Flow.md)  for actioning bot logic
+
+## Decide between Code or Flow Builder for actioning bot logic.
+- [Code]([4_TaskBot_Code.md](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Code.html))
+- [Flow Builder]([4_TaskBot_Flow.md](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Flow.html))
+
+
 
 
 
