@@ -4,15 +4,21 @@ title: 'Lab 4: Creating a Task Bot using Flow Builder'
 
 # Table of Contents
 - [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
   - [Tools we will be using](#tools-we-will-be-using)
-  - [Use Cases](#use-cases)
   - [Vocabulary](#vocabulary)
+  - [Use Cases](#use-cases)
   - [Training](#training)
       - [Creating Entities](#creating-entities)
       - [Creating an Intent](#creating-an-intent)
   - [Creating Responses](#creating-responses)
+  - [Testing Initial Bot Logic](#testing-initial-bot-logic)
+  - [Testing Your Bot via Live Chat](#testing-your-bot-via-live-chat)
   - [Launch Flow Builder](#launch-flow-builder)
     - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
+
+# Introduction
+In this portion of the lab, we will be configuring the bot itself.  We have three different use cases that we are going to complete so that we can take some of the load off of our customer service team.  We will be collecting information, deciding if we need to handoff to an agent, making API calls, and relaying information back to the user.
 
 ## Tools we will be using
 - Postman
@@ -22,17 +28,26 @@ title: 'Lab 4: Creating a Task Bot using Flow Builder'
 - mockapi.io
 - Webex Connect Flow Builder
 
-
-## Use Cases
-1. Check if an item is in stock
-2. Change my order
-3. Check shipping status 
-
 ## Vocabulary 
 - Intents - Triggers that you bot will respond to
 - Utterances - Training phrases that will map to Intents
 - Entities - A kin to variables for running tasks. 
+- Slots - Entities that are used in Intents.
 - Responses - Follow up to either get additional information regarding an entity or a response to an intent. 
+
+## Use Cases
+1. Check if an item is in stock
+   - Entities:
+     - Stock Item: Custom list: Widget, Bobble
+     - Color: Custom List: Green, Red, Yellow, Blue, Purple, Silver, Ornage
+    - Intent:
+      - Check Stock
+    - Utterances:
+      - Do you have green bobbles?
+      - Do you have red widgets?
+2. Change my order
+3. Check shipping status 
+
 
 ## Training
 - Click Training <img src="images\Lab4_Training_menu.PNG" height="25">
@@ -44,25 +59,71 @@ title: 'Lab 4: Creating a Task Bot using Flow Builder'
     >
     > Entity Type:
     >
+    > If using a Custom List:
+    >> Populate the list with values.
+    >> 
+    >> Add any Synonyms that are necessary
     
     ---
 
 #### Creating an Intent
 - Select Intents
 - Click Create Intent
-  - 
-- Add uterances 
-  > Create a phrase similar to what a user might enter.
+  > Name your intent (Example: Check Stock)
+  >
+  > Add uterances 
+  >
+  >> Create a phrase similar to what a user might enter.
+  >>
+    >>  In the Slots section:
+    >>
+    >>> Click link entity 
+    >>>
+    >>> Select any entities that you will use for this intent
+    >>>
+    >>> Click the **Required** checkbox if they are required
+    >>>
+    >>> Select or create a new **Template Key** (Will be used to prompt for missing information)
+    >>
     >
-    > Click link entity
+    > Click on words which represent **Entities** 
     >
+    > <img src="images\Lab4_Map_Entity.gif">
+    >   
+    >In the **Response** Section Click on final template key
+    >> Select or create a Template key which will be used to respond to the intent once required slots are filled. (Example: Lookup Item)
     >
-    >
+- Toggle reset slots after completion to True
+- Click Save.
+- Click Train and supply a reason for training.
 
     ---
 
 ## Creating Responses
 -  Click Responses <img src="images\Lab4_Responses_menu.PNG" height="25"> 
+- Locate the templates which you created for entity slot filling 
+  - Add some responses that will prompt the customer to enter in the connect information. (Example: Which Color?)
+- Open [Variable Documentation](https://help.imiconnect.io/docs/response-designer#list-of-common-response-variables) in a new tab.
+- Locate the template which you created to respond to your intent
+  - Populate the response with the Entities and Intents that you will be using as variables. (Example: ${entity.Color} ${intent})
+- Click Update
+- Click Make Live
+
+  ---
+
+## Testing Initial Bot Logic
+- Click back to the training section
+- Click Preview
+- Test your bot by using training phrases.
+    
+  ---
+
+## Testing Your Bot via Live Chat
+- go to your website and launch a new chat
+- Fill in the form values
+- Test your bot using your training phrases
+  
+  ---
 
 
 ## Launch Flow Builder 
