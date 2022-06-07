@@ -1,13 +1,10 @@
 ---
-title: 'Lab 4: Creating a Task Bot'
+title: 'Lab 4: Task Bot Flow Modification'
 ---
 
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-  - [Tools we will be using](#tools-we-will-be-using)
-  - [Use Cases](#use-cases)
-  - [Vocabulary](#vocabulary)
   - [Accessing the Bot Builder](#accessing-the-bot-builder)
   - [Creating a Task Bot](#creating-a-task-bot)
   - [Editing the Flow to use your bot](#editing-the-flow-to-use-your-bot)
@@ -20,25 +17,6 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 ---
 
 
-## Tools we will be using
-- Postman
-- Bot Builder
-- requestcatcher.com
-- jsonpathfinder.com
-- mockapi.io
-- Webex Connect Flow Builder
-
-
-## Use Cases
-1. Check if an item is in stock
-2. Change my order
-3. Check shipping status 
-
-## Vocabulary 
-- Intents - Triggers that you bot will respond to
-- Utterances - Training phrases that will map to Intents
-- Entities - A kin to variables for running tasks. 
-- Responses - Follow up to either get additional information regarding an entity or a response to an intent. 
 
 ## Accessing the Bot Builder 
 - In the connect portal (https://cl2podXX.imiconnect.io)
@@ -52,7 +30,7 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
 ## Editing the Flow to use your bot
 - Retun to Services
-- click on the service that you created
+- Click on the service that you created
 - Click View My Flows
 - Click Create Flow
   > Flow Name: give your task flow a name 
@@ -67,7 +45,7 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
   ---
 
-- Open the first Recieve Node
+- Open the Recieve Node
 - Click on Transaction Actions:
 
     > Add Action
@@ -76,18 +54,23 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
     > 
     > Action: Set Variable
     >
-    > Variable: messageForBot
+    > Variable: message
     >
-    > Value: Output Varriables > InApp - Form Response > inappmessaging.message
+    > Value: Output Varriables > InApp - Form Response > inappmessaging.message $(n38.inappmessaging.message)
     >
 
     ---
 
-- Add Task Bot Node
+- Add Task Bot node <img src="images\Lab4_TaskBot.PNG" height="25"> over top of the existing Queue Task node
+-Find the Create Task node and click on the green line that says created, which connects to the queue Task node. Click on it and delete it.
+- Click and drag from the green node edge to the Task Bot node 
+    > <img src="images\Lab4_connect_Task_node.gif">
 
+
+- Open the Task Bot node by double clicking
     > Bot: your task bot
     >
-    > Message: Custom Variables > messageForBot $(messageForBot)
+    > Message: Custom Variables > messageForBot $(messagetext)
     >
     > Channel: In-App
     >
@@ -96,52 +79,112 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
     ---
 
-- Add Live Chat or In-App Messaging Node
-
-    > 
+- Add Live Chat or In-App Messaging Node <img src="images\Lab4_In-App.PNG" height="25"> next to the Task Bot node
+- Drag the green node edge from taskbot to the Live Chat or In-App Messaging Node
+  - Select onSuccess and press OK
+- Drag the green node edge from taskbot to the Queue Task Node
+  - It will automatically create the connection for onAgentHandover
+- For each Red and Orange node edge on the Task Bot Node
+  - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
+- Open the Live Chat or In-App Messaging Node
+    > Destination Type: Start > inapppessaging.userId $(n2.inappmessaging.userId)
     >
+    > Message: Task Bot > taskbot.text_response $(n2303.taskbot.text_response)
     >
+    > Thread ID: Start > inappmessaging.threadId $(n2.inappmessaging.threadId)
     >
-    >
+    > Click Save
 
     ---
 
-- Add Append Conversation Node
+- Add Append Conversation Node <img src="images\Lab4_Append.PNG" height="25">
+  - Drag the green node edge from the Live Chat or In-App Messaging Node and connect it to the Append Conversation Node
+  - For each Red node edge on the Task Bot Node
+    - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
+- Open the Append Conversation Node
+    
+	> Method Name: Append Chat
+	>
+	> Node Runtime Authorization: Pick default
+	>
+    > Channel: Livechat
+    >
+    > Conversation ID: Custom Variables > conversationId  $(conversationId)
+    >
+    > Message Type: Text With Attachments
+    >
+    > Direction: Outbound
+    >
+    > Text: Task Bot > taskbot.text_response $(n2303.taskbot.text_response)
+    >
+    > Timestamp: Start > inappmessaging.timestamp $(n2.inappmessaging.timestamp)
+    >
 
-	>
-	>
-	>
-	>
 
 	---
 
-- Add a Recieve Node
+- Add a Recieve Node <img src="images\Lab4_Recieve.PNG" height="25">
+- Drag the green node edge from the Append Conversation Node and connect it to the Recieve Node
+  - For each Red or Orange node edge on the Append Conversation node
+    - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
+- Open the Recieve Node
+	> Select Incomming Message/Event: Recieve In-App Messaging   
+	>
+	> Max timeout: 300
+    >
+    > From(threadID): Start > inappmessaging.threadId $(n2.inappmessaging.threadId)
+    >
+    > From(userId): Start > inappmessaging.userId $(n2.inappmessaging.userId)
+    >
+    >Event name: Incoming Message
+    >
+- Click on Transaction Actions:
 
-	>
-	>
-	>
+    > Add Action
+    >
+    > Time: On-Leave
+    > 
+    > Action: Set Variable
+    >
+    > Variable: messagetext
+    >
+    > Value: Output Varriables > inappmessaging.message $(n2311.inappmessaging.message)
+- Click Save  
+- Drag the green node edge from the Recieve Node and connect it to the Append Conversation Node
+  - For each Red or Orange node edge on the Recieve Node
+    - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
 
 	---
 
 
-- Add Append Conversation Node
+- Add Append Conversation Node <img src="images\Lab4_Append.PNG" height="25">
 
+	- Open the Append Conversation Node
+    
+	> Method Name: Append Chat
 	>
+	> Node Runtime Authorization: Pick default
 	>
-	>
-	>
-
+    > Channel: Livechat
+    >
+    > Conversation ID: $(conversationId)
+    >
+    > Message Type: Text With Attachments
+    >
+    > Direction: Inbound
+    >
+    > Text: messagetext $(messagetext)
+    >
+    > Timestamp: Start > inappmessaging.timestamp $(n2.inappmessaging.timestamp)
+    >
+- Drag the green node edge from the Append Conversation Node and connect it to the Task Bot Node
+  - For each Red or Orange node edge on the Append Conversation Node
+    - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
+     
 	---
 
 
-- Add Live Chat or In-App Messaging Node for error handeling
 
-	>
-	>
-	>
-	>
-
-	---
 
 
 ## Decide between Code or Flow Builder for actioning bot logic.
