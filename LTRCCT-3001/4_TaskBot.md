@@ -64,7 +64,7 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 - Add Task Bot node <img src="images\Lab4_TaskBot.PNG" height="25"> over top of the existing Queue Task node
 -Find the Create Task node and click on the green line that says created, which connects to the queue Task node. Click on it and delete it.
 - Click and drag from the green node edge to the Task Bot node 
-    > <img src="images\Lab4_connect_Task_node.gif">
+    > <img src="images\Lab4_Connect_Task_Node.gif">
 
 
 - Open the Task Bot node by double clicking
