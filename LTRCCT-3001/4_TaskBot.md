@@ -119,7 +119,8 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
     >
     > Timestamp: Start > inappmessaging.timestamp $(n2.inappmessaging.timestamp)
     >
-
+    > Attachments: null
+    >
 
 	---
 
@@ -177,14 +178,17 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
     >
     > Timestamp: Start > inappmessaging.timestamp $(n2.inappmessaging.timestamp)
     >
+    > Attachments: null
+    >
 - Drag the green node edge from the Append Conversation Node and connect it to the Task Bot Node
   - For each Red or Orange node edge on the Append Conversation Node
     - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
      
 	---
 
-
-
+- Save the Flow
+- Click Make Live
+- Select your Application and add any publish comments 
 
 
 ## Decide between Code or Flow Builder for actioning bot logic.
