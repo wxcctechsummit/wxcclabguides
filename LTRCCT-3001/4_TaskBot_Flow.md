@@ -189,7 +189,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   >
   > Condition: Equals
   >
-  > Value: intent valuee (Check stock)
+  > Value: intent value (Check stock)
   >
   > Click Save
   
@@ -224,6 +224,22 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   - Create a new chat from your website and test your bot using your training phrases
   - Open the Request Catcher browser tab
   - Copy the last line into a notepad
+- Another method for obtaining the JSON is available in the bot builder
+  > Click Sessions
+  >
+  > Click on a conversation 
+  >
+  > Click on a speciffic message
+  >
+  > You can now see aransation info in the right pane
+  > 
+  > Click the download icon in the upper right corner of the Transaction Info pane
+  >
+  > Extract the entities portion of the JSON
+  >
+
+  ---
+  
 - Go back into your flow
   - Click Edit in the upper corner
   - Drag a new Data Parser node into the flow above Append Conversation
@@ -369,7 +385,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     ---
 
 
-
+---
 
 ### Congratulations, you have completed Lab 4 tasks! 
 
