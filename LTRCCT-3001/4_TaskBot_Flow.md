@@ -16,9 +16,9 @@ title: 'Lab 4: Creating a Task Bot using Flow Builder'
   - [Testing Your Bot via Live Chat](#testing-your-bot-via-live-chat)
   - [Preparing for the API calls](#preparing-for-the-api-calls)
   - [Launch Flow Builder](#launch-flow-builder)
+  - [- Confirm the proper application is selected and Click Make Live again.](#--confirm-the-proper-application-is-selected-and-click-make-live-again)
     - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
  
-    - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
 
 # Introduction
 In this portion of the lab, we will be configuring the bot itself.  We have three different use cases that we are going to complete so that we can take some of the load off of our customer service team.  We will be collecting information, deciding if we need to handoff to an agent, making API calls, and relaying information back to the user.
@@ -383,9 +383,57 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     >
 
     ---
+- Drag a new Live Chat or In-App Messaging node into the flow
+  - Connect the green node edges from both HTTP Request nodes
+  - Open the Live Chat or In-App Messaging node
+    > Destinaton type: UserId
+    >
+    > Destination: Start > inapppessaging.userId $(n2.inappmessaging.userId)
+    >
+    >Message Type: Message 
+    >
+    >Message: Custom Variables > messagetext
+    >
+    > Thread ID: Start > inappmessaging.threadId $(n2.inappmessaging.threadId)
+    >
+    > Click Save
+    >
+    
+    ---
+  - Drag a new Append Conversation node into the flow
+  - Connect the Green node edge from Live Chat or In-App Messaging to the Append Conversation node
+  - Open the Append Conversation node
+    > Method Name: Append Chat
+    >
+    > Node Runtime Authorization: Pick default
+    >
+      > Channel: Livechat
+      >
+      > Conversation ID: Custom Variables > conversationId
+      >
+      > Message Type: Text With Attachments
+      >
+      > Direction: Outbound
+      >
+      > Text: messagetext $(messagetext)
+      >
+      > Timestamp: Start > inappmessaging.timestamp 
+      >
+      > Attachments: null
+      >
 
+      ---
+  - Connect the Green node edge to the Recieve node 
+  - Connect all remaining Red and Orange node edges to the Close Conversation node 
+  - Click Save in the upper right corner
+  - Click Make Live
+  - Confirm the proper application is selected and Click Make Live again.
+  ---
 
----
+- Test you chat bot from your website 
+- Do Use Cases 2 and 3
+  
+  ---
 
 ### Congratulations, you have completed Lab 4 tasks! 
 
@@ -395,6 +443,7 @@ function nextLab()
  {
  window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5_CCAI.html";
  }
+
 </script>
 
 <div id="button-row">
