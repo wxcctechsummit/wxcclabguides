@@ -196,10 +196,10 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   ---
 
 - Add an HTTP Rquest node above Live Chat or In-App Messaging node
-- Drag the Green node edge connector from Branch to Http request node and select checkStock
+- Drag the Green node edge connector from Branch to HTTP Request node and select checkStock
 - Drag another Green node edge connector from Branch to Live Chat or In-App Messaging node (it will auto select **None of the above**)
 - Drag the rest of the Red and Orange node edge connectors to the Close Conversation node
-- Drag the Green node edge from HTTP Request node to the
+- Drag the Green node edge from HTTP Request node to the Live Chat or In-app Messaging node
 - Open the HTTP Request Node:
   > Method: Post
   >
@@ -218,7 +218,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 - While you flow is publishing
   - Turn off your old flow
   
-  ---
+    ---
 
 - Once your new flow is published and the old flow is turned off
   - Create a new chat from your website and test your bot using your training phrases
@@ -239,7 +239,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   >
 
   ---
-  
+
 - Go back into your flow
   - Click Edit in the upper corner
   - Drag a new Data Parser node into the flow above Append Conversation
@@ -290,7 +290,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     >
       ---
 
-  - Drag 2 HTTP Request nodes into the flowabove append conversaton 
+  - Drag 2 HTTP Request nodes into the flow above append conversaton 
   - Connect the Green node edge from Branch to the first HTTP node and select Widget
   - Open the HTTP Request
   - Click on Transacton Actions
