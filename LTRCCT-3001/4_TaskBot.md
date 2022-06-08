@@ -87,6 +87,8 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 - For each Red and Orange node edge on the Task Bot Node
   - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
 - Open the Live Chat or In-App Messaging Node
+    > Destinaton Type: UserId
+    >
     > Destination Type: Start > inapppessaging.userId $(n2.inappmessaging.userId)
     >
     > Message: Task Bot > taskbot.text_response $(n2303.taskbot.text_response)
