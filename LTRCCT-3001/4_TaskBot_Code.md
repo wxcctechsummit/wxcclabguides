@@ -13,7 +13,7 @@ title: 'Lab 4: Creating a Task Bot using Code'
       - [Creating an Intent](#creating-an-intent)
   - [Creating Responses](#creating-responses)
   - [Testing Initial Bot Logic](#testing-initial-bot-logic)
-  - [Testing Your Bot via Live Chat](#testing-your-bot-via-live-chat)
+  - [Preparing for the API calls](#preparing-for-the-api-calls)
   - [Launch Flow Builder](#launch-flow-builder)
     - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
 
@@ -39,7 +39,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 1. Check if an item is in stock
    - Entities:
      - Stock Item: Custom list: Widget, Bobble
-     - Color: Custom List: Green, Red, Yellow, Blue, Purple, Silver, Ornage
+     - Color: Custom List: Green, Red, Yellow, Blue, Purple, Silver, Orange
     - Intent:
       - Check Stock
     - Utterances:
@@ -55,11 +55,12 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 - Select Entities
 - For Each Entity:
   - Click Create Entity
-    > Name: 
+    > Name: name of entity (don't use spaces)
     >
-    > Entity Type:
+    > Entity Type: pick data type
     >
     > If using a Custom List:
+    >
     >> Populate the list with values.
     >> 
     >> Add any Synonyms that are necessary
@@ -118,14 +119,34 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     
   ---
 
-## Testing Your Bot via Live Chat
-- go to your website and launch a new chat
-- Fill in the form values
-- Test your bot using your training phrases
+
+## Preparing for the API calls
+- Launch Postman
+- Import the lookup for Widgets and Bobbles
+  - curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Widget?color=red'
+  - curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Bobble?color=red'
+- For each cURL:
+  > File > Import > Raw test
+  >
+  > Paste the cURL command into the text area
+  >
+  > Click Continue
+  >
+  > Click Import
+  > 
+  > Click Send in Postman
+  >
+  > Open a new browser tab to [JSON Path Finder](https://jsonpathfinder.com)
+  >
+  > Copy the entire JSON payload from Postman 
+  >
+  > Paste the payload into the left pane of JSON Path Finder
+  > 
+  > Click the stockcount node on the right side of the screen and copy the path
+  >
+  > Replace the leading x with $
+
   
-  ---
-
-
 ## Launch Flow Builder 
 
 
