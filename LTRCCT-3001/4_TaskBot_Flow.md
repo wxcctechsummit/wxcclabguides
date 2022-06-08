@@ -16,6 +16,8 @@ title: 'Lab 4: Creating a Task Bot using Flow Builder'
   - [Testing Your Bot via Live Chat](#testing-your-bot-via-live-chat)
   - [Preparing for the API calls](#preparing-for-the-api-calls)
   - [Launch Flow Builder](#launch-flow-builder)
+  - [> Click Save](#-click-save)
+  - [>](#)
     - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
 
 # Introduction
@@ -173,9 +175,52 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   > Click Create
   >
   > Click Save
+  ---
 
+  - Find the Task bot node and **delete** the **onSuccess** connector
+  - Add a Branch node above the Task bot node
+  - Connect the **onSuccess** node edge from Task bot to Branch 
+  - Open the Branch node
+  > Rename Branch1: checkStock
+  >  
+  > Variable: Task Bot > taskbot.intent
+  >
+  > Condition: Equals
+  >
+  > Value: intent valuee (Check stock)
+  >
+  > Click Save
+  
+  ---
 
-
+  - Add an HTTP Rquest node above Live Chat or In-App Messaging node
+  - Drag the Green node edge connector from Branch to Http request node and select checkStock
+  - Drag another Green node edge connector from Branch to Live Chat or In-App Messaging node (it will auto select **None of teh above**)
+  - Drag the rest of the Red and Orange node edge connectors to the Close Conversation node
+  - Drag the Green node edge from HTTP Request node to the
+  - Open the HTTP Request Node:
+  > Method: Post
+  >
+  > Endpoint URL: https://CLLabID.requestcatcher.com
+  >
+  > Body: Task Bot > taskbot.entities
+  >
+  > Click Save
+  >
+  ---
+  - Click Save at the top of the flow
+  - Click Make Live
+  - Select your Application and click Make Live again
+  - While you flow is publishing
+    - Turn off your old flow
+    ---
+  - Once your new flow is published and the old flow is turned off
+    - Create a new chat from your website and test your bot using your training phrases
+    - Cpen the Request Catcher browser tab
+    - Copy the last line into a notepad
+  - Go back into your flow
+    - Click Edit in the upper corner
+    - 
 ---
 
 ### Congratulations, you have completed Lab 4 tasks! 
