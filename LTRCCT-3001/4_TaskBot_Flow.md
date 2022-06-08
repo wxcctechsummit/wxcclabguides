@@ -16,8 +16,8 @@ title: 'Lab 4: Creating a Task Bot using Flow Builder'
   - [Testing Your Bot via Live Chat](#testing-your-bot-via-live-chat)
   - [Preparing for the API calls](#preparing-for-the-api-calls)
   - [Launch Flow Builder](#launch-flow-builder)
-  - [> Click Save](#-click-save)
   - [>](#)
+  - [>](#-1)
     - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
 
 # Introduction
@@ -175,6 +175,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   > Click Create
   >
   > Click Save
+  >
   ---
 
   - Find the Task bot node and **delete** the **onSuccess** connector
@@ -207,20 +208,68 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   >
   > Click Save
   >
-  ---
+   ---
   - Click Save at the top of the flow
   - Click Make Live
   - Select your Application and click Make Live again
   - While you flow is publishing
     - Turn off your old flow
+    
     ---
   - Once your new flow is published and the old flow is turned off
     - Create a new chat from your website and test your bot using your training phrases
-    - Cpen the Request Catcher browser tab
+    - Open the Request Catcher browser tab
     - Copy the last line into a notepad
   - Go back into your flow
     - Click Edit in the upper corner
-    - 
+    - Drag a new Data Parser node into the flow above Append Conversation
+    - Delete the **onSuccess** node connector from HTTP Request and attach it to the new Data Parser node
+    - Open the Data Parser node
+      > Input: Task Bot > taskbot.entities
+      >
+      > Sample Body: the data that you coppied from Request Catcher
+      >
+      > Click Parse
+      >
+      > Select the $.Color.name and $.stockItem.value
+      > 
+      > Click Import
+      >
+      > Create Output variable names (like color and item)
+      >
+      > Make both Variables Manditory
+      >
+      > Click Save
+      >
+      ---
+
+    - Drag a new Branch node into the flow above Append Conversation
+    - Connect the Green node edge from Dataparser to the new Branch node  
+    - Connect all of the Red and Orange nodes edges to Close Conversation
+    - Open the Branch node
+    > Rename Branch1 to Widget
+    >
+    > Variable: Data Parser > item
+    >
+    > Condition: Equals
+    >
+    > Value: Widget
+    >
+    > Add branch
+    >
+    > Rename Branch2 to Bobble
+    >
+    > Variable: Data Parser > item
+    >
+    > Condition: Equals
+    >
+    > Value: Bobble
+    >
+    > Click save
+    >
+    ---
+  - 
+
 ---
 
 ### Congratulations, you have completed Lab 4 tasks! 
