@@ -16,7 +16,6 @@ title: 'Lab 4: Creating a Task Bot using Flow Builder'
   - [Testing Your Bot via Live Chat](#testing-your-bot-via-live-chat)
   - [Preparing for the API calls](#preparing-for-the-api-calls)
   - [Launch Flow Builder](#launch-flow-builder)
-  - [- Confirm the proper application is selected and Click Make Live again.](#--confirm-the-proper-application-is-selected-and-click-make-live-again)
     - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
  
 
@@ -49,7 +48,16 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
       - Do you have green bobbles?
       - Do you have red widgets?
 2. Change my order
+   - Entities:
+     - Email address (we already asked for this)
+     - Order number (string)
+   - Intent: 
+     - Update Order
+   - Utterances:
+     - be creative 
+   - Let's assume that an agent will need to work with the customer after we gather the Entities 
 3. Check shipping status 
+   - wergfergerg
 
 
 ## Training
@@ -231,7 +239,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   >
   > Click on a speciffic message
   >
-  > You can now see aransation info in the right pane
+  > You can now see transation info in the right pane
   > 
   > Click the download icon in the upper right corner of the Transaction Info pane
   >
@@ -244,6 +252,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   - Click Edit in the upper corner
   - Drag a new Data Parser node into the flow above Append Conversation
   - Delete the **onSuccess** node connector from HTTP Request and attach it to the new Data Parser node
+  - Connect both red node edges from the Data Parser to the Live Chat on In-App Messanger
   - Open the Data Parser node
     > Input: Task Bot > taskbot.entities
     >
@@ -386,7 +395,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 - Drag a new Live Chat or In-App Messaging node into the flow
   - Connect the green node edges from both HTTP Request nodes
   - Open the Live Chat or In-App Messaging node
-    > Destinaton type: UserId
+    > Destination type: UserId
     >
     > Destination: Start > inapppessaging.userId $(n2.inappmessaging.userId)
     >
@@ -428,7 +437,8 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   - Click Save in the upper right corner
   - Click Make Live
   - Confirm the proper application is selected and Click Make Live again.
-  ---
+  
+    ---
 
 - Test you chat bot from your website 
 - Do Use Cases 2 and 3
