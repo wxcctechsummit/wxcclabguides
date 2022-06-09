@@ -118,6 +118,9 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 - Open [Variable Documentation](https://help.imiconnect.io/docs/response-designer#list-of-common-response-variables) in a new tab.
 - Locate the template which you created to respond to your intent
   - Populate the response with the Entities and Intents that you will be using as variables. (Example: ${entity.Color} ${intent})
+- Locate the Greetings template
+  - Update the response to include ${consumerData}
+    - We will make some adjustments during the testing
 - Click Update
 - Click Make Live
 
@@ -133,6 +136,12 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 ## Testing Your Bot via Live Chat
 - Go to your website and launch a new chat
 - Fill in the form values
+- Note the Greeting is giving you all of the consumerData
+    - Find where the Name which you provided in the form is shown
+    - Go into the Bot Builder and update the Greeting Response to say "Hello [name that you provide], how can I help you today?
+    - Click update and then Make Live in the upper corner of the Bot Builder
+    - In the website chat, send teh message Hello
+      - Did you see your new response?
 - Test your bot using your training phrases
   
   ---
