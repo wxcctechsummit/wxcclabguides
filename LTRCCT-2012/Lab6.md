@@ -1,5 +1,5 @@
 ---
-title: 'Lab 2: Menu & opt_Out'
+title: 'Lab 6: Bonus- Google Text to speech and DialogFlow Integration'
 ---
 
 # Table of Contents
@@ -12,9 +12,9 @@ title: 'Lab 2: Menu & opt_Out'
     - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
-  - [Step 1. HTTP Node](#HTTP Node)
-  - [Step 2. Agent Login](#AGent login)
-  - [Step 3. Flow configuration  )](Flow configuration )
+  - [Step 1. Setup Google TTS Connector](#Setup Google TTS Connector)
+  - [Step 2. Setup DialogFlow Connector](#Setup DialogFlow Connector)
+  - [Step 3. Flow configuration)](#Flow configuration)
 
 
 
@@ -22,25 +22,35 @@ title: 'Lab 2: Menu & opt_Out'
 
 ### Recap
 
- In the first 3 Lab, we Learned
- 1. Map Dial number to Entry point and mapping flow Dial Number-->Entry Point --> Routing Point-->Flow , contact hear welcome message
- 2. Connect contact to Agent Desktop
- 3. provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
+In the first 5 Lab, we Learned
+0. Bring the contact into Webex Contact Center and hear  welcome message
+1. Queue the  contact to Live Agent  after hearing welcome prompt
+2. provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
+3. HTTP based Data Dip to external WebServices to Pull Customer Information and POP that on Agent Desktop
+4. Dip to external database and validate if customer is premium/ Platinum customer and connect the contact immediately to Agent using Advanced Skill Based Routing  
+5. When premium customer calls back, connect the contact back to preferred or last routed agent
+6. Integrate Webex with Google Dialog Flow
 
 ### Lab Objective
 
-In this section, we will go over the steps that are required to do External Data DIP. In this Lab you will learn the following
-1. External Data Dip to 3rd party Web Services  
-2. Parsing the JSON
-3. Collect variable dynamically from WebServices and Display it on Agent Desktop
+In this section, we will go over the steps that are required to do Integrate Google DialogFlow with Webex Contact Center. In this Lab you will learn the following
+1. This lab is designed to help you configure a Google DialogFlow Agent using CCAI (Contact Center AI) on Webex Contact Center and utilize TTS (Text-to-speech) capabilities.
+2. At the end of this lab, you should have a fully functioning TripPlannr bot front-ending the Webex Contact Center and text to speech prompts.
+
 
 
 
 ### Pre-requisites
 
-- Basic IVR flow worked, caller can connect to WXCC and hear welcome music
-- Caller Successfully connect to Agent Desktop
-- Menu and Opt Out lab completed
+- Download Google DialogFlow secret json files which are available below
+
+<a href="https://cisco.box.com/s/qfi5tkhttzlh8529ifvrspbmr9htwosw" target="_blank">Download the TTS Connector here - ciscolivetts.json</a>
+
+
+<a href="https://cisco.box.com/s/cd97g0eussy41zp5wg85p7neqv5acdiy" target="_blank">Download the TTS Connector here - DialogFlowBot.json</a>
+
+
+
 
 
 
@@ -55,143 +65,125 @@ In this section, we will go over the steps that are required to do External Data
 
 # Lab Section
 
-## Step 1. HTTP Node
+## Step 1. Setup Google TTS Connector
 
->The HTTP Request activity fetches information from an external data source such as a CRM using standard HTTP protocols.
->Basic Auth and OAuth 2.0 attributes are supported for authenticated endpoints
+>The Text-to-Speech capability is powered by Google's Text-to-Speech APIs. To enable this functionality, you must set up a Google Cloud account and configure the Text-to-Speech service.
 
-The request we will construct is :
+> With Text-to-Speech, you can convert arbitrary strings, words, sentences, and variables into an actual human speech that is played dynamically to the caller. This is in place of playing a prerecorded audio.
 
-HTTPS GET -> https://5f97898842706e0016957443.mockapi.io/crm/api/customers?pin=18716
+1. Create a Service Account to download the private key, this step is already completed and JSON file is attached above,  For complete instruction watch complete video [here](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement/Shared%20Documents/Forms/AllItems.aspx?id=/sites/WxCCPartnerEnablement/Shared%20Documents/Enablement%20Videos/Google_DialogFlow_Deep_Dive_Part1_Fundamentals.mp4&parent=/sites/WxCCPartnerEnablement/Shared%20Documents/Enablement%20Videos)
 
-Use the variable from the CollectDigits1.EnteredPIN variable to inject it in the pin lookup.
-We will construct it as follows
-HTTP Request
-GET https://5f97898842706e0016957443.mockapi.io/crm/api/customers
+2. Configure the Google Connector in Control Hub to enable the Text-to-Speech capability in Flow Designer
 
-Query Parameters:
-pin with  
+   i) Log into Control Hub, Contact center -->Connectors -->Google
 
-with value of the block (recheck your block variable name!)
+   <img align="middle" src="Images/Lab6/1.jpg" width="1000" />
 
-The type would be application/json
+  ii)  Give a name and upload the ```ciscolivetts.json``` file
 
-The Parse settings would be :
-customerName = $.[0].name
-customerEmail = $.[0].email
-customerPhone = $.[0].phone
-Tech-Tip: Here are some practice exercises you can try by going to jsonpath.com
+   <img align="middle" src="Images/Lab6/11.jpg" width="1000" />
 
-Go to https://5f97898842706e0016957443.mockapi.io/crm/api/customers
-Copy out the JSON into https://jsonpath.com on the left pane.
 
-Try out all of these to learn how JSON path works!
+3.  The Text-to-Speech toggle allows you to create  synthetic human speech as part of activities in your flow that can play messages to the caller, including ```Menu```, ```Play Message```, and ```Collect Digits```.
 
-|Query For |	Parse statement |
-|----------|------------------|
-|All Customers|	$.*|
-|First Customer|	$.[0] |
-|Last Customer|	$.[-1:]|
-|First two customers|	$.[0:2]|
-|Last two customers |	$.[-2:]|
-|Second from last	|$.[-2:-1]|
-|All the names|	$..name |
-|All the pins	| $..pin |
-|All the customers who’s pin value is more than 70000 or 80000 |	$..[?(@.pin > 70000)] |
-|All details of customer with account number|	$..[?(@.account == "87305901”)].*|
-|Name of customer with account number | 	$.[?(@.account == "70579265")].name|
+    <img align="middle" src="Images/Lab6/12.jpg" width="1000" />
 
 
 
-## Step 2. Agent Login
+
+## Step 2. Setup DialogFlow Connector
+
+1. Create a Service Account  for DialogFlow and create TripPlaner Virtual agent in Dialog flow , both step are  already completed and JSON file is attached above,  For complete instruction on creating BOT on Google Dialog flow console watch  video [here](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement/Shared%20Documents/Forms/AllItems.aspx?id=/sites/WxCCPartnerEnablement/Shared%20Documents/Enablement%20Videos/Google_DialogFlow_Deep_Dive_Part1_Fundamentals.mp4&parent=/sites/WxCCPartnerEnablement/Shared%20Documents/Enablement%20Videos)
+
+2. Configure the Google Dialog Flow Connector/ Virtual Agent in Control Hub
+
+ i) Log into Control Hub, Contact center -->Features -->New -->Virtual Agent
+
+   <img align="middle" src="Images/Lab6/21.jpg" width="1000" />
+
+    Toggle ```Use For Voice``` please node ```Use for Chat``` is disabled as new tenants are default configured with Webex Connect (Cisco New Digital Channel)
+
+   <img align="middle" src="Images/Lab6/22.jpg" width="1000" />
+
+   Press on ```Yes, I have preconfigured DialogflowFlow Agent``` as the Dialogflow is configured and available
+
+  <img align="middle" src="Images/Lab6/23.jpg" width="1000" />
+
+  Press ```next``` here and move to next page, if the BOT is getting configured for the First time, Intents should be downloaded from here and uploaded to DialogFlow
+
+  <img align="middle" src="Images/Lab6/24.jpg" width="1000" />
+
+  Give Virtual Agent some ```Name```
+
+  <img align="middle" src="Images/Lab6/25.jpg" width="1000" />
+
+  Upload the Authentication key, which is provided above  and ```Validate``` the key
+
+  <img align="middle" src="Images/Lab6/26.jpg" width="1000" />
+
+  Optionally upload ```Avatar``` and press next and complete the setup
+
+
 
 
 ## Step 3. Flow configuration
 
-1. Copy the Lab2 flow by clicking on 3 dot and open the copied the flow
-<img align="middle" src="Images/Lab3/1.jpg" width="1000" />
-
-2. Add Play message node and select ```0_welcome_CL.wav``` file
-<img align="middle" src="Images/Lab3/2.jpg" width="1000" />
-
-3. Drag and drop ```CollectDigits1``` node and select ```5_enter_pin.wav``` file, under Advanced setting change min and max Digits to ```5```
-
-as a best practice always enable ```Make prompt interruptible```
-
-Connect ```No-input timeout``` as well as ```unmatched Entry``` to itself
-
-<img align="middle" src="Images/Lab3/3.jpg" width="1000" />
-
-> Create 3 string Variable and mark all 3 are ```Agent Viewable```
-Customer_Name
-Customer_Email
-Customer_Account
+1. Create a new flow and name is ```Lab6```
 
 
-<img align="middle" src="Images/Lab3/31.jpg" width="200" />
-<img align="middle" src="Images/Lab3/32.jpg" width="200" />
-<img align="middle" src="Images/Lab3/33.jpg" width="200" />
+2. Drag and drop ```VirtualAgent``` node and select ```Cisco_Live_BOT``` configured in control Hu, select  Input Language to  ```en-US``` and Output voice to ```en-US-Standard-<>```
 
-4. Drag and drop ```HTTP Request``` Rename it to  ```DataDip```
-
-i) Disable, ```Use authenticated endpoints```
-
-ii) In the Request URL enter  ```https://5f97898842706e0016957443.mockapi.io/crm/api/customers```
-
-iii) Method select ```GET```
-iv) Under Query Parameters Key==pin, value ==```{{CollectDigits.DigitsEntered}}```
-v) Content Type == application/json
-
-   <img align="middle" src="Images/Lab3/41.jpg" width="200" />
-   <img align="middle" src="Images/Lab3/42.jpg" width="200" />
+<img align="middle" src="Images/Lab6/31.jpg" width="1000" />
 
 
-   <img align="middle" src="Images/Lab3/44.jpg" width="200" />
-   <img align="middle" src="Images/Lab3/45.jpg" width="200" />
+3. Drag and drop couple to  ```PlayMessage``` node and connect it  ```Handled```  and ```Escalated``` nodes
+
+
+4. Click on play message node and ```Enable Text-to-speech``` and select the TTS connector configure in the control hub  
+
+
+<img align="middle" src="Images/Lab6/41.jpg" width="500" />
+
+<img align="middle" src="Images/Lab6/42.jpg" width="500" />
 
 
 
- <img align="middle" src="Images/Lab2/flow44.jpg" width="500" />
-
-5. Parse the Json for  ```Name``` ```Email``` and ```Account```
-
->Use ```https://jsonpath.com/``` website to parse the value, take the json by entering the webservices in Firefox browser
-
-<img align="middle" src="Images/Lab3/51.jpg" width="500" />
-<img align="middle" src="Images/Lab3/5.jpg" width="500" />
-
-
-6. Drag and drop  ```condition``` Node and set the condition to
-
- `{{DataDip.httpStatusCode}}``
+5. Drag and drop  ```Disconnect contact``` Node and connect Handled and Error to  ```Disconnect contact``` node
 
 
 
-   <img align="middle" src="Images/Lab3/6.jpg" width="500" />
+   <img align="middle" src="Images/Lab6/51.jpg" width="500" />
 
 
 
-
-7. if the condition is true to connect to ```play message```
-
-
- <img align="middle" src="Images/Lab3/7.jpg" width="200" />
- <img align="middle" src="Images/Lab3/8.jpg" width="200" />
+ > Because of Logistic restrictions, BOT is already configured and Json file uploaded above
 
 
-8. Validate and Publish the Flow
+> Step by Step video is avaialble [here](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement/Shared%20Documents/Forms/AllItems.aspx?id=/sites/WxCCPartnerEnablement/Shared%20Documents/Enablement%20Videos/Google_DialogFlow_Deep_Dive_Part1_Fundamentals.mp4&parent=/sites/WxCCPartnerEnablement/Shared%20Documents/Enablement%20Videos)
 
-9. Edit ```Current``` Routing Strategy and  change the flow to ```Lab3```
+
+
+ # Lab Validation
+
+  Google DialogFlow is configured with intents and entities required for simple TripPlaner Slot filling BOT
+
+  1) Call into the script, Google dialog Flow greet you will welcome message
+
+  say ```Book a flight```
+
+  BOT would ask Date, from and To, provide the information, BOT should Book a flight
+
+  Finally say ```Live Agent please``` or ```Human Agent please```  BOT should come out through and Escalated intent and transfer call to Agent Desktop.
+
+
+ <img align="middle" src="Images/Lab6/Validation.jpg" width="500" />
 
 
 
 
 
-### Dial the Number from your mobile phone and make sure to traverse through different menu and leave ```CallBack``` and ```Voicemail```
 
-
-
-### Congratulations, you have completed Lab2 tasks!
+### Congratulations, you have completed Lab6 tasks!
 
 
 
