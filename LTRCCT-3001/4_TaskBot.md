@@ -76,6 +76,12 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
     >
     > Unique ID: Custom Variables > conversationId $(conversationId)
     >
+    > Click Customer Parameters
+    >
+    > Key: name
+    >
+    > Value: Recieve > inappmessaging.formFields.Name
+    >
 
     ---
 

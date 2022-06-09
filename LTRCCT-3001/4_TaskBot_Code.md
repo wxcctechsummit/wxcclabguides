@@ -13,6 +13,7 @@ title: 'Lab 4: Creating a Task Bot using Code'
       - [Creating an Intent](#creating-an-intent)
   - [Creating Responses](#creating-responses)
   - [Testing Initial Bot Logic](#testing-initial-bot-logic)
+  - [Testing Your Bot via Live Chat](#testing-your-bot-via-live-chat)
   - [Preparing for the API calls](#preparing-for-the-api-calls)
   - [Launch Flow Builder](#launch-flow-builder)
     - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
@@ -111,10 +112,14 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 ## Creating Responses
 -  Click Responses <img src="images\Lab4_Responses_menu.PNG" height="25"> 
 - Locate the templates which you created for entity slot filling 
-  - Add some responses that will prompt the customer to enter in the connect information. (Example: Which Color?)
+  - Add some responses that will prompt the customer to enter in the connect information. (Example: Which Color? Or Which Item?)
 - Open [Variable Documentation](https://help.imiconnect.io/docs/response-designer#list-of-common-response-variables) in a new tab.
 - Locate the template which you created to respond to your intent
   - Populate the response with the Entities and Intents that you will be using as variables. (Example: ${entity.Color} ${intent})
+- Locate the Greetings template
+  - Update the response to include ${consumerData}
+    - We will make some adjustments during the testing
+
 - Click Update
 - Click Make Live
 
@@ -127,6 +132,18 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     
   ---
 
+## Testing Your Bot via Live Chat
+- Go to your website and launch a new chat
+- Fill in the form values 
+  - Note the Greeting is giving you all of the consumerData
+    - Find where the Name which you provided in the form is shown
+    - Go into the Bot Builder and update the Greeting Response to say "Hello [name that you provide], how can I help you today?
+    - Click update and then Make Live in the upper corner of the Bot Builder
+    - In the website chat, send teh message Hello
+      - Did you see your new response?
+- Test your bot using your training phrases
+  
+  ---
 
 ## Preparing for the API calls
 - Launch Postman
