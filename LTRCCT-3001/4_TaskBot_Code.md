@@ -15,7 +15,10 @@ title: 'Lab 4: Creating a Task Bot using Code'
   - [Testing Initial Bot Logic](#testing-initial-bot-logic)
   - [Testing Your Bot via Live Chat](#testing-your-bot-via-live-chat)
   - [Preparing for the API calls](#preparing-for-the-api-calls)
-  - [Launch Flow Builder](#launch-flow-builder)
+  - [Planning the API Calls Using Code](#planning-the-api-calls-using-code)
+  - [Before We Add Code](#before-we-add-code)
+  - [Let's Add Some Code!](#lets-add-some-code)
+  - [Testing Your Bot](#testing-your-bot)
     - [Congratulations, you have completed Lab 4 tasks!](#congratulations-you-have-completed-lab-4-tasks)
 
 # Introduction
@@ -172,12 +175,69 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   > Replace the leading x with $
 
 
-## Launch Flow Builder 
+## Planning the API Calls Using Code
+- Let's compare the API calls that we are making
+  - What is the difference in the urls?
+  - Can we create a pattern and inject the required changes to the url programatically?
+    - We can construct the url as a string using one of our entities in the path.
+  - Do the responses need to be handled differently for the different items?
+    - No.  When we compare both calls in Postman, we can see that we are returened the same JSON template. So we can use the same JSON path (which we got from JSON Path Finder) to tease out our data.
+  
+
+## Before We Add Code
+  - Bot Builder uses a very specific version of Python
+    - You cannot use dot notation for variables, but we can for imported modules
+      - To set x as a variable of "newdfState.model_state.intent.name" it will look like this:
+      -  ``` x = variables['newdfState']['model_state']['intent']['name'] ```
 
 
+## Let's Add Some Code! 
+- Find your Response template for Check stock
+- Click to add a code snippet
+- Put the code snippet above the text response
+- We will start by importing reqests and declaring our variables so that we can make our calls
+  - remember to lookup the variable path in the [documentation](https://help.imiconnect.io/docs/response-designer#list-of-common-response-variables)
+```
+import requests
 
+#variables
+item = variables['newdfState']['']['']['']['value']
+color = variables['newdfState']['']['']['']['value']
 
+```
+- Next let's construct the request
+  - note that we are using a payload for a GET request???
 
+```
+url = 'from Postman' + which recently declared variable
+
+payload = {'color': color}
+headers = {}
+
+response = requests.request('GET', url, headers=headers, params=payload)
+```
+
+-Now let's parse our response and store it where we can use it later
+
+``` 
+#Parsing out our data from our response
+variables['dataStore']['stockCount'] = response.json()[x]['name from response payload']
+
+#Passing the output back to the Bot Builder
+output ={'dataStore': variables['dataStore']}
+```
+
+-Let's create ourr response in the Bot Builder
+  - Just like we exposed variables in the [Creating Responses](#creating-responses) section, we are going to create a response string where we mix text and variables from the system.
+  - We want the response to read something like "There are 48 Red Bobbles in stock.  Is there anything else that I can do for you?"
+
+- After you have completed your code and response.  Click update in the upper right corner and then click make live.
+ 
+## Testing Your Bot
+- Click the preview button in the upper right corner and test out your intent with the training phrases that you setup
+- Now test your bot from your website 
+
+- Now complete the other [use cases](#use-cases) listed above.
 
 ---
 
