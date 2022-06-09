@@ -46,8 +46,16 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
       - Do you have green bobbles?
       - Do you have red widgets?
 2. Change my order
+   - Entities:
+     - Email address (we already asked for this)
+     - Order number (string)
+   - Intent: 
+     - Update Order
+   - Utterances:
+     - be creative 
+   - Let's assume that an agent will need to work with the customer after we gather the Entities 
 3. Check shipping status 
-
+   - wergfergerg
 
 ## Training
 - Click Training <img src="images\Lab4_Training_menu.PNG" height="25">
@@ -146,7 +154,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   >
   > Replace the leading x with $
 
-  
+
 ## Launch Flow Builder 
 
 
