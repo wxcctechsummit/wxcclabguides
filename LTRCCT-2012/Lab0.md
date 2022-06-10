@@ -219,4 +219,12 @@ Lorem ipsum dolor sit amet.
 
 
 
-<a><button name="button" style = "color: red" onclick="https://www.w3schools.com/CPP/cpp_math.asp">cmathon w3schools</button></a>
+Lorem ipsum dolor sit amet.
+
+{% include button.html url="http://www.google.com" %}
+
+Lorem ipsum dolor sit amet.
+
+[button url="http://www.google.com"]
+
+<button type="button" class="btn btn-{{include.button_class}} active">{{include.button_name}}</button> 
