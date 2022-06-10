@@ -22,7 +22,7 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 | Kevin   | Lab 4 | Task Bot  | [Task Bot Configuration](4_TaskBot.md){:target="\_blank"}   |
 | Gagarin (Done) | Lab 5.1 | Google CCAI DialogFlow Bot | [DialogFlow bot configuration](5_CCAI.md){:target="\_blank"}    |
 | Gagarin (Done) | Lab 5.2 | Google CCAI DialogFlow Bot with Chat | [DialogFlow bot Flow configuration](5.2_CCAIFlowConfig.md){:target="\_blank"}    |
-| Kevin   | Lab 6 | CCAI using FAQ page  | [CCAI FAQ bot](4_TaskBot.md){:target="\_blank"}   |
+| Kevin   | Lab 6 | Creating a FAQ in Dialogflow  | [CCAI FAQ bot](6_CCAI_FAQ.md){:target="\_blank"}   |
 | Kevin   | Lab 7 | CCAI advanced bot  | [CCAI advanced bot](4_TaskBot.md){:target="\_blank"}   |
 | Gagarin (Done)   | Lab 8 | QnA FAQ bot  | [QnA FAQ bot](8_QnABotAdvanced.md){:target="\_blank"}   |
 |

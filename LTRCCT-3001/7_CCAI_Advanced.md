@@ -1,5 +1,5 @@
 ---
-title: 'Lab 6: Creating a FAQ in Dialogflow'
+title: 'Lab 7: Improving your existing Dialogflow'
 ---
 
 # Table of Contents
