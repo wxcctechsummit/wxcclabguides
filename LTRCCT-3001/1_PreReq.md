@@ -255,7 +255,7 @@ The users have the following preconfiguration
 ### Congratulations, you have completed Lab1 tasks! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/0_LabInfo.html";}
 function nextLab() 
  {
  window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/2_BasicChat.html";
@@ -266,7 +266,7 @@ function nextLab()
 <button onclick="mainPage()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Home Page</button>
+  padding: 10px;">Go To Lab Pre-requisites</button>
 
 <button onclick="nextLab()" style="
   position: absolute;
