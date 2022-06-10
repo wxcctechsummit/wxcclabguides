@@ -13,8 +13,7 @@ title: 'Lab 2: Menu & opt_Out'
 
 - [Lab Section](#lab-section)
   - [Step 1. HTTP Node](#HTTP Node)
-  - [Step 2. Agent Login](#AGent login)
-  - [Step 3. Flow configuration  )](Flow configuration )
+  - [Step 2. Flow configuration  )](Flow configuration )
 
 
 
@@ -22,10 +21,10 @@ title: 'Lab 2: Menu & opt_Out'
 
 ### Recap
 
- In the first 3 Lab, we Learned
- 1. Map Dial number to Entry point and mapping flow Dial Number-->Entry Point --> Routing Point-->Flow , contact hear welcome message
- 2. Connect contact to Agent Desktop
- 3. provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
+In the first 2 Lab, we Learned
+0. Bring the contact into Webex Contact Center and hear  welcome message
+1. Queue the  contact to Live Agent  after hearing welcome prompt
+2. provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
 
 ### Lab Objective
 
@@ -38,10 +37,7 @@ In this section, we will go over the steps that are required to do External Data
 
 ### Pre-requisites
 
-- Basic IVR flow worked, caller can connect to WXCC and hear welcome music
-- Caller Successfully connect to Agent Desktop
-- Menu and Opt Out lab completed
-
+- All previous labs are completed successfully 
 
 
 ### Quick Links
@@ -62,12 +58,12 @@ In this section, we will go over the steps that are required to do External Data
 
 The request we will construct is :
 
-HTTPS GET -> https://5f97898842706e0016957443.mockapi.io/crm/api/customers?pin=18716
+HTTPS GET -> https://5fd3e1aee9cda40016f5bb94.mockapi.io/Lookup?pin=70747
 
 Use the variable from the CollectDigits1.EnteredPIN variable to inject it in the pin lookup.
 We will construct it as follows
 HTTP Request
-GET https://5f97898842706e0016957443.mockapi.io/crm/api/customers
+GET https://5fd3e1aee9cda40016f5bb94.mockapi.io/Lookup
 
 Query Parameters:
 pin with  
@@ -82,7 +78,7 @@ customerEmail = $.[0].email
 customerPhone = $.[0].phone
 Tech-Tip: Here are some practice exercises you can try by going to jsonpath.com
 
-Go to https://5f97898842706e0016957443.mockapi.io/crm/api/customers
+Go to https://5fd3e1aee9cda40016f5bb94.mockapi.io/Lookup
 Copy out the JSON into https://jsonpath.com on the left pane.
 
 Try out all of these to learn how JSON path works!
@@ -102,8 +98,6 @@ Try out all of these to learn how JSON path works!
 |Name of customer with account number | 	$.[?(@.account == "70579265")].name|
 
 
-
-## Step 2. Agent Login
 
 
 ## Step 3. Flow configuration
@@ -136,7 +130,7 @@ Customer_Account
 
 i) Disable, ```Use authenticated endpoints```
 
-ii) In the Request URL enter  ```https://5f97898842706e0016957443.mockapi.io/crm/api/customers```
+ii) In the Request URL enter  ```https://5fd3e1aee9cda40016f5bb94.mockapi.io/Lookup```
 
 iii) Method select ```GET```
 iv) Under Query Parameters Key==pin, value ==```{{CollectDigits.DigitsEntered}}```
@@ -163,7 +157,7 @@ v) Content Type == application/json
 
 6. Drag and drop  ```condition``` Node and set the condition to
 
- `{{DataDip.httpStatusCode}}``
+ `{{DataDip.httpStatusCode==200}}``
 
 
 
@@ -208,10 +202,10 @@ v) Content Type == application/json
 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html";}
 function nextLab()
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/2_BasicChat.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Lab4.html";
  }
 </script>
 

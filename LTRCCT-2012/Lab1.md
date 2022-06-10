@@ -1,36 +1,36 @@
 ---
-title: 'Lab 1: Agent_login'
+Title: 'Lab 1: Contact Queueing to Agent Desktop '
 ---
 
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
+- [Introduction](#Introduction)
     - [Recap](#Recap)
-    - [Lab Objective](#lab-objective)
+    - [Lab Objective](#lab-Objective)
     - [Pre-requisites](#pre-requisites)
     - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
-  - [Step 1. Site,Team,Agent](#Site,Team,Agent)
-  - [Step 2. Agent Login](#AGent login)
-  - [Step 3. Flow configuration  )](Flow configuration )
+  - [Step 1. Site,Team,Agent](#Site,Team-Agent)
+  - [Step 2. Agent Login](#AGent-login)
+  - [Step 3. Flow configuration)](#Flow-configuration )
 
-    - [Congratulations, you have completed Lab1 tasks!](#congratulations-you-have-completed-prereq-tasks)
+-[Lab Validation](Lab-Validation)
+
+
 
 # Introduction
 
 ### Recap
 
  In the first Lab, we Learned
- 1. Map Dial number to Entry point
- 2. Create basic flow with Play Message node
- 3. Dial Number-->Entry Point --> Routing Point-->Flow
- 4. Successfully routed a contact into Webex Contact Center and heard initial welcome prompt
+ 0. Bring the contact into Webex Contact Center and hear  welcome message
+
 
 ### Lab Objective
 
-In this section, we will go over the steps that are required to Login an Agent . In this Lab you will learn the following
+In this section, we will go over the steps that are required to Login an Agent and Queue contact to an Agent . In this Lab you will learn the following
 1. Creating Site, Queue, Team
 2. Agent Desktop Login
 3. Enhance the Flow created in Lab 0 to add steps to queue contact to Agent
@@ -59,38 +59,47 @@ In this section, we will go over the steps that are required to Login an Agent .
 
 > **Site** -- A site is a physical contact center location under the control of your enterprise. For example, enterprise Acme can have sites in Chicago, Manila, and Bangalore with agents to handle customer contacts.
 
-<img align="middle" src="Images/Lab1/Site.jpg" width="400" />
+To create a Site, Login to portal-->Provisioning-->Sites
+
+<img align="middle" src="Images/Lab1/Site.jpg" width="800" />
 
 >.
 
-<img align="middle" src="Images/Lab1/Site1.jpg" width="500" />
+<img align="middle" src="Images/Lab1/Site1.jpg" width="800" />
 
-- **Important Note** For this lab, we use the site tagged to admin user,  check your admin user and create team part of the same site
+>
+
+
+- **IMPORTANT NODE** For this lab, we use the site tagged to admin user,  check your admin user and create team part of the same site
 
 ### Team
 >**TEAM** -- A team is a group of people who support a specific group of functions. For example, supporting the Gold customers or managing billing, and so on. A team consists of agents.
+
+To create a Site, Login to portal-->Provisioning-->Teams
 
 <img align="middle" src="Images/Lab1/Team.jpg" width="500" />
 
 > Team is tagged to the site, and agents will login into team.
 Agent can have Skill and multimedia profile at the team level.If agents has skill and multimedia profile configured under **Users** that supersedes the one configured at team level
 
-<img align="middle" src="Images/Lab1/Team1.jpg" width="700" />
+<img align="middle" src="Images/Lab1/Team1.jpg" width="900" />
 
 ### Agent aka Users
 
 >All the users added at control hub are by default synched to WxCC portal under **Provisioning-->Users**  Based on the user profile, a User take different role(Agent, Supervisor, Administrator)
 
-<img align="middle" src="Images/Lab1/Users.jpg" width="700" />
+
+
+<img align="middle" src="Images/Lab1/Users.jpg" width="900" />
 
 
 > User with premium Agent license can log in as Agent as well as perform Admin tasks
 
 > **Note** In this Lab, we will using Admin user as Agent as well.
 
-<img align="middle" src="Images/Lab1/Profiles.jpg" width="700" />
+<img align="middle" src="Images/Lab1/Profiles.jpg" width="800" />
 
-> **Note** For this lab, use Default Agent and Multimedia profile
+- **IMPORTANT NODE** For this lab, use Default Agent and Multimedia profile
 
 
 ### Create Queue
@@ -99,7 +108,7 @@ Agent can have Skill and multimedia profile at the team level.If agents has skil
 2. add call distribution group aka Teams
 3. make sure give service level threshold time (preferably 3600) and service level threshold
 
-<img align="middle" src="Images/Lab1/queue1.jpg" width="200" />
+<img align="middle" src="Images/Lab1/queue1.jpg" width="300" />
 <img align="middle" src="Images/Lab1/queue2.jpg" width="600" />
 <img align="middle" src="Images/Lab1/queue3.jpg" width="600" />
 
@@ -114,6 +123,8 @@ Agent can have Skill and multimedia profile at the team level.If agents has skil
 <img align="middle" src="Images/Lab1/webexcallingpage.jpg" width="200" />
 <img align="middle" src="Images/Lab1/webexappdownload.jpg" width="200" />
 <img align="middle" src="Images/Lab1/webexsignin.jpg" width="200" />
+
+> If the webex app is already in the system, you can skip first 2 steps
 
 > Using below link to login to agent desktop  alternatively you can cross launch from portal also
 
@@ -132,8 +143,8 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
 
 ## Step 3. Flow configuration
 
-1. Copy the Lab0 flow by clicking on 3 dot <img align="middle" src="Images/Lab1/copyflow.jpg" width="100" />
-2. open the copy of Lab 0 and rename it to Lab1 <img align="middle" src="Images/Lab1/flowrename.jpg" width="200" />
+1. Copy the Lab0 flow by clicking on 3 dot <img align="middle" src="Images/Lab1/copyflow.jpg" width="200" />
+2. open the copy of Lab 0 and rename it to Lab1 <img align="middle" src="Images/Lab1/flowrename.jpg" width="400" />
 3. Delete Disconnect node and add Queue node and play music node, loop back play music as shown below
 
 
@@ -141,17 +152,28 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
 
 4. select queue created above and the **0_MOH** for music
 
-<img align="middle" src="Images/Lab1/selectqueue.jpg" width="400" />
-<img align="middle" src="Images/Lab1/selectmusic.jpg" width="400" />
+<img align="middle" src="Images/Lab1/selectqueue.jpg" width="500" />
+<img align="middle" src="Images/Lab1/selectmusic.jpg" width="500" />
 
 5. Validate the flow and publish the flow
 
-6. change **current** routing strategy and change the flow from Lab_0 to Lab_1
+6. change **current** routing strategy and change the flow from Lab0 to Lab1
 
-<img align="middle" src="Images/Lab1/Rschange.jpg" width="400" />
+<img align="middle" src="Images/Lab1/Rschange.jpg" width="500" />
 
+# Lab Validation
 
-### Dial the Number from your mobile phone and make sure you hear the welcome voice prompt and call get queued to agent and agent desktop can get the call
+- i) Dial the Number
+
+-  ii) Login into Agent Desktop and Keep the Agent in Not Ready State
+
+- Expected Result
+
+  i) Caller should hear welcome voice prompt
+
+  ii) Call Should get queued to agent
+
+  iii) Make Agent Available, call should be routed to  agent desktop and there is 2 way voice between agent and customer
 
 
 
@@ -172,10 +194,10 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html";}
 function nextLab()
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/2_BasicChat.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/2_Lab2.html";
  }
 </script>
 

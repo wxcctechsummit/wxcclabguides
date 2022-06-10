@@ -1,5 +1,5 @@
 ---
-title: 'Lab 2: Menu & opt_Out'
+Title: 'Lab 2: Menu & Opt_Out'
 ---
 
 # Table of Contents
@@ -13,8 +13,10 @@ title: 'Lab 2: Menu & opt_Out'
 
 - [Lab Section](#lab-section)
   - [Step 1. Site,Team,Agent](#Site,Team,Agent)
-  - [Step 2. Agent Login](#AGent login)
-  - [Step 3. Flow configuration  )](Flow configuration )
+  - [Step 2. Agent Login](#AGent-login)
+  - [Step 3. Flow configuration)](Flow-configuration )
+
+- [Lab Validation](Lab-Validation)
 
 
 
@@ -22,9 +24,10 @@ title: 'Lab 2: Menu & opt_Out'
 
 ### Recap
 
- In the first 2 Lab, we Learned
- 1. Map Dial number to Entry point and mapping flow Dial Number-->Entry Point --> Routing Point-->Flow , contact hear welcome message
- 2. Connect contact to Agent Desktop
+In the first Lab, we Learned
+0. Bring the contact into Webex Contact Center and hear  welcome message
+1. Queue the  contact to Live Agent  after hearing welcome prompt
+
 
 ### Lab Objective
 
@@ -36,11 +39,9 @@ In this section, we will go over the steps that are required to offer a Menu and
 
 
 
-
 ### Pre-requisites
 
-- Basic IVR flow worked, caller can connect to WXCC and hear welcome music
-- Caller Successfully connect to Agent Desktop
+- All previous labs are completed successfully 
 
 
 
@@ -76,23 +77,14 @@ In this section, we will go over the steps that are required to offer a Menu and
 2. add call distribution group aka Teams, Team 1
 3. make sure give service level threshold time (preferably 3600) and service level threshold
 
-<img align="middle" src="Images/Lab2/Queue1.jpg" width="600" />
-<img align="middle" src="Images/Lab2/Queue2.jpg" width="600" />
+<img align="middle" src="Images/Lab2/Queue1.jpg" width="900" />
+<img align="middle" src="Images/Lab2/Queue2.jpg" width="900" />
 
 
 
 ## Step 2. Agent Login
 
-1. Download Webex Client from this [link](https://settings.webex.com/login)
-2. Login with Admin Credentials
-3. click on Webex Calling -->My Apps and Download Webex apps -- https://www.webex.com/downloads.html
-4. Login to Webex apps using same admin credentials
-
-<img align="middle" src="Images/Lab1/webexcallingpage.jpg" width="200" />
-<img align="middle" src="Images/Lab1/webexappdownload.jpg" width="200" />
-<img align="middle" src="Images/Lab1/webexsignin.jpg" width="200" />
-
-> Using below link to login to agent desktop  alternatively you can cross launch from portal also
+> Follow the steps from Lab1 and login in Agent
 
 Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com)
 
@@ -129,11 +121,11 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
    <img align="middle" src="Images/Lab2/Flow43.jpg" width="200" />
 
 
- <img align="middle" src="Images/Lab2/flow44.jpg" width="500" />
+ <img align="middle" src="Images/Lab2/flow44.jpg" width="900" />
 
-5. Drag and drop Queue contact node and select ```Dummy_Queue``` created
+5. Drag and drop ```Queue contact``` node and select ```Dummy_Queue``` created
 
-<img align="middle" src="Images/Lab2/selectqueue.jpg" width="500" />
+<img align="middle" src="Images/Lab2/selectqueue.jpg" width="900" />
 
 
 6. To Set ```QueueCounter``` Variable
@@ -144,8 +136,8 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
 
    iii) Create a ```integer```variable named ```QueueCounter``` and set Default value to ```0```
 
-   <img align="middle" src="Images/Lab2/Flow61.jpg" width="500" />
-   <img align="middle" src="Images/Lab2/Flow62.jpg" width="500" />
+   <img align="middle" src="Images/Lab2/Flow61.jpg" width="900" />
+   <img align="middle" src="Images/Lab2/Flow62.jpg" width="900" />
 
 
 
@@ -156,24 +148,24 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
 
  iii) In the set value type ```{{QueueCounter+1}}```, Note: variable in the set node must always be typed inside ```{{}} ``` braces
 
- <img align="middle" src="Images/Lab2/Flow71.jpg" width="500" />
+ <img align="middle" src="Images/Lab2/Flow71.jpg" width="900" />
 
 
 
 8. Drag and Drop ```PlayMusic``` node and select ```Music File``` and set ```offset``` to ```5```
-  <img align="middle" src="Images/Lab2/Flow81.jpg" width="500" />
+  <img align="middle" src="Images/Lab2/Flow81.jpg" width="900" />
 
 9. Drag and Drop ```Condition``` node and set the condition to  ```{{QueueCounter<2}}``` if ```True``` connect it to ```SetQCounter```
 
-  <img align="middle" src="Images/Lab2/Flow81.jpg" width="500" />
+  <img align="middle" src="Images/Lab2/Flow81.jpg" width="900" />
 
 10. Drag and Drop ```PlayMessage``` node and select  ```2_high_call_volume.wav``` file and connect ```False``` output to   ```PlayMessage```  node
 
-  <img align="middle" src="Images/Lab2/Flow101.jpg" width="500" />
+  <img align="middle" src="Images/Lab2/Flow101.jpg" width="900" />
 
 11. Drag and Drop ```Menu``` node and select  ```3_callback_menu.wav``` file and add  2 more custom links 1 and 2 for  ```callback``` and  ```Voicemail```  
 
-    <img align="middle" src="Images/Lab2/Flow111.jpg" width="500" />
+    <img align="middle" src="Images/Lab2/Flow111.jpg" width="900" />
 
 12. Set call back
 
@@ -183,9 +175,11 @@ ii) Drag and Drop ```Callback``` node and set  ```callback Dial Number``` to ```
 
 iii) connect ```DisconnectContact``` node to callback node
 
-  <img align="middle" src="Images/Lab2/Flow121.jpg" width="500" />
+  <img align="middle" src="Images/Lab2/Flow121.jpg" width="900" />
 
-  <img align="middle" src="Images/Lab2/Flow122.jpg" width="500" />
+  <img align="middle" src="Images/Lab2/Flow122.jpg" width="900" />
+
+>
 
 13. Set Voicemail
 
@@ -202,20 +196,35 @@ ii) Repeat the same for ```optout``` menu as well
 
 16. validate &  Publish the flow
 
-<img align="middle" src="Images/Lab2/Flow151.jpg" width="500" />
+<img align="middle" src="Images/Lab2/Flow151.jpg" width="900" />
 
-<img align="middle" src="Images/Lab2/Flow152.jpg" width="500" />
+<img align="middle" src="Images/Lab2/Flow152.jpg" width="900" />
 
 17. Edit ```Current``` Routing Strategy and  change the flow to ```Lab2```
 
 <img align="middle" src="Images/Lab2/Flow171.jpg" width="500" />
 
-18. Validate the flow
-
-i) To test the flow call the Dial Number configured and traverse through different menu and leave ```CallBack``` and make sure Agent get the call
 
 
-### Dial the Number from your mobile phone and make sure to traverse through different menu and leave ```CallBack``` and ```Voicemail```
+# Lab Validation
+
+>Login to Agent Desktop and Keep the Agent in Not Ready State
+
+i) To test the flow call the Dial Number configured and traverse Main Menu and press ```1```
+ii) On the call back menu press ```1``` to leave Callback
+
+- Expected results
+
+
+i) Caller should hear ```MOH``` for 10 seconds and then hear ```high_call_volume```
+ and offered an option to call back  
+
+ii) System should call the Agent first and then Customer and call should get connected between Agent and Customer
+
+Expected Result
+
+
+ Dial the Number from your mobile phone and make sure to traverse through different menu and leave ```CallBack``` and ```Voicemail```
 
 
 
@@ -236,10 +245,10 @@ i) To test the flow call the Dial Number configured and traverse through differe
 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html";}
 function nextLab()
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/2_BasicChat.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Lab3.html";
  }
 </script>
 

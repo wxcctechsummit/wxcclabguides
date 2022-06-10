@@ -152,7 +152,7 @@ In this section, we will go over the steps that are required to do Integrate Goo
 
 
 
-   <img align="middle" src="Images/Lab6/51.jpg" width="500" />
+   <img align="middle" src="Images/Lab6/51.jpg" width="1000" />
 
 
 
@@ -176,7 +176,7 @@ In this section, we will go over the steps that are required to do Integrate Goo
   Finally say ```Live Agent please``` or ```Human Agent please```  BOT should come out through and Escalated intent and transfer call to Agent Desktop.
 
 
- <img align="middle" src="Images/Lab6/Validation.jpg" width="500" />
+ <img align="middle" src="Images/Lab6/Validation.jpg" width="1000" />
 
 
 

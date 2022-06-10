@@ -10,20 +10,19 @@ title: 'Lab 0: Preconfiguration'
     - [Pre-requisites](#pre-requisites)
     - [Quick Links](#quick-links)
 - [Lab Section](#lab-section)
-  - [Step 1. Control Hub users & License](#Control_Hub_Users&License)
-  - [Step 2. Webex Calling Settings](#webex_calling_Settings)
-  - [Step 3. Entry Point, Routing Strategy & Flow )](EP_RS_Flow)
-    - [1. Create new Entry Point](#1-create_EP)
-    - [2. Create new Routing Strategy](#2-create-RS)
-    - [3. Create new Flow](#3-create-new-flow)
-    - [Congratulations, you have completed Lab1 tasks!](#congratulations-you-have-completed-prereq-tasks)
+  - [Step 1. Control Hub users & License](#User-and-License-Verification)
+  - [Step 2. Webex Calling Settings](#Webex-Calling-Settings)
+  - [Step 3. Entry Point, Routing Strategy & Flow )](Setup-Entry-Point,-routing-Strategy-and-Flow)
+    - [1. Create new Entry Point](#Create-an-Entry-point)
+-[Lab Validation](#Lab-Validation)
+
 
 # Introduction
 
 ### Lab Objective
 
 In this section, we will go over the steps that are required to be completed for general pre-configuration of a tenant. By following each of these steps you will have prepared your tenant to begin configuring different services offered by the platform.At the end of this Lab, you should be able to
-1. Login to Portal
+1. Login in to the Portal
 2. Dial the Number Assigned to you and hear welcome prompt
 
 <img align="middle" src="Images/Lab1/Flowchat.jpg" width="1000" />
@@ -48,15 +47,24 @@ In this section, we will go over the steps that are required to be completed for
 
 > Once Webex Contact Center Org is onboarded with the admin user, you should be able to login to control hub portal, using the credentials you have created .
 
-- Login to control Hub using the credentials given, Below is control hub landing page.
+- Login to control Hub using the credentials given.
+
 <img align="middle" src="Images/Lab0/CH_Landing.jpg" width="1000" />
+
+>Below is control hub landing page
 
 
 - In the  **Control hub** Click **Users** from the left menu and make sure the user you logged in with is present here
 
+
+
 <img align="middle" src="Images/Lab0/CH_User.jpg" width="1000" />
 
+
+
 -  Click on the  **admin Users** scroll Down and click **Edit Licenses** and again click on **Edit Licenses**  and click on **Contact Center** and make sure the user is licensed as premium Agent and Administration option is enabled
+
+
 
 > User with premium Agent license can log in as Agent as well as perform Admin tasks
 
@@ -67,7 +75,7 @@ In this section, we will go over the steps that are required to be completed for
 
 
 ## Step 2. Webex Calling Settings
-> All the lab orgs are pre configured with Webex Calling &  Cloud connected PSTN, to validate numbers are already available  
+> All the lab orgs are pre configured with Webex Calling &  Cloud connected PSTN, validate the numbers are already available  
 
 1) In the  **Control hub** Click **Calling** from the left menu and make sure the user calling Numbers are added here
 
@@ -81,6 +89,7 @@ In this section, we will go over the steps that are required to be completed for
 > Control Hub offers a holistic view of all your Webex services. Contact center is also a Services under Control Hub, to cross launch to contact Center portal.
 
 1) In the  **Control hub** Click **contact Center** under Services
+
 2) click on **Settings**
 
 <img align="middle" src="Images/Lab0/CH_Contact_Center.jpg" width="1000" />
@@ -95,7 +104,7 @@ In this section, we will go over the steps that are required to be completed for
 
 > Please note For trials, **only the Voice POP Bridge or Webex Calling voice options are available**; the Webex Contact Center PSTN option **isn't** available. When you convert the trial to a subscription, Webex Contact Center retains the voice option, however you can use **PSTN Switch** option to change the PSTN connection.
 
-  ### Create Entry Point on Contact Center Portal
+## Create an Entry point
 
 1. In the  **Control hub -->contact Center -->Settings**
 2. click on **Go to Webex Contact Center Management Portal** under **Advanced configuration** to cross launch to Webex Contact Center Portal.
@@ -108,7 +117,7 @@ In this section, we will go over the steps that are required to be completed for
 
 4. Click on **New Entry Point** to create a new Entry point
 
-<img align="middle" src="Images/Lab0/Portal_EP1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/Portal_EP1.jpg" width="1000" />
 
 > Name  -->    The name of the entry point.
 
@@ -128,13 +137,13 @@ The default time zone is the Tenant's time zone.
 
 6. Click on **New Mapping**
 
-<img align="middle" src="Images/Lab0/portal_DN_EP1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_DN_EP1.jpg" width="1000" />
 
 
 7. upon selecting  **Location** all  number  associate to that  location will be
 available for mapping, choose available **Number** and map it with the **Entry point** created  at step 4
 
-<img align="middle" src="Images/Lab0/Portal_DN_EP2.jpg" width="500" />
+<img align="middle" src="Images/Lab0/Portal_DN_EP2.jpg" width="1000" />
 
 8. Next step is creating a flow, to create first flow click on **Routing Strategies** from the portal and click on **Flows** and click **New**
 
@@ -172,7 +181,7 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 
 
-14. Create and Routing strategy which act as a  Bridge between an EntryPoint and Flow
+14. Create a Routing strategy which act as a  Bridge between an EntryPoint and Flow
 
 <img align="middle" src="Images/Lab0/portal_RS_3.jpg" width="1000" />
 
@@ -184,9 +193,11 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 <img align="middle" src="Images/Lab0/portal_RS_4.jpg" width="1000" />
 
-### Dial the Number from your mobile phone and make sure you hear the welcome voice prompt
+## Lab Validation
 
-### Congratulations, you have completed prereq tasks!
+ Dial the Number from your mobile phone and make sure you hear the welcome voice prompt
+
+### Congratulations, you have completed prerequisite tasks!
 
 
 
@@ -203,11 +214,9 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html";}
 function nextLab()
- {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/2_BasicChat.html";
- }
+ {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Lab1.html";}
 </script>
 
 <div id="button-row">
