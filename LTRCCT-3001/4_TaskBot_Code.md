@@ -151,8 +151,12 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 ## Preparing for the API calls
 - Launch Postman
 - Import the lookup for Widgets and Bobbles
-  - curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Widget?color=red'
-  - curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Bobble?color=red'
+
+
+  - ```curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Widget?color=red' ```
+  - ```curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Bobble?color=red' ```
+
+
 - For each cURL:
   > File > Import > Raw test
   >
@@ -197,6 +201,8 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 - Put the code snippet above the text response
 - We will start by importing reqests and declaring our variables so that we can make our calls
   - remember to lookup the variable path in the [documentation](https://help.imiconnect.io/docs/response-designer#list-of-common-response-variables)
+
+
 ```
 import requests
 

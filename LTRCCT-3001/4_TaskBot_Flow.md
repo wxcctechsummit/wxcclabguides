@@ -150,8 +150,13 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 ## Preparing for the API calls
 - Launch Postman
 - Import the lookup for Widgets and Bobbles
-  - curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Widget?color=red'
-  - curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Bobble?color=red'
+  
+  - ```curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Widget?color=red'```
+
+
+  - ```curl --location --request GET 'https://629f77cc8b939d3dc2987fa4.mockapi.io/api/v1/Bobble?color=red'```
+
+
 - For each cURL:
   > File > Import > Raw test
   >
