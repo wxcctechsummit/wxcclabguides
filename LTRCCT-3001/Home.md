@@ -25,5 +25,4 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 | Kevin   | Lab 6 | CCAI using FAQ page  | [CCAI FAQ bot](4_TaskBot.md){:target="\_blank"}   |
 | Kevin   | Lab 7 | CCAI advanced bot  | [CCAI advanced bot](4_TaskBot.md){:target="\_blank"}   |
 | Gagarin (Done)   | Lab 8 | QnA FAQ bot  | [QnA FAQ bot](8_QnABotAdvanced.md){:target="\_blank"}   |
-| TBD   | Lab 9 | Advanced/Bonus lab 1  | [Bonus lab 1](4_TaskBot.md){:target="\_blank"}   |
-| TBD   | Lab 10 | Advanced/Bonus lab 2  | [Bonus lab 2](4_TaskBot.md){:target="\_blank"}   |
+|
