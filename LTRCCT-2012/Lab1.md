@@ -176,20 +176,19 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
   iii) Make Agent Available, call should be routed to  agent desktop and there is 2 way voice between agent and customer
 
 
+# Lab Support
+
+  Proctors is your number 1 contact. If you need assistance just raise your hand.
+
+  All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
+
+#  Lab Support
+
+    Proctors is your number 1 contact. If you need assistance just raise your hand.
+
+    All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
 
 ### Congratulations, you have completed Lab1 tasks!
-
-
-
-
-
-
-
-
-
-
-
----
 
 
 

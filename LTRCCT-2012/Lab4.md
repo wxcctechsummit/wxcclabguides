@@ -216,7 +216,7 @@ Go to your user and change the skill profile.
 Place a test call.
 
 
-## Lab Validation 
+## Lab Validation
 
 i) Make a call and enter the pin where Customer_Email is ```<>@gmail.com```
 ii) Make a call and enter the pin where Customer_Email is not  ```<>@gmail.com```
@@ -226,6 +226,11 @@ Expected results
 1) First call should get connected to an Agent Immediately
 2) Second call should get connected after Skill relaxation times out.
 
+#  Lab Support
+
+   Proctors is your number 1 contact. If you need assistance just raise your hand.
+
+   All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
 
 ### Congratulations, you have completed Lab4 tasks!
 

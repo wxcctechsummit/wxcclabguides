@@ -38,6 +38,11 @@ In this section, we will go over the steps that are required to do Integrate Goo
 2. At the end of this lab, you should have a fully functioning TripPlannr bot front-ending the Webex Contact Center and text to speech prompts.
 
 
+#  Lab Support
+
+   Proctors is your number 1 contact. If you need assistance just raise your hand.
+
+   All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
 
 
 ### Pre-requisites

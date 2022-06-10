@@ -214,7 +214,11 @@ ii) On the Main Menu Node press  ```1```
 i) System should validates the PIN and fetch Email, Name, Account details
 ii) System should fetch data and Pop all those information  on Agent_Desktop
 
+#  Lab Support
 
+   Proctors is your number 1 contact. If you need assistance just raise your hand.
+
+   All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
 
 
 ### Congratulations, you have completed Lab3 tasks!

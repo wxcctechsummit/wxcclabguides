@@ -197,6 +197,14 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
  Dial the Number from your mobile phone and make sure you hear the welcome voice prompt
 
+
+
+#  Lab Support
+
+   Proctors is your number 1 contact. If you need assistance just raise your hand.
+
+   All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
+
 ### Congratulations, you have completed prerequisite tasks!
 
 

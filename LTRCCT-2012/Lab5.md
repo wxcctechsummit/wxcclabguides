@@ -132,6 +132,12 @@ The call should get routed to Agent immediately with the queue name on Agetn Des
 
 <img align="middle" src="Images/Lab5/Validation.jpg" width="1000" />
 
+#  Lab Support
+
+   Proctors is your number 1 contact. If you need assistance just raise your hand.
+
+   All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
+
 
 ### Congratulations, you have completed Lab5 tasks!
 
