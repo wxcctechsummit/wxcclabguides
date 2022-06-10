@@ -41,7 +41,7 @@ In this section, we will go over the steps that are required to offer a Menu and
 
 ### Pre-requisites
 
-- All previous labs are completed successfully 
+- All previous labs are completed successfully
 
 
 

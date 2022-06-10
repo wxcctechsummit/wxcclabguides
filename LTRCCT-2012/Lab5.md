@@ -156,10 +156,10 @@ The call should get routed to Agent immediately with the queue name on Agetn Des
 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html";}
 function nextLab()
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/2_BasicChat.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Lab6.html";
  }
 </script>
 

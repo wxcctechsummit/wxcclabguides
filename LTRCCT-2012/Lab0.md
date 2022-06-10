@@ -208,6 +208,25 @@ available for mapping, choose available **Number** and map it with the **Entry p
 ### Congratulations, you have completed prerequisite tasks!
 
 
+<script>
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html";}
+function nextLab()
+ {
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Lab1.html";
+ }
+</script>
 
+<div id="button-row">
+<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Home Page</button>
 
-[Homepage](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html)                                    &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;    &nbsp;                                              [Lab1](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Lab1.html)
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go to the Next Lab</button>
+
+</div>

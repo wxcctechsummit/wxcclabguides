@@ -196,7 +196,7 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html";}
 function nextLab()
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/2_Lab2.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Lab2.html";
  }
 </script>
 
