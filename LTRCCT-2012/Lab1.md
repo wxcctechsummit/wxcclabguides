@@ -113,7 +113,7 @@ Agent can have Skill and multimedia profile at the team level.If agents has skil
 <img align="middle" src="Images/Lab1/queue3.jpg" width="600" />
 
 
-## Step 2. AgentLogin
+## AgentLogin
 
 1. Download Webex Client from this [link](https://settings.webex.com/login)
 2. Login with Admin Credentials
@@ -141,7 +141,7 @@ Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.c
 
 
 
-## Step 3. Flow configuration
+## Flow configuration
 
 1. Copy the Lab0 flow by clicking on 3 dot <img align="middle" src="Images/Lab1/copyflow.jpg" width="200" />
 2. open the copy of Lab 0 and rename it to Lab1 <img align="middle" src="Images/Lab1/flowrename.jpg" width="400" />
