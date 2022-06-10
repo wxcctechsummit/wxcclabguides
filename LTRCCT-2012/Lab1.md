@@ -55,7 +55,7 @@ In this section, we will go over the steps that are required to Login an Agent a
 
 # Lab Section
 
-## Step 1. Site Team Agent
+## Site Team Agent
 
 > **Site** -- A site is a physical contact center location under the control of your enterprise. For example, enterprise Acme can have sites in Chicago, Manila, and Bangalore with agents to handle customer contacts.
 
