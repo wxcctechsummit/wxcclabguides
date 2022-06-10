@@ -208,23 +208,6 @@ available for mapping, choose available **Number** and map it with the **Entry p
 ### Congratulations, you have completed prerequisite tasks!
 
 
-Lorem ipsum dolor sit amet.
-
-[Homepage](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html)
-
-<button name="button">Click me</button>
-
-<button onclick="window.location.href='https://bing.com';">Click</button>
 
 
-
-
-Lorem ipsum dolor sit amet.
-
-{% include button.html url="http://www.google.com" %}
-
-Lorem ipsum dolor sit amet.
-
-[button url="http://www.google.com"]
-
-<button type="button" class="btn btn-{{include.button_class}} active">{{include.button_name}}</button> 
+[Homepage](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html)                                    &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;    &nbsp;                                              [Lab1](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Lab1.html)
