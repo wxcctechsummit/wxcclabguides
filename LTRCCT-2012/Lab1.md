@@ -12,11 +12,11 @@ Title: 'Lab 1: Contact Queueing to Agent Desktop '
     - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
-  - [Step 1. Site Team Agent](#Site-Team-Agent)
-  - [Step 2. AgentLogin](#AgentLogin)
-  - [Step 3. Flow configuration](#Flow-configuration)
+  - [Site Team Agent](#Site-Team-Agent)
+  - [AgentLogin](#AgentLogin)
+  - [Flow configuration](#Flow-configuration)
 
--[Lab Validation](Lab-Validation)
+- [Lab Validation](Lab-Validation)
 
 
 

@@ -15,6 +15,8 @@ title: 'Lab 2: Menu & opt_Out'
   - [Step 1. HTTP Node](#HTTP Node)
   - [Step 2. Flow configuration  )](Flow configuration )
 
+- [Lab Validation](Lab-Validation)
+
 
 
 # Introduction
@@ -37,7 +39,7 @@ In this section, we will go over the steps that are required to do External Data
 
 ### Pre-requisites
 
-- All previous labs are completed successfully 
+- All previous labs are completed successfully
 
 
 ### Quick Links
@@ -65,17 +67,16 @@ We will construct it as follows
 HTTP Request
 GET https://5fd3e1aee9cda40016f5bb94.mockapi.io/Lookup
 
-Query Parameters:
-pin with  
 
-with value of the block (recheck your block variable name!)
-
-The type would be application/json
 
 The Parse settings would be :
-customerName = $.[0].name
-customerEmail = $.[0].email
-customerPhone = $.[0].phone
+
+
+customerName  =  $.[0].name
+
+customerPhone =  $.[0].phone
+
+
 Tech-Tip: Here are some practice exercises you can try by going to jsonpath.com
 
 Go to https://5fd3e1aee9cda40016f5bb94.mockapi.io/Lookup
@@ -100,7 +101,7 @@ Try out all of these to learn how JSON path works!
 
 
 
-## Step 3. Flow configuration
+## Step 2. Flow configuration
 
 1. Copy the Lab2 flow by clicking on 3 dot and open the copied the flow
 <img align="middle" src="Images/Lab3/1.jpg" width="1000" />
@@ -117,8 +118,11 @@ Connect ```No-input timeout``` as well as ```unmatched Entry``` to itself
 <img align="middle" src="Images/Lab3/3.jpg" width="1000" />
 
 > Create 3 string Variable and mark all 3 are ```Agent Viewable```
+
 Customer_Name
+
 Customer_Email
+
 Customer_Account
 
 
@@ -133,8 +137,12 @@ i) Disable, ```Use authenticated endpoints```
 ii) In the Request URL enter  ```https://5fd3e1aee9cda40016f5bb94.mockapi.io/Lookup```
 
 iii) Method select ```GET```
+
 iv) Under Query Parameters Key==pin, value ==```{{CollectDigits.DigitsEntered}}```
+
 v) Content Type == application/json
+
+
 
    <img align="middle" src="Images/Lab3/41.jpg" width="200" />
    <img align="middle" src="Images/Lab3/42.jpg" width="200" />
@@ -147,30 +155,42 @@ v) Content Type == application/json
 
  <img align="middle" src="Images/Lab2/flow44.jpg" width="500" />
 
+ >
+
 5. Parse the Json for  ```Name``` ```Email``` and ```Account```
+
+i) under ```Parse Settings``` select the ```Content Type``` as ```JSON```
+
+<img align="middle" src="Images/Lab3/52.jpg" width="900" />
 
 >Use ```https://jsonpath.com/``` website to parse the value, take the json by entering the webservices in Firefox browser
 
-<img align="middle" src="Images/Lab3/51.jpg" width="500" />
-<img align="middle" src="Images/Lab3/5.jpg" width="500" />
+<img align="middle" src="Images/Lab3/51.jpg" width="900" />
+
+>
+
+<img align="middle" src="Images/Lab3/5.jpg" width="900" />
 
 
 6. Drag and drop  ```condition``` Node and set the condition to
 
- `{{DataDip.httpStatusCode==200}}``
+ ```{{DataDip.httpStatusCode==200}}```
 
 
 
-   <img align="middle" src="Images/Lab3/6.jpg" width="500" />
+ <img align="middle" src="Images/Lab3/6.jpg" width="500" />
 
 
+>
 
 
 7. if the condition is true to connect to ```play message```
 
 
- <img align="middle" src="Images/Lab3/7.jpg" width="200" />
- <img align="middle" src="Images/Lab3/8.jpg" width="200" />
+ <img align="middle" src="Images/Lab3/7.jpg" width="300" />
+
+
+ <img align="middle" src="Images/Lab3/8.jpg" width="300" />
 
 
 8. Validate and Publish the Flow
@@ -179,25 +199,29 @@ v) Content Type == application/json
 
 
 
+##  Lab-Validation
 
 
-### Dial the Number from your mobile phone and make sure to traverse through different menu and leave ```CallBack``` and ```Voicemail```
+>Login to Agent Desktop and Keep the Agent in Not Ready State
+
+i) To test the flow call the Dial Main Number and enter  5 Digit Pin number
+
+ii) On the Main Menu Node press  ```1```
+
+- Expected results
+
+
+i) System should validates the PIN and fetch Email, Name, Account details
+ii) System should fetch data and Pop all those information  on Agent_Desktop
 
 
 
-### Congratulations, you have completed Lab2 tasks!
+
+### Congratulations, you have completed Lab3 tasks!
 
 
 
 
-
-
-
-
-
-
-
----
 
 
 

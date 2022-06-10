@@ -22,7 +22,6 @@ Title: 'Lab 4: SBR and Dynamic Agent Reskilling'
 
  In the first 3 Lab, we Learned
 
- In the first 5 Lab, we Learned
  0. Bring the contact into Webex Contact Center and hear  welcome message
  1. Queue the  contact to Live Agent  after hearing welcome prompt
  2. provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
@@ -60,6 +59,11 @@ In this section, we will go over the steps that are required to setup and config
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
 
 
+> Before you begin this lab, increase the ```HoldMusic``` duration  in the Play Music node to ```60```
+
+<img align="middle" src="Images/Lab4/0.jpg" width="1000" />
+
+
 
 # Lab Section
 
@@ -70,10 +74,12 @@ Login to the portal. Under the Provisioning menu go to Skills>Skills Definition.
 To create a new skill click on the Add New Skill Definition button.
 <img align="middle" src="Images/Lab4/1.jpg" width="500" />
 
-In the skill definition box you will name your skill, give it a description and type. There are 4 types of skills. Let's name this one Spanish and assign it as a proficiency skill. Click Save to save this skill.
+In the skill definition box you will name your skill, give it a description and type. There are 4 types of skills. Let's name this one ```Agent_Proficiency``` and assign it as a proficiency skill. Click Save to save this skill.
+
 <img align="middle" src="Images/Lab4/1a.jpg" width="900" />
 
-For this lab you will be creating 2 Skill  ```Agent_ Proficiency``` of type ```proficiency``` and ```Premium_Agent``` of type ```Text```
+For this lab you will be creating 2 Skill  ```Agent_ Proficiency``` of type ```proficiency``` and ```Premium_Customer``` of type ```Text```
+
 
 
 <img align="middle" src="Images/Lab4/1b.jpg" width="900" />
@@ -91,24 +97,20 @@ Once skills are created they must be added to a Profile and assigned a value. Go
 Click on the Add New skill profile button.
 <img align="middle" src="Images/Lab4/2a.jpg" width="1000" />
 
-Lets give this a name called Customer Service. Next you must assign which skills will belong to this profile. Let's select Agent proficiency and assign skill value of 5. Then click Save.
+Lets give this a name called ```Cisco_Live_SP1```. Next you must assign which skills will belong to this profile. Let's select Agent proficiency and assign skill value of 5. Then click Save.
+
+
 <img align="middle" src="Images/Lab4/2b.jpg" width="1000" />
 
+Create Second Skill Profile say ```Cisco_Live_SP2``` and add Agent_Proficiency as well as Premium_Agent
 
 
- For this exercise, we have already created two skill profiles for this lab: Cisco_Live_SP1 and Cisco_Live_SP2
-<img align="middle" src="Images/Lab4/3.jpg" width="1000" />
-
-Edit/Open the SP1 profile. In this profile we have only assigned the Agent_Proficiency skill and gave it a value 5.
-
-<img align="middle" src="Images/Lab4/4.jpg" width="1000" />
-
-Skill Profile 2 contains both Agent_Proficiency and Premium_Agent skills.
-<img align="middle" src="Images/Lab4/5.jpg" width="1000" />
 
 ## Step 3. Add Profile to the User
 
 Next we must assign the new Skill Profile to the user. Open the Users tab from the Provisioning menu. Find your user name for this lab. Edit. If not done so already please assign Skill Profile ```Cisco_live_SP2``` to your user.
+
+
 <img align="middle" src="Images/Lab4/6.jpg" width="1000" />
 
 
@@ -117,6 +119,8 @@ Next we must assign the new Skill Profile to the user. Open the Users tab from t
 ## Step 4. Create a SBR queue
 
 Go to the Provisioning> Entry Points and Queues> Queues menu option. To create a new queue, click on Add New Queue.
+
+
 <img align="middle" src="Images/Lab4/7.jpg" width="1000" />
 
 
@@ -152,6 +156,8 @@ Create a second Flow Variable. This name will be ```Cust_premium_set```, variabl
 
 ## Step 7. Add new nodes
 Drag and drop the ```Set Variable node``` and the ```Condition node``` and another ```Set Variable node``` onto the flow canvas. See image below for placement of the three new nodes.
+
+
 <img align="middle" src="Images/Lab4/14a.jpg" width="1000" />
 
 For the Set Variable2 node we will use this to parse the email and then do a check on the customer email. Name the activity Label ParseEmail. Select the Cust_Prof_check as the variable name.  We will use Pebble templates to define the Value of this variable. Copy and paste the following string: ```{{Customer_Email | split("@") | last}}```into the expression field.
@@ -184,12 +190,16 @@ In the last lab the queue assigned to Menu 1 was set to a Dummy queue. We will n
 
 ## Step 9. Set the skill requirements.
 
-Set the first skill to Agent_Proficiency with condition >= value 4.
+Set the first skill to ```Agent_Proficiency``` with condition >= value 4.
+
 <img align="middle" src="Images/Lab4/21.jpg" width="1000" />
-Lets add a second skill. Select the Add Skill Requirement, Premium Agent with condition IS and value set to the variable {{Cust_Premium_set}}
+
+Lets add a second skill. Select the Add Skill Requirement, Premium Agent with condition IS and value set to the variable ```{{Cust_Premium_set}}```
 
 <img align="middle" src="Images/Lab4/22.jpg" width="1000" />
-Next, we will enable Skill  relaxation, after waiting in queue 60 seconds
+
+Next, we will enable Skill  relaxation, after waiting in queue ```60``` seconds
+
 <img align="middle" src="Images/Lab4/23.jpg" width="1000" />
 
 
@@ -200,12 +210,21 @@ Before we publish change the name of the flow to flow_lab4. Turn Validation on a
 Update RS with the new flow >Entrypoint_CL_Lab. Place a test call.
 
 ## Step 12. Agent reskilling
-Supervisors are able to change Agent Skill profile for an agent and take effect without having to signout the agent. Let's demo this.
+Supervisors are able to change Agent Skill profile for an agent and take effect without having to sign-out the agent. Let's demo this.
 
 Go to your user and change the skill profile.
 Place a test call.
 
 
+## Lab Validation 
+
+i) Make a call and enter the pin where Customer_Email is ```<>@gmail.com```
+ii) Make a call and enter the pin where Customer_Email is not  ```<>@gmail.com```
+
+
+Expected results
+1) First call should get connected to an Agent Immediately
+2) Second call should get connected after Skill relaxation times out.
 
 
 ### Congratulations, you have completed Lab4 tasks!
