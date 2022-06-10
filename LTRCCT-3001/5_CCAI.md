@@ -174,10 +174,10 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3.2_QnABotFlowConfiguration.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5.2CCAIFlowConfig.html";
  }
 </script>
 
@@ -185,7 +185,7 @@ function nextLab()
 <button onclick="mainPage()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Home Page</button>
+  padding: 10px;">Go To Previous Lab</button>
 
 <button onclick="nextLab()" style="
   position: absolute;
