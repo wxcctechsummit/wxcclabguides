@@ -12,9 +12,9 @@ Title: 'Lab 1: Contact Queueing to Agent Desktop '
     - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
-  - [Step 1. Site,Team,Agent](#Site,Team-Agent)
-  - [Step 2. Agent Login](#AGent-login)
-  - [Step 3. Flow configuration)](#Flow-configuration )
+  - [Step 1. Site Team Agent](#Site-Team-Agent)
+  - [Step 2. AgentLogin](#AgentLogin)
+  - [Step 3. Flow configuration](#Flow-configuration)
 
 -[Lab Validation](Lab-Validation)
 
@@ -55,7 +55,7 @@ In this section, we will go over the steps that are required to Login an Agent a
 
 # Lab Section
 
-## Step 1. Site,Team Agent
+## Step 1. Site Team Agent
 
 > **Site** -- A site is a physical contact center location under the control of your enterprise. For example, enterprise Acme can have sites in Chicago, Manila, and Bangalore with agents to handle customer contacts.
 
@@ -113,7 +113,7 @@ Agent can have Skill and multimedia profile at the team level.If agents has skil
 <img align="middle" src="Images/Lab1/queue3.jpg" width="600" />
 
 
-## Step 2. Agent Login
+## Step 2. AgentLogin
 
 1. Download Webex Client from this [link](https://settings.webex.com/login)
 2. Login with Admin Credentials
