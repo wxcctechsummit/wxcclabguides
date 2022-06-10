@@ -210,8 +210,13 @@ available for mapping, choose available **Number** and map it with the **Entry p
 
 Lorem ipsum dolor sit amet.
 
-[Click me](http://www.google.com){: .btn}
+[Homepage](https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2012/Home.html)
 
 <button name="button">Click me</button>
 
-<button onclick="window.location.href='https://bing.com';">Click</button>  
+<button onclick="window.location.href='https://bing.com';">Click</button>
+
+
+
+
+<a><button name="button" style = "color: red" onclick="https://www.w3schools.com/CPP/cpp_math.asp">cmathon w3schools</button></a>
