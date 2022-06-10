@@ -159,14 +159,14 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
     >
     > Value: Output Varriables > inappmessaging.message $(n2311.inappmessaging.message)
 - Click Save  
-- Drag the green node edge from the Recieve Node and connect it to the Append Conversation Node
-  - For each Red or Orange node edge on the Recieve Node
+- For each Red or Orange node edge on the Recieve Node
     - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
 
 	---
 
 
 - Add Append Conversation Node <img src="images\Lab4_Append.PNG" height="25">
+- Drag the green node edge from the Recieve Node and connect it to the Append Conversation Node
 
 	- Open the Append Conversation Node
     
@@ -188,6 +188,7 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
     >
     > Attachments: null
     >
+  
 - Drag the green node edge from the Append Conversation Node and connect it to the Task Bot Node
   - For each Red or Orange node edge on the Append Conversation Node
     - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
