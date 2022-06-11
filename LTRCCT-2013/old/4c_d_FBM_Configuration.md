@@ -42,7 +42,7 @@ We will be configuring  Facebook Asset, Entry Point, Queue and corresponding wor
 - Customer admin logs in to IMI connect UI  (this is specific to the tenant you are using) and is provided agter tenant creation. 
     - Please contact your Cisco Partner Success Account Manager (PSAM) if there are any challenges identifying the IMI connect URL or login details
 
-- Select Assets -> Apps -> Configure New App -> Messenger -> Click on add messenger page
+- Select Assets -> Apps -> Configure New App -> 4Messenger -> Click on add messenger page
 
 - Authenticate with your FB account where you have a page already created -> Select the respective page that you want to integrate -> Provide the name and click ‘Save’
 
@@ -112,10 +112,10 @@ We will be configuring  Facebook Asset, Entry Point, Queue and corresponding wor
 
 Changelog:
 
-| **Version** | **Comments** | **Author(s)** | **Date** |
-| --- | --- | --- | --- |
-| 1.0 | Initial Release | Abhishek Singh (asingh9@cisco.com) | 08 Nov 2021 |
-| 2.0 | Format Changes | Gagarin JS (gasathiy@cisco.com) | 09 Nov 2021 |
+| **Version** | **Comments**    | **Author(s)**                      | **Date**    |
+| ----------- | --------------- | ---------------------------------- | ----------- |
+| 1.0         | Initial Release | Abhishek Singh (asingh9@cisco.com) | 08 Nov 2021 |
+| 2.0         | Format Changes  | Gagarin JS (gasathiy@cisco.com)    | 09 Nov 2021 |
 
 
 <script>
