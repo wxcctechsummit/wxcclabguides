@@ -5,17 +5,16 @@ title: 'Lab 0: Preconfiguration'
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
+- [Introduction](#Introduction)
   - [Lab Objective](#lab-objective)
   - [Pre-requisites](#pre-requisites)
   - [Quick Links](#quick-links)
 - [Lab Section](#lab-section)
-  - [Control Hub users & License](#User-and-License-Verification)
-  - [Webex Calling Settings](#Webex-Calling-Settings)
-  - [Entry Point, Routing Strategy & Flow](#Setup-Entry-Point-routing-Strategy-and-Flow)
-  - [Create new Entry Point](#Create-an-Entry-point)
-
-- [Lab Validation](#Lab-Validation)
+  - [Control Hub users & License](#user-and-license-verification)
+  - [Webex Calling Settings](#webex-calling-settings)
+  - [Entry Point, Routing Strategy & Flow](#setup-entry-point-routing-strategy-and-flow)
+  - [Create new Entry Point](#create-an-entry-point)
+- [Lab Validation](#lab-validation)
 
 # Introduction
 
