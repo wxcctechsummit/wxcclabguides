@@ -140,7 +140,9 @@ See image below for placement of the three new nodes.
 
 For the Set Variable2 node we will use this to parse the email and then do a check on the customer email. Name the activity Label ParseEmail. Select the Cust_Prof_check as the variable name. We will use Pebble templates to define the Value of this variable. Copy and paste the following string:
 
-`{{ Customer_Email | split("@") | last }}`
+```shell
+{{ Customer_Email | split("@") | last }}
+```
 
 into the expression field.
 This split function allows us to use customer variable and split it to use the domain only of the email address we need to route the call.
@@ -151,7 +153,9 @@ Next we will test the expression we just created. Click on the blue round icon i
 
 Next we will finish out the condition node. Click on the condition node to open the settings window. Name the activity label as checkpremium. In the expression box type
 
-`{{ Cust_prof_check = = "gmail.com"}} `
+```shell
+{{ Cust_prof_check = = "gmail.com" }}
+```
 
 Click on the blue round button in the expression box to test the expression.
 type in gmail.com. The results box should show True. Save changes.
@@ -179,7 +183,9 @@ Set the first skill to `Agent_Proficiency` with condition >= value 4.
 
 Lets add a second skill. Select the Add Skill Requirement, Premium Agent with condition IS and value set to the variable.
 
-`{{Cust_Premium_set}}`
+```shell
+{{ Cust_Premium_set }}
+```
 
 <img align="middle" src="Images/Lab4/22.jpg" width="1000" />
 
