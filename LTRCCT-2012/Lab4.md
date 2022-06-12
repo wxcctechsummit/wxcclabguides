@@ -140,8 +140,10 @@ See image below for placement of the three new nodes.
 
 For the Set Variable2 node we will use this to parse the email and then do a check on the customer email. Name the activity Label ParseEmail. Select the Cust_Prof_check as the variable name. We will use Pebble templates to define the Value of this variable. Copy and paste the following string:
 
+`Note: Surround the expression below with {{ braces }}`
+
 ```shell
-{{ Customer_Email | split("@") | last }}
+Customer_Email | split("@") | last
 ```
 
 into the expression field.
@@ -153,8 +155,10 @@ Next we will test the expression we just created. Click on the blue round icon i
 
 Next we will finish out the condition node. Click on the condition node to open the settings window. Name the activity label as checkpremium. In the expression box type
 
+`Note: Surround the expression below with {{ braces }}`
+
 ```shell
-{{ Cust_prof_check = = "gmail.com" }}
+ Cust_prof_check = = "gmail.com"
 ```
 
 Click on the blue round button in the expression box to test the expression.
