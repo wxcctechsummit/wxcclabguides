@@ -127,11 +127,9 @@ iii) Method select `GET`
 
 iv) Under Query Parameters
 
-```
-Key==pin
+`Key==pin`
 
-value =={{CollectDigits.DigitsEntered}}
-```
+`value == {{ CollectDigits.DigitsEntered }}`
 
 v) Content Type == application/json
 
@@ -161,9 +159,7 @@ i) under `Parse Settings` select the `Content Type` as `JSON`
 
 6. Drag and drop `condition` Node and set the condition to
 
-```
-{{DataDip.httpStatusCode==200}}
-```
+`{{ DataDip.httpStatusCode == 200 }}`
 
  <img align="middle" src="Images/Lab3/6.jpg" width="500" />
 
