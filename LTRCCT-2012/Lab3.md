@@ -133,13 +133,13 @@ iv) Under Query Parameters
 
 v) Content Type == application/json
 
-   <img align="middle" src="Images/Lab3/41.jpg" width="200" />
-   <img align="middle" src="Images/Lab3/42.jpg" width="200" />
+   <img align="middle" src="Images/Lab3/41.jpg" width="300" />
+   <img align="middle" src="Images/Lab3/42.jpg" width="300" />
 
-   <img align="middle" src="Images/Lab3/44.jpg" width="200" />
-   <img align="middle" src="Images/Lab3/45.jpg" width="200" />
+   <img align="middle" src="Images/Lab3/44.jpg" width="300" />
+   <img align="middle" src="Images/Lab3/45.jpg" width="300" />
 
- <img align="middle" src="Images/Lab2/flow44.jpg" width="500" />
+
 
 >
 

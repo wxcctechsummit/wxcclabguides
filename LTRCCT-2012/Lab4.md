@@ -137,7 +137,7 @@ Create a second Flow Variable. This name will be `Cust_premium_set`, variable ty
 Drag and drop the `Set Variable node` and the `Condition node` and another `Set Variable node` onto the flow canvas.
 See image below for placement of the three new nodes.
 
-<img align="middle" src="Images/Lab4/14a.JPG" width="1000" />
+<img align="middle" src="Images/Lab4/14a.jpg" width="1000" />
 
 For the Set Variable2 node we will use this to parse the email and then do a check on the customer email. Name the activity Label ParseEmail. Select the Cust_Prof_check as the variable name. We will use Pebble templates to define the Value of this variable. Copy and paste the following string:
 

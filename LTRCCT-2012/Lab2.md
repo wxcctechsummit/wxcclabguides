@@ -105,7 +105,7 @@ Agent Desktop: \*\*[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1
    <img align="middle" src="Images/Lab2/Flow42.jpg" width="200" />
    <img align="middle" src="Images/Lab2/Flow43.jpg" width="200" />
 
- <img align="middle" src="Images/Lab2/flow44.jpg" width="900" />
+
 
 5. Drag and drop `Queue contact` node and select `Dummy_Queue` created
 
