@@ -137,31 +137,31 @@ The default time zone is the Tenant's time zone.
 
 8. Next step is creating a flow, to create first flow click on **Routing Strategies** from the portal and click on **Flows** and click **New**
 
-<img align="middle" src="Images/Lab0/portal_flow1.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow1.jpg" width="900" />
 
 9. Give any name and click on **Start Building Flow**
 
-<img align="middle" src="Images/Lab0/portal_flow2.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow2.jpg" width="900" />
 
-<img align="middle" src="Images/Lab0/portal_flow3.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow3.jpg" width="900" />
 
 10. From the Flow Pallete, drag and drop **Play Message Node** and **Disconnect Node** and connect all nodes
 
-<img align="middle" src="Images/Lab0/portal_flow4.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow4.jpg" width="900" />
 
-<img align="middle" src="Images/Lab0/portal_flow5.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow5.jpg" width="900" />
 
 11. Click on **Play Message** node to select the voice prompt
 
-<img align="middle" src="Images/Lab0/portal_flow6.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow6.jpg" width="900" />
 
 > Note all the prompts are pre loaded in the lab under **Routing Strategies-->Resources**
 
 12. Enable **Validation** and **Publish** the flow
 
-<img align="middle" src="Images/Lab0/portal_flow6.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow6.jpg" width="900" />
 
-<img align="middle" src="Images/Lab0/portal_flow7.jpg" width="500" />
+<img align="middle" src="Images/Lab0/portal_flow7.jpg" width="900" />
 
 13. Routing Strategies tags the flow created with an Entry point, to create routing strategies click on **Routing Strategies-->New Strategy**
 
