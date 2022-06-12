@@ -55,12 +55,12 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Login to Facebook and create a business page that can be used in WxCC for polling and handling the messenger chats Additional details of facebook page setup is available here: [Facebook Business page setup](https://www.facebook.com/business/pages/set-up)){:target="_blank"}**\
 
-
 - Click on `Create a Page` button
 
-<img align="middle" src="images/Lab4_4.jpg" width="1000" />
+<img align="middle" src="images/Lab4_4.jpg" width="500" />
 
 - If you are logged in already to Facebook, you will be presented with the Business Page creation tool. Simply give the page a Name and a Category then Click `Create Page` button
+
 <img align="middle" src="images/Lab4_5.jpg" width="1000" />
 
 [Back to top](#table-of-contents)
@@ -70,36 +70,44 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
 - Navigate to `Assets` > `Apps` > `Configure New App` > `Messenger` and Click on `Add Messenger Page` button
+
 <img align="middle" src="images/Lab4_1.gif" width="1000" />
 
 - If you haven't done already, authenticate with your FB account where you have a page already created. Then select the respective page that you want to integrate
-<img align="middle" src="images/Lab4_6.jpg" width="1000" />
+
+<img align="middle" src="images/Lab4_6.jpg" width="400" />
 
 - Accept all default permissions
-  <img align="middle" src="images/Lab4_7.jpg" width="1000" />
+
+<img align="middle" src="images/Lab4_7.jpg" width="400" />
 
 - That completes the linking of the Facebook connect with Webex Connect
-  <img align="middle" src="images/Lab4_8.jpg" width="1000" />
+
+<img align="middle" src="images/Lab4_8.jpg" width="400" />
 
 - Finally select the Business Page you want to link to the Asset
-  <img align="middle" src="images/Lab4_9.jpg" width="1000" />
+
+<img align="middle" src="images/Lab4_9.jpg" width="400" />
 
 -  Provide the name and click `Save`
-  <img align="middle" src="images/Lab4_10.jpg" width="1000" />
+
+<img align="middle" src="images/Lab4_10.jpg" width="700" />
 
 -  Click `Register to Webex CC`  in the ‘Configure New App-Messenger’ window ->  In the resulting window select the service and click `Register`.
-  <img align="middle" src="images/Lab4_11.jpg" width="1000" />
+
+<img align="middle" src="images/Lab4_11.jpg" width="400" />
 
 - Confirm that registration with Webex CC completed successfully
-  <img align="middle" src="images/Lab4_12.jpg" width="1000" />
+
+<img align="middle" src="images/Lab4_12.jpg" width="400" />
 
 - Scroll down and take note of the M.ne link in the `Page Discovery Addons` section. We will use that link to trigger the Facebook Messenger interaction from the Customer end. Also take note of the numeric string paramenter in the m.me link. That's the `Facebook Page ID` which we will also need later when configuring the flow.
 
-  <img align="middle" src="images/Lab4_16.jpg" width="1000" />
+<img align="middle" src="images/Lab4_16.jpg" width="400" />
 
 - Click on the back arrow to go back to the list of Assets Apps. Then take note of the application ID (app id) we just created. We will also need that app ID in the flow
 
-  <img align="middle" src="images/Lab4_15.jpg" width="1000" />
+<img align="middle" src="images/Lab4_15.jpg" width="600" />
 
 [Back to top](#table-of-contents)
 
@@ -125,7 +133,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Click on **Save** after comparing your values with the screenshot below.
 
-  <img align="middle" src="images/Lab4_13.jpg" width="1000" />
+<img align="middle" src="images/Lab4_13.jpg" width="700" />
 
 ### 2. Create Queue in Management Portal 
 
@@ -134,7 +142,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 - Click on `New Queue`.
 
 - Input **_Name_** as `FBM_Q`.
-- 
+
 - Select `Social Channel` in the **_Channel Type_** section.
 
 - Click `Add Group` in the **_Conversation distribution_** section.
@@ -147,7 +155,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Click on **Save** after comparing your values with the screenshot below.
 
-  <img align="middle" src="images/Lab4_14.jpg" width="1000" />
+<img align="middle" src="images/Lab4_14.jpg" width="1000" />
 
 [Back to top](#table-of-contents)
 
@@ -165,14 +173,13 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - In the service click on **FLOWS** -> **CREATE FLOW** .
 
-<img align="middle" src="images/Lab3_19.jpg" width="1000" />
+<img align="middle" src="images/Lab3_19.jpg" width="600" />
 
 - Enter the **FLOW NAME** as **FBM Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
 - Drag and drop the **Facebook Inbound Flow.workflow** flow file that you unzipped, click **CREATE** and then click **SAVE**.
 
-<img align="middle" src="images/Lab4_2.jpg" width="1000" />
-
+<img align="middle" src="images/Lab4_2.jpg" width="900" />
 
 ### 2. Start node and Custom Variables
 
@@ -180,11 +187,11 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
   
 - First Click `Save` in the `Configure APP Event` page that loaded, this defines what will trigger the flow and the default settings are already good.
 
-<img align="middle" src="images/Lab4_3.jpg" width="1000" />
+<img align="middle" src="images/Lab4_3.jpg" width="300" />
 
 - Click on the gear button on the top right to load the flow settings dialog
 
-<img align="middle" src="images/Lab4_19.jpg" width="1000" />
+<img align="middle" src="images/Lab4_19.jpg" width="600" />
 
 - Select the Custom Variables tab and set the following Default Values:
 
@@ -199,7 +206,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **FBM_Q** and add Skill requirement for Sales to be True and click on **SAVE**.
 
-<img align="middle" src="images/Lab4_18.jpg" width="1000" />
+<img align="middle" src="images/Lab4_18.jpg" width="400" />
 
 - Finally click on Make Live on top right corner
   
@@ -220,7 +227,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Open a new tab on the same browser session to make sure you are still authenticated to Facebook. Go to the M.me URL you copied in Step 2 and the following FBM page should load with the Facebook Business page chat you created earlier
 
-<img align="middle" src="images/Lab4_23.jpg" width="1000" />
+<img align="middle" src="images/Lab4_23.jpg" width="400" />
 
 - Start chatting and that should trigger a contact into Webex CC that will get routed according to the flow we configured in Step 4. A notification should appear that should help you switch to the agent desktop tab to accept the contact
 
@@ -232,13 +239,13 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Response will be received in the other tab where the FBM page is:
 
-<img align="middle" src="images/Lab4_27.jpg" width="1000" />
+<img align="middle" src="images/Lab4_27.jpg" width="100" />
 
 - End the contact
-  <img align="middle" src="images/Lab4_28.jpg" width="1000" />
+  <img align="middle" src="images/Lab4_28.jpg" width="400" />
 
 - Add wrap up and close the task. 
-  <img align="middle" src="images/Lab4_29.jpg" width="1000" />
+  <img align="middle" src="images/Lab4_29.jpg" width="400" />
 
 
 [Back to top](#table-of-contents)
