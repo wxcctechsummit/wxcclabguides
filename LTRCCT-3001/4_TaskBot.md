@@ -208,6 +208,10 @@ function code() {window.location.href = "https://wxcctechsummit.github.io/wxccla
 function flowBuilder() {
  window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Flow.html";
  }
+function previous() {
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3.3_QnABotAdvanced.html";
+ }
+
 </script>
 
 <div id="button-row">
@@ -223,3 +227,9 @@ Or
 
 </div>
 
+<div>
+<button onclick="previous()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go to the Previous Lab</button>
+</div>
