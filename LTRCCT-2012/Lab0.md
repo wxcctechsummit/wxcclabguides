@@ -58,9 +58,12 @@ In this section, we will go over the steps that are required to be completed for
 
 > User with premium Agent license can log in as Agent as well as perform Admin tasks
 
-<img align="middle" src="Images/Lab0/CH_User_License.jpg" width="1000" />
+
 
 - Upon verifying the user, Click **Cancel** and from the mainPage click on **Calling** and verify Directory Number is assigned to this user, if not click on **Add Number** to add a Directory Number.
+
+<img align="middle" src="Images/Lab0/number.jpg" width="1000" />
+
 
 ## Webex Calling Settings
 

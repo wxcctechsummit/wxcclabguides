@@ -114,11 +114,12 @@ Agent Desktop: \*\*[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1
 
 6. To Set `QueueCounter` Variable
 
+
    i) Click anywhere on the Flow canvas
 
    ii)Click on `Add Flow Variable`
 
-   iii) Create a `integer`variable named `QueueCounter` and set Default value to `0`
+   iii) Create a `integer` variable named `QueueCounter` and set Default value to `0`
 
    <img align="middle" src="Images/Lab2/Flow61.jpg" width="900" />
    <img align="middle" src="Images/Lab2/Flow62.jpg" width="900" />
@@ -166,9 +167,9 @@ iii) connect `DisconnectContact` node to callback node
 i) Drag and Drop `Blindtransfer` node and set `Number` to `+18005532447` which is Cisco TAC support number
 
 ii) Repeat the same for `optout` menu as well
-<img align="middle" src="Images/Lab2/Flow131.jpg" width="500" />
+<img align="middle" src="Images/Lab2/Flow131.jpg" width="900" />
 
-  <img align="middle" src="Images/Lab2/Flow132.jpg" width="500" />
+  <img align="middle" src="Images/Lab2/Flow132.jpg" width="900" />
 
 14. Connect `No-input Timeout` and `Unmatched Entry` from Main menu to itself
 
@@ -182,7 +183,7 @@ ii) Repeat the same for `optout` menu as well
 
 17. Edit `Current` Routing Strategy and change the flow to `Lab2`
 
-<img align="middle" src="Images/Lab2/Flow171.jpg" width="500" />
+<img align="middle" src="Images/Lab2/Flow171.jpg" width="900" />
 
 # Lab Validation
 

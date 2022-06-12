@@ -222,6 +222,7 @@ ii) Make a call and enter the pin where Customer_Email is not `<>@gmail.com`
 Expected results
 
 1. First call should get connected to an Agent Immediately
+
 2. Second call should get connected after Skill relaxation times out.
 
 # Lab Support

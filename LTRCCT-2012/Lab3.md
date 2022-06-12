@@ -191,6 +191,7 @@ ii) On the Main Menu Node press `1`
 - Expected results
 
 i) System should validates the PIN and fetch Email, Name, Account details
+
 ii) System should fetch data and Pop all those information on Agent_Desktop
 
 # Lab Support
