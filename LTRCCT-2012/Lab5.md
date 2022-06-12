@@ -1,5 +1,5 @@
 ---
-title: 'Lab 5: Bonus Lab  Preferred Agent Routing'
+Title: 'Lab 5: Bonus Lab  Preferred Agent Routing'
 ---
 
 # Table of Contents
@@ -15,7 +15,7 @@ title: 'Lab 5: Bonus Lab  Preferred Agent Routing'
 - [Lab Section](#lab-section)
   - [Preffered Agent Routing](#PreferredAgentRouting)
   - [Flow configuration ](#FlowConfiguration)
-  - [Validation )](Lab-Validation)
+  - [Validation)](#Lab-Validation)
 
 # Introduction
 

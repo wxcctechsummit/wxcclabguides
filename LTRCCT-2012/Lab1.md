@@ -18,7 +18,7 @@ Title: 'Lab 1: Contact Queueing to Agent Desktop '
   - [AgentLogin](#AgentLogin)
   - [Flow configuration](#Flow-configuration)
 
-- [Lab Validation](Lab-Validation)
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 

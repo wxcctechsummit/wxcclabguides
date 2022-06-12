@@ -12,7 +12,7 @@ title: 'Lab 0: Preconfiguration'
 - [Lab Section](#lab-section)
   - [Control Hub users & License](#User-and-License-Verification)
   - [Webex Calling Settings](#Webex-Calling-Settings)
-  - [Entry Point, Routing Strategy & Flow )](Setup-Entry-Point,-routing-Strategy-and-Flow)
+  - [Entry Point, Routing Strategy & Flow )](Setup-Entry-Point-routing-Strategy-and-Flow)
   - [Create new Entry Point](#Create-an-Entry-point)
 
 - [Lab Validation](#Lab-Validation)
@@ -72,7 +72,7 @@ In this section, we will go over the steps that are required to be completed for
 
 > Main number is tagged to the location, the second number will be used through out this lab to call and test flows
 
-## Setup Entry Point, routing Strategy and Flow
+## Setup Entry Point routing Strategy and Flow
 
 > Control Hub offers a holistic view of all your Webex services. Contact center is also a Services under Control Hub, to cross launch to contact Center portal.
 

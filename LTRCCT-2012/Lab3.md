@@ -14,10 +14,10 @@ title: 'Lab3 - Advanced HTTP based External Data Dip'
 
 - [Lab Section](#lab-section)
 
-  - [HTTP Node](#HTTP Node)
-  - [Flow configuration )](Flow configuration)
+  - [HTTP Node](#HTTP-Node)
+  - [Flow configuration](#Flow-configuration)
 
-- [Lab Validation](Lab-Validation)
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 
@@ -48,7 +48,7 @@ In this section, we will go over the steps that are required to do External Data
 
 # Lab Section
 
-## Step 1. HTTP Node
+## HTTP Node
 
 > The HTTP Request activity fetches information from an external data source such as a CRM using standard HTTP protocols.
 > Basic Auth and OAuth 2.0 attributes are supported for authenticated endpoints
@@ -89,7 +89,7 @@ Try out all of these to learn how JSON path works!
 | All details of customer with account number                   | $..[?(@.account == "87305901”)].\*  |
 | Name of customer with account number                          | $.[?(@.account == "70579265")].name |
 
-## Step 2. Flow configuration
+## Flow configuration
 
 1. Copy the Lab2 flow by clicking on 3 dot and open the copied the flow
    <img align="middle" src="Images/Lab3/1.jpg" width="1000" />

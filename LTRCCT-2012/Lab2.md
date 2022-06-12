@@ -16,9 +16,9 @@ Title: 'Lab 2: Menu & Opt_Out'
 
   - [Queue&Team](#Create-And-Team)
   - [Agent Login](#AGent-login)
-  - [Flow configuration)](Flow-configuration)
+  - [Flow configuration](#Flow-configuration)
 
-- [Lab Validation](Lab-Validation)
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 

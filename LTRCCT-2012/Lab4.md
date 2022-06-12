@@ -13,7 +13,7 @@ Title: 'Lab 4: SBR and Dynamic Agent Reskilling'
   - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
-- [Lab Validation](#Lab-Validaton)
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 
