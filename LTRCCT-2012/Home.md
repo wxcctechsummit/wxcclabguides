@@ -21,7 +21,7 @@ Welcome to Cisco Live Flow Builder Lab !!,
 | ------------- | ---------- | ---------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------- |
 | Chandramouli  | Lab 0      | PreRequisites                             | [PreRequisite](Lab0.md){:target="\_blank"}                 | Hear Welcome Prompt     |                                              |
 | ChandraMouli  | Lab 1      | Agent Login                              | [Agent Login](Lab1.md){:target="\_blank"}                  | Call is Queued to Agent    |                                           |
-| Tracey        | Lab 2      | Menu and Queue Treatment                 | [Menu and Queue Treatment](Lab2.md){:target="\_blank"}     | Caller is given menu and opt out    |                                  | options |
+| Tracey        | Lab 2      | Menu and Queue Treatment                 | [Menu and Queue Treatment](Lab2.md){:target="\_blank"}     | Caller is given menu and opt out    |                                  | 
 | ChandraMouli  | Lab 3      | Advanced HTTP Request                    | [Advanced HTTP based Data DIP](Lab3.md){:target="\_blank"} | Pull Customer information dynamically and present it to Agent Desktop |
 | Tracey        | Lab 4      | Skill Based Routing                      | [SkillBasedRouting](Lab4.md){:target="\_blank"}            | Offer premium services using Advanced Skill Based routing      |       |
 | ChandraMouli  | Lab 5      | Bonus - Preferred Agent Routing          | [PreferredAgentRouting](Lab5.md){:target="\_blank"}        | Preferred/Last Agent Routing        |                                  |
