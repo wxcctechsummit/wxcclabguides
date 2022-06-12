@@ -17,7 +17,7 @@ title: 'Lab3 - Advanced HTTP based External Data Dip'
   - [HTTP Node](#HTTP-Node)
   - [Flow configuration](#Flow-configuration)
 
-- [Lab Validation](#Lab-Validation)
+- [Lab Validation](#lab-validation)
 
 # Introduction
 
