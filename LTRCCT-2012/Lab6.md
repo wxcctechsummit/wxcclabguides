@@ -23,8 +23,9 @@ Title: 'Lab 6: Bonus- Google Text to speech and DialogFlow Integration'
 
 ### Recap
 
-In the first 5 Lab, we Learned 0. Bring the contact into Webex Contact Center and hear welcome message
+In the first 5 Lab, we Learned
 
+0. Bring the contact into Webex Contact Center and hear welcome message
 1. Queue the contact to Live Agent after hearing welcome prompt
 2. provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
 3. HTTP based Data Dip to external WebServices to Pull Customer Information and POP that on Agent Desktop

@@ -21,8 +21,9 @@ Title: 'Lab 5: Bonus Lab  Preferred Agent Routing'
 
 ### Recap
 
-In the first 4 Lab, we Learned 0. Bring the contact into Webex Contact Center and hear welcome message
+In the first 4 Lab, we Learned
 
+0. Bring the contact into Webex Contact Center and hear welcome message
 1.  Queue the contact to Live Agent after hearing welcome prompt
 2.  provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
 3.  HTTP based Data Dip to external WebServices to Pull Customer Information and POP that on Agent Desktop

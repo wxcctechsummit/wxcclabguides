@@ -23,8 +23,9 @@ title: 'Lab3 - Advanced HTTP based External Data Dip'
 
 ### Recap
 
-In the first 2 Lab, we Learned 0. Bring the contact into Webex Contact Center and hear welcome message
+In the first 2 Lab, we Learned
 
+0. Bring the contact into Webex Contact Center and hear welcome message
 1. Queue the contact to Live Agent after hearing welcome prompt
 2. provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
 

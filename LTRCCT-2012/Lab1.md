@@ -24,7 +24,9 @@ Title: 'Lab 1: Contact Queueing to Agent Desktop '
 
 ### Recap
 
-In the first Lab, we Learned 0. Bring the contact into Webex Contact Center and hear welcome message
+In the first Lab, we Learned
+
+0. Bring the contact into Webex Contact Center and hear welcome message
 
 ### Lab Objective
 

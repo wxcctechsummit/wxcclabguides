@@ -24,8 +24,9 @@ Title: 'Lab 2: Menu & Opt_Out'
 
 ### Recap
 
-In the first Lab, we Learned 0. Bring the contact into Webex Contact Center and hear welcome message
+In the first Lab, we Learned
 
+0. Bring the contact into Webex Contact Center and hear welcome message
 1. Queue the contact to Live Agent after hearing welcome prompt
 
 ### Lab Objective
