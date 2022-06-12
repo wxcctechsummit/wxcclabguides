@@ -125,7 +125,13 @@ ii) In the Request URL enter `https://5fd3e1aee9cda40016f5bb94.mockapi.io/Lookup
 
 iii) Method select `GET`
 
-iv) Under Query Parameters Key==pin, value ==`{{CollectDigits.DigitsEntered}}`
+iv) Under Query Parameters
+
+```
+Key==pin
+
+value =={{CollectDigits.DigitsEntered}}
+```
 
 v) Content Type == application/json
 
@@ -155,7 +161,9 @@ i) under `Parse Settings` select the `Content Type` as `JSON`
 
 6. Drag and drop `condition` Node and set the condition to
 
-`{{DataDip.httpStatusCode==200}}`
+```
+{{DataDip.httpStatusCode==200}}
+```
 
  <img align="middle" src="Images/Lab3/6.jpg" width="500" />
 

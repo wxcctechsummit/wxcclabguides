@@ -133,18 +133,29 @@ Create a second Flow Variable. This name will be `Cust_premium_set`, variable ty
 
 ## Step 7. Add new nodes
 
-Drag and drop the `Set Variable node` and the `Condition node` and another `Set Variable node` onto the flow canvas. See image below for placement of the three new nodes.
+Drag and drop the `Set Variable node` and the `Condition node` and another `Set Variable node` onto the flow canvas.
+See image below for placement of the three new nodes.
 
 <img align="middle" src="Images/Lab4/14a.jpg" width="1000" />
 
-For the Set Variable2 node we will use this to parse the email and then do a check on the customer email. Name the activity Label ParseEmail. Select the Cust_Prof_check as the variable name. We will use Pebble templates to define the Value of this variable. Copy and paste the following string: `{{Customer_Email | split("@") | last}}`into the expression field.
+For the Set Variable2 node we will use this to parse the email and then do a check on the customer email. Name the activity Label ParseEmail. Select the Cust_Prof_check as the variable name. We will use Pebble templates to define the Value of this variable. Copy and paste the following string:
+
+````
+{{ Customer_Email | split("@") | last }}```
+
+into the expression field.
 This split function allows us to use customer variable and split it to use the domain only of the email address we need to route the call.
 <img align="middle" src="Images/Lab4/15.jpg" width="1000" />
 
 Next we will test the expression we just created. Click on the blue round icon in the expression box. For customer email type in xyx@yahaoo.com. Click on test. The results box should only show the domain yahoo.com. Apply Changes.
 <img align="middle" src="Images/Lab4/16.jpg" width="1000" />
 
-Next we will finish out the condition node. Click on the condition node to open the settings window. Name the activity label as checkpremium. In the expression box type {{Cust_prof_check = = "gmail.com"}}
+Next we will finish out the condition node. Click on the condition node to open the settings window. Name the activity label as checkpremium. In the expression box type
+
+```
+{{Cust_prof_check = = "gmail.com"}}
+```
+
 Click on the blue round button in the expression box to test the expression.
 type in gmail.com. The results box should show True. Save changes.
 <img align="middle" src="Images/Lab4/17.jpg" width="1000" />
@@ -169,7 +180,13 @@ Set the first skill to `Agent_Proficiency` with condition >= value 4.
 
 <img align="middle" src="Images/Lab4/21.jpg" width="1000" />
 
-Lets add a second skill. Select the Add Skill Requirement, Premium Agent with condition IS and value set to the variable `{{Cust_Premium_set}}`
+Lets add a second skill. Select the Add Skill Requirement, Premium Agent with condition IS and value set to the variable.
+
+````
+
+{{Cust_Premium_set}}
+
+```
 
 <img align="middle" src="Images/Lab4/22.jpg" width="1000" />
 
@@ -234,3 +251,4 @@ function nextLab()
   padding: 10px;">Go to the Next Lab</button>
 
 </div>
+```
