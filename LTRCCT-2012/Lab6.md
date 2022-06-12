@@ -91,7 +91,7 @@ i) Log into Control Hub, Contact center -->Features -->New -->Virtual Agent
 
    <img align="middle" src="Images/Lab6/21.jpg" width="1000" />
 
-    Toggle ```Use For Voice``` please node ```Use for Chat``` is disabled as new tenants are default configured with Webex Connect (Cisco New Digital Channel)
+Toggle `Use For Voice` please node `Use for Chat` is disabled as new tenants are default configured with Webex Connect (Cisco New Digital Channel)
 
    <img align="middle" src="Images/Lab6/22.jpg" width="1000" />
 
