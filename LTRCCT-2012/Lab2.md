@@ -14,7 +14,7 @@ Title: 'Lab 2: Menu & Opt_Out'
 
 - [Lab Section](#lab-section)
 
-  - [Queue&Team](#Create-And-Team)
+  - [Queue&Team](#Create-Queue-and-Team)
   - [Agent Login](#AGent-login)
   - [Flow configuration](#Flow-configuration)
 

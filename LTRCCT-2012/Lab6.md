@@ -14,7 +14,7 @@ Title: 'Lab 6: Bonus- Google Text to speech and DialogFlow Integration'
 
 - [Lab Section](#lab-section)
   - [Setup Google TTS Connector](#Setup-Google-TTS-Connector)
-  - [etup DialogFlow Connector](#Setup-DialogFlow-Connector)
+  - [Setup DialogFlow Connector](#Setup-DialogFlow-Connector)
   - [Flow configuration](#Flow-configuration)
 
 - [Lab Validation](#Lab-Validation)
