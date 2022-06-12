@@ -76,7 +76,11 @@ Add the path expression as `$.[0].Agent_Email`
 <img align="middle" src="Images/Lab5/11.jpg" width="1000" />
 
 2. Add a `Condition ` node after `MainMenu` node and rename it to `premium_Customer_Check` and set the condition
-   to `{{Cust_premium_set =="yes"}}`
+   to
+
+```
+{{Cust_premium_set =="yes"}}
+```
 
 <img align="middle" src="Images/Lab5/2.jpg" width="1000" />
 
