@@ -19,7 +19,7 @@ Welcome to Cisco Live Flow Builder Lab !!,
 
 | Content Owner | Lab Number | Topic                                    | Lab                                                        |Objective                                      |
 | ------------- | ---------- | ---------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------- |
-| Chandramouli  | Lab 0      | PreRequisite                             | [PreRequisite](Lab0.md){:target="\_blank"}                 | Hear Welcome Prompt     |                                              |
+| Chandramouli  | Lab 0      | PreRequisites                             | [PreRequisite](Lab0.md){:target="\_blank"}                 | Hear Welcome Prompt     |                                              |
 | ChandraMouli  | Lab 1      | Agent Login                              | [Agent Login](Lab1.md){:target="\_blank"}                  | Call is Queued to Agent    |                                           |
 | Tracey        | Lab 2      | Menu and Queue Treatment                 | [Menu and Queue Treatment](Lab2.md){:target="\_blank"}     | Caller is given menu and opt out    |                                  | options |
 | ChandraMouli  | Lab 3      | Advanced HTTP Request                    | [Advanced HTTP based Data DIP](Lab3.md){:target="\_blank"} | Pull Customer information dynamically and present it to Agent Desktop |
