@@ -1,5 +1,5 @@
 ---
-title: 'Lab 2: Menu & opt_Out'
+title: 'Lab3 - Advanced HTTP based External Data Dip'
 ---
 
 # Table of Contents
@@ -14,8 +14,8 @@ title: 'Lab 2: Menu & opt_Out'
 
 - [Lab Section](#lab-section)
 
-  - [Step 1. HTTP Node](#HTTP Node)
-  - [Step 2. Flow configuration )](Flow configuration )
+  - [HTTP Node](#HTTP Node)
+  - [Flow configuration )](Flow configuration)
 
 - [Lab Validation](Lab-Validation)
 
@@ -179,7 +179,7 @@ DataDip.httpStatusCode == 200
 
 9. Edit `Current` Routing Strategy and change the flow to `Lab3`
 
-## Lab-Validation
+## Lab Validation
 
 > Login to Agent Desktop and Keep the Agent in Not Ready State
 

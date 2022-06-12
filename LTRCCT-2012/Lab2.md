@@ -14,9 +14,9 @@ Title: 'Lab 2: Menu & Opt_Out'
 
 - [Lab Section](#lab-section)
 
-  - [Step 1. Site,Team,Agent](#Site,Team,Agent)
-  - [Step 2. Agent Login](#AGent-login)
-  - [Step 3. Flow configuration)](Flow-configuration)
+  - [Queue&Team](#Create-And-Team)
+  - [Agent Login](#AGent-login)
+  - [Flow configuration)](Flow-configuration)
 
 - [Lab Validation](Lab-Validation)
 
@@ -49,7 +49,7 @@ In this section, we will go over the steps that are required to offer a Menu and
 
 # Lab Section
 
-## Step 1. Add one more Queue and a Team
+## Create Queue and Team
 
 ### Team
 
@@ -68,7 +68,7 @@ In this section, we will go over the steps that are required to offer a Menu and
 <img align="middle" src="Images/Lab2/Queue1.jpg" width="900" />
 <img align="middle" src="Images/Lab2/Queue2.jpg" width="900" />
 
-## Step 2. Agent Login
+## Agent Login
 
 > Follow the steps from Lab1 and login in Agent
 
@@ -84,7 +84,7 @@ Agent Desktop: \*\*[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1
 
 > Set the Agent status to `Not Ready`
 
-## Step 3. Flow configuration
+## Flow configuration
 
 1. Copy the Lab1 flow by clicking on 3 dot
    <img align="middle" src="Images/Lab2/Flow1.jpg" width="500" />

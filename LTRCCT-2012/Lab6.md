@@ -13,9 +13,11 @@ title: 'Lab 6: Bonus- Google Text to speech and DialogFlow Integration'
   - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
-  - [Step 1. Setup Google TTS Connector](#Setup Google TTS Connector)
-  - [Step 2. Setup DialogFlow Connector](#Setup DialogFlow Connector)
-  - [Step 3. Flow configuration)](#Flow configuration)
+  - [Setup Google TTS Connector](#Setup-Google-TTS-Connector)
+  - [etup DialogFlow Connector](#Setup-DialogFlow-Connector)
+  - [Flow configuration)](#Flow-configuration)
+
+- [Lab Validation](Lab-Validation)
 
 # Introduction
 
@@ -59,7 +61,7 @@ All registered participants are also added to the support room where the enginee
 
 # Lab Section
 
-## Step 1. Setup Google TTS Connector
+## Setup Google TTS Connector
 
 > The Text-to-Speech capability is powered by Google's Text-to-Speech APIs. To enable this functionality, you must set up a Google Cloud account and configure the Text-to-Speech service.
 
@@ -81,7 +83,7 @@ ii) Give a name and upload the `ciscolivetts.json` file
 
     <img align="middle" src="Images/Lab6/12.jpg" width="1000" />
 
-## Step 2. Setup DialogFlow Connector
+## Setup DialogFlow Connector
 
 1. Create a Service Account for DialogFlow and create TripPlaner Virtual agent in Dialog flow , both step are already completed and JSON file is attached above, For complete instruction on creating BOT on Google Dialog flow console watch video [here](https://cisco.sharepoint.com/sites/WxCCPartnerEnablement/Shared%20Documents/Forms/AllItems.aspx?id=/sites/WxCCPartnerEnablement/Shared%20Documents/Enablement%20Videos/Google_DialogFlow_Deep_Dive_Part1_Fundamentals.mp4&parent=/sites/WxCCPartnerEnablement/Shared%20Documents/Enablement%20Videos)
 
@@ -113,7 +115,7 @@ Upload the Authentication key, which is provided above and `Validate` the key
 
 Optionally upload `Avatar` and press next and complete the setup
 
-## Step 3. Flow configuration
+## Flow configuration
 
 1. Create a new flow and name is `Lab6`
 

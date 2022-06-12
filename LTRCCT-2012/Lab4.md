@@ -13,6 +13,7 @@ Title: 'Lab 4: SBR and Dynamic Agent Reskilling'
   - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
+- [Lab Validation](#Lab-Validaton)
 
 # Introduction
 
@@ -215,6 +216,7 @@ Place a test call.
 ## Lab Validation
 
 i) Make a call and enter the pin where Customer_Email is `<>@gmail.com`
+
 ii) Make a call and enter the pin where Customer_Email is not `<>@gmail.com`
 
 Expected results

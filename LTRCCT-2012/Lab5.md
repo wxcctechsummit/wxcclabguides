@@ -13,9 +13,9 @@ title: 'Lab 5: Bonus Lab  Preferred Agent Routing'
   - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
-  - [Step 1. Preffered Agent Routing](#PreferredAgentRouting)
-  - [Step 2. Flow configuration ](#FlowConfiguration)
-  - [Step 3. Validation )](Validation)
+  - [Preffered Agent Routing](#PreferredAgentRouting)
+  - [Flow configuration ](#FlowConfiguration)
+  - [Validation )](Lab-Validation)
 
 # Introduction
 
@@ -57,11 +57,11 @@ preferred Agent
 
 # Lab Section
 
-## Step 1. PreferredAgentRouting
+## PreferredAgentRouting
 
 > PreferredAgentRouting feature using QueuetoAgent Node gives the ability for a flow designer to directly target an agent(Last Agent routed) instead of making the contact wait in a Queue.
 
-## Step 2. FlowConfiguration
+## FlowConfiguration
 
 > Copy the Lab4 flow by clicking on 3 dot and open the copied the flow
 
@@ -99,7 +99,7 @@ Add the path expression as `$.[0].Agent_Email`
 
 <img align="middle" src="Images/Lab5/4.jpg" width="1000" />
 
-## Step 3. Validation
+## Lab Validation
 
 ### Dial the Number from your mobile phone
 

@@ -10,9 +10,12 @@ title: 'Lab 0: Preconfiguration'
   - [Pre-requisites](#pre-requisites)
   - [Quick Links](#quick-links)
 - [Lab Section](#lab-section)
-  - [Step 1. Control Hub users & License](#User-and-License-Verification)
-  - [Step 2. Webex Calling Settings](#Webex-Calling-Settings)
-  - [Step 3. Entry Point, Routing Strategy & Flow )](Setup-Entry-Point,-routing-Strategy-and-Flow) - [1. Create new Entry Point](#Create-an-Entry-point) -[Lab Validation](#Lab-Validation)
+  - [Control Hub users & License](#User-and-License-Verification)
+  - [Webex Calling Settings](#Webex-Calling-Settings)
+  - [Entry Point, Routing Strategy & Flow )](Setup-Entry-Point,-routing-Strategy-and-Flow)
+  - [Create new Entry Point](#Create-an-Entry-point)
+
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 
@@ -37,7 +40,7 @@ In this section, we will go over the steps that are required to be completed for
 
 # Lab Section
 
-## Step 1. User and License Verification
+## User and License Verification
 
 > Once Webex Contact Center Org is onboarded with the admin user, you should be able to login to control hub portal, using the credentials you have created .
 
@@ -59,7 +62,7 @@ In this section, we will go over the steps that are required to be completed for
 
 - Upon verifying the user, Click **Cancel** and from the mainPage click on **Calling** and verify Directory Number is assigned to this user, if not click on **Add Number** to add a Directory Number.
 
-## Step 2. Webex Calling Settings
+## Webex Calling Settings
 
 > All the lab orgs are pre configured with Webex Calling & Cloud connected PSTN, validate the numbers are already available
 
@@ -69,7 +72,7 @@ In this section, we will go over the steps that are required to be completed for
 
 > Main number is tagged to the location, the second number will be used through out this lab to call and test flows
 
-## Step 3. Setup Entry Point, routing Strategy and Flow
+## Setup Entry Point, routing Strategy and Flow
 
 > Control Hub offers a holistic view of all your Webex services. Contact center is also a Services under Control Hub, to cross launch to contact Center portal.
 
