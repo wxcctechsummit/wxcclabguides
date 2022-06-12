@@ -11,7 +11,7 @@ title: 'Lab 0: Preconfiguration'
   - [Quick Links](#quick-links)
 - [Lab Section](#lab-section)
   - [Control Hub users & License](#user-and-license-verification)
-  - [Webex Calling Settings](#webex-calling-settings)
+  - [Webex Calling Setting](#webex-calling-settings)
   - [Entry Point, Routing Strategy & Flow](#setup-entry-point-routing-strategy-and-flow)
   - [Create new Entry Point](#create-an-entry-point)
 - [Lab Validation](#lab-validation)
