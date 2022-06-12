@@ -159,8 +159,10 @@ i) under `Parse Settings` select the `Content Type` as `JSON`
 
 6. Drag and drop `condition` Node and set the condition to
 
+`Note: Surround the expression below with {{ braces }}`
+
 ```shell
-{{ DataDip.httpStatusCode == 200 }}
+DataDip.httpStatusCode == 200
 ```
 
  <img align="middle" src="Images/Lab3/6.jpg" width="500" />
