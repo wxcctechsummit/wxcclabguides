@@ -18,7 +18,7 @@ title: 'Lab 0: Preconfiguration'
 
 # Introduction
 
-### Lab Objective
+### Lab Objectives
 
 In this section, we will go over the steps that are required to be completed for general pre-configuration of a tenant. By following each of these steps you will have prepared your tenant to begin configuring different services offered by the platform.At the end of this Lab, you should be able to:
 
