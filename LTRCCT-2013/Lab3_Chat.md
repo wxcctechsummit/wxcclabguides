@@ -66,21 +66,21 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Toggle/Enable `Live Chat / In-AppMessaging` to "ON" and choose `PRIMARY TRANSPORT PROTOCOL` as  MQTT" & `SECONDARY TRANSPORT PROTOCOL` as Web Socket" and enable `Use Secured Port` and `SAVE`.
 
-<img align="middle" src="images/Lab3_2.jpg" width="1000" />
+<img align="middle" src="images/Lab3_2.jpg" width="700" />
 
 - Select `REGISTER TO WEBEX CC` and choose the Service you have created and REGISTER
 
 <img align="middle" src="images/Lab3_3.jpg" width="1000" />
 
 - In the resulting window, select a service under which this asset would be managed
-<img align="middle" src="images/Lab3_4.jpg" width="1000" />
+<img align="middle" src="images/Lab3_4.jpg" width="600" />
 
 - Verify that the `Register to Webex CC` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
 <img align="middle" src="images/Lab3_5.jpg" width="1000" />
 
 - Click the back arrow next to go back to the list of Apps. Then take note of the Application ID (App ID). We will need this later so please copy this ID somewhere handy like a text file or take note of it.
   
-<img align="middle" src="images/Lab3_33.jpg" width="1000" />
+<img align="middle" src="images/Lab3_33.jpg" width="400" />
 
 [To top of this lab](#table-of-contents)
 
@@ -91,7 +91,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - From Webex Connect interface, go to `TOOLS` > `Templates` then click on `Add New Template`
 
-<img align="middle" src="images/Lab3_8.jpg" width="1000" />
+<img align="middle" src="images/Lab3_8.jpg" width="200" />
 
 - Provide a Name and choose Channel as `Live Chat / In-APP Messaging`
 
@@ -103,7 +103,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - We will be adding form fields now. Firstly the Name. Click on `Add field` and then fill in the details as per the screenshot
 
-<img align="middle" src="images/Lab3_10.jpg" width="1000" />
+<img align="middle" src="images/Lab3_10.jpg" width="400" />
 
 -Continue by adding the `Email` and `Reason` fields in the same manner with the info in this table.
 
@@ -115,7 +115,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 Here is a screenshot of the Dropdown configuration with 2 options, one for Sales and one for Support. We will use this later to perform Skills Based Routing so chats are routed to most skilled agents.
 
-<img align="middle" src="images/Lab3_11.jpg" width="1000" />
+<img align="middle" src="images/Lab3_11.jpg" width="600" />
 
 - Finally click `SAVE`
 
@@ -144,7 +144,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click on **Save** after comparing your values with the screenshot below.
 
-<img align="middle" src="images/Lab3_6.jpg" width="1000" />
+<img align="middle" src="images/Lab3_6.jpg" width="800" />
 <br/>
 <br/>
 
@@ -172,7 +172,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click on **Save** after comparing your values with the screenshot below.
 
-<img align="middle" src="images/Lab3_7.jpg" width="1000" />
+<img align="middle" src="images/Lab3_7.jpg" width="800" />
 <br/>
 <br/>
 
@@ -190,11 +190,11 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click on **Save**
 
-<img align="middle" src="images/Lab3_27.jpg" width="1000" />
+<img align="middle" src="images/Lab3_27.jpg" width="600" />
 
 - Create another Skill definition of same type `Boolean` with **_Name_** as `Support`
 
-<img align="middle" src="images/Lab3_28.jpg" width="1000" />
+<img align="middle" src="images/Lab3_28.jpg" width="600" />
 
 - Next we'll create 2 Skill profiles, one for Sales and one for Support. Click on **_Provisioning_** and select **_Skills_** > **_Skill Profile_**.
 
@@ -208,21 +208,21 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click on **Save**
 
-<img align="middle" src="images/Lab3_29.jpg" width="1000" />
+<img align="middle" src="images/Lab3_29.jpg" width="600" />
 
 - Create another Skill Profile with Name `Support` with Sales skill value to False and Support skill value to True
   
-<img align="middle" src="images/Lab3_30.jpg" width="1000" />
+<img align="middle" src="images/Lab3_30.jpg" width="600" />
 
 - Finally we'll assign the Sales Skill profile to our agent. Click on **_Provisioning_** and select **_Users_**
 
 - Edit the Agent user created earlier by clicking on the 3 dotted menu
 
-<img align="middle" src="images/Lab3_31.jpg" width="1000" />
+<img align="middle" src="images/Lab3_31.jpg" width="600" />
 
 - In the agent settigns, Select `Skill Profile` as `Sales` and click **Save**
 
-<img align="middle" src="images/Lab3_31.jpg" width="1000" />
+<img align="middle" src="images/Lab3_31.jpg" width="600" />
 
 [To top of this lab](#table-of-contents)
 
@@ -231,19 +231,19 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 ### 1. Configure Live Chat widget
 - From Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`
-<img align="middle" src="images/Lab3_13.jpg" width="1000" />
+<img align="middle" src="images/Lab3_13.jpg" width="400" />
 
 - Goto `Assets` > search and edit the chat asset which we created earlier in **Step 1**
 
-<img align="middle" src="images/Lab3_14.jpg" width="1000" />
+<img align="middle" src="images/Lab3_14.jpg" width="400" />
 
 - Scroll down and choose `Save Changes`
 
-<img align="middle" src="images/Lab3_15.jpg" width="1000" />
+<img align="middle" src="images/Lab3_15.jpg" width="200" />
 
 - Scroll to top of the page and choose `Websites` and then click `Add Website`
 
-<img align="middle" src="images/Lab3_16.jpg" width="1000" />
+<img align="middle" src="images/Lab3_16.jpg" width="400" />
 
 - Enter the respective fields as per Screenshots below. Note we are going to insert the chat bubble into an online HTML editor for testing www.w3schools.com. The `Domain` field should contain the domain where you will insert the chat bubble.
 
@@ -292,7 +292,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - In the service click on **FLOWS** -> **CREATE FLOW** .
 
-<img align="middle" src="images/Lab3_19.jpg" width="1000" />
+<img align="middle" src="images/Lab3_19.jpg" width="600" />
 
 - Enter the **FLOW NAME** as **Live Chat Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
@@ -312,7 +312,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click on the gear button on the top right to load the flow settings dialog
 
-<img align="middle" src="images/Lab3_34.jpg" width="1000" />
+<img align="middle" src="images/Lab3_34.jpg" width="600" />
 
 - Select the Custom Variables tab and set the following variable defaults:
 
@@ -330,7 +330,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - We must select the right Live Chat Template as configured earlier so that the right Form is presented to the customer. Click on the `Pre-chat form` node and select `Form Template` as configured earlier and `Save`
 
-<img align="middle" src="images/Lab3_22.gif" width="1000" />
+<img align="middle" src="images/Lab3_22.gif" width="400" />
 
 3. The same must be done in the Receive node, double click on it and select the Form from the dropdown menu and `Save`
 
@@ -363,7 +363,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click `Start Conversation`
 
-<img align="middle" src="images/Lab3_39.jpg" width="1000" />
+<img align="middle" src="images/Lab3_39.jpg" width="400" />
 
 - Fill in the form with customer options
 
@@ -376,13 +376,13 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <img align="middle" src="images/Lab3_42.jpg" width="1000" />
 
 - Type a response and hit send button.
-  <img align="middle" src="images/Lab3_43.jpg" width="1000" />
+  <img align="middle" src="images/Lab3_43.jpg" width="400" />
   <img align="middle" src="images/Lab3_44.jpg" width="1000" />
 - End the contact
-  <img align="middle" src="images/Lab3_45.jpg" width="1000" />
+  <img align="middle" src="images/Lab3_45.jpg" width="700" />
 
 - Add wrap up and close the task. 
-  <img align="middle" src="images/Lab3_46.jpg" width="1000" />
+  <img align="middle" src="images/Lab3_46.jpg" width="400" />
 
 ## Step 7. Optional -  Enhance flow
  
