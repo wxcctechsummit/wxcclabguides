@@ -13,6 +13,7 @@ Title: 'Lab 4: SBR and Dynamic Agent Reskilling'
   - [Quick Links](#quick-links)
 
 - [Lab Section](#lab-section)
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 
@@ -136,7 +137,7 @@ Create a second Flow Variable. This name will be `Cust_premium_set`, variable ty
 Drag and drop the `Set Variable node` and the `Condition node` and another `Set Variable node` onto the flow canvas.
 See image below for placement of the three new nodes.
 
-<img align="middle" src="Images/Lab4/14a.JPG" width="1000" />
+<img align="middle" src="Images/Lab4/14a.jpg" width="1000" />
 
 For the Set Variable2 node we will use this to parse the email and then do a check on the customer email. Name the activity Label ParseEmail. Select the Cust_Prof_check as the variable name. We will use Pebble templates to define the Value of this variable. Copy and paste the following string:
 
@@ -215,11 +216,13 @@ Place a test call.
 ## Lab Validation
 
 i) Make a call and enter the pin where Customer_Email is `<>@gmail.com`
+
 ii) Make a call and enter the pin where Customer_Email is not `<>@gmail.com`
 
 Expected results
 
 1. First call should get connected to an Agent Immediately
+
 2. Second call should get connected after Skill relaxation times out.
 
 # Lab Support

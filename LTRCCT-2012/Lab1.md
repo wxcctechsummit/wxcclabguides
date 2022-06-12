@@ -18,13 +18,15 @@ Title: 'Lab 1: Contact Queueing to Agent Desktop '
   - [AgentLogin](#AgentLogin)
   - [Flow configuration](#Flow-configuration)
 
-- [Lab Validation](Lab-Validation)
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 
 ### Recap
 
-In the first Lab, we Learned 0. Bring the contact into Webex Contact Center and hear welcome message
+In the first Lab, we Learned
+
+0. Bring the contact into Webex Contact Center and hear welcome message
 
 ### Lab Objective
 
@@ -98,8 +100,8 @@ To create a Site, Login to portal-->Provisioning-->Teams
 3. make sure give service level threshold time (preferably 3600) and service level threshold
 
 <img align="middle" src="Images/Lab1/queue1.jpg" width="300" />
-<img align="middle" src="Images/Lab1/queue2.jpg" width="600" />
-<img align="middle" src="Images/Lab1/queue3.jpg" width="600" />
+<img align="middle" src="Images/Lab1/queue2.jpg" width="900" />
+<img align="middle" src="Images/Lab1/queue3.jpg" width="900" />
 
 ## AgentLogin
 
@@ -132,18 +134,18 @@ Agent Desktop: \*\*[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1
 2. open the copy of Lab 0 and rename it to Lab1 <img align="middle" src="Images/Lab1/flowrename.jpg" width="400" />
 3. Delete Disconnect node and add Queue node and play music node, loop back play music as shown below
 
- <img align="middle" src="Images/Lab1/flow2.jpg" width="400" />
+ <img align="middle" src="Images/Lab1/flow2.jpg" width="900" />
 
 4. select queue created above and the **0_MOH** for music
 
-<img align="middle" src="Images/Lab1/selectqueue.jpg" width="500" />
-<img align="middle" src="Images/Lab1/selectmusic.jpg" width="500" />
+<img align="middle" src="Images/Lab1/selectqueue.jpg" width="900" />
+<img align="middle" src="Images/Lab1/selectmusic.jpg" width="900" />
 
 5. Validate the flow and publish the flow
 
 6. change **current** routing strategy and change the flow from Lab0 to Lab1
 
-<img align="middle" src="Images/Lab1/Rschange.jpg" width="500" />
+<img align="middle" src="Images/Lab1/Rschange.jpg" width="900" />
 
 # Lab Validation
 
@@ -165,11 +167,7 @@ Proctors is your number 1 contact. If you need assistance just raise your hand.
 
 All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
 
-# Lab Support
 
-    Proctors is your number 1 contact. If you need assistance just raise your hand.
-
-    All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the Flow Control.
 
 ### Congratulations, you have completed Lab1 tasks!
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lab 2: Menu & opt_Out'
+title: 'Lab3 - Advanced HTTP based External Data Dip'
 ---
 
 # Table of Contents
@@ -14,17 +14,18 @@ title: 'Lab 2: Menu & opt_Out'
 
 - [Lab Section](#lab-section)
 
-  - [Step 1. HTTP Node](#HTTP Node)
-  - [Step 2. Flow configuration )](Flow configuration )
+  - [HTTP Node](#HTTP-Node)
+  - [Flow configuration](#Flow-configuration)
 
-- [Lab Validation](Lab-Validation)
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 
 ### Recap
 
-In the first 2 Lab, we Learned 0. Bring the contact into Webex Contact Center and hear welcome message
+In the first 2 Lab, we Learned
 
+0. Bring the contact into Webex Contact Center and hear welcome message
 1. Queue the contact to Live Agent after hearing welcome prompt
 2. provide Menu option and an Opt-Out options to customer and validate CallBack Functionality
 
@@ -48,7 +49,7 @@ In this section, we will go over the steps that are required to do External Data
 
 # Lab Section
 
-## Step 1. HTTP Node
+## HTTP Node
 
 > The HTTP Request activity fetches information from an external data source such as a CRM using standard HTTP protocols.
 > Basic Auth and OAuth 2.0 attributes are supported for authenticated endpoints
@@ -89,7 +90,7 @@ Try out all of these to learn how JSON path works!
 | All details of customer with account number                   | $..[?(@.account == "87305901”)].\*  |
 | Name of customer with account number                          | $.[?(@.account == "70579265")].name |
 
-## Step 2. Flow configuration
+## Flow configuration
 
 1. Copy the Lab2 flow by clicking on 3 dot and open the copied the flow
    <img align="middle" src="Images/Lab3/1.jpg" width="1000" />
@@ -133,13 +134,13 @@ iv) Under Query Parameters
 
 v) Content Type == application/json
 
-   <img align="middle" src="Images/Lab3/41.jpg" width="200" />
-   <img align="middle" src="Images/Lab3/42.jpg" width="200" />
+   <img align="middle" src="Images/Lab3/41.jpg" width="300" />
+   <img align="middle" src="Images/Lab3/42.jpg" width="300" />
 
-   <img align="middle" src="Images/Lab3/44.jpg" width="200" />
-   <img align="middle" src="Images/Lab3/45.jpg" width="200" />
+   <img align="middle" src="Images/Lab3/44.jpg" width="300" />
+   <img align="middle" src="Images/Lab3/45.jpg" width="300" />
 
- <img align="middle" src="Images/Lab2/flow44.jpg" width="500" />
+
 
 >
 
@@ -179,7 +180,7 @@ DataDip.httpStatusCode == 200
 
 9. Edit `Current` Routing Strategy and change the flow to `Lab3`
 
-## Lab-Validation
+## Lab Validation
 
 > Login to Agent Desktop and Keep the Agent in Not Ready State
 
@@ -190,6 +191,7 @@ ii) On the Main Menu Node press `1`
 - Expected results
 
 i) System should validates the PIN and fetch Email, Name, Account details
+
 ii) System should fetch data and Pop all those information on Agent_Desktop
 
 # Lab Support

@@ -14,18 +14,19 @@ Title: 'Lab 2: Menu & Opt_Out'
 
 - [Lab Section](#lab-section)
 
-  - [Step 1. Site,Team,Agent](#Site,Team,Agent)
-  - [Step 2. Agent Login](#AGent-login)
-  - [Step 3. Flow configuration)](Flow-configuration)
+  - [Queue&Team](#Create-Queue-and-Team)
+  - [Agent Login](#AGent-login)
+  - [Flow configuration](#Flow-configuration)
 
-- [Lab Validation](Lab-Validation)
+- [Lab Validation](#Lab-Validation)
 
 # Introduction
 
 ### Recap
 
-In the first Lab, we Learned 0. Bring the contact into Webex Contact Center and hear welcome message
+In the first Lab, we Learned
 
+0. Bring the contact into Webex Contact Center and hear welcome message
 1. Queue the contact to Live Agent after hearing welcome prompt
 
 ### Lab Objective
@@ -49,7 +50,7 @@ In this section, we will go over the steps that are required to offer a Menu and
 
 # Lab Section
 
-## Step 1. Add one more Queue and a Team
+## Create Queue and Team
 
 ### Team
 
@@ -68,7 +69,7 @@ In this section, we will go over the steps that are required to offer a Menu and
 <img align="middle" src="Images/Lab2/Queue1.jpg" width="900" />
 <img align="middle" src="Images/Lab2/Queue2.jpg" width="900" />
 
-## Step 2. Agent Login
+## Agent Login
 
 > Follow the steps from Lab1 and login in Agent
 
@@ -84,7 +85,7 @@ Agent Desktop: \*\*[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1
 
 > Set the Agent status to `Not Ready`
 
-## Step 3. Flow configuration
+## Flow configuration
 
 1. Copy the Lab1 flow by clicking on 3 dot
    <img align="middle" src="Images/Lab2/Flow1.jpg" width="500" />
@@ -105,7 +106,7 @@ Agent Desktop: \*\*[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1
    <img align="middle" src="Images/Lab2/Flow42.jpg" width="200" />
    <img align="middle" src="Images/Lab2/Flow43.jpg" width="200" />
 
- <img align="middle" src="Images/Lab2/flow44.jpg" width="900" />
+
 
 5. Drag and drop `Queue contact` node and select `Dummy_Queue` created
 
@@ -113,11 +114,12 @@ Agent Desktop: \*\*[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1
 
 6. To Set `QueueCounter` Variable
 
+
    i) Click anywhere on the Flow canvas
 
    ii)Click on `Add Flow Variable`
 
-   iii) Create a `integer`variable named `QueueCounter` and set Default value to `0`
+   iii) Create a `integer` variable named `QueueCounter` and set Default value to `0`
 
    <img align="middle" src="Images/Lab2/Flow61.jpg" width="900" />
    <img align="middle" src="Images/Lab2/Flow62.jpg" width="900" />
@@ -165,9 +167,9 @@ iii) connect `DisconnectContact` node to callback node
 i) Drag and Drop `Blindtransfer` node and set `Number` to `+18005532447` which is Cisco TAC support number
 
 ii) Repeat the same for `optout` menu as well
-<img align="middle" src="Images/Lab2/Flow131.jpg" width="500" />
+<img align="middle" src="Images/Lab2/Flow131.jpg" width="900" />
 
-  <img align="middle" src="Images/Lab2/Flow132.jpg" width="500" />
+  <img align="middle" src="Images/Lab2/Flow132.jpg" width="900" />
 
 14. Connect `No-input Timeout` and `Unmatched Entry` from Main menu to itself
 
@@ -181,7 +183,7 @@ ii) Repeat the same for `optout` menu as well
 
 17. Edit `Current` Routing Strategy and change the flow to `Lab2`
 
-<img align="middle" src="Images/Lab2/Flow171.jpg" width="500" />
+<img align="middle" src="Images/Lab2/Flow171.jpg" width="900" />
 
 # Lab Validation
 
