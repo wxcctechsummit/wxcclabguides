@@ -206,11 +206,11 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **FBM_Q** and add Skill requirement for Sales to be True and click on **SAVE**.
 
-<img align="middle" src="images/Lab4_18.jpg" width="400" />
+<img align="middle" src="images/Lab4_18.jpg" width="1000" />
 
 - Finally click on Make Live on top right corner
   
-<img align="middle" src="images/Lab4_20.jpg" width="1000" />
+<img align="middle" src="images/Lab4_20.jpg" width="400" />
 
 - Select the Application/Asset that we have created and click `Make Live`.
 
@@ -227,11 +227,11 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Open a new tab on the same browser session to make sure you are still authenticated to Facebook. Go to the M.me URL you copied in Step 2 and the following FBM page should load with the Facebook Business page chat you created earlier
 
-<img align="middle" src="images/Lab4_23.jpg" width="400" />
+<img align="middle" src="images/Lab4_23.jpg" width="1000" />
 
 - Start chatting and that should trigger a contact into Webex CC that will get routed according to the flow we configured in Step 4. A notification should appear that should help you switch to the agent desktop tab to accept the contact
 
-<img align="middle" src="images/Lab4_24.jpg" width="1000" />
+<img align="middle" src="images/Lab4_24.jpg" width="400" />
 <img align="middle" src="images/Lab4_25.jpg" width="1000" />
 
 - Type a response and hit send button.
@@ -239,13 +239,15 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Response will be received in the other tab where the FBM page is:
 
-<img align="middle" src="images/Lab4_27.jpg" width="100" />
+<img align="middle" src="images/Lab4_27.jpg" width="1000" />
 
 - End the contact
-  <img align="middle" src="images/Lab4_28.jpg" width="400" />
+
+<img align="middle" src="images/Lab4_28.jpg" width="400" />
 
 - Add wrap up and close the task. 
-  <img align="middle" src="images/Lab4_29.jpg" width="400" />
+
+<img align="middle" src="images/Lab4_29.jpg" width="400" />
 
 
 [Back to top](#table-of-contents)
