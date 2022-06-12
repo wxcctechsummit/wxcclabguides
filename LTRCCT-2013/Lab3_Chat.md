@@ -11,7 +11,7 @@ title: 'Lab 3: Live Chat Configuration'
     - [Quick Links](#quick-links)
 - [Lab Section](#lab-section)
   - [Step 1. Chat Asset creation & register to Webex CC](#step-1-chat-asset-creation--register-to-webex-cc)
-  - [Step 3. Chat Template creation for website integration](#step-3-chat-template-creation-for-website-integration)
+  - [Step 2. Chat Template creation for website integration](#step-2-chat-template-creation-for-website-integration)
   - [Step 3. Chat Entry Point and Queue creation](#step-3-chat-entry-point-and-queue-creation)
     - [1. Create Entry Point in Management Portal](#1-create-entry-point-in-management-portal)
     - [2. Create Queue in Management Portal](#2-create-queue-in-management-portal)
@@ -84,8 +84,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 [To top of this lab](#table-of-contents)
 
-
-## Step 3. Chat Template creation for website integration
+## Step 2. Chat Template creation for website integration
 
 - Chat template creation allows you to configure a pre-defined chat form that will presented to the customer. Data points can be collected from the customer in a chat-like interface.
 
@@ -108,7 +107,8 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 -Continue by adding the `Email` and `Reason` fields in the same manner with the info in this table.
 
 |Type|Name|Label|Mandatory Field|
-|Name|Name|Name||true|
+|-|-|-|-|
+|Name|Name|Name|true|
 |Email|Email|Email|true|
 |Dropdown|Reason|Reason for Contacting Us|true|
 |Text|Description|Description|false|
@@ -122,7 +122,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <img align="middle" src="images/Lab3_12.jpg" width="1000" />
 
 [To top of this lab](#table-of-contents)
-
 
 ## Step 3. Chat Entry Point and Queue creation
 
@@ -145,8 +144,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 - Click on **Save** after comparing your values with the screenshot below.
 
 <img align="middle" src="images/Lab3_6.jpg" width="800" />
-<br/>
-<br/>
 
 ### 2. Create Queue in Management Portal 
 
@@ -173,8 +170,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 - Click on **Save** after comparing your values with the screenshot below.
 
 <img align="middle" src="images/Lab3_7.jpg" width="800" />
-<br/>
-<br/>
 
 ### 3. Skill and Skill profile
 
@@ -225,7 +220,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <img align="middle" src="images/Lab3_31.jpg" width="600" />
 
 [To top of this lab](#table-of-contents)
-
 
 ## Step 4. Website Settings
 
@@ -299,8 +293,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 - Drag and drop the **Live Chat Inbound Flow.workflow** flow file that you unzipped, click **CREATE** and then click **SAVE**.
 
 <img align="middle" src="images/Lab3_20.jpg" width="1000" />
-<br/>
-<br/>
 
 ### 2. Start node and Custom Variables
 
@@ -341,8 +333,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Chat_Q_SBR** and add Skill requirement for Sales to be True and click on **SAVE**.
 
 <img align="middle" src="images/Lab3_36.jpg" width="1000" />
-<br/>
-<br/>
 
 - Finally click on Make Live on top right corner -> Select the Application/Asset that we have created and click `Make Live`.
 
@@ -350,14 +340,15 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Wait for 2 minutes and verify that the flow is published successfully.
 
-  <img align="middle" src="images/Lab3_38.jpg" width="1000" />
+ <img align="middle" src="images/Lab3_38.jpg" width="1000" />
 
 [To top of this lab](#table-of-contents)
 
 ## Step 6. Verification - start live chat and accept the request
 
-- Open a new tab and login to the Agent Desktop and make the agent Available (if you haven't done already in Lab2). 
-  <img align="middle" src="images/Lab2_Agent1.png" width="1000" />
+- Open a new tab and login to the Agent Desktop and make the agent Available (if you haven't done already in Lab2).
+
+<img align="middle" src="images/Lab2_Agent1.png" width="1000" />
 
 - Go back to the tab where you opened [W3Schools Online HTML Editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello){:target="_blank"} and pasted the live chat widget code. 
 
@@ -370,26 +361,31 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <img align="middle" src="images/Lab3_40.jpg" width="1000" />
 
 - The Live Chat will be offered to the agent. Click "Accept" to handle the SMS.
+
 <img align="middle" src="images/Lab3_41.jpg" width="1000" />
 
 - The form submission will be presented to the customer
+
 <img align="middle" src="images/Lab3_42.jpg" width="1000" />
 
 - Type a response and hit send button.
-  <img align="middle" src="images/Lab3_43.jpg" width="400" />
-  <img align="middle" src="images/Lab3_44.jpg" width="1000" />
+
+<img align="middle" src="images/Lab3_43.jpg" width="400" />
+<img align="middle" src="images/Lab3_44.jpg" width="1000" />
+
 - End the contact
-  <img align="middle" src="images/Lab3_45.jpg" width="700" />
+
+<img align="middle" src="images/Lab3_45.jpg" width="700" />
 
 - Add wrap up and close the task. 
-  <img align="middle" src="images/Lab3_46.jpg" width="400" />
 
-## Step 7. Optional -  Enhance flow
+<img align="middle" src="images/Lab3_46.jpg" width="400" />
+
+## Step 7. Challenge Lab - Enhance flow
  
 ### 1. Add Branch to handle Dropdown form field
 
 - Add a Branch node before the Queue Task node that differentiates between Sales and Support from the form's dropdown menu and queue's with a different Skill requirement
-
 
 [Back to top](#table-of-contents)
 ---
@@ -418,4 +414,3 @@ function nextLab()
   padding: 10px;">Go to the Next Lab</button>
 
 </div>
-
