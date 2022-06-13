@@ -7,28 +7,56 @@ title: 'Lab 6: Creating a FAQ in Dialogflow'
 - [Introduction](#introduction)
   - [Enabeling FAQ in Dialogflow](#enabeling-faq-in-dialogflow)
   - [Importing FAQ](#importing-faq)
+  - [Testing from within Dialogflow](#testing-from-within-dialogflow)
   - [Testing via Webex Connect chat](#testing-via-webex-connect-chat)
-  - [Converting Questions to Intents](#converting-questions-to-intents)
+    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 # Introduction
 In this lab we are going to import a FAQ in Google Dialogflow from an existing website, which will act similarly to the Q&A bot in Webex Connect.  We will then select some Questions and transform them into intents.
 
 ## Enabeling FAQ in Dialogflow
-- In the Dialogflow portal click on xxx
+- In the Dialogflow portal:
+- Click the Cog next to the name of your bot
+- Under General Toggle "Enable beta features and API" and click save.
 
 
 ## Importing FAQ
-- Navigate to the CDC covid website.
-- [CDC FAQ Website](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
-- 
+- We are going to import our FAQ from the CDC's Covid-19 FAQ.
+  - [CDC FAQ Website](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
+  
+
+- Click on the Knowledge (Beta) menu option
+- Click Create Knowledgebase and name if Covid and click Save
+- Next to "No knowledge document has been created yet" click create the first one.
+    > Document Name: Covid FAQ
+    >
+    > Knowledge Type: FAQ
+    >
+    > Mime Type: text/html
+    >
+    > Data Source: URL: `https://www.cdc.gov/coronavirus/2019-ncov/faq.html`
+    >
+    > Enable Automatic Reload: True
+    >
+    > Click Create
+
+    ---
+- Now we need so allow Dialogflow to respond to out customers.
+  - Click the Add Response button
+    - You will see that a response string automatically populates that looks like `$Knowledge.Answer[1]`
+    - Click Save at the top of the page
+  --- 
+  
+## Testing from within Dialogflow
+- In the upper right corner, you will see a try it now prompt
+  - Using one of the questions from the FAQ, ask a question or a variation of the question.
+
 
 ## Testing via Webex Connect chat
+- Launch your chat from your website
+- Using one of the questions from the FAQ, ask a question or a variation of the question.
 
 
-
-## Converting Questions to Intents
-- Let's make a question become an intent so that we can move into the role of providing a service
-- Select XXX and click convert to intent
 
 
 
