@@ -5,12 +5,17 @@ title: 'Lab 7: Improving your existing Dialogflow'
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
+  - [Converting Questions to Intents](#converting-questions-to-intents)
+    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 # Introduction
 
 
 
 
+## Converting Questions to Intents
+- Let's make a question become an intent so that we can move into the role of providing a service
+- Select XXX and click convert to intent
 
 
 
