@@ -26,7 +26,7 @@ title: 'Lab 1: Preconfiguration'
 
 ### Lab Objective
 
-In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different bot functionalities that are supported with the new digital channels. The lab contains multiple exercises to make you familiar with the Control Hub, Managment portal UI and Webex Connect. At the end of the lab, you should be able to log in to an agent desktop interface.
+In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different bot functionalities that are supported with the new digital channels. The lab contains multiple exercises to make you familiar with the Control Hub, Managment portal UI and Webex Connect. At the end of the lab, you should be able to log in to an agent desktop interface and also complete the basic authentications required for working with Webex Connect application.
 
 
 ### Pre-requisites
@@ -48,11 +48,15 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 > Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
+- Access the Webex Connect UI: https://cl2podX.imiconnect.io/ (where X is your POD number)
+
 - To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
 
 - In front of **Webex CC Engage** Click **Actions** → **Manage**.
 
-<img align="middle" src="images/Lab1_Integration1.png" width="1000" />
+<img align="middle" src="images/import_Lab1_Integration1.gif" width="1000" />
+<br/>
+<br/>
 
 - On the Manage Integrations page, scroll down to the Node Authorizations section. This section lists all the authorizations mapped to this integration.
 
@@ -234,7 +238,7 @@ The users have the following preconfiguration
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **email ID** `cl2agent**X**@email.carehybrid.com`.
+- Enter the agent’s **email ID** `cl2agentX@email.carehybrid.com`.
 
 - Enter the **Password** for the appropriate Username.
 

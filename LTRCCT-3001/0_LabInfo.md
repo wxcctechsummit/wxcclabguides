@@ -28,13 +28,11 @@ The recently introduced New Digital Channels capability in Webex Contact Centre 
 
 ## Before starting the labs
 
-1. Please confirm that you can login to WxCC Admin portal and Agent desktop by using the links above.
+1. Please confirm that you can login to WxCC Admin portal by using the links above (Agent dekstop login will not work until end of the next Lab1)
 
 2. You have to use the admin account (with Administrator privileges) for the access to the Control Hub and Administration portal. 
-
-3. Agent desktop login should use a user with  premium agent license.
     
-4. Please follow the labs in the same order as they are provided. Some of the labs would have dependencies.
+3. Please follow the labs in the same order as they are provided. Some of the labs would have dependencies.
 
 ### Users
 
