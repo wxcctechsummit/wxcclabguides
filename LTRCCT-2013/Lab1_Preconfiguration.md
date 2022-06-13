@@ -118,7 +118,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 7) In the service click on **FLOWS** -> **CREATE FLOW**.
 
-<img align="middle" src="images/Lab1_Flows.png" width="1000" />
+<img align="middle" src="images/Flows.png" width="1000" />
 <br/>
 <br/>
 
