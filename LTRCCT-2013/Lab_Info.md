@@ -11,7 +11,7 @@ title: 'Lab Pre-requisites'
 
 # Introduction
 Digital channels are now more impactful than ever. 
-This labs are specially designed for the Cisco Live session. The main purpose of the labs is to give a clear understanding of New Digital Channels functionality. You will learn how to create and configure all digital channels including Chat, Email, Facebook, and SMS. You will get a clear understanding of the scripts' logic and how to troubleshoot issues by using the debug console.
+These labs are specially designed for the Cisco Live session. The main purpose of the labs is to give a clear understanding of New Digital Channels functionality. You will learn how to create and configure all digital channels including Chat, Email, Facebook, Whatsapp and SMS. You will get a clear understanding of the scripts' logic and how to troubleshoot issues by using the debug console.
 
 ## Lab Topology
 <img align="middle" src="images/topology.png" width="1000" />
@@ -34,9 +34,9 @@ This labs are specially designed for the Cisco Live session. The main purpose of
 
 1. Please confirm that you can login to WxCC Admin portal by using the links above.
 
-2. You have to use the admin account (with Administrator privileges) for the access to the Control Hub and Administration portal. 
+2. You have to use the admin account (with Administrator privileges) for access to Control Hub and Administration portal. 
 
-3. Please follow the labs in the same order as they are provided. Some of the lambs would have dependencies.
+3. Please follow the labs in the same order as they are provided.
 
 ### Users
 
@@ -58,10 +58,9 @@ The users have the following preconfiguration
 
 ## Lab Support
 
-1. Proctors is your number 1 contact. If you need assistance just raise your hand.
+1. Proctors are your number 1 contact. If you need assistance just raise your hand.
 
-2. All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the digital channels.
-
+2. All registered participants are also added to the support room where  engineering and Product Management team are added. As an alternative way, you can use that space for any questions related to the digital channels.
 
 ### May good fortune smile on you as you begin this new adventure :) 
 
