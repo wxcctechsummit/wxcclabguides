@@ -23,7 +23,8 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 |  Lab 5 | SMS Setup | [SMS creation end to end](Lab5_SMS.md){:target="\_blank"}    |
 |  Lab 6 | WhatsApp Messenger Setup | [WhatsApp configuration](Lab6_Whatsapp.md){:target="\_blank"}      |
 
-## Optional Advanced Lab Exercises
+## Bonus Advanced Lab Exercises
+
 |  Lab 7 | Advanced Email Configuration | [Auto Reply, PIQ, Subject Filter, API requests](Lab7_Email_Advanced.md){:target="\_blank"}      |
 |  Lab 8 | Event and Rules - agent productivity | [Event and Rules - agent productivity](Lab8_AgentProductivity.md){:target="\_blank"}      |
 |  Lab 9 | Flow Debug Capabilities | [Flow Debug Capabilities](Lab9_Troubleshooting.md){:target="\_blank"}      |
