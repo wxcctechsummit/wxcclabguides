@@ -231,7 +231,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Select the Custom Variables tab and set the following Default Values:
 
-*FBPageID*: to the numeric string in the m.me link we saved earlier in Step 2.
+*FBPageID*: to the numeric string in the m.me link we saved earlier in Step 2.\
 *appid*: Application ID (appID) from the FBM Asset from Step 2
 
 <img align="middle" src="images/Lab4_17.jpg" width="1000" />
