@@ -14,13 +14,13 @@ title: 'Lab 1: Preconfiguration'
 
 ### Lab Objective
 
-In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. The lab contains multiple exercises to make you familiar with the Control Hub, Managment portal UI and Webex Connect. At the end of the lab, you should be able to log in to an agent interface.
+In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. The lab contains multiple exercises to make you familiar with Control Hub, Management portal UI and Webex Connect. At the end of the lab, you should be able to log in to an agent interface.
 
 
 ### Pre-requisites
 
-- You have recived the access credentials with a full admin access 
-- You have recived the access to the agent and supervisor account.
+- You have received the access credentials with a full admin access 
+- You have received the access to the agent and supervisor account.
 
 
 ### Quick Links
@@ -40,7 +40,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Step 1. Node Authorization for Webex CC Task and Engage nodes
 
-> Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
+> Webex Connect is required to provide a valid access token for using various Webex Contact Center and Webex Engage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
 - To authorize a pre-built integration go to **Assets** -> **Integrations**. The integrations which are not yet authorized show the status as **Authorization Pending**.
 
@@ -107,7 +107,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 4) Login to the **Webex Connect** portal with the admin account.
 
-5) Nabigate to **Services** and click on **CREATE NEW SERVICE**.
+5) Navigate to **Services** and click on **CREATE NEW SERVICE**.
 
 <img align="middle" src="images/Lab1_Services.png" width="1000" />
 <br/>
@@ -193,7 +193,6 @@ The users have the following preconfiguration
 
 - Select `MMP` in the **_Multimedia Profile_** drop down and hit **_Save_**.
 
-
 <img align="middle" src="images/Lab1_Site.png" width="1000" />
 <br/>
 <br/>
@@ -252,7 +251,7 @@ The users have the following preconfiguration
 [To top of this lab](#table-of-contents)
 
 ## Step 4. Setup RONA timers
-If an agent doesn’t answer a contact request, the contact request will return to the queue and the agent state will change to **Redirection on No Answer (RONA)**. In this task, you will play with the new feature that allows administrators to override the default RONA timeout values at the tenant level for every channel type to suit the business needs of the organization. The available channels are:
+If an agent doesn’t answer a contact request, the contact request will return to the queue and the agent state will change to **Redirection on No Answer (RONA)**. In this task, you will play with the feature that allows administrators to override the default RONA timeout values at the tenant level for every channel type to suit the business needs of the organization. The available channels are:
 - Telephony 
 - Chat 
 - Email 
@@ -296,8 +295,6 @@ If an agent doesn’t answer a contact request, the contact request will return 
 <br/>
 
 [To top of this lab](#table-of-contents)
-
-
 
 ---
 
