@@ -39,7 +39,7 @@ title: 'Lab 3: Live Chat Configuration'
 
 In this Lab, we will go through the tasks that are required to complete the basic Live chat integration. You will be able to initiate a Chat contact to the Contact Center from a sample website and be able to accept/respond to the contact by logging in as an agent.  
 
-In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, Website Settings, and corresponding workflows.
+In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, Website Settings, and corresponding workflows.
 
 
 ### Pre-requisite
@@ -62,6 +62,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
 - Navigate to `Assets` > `Apps` > `Configure New App` > `Mobile / Web`
+
 <img align="middle" src="images/Lab3_1.gif" width="1000" />
 <br/>
 <br/>
@@ -81,11 +82,13 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 <br/>
 
 - In the resulting window, select a service under which this asset would be managed
+
 <img align="middle" src="images/Lab3_4.jpg" width="600" />
 <br/>
 <br/>
 
 - Verify that the `Register to Webex CC` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
+
 <img align="middle" src="images/Lab3_5.jpg" width="1000" />
 <br/>
 <br/>
@@ -310,6 +313,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - There's still a few bits to configure but we can now verify that the live chat widget loads.
 - Go-back to edit the channel livechat asset, select Installation tab and Copy the chat script code.
+
 <img align="middle" src="images/Lab3_18.jpg" width="1000" />
 <br/>
 <br/>
@@ -336,17 +340,23 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - This section applies to all channels, not just Live chat. You can preset quick responses that agents can use when they respond to customer queries. You can set up the responses in Templates, and group them in a Template Group to organize the content and make the templates easier to find. We'll configure some so you can test them in all the successive lab exercises
 
-- Go to `Assets` > `Templates and click the + icon besides Template Groups table header.
+- Go to `Assets` > `Templates` and click the + icon besides Template Groups table header.
 
 <img align="middle" src="images/Lab3_47.jpg" width="1000" />
+<br/>
+<br/>
 
 - In the Group Name field, enter the template group name and click `Add`
 
 <img align="middle" src="images/Lab3_48.jpg" width="600" />
+<br/>
+<br/>
 
 - You can choose to create a common template for all channels or create channel-specific templates. We will create a common template but also feel free to create other channel specific templates. Channel specific templates will only be shown to the agent when they receive a contact from that channel. Click `Add Template` button at the top right
 
 <img align="middle" src="images/Lab3_49.jpg" width="1000" />
+<br/>
+<br/>
 
 - Enter the template name in the `Template ID` field.
 
@@ -355,6 +365,8 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 - Enter the template text in the `Template Text` field. You can use variables by typing `@@` and also custom fields between chevron brackets `<>`. Variables will be autopopulated based on the active task and custom fields will be editable even if the template is locked. You can use the example on the screenshot or some other text.
 
 <img align="middle" src="images/Lab3_50.jpg" width="1000" />
+<br/>
+<br/>
 
 - To share the template with other teams, choose the team from the Shared Across field. We only have one team created which is the Default Team but you can create templates that are only show to specific teams.
 
@@ -363,8 +375,12 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 - Add another common template that has the checkboxes `Is End Template` and `Is Follow-up Template` checked like in the following screenshots
 
 <img align="middle" src="images/Lab3_51.jpg" width="1000" />
+<br/>
+<br/>
 
 <img align="middle" src="images/Lab3_52.jpg" width="800" />
+<br/>
+<br/>
 
 ## Step 6. Create/Upload Live Chat flow
 
@@ -519,32 +535,48 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 - You can search and view conversation transcripts from the New Digital Channels Engage interface. Go to the already openned tab or from Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`. Then click on Switch to Customer Care button at the top right.
 
 <img align="middle" src="images/Lab3_54.jpg" width="400" />
+<br/>
+<br/>
 
 - Click on the Search button at the top left
 
 <img align="middle" src="images/Lab3_55.jpg" width="600" />
+<br/>
+<br/>
 
 - You can search for transcripts using many fields depending on the channel. In this case use the Name field and search using the Customer Name used while testing in Step 7. Once the conversation transcript shows up, click on the button in the last column.
 
 <img align="middle" src="images/Lab3_56.jpg" width="700" />
+<br/>
+<br/>
 
 - Conversation transcript will load and you have the option to print as PDF
 
 <img align="middle" src="images/Lab3_57.jpg" width="500" />
+<br/>
+<br/>
 
 - On the customer end, they can also access the transcript by emailing it to their personal email account. Once conversation ended, click on the chat bubble hamburger icon and then select `Email transcript` option
 
 <img align="middle" src="images/Lab3_58.jpg" width="400" />
+<br/>
+<br/>
 
 - Enter email address to send the transcript to
 
 <img align="middle" src="images/Lab3_59.jpg" width="400" />
+<br/>
+<br/>
 
 <img align="middle" src="images/Lab3_60.jpg" width="400" />
+<br/>
+<br/>
 
 - Conversation transcript will be received in the following format:
 
 <img align="middle" src="images/Lab3_61.jpg" width="500" />
+<br/>
+<br/>
 
 ## Step 9. Challenge Lab - Enhance flow
  
