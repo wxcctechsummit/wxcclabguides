@@ -265,7 +265,7 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 | ------------- | ------------------------------------ | 
 | METHOD    | POST | 
 | ENDPOINT URL   | https://api.smartsheet.com/2.0/sheets/6430831221729156/rows | 
-| Authorization    | Bearer XXXXXXXXXXXXXXXXXX |   
+| Authorization    | Bearer vXhGTpCs5Pmid6RVynHRKT8n2vQwkuJhmoasO |   
 | Content-Type    | application/json |   
 | TIMEOUT    | 3000 |   
 
@@ -334,14 +334,14 @@ This section has the bonus category where we can check how you understand this t
 | ------------- | ------------------------------------ | 
 | METHOD    | POST | 
 | ENDPOINT URL   | https://webexapis.com/v1/messages | 
-| Authorization    | Bearer XXXXXXXXXXXXXXXXXX |   
+| Authorization    | Bearer MzAzYzk4ZWMtZWY4ZS00OTg1LTk3NmYtN2U3MWNlYTA0MzA1OTg2N2I1MWEtYzg1_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f |   
 | Content-Type    | application/json |   
 | TIMEOUT    | 3000 |   
 
 **BODY:**
 ```
 {
-    "roomId":"Y2lzY29zcGFyazovL3VzL1JPT00vYzI5ODg1ZDAtZDg3ZC0xMWVjLTk2ZjQtZmQzNzA1YTFjMGJi",
+    "roomId":"Y2lzY29zcGFyazovL3VzL1JPT00vMzc2ZjI4NDAtZTg0Mi0xMWVjLTk2MmQtODk2ZjNlNGRjOWMy",
     "text":"There are more than $(nX.positionInQueue) tasks in queue!"
 }
 ```
