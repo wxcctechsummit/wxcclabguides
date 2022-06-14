@@ -122,7 +122,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 <br/>
 <br/>
 
--Continue by adding the `Email` and `Reason` fields in the same manner with the info in this table.
+- Continue by adding the `Email` and `Reason` fields in the same manner with the info in this table.
 
 |Type|Name|Label|Mandatory Field|
 |-|-|-|-|
@@ -131,7 +131,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 |Dropdown|Reason|Reason for Contacting Us|true|
 |Text|Description|Description|false|
 
-Here is a screenshot of the Dropdown configuration with 2 options, one for **Sales** and one for **Support**. We will use this later to perform Skills Based Routing so chats are routed to most skilled agents.
+> Note: Here is a screenshot of the Dropdown configuration with 2 options, one for **Sales** and one for **Support**. We will use this later to perform Skills Based Routing so chats are routed to most skilled agents.
 
 <img align="middle" src="images/Lab3_11.jpg" width="600" />
 <br/>
