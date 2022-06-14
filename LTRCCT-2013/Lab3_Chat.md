@@ -465,7 +465,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 <img align="middle" src="images/Lab3_43.jpg" width="1000" />
 
-<img align="middle" src="images/Lab3_44.jpg" width="600" />
+<img align="middle" src="images/Lab3_44.jpg" width="400" />
 <br/>
 <br/>
 
