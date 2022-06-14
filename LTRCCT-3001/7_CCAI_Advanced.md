@@ -27,11 +27,40 @@ In this lab we are going to improve on our FAQ Dialogflow bot, by converting som
   - Convert `What should I do if I have been in close contact with someone who has COVID-19?` to an intent.
   - Find the newly created Intent and edit the response to include `Are you having symptoms?`
   - Click Save
+  - Let's add an Entity to capture the answer to the question that we are asking
+  
+    > Click on Entities
+    >        
+    > Click Create Entity
+    >
+    > Name: Symptom
+    >
+    > Create the folowing: feaver, chills, trouble breathing
+    cough
+    > 
+    > Add some synonyms like `elephant on my chest` for trouble breathing or `cold` for chills   
+    >
+    > Make sure that allow automated expansion is toggled on
+    >
+    >Click Save
+     ---
+  
   - Click Intents again and hover over the Intent that you just updated
   - Click the add a follow-up intent
     - Select the `Yes` intent
-    - 
-
+    - Open the new intent branch and scroll down to the response
+    - Create a resoponse like `What symptoms are you having?`
+    - Under Actions and Parameters 
+      - Add the symptom Entity
+      - Mark it as Required
+      - Mark it as a List
+      - Click Save
+    - Go back to Intents and add an additional branch off from teh Yes brance and select custom
+      - Open the new Intent
+      - In Actions and parameters
+        - Remove any test in the text box and replave it with `LIVE_AGENT_HANDOVER`
+        - Make your response `Sending you to an agent for additional assistance.`
+        - Click Save 
 
 
 
