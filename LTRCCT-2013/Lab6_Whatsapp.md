@@ -37,32 +37,56 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
 - Navigate to Assets > Numbers and verify that the tenant you are using has a SMS number assigned 
+
 <img align="middle" src="images/Lab6_1.png" width="1000" />
+<br/>
+<br/>
 
 >**Note**: Whatsapp Numbers cannot be procured directly from the WxCC integrated Webex Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable Whatsapp and get numbers assigned to the tenant.
 
 - Identify and make note of the APP ID (We will need this later in the flow configuration)
+
 <img align="middle" src="images/Lab6_1_a.png" width="1000" />
+<br/>
+<br/>
 
 - Select actions and click **Manage**
+
 <img align="middle" src="images/Lab6_1_b.png" width="1000" />
+<br/>
+<br/>
 
 - Identify and make a note of the **Number** and **WABA ID** (We will need this later in the flow configuration)
+
 <img align="middle" src="images/Lab6_1_c.png" width="1000" />
+<br/>
+<br/>
 
 ## Step 2. Whatsapp Asset registration to WebexCC
 
 - In the Whatsapp number assigned, under actions select the 'Manage' option 
+
 <img align="middle" src="images/Lab6_2.png" width="1000" />
+<br/>
+<br/>
 
 - Click 'Register to WebexCC option' 
+
 <img align="middle" src="images/Lab6_3.png" width="1000" />
+<br/>
+<br/>
 
 - In the resulting window, select a service under which this asset would be managed
-- <img align="middle" src="images/Lab6_4.png" width="1000" />
+
+<img align="middle" src="images/Lab6_4.png" width="1000" />
+<br/>
+<br/>
 
 - Verify that the 'Register to Webex CC' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
+
 <img align="middle" src="images/Lab6_5.png" width="1000" />
+<br/>
+<br/>
 
 ## Step 3. Whatsapp Entry Point and Queue creation
 
@@ -71,7 +95,10 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Entry Point_**.
 
 - Click on `New Entry Point`.
+
 <img align="middle" src="images/Lab5_6.jpg" width="1000" />
+<br/>
+<br/>
 
 - Input **_Name_** as `Whatsapp_EP`.
 
@@ -84,36 +111,54 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 - The **_Time Zone_** can stay as default value.
 
 - Click on **Save** after comparing your values with the screenshot below.
+
 <img align="middle" src="images/Lab6_7.png" width="1000" />
+<br/>
+<br/>
 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
 
 - Click on `New Queue`.
+
 <img align="middle" src="images/Lab5_8.jpg" width="1000" />
+<br/>
+<br/>
 
 - Input **_Name_** as `Whatsapp_Queue`.
 
 - Select `Social Channel` in the **_Channel Type_** section.
 
 - Click `Add Group` in the **_Conversation distribution_** section.
+
 <img align="middle" src="images/Lab6_9.png" width="1000" />
+<br/>
+<br/>
 
 - Select the Agent based teams created in the previous lab and click `Save` . Once saved, click `Close` to exit this window. 
+
 <img align="middle" src="images/Lab6_10.png" width="1000" />
+<br/>
+<br/>
 
 - Input **_Maximum Time in Queue_** as `300`.
 
 - The **_Time Zone_** can stay as default value.
 
 - Click on **Save** after comparing your values with the screenshot below.
+
 <img align="middle" src="images/Lab6_11.png" width="1000" />
+<br/>
+<br/>
 
 ## Step 4. Create/Upload Whatsapp flow
 
 - Download the Whatsapp flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
 - Navigate to **Webex Connect Flows** -> **v2.1** -> **WAB Inbound Flow.workflow.zip**, select the zip file and click download.
+
 <img align="middle" src="images/Lab6_12.png" width="1000" />
+<br/>
+<br/>
 
 - Unzip the downloaded file.
 
@@ -124,50 +169,92 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 - Enter the **FLOW NAME** as **Whatsapp Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
 - Drag and drop the **WAB Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE**
+
 <img align="middle" src="images/Lab6_13.png" width="1000" />
+<br/>
+<br/>
 
 - Once the flow is saved, the 'Configure Whatsapp Event' node will open. Select incoming message as trigger and click **Save**
+
 <img align="middle" src="images/Lab6_14.png" width="1000" />
+<br/>
+<br/>
 
 - Open Custom variables and update the value for **WANNumber** , **WANumber_Countrycode** and **appid** (These are the values that were identified in Step-1)
+
 <img align="middle" src="images/Lab6_15.png" width="1000" />
+<br/>
+<br/>
 
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Whatsapp_Queue** and click on **SAVE**.
+
 <img align="middle" src="images/Lab6_16.png" width="1000" />
+<br/>
+<br/>
 
 - Finally click on Make Live on top right corner and click Make Live.
+
 <img align="middle" src="images/Lab6_17.png" width="1000" />
+<br/>
+<br/>
 
 - Wait for 2 minutes and verify that the flow is published successfully. 
+
 <img align="middle" src="images/Lab6_18.png" width="1000" />
+<br/>
+<br/>
 
 [To top of this lab](#table-of-contents)
 
 ## Verification - send Whatsapp message and accept the request
 
 - Login to the Agent Desktop and make the agent Available. 
-  <img align="middle" src="images/Lab2_Agent1.png" width="1000" />
+
+<img align="middle" src="images/Lab2_Agent1.png" width="1000" />
+<br/>
+<br/>
 
 - In your personal mobile phone, add the Whatsapp number configured in the previous step as a new contact. (The screenshot is for reference. Please use the number assigned to your pod)
+
 <img align="middle" src="images/Lab6_23.png" width="1000" />
+<br/>
+<br/>
 
 - Open Whatsapp and look up the contact created in the previous step
+
 <img align="middle" src="images/Lab6_24.png" width="500" />
+<br/>
+<br/>
 
 - Send a message to the contact identified in the previous step to initiate the conversation. 
+
 <img align="middle" src="images/Lab6_25.png" width="500" />
+<br/>
+<br/>
 
 - The Whatsapp contact will be offered to the agent. Click "Accept" to handle the contact.
+
 <img align="middle" src="images/Lab6_19.png" width="1000" />
+<br/>
+<br/>
 
 - Type a response and hit send button.
+
 <img align="middle" src="images/Lab6_20.png" width="1000" />
+<br/>
+<br/>
 
 - End the contact
+
 <img align="middle" src="images/Lab6_21.png" width="1000" />
+<br/>
+<br/>
 
 - Add wrap up and close the task. 
+
 <img align="middle" src="images/Lab6_22.png" width="1000" />
+<br/>
+<br/>
 
 
 [Back to top](#table-of-contents)
