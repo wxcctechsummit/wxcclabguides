@@ -95,7 +95,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Click the back arrow next to go back to the list of Apps. Then take note of the Application ID (App ID). We will need this later so please copy this ID somewhere handy like a text file or take note of it.
   
-<img align="middle" src="images/Lab3_33.jpg" width="400" />
+<img align="middle" src="images/Lab3_33.jpg" width="600" />
 <br/>
 <br/>
 
@@ -123,7 +123,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - We will be adding form fields now. Firstly the Name. Click on `Add field` and then fill in the details as per the screenshot
 
-<img align="middle" src="images/Lab3_10.jpg" width="400" />
+<img align="middle" src="images/Lab3_10.jpg" width="600" />
 <br/>
 <br/>
 
@@ -136,7 +136,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 | Dropdown | Reason      | Reason for Contacting Us | true            |
 | Text     | Description | Description              | false           |
 
-Here is a screenshot of the Dropdown configuration with 2 options, one for Sales and one for Support. We will use this later to perform Skills Based Routing so chats are routed to most skilled agents.
+Here is a screenshot of the Dropdown configuration with 2 options, one for **Sales** and one for **Support**. We will use this later to perform Skills Based Routing so chats are routed to most skilled agents.
 
 <img align="middle" src="images/Lab3_11.jpg" width="600" />
 <br/>
@@ -281,13 +281,13 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Scroll down and choose `Save Changes`
 
-<img align="middle" src="images/Lab3_15.jpg" width="200" />
+<img align="middle" src="images/Lab3_15.jpg" width="1000" />
 <br/>
 <br/>
 
 - Scroll to top of the page and choose `Websites` and then click `Add Website`
 
-<img align="middle" src="images/Lab3_16.jpg" width="400" />
+<img align="middle" src="images/Lab3_16.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -378,7 +378,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <br/>
 <br/>
 
-<img align="middle" src="images/Lab3_52.jpg" width="800" />
+<img align="middle" src="images/Lab3_52.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -395,7 +395,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - In the service click on **FLOWS** -> **CREATE FLOW** .
 
-<img align="middle" src="images/Lab3_19.jpg" width="600" />
+<img align="middle" src="images/Lab3_19.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -441,7 +441,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - We must select the right Live Chat Template as configured earlier so that the right Form is presented to the customer. Click on the `Pre-chat form` node and select `Form Template` as configured earlier and `Save`
 
-<img align="middle" src="images/Lab3_22.gif" width="400" />
+<img align="middle" src="images/Lab3_22.gif" width="1000" />
 <br/>
 <br/>
 
@@ -485,7 +485,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click `Start Conversation`
 
-<img align="middle" src="images/Lab3_39.jpg" width="400" />
+<img align="middle" src="images/Lab3_39.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -495,7 +495,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <br/>
 <br/>
 
-- The Live Chat will be offered to the agent. Click "Accept" to handle the SMS.
+- The Live Chat will be offered to the agent. Click **Accept** to handle the SMS.
 
 <img align="middle" src="images/Lab3_41.jpg" width="1000" />
 <br/>
@@ -510,6 +510,9 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 - Type a response and hit send button.
 
 <img align="middle" src="images/Lab3_43.jpg" width="1000" />
+<br/>
+<br/>
+
 <img align="middle" src="images/Lab3_44.jpg" width="1000" />
 <br/>
 <br/>
@@ -540,13 +543,13 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click on the Search button at the top left
 
-<img align="middle" src="images/Lab3_55.jpg" width="600" />
+<img align="middle" src="images/Lab3_55.jpg" width="1000" />
 <br/>
 <br/>
 
 - You can search for transcripts using many fields depending on the channel. In this case use the Name field and search using the Customer Name used while testing in Step 7. Once the conversation transcript shows up, click on the button in the last column.
 
-<img align="middle" src="images/Lab3_56.jpg" width="700" />
+<img align="middle" src="images/Lab3_56.jpg" width="1000" />
 <br/>
 <br/>
 
