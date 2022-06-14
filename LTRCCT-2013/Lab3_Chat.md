@@ -26,11 +26,7 @@ title: 'Lab 3: Live Chat Configuration'
     - [3. Select Live Chat form](#3-select-live-chat-form)
     - [4. Edit Queue Task node](#4-edit-queue-task-node)
   - [Step 7. Verification - start live chat and accept the request](#step-7-verification---start-live-chat-and-accept-the-request)
-  - [Step 8. Search and view conversation transcripts](#step-8-search-and-view-conversation-transcripts)
-  - [Step 9. Challenge Lab - Enhance flow](#step-9-challenge-lab---enhance-flow)
-    - [1. Add Branch to handle Dropdown form field](#1-add-branch-to-handle-dropdown-form-field)
   - [Back to top](#back-to-top)
-    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 
 # Introduction
@@ -533,59 +529,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-## Step 8. Search and view conversation transcripts
-
-- You can search and view conversation transcripts from the New Digital Channels Engage interface. Go to the already openned tab or from Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`. Then click on Switch to Customer Care button at the top right.
-
-<img align="middle" src="images/Lab3_54.jpg" width="400" />
-<br/>
-<br/>
-
-- Click on the Search button at the top left
-
-<img align="middle" src="images/Lab3_55.jpg" width="1000" />
-<br/>
-<br/>
-
-- You can search for transcripts using many fields depending on the channel. In this case use the Name field and search using the Customer Name used while testing in Step 7. Once the conversation transcript shows up, click on the button in the last column.
-
-<img align="middle" src="images/Lab3_56.jpg" width="1000" />
-<br/>
-<br/>
-
-- Conversation transcript will load and you have the option to print as PDF
-
-<img align="middle" src="images/Lab3_57.jpg" width="500" />
-<br/>
-<br/>
-
-- On the customer end, they can also access the transcript by emailing it to their personal email account. Once conversation ended, click on the chat bubble hamburger icon and then select `Email transcript` option
-
-<img align="middle" src="images/Lab3_58.jpg" width="400" />
-<br/>
-<br/>
-
-- Enter email address to send the transcript to
-
-<img align="middle" src="images/Lab3_59.jpg" width="400" />
-<br/>
-<br/>
-
-<img align="middle" src="images/Lab3_60.jpg" width="400" />
-<br/>
-<br/>
-
-- Conversation transcript will be received in the following format:
-
-<img align="middle" src="images/Lab3_61.jpg" width="500" />
-<br/>
-<br/>
-
-## Step 9. Challenge Lab - Enhance flow
- 
-### 1. Add Branch to handle Dropdown form field
-
-- Add a Branch node before the Queue Task node that differentiates between Sales and Support from the form's dropdown menu and queue's with a different Skill requirement
 
 [Back to top](#table-of-contents)
 ---
