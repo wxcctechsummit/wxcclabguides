@@ -6,6 +6,7 @@ title: 'Lab 7: Improving your existing Dialogflow'
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
   - [Converting Questions to Intents](#converting-questions-to-intents)
+  - [Let's test our bot from inside Dialogflow](#lets-test-our-bot-from-inside-dialogflow)
     - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 # Introduction
@@ -55,12 +56,26 @@ In this lab we are going to improve on our FAQ Dialogflow bot, by converting som
       - Mark it as Required
       - Mark it as a List
       - Click Save
-    - Go back to Intents and add an additional branch off from teh Yes brance and select custom
+    - Go back to Intents and add an additional branch off from the `Yes` branch and select `custom`
       - Open the new Intent
       - In Actions and parameters
-        - Remove any test in the text box and replave it with `LIVE_AGENT_HANDOVER`
+        - Remove any test in the text box and replace it with `LIVE_AGENT_HANDOVER`
         - Make your response `Sending you to an agent for additional assistance.`
-        - Click Save 
+        - Click Save
+    - Go Back to Intents and add a new branch off from the `Knowledge.Covid.Covid FAQ.What should I do if` and select `No`
+      - Open the new Intent
+      - Add the response `Is there anything else that I can do for you?`
+      - Click Save
+  
+## Let's test our bot from inside Dialogflow
+  - In the "Try is now" section in the upper right corner
+    - Enter the test phrase `What should I do if I have been in close contact with someone who has COVID-19?`
+    - Enter `yes`
+    - Enter `I have a cough and chills.`
+    - Did you get the response that you expected?
+      - If not, click on training and find where the planned flow deviated, in this case it would be `yes`.
+      - Scroll down to where you see that you are giving symtoms and select the correct intent `Knowledge.Covid.Covid FAQ.What should I do if - yes - custom`.
+      - Now test again.
 
 
 
