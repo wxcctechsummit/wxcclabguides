@@ -60,6 +60,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
 - Navigate to `Assets` > `Apps` > `Configure New App` > `Mobile / Web`
+
 <img align="middle" src="images/Lab3_1.gif" width="1000" />
 <br/>
 <br/>
@@ -79,11 +80,13 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 <br/>
 
 - In the resulting window, select a service under which this asset would be managed
+
 <img align="middle" src="images/Lab3_4.jpg" width="600" />
 <br/>
 <br/>
 
 - Verify that the `Register to Webex CC` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
+
 <img align="middle" src="images/Lab3_5.jpg" width="1000" />
 <br/>
 <br/>
@@ -310,6 +313,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 
 - Go-back to edit the channel livechat asset, select Installation tab and Copy the chat script code.
+
 <img align="middle" src="images/Lab3_18.jpg" width="1000" />
 <br/>
 <br/>
@@ -460,7 +464,8 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 - Type a response and hit send button.
 
 <img align="middle" src="images/Lab3_43.jpg" width="1000" />
-<img align="middle" src="images/Lab3_44.jpg" width="1000" />
+
+<img align="middle" src="images/Lab3_44.jpg" width="600" />
 <br/>
 <br/>
 
