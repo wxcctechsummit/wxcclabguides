@@ -55,7 +55,7 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 # Lab Section
 
-## Step 1. Chat Asset creation & register to Webex CC
+## Step 1. Live Chat Asset creation & register to Webex CC
 
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
