@@ -35,7 +35,7 @@ title: 'Lab 3: Live Chat Configuration'
 
 ### Lab Objective
 
-In this Lab, we will go through the tasks that are required to complete the basic Live hat integration. You will be able to initiate a Chat contact to the Contact Center from a sample website and be able to accept/respond to the contact by logging in as an agent.  
+In this Lab, we will go through the tasks that are required to complete the basic Live chat integration. You will be able to initiate a Chat contact to the Contact Center from a sample website and be able to accept/respond to the contact by logging in as an agent.  
 
 In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, Website Settings, and corresponding workflows.
 
