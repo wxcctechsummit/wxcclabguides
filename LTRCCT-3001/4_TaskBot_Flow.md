@@ -31,7 +31,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 - Webex Connect Flow Builder
 
 ## Vocabulary 
-- Intents - Triggers that you bot will respond to
+- Intents - Triggers to which your bot will respond
 - Utterances - Training phrases that will map to Intents
 - Entities - A kin to variables for running tasks. 
 - Slots - Entities that are used in Intents.
@@ -56,8 +56,6 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
    - Utterances:
      - be creative 
    - Let's assume that an agent will need to work with the customer after we gather the Entities 
-3. Check shipping status 
-   - wergfergerg
 
 
 ## Training
@@ -83,7 +81,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 - Click Create Intent
   > Name your intent (Example: Check Stock)
   >
-  > Add uterances 
+  > Add utterances 
   >
   >> Create a phrase similar to what a user might enter.
   >>
