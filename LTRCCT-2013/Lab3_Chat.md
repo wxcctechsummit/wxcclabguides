@@ -10,7 +10,7 @@ title: 'Lab 3: Live Chat Configuration'
     - [Pre-requisite](#pre-requisite)
     - [Quick Links](#quick-links)
 - [Lab Section](#lab-section)
-  - [Step 1. Live Chat Asset creation & register to Webex CC](#step-1-live-chat-asset-creation--register-to-webex-cc)
+  - [Step 1. Chat Asset creation & register to Webex CC](#step-1-chat-asset-creation--register-to-webex-cc)
   - [Step 2. Chat Template creation for website integration](#step-2-chat-template-creation-for-website-integration)
   - [Step 3. Chat Entry Point and Queue creation](#step-3-chat-entry-point-and-queue-creation)
     - [1. Create Entry Point in Management Portal](#1-create-entry-point-in-management-portal)
@@ -19,15 +19,13 @@ title: 'Lab 3: Live Chat Configuration'
   - [Step 4. Website Settings](#step-4-website-settings)
     - [1. Configure Live Chat widget](#1-configure-live-chat-widget)
     - [2. Verify that live chat widget loads](#2-verify-that-live-chat-widget-loads)
-  - [Step 5. Quick response template creation](#step-5-quick-response-template-creation)
-  - [Step 6. Create/Upload Live Chat flow](#step-6-createupload-live-chat-flow)
+  - [Step 5. Create/Upload Live Chat flow](#step-5-createupload-live-chat-flow)
     - [1. Initial flow loading](#1-initial-flow-loading)
     - [2. Start node and Custom Variables](#2-start-node-and-custom-variables)
     - [3. Select Live Chat form](#3-select-live-chat-form)
     - [4. Edit Queue Task node](#4-edit-queue-task-node)
-  - [Step 7. Verification - start live chat and accept the request](#step-7-verification---start-live-chat-and-accept-the-request)
-  - [Step 8. Search and view conversation transcripts](#step-8-search-and-view-conversation-transcripts)
-  - [Step 9. Challenge Lab - Enhance flow](#step-9-challenge-lab---enhance-flow)
+  - [Step 6. Verification - start live chat and accept the request](#step-6-verification---start-live-chat-and-accept-the-request)
+  - [Step 7. Optional -  Enhance flow](#step-7-optional----enhance-flow)
     - [1. Add Branch to handle Dropdown form field](#1-add-branch-to-handle-dropdown-form-field)
   - [Back to top](#back-to-top)
     - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
@@ -68,13 +66,13 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - Provide a `Name`
 
-- Toggle/Enable `Live Chat / In-AppMessaging` to "ON" and choose `PRIMARY TRANSPORT PROTOCOL` as  MQTT" & `SECONDARY TRANSPORT PROTOCOL` as Web Socket" and enable `Use Secured Port` and `SAVE`.
+- Toggle/Enable `Live Chat / In-AppMessaging` to "ON" and choose `PRIMARY TRANSPORT PROTOCOL` as  **MQTT** & `SECONDARY TRANSPORT PROTOCOL` as **Web Socket** and enable `Use Secured Port` and `SAVE`.
 
 <img align="middle" src="images/Lab3_2.jpg" width="700" />
 <br/>
 <br/>
 
-- Select `REGISTER TO WEBEX CC` and choose the Service you have created and REGISTER
+- Select `REGISTER TO WEBEX CC` and choose the Service you have created and **REGISTER**
 
 <img align="middle" src="images/Lab3_3.jpg" width="1000" />
 <br/>
@@ -120,20 +118,20 @@ In this lab you you will be configuring Service, Chat Assets, Entry Point, Queue
 
 - We will be adding form fields now. Firstly the Name. Click on `Add field` and then fill in the details as per the screenshot
 
-<img align="middle" src="images/Lab3_10.jpg" width="400" />
+<img align="middle" src="images/Lab3_10.jpg" width="600" />
 <br/>
 <br/>
 
 -Continue by adding the `Email` and `Reason` fields in the same manner with the info in this table.
 
-| Type     | Name        | Label                    | Mandatory Field |
-| -------- | ----------- | ------------------------ | --------------- |
-| Name     | Name        | Name                     | true            |
-| Email    | Email       | Email                    | true            |
-| Dropdown | Reason      | Reason for Contacting Us | true            |
-| Text     | Description | Description              | false           |
+|Type|Name|Label|Mandatory Field|
+|-|-|-|-|
+|Name|Name|Name|true|
+|Email|Email|Email|true|
+|Dropdown|Reason|Reason for Contacting Us|true|
+|Text|Description|Description|false|
 
-Here is a screenshot of the Dropdown configuration with 2 options, one for Sales and one for Support. We will use this later to perform Skills Based Routing so chats are routed to most skilled agents.
+Here is a screenshot of the Dropdown configuration with 2 options, one for **Sales** and one for **Support**. We will use this later to perform Skills Based Routing so chats are routed to most skilled agents.
 
 <img align="middle" src="images/Lab3_11.jpg" width="600" />
 <br/>
@@ -239,7 +237,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <br/>
 <br/>
 
-- Create another Skill Profile with Name `Support` with Sales skill value to False and Support skill value to True
+- Create another Skill Profile with Name `Support` with **Sales** skill value to False and **Support** skill value to True
   
 <img align="middle" src="images/Lab3_30.jpg" width="600" />
 <br/>
@@ -265,11 +263,12 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 ### 1. Configure Live Chat widget
 - From Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`
+
 <img align="middle" src="images/Lab3_13.jpg" width="400" />
 <br/>
 <br/>
 
-- Go to `Assets` > search and edit the chat asset which we created earlier in **Step 1**
+- Goto `Assets` > search and edit the chat asset which we created earlier in **Step 1**
 
 <img align="middle" src="images/Lab3_14.jpg" width="400" />
 <br/>
@@ -277,13 +276,13 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Scroll down and choose `Save Changes`
 
-<img align="middle" src="images/Lab3_15.jpg" width="200" />
+<img align="middle" src="images/Lab3_15.jpg" width="1000" />
 <br/>
 <br/>
 
 - Scroll to top of the page and choose `Websites` and then click `Add Website`
 
-<img align="middle" src="images/Lab3_16.jpg" width="400" />
+<img align="middle" src="images/Lab3_16.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -308,6 +307,8 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 ### 2. Verify that live chat widget loads
 
 - There's still a few bits to configure but we can now verify that the live chat widget loads.
+
+
 - Go-back to edit the channel livechat asset, select Installation tab and Copy the chat script code.
 <img align="middle" src="images/Lab3_18.jpg" width="1000" />
 <br/>
@@ -321,7 +322,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <br/>
 <br/>
 
-- Click the Run button and the chat bubble should appear on the right side of the HTML online editor. Verify your settings if that does not happen and contact the lab proctor.
+- Click the Run button and the chat bubble should appear on the right side of the HTML online editor. Verify your settings if that does not happen please contact the lab proctor.
 
 <img align="middle" src="images/Lab3_25.jpg" width="1000" />
 <br/>
@@ -331,41 +332,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 [To top of this lab](#table-of-contents)
 
-## Step 5. Quick response template creation
-
-- This section applies to all channels, not just Live chat. You can preset quick responses that agents can use when they respond to customer queries. You can set up the responses in Templates, and group them in a Template Group to organize the content and make the templates easier to find. We'll configure some so you can test them in all the successive lab exercises
-
-- Go to `Assets` > `Templates and click the + icon besides Template Groups table header.
-
-<img align="middle" src="images/Lab3_47.jpg" width="1000" />
-
-- In the Group Name field, enter the template group name and click `Add`
-
-<img align="middle" src="images/Lab3_48.jpg" width="600" />
-
-- You can choose to create a common template for all channels or create channel-specific templates. We will create a common template but also feel free to create other channel specific templates. Channel specific templates will only be shown to the agent when they receive a contact from that channel. Click `Add Template` button at the top right
-
-<img align="middle" src="images/Lab3_49.jpg" width="1000" />
-
-- Enter the template name in the `Template ID` field.
-
-- Click on the `Is Start Template` checkbox to mark this as a template available at the start of the conversation as an opening statement. 
-
-- Enter the template text in the `Template Text` field. You can use variables by typing `@@` and also custom fields between chevron brackets `<>`. Variables will be autopopulated based on the active task and custom fields will be editable even if the template is locked. You can use the example on the screenshot or some other text.
-
-<img align="middle" src="images/Lab3_50.jpg" width="1000" />
-
-- To share the template with other teams, choose the team from the Shared Across field. We only have one team created which is the Default Team but you can create templates that are only show to specific teams.
-
-- Click `SAVE CHANGES`
-
-- Add another common template that has the checkboxes `Is End Template` and `Is Follow-up Template` checked.
-
-<img align="middle" src="images/Lab3_51.jpg" width="1000" />
-
-<img align="middle" src="images/Lab3_52.jpg" width="800" />
-
-## Step 6. Create/Upload Live Chat flow
+## Step 5. Create/Upload Live Chat flow
 
 ### 1. Initial flow loading
 - Download the default inbound chat flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
@@ -378,7 +345,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - In the service click on **FLOWS** -> **CREATE FLOW** .
 
-<img align="middle" src="images/Lab3_19.jpg" width="600" />
+<img align="middle" src="images/Lab3_19.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -418,17 +385,17 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <br/>
 <br/>
 
-- In your production setup domain should be set to your website's domain
+> **Note**: In your production setup domain it should be set to your website's domain
 
 ### 3. Select Live Chat form
 
 - We must select the right Live Chat Template as configured earlier so that the right Form is presented to the customer. Click on the `Pre-chat form` node and select `Form Template` as configured earlier and `Save`
 
-<img align="middle" src="images/Lab3_22.gif" width="400" />
+<img align="middle" src="images/Lab3_22.gif" width="1000" />
 <br/>
 <br/>
 
-3. The same must be done in the Receive node, double click on it and select the Form from the dropdown menu and `Save`
+3. The same must be done in the **Receive** node, double click on it and select the Form from the dropdown menu and `Save`
 
 <img align="middle" src="images/Lab3_23.gif" width="1000" />
 <br/>
@@ -448,7 +415,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <br/>
 <br/>
 
-- Wait for 2 minutes and verify that the flow is published successfully.
+- Wait for few minutes and verify that the flow is published successfully.
 
 <img align="middle" src="images/Lab3_38.jpg" width="1000" />
 <br/>
@@ -456,7 +423,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 [To top of this lab](#table-of-contents)
 
-## Step 7. Verification - start live chat and accept the request
+## Step 6. Verification - start live chat and accept the request
 
 - Open a new tab and login to the Agent Desktop and make the agent Available (if you haven't done already in Lab2).
 
@@ -468,7 +435,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - Click `Start Conversation`
 
-<img align="middle" src="images/Lab3_39.jpg" width="400" />
+<img align="middle" src="images/Lab3_39.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -480,7 +447,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 
 - The Live Chat will be offered to the agent. Click "Accept" to handle the SMS.
 
-<img align="middle" src="images/Lab3_41.jpg" width="1000" />
+<img align="middle" src="images/Lab3_41.jpg" width="600" />
 <br/>
 <br/>
 
@@ -497,10 +464,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <br/>
 <br/>
 
-- Make sure you test the Predefined Quick Response templates we created earlier in Step 5
-
-<img align="middle" src="images/Lab3_53.jpg" width="700" />
-
 - End the contact
 
 <img align="middle" src="images/Lab3_45.jpg" width="700" />
@@ -513,12 +476,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for Sales
 <br/>
 <br/>
 
-## Step 8. Search and view conversation transcripts
-
-
-
-
-## Step 9. Challenge Lab - Enhance flow
+## Step 7. Challenge Lab - Enhance flow
  
 ### 1. Add Branch to handle Dropdown form field
 
