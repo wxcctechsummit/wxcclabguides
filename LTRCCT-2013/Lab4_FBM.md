@@ -105,25 +105,25 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 -  Provide the name and click `Save`
 
-<img align="middle" src="images/Lab4_10.jpg" width="700" />
+<img align="middle" src="images/Lab4_10.jpg" width="1000" />
 <br/>
 <br/>
 
 -  Click `Register to Webex CC`  in the ‘Configure New App-Messenger’ window ->  In the resulting window select the service and click `Register`.
 
-<img align="middle" src="images/Lab4_11.jpg" width="400" />
+<img align="middle" src="images/Lab4_11.jpg" width="600" />
 <br/>
 <br/>
 
 - Confirm that registration with Webex CC completed successfully
 
-<img align="middle" src="images/Lab4_12.jpg" width="400" />
+<img align="middle" src="images/Lab4_12.jpg" width="600" />
 <br/>
 <br/>
 
 - Scroll down and take note of the M.ne link in the `Page Discovery Addons` section. We will use that link to trigger the Facebook Messenger interaction from the Customer end. Also take note of the numeric string paramenter in the m.me link. That's the `Facebook Page ID` which we will also need later when configuring the flow.
 
-<img align="middle" src="images/Lab4_16.jpg" width="400" />
+<img align="middle" src="images/Lab4_16.jpg" width="600" />
 <br/>
 <br/>
 
@@ -201,7 +201,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - In the service click on **FLOWS** -> **CREATE FLOW** .
 
-<img align="middle" src="images/Lab3_19.jpg" width="600" />
+<img align="middle" src="images/Lab3_19.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -209,7 +209,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Drag and drop the **Facebook Inbound Flow.workflow** flow file that you unzipped, click **CREATE** and then click **SAVE**.
 
-<img align="middle" src="images/Lab4_2.jpg" width="900" />
+<img align="middle" src="images/Lab4_2.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -219,13 +219,13 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
   
 - First Click `Save` in the `Configure APP Event` page that loaded, this defines what will trigger the flow and the default settings are already good.
 
-<img align="middle" src="images/Lab4_3.jpg" width="300" />
+<img align="middle" src="images/Lab4_3.jpg" width="1000" />
 <br/>
 <br/>
 
 - Click on the gear button on the top right to load the flow settings dialog
 
-<img align="middle" src="images/Lab4_19.jpg" width="600" />
+<img align="middle" src="images/Lab4_19.jpg" width="400" />
 <br/>
 <br/>
 
