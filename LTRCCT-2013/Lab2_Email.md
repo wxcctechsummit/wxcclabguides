@@ -16,13 +16,13 @@ title: 'Lab 2: Email Configuration'
 
 In this Lab, we will go through the tasks that are required to complete the basic email configuration. You will be able to initiate an email to the Contact Center and be able to accept/respond to the email by logging in as an agent.  
 
-In this lab you will be configuring **Gmail** Account settings, Email Assets, Entry Point and corresponding workflows. All those steps are require for connecting the Email account with our application.  
+In this lab you will be configuring **Gmail** Account settings, Email Assets, Entry Point and corresponding workflows. All those steps are required for connecting the Email account with our application.  
 
 ### Pre-requisite
 
-1. You recived an admin credentials to configure in Managment Portal and Webex Connect.
-2. You recived an an Email account credentials.
-3. You have successfully compleated the previus Lab1 **Preconfiguration**.
+1. You received an admin credentials to configure in Management Portal and Webex Connect.
+2. You received Email account credentials.
+3. You have successfully compleated the previous Lab1 **Preconfiguration**.
 
 ### Quick Links
 
@@ -161,7 +161,7 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 
 
-## Step 2. Create Email Asset and Register to WebeXCC
+## Step 2. Create Email Asset and Register to WebexCC
 
 ### 1. Create Email Assest
 
@@ -263,7 +263,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 ## Step 3. Email Entry Point and Queue creation
 
-### 1. Create Entry Point in Managment Portal 
+### 1. Create Entry Point in Management Portal 
 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Entry Point_**.
 
@@ -285,7 +285,7 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 <br/>
 
-### 2. Create 2 Queues in Managment Portal 
+### 2. Create 2 Queues in Management Portal 
 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
 
