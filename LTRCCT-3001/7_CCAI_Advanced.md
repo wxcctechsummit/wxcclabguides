@@ -7,6 +7,8 @@ title: 'Lab 7: Improving your existing Dialogflow'
 - [Introduction](#introduction)
   - [Converting Questions to Intents](#converting-questions-to-intents)
   - [Let's test our bot from inside Dialogflow](#lets-test-our-bot-from-inside-dialogflow)
+  - [Testing using your website.](#testing-using-your-website)
+  - [Adding Fulfillment](#adding-fulfillment)
     - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 # Introduction
@@ -76,6 +78,18 @@ In this lab we are going to improve on our FAQ Dialogflow bot, by converting som
       - If not, click on training and find where the planned flow deviated, in this case it would be `yes`.
       - Scroll down to where you see that you are giving symtoms and select the correct intent `Knowledge.Covid.Covid FAQ.What should I do if - yes - custom`.
       - Now test again.
+
+## Testing using your website.
+  - Go to your Glitch website and launch the chat
+  - Run the same tests as above.
+
+## Adding Fulfillment 
+  - In Dialogflow, click on Fulfillment
+    - Enable Webhook
+    - Enter your `requestcatcher.com` url
+    - Go to your `Knowledge.Covid.Covid FAQ.What should I do if  - yes - custom` intent and toggle `Enable webhook call for this intent`
+    - Click Save
+  
 
 
 
