@@ -64,10 +64,10 @@ In this lab we are going to import a FAQ in Google Dialogflow from an existing w
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/CCAI.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5.2_CCAIFlowConfig.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/6_CCAI_FAQ.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/7_CCAI_Advanced.html";
  }
 </script>
 
