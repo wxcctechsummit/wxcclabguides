@@ -38,7 +38,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Step 1. Create a gmail account (Optional) 
 
-- We will need a Gmail accout to get started with this lab
+- We will need a Gmail account to get started with this lab
 
 - You can use your own personal Gmail account for this lab or create a free account by following the steps here: https://support.google.com/mail/answer/56256?hl=en 
 
@@ -75,7 +75,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Input a desired **App name** and select the **User supported email** (Enter the Gmail account mentioned in Step-1 )
 <img align="middle" src="images/Lab5a_9.png" width="1000" />
 
-- Input **Authorised domain** as **imiconnect.io**
+- Input **Authorized domain** as **imiconnect.io**
 
 - Input **Email addresses** as the Gmail account mentioned in Step-1. Click **Save and Continue**
 <img align="middle" src="images/Lab5a_10.png" width="1000" />
@@ -119,7 +119,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Click **Add Authorization**
 <img align="middle" src="images/Lab5a_20.png" width="1000" />
 
-- Input a desired **Authorization Name** . Input the **Client ID**, **Client Secret** value that was obtaines in Step-2. Click **Authorize**
+- Input a desired **Authorization Name** . Input the **Client ID**, **Client Secret** value that was obtained in Step-2. Click **Authorize**
 <img align="middle" src="images/Lab5a_21.png" width="1000" />
 
 - When redirected to google login, use the same credentials mentioned in Step-1. 

@@ -9,6 +9,7 @@ title: 'Lab 7: Improving your existing Dialogflow'
   - [Let's test our bot from inside Dialogflow](#lets-test-our-bot-from-inside-dialogflow)
   - [Testing using your website.](#testing-using-your-website)
   - [Adding Fulfillment](#adding-fulfillment)
+- [Seize the Opportunity](#seize-the-opportunity)
     - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 # Introduction
@@ -22,11 +23,11 @@ In this lab we are going to improve on our FAQ Dialogflow bot, by converting som
 - Confirm conversion
 - Click Save
 - Click Intents and find your newly created intent.
-  - Let's edit the response so that we can provide a link where the customer can lookup the current level for theit state and county.
+  - Let's edit the response so that we can provide a link where the customer can lookup the current level for their state and county.
     - Click in the response and add `You can view the current level by visiting https://www.cdc.gov/coronavirus/2019-ncov/your-health/covid-by-county.html.` at the end of the response
     - Click Save in the upper right corner.
     - Try it out in the "Try it out" section
-- Let's move another FAQ into an intent, but this time we will ask additional questions and gather informaton using entities.
+- Let's move another FAQ into an intent, but this time we will ask additional questions and gather information using entities.
   - Convert `What should I do if I have been in close contact with someone who has COVID-19?` to an intent.
   - Find the newly created Intent and edit the response to include `Are you having symptoms?`
   - Click Save
@@ -38,7 +39,7 @@ In this lab we are going to improve on our FAQ Dialogflow bot, by converting som
     >
     > Name: Symptom
     >
-    > Create the folowing: feaver, chills, trouble breathing
+    > Create the following: fever, chills, trouble breathing
     cough
     > 
     > Add some synonyms like `elephant on my chest` for trouble breathing or `cold` for chills   
@@ -52,7 +53,7 @@ In this lab we are going to improve on our FAQ Dialogflow bot, by converting som
   - Click the add a follow-up intent
     - Select the `Yes` intent
     - Open the new intent branch and scroll down to the response
-    - Create a resoponse like `What symptoms are you having?`
+    - Create a response like `What symptoms are you having?`
     - Under Actions and Parameters 
       - Add the symptom Entity
       - Mark it as Required
@@ -76,7 +77,7 @@ In this lab we are going to improve on our FAQ Dialogflow bot, by converting som
     - Enter `I have a cough and chills.`
     - Did you get the response that you expected?
       - If not, click on training and find where the planned flow deviated, in this case it would be `yes`.
-      - Scroll down to where you see that you are giving symtoms and select the correct intent `Knowledge.Covid.Covid FAQ.What should I do if - yes - custom`.
+      - Scroll down to where you see that you are giving symptoms and select the correct intent `Knowledge.Covid.Covid FAQ.What should I do if - yes - custom`.
       - Now test again.
 
 ## Testing using your website.
@@ -89,19 +90,23 @@ In this lab we are going to improve on our FAQ Dialogflow bot, by converting som
     - Enter your `requestcatcher.com` url
     - Go to your `Knowledge.Covid.Covid FAQ.What should I do if  - yes - custom` intent and toggle `Enable webhook call for this intent`
     - Click Save
+  - Go through the previous tests and you should receive JSON with the intent, entities and additional information.
+  - You can also capture/use this information in Webex Connect, using the flows when the Dialogflow node returns. 
+  - Go to [Google's Webhook Documentation](https://cloud.google.com/dialogflow/es/docs/fulfillment-webhook) and you will find examples using four different languages.
   
 
-
+# Seize the Opportunity 
+Take these new found concepts and let them run wild.  Improve on the use cases that are in these labs or create your own.  Challenge yourself to create solutions by breaking down problems into independent and deliverable steps.
 
 
 
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/CCAI.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/6_CCAI_FAQ.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/6_CCAI_FAQ.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";
  }
 </script>
 

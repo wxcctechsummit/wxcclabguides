@@ -5,7 +5,7 @@ title: 'Lab 6: Creating a FAQ in Dialogflow'
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-  - [Enabeling FAQ in Dialogflow](#enabeling-faq-in-dialogflow)
+  - [Enabling FAQ in Dialogflow](#enabling-faq-in-dialogflow)
   - [Importing FAQ](#importing-faq)
   - [Testing from within Dialogflow](#testing-from-within-dialogflow)
   - [Testing via Webex Connect chat](#testing-via-webex-connect-chat)
@@ -14,7 +14,7 @@ title: 'Lab 6: Creating a FAQ in Dialogflow'
 # Introduction
 In this lab we are going to import a FAQ in Google Dialogflow from an existing website, which will act similarly to the Q&A bot in Webex Connect.  We will then select some Questions and transform them into intents.
 
-## Enabeling FAQ in Dialogflow
+## Enabling FAQ in Dialogflow
 - In the Dialogflow portal:
 - Click the Cog next to the name of your bot
 - Under General Toggle "Enable beta features and API" and click save.
@@ -26,7 +26,7 @@ In this lab we are going to import a FAQ in Google Dialogflow from an existing w
   
 
 - Click on the Knowledge (Beta) menu option
-- Click Create Knowledgebase and name if Covid and click Save
+- Click Create Knowledge base and name if Covid and click Save
 - Next to "No knowledge document has been created yet" click create the first one.
     > Document Name: Covid FAQ
     >
@@ -64,10 +64,10 @@ In this lab we are going to import a FAQ in Google Dialogflow from an existing w
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/CCAI.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5.2_CCAIFlowConfig.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/6_CCAI_FAQ.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/7_CCAI_Advanced.html";
  }
 </script>
 

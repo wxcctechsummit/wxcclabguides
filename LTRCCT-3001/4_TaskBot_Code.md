@@ -180,10 +180,10 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 ## Planning the API Calls Using Code
 - Let's compare the API calls that we are making
   - What is the difference in the urls?
-  - Can we create a pattern and inject the required changes to the url programatically?
+  - Can we create a pattern and inject the required changes to the url programmatically?
     - We can construct the url as a string using one of our entities in the path.
   - Do the responses need to be handled differently for the different items?
-    - No.  When we compare both calls in Postman, we can see that we are returened the same JSON template. So we can use the same JSON path (which we got from JSON Path Finder) to tease out our data.
+    - No.  When we compare both calls in Postman, we can see that we are returned the same JSON template. So we can use the same JSON path (which we got from JSON Path Finder) to tease out our data.
   
 
 ## Before We Add Code
@@ -197,7 +197,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 - Find your Response template for Check stock
 - Click to add a code snippet
 - Put the code snippet above the text response
-- We will start by importing reqests and declaring our variables so that we can make our calls
+- We will start by importing requests and declaring our variables so that we can make our calls
   - remember to lookup the variable path in the [documentation](https://help.imiconnect.io/docs/response-designer#list-of-common-response-variables)
 
 
@@ -231,7 +231,7 @@ variables['dataStore']['stockCount'] = response.json()[x]['name from response pa
 output ={'dataStore': variables['dataStore']}
 ```
 
--Let's create ourr response in the Bot Builder
+-Let's create our response in the Bot Builder
   - Just like we exposed variables in the [Creating Responses](#creating-responses) section, we are going to create a response string where we mix text and variables from the system.
   - We want the response to read something like "There are 48 Red Bobbles in stock.  Is there anything else that I can do for you?"
 
