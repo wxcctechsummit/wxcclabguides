@@ -265,7 +265,7 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 | ------------- | ------------------------------------ | 
 | METHOD    | POST | 
 | ENDPOINT URL   | https://api.smartsheet.com/2.0/sheets/6430831221729156/rows | 
-| Authorization    | Bearer vXhGTpCs5Pmid6RVynHRKT8n2vQwkuJhmoasO |   
+| Authorization    | Bearer XXXXXXXX |   
 | Content-Type    | application/json |   
 | TIMEOUT    | 3000 |   
 
