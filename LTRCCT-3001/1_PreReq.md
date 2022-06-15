@@ -54,7 +54,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - In front of **Webex CC Engage** Click **Actions** → **Manage**.
 
-<img align="middle" src="images/import_Lab1_Integration1.gif" width="1000" />
+<img align="middle" src="images/Import_Lab1_Integration1.gif" width="1000" />
 <br/>
 <br/>
 

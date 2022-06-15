@@ -16,7 +16,7 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 | --------------- | -------------------------- | -------------------------------------------------------------|
 | Lab 0 | Before you Begin | [Lab Information](0_LabInfo.md){:target="\_blank"}  |
 | Lab 1 | Preconfiguration | [Preconfiguration](1_PreReq.md){:target="\_blank"}  |
-| Kevin| Lab 2 |Live Chat Configuration | [Live Chat creation end to end](2_BasicChat.md){:target="\_blank"} |
+| Lab 2 |Live Chat Configuration | [Live Chat creation end to end](2_BasicChat.md){:target="\_blank"} |
 | Lab 3.1 | Question & Answer Bot | [Question & Answer Bot Configuration](3.1_QnABotConfiguration.md){:target="\_blank"} |
 | Lab 3.2 | Question & Answer Bot with Chat | [Question & Answer Bot Flow Configuration](3.2_QnABotFlowConfig.md){:target="\_blank"} |
 | Lab 3.3 | QnA FAQ bot  | [QnA FAQ bot](3.3_QnABotAdvanced.md){:target="\_blank"}   |
