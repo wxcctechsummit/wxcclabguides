@@ -132,12 +132,12 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
 	---
 
-- Add a Recieve Node <img src="images\Lab4_Recieve.PNG" height="25">
-- Drag the green node edge from the Append Conversation Node and connect it to the Recieve Node
+- Add a Receive Node <img src="images\Lab4_Recieve.PNG" height="25">
+- Drag the green node edge from the Append Conversation Node and connect it to the Receive Node
   - For each Red or Orange node edge on the Append Conversation node
     - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
-- Open the Recieve Node
-	> Select Incomming Message/Event: Recieve In-App Messaging   
+- Open the Receive Node
+	> Select Incoming Message/Event: Receive In-App Messaging   
 	>
 	> Max timeout: 300
     >
@@ -157,16 +157,16 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
     >
     > Variable: messagetext
     >
-    > Value: Output Varriables > inappmessaging.message $(n2311.inappmessaging.message)
+    > Value: Output Variables > inappmessaging.message $(n2311.inappmessaging.message)
 - Click Save  
-- For each Red or Orange node edge on the Recieve Node
+- For each Red or Orange node edge on the Receive Node
     - Drag the node edge connector to the Close Conversation node until you can no longer grab any new node edges.
 
 	---
 
 
 - Add Append Conversation Node <img src="images\Lab4_Append.PNG" height="25">
-- Drag the green node edge from the Recieve Node and connect it to the Append Conversation Node
+- Drag the green node edge from the Receive Node and connect it to the Append Conversation Node
 
 	- Open the Append Conversation Node
     

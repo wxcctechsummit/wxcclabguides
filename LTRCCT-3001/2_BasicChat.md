@@ -11,7 +11,7 @@ title: 'Lab 2: Chat Configuration'
   - [Creating an App](#creating-an-app)
   - [Create a Chat Template](#create-a-chat-template)
   - [Create a Website](#create-a-website)
-  - [Conecting to Webex Contact Center](#conecting-to-webex-contact-center)
+  - [Connecting to Webex Contact Center](#connecting-to-webex-contact-center)
   - [Launch the Engage Portal](#launch-the-engage-portal)
   - [Adding the Applet to Your Website](#adding-the-applet-to-your-website)
   - [Modifying the Chat Flow](#modifying-the-chat-flow)
@@ -21,7 +21,7 @@ title: 'Lab 2: Chat Configuration'
 
 # Introduction
 
-In this lab exercise we are going to configure a basic in Live Chat applet and deploy it on a website that you can access directly from the internet.  We will be downloading Workflow templates from GitHub, creating a free website on glitch.me, work with Webex Copnnect Flows and much more.
+In this lab exercise we are going to configure a basic in Live Chat applet and deploy it on a website that you can access directly from the internet.  We will be downloading Workflow templates from GitHub, creating a free website on glitch.me, work with Webex Connect Flows and much more.
 
 ---
 
@@ -53,7 +53,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   - Configure New App => Mobile Web
 - Give your App a Name
 - Enable Live Chat / In-App Messaging
-  - Select Transport Protocals
+  - Select Transport Protocols
   - Select "Use Secured Port"
   - Click Save
   - Click Register to Webex CC
@@ -67,7 +67,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 - Click Add New Template
 > Name: Give your template a meaningful name 
 > 
-> Channel: Live Chat / In-App Mesaging
+> Channel: Live Chat / In-App Messaging
 > 
 > Message Type: Form
 >
@@ -99,7 +99,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
     - Note the URL 
   
 [To top of this lab](#table-of-contents)
-## Conecting to Webex Contact Center
+## Connecting to Webex Contact Center
 
 - Log into Webex Contact Center as Admin
   - Create an Entry Point:
@@ -109,7 +109,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
     >
     > Asset Name: Your Asset
     >
-    > Servie Level: 120
+    > Service Level: 120
 
     ---
   - Create a Queue
@@ -121,7 +121,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
     >
     >Chat Distribution: Put your team into Group 1
     >
-    > Servie Level Threshold: 120
+    > Service Level Threshold: 120
     >
     > Maximum Time in Queue: 3600
 
@@ -182,7 +182,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
   > Click Save
 
   ---
-- Double click on the Recieve node
+- Double click on the Receive node
   > Select the Form Template From the Dropdown 
   >
   > Click Save

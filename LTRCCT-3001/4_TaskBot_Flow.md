@@ -215,7 +215,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   
   ---
 
-- Add an HTTP Rquest node above Live Chat or In-App Messaging node
+- Add an HTTP Request node above Live Chat or In-App Messaging node
 - Drag the Green node edge connector from Branch to HTTP Request node and select checkStock
 - Drag another Green node edge connector from Branch to Live Chat or In-App Messaging node (it will auto select **None of the above**)
 - Drag the rest of the Red and Orange node edge connectors to the Close Conversation node
@@ -249,9 +249,9 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   >
   > Click on a conversation 
   >
-  > Click on a speciffic message
+  > Click on a specific message
   >
-  > You can now see transation info in the right pane
+  > You can now see the transaction info in the right pane
   > 
   > Click the download icon in the upper right corner of the Transaction Info pane
   >
@@ -264,11 +264,11 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
   - Click Edit in the upper corner
   - Drag a new Data Parser node into the flow above Append Conversation
   - Delete the **onSuccess** node connector from HTTP Request and attach it to the new Data Parser node
-  - Connect both red node edges from the Data Parser to the Live Chat on In-App Messanger
+  - Connect both red node edges from the Data Parser to the Live Chat on In-App Messenger
   - Open the Data Parser node
     > Input: Task Bot > taskbot.entities
     >
-    > Sample Body: the data that you coppied from Request Catcher
+    > Sample Body: the data that you copied from Request Catcher
     >
     > Click Parse
     >
@@ -278,7 +278,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     >
     > Create Output variable names (like color and item)
     >
-    > Make both Variables Manditory
+    > Make both Variables Mandatory
     >
     > Click Save
     >
@@ -286,7 +286,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     ---
 
   - Drag a new Branch node into the flow above Append Conversation
-  - Connect the Green node edge from Dataparser to the new Branch node  
+  - Connect the Green node edge from the Data Parser to the new Branch node  
   - Connect all of the Red and Orange nodes edges to Close Conversation
   - Open the Branch node
     > Rename Branch1 to Widget
@@ -311,10 +311,10 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     >
       ---
 
-  - Drag 2 HTTP Request nodes into the flow above append conversaton 
+  - Drag 2 HTTP Request nodes into the flow above append conversation 
   - Connect the Green node edge from Branch to the first HTTP node and select Widget
   - Open the HTTP Request
-  - Click on Transacton Actions
+  - Click on Transaction Actions
     > Click Add Action
     >
     > Time: On-Enter
@@ -341,7 +341,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     >
     > Request Timeout: 1000
     >
-    > Ouput Variable Name: itemCount
+    > Output Variable Name: itemCount
     >
     > Response Entity: Body 
     >
@@ -363,7 +363,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 
 - Connect the Green node edge from Branch to the first HTTP node and select Bobble
   - Open the HTTP Request
-  - Click on Transacton Actions
+  - Click on Transaction Actions
     > Click Add Action
     >
     > Time: On-Enter
@@ -383,7 +383,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
     >
     > Request Timeout: 1000
     >
-    > Ouput Variable Name: itemCount
+    > Output Variable Name: itemCount
     >
     > Response Entity: Body 
     >
@@ -444,7 +444,7 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
       >
 
       ---
-  - Connect the Green node edge to the Recieve node 
+  - Connect the Green node edge to the Receive node 
   - Connect all remaining Red and Orange node edges to the Close Conversation node 
   - Click Save in the upper right corner
   - Click Make Live

@@ -23,12 +23,12 @@ The recently introduced New Digital Channels capability in Webex Contact Centre 
 
 > **NOTE:**  
 > **X** – is your unique POD ID listed on the card. \
-> The lab POD is the same as the production tenant which is located in the US Datacenter. These labs are for instructional purposes only but the configuration can be reused for the real deployment.
+> The lab POD is the same as the production tenant which is located in the US Data Center. These labs are for instructional purposes only but the configuration can be reused for the real deployment.
 > The telephony service is not activated. This pod is used only for digital channels.
 
 ## Before starting the labs
 
-1. Please confirm that you can login to WxCC Admin portal by using the links above (Agent dekstop login will not work until end of the next Lab1)
+1. Please confirm that you can login to WxCC Admin portal by using the links above (Agent desktop login will not work until end of the next Lab1)
 
 2. You have to use the admin account (with Administrator privileges) for the access to the Control Hub and Administration portal. 
     
@@ -36,7 +36,7 @@ The recently introduced New Digital Channels capability in Webex Contact Centre 
 
 ### Users
 
-The users have the following preconfiguration
+The users have the following pre-configuration
 
 | **User Role** | **User email**                       |
 | ------------- | ------------------------------------ | 
