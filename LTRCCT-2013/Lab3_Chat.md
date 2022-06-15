@@ -26,14 +26,18 @@ title: 'Lab 3: Live Chat Configuration'
     - [3. Select Live Chat form](#3-select-live-chat-form)
     - [4. Edit Queue Task node](#4-edit-queue-task-node)
   - [Step 7. Verification - start live chat and accept the request](#step-7-verification---start-live-chat-and-accept-the-request)
+  - [Step 8. Search and view conversation transcripts](#step-8-search-and-view-conversation-transcripts)
+  - [Step 9. Challenge Lab - Enhance flow](#step-9-challenge-lab---enhance-flow)
+    - [1. Add Branch to handle Dropdown form field](#1-add-branch-to-handle-dropdown-form-field)
   - [Back to top](#back-to-top)
+    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 
 # Introduction
 
 ### Lab Objective
 
-In this Lab, we will go through the tasks that are required to complete the basic Live chat integration. You will be able to initiate a Chat contact to the Contact Center from a sample website and be able to accept/respond to the contact by logging in as an agent.  
+In this Lab, we will go through the tasks that are required to complete the basic Live chat integration. You will be able to initiate a Chat contact to the Contact Center from a sample website and be able to accept/respond to the contact by logging in as an agent.
 
 In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, Website Settings, and corresponding workflows.
 
@@ -83,14 +87,14 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 <br/>
 <br/>
 
-- Verify that the `Register to Webex CC` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
+- Verify that the `Register to Webex CC` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned.
 
 <img align="middle" src="images/Lab3_5.jpg" width="1000" />
 <br/>
 <br/>
 
 - Click the back arrow next to go back to the list of Apps. Then take note of the Application ID (App ID). We will need this later so please copy this ID somewhere handy like a text file or take note of it.
-  
+
 <img align="middle" src="images/Lab3_33.jpg" width="600" />
 <br/>
 <br/>
@@ -112,7 +116,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 - Message Type as `Form`
 
 - Provide the Title as `Welcome to Webex CC Live Chat` or some other message.
-  
+
 <img align="middle" src="images/Lab3_9.jpg" width="1000" />
 <br/>
 <br/>
@@ -148,7 +152,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 ## Step 3. Chat Entry Point and Queue creation
 
-### 1. Create Entry Point in Management Portal 
+### 1. Create Entry Point in Management Portal
 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Entry Point_**.
 
@@ -170,7 +174,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-### 2. Create Queue in Management Portal 
+### 2. Create Queue in Management Portal
 
 - Click on **_Provisioning_** and select **_Entry Points/Queues_** > **_Queue_**.
 
@@ -239,7 +243,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 
 - Create another Skill Profile with Name `Support` with Sales skill value to False and Support skill value to True
-  
+
 <img align="middle" src="images/Lab3_30.jpg" width="600" />
 <br/>
 <br/>
@@ -264,7 +268,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 ### 1. Configure Live Chat widget
 - From Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`
-  
+
 <img align="middle" src="images/Lab3_13.jpg" width="400" />
 <br/>
 <br/>
@@ -315,7 +319,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 
 - Open a new tab in your browser and navigate to [W3Schools Online HTML Editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello){:target="_blank"}.
- 
+
 - Paste de chat bubble code just above the `</body>` tag
 
 <img align="middle" src="images/Lab3_24.jpg" width="1000" />
@@ -328,7 +332,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-- Click on the chat bubble icon and it should show the previously configured livechat widget. 
+- Click on the chat bubble icon and it should show the previously configured livechat widget.
 
 [To top of this lab](#table-of-contents)
 
@@ -356,7 +360,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - Enter the template name in the `Template ID` field.
 
-- Click on the `Is Start Template` checkbox to mark this as a template available at the start of the conversation as an opening statement. 
+- Click on the `Is Start Template` checkbox to mark this as a template available at the start of the conversation as an opening statement.
 
 - Enter the template text in the `Template Text` field. You can use variables by typing `@@` and also custom fields between chevron brackets `<>`. Variables will be autopopulated based on the active task and custom fields will be editable even if the template is locked. You can use the example on the screenshot or some other text.
 
@@ -408,7 +412,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 - A page will load with the imported workflow. We must make some changes to the default inbound flow based on our setup.
 
 - First Click `Save` in the `Configure APP Event` page that loaded, this defines what will trigger the flow and the default settings are already good.
-  
+
 <img align="middle" src="images/Lab3_21.jpg" width="1000" />
 <br/>
 <br/>
@@ -477,7 +481,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-- Go back to the tab where you opened [W3Schools Online HTML Editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello){:target="_blank"} and pasted the live chat widget code. 
+- Go back to the tab where you opened [W3Schools Online HTML Editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello){:target="_blank"} and pasted the live chat widget code.
 
 - Click `Start Conversation`
 
@@ -523,21 +527,74 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-- Add wrap up and close the task. 
+- Add wrap up and close the task.
 
 <img align="middle" src="images/Lab3_46.jpg" width="400" />
 <br/>
 <br/>
 
+## Step 8. Search and view conversation transcripts
+
+- You can search and view conversation transcripts from the New Digital Channels Engage interface. Go to the already openned tab or from Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`. Then click on Switch to Customer Care button at the top right.
+
+<img align="middle" src="images/Lab3_54.jpg" width="400" />
+<br/>
+<br/>
+
+- Click on the Search button at the top left
+
+<img align="middle" src="images/Lab3_55.jpg" width="1000" />
+<br/>
+<br/>
+
+- You can search for transcripts using many fields depending on the channel. In this case use the Name field and search using the Customer Name used while testing in Step 7. Once the conversation transcript shows up, click on the button in the last column.
+
+<img align="middle" src="images/Lab3_56.jpg" width="1000" />
+<br/>
+<br/>
+
+- Conversation transcript will load and you have the option to print as PDF
+
+<img align="middle" src="images/Lab3_57.jpg" width="500" />
+<br/>
+<br/>
+
+- On the customer end, they can also access the transcript by emailing it to their personal email account. Once conversation ended, click on the chat bubble hamburger icon and then select `Email transcript` option
+
+<img align="middle" src="images/Lab3_58.jpg" width="400" />
+<br/>
+<br/>
+
+- Enter email address to send the transcript to
+
+<img align="middle" src="images/Lab3_59.jpg" width="400" />
+<br/>
+<br/>
+
+<img align="middle" src="images/Lab3_60.jpg" width="400" />
+<br/>
+<br/>
+
+- Conversation transcript will be received in the following format:
+
+<img align="middle" src="images/Lab3_61.jpg" width="500" />
+<br/>
+<br/>
+
+## Step 9. Challenge Lab - Enhance flow
+
+### 1. Add Branch to handle Dropdown form field
+
+- Add a Branch node before the Queue Task node that differentiates between Sales and Support from the form's dropdown menu and queue's with a different Skill requirement
 
 [Back to top](#table-of-contents)
 ---
 
-### Congratulations, you have completed this section! 
+### Congratulations, you have completed this section!
 
 <script>
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
-function nextLab() 
+function nextLab()
  {
  window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab4_FBM.html";
  }
