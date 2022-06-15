@@ -137,7 +137,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
     - Click edit in the Action column
     - Click Websites
       - Click Add Website 
-        > Display Name: North Pole Holiday Infused Widgets and Bobbles
+        > Display Name: something like "North Pole Holiday Infused Widgets and Bobbles"
         >
         > Domain: the domain of your glitch website
         > 
@@ -154,7 +154,7 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 [To top of this lab](#table-of-contents)
 
 ## Adding the Applet to Your Website
-- Return to the Glitch tab in youe browser
+- Return to the Glitch tab in your browser
 - Open index.html
 - Scroll to the bottom of the code
 - Paste the applet code between the body and html closing tags
