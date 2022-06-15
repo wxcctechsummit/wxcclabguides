@@ -121,6 +121,6 @@ function nextLab()
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Go to the Next Lab</button>
+  padding: 10px;">Go Back to the Beginning</button>
 
 </div>

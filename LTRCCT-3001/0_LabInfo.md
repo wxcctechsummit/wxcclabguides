@@ -40,6 +40,7 @@ The users have the following pre-configuration
 
 | **User Role** | **User email**                       |
 | ------------- | ------------------------------------ | 
+| Admin         | cl2admin**X**@email.carehybrid.com   |
 | Agent         | cl2agent**X**@email.carehybrid.com   | 
 | Supervisor    | cl2sup**X**@email.carehybrid.com     | 
 
