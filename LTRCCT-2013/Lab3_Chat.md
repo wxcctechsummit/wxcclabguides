@@ -312,7 +312,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ### 2. Verify that live chat widget loads
 
 - There's still a few bits to configure but we can now verify that the live chat widget loads.
-- Go-back to edit the channel livechat asset, select Installation tab and Copy the chat script code.
+- Go to Webex Connect Engage portal, select Installation tab and Copy the chat script code.
 
 <img align="middle" src="images/Lab3_18.jpg" width="1000" />
 <br/>
