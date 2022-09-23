@@ -2,7 +2,7 @@
 title: 'Lab 8: # Webex Contact Center APIs'
 ---
 
-# Table of Contents - Latest Changes
+# Table of Contents
 
 - [All New Webex Contact Center APIs (new version)](#all-new-webex-contact-center-apis-new-version)
 
