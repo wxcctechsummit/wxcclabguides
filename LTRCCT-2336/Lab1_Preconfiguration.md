@@ -150,7 +150,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
->### Following steps are pre-configured and provided here for your reference only. You can move to next lab.
+>### Following steps are pre-configured and provided here for your reference only. You can proceed to next lab.
 
 <br/>
 <br/>
