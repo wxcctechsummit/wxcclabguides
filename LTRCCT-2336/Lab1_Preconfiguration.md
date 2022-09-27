@@ -26,8 +26,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Quick Links
 
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
-> Portal: **[https://portal.Webex CC-anz1.cisco.com/portal](https://portal.Webex CC-anz1.cisco.com/portal){:target="_blank"}**\
-> Agent Desktop: **[https://desktop.Webex CC-anz1.cisco.com](https://desktop.Webex CC-anz1.cisco.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-anz1.cisco.comportal](https://portal.wxcc-anz1.cisco.comportal){:target="_blank"}**\
+> Agent Desktop: **[https://portal.wxcc-anz1.cisco.com](https://portal.wxcc-anz1.cisco.com){:target="_blank"}**\
 > Webex Connect: https://clpod**\<ID\>**.au.webexconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
@@ -76,14 +76,14 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-- Enter the **Authorisation Name** (for example: **Webex CC Authorisation**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (clpadmin**\<ID\>**@email.carehybrid.com) and click **Sign in**.
+- Enter the **Authorisation Name** (for example: **Webex CC Authorisation**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cladmin**\<ID\>**@email.carehybrid.com) and click **Sign in**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
 <br/>
 <br/>
 
 - Click back button for being redirected back to **Integrations** page. Verify that the status of the Authorisations is changed to **Authorised**.
-<img align="middle" src="images/Lab1_Authorised2.gif" width="1000" />
+<img align="middle" src="images/Lab1_Authorized2_1.png" width="1000" />
 <br/>
 <br/>
 
@@ -114,7 +114,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 
 6) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name and press on **CREATE** button. This will create a new service.
-> **Note** You can choose a different Service name. It is just an exmple.
+    > **Note**: You can choose a different Service name. It is just an exmple.
 
 7) In the service click on **FLOWS** -> **CREATE FLOW**.
 
@@ -122,7 +122,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-8) In the **FLOW NAME** section set **Task Close Flow**.
+8) In the **FLOW NAME** section type **Task Close Flow**.
 
 9) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file.
 
@@ -140,6 +140,20 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 12) **!!!** Go back and repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**. Select the corresponding names.
 
+13) Verify all the flows are showing live.
+
+<img align="middle" src="images/Lab1_Complete.png" width="1000" />
+<br/>
+<br/>
+
+### Congratulations! you have compleated Lab1 tasks!**
+<br/>
+<br/>
+
+>### Following steps are pre-configured and provided here for your reference only. You can move to next lab.
+
+<br/>
+<br/>
 
 ## Step 3. Setup agents in Portal (Agents, Team, MMP)
 
@@ -152,8 +166,8 @@ The users have the following preconfiguration
 
 | **User Role** | **User email**                       |
 | ------------- | ------------------------------------ | 
-| Agent         | clpagent**\<ID\>**@email.carehybrid.com   | 
-| Supervisor    | clpsup**\<ID\>**@email.carehybrid.com     | 
+| Agent         | clagent**\<ID\>**@email.carehybrid.com   | 
+| Supervisor    | clsup**\<ID\>**@email.carehybrid.com     | 
 
 > **Note:** Your \<ID\> was provided to you personally.  \<ID\> is the unique number equal to your POD.
 
@@ -162,14 +176,14 @@ The users have the following preconfiguration
 | **Entity**          | **Name** |
 | ------------------- | -------- |
 | Multimedia Profiles | MMP   |
-| Site                | Site  |
+| Site                | Site1  |
 | Team1               | Team1 |
 | Team2               | Team2 |
 
 
 ### 1. Create new MultiMedia Profile
 
-- Login to Managment Portal by accessing [https://portal.Webex CC-anz1.cisco.com/portal](https://portal.Webex CC-anz1.cisco.com/portal){:target="\_blank"}.
+- Login to Managment Portal by accessing [https://portal.wxcc-anz1.cisco.comportal](https://portal.wxcc-anz1.cisco.comportal){:target="\_blank"}.
 
 - Enter the admin email address (clpadmin\<ID\>@email.carehybrid.com) and click **Sign in**.
 
@@ -278,9 +292,9 @@ If an agent doesn’t answer a contact request, the contact request will return 
 ## Verification: Access to the Agent Desktop
 > **Note**: To log in to the agent desktop, use either a separate web browser or a new incognito web page. This will prevent any browser caching issues with admin and agent credentials.
 
-- Navigate to **[https://desktop.Webex CC-anz1.cisco.com/](https://desktop.Webex CC-anz1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
+- Navigate to **[https://portal.wxcc-anz1.cisco.com/](https://portal.wxcc-anz1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **email ID** `clpagent**\<ID\>**@email.carehybrid.com`.
+- Enter the agent’s **email ID** `clagent**\<ID\>**@email.carehybrid.com`.
 
 - Enter the **Password** for the appropriate Username.
 
