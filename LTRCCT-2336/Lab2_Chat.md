@@ -50,16 +50,15 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 ### Quick Links
 
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
-> Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
-> Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Workflows: **[GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}**\
-> Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
+> Portal: **[https://portal.wxcc-anz1.cisco.comportal](https://portal.wxcc-anz1.cisco.comportal){:target="_blank"}**\
+> Agent Desktop: **[https://portal.wxcc-anz1.cisco.com](https://portal.wxcc-anz1.cisco.com){:target="_blank"}**\
+> Webex Connect: https://clpod**\<ID\>**.au.webexconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
 
 ## Step 1. Live Chat Asset creation & register to Webex CC
 
-- Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
+- Login to your respective Webex Connect UI using the provided URL https://clpod**X**.au.webexconnect.io/ (where **X** is your POD number).
 
 - Navigate to `Assets` > `Apps` > `Configure New App` > `Mobile / Web`
 
@@ -95,7 +94,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Click the back arrow next to go back to the list of Apps. Then take note of the Application ID (App ID). We will need this later so please copy this ID somewhere handy like a text file or take note of it.
 
-<img align="middle" src="images/Lab3_33.jpg" width="600" />
+<img align="middle" src="images/Lab3_33.png" width="600" />
 <br/>
 <br/>
 
@@ -269,7 +268,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ### 1. Configure Live Chat widget
 - From Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`
 
-<img align="middle" src="images/Lab3_13.jpg" width="400" />
+<img align="middle" src="images/Lab3_13.gif" width="400" />
 <br/>
 <br/>
 
