@@ -280,19 +280,19 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - Scroll down and choose `Save Changes`
 
-<img align="middle" src="images/Lab3_15.jpg" width="1000" />
+<img align="middle" src="images/Lab3_15.png" width="1000" />
 <br/>
 <br/>
 
 - Scroll to top of the page and choose `Websites` and then click `Add Website`
 
-<img align="middle" src="images/Lab3_16.jpg" width="1000" />
+<img align="middle" src="images/Lab3_16.png" width="1000" />
 <br/>
 <br/>
 
 - Enter the respective fields as per Screenshots below. Note we are going to insert the chat bubble into an online HTML editor for testing www.w3schools.com. The `Domain` field should contain the domain where you will insert the chat bubble.
 
-<img align="middle" src="images/Lab3_17.jpg" width="1000" />
+<img align="middle" src="images/Lab3_17.png" width="1000" />
 <br/>
 <br/>
 
@@ -302,7 +302,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - Select the `Widget Visibility` tab and click on `Show without restriction` and `SAVE CHANGES`
 
-<img align="middle" src="images/Lab3_26.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_26.png" width="1000" />
 <br/>
 <br/>
 
@@ -311,23 +311,25 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ### 2. Verify that live chat widget loads
 
 - There's still a few bits to configure but we can now verify that the live chat widget loads.
-- Go to Webex Connect Engage portal, select Installation tab and Copy the chat script code.
+- Go back to Webex Connect Engage portal, select Installation tab and Copy the chat script code.
 
-<img align="middle" src="images/Lab3_18.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_18.png" width="1000" />
 <br/>
 <br/>
 
 - Open a new tab in your browser and navigate to [W3Schools Online HTML Editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello){:target="_blank"}.
 
-- Paste de chat bubble code just above the `</body>` tag
+- In the HTML example section, click on Try it yourself. (A new tab opens).
 
-<img align="middle" src="images/Lab3_24.jpg" width="1000" />
+- Paste the chat bubble code just above the `</body>` tag and click on **Run** button
+
+<img align="middle" src="images/AU_Lab2_24.png" width="1000" />
 <br/>
 <br/>
 
-- Click the Run button and the chat bubble should appear on the right side of the HTML online editor. Verify your settings if that does not happen and contact the lab proctor.
+- A chat bubble should appear on the right side of the HTML online editor. Verify your settings if that does not happen and contact the lab proctor.
 
-<img align="middle" src="images/Lab3_25.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_25.png" width="1000" />
 <br/>
 <br/>
 
