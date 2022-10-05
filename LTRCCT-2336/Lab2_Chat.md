@@ -52,7 +52,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-anz1.cisco.comportal](https://portal.wxcc-anz1.cisco.comportal){:target="_blank"}**\
 > Agent Desktop: **[https://portal.wxcc-anz1.cisco.com](https://portal.wxcc-anz1.cisco.com){:target="_blank"}**\
-> Webex Connect: https://clpod**\<ID\>**.au.webexconnect.io/ (where **\<ID\>** is your POD number)
+> Webex Connect: https://auclpod**\<ID\>**.au.webexconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
 
@@ -386,9 +386,9 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ## Step 6. Create/Upload Live Chat flow
 
 ### 1. Initial flow loading
-- Download the default inbound chat flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
+- Download the default **Inbound and Close Chat Flow** from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
-- Navigate to **Webex Connect Flows** -> **v2.1** -> **Live Chat Inbound Flow.workflow.zip**, select the zip file and click download.
+- Navigate to **Webex Connect Flows** -> **v2.1** -> click on **Live Chat Inbound Flow.workflow.zip** and click download. Repeat the same steps to download **Live Chat Close Flow.zip**.
 
 - Unzip the downloaded file.
 
@@ -436,7 +436,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-- In your production setup domain should be set to your website's domain
+- **In your production setup, domain should be set to your website's domain.**
 
 ### 3. Select Live Chat form
 
@@ -476,9 +476,10 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 ## Step 7. Verification - start live chat and accept the request
 
-- Open a new tab and login to the Agent Desktop and make the agent Available (if you haven't done already in Lab2).
+- Open a new tab and login to the Agent Desktop and make the agent Available (if you haven't done already in Lab1).
+> Agent Desktop: **[https://portal.wxcc-anz1.cisco.com](https://portal.wxcc-anz1.cisco.com){:target="_blank"}**\
 
-<img align="middle" src="images/Lab2_Agent1.png" width="1000" />
+<img align="middle" src="images/AU_Lab2_Agent1.png" width="1000" />
 <br/>
 <br/>
 
@@ -486,51 +487,47 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - Click `Start Conversation`
 
-<img align="middle" src="images/Lab3_39.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_Chat2.png" width="1000" />
 <br/>
 <br/>
 
 - Fill in the form with customer options
 
-<img align="middle" src="images/Lab3_40.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_Chat1.png" width="1000" />
 <br/>
 <br/>
 
-- The Live Chat will be offered to the agent. Click **Accept** to handle the SMS.
+- The Live Chat will be offered to the agent. Click **Accept** to handle the Chat.
 
-<img align="middle" src="images/Lab3_41.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_Chat3.png" width="1000" />
 <br/>
 <br/>
 
 - The form submission will be presented to the customer
 
-<img align="middle" src="images/Lab3_42.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_Chat4.png" width="1000" />
 <br/>
 <br/>
 
 - Type a response and hit send button.
 
-<img align="middle" src="images/Lab3_43.jpg" width="1000" />
-<br/>
-<br/>
-
-<img align="middle" src="images/Lab3_44.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_Chat5.png" width="1000" />
 <br/>
 <br/>
 
 - Make sure you test the Predefined Quick Response templates we created earlier in Step 5
 
-<img align="middle" src="images/Lab3_53.jpg" width="700" />
+<img align="middle" src="images/AU_Lab2_Chat6.png" width="700" />
 
 - End the contact
 
-<img align="middle" src="images/Lab3_45.jpg" width="700" />
+<img align="middle" src="images/AU_Lab2_Chat7.png" width="700" />
 <br/>
 <br/>
 
 - Add wrap up and close the task.
 
-<img align="middle" src="images/Lab3_46.jpg" width="400" />
+<img align="middle" src="images/AU_Lab2_Chat8.png" width="400" />
 <br/>
 <br/>
 
@@ -538,47 +535,43 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - You can search and view conversation transcripts from the New Digital Channels Engage interface. Go to the already openned tab or from Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`. Then click on Switch to Customer Care button at the top right.
 
-<img align="middle" src="images/Lab3_54.jpg" width="400" />
+<img align="middle" src="images/AU_Lab2_Step8_1.png" width="400" />
 <br/>
 <br/>
 
 - Click on the Search button at the top left
 
-<img align="middle" src="images/Lab3_55.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_Step8_2.png" width="1000" />
 <br/>
 <br/>
 
 - You can search for transcripts using many fields depending on the channel. In this case use the Name field and search using the Customer Name used while testing in Step 7. Once the conversation transcript shows up, click on the button in the last column.
 
-<img align="middle" src="images/Lab3_56.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab2_Step8_3.png" width="1000" />
 <br/>
 <br/>
 
 - Conversation transcript will load and you have the option to print as PDF
 
-<img align="middle" src="images/Lab3_57.jpg" width="500" />
+<img align="middle" src="images/AU_Lab2_Step8_4.png" width="500" />
 <br/>
 <br/>
 
 - On the customer end, they can also access the transcript by emailing it to their personal email account. Once conversation ended, click on the chat bubble hamburger icon and then select `Email transcript` option
 
-<img align="middle" src="images/Lab3_58.jpg" width="400" />
+<img align="middle" src="images/AU_Lab2_Step8_5.png" width="400" />
 <br/>
 <br/>
 
 - Enter email address to send the transcript to
 
-<img align="middle" src="images/Lab3_59.jpg" width="400" />
-<br/>
-<br/>
-
-<img align="middle" src="images/Lab3_60.jpg" width="400" />
+<img align="middle" src="images/AU_Lab2_Step8_6.png" width="400" />
 <br/>
 <br/>
 
 - Conversation transcript will be received in the following format:
 
-<img align="middle" src="images/Lab3_61.jpg" width="500" />
+<img align="middle" src="images/AU_Lab2_Step8_7.png" width="500" />
 <br/>
 <br/>
 
