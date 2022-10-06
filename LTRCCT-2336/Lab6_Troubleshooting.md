@@ -104,7 +104,7 @@ In this lab, we will go through the concepts and basics of flow debugging option
 
 - Once the flow you wish to analyse is opened, switch to the Analyse mode 
 
-<img align="middle" src="images/Lab9_8.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_9.png" width="1000" />
 <br/>
 <br/>
 
@@ -115,25 +115,21 @@ In this lab, we will go through the concepts and basics of flow debugging option
   - **Connector counter** indicates the number of transactions that have passed from the previous node to the following node.
   - **Node outcome counter** indicates the count of each outcomes of a node 
 
-<img align="middle" src="images/Lab9_9.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_10.png" width="1000" />
 <br/>
 <br/>
 
 - To view the execution time details, toggle 'Execution Time' button at the bottom of the flow builder in the Analyze mode.
 
-<img align="middle" src="images/Lab9_10.jpg" width="1000" />
-<br/>
-<br/>
-
 - Click View Chart directly to see the Sankey chart for the complete flow. 
 
-<img align="middle" src="images/Lab9_11.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_11.png" width="1000" />
 <br/>
 <br/>
 
 - A Sankey chart provides a visual illustration of data and transaction flow from one node to another. The width of each node on the chart is proportional to the quantity of that node.
 
-<img align="middle" src="images/Lab9_12.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_12.png" width="1000" />
 <br/>
 <br/>
 
@@ -149,7 +145,7 @@ In this lab, we will go through the concepts and basics of flow debugging option
 
 - Open the flow and on the right side click 'Share Flow' option to configure a password and share the flow in view only mode 
 
-<img align="middle" src="images/Lab9_13.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_13.png" width="1000" />
 <br/>
 <br/>
 
