@@ -37,7 +37,7 @@ In this lab, we will go through the concepts and basics of flow debugging option
 
 - Login to Webex Connect and navigate to Settings > Team mates 
 
-<img align="middle" src="images/Lab9_0.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_1.png" width="1000" />
 <br/>
 <br/>
 
@@ -52,17 +52,17 @@ In this lab, we will go through the concepts and basics of flow debugging option
 
 - Under actions click on 'arrow' mark and select manage. This will bring up flow workspace.
 
-<img align="middle" src="images/Lab9_1.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_2.png" width="1000" />
 <br/>
 <br/>
 
-<img align="middle" src="images/Lab9_2.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_3.png" width="1000" />
 <br/>
 <br/>
 
 - In order to enable debug logs to see the complete HTTP request and response, Click on settings icon from top right and enable the toggle 'descriptive logs'
 
-<img align="middle" src="images/Lab9_3.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_4.png" width="1000" />
 <br/>
 <br/>
 
@@ -71,13 +71,13 @@ In this lab, we will go through the concepts and basics of flow debugging option
 
 - On the right pane click on debug which will bring up a window at the bottom of the screen
 
-<img align="middle" src="images/Lab9_4.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_5.png" width="1000" />
 <br/>
 <br/>
 
 - Each row here represents logging for one task, click on 'decrypt logs' on the right side to see debug logging.
 
-<img align="middle" src="images/Lab9_5.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_6.png" width="1000" />
 <br/>
 <br/>
 
@@ -85,13 +85,13 @@ In this lab, we will go through the concepts and basics of flow debugging option
 
 - For example, click on create conversation, you can see the HTTP request and response cycle on the right.
 
-<img align="middle" src="images/Lab9_6.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_7.png" width="1000" />
 <br/>
 <br/>
 
 - Each node will have either a success or error outcome. When debugging, we can review the individual interaction and based on the outcome of the node, further debugging steps can be taken. 
 
-<img align="middle" src="images/Lab9_7.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_8.png" width="1000" />
 <br/>
 <br/>
 
