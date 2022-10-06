@@ -474,7 +474,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 [To top of this lab](#table-of-contents)
 
-## Step 7. Verification - start live chat and accept the request
+## Step 7. Verification - start live chat and accept the request.
 
 - Open a new tab and login to the Agent Desktop and make the agent Available (if you haven't done already in Lab1).
 > Agent Desktop: **[https://portal.wxcc-anz1.cisco.com](https://portal.wxcc-anz1.cisco.com){:target="_blank"}**\
