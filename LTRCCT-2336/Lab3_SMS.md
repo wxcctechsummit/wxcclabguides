@@ -31,7 +31,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 ### Pre-requisite
 
-1. You recived an admin credentials to configure in Managment Portal and Webex Connect.
+1. You recived an admin credentials to configure in Webex CC Managment Portal and Webex Connect.
 2. You recived the SMS number associated with your tenat.
 3. You have successfully completed the previous Lab **Preconfiguration**
 
@@ -39,15 +39,15 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 ## Step 1. Verify SMS Number Assignment
 
-- Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
+- Login to your respective Webex Connect UI using the provided URL https://auclpod**X**.au.webexconnect.io (where **X** is your POD number).
 
-- Navigate to Assets > Numbers and verify that the tenant you are using has a SMS number assigned 
+- Navigate to Assets > Numbers and verify that the tenant you are using has a SMS number assigned.
 
-<img align="middle" src="images/Lab5_1.jpg" width="1000" />
+<img align="middle" src="images/Lab3_step1.png" width="1000" />
 <br/>
 <br/>
 
->**Note**: SMS Numbers cannot be procured directly from the WxCC integrated IMI Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
+>**Note**: SMS Numbers cannot be procured directly from the webex CC integrated webex Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
 
 
 ## Step 2. SMS Asset registration to WebexCC
@@ -56,25 +56,25 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - In the SMS number assigned, under actions select the 'Manage' option 
 
-<img align="middle" src="images/Lab5_2.jpg" width="1000" />
+<img align="middle" src="images/AU_lab3_step2.png" width="1000" />
 <br/>
 <br/>
 
 - Click 'Register to WebexCC option' 
 
-<img align="middle" src="images/Lab5_3.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step2_2.png" width="1000" />
 <br/>
 <br/>
 
-- In the resulting window, select a service under which this asset would be managed
+- In the resulting window, select a service under which this asset would be managed and click on **Register**
 
-<img align="middle" src="images/Lab5_4.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step2_3.png" width="1000" />
 <br/>
 <br/>
 
 - Verify that the 'Register to Webex CC' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
 
-<img align="middle" src="images/Lab5_5.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step2_4.png" width="1000" />
 <br/>
 <br/>
 
@@ -163,15 +163,20 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
-<img align="middle" src="images/Lab5_13.jpg" width="1000" />
+<img align="middle" src="images/Au_lab3_step4_2.png" width="1000" />
 <br/>
 <br/>
 
 - Once the flow is saved, the 'Configure SMS Event' node will open. Select the SMS number assigned to your tenant in the **_INCOMING NUMBER_** section 
 
+
 - Input **_*_** as `Keyword` and click on **Verify**
   
 - Once the **Success** message is displayed, click on **Save**
+<img align="middle" src="images/AU_Lab3_Step4_3.gif" width="1000" />
+<br/>
+<br/>
+
 
 - In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
 
@@ -185,13 +190,13 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 <br/>
 <br/>
 
-<img align="middle" src="images/Lab5_17.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_step4_5.png" width="1000" />
 <br/>
 <br/>
 
 - Finally click on Make Live on top right corner and click Make Live.
 
-<img align="middle" src="images/Lab5_18.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_step4_6.png" width="1000" />
 <br/>
 <br/>
 
