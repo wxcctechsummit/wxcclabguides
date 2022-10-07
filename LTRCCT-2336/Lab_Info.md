@@ -10,8 +10,9 @@ title: 'Lab Pre-requisites'
 - [Lab Support](#lab-support)
 
 # Introduction
-Digital channels are now more impactful than ever. 
-These labs are specially designed for the Cisco Live session. The main purpose of the labs is to give a clear understanding of New Digital Channels functionality. You will learn how to create and configure Chat, Chat Bot and SMS. You will also get a clear understanding of the scripts' logic and how to troubleshoot issues by using the debug console.
+Digital channels are now more impactful than ever. 
+These labs are specially designed for the Cisco Live session. The primary purpose of the labs is to give a clear understanding of New Digital Channels functionality. You will learn how to create and configure Webchat and SMS. Using the debug console, you will also get a clear understanding of troubleshooting issues.
+
 
 ## Lab Topology
 <img align="middle" src="images/topology.png" width="1000" />
@@ -32,7 +33,7 @@ These labs are specially designed for the Cisco Live session. The main purpose o
 
 ## Before starting the labs
 
-1. Please confirm that you can login to WxCC Admin portal by using the links above.
+1. Please confirm that you can login to WxCC Admin portal and Agent desktop by using the links above.
 
 2. You have to use the admin account (with Administrator privileges) for access to Control Hub and Administration portal. 
 
