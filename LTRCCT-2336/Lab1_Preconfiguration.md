@@ -5,7 +5,7 @@ title: 'Lab 1: Preconfiguration'
 # Table of Contents
 
 - [Step 1. Node Authorisation for Webex CC Task and Engage nodes](#step-1-node-Authorisation-for-webex-cc-task-and-engage-nodes)
-- [Step 2. Download and upload CA flows in Connect](#step-2-download-and-upload-ca-flows-in-connect) 
+- [Step 2. Download and upload CA (Channel Agnostic) flows in Connect](#step-2-download-and-upload-ca-flows-in-connect) 
 - [Step 3. Setup agents in Portal (Agents, Team, MMP)](#step-3-setup-agents-in-portal-agents-team-mmp)
 - [Step 4. Setup RONA timers](#step-4-setup-rona-timers)
 - [Verification: Access to the Agent Desktop](#verification-access-to-the-agent-desktop)

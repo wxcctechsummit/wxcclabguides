@@ -56,13 +56,13 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - In the SMS number assigned, under actions select the 'Manage' option 
 
-<img align="middle" src="images/AU_lab3_step2.png" width="1000" />
+<img align="middle" src="images/AU_lab3_step2_1.png" width="1000" />
 <br/>
 <br/>
 
 - Click 'Register to WebexCC option' 
 
-<img align="middle" src="images/AU_Lab3_Step2_2.png" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step2.png" width="1000" />
 <br/>
 <br/>
 
@@ -190,13 +190,13 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 <br/>
 <br/>
 
-<img align="middle" src="images/AU_Lab3_step4_5.png" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step4_5.png" width="1000" />
 <br/>
 <br/>
 
 - Finally click on Make Live on top right corner and click Make Live.
 
-<img align="middle" src="images/AU_Lab3_step4_6.png" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step4_6.png" width="1000" />
 <br/>
 <br/>
 
@@ -212,7 +212,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Login to the Agent Desktop and make the agent Available. 
 
-<img align="middle" src="images/Lab2_Agent1.png" width="1000" />
+<img align="middle" src="images/AU_Lab2_Agent1.png" width="1000" />
 <br/>
 <br/>
 
@@ -220,7 +220,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - The SMS will be offered to the agent. Click "Accept" to handle the SMS.
 
-<img align="middle" src="images/Lab5_20.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab5_14.png" width="1000" />
 <br/>
 <br/>
 
