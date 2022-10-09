@@ -62,13 +62,13 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Click 'Register to WebexCC option' 
 
-<img align="middle" src="images/AU_Lab3_Step2.png" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step2_2_1.png" width="1000" />
 <br/>
 <br/>
 
 - In the resulting window, select a service under which this asset would be managed and click on **Register**
 
-<img align="middle" src="images/AU_Lab3_Step2_3.png" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step2_3_1.png" width="1000" />
 <br/>
 <br/>
 
