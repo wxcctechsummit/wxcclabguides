@@ -56,7 +56,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 # Lab Section
 
-## Step 1. Live Chat Asset creation & register to Webex CC
+## Step 1. Live Chat Asset creation & register to Webex Engage
 
 - Login to your respective Webex Connect UI using the provided URL https://clpod**X**.au.webexconnect.io/ (where **X** is your POD number).
 
@@ -74,21 +74,21 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 <br/>
 <br/>
 
-- Select `REGISTER TO WEBEX CC` and choose the Service you have created and REGISTER
+- Select `Register To Webex Engage` and choose the Service you have created and REGISTER
 
-<img align="middle" src="images/Lab3_3.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_3.png" width="1000" />
 <br/>
 <br/>
 
 - In the resulting window, select a service under which this asset would be managed
 
-<img align="middle" src="images/Lab3_4.jpg" width="600" />
+<img align="middle" src="images/AU_Lab3_4.png" width="600" />
 <br/>
 <br/>
 
-- Verify that the `Register to Webex CC` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned.
+- Verify that the `Register To Webex Engage` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned.
 
-<img align="middle" src="images/Lab3_5.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_5.png" width="1000" />
 <br/>
 <br/>
 

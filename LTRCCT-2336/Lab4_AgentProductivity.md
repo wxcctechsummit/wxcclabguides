@@ -31,7 +31,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 # Lab Section
 ## Step 1. Create Inbound Webhook
 
-- Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
+- Login to your respective Webex Connect UI using the provided URL https://auclpod**X**.au.webexconnect.io (where **X** is your POD number).
 
 - Navigate to Assets > Integrations > Add Integration
 
@@ -53,7 +53,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 ## Step 2. Create an Event
 
-- Login to your Webex contact centre portal with your administrator credentials: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** and navigate to **New Digital Channels**
+- Login to your Webex contact centre portal with your administrator credentials: **[https://portal.wxcc-anz1.cisco.com/portal](https://portal.wxcc-anz1.cisco.com/portal){:target="_blank"}** and navigate to **New Digital Channels**
 
 <img align="middle" src="images/Lab8_4.png" width="1000" />
 <br/>
