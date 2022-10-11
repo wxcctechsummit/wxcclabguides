@@ -18,7 +18,7 @@ title: 'Lab 8: Agent Productivity'
   - [Back to top](#back-to-top)
     - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
-# Introduction
+# Introduction 
 ### Lab Objective
 
 In this Lab, we will go through the tasks that are required to configure a basic OTP (One Time Passcode) verification scenario in Webex Connect. The OTP generated will be sent to customer's email and also to agents Webex teams, that is accessible in the agent desktop. 
