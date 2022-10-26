@@ -18,6 +18,7 @@ In this lab exercise we are going to review best practices for how and when to u
 > Vidcast should not replace other visual tools like animated GIFs or simple pictures.
 >
 > In a live lab setting, you should comment out the Vidcast videos so that you can provide the first hand instruction.  
+
 ``` 
 <!-- <div style="padding-bottom:60.25%; position:relative; display:block; width: 100%">
 	<iframe src="https://app.vidcast.io/share/embed/3f42cfb1-9995-4ab8-94db-d957da003613" width="100%" height="100%" title="VPOP Voice Provisioning" frameborder="0" loading="lazy" allowfullscreen style="position:absolute; top:0; left: 0"></iframe>
