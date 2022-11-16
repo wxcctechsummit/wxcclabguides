@@ -39,6 +39,7 @@ In this lab exercise we are going to review best practices for how and when to u
 1. Keep the video short (under 2 minutes)
 2. Keep the video topics single threaded 
 3. Only cover the upcoming section or new topic introduction
+4. Download a copy of your completed video, rename it and upload to the online drive (to be shared during lab creation)
 
 ### Video Introductions
 > A description of the outcomes which will be produced by following the guide.
