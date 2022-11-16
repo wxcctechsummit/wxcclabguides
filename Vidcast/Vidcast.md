@@ -34,6 +34,7 @@ In this lab exercise we are going to review best practices for how and when to u
 	- **Example:** Welcome to the 2022 Cisco Live lab.  
 - ***Don't include self-videos in the lab guide demo videos***.  
 	- **Example:** First 2 videos are Kevin and third video added later are Mike.  The voice change is unavoidable but adding self-videos are distracting.
+
 ***Additionally***
 1. Keep the video short (under 2 minutes)
 2. Keep the video topics single threaded 
