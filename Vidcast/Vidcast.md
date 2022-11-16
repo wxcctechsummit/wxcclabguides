@@ -27,10 +27,17 @@ In this lab exercise we are going to review best practices for how and when to u
 > 
 
 ## Good video Guidelines
+**Note:**  Keep in mind that these lab documents should be designed to allow adding or removing content easily.  A series of short videos makes it possible to add to or remove videos in that series even with a different personality.
+ - ***Use videos to highlight and demo***. Customers will naturally use typed step work with illustrations over following a step by step video. 
+- ***Avoid step by step guides in the videos if possible.***  These can be typed in the document. 
+- ***Avoid statements that tie a video to a specific lab series***.  
+	- **Example:** Welcome to the 2022 Cisco Live lab.  
+- ***Don't include self-videos in the lab guide demo videos***.  
+	- **Example:** First 2 videos are Kevin and third video added later are Mike.  The voice change is unavoidable but adding self-videos are distracting.
+***Additionally***
 1. Keep the video short (under 2 minutes)
 2. Keep the video topics single threaded 
 3. Only cover the upcoming section or new topic introduction
-4. Avoid using phrases that will link the videos as a series
 
 ### Video Introductions
 > A description of the outcomes which will be produced by following the guide.
