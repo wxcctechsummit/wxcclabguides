@@ -4,15 +4,16 @@ title: 'Creating a BRE Lookup'
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Before You Begin](#before-you-begin)
+  - [Before You Begin](#before-you-begin)
   - [Fill in the form with the necessary details and click "Update Directions"](#fill-in-the-form-with-the-necessary-details-and-click-update-directions)
   - [Preparing the tenant to use the BRE:](#preparing-the-tenant-to-use-the-bre)
     - [In the Attributes section:](#in-the-attributes-section)
       - [Found rule](#found-rule)
       - [NotFound rule](#notfound-rule)
 
+---
 
-# Before You Begin
+## Before You Begin
 Ask your CSM to create a BRE Table for you
 
 You can access the BRE data here: https://rules.wxcc-us1.cisco.com/datasync
@@ -39,7 +40,7 @@ You can access the BRE data here: https://rules.wxcc-us1.cisco.com/datasync
 
 ## Preparing the tenant to use the BRE:
 
- :warning: **Important note:** All BRE are settings, rules, attributes, and labels are case sensitive!
+ ⚠️ **Important note:** All BRE are settings, rules, attributes, and labels are case sensitive!
 
 > Click BRE 
 Click Attributes and add a new attribute called context (case sensitive) and type text
