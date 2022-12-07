@@ -69,7 +69,7 @@ In this Lab, we will go through the tasks that are required to build a Webex Exp
 | **Account** | **Username**      | **Password**                   |
 | ----------- | ----------------- | -------------------------------- |
 | WxM admin       | wxmdemoadmin   | Login@123 |
-| Pod29 admin         | admin1pod29@email.carehybrid.com  | WxCC_ASEAN2021! |
+| Pod29 admin         | admin1pod29@email.carehybrid.com  | WxCC_CiscoLAB123 |
 
 
 ## Part 1: WxM Connector setup -- Not need to complete it, already configured!
