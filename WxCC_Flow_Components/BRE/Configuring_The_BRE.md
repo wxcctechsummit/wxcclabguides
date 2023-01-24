@@ -10,6 +10,7 @@ title: 'Creating a BRE Lookup'
     - [In the Attributes section:](#in-the-attributes-section)
       - [Found rule](#found-rule)
       - [NotFound rule](#notfound-rule)
+  - [Accessing the BRE data from your flow](#accessing-the-bre-data-from-your-flow)
 
 ---
 
@@ -93,11 +94,13 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 
 >> when<br>
     c: Contact()<br>
-    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("Context")+"." + c.getAttribute("<w class = "key_out">ani</w>")) == null)<br>
+    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context")+"." + c.getAttribute("<w class = "key_out">ani</w>")) == null)<br>
  then<br>
    c.putAttribute("<w class = "label_out">routeInfo</w>", "NotFound");<br>
  end<br>
 
+
+## Accessing the BRE data from your flow
 
 
 
