@@ -6,4 +6,5 @@ setTimeout(()=>{
 imichatwidget.init(data,function(){});
 imichatwidget.show();
 console.log("yup");
+console.log(window.location.href.split("/").slice(-1)[0].split("?")[0]);
 },5000)
