@@ -72,7 +72,7 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
     c: Contact()<br>
     eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute(<q>context</q>) + <q>.</q> + c.getAttribute(<q><w class = "key_out">ani</w></q>)) != null)<br>
  then<br>
-    c.putAttribute("<w class = "label_out">routeInfo</w>", c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute("context")+"." + c.getAttribute("<w class = "key_out">ani</w>")));<br>
+    c.putAttribute(<q><w class = "label_out">routeInfo</w></q>, c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute(<q>context</q>) + <q>.</q> + c.getAttribute(<q><w class = "key_out">ani</w></q>)));<br>
  end<br>
 
 #### NotFound rule
@@ -94,9 +94,9 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 
 >> when<br>
     c: Contact()<br>
-    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context")+"." + c.getAttribute("<w class = "key_out">ani</w>")) == null)<br>
+    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute(<q>context</q>) + <q>.</q> + c.getAttribute(<q><w class = "key_out">ani</w></q>)) == null)<br>
  then<br>
-   c.putAttribute("<w class = "label_out">routeInfo</w>", "NotFound");<br>
+   c.putAttribute(<q><w class = "label_out">routeInfo</w></q>, <q>NotFound</q>);<br>
  end<br>
 
 
