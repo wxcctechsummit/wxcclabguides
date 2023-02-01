@@ -10,6 +10,7 @@ title: 'Creating a BRE Lookup'
     - [In the Attributes section:](#in-the-attributes-section)
       - [Found rule](#found-rule)
       - [NotFound rule](#notfound-rule)
+  - [Adding and removing data from your BRE table](#adding-and-removing-data-from-your-bre-table)
   - [Accessing the BRE data from your flow](#accessing-the-bre-data-from-your-flow)
 
 ---
@@ -98,6 +99,12 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
  then<br>
    c.putAttribute(<q><w class = "label_out">routeInfo</w></q>, <q>NotFound</q>);<br>
  end<br>
+
+
+## Adding and removing data from your BRE table
+> 
+> -
+
 
 
 ## Accessing the BRE data from your flow
