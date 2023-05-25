@@ -6,7 +6,8 @@ title: 'New WxCC Technical Virtual Summit'
 
 window.onload=function(){window.location ="https://webexcc.github.io/"}
 
-</script> 
+</script>
+
 
 <img align="middle" src="../images/12_51_47.jpg" width="1000" />
 
