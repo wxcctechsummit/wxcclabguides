@@ -1,6 +1,11 @@
 ---
 title: 'Webex CC Lab guides'
 ---
+<script>
+
+window.onload=function(){window.location ="https://webexcc.github.io/"}
+
+</script>
 
 <img align="middle" src="../images/12_51_47.jpg" width="1000" />
 
