@@ -1,6 +1,11 @@
 ---
 title: "Index for WxCC Partner Summit"
 ---
+<script>
+
+window.onload=function(){window.location ="https://webexcc.github.io/"}
+
+</script>
 
 ![Banner](images/wxccbanner.jpg)
 
